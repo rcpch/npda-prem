@@ -1,6 +1,7 @@
 {% load static %}
+{% load i18n %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ LANGUAGE_CODE }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -44,5 +45,6 @@
   <script>
     window.NHSUKFrontend && window.NHSUKFrontend.initAll();
   </script>
+  <script src="https://unpkg.com/htmx.org@2.0.4"></script>
 </body>
 </html>
