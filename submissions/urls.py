@@ -1,0 +1,14 @@
+from django.urls import path
+
+from . import views
+
+urlpatterns = [
+    path("", views.landing, name="landing"),
+    path("form/", views.submission_form, name="submission_form"),
+    path("form/parent/", views.parent_form, name="parent_form"),
+    path("form/parent/autosave/", views.parent_autosave, name="parent_autosave"),
+    path("form/parent/submit/", views.parent_submit, name="parent_submit"),
+    path("form/child/", views.child_form, name="child_form"),
+    path("form/start-again/", views.start_again, name="start_again"),
+    path("form/confirmation/", views.confirmation, name="confirmation"),
+]

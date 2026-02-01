@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+<h1>{% trans "National Paediatric Diabetes Audit PREM" %}</h1>
+<p class="nhsuk-body-l">{% trans "Patient Reported Experience Measure" %}</p>
+
+<div class="nhsuk-form-group">
+  <fieldset class="nhsuk-fieldset">
+    <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m">
+      {% trans "Choose your language" %}
+    </legend>
+    <div class="nhsuk-radios">
+      {% get_available_languages as LANGUAGES %}
+      {% for lang_code, lang_name in LANGUAGES %}
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="language-{{ lang_code }}" name="language" type="radio" value="{{ lang_code }}"{% if forloop.first %} checked{% endif %}>
+        <label class="nhsuk-label nhsuk-radios__label" for="language-{{ lang_code }}">
+          {% trans lang_name %}
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+</div>
+
+<a class="nhsuk-button" id="get-started" href="{% url 'submission_form' %}?lang=en" data-module="nhsuk-button">
+  {% trans "Get started" %}
+</a>
+
+<script>
+  (function() {
+    var radios = document.querySelectorAll('input[name="language"]');
+    var button = document.getElementById('get-started');
+    var baseUrl = "{% url 'submission_form' %}";
+
+    radios.forEach(function(radio) {
+      radio.addEventListener('change', function() {
+        button.href = baseUrl + '?lang=' + this.value;
+      });
+    });
+  })();
+</script>
+{% endblock %}

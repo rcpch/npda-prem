@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+<div class="nhsuk-panel nhsuk-panel--confirmation">
+  <h1 class="nhsuk-panel__title">
+    {% trans "Survey submitted" %}
+  </h1>
+  <div class="nhsuk-panel__body">
+    {% trans "Thank you for sharing your experience." %}
+  </div>
+</div>
+
+<h2>{% trans "What happens next" %}</h2>
+<p>{% trans "Your feedback helps us improve diabetes services for children and young people." %}</p>
+
+<p>
+  <a class="nhsuk-button" href="{% url 'landing' %}">
+    {% trans "Start a new survey" %}
+  </a>
+</p>
+{% endblock %}
