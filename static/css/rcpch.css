@@ -1,0 +1,153 @@
+/*
+ * RCPCH colour overrides for NHS frontend
+ *
+ * Remaps the NHS colour palette to RCPCH brand colours.
+ * Loaded after nhsuk-frontend.min.css to take precedence.
+ *
+ * RCPCH Main Brand:
+ *   Dark Blue:   #0D0D58
+ *   Bright Blue: #11A7F2
+ *
+ * RCPCH Strong Blue: #3366CC
+ */
+
+/* =============================================
+   Header
+   ============================================= */
+
+.nhsuk-header {
+  background-color: #0D0D58;
+}
+
+.nhsuk-header__service-name {
+  color: #fff;
+}
+
+.nhsuk-header__logo path {
+  fill: #11A7F2;
+}
+
+/* =============================================
+   Links
+   ============================================= */
+
+a,
+.nhsuk-link,
+.nhsuk-back-link__link,
+.nhsuk-header__service-logo {
+  color: #3366CC;
+}
+
+a:hover,
+.nhsuk-link:hover,
+.nhsuk-back-link__link:hover {
+  color: #0D0D58;
+}
+
+a:visited,
+.nhsuk-link:visited {
+  color: #7159AA;
+}
+
+a:active,
+.nhsuk-link:active {
+  color: #0D0D58;
+}
+
+/* Keep header links white */
+.nhsuk-header a,
+.nhsuk-header a:visited,
+.nhsuk-header a:hover,
+.nhsuk-header a:active,
+.nhsuk-header__service-logo,
+.nhsuk-header__service-logo:visited,
+.nhsuk-header__service-logo:hover {
+  color: #fff;
+}
+
+/* =============================================
+   Focus states (keep yellow for accessibility)
+   ============================================= */
+
+a:focus,
+.nhsuk-link:focus,
+.nhsuk-back-link__link:focus,
+.nhsuk-button:focus,
+.nhsuk-radios__input:focus + .nhsuk-radios__label::before,
+.nhsuk-checkboxes__input:focus + .nhsuk-checkboxes__label::before,
+.nhsuk-select:focus,
+.nhsuk-input:focus,
+.nhsuk-textarea:focus {
+  outline-color: #FFD200;
+  box-shadow: 0 0 0 4px #FFD200;
+}
+
+/* =============================================
+   Primary button (was NHS green → RCPCH Bright Blue)
+   ============================================= */
+
+.nhsuk-button:not(.nhsuk-button--secondary):not(.nhsuk-button--reverse):not(.nhsuk-button--warning) {
+  background-color: #11A7F2;
+  box-shadow: 0 4px 0 #0082BC;
+}
+
+.nhsuk-button:not(.nhsuk-button--secondary):not(.nhsuk-button--reverse):not(.nhsuk-button--warning):hover {
+  background-color: #0082BC;
+}
+
+.nhsuk-button:not(.nhsuk-button--secondary):not(.nhsuk-button--reverse):not(.nhsuk-button--warning):active {
+  background-color: #0D0D58;
+  box-shadow: none;
+}
+
+/* =============================================
+   Secondary button (was NHS blue → RCPCH Strong Blue)
+   ============================================= */
+
+.nhsuk-button--secondary {
+  background-color: #3366CC;
+  box-shadow: 0 4px 0 #405A97;
+}
+
+.nhsuk-button--secondary:hover {
+  background-color: #405A97;
+}
+
+.nhsuk-button--secondary:active {
+  background-color: #0D0D58;
+  box-shadow: none;
+}
+
+/* =============================================
+   Confirmation panel (was NHS green → RCPCH Dark Blue)
+   ============================================= */
+
+.nhsuk-panel--confirmation {
+  background-color: #0D0D58;
+}
+
+.nhsuk-panel--confirmation .nhsuk-panel__title,
+.nhsuk-panel--confirmation .nhsuk-panel__body {
+  color: #fff;
+}
+
+/* =============================================
+   Form inputs — selected radios/checkboxes
+   ============================================= */
+
+.nhsuk-radios__input:checked + .nhsuk-radios__label::after {
+  background-color: #0D0D58;
+}
+
+.nhsuk-checkboxes__input:checked + .nhsuk-checkboxes__label::after {
+  border-color: #0D0D58;
+}
+
+/* =============================================
+   Footer
+   ============================================= */
+
+.nhsuk-footer {
+  background-color: #F3F3F3;
+  border-top: 4px solid #11A7F2;
+}
