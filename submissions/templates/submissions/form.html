@@ -11,7 +11,7 @@
   </a>
 </div>
 
-<h1>{% trans "Who is completing this survey?" %}</h1>
+<h1>{% trans "Are you…" %}</h1>
 
 <div class="nhsuk-form-group">
   <fieldset class="nhsuk-fieldset">
@@ -20,15 +20,15 @@
     </legend>
     <div class="nhsuk-radios">
       <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="role-parent" name="role" type="radio" value="parent">
-        <label class="nhsuk-label nhsuk-radios__label" for="role-parent">
-          {% trans "I'm a parent" %}
+        <input class="nhsuk-radios__input" id="role-cyp" name="role" type="radio" value="cyp">
+        <label class="nhsuk-label nhsuk-radios__label" for="role-cyp">
+          {% trans "A child or young person with diabetes" %}
         </label>
       </div>
       <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="role-child" name="role" type="radio" value="child">
-        <label class="nhsuk-label nhsuk-radios__label" for="role-child">
-          {% trans "I'm a child" %}
+        <input class="nhsuk-radios__input" id="role-parent" name="role" type="radio" value="parent">
+        <label class="nhsuk-label nhsuk-radios__label" for="role-parent">
+          {% trans "The parent/carer of a child or young person with diabetes" %}
         </label>
       </div>
     </div>

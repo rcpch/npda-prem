@@ -6,6 +6,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% block title %}NPDA PREM{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap">
   <link rel="stylesheet" href="{% static 'nhsuk/nhsuk-frontend.min.css' %}">
   <link rel="stylesheet" href="{% static 'css/rcpch.css' %}">
 </head>
@@ -18,6 +21,7 @@
     <div class="nhsuk-width-container nhsuk-header__container">
       <div class="nhsuk-header__service">
         <a class="nhsuk-header__service-logo" href="/" aria-label="NPDA PREM homepage">
+          <img src="{% static 'images/npda-logo.png' %}" alt="NPDA" height="40" style="vertical-align: middle; margin-right: 8px;">
           <span class="nhsuk-header__service-name">RCPCH &mdash; NPDA PREM</span>
         </a>
       </div>

@@ -9,6 +9,8 @@ urlpatterns = [
     path("form/parent/autosave/", views.parent_autosave, name="parent_autosave"),
     path("form/parent/submit/", views.parent_submit, name="parent_submit"),
     path("form/child/", views.child_form, name="child_form"),
+    path("form/child/autosave/", views.child_autosave, name="child_autosave"),
+    path("form/child/submit/", views.child_submit, name="child_submit"),
     path("form/start-again/", views.start_again, name="start_again"),
     path("form/confirmation/", views.confirmation, name="confirmation"),
 ]

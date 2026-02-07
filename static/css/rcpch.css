@@ -12,6 +12,30 @@
  */
 
 /* =============================================
+   Typography
+   ============================================= */
+
+body,
+.nhsuk-body-l,
+.nhsuk-body-m,
+.nhsuk-body-s,
+.nhsuk-label,
+.nhsuk-hint,
+.nhsuk-button,
+.nhsuk-fieldset__legend,
+.nhsuk-select,
+.nhsuk-input,
+.nhsuk-textarea,
+.nhsuk-header__service-name,
+.nhsuk-back-link__link,
+.nhsuk-panel__title,
+.nhsuk-panel__body,
+h1, h2, h3, h4, h5, h6,
+p, li, a {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* =============================================
    Header
    ============================================= */
 
@@ -105,17 +129,24 @@ a:focus,
    ============================================= */
 
 .nhsuk-button--secondary {
-  background-color: #3366CC;
-  box-shadow: 0 4px 0 #405A97;
+  background-color: #B3B3B3;
+  box-shadow: 0 4px 0 #808080;
+  color: #fff;
 }
 
 .nhsuk-button--secondary:hover {
-  background-color: #405A97;
+  background-color: #808080;
+  color: #fff;
 }
 
 .nhsuk-button--secondary:active {
-  background-color: #0D0D58;
+  background-color: #4D4D4D;
   box-shadow: none;
+  color: #fff;
+}
+
+.nhsuk-button--secondary:visited {
+  color: #fff;
 }
 
 /* =============================================
