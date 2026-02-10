@@ -1,0 +1,1263 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-10 15:21+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ur\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: npda_prem/settings.py:114
+msgid "English"
+msgstr "English"
+
+#: npda_prem/settings.py:115
+msgid "Cymraeg"
+msgstr "Cymraeg"
+
+#: npda_prem/settings.py:116
+msgid "Urdu"
+msgstr "Urdu"
+
+#: npda_prem/settings.py:117
+msgid "Polish"
+msgstr "Polish"
+
+#: npda_prem/settings.py:118
+msgid "Ukrainian"
+msgstr "Ukrainian"
+
+#: npda_prem/settings.py:119
+msgid "Punjabi"
+msgstr "Punjabi"
+
+#: submissions/models.py:8 submissions/templates/submissions/form.html:25
+msgid "A child or young person with diabetes"
+msgstr "ذیابیطس کا شکار بچہ یا نوجوان ہیں"
+
+#: submissions/models.py:9 submissions/templates/submissions/form.html:31
+msgid "The parent/carer of a child or young person with diabetes"
+msgstr "ذیابیطس والے بچے یا نوجوان کے والدین/نگہداشت دہندہ ہیں"
+
+#: submissions/models.py:20
+#: submissions/templates/submissions/child_form.html:40
+#: submissions/templates/submissions/parent_form.html:40
+msgid "North East & North Cumbria"
+msgstr "نارتھ ایسٹ اور نارتھ کمبریا"
+
+#: submissions/models.py:21
+#: submissions/templates/submissions/child_form.html:46
+#: submissions/templates/submissions/parent_form.html:46
+msgid "North West"
+msgstr "شمال مغرب"
+
+#: submissions/models.py:22
+#: submissions/templates/submissions/child_form.html:52
+#: submissions/templates/submissions/parent_form.html:52
+msgid "Yorkshire & Humber"
+msgstr "یارکشائر اور ہمبر"
+
+#: submissions/models.py:23
+#: submissions/templates/submissions/child_form.html:58
+#: submissions/templates/submissions/parent_form.html:58
+msgid "East Midlands"
+msgstr "ایسٹ مڈلینڈز"
+
+#: submissions/models.py:24
+#: submissions/templates/submissions/child_form.html:64
+#: submissions/templates/submissions/parent_form.html:64
+msgid "West Midlands"
+msgstr "ویسٹ مڈلینڈز"
+
+#: submissions/models.py:25
+#: submissions/templates/submissions/child_form.html:70
+#: submissions/templates/submissions/parent_form.html:70
+msgid "East of England"
+msgstr "انگلینڈ کا مشرقی حصہ"
+
+#: submissions/models.py:26
+#: submissions/templates/submissions/child_form.html:76
+#: submissions/templates/submissions/parent_form.html:76
+msgid "South Central"
+msgstr "جنوبی وسطی"
+
+#: submissions/models.py:27
+#: submissions/templates/submissions/child_form.html:82
+#: submissions/templates/submissions/parent_form.html:82
+msgid "London & South East"
+msgstr "لندن اور ساؤتھ ایسٹ"
+
+#: submissions/models.py:28
+#: submissions/templates/submissions/child_form.html:88
+#: submissions/templates/submissions/parent_form.html:88
+msgid "South West"
+msgstr "جنوب مغرب"
+
+#: submissions/models.py:29
+#: submissions/templates/submissions/child_form.html:94
+#: submissions/templates/submissions/parent_form.html:94
+msgid "Thames Valley"
+msgstr "ٹیمز ویلی"
+
+#: submissions/models.py:30
+#: submissions/templates/submissions/child_form.html:100
+#: submissions/templates/submissions/parent_form.html:100
+msgid "Wales"
+msgstr "ویلز"
+
+#: submissions/models.py:31
+#: submissions/templates/submissions/child_form.html:106
+#: submissions/templates/submissions/parent_form.html:106
+msgid "Jersey"
+msgstr "جرسی"
+
+#: submissions/models.py:44
+#: submissions/templates/submissions/child_form.html:135
+msgid "Boy"
+msgstr "لڑکا"
+
+#: submissions/models.py:45
+#: submissions/templates/submissions/child_form.html:141
+msgid "Girl"
+msgstr "لڑکی"
+
+#: submissions/models.py:46
+#: submissions/templates/submissions/child_form.html:147
+msgid "A gender not listed here"
+msgstr "ایک جنس جو یہاں درج نہیں ہے"
+
+#: submissions/models.py:47 submissions/models.py:94 submissions/models.py:133
+#: submissions/models.py:144
+#: submissions/templates/submissions/child_form.html:153
+#: submissions/templates/submissions/child_form.html:270
+#: submissions/templates/submissions/child_form.html:401
+#: submissions/templates/submissions/child_form.html:436
+#: submissions/templates/submissions/parent_form.html:276
+#: submissions/templates/submissions/parent_form.html:407
+#: submissions/templates/submissions/parent_form.html:442
+msgid "Prefer not to say"
+msgstr "نہ کہنے کو ترجیح دیتے/دیتی ہیں"
+
+#: submissions/models.py:55
+#: submissions/templates/submissions/parent_form.html:135
+msgid "Mother"
+msgstr "ماں"
+
+#: submissions/models.py:56
+#: submissions/templates/submissions/parent_form.html:141
+msgid "Father"
+msgstr "باپ"
+
+#: submissions/models.py:57
+#: submissions/templates/submissions/parent_form.html:147
+msgid "Grandmother"
+msgstr "دادی/نانی"
+
+#: submissions/models.py:58
+#: submissions/templates/submissions/parent_form.html:153
+msgid "Grandfather"
+msgstr "دادا/نانا"
+
+#: submissions/models.py:59
+#: submissions/templates/submissions/parent_form.html:159
+msgid "Other guardian or family member"
+msgstr "دیگر سر پرست یا خاندان کا فرد"
+
+#: submissions/models.py:67
+#: submissions/templates/submissions/child_form.html:170
+#: submissions/templates/submissions/parent_form.html:176
+msgid "Type 1"
+msgstr "قسم 1"
+
+#: submissions/models.py:68
+#: submissions/templates/submissions/child_form.html:176
+#: submissions/templates/submissions/parent_form.html:182
+msgid "Type 2"
+msgstr "قسم 2"
+
+#: submissions/models.py:69 submissions/models.py:93 submissions/models.py:109
+#: submissions/templates/submissions/_shared_questions.html:428
+#: submissions/templates/submissions/child_form.html:182
+#: submissions/templates/submissions/child_form.html:264
+#: submissions/templates/submissions/child_form.html:329
+#: submissions/templates/submissions/parent_form.html:188
+#: submissions/templates/submissions/parent_form.html:270
+#: submissions/templates/submissions/parent_form.html:335
+msgid "Other"
+msgstr "دیگر"
+
+#: submissions/models.py:77
+#: submissions/templates/submissions/child_form.html:199
+#: submissions/templates/submissions/parent_form.html:205
+msgid "3 years or younger"
+msgstr "3 سال یا اس سے کم عمر"
+
+#: submissions/models.py:78
+#: submissions/templates/submissions/child_form.html:205
+#: submissions/templates/submissions/parent_form.html:211
+msgid "4 – 7 years"
+msgstr "4-7 سال"
+
+#: submissions/models.py:79
+#: submissions/templates/submissions/child_form.html:211
+#: submissions/templates/submissions/parent_form.html:217
+msgid "8 – 11 years"
+msgstr "8-11 سال"
+
+#: submissions/models.py:80
+#: submissions/templates/submissions/child_form.html:217
+#: submissions/templates/submissions/parent_form.html:223
+msgid "12 – 16 years"
+msgstr "12-16 سال"
+
+#: submissions/models.py:81
+#: submissions/templates/submissions/child_form.html:223
+#: submissions/templates/submissions/parent_form.html:229
+msgid "17 – 19 years"
+msgstr "17-19 سال"
+
+#: submissions/models.py:89
+#: submissions/templates/submissions/child_form.html:240
+#: submissions/templates/submissions/parent_form.html:246
+msgid "White"
+msgstr "سفید فام"
+
+#: submissions/models.py:90
+#: submissions/templates/submissions/child_form.html:246
+#: submissions/templates/submissions/parent_form.html:252
+msgid "Black"
+msgstr "سیاہ فام"
+
+#: submissions/models.py:91
+#: submissions/templates/submissions/child_form.html:252
+#: submissions/templates/submissions/parent_form.html:258
+msgid "Asian"
+msgstr "ایشیائی"
+
+#: submissions/models.py:92
+#: submissions/templates/submissions/child_form.html:258
+#: submissions/templates/submissions/parent_form.html:264
+msgid "Mixed"
+msgstr "ملا جلا"
+
+#: submissions/models.py:102
+#: submissions/templates/submissions/child_form.html:287
+#: submissions/templates/submissions/parent_form.html:293
+msgid "Nursery"
+msgstr "نرسری"
+
+#: submissions/models.py:103
+#: submissions/templates/submissions/child_form.html:293
+#: submissions/templates/submissions/parent_form.html:299
+msgid "Reception"
+msgstr "ریسپشن"
+
+#: submissions/models.py:104
+#: submissions/templates/submissions/child_form.html:299
+#: submissions/templates/submissions/parent_form.html:305
+msgid "Key stage 1 (Years 1 & 2)"
+msgstr "کلیدی مرحلہ 1 (سال 1 اور 2)"
+
+#: submissions/models.py:105
+#: submissions/templates/submissions/child_form.html:305
+#: submissions/templates/submissions/parent_form.html:311
+msgid "Key stage 2 (Years 3 to 6)"
+msgstr "کلیدی مرحلہ 2 (سال 3 سے 6)"
+
+#: submissions/models.py:106
+#: submissions/templates/submissions/child_form.html:311
+#: submissions/templates/submissions/parent_form.html:317
+msgid "Key stage 3 (Years 7 to 9)"
+msgstr "کلیدی مرحلہ 3 (سال 7 سے 9)"
+
+#: submissions/models.py:107
+#: submissions/templates/submissions/child_form.html:317
+#: submissions/templates/submissions/parent_form.html:323
+msgid "Key stage 4 (Years 10 & 11)"
+msgstr "کلیدی مرحلہ 4 (سال 10 اور 11)"
+
+#: submissions/models.py:108
+#: submissions/templates/submissions/child_form.html:323
+#: submissions/templates/submissions/parent_form.html:329
+msgid "Key stage 5 (Years 12 & 13)"
+msgstr "کلیدی مرحلہ 5 (سال 12 اور 13)"
+
+#: submissions/models.py:120
+#: submissions/templates/submissions/child_form.html:352
+#: submissions/templates/submissions/parent_form.html:358
+msgid "State funded school"
+msgstr "ریاستی مالی معاونت سے چلنے والے اسکول"
+
+#: submissions/models.py:121
+#: submissions/templates/submissions/child_form.html:359
+#: submissions/templates/submissions/parent_form.html:365
+msgid "Private school"
+msgstr "پرائیویٹ اسکول"
+
+#: submissions/models.py:122
+#: submissions/templates/submissions/child_form.html:366
+#: submissions/templates/submissions/parent_form.html:372
+msgid "Home schooled/educated"
+msgstr "گھر پر ہی اسکولنگ ہوئی/تعلیم حاصل کی"
+
+#: submissions/models.py:130
+#: submissions/templates/submissions/child_form.html:383
+#: submissions/templates/submissions/parent_form.html:389
+msgid "No, it was for other reasons"
+msgstr "نہیں، اس کی وجوہات دوسری تھیں"
+
+#: submissions/models.py:131
+#: submissions/templates/submissions/child_form.html:389
+#: submissions/templates/submissions/parent_form.html:395
+msgid "Partly, the diabetes diagnosis influenced my decision"
+msgstr "جزوی طور پر، ذیابیطس کی تشخیص میرے فیصلے پر اثرانداز ہوئی تھی"
+
+#: submissions/models.py:132
+#: submissions/templates/submissions/child_form.html:395
+#: submissions/templates/submissions/parent_form.html:401
+msgid "Yes, it was mainly because of the diabetes diagnosis"
+msgstr "جی ہاں، یہ بنیادی طور پر ذیابیطس کی تشخیص کی وجہ سے ہی تھا"
+
+#: submissions/models.py:141 submissions/models.py:152
+#: submissions/models.py:162 submissions/models.py:178
+#: submissions/models.py:292
+#: submissions/templates/submissions/_shared_questions.html:319
+#: submissions/templates/submissions/_shared_questions.html:369
+#: submissions/templates/submissions/_shared_questions.html:559
+#: submissions/templates/submissions/_shared_questions.html:653
+#: submissions/templates/submissions/child_form.html:418
+#: submissions/templates/submissions/child_form.html:459
+#: submissions/templates/submissions/parent_form.html:424
+#: submissions/templates/submissions/parent_form.html:466
+#: submissions/templates/submissions/parent_form.html:495
+#: submissions/templates/submissions/parent_form.html:530
+#: submissions/templates/submissions/parent_form.html:565
+msgid "Yes"
+msgstr "جی ہاں"
+
+#: submissions/models.py:142 submissions/models.py:153
+#: submissions/models.py:164 submissions/models.py:179
+#: submissions/models.py:293
+#: submissions/templates/submissions/_shared_questions.html:325
+#: submissions/templates/submissions/_shared_questions.html:375
+#: submissions/templates/submissions/_shared_questions.html:565
+#: submissions/templates/submissions/_shared_questions.html:659
+#: submissions/templates/submissions/child_form.html:424
+#: submissions/templates/submissions/child_form.html:465
+#: submissions/templates/submissions/parent_form.html:430
+#: submissions/templates/submissions/parent_form.html:472
+#: submissions/templates/submissions/parent_form.html:507
+#: submissions/templates/submissions/parent_form.html:536
+#: submissions/templates/submissions/parent_form.html:571
+msgid "No"
+msgstr "نہیں"
+
+#: submissions/models.py:143 submissions/models.py:154
+#: submissions/models.py:165 submissions/models.py:196
+#: submissions/models.py:207 submissions/models.py:279
+#: submissions/templates/submissions/_shared_questions.html:84
+#: submissions/templates/submissions/_shared_questions.html:130
+#: submissions/templates/submissions/_shared_questions.html:176
+#: submissions/templates/submissions/_shared_questions.html:222
+#: submissions/templates/submissions/_shared_questions.html:297
+#: submissions/templates/submissions/_shared_questions.html:331
+#: submissions/templates/submissions/_shared_questions.html:491
+#: submissions/templates/submissions/_shared_questions.html:531
+#: submissions/templates/submissions/_shared_questions.html:634
+#: submissions/templates/submissions/child_form.html:430
+#: submissions/templates/submissions/parent_form.html:436
+#: submissions/templates/submissions/parent_form.html:478
+#: submissions/templates/submissions/parent_form.html:513
+#: submissions/templates/submissions/parent_form.html:542
+#: submissions/templates/submissions/parent_form.html:668
+#: submissions/templates/submissions/parent_form.html:703
+msgid "I don't know"
+msgstr "میں نہیں جانتا/جانتی"
+
+#: submissions/models.py:163
+#: submissions/templates/submissions/parent_form.html:501
+msgid "Partially covers diabetes needs at school"
+msgstr "اسکول میں ذیابیطس کی ضروریات کو جزوی طور پر پورا کرتا ہے"
+
+#: submissions/models.py:193 submissions/models.py:204
+#: submissions/models.py:216
+#: submissions/templates/submissions/_shared_questions.html:26
+#: submissions/templates/submissions/_shared_questions.html:66
+#: submissions/templates/submissions/_shared_questions.html:112
+#: submissions/templates/submissions/_shared_questions.html:158
+#: submissions/templates/submissions/_shared_questions.html:204
+#: submissions/templates/submissions/_shared_questions.html:279
+#: submissions/templates/submissions/_shared_questions.html:513
+#: submissions/templates/submissions/parent_form.html:650
+#: submissions/templates/submissions/parent_form.html:685
+msgid "Yes, always"
+msgstr "ہاں، ہمیشہ"
+
+#: submissions/models.py:194 submissions/models.py:205
+#: submissions/models.py:217
+#: submissions/templates/submissions/_shared_questions.html:32
+#: submissions/templates/submissions/_shared_questions.html:72
+#: submissions/templates/submissions/_shared_questions.html:118
+#: submissions/templates/submissions/_shared_questions.html:164
+#: submissions/templates/submissions/_shared_questions.html:210
+#: submissions/templates/submissions/_shared_questions.html:285
+#: submissions/templates/submissions/_shared_questions.html:519
+#: submissions/templates/submissions/parent_form.html:656
+#: submissions/templates/submissions/parent_form.html:691
+msgid "Yes, sometimes"
+msgstr "ہاں، کبھی کبھار"
+
+#: submissions/models.py:195 submissions/models.py:206
+#: submissions/models.py:218
+#: submissions/templates/submissions/_shared_questions.html:38
+#: submissions/templates/submissions/_shared_questions.html:78
+#: submissions/templates/submissions/_shared_questions.html:124
+#: submissions/templates/submissions/_shared_questions.html:170
+#: submissions/templates/submissions/_shared_questions.html:216
+#: submissions/templates/submissions/_shared_questions.html:291
+#: submissions/templates/submissions/_shared_questions.html:525
+#: submissions/templates/submissions/parent_form.html:662
+#: submissions/templates/submissions/parent_form.html:697
+msgid "No, never"
+msgstr "نہیں، کبھی نہیں"
+
+#: submissions/models.py:208 submissions/models.py:219
+#: submissions/models.py:294 submissions/models.py:329
+#: submissions/templates/submissions/_shared_questions.html:44
+#: submissions/templates/submissions/_shared_questions.html:90
+#: submissions/templates/submissions/_shared_questions.html:136
+#: submissions/templates/submissions/_shared_questions.html:228
+#: submissions/templates/submissions/_shared_questions.html:537
+#: submissions/templates/submissions/_shared_questions.html:571
+#: submissions/templates/submissions/_shared_questions.html:665
+#: submissions/templates/submissions/_shared_questions.html:767
+#: submissions/templates/submissions/parent_form.html:709
+msgid "Not applicable"
+msgstr "قابل اطلاق نہیں"
+
+#: submissions/models.py:274 submissions/models.py:312
+#: submissions/templates/submissions/_shared_questions.html:461
+#: submissions/templates/submissions/_shared_questions.html:604
+#: submissions/templates/submissions/_shared_questions.html:687
+msgid "Never"
+msgstr "کبھی نہیں"
+
+#: submissions/models.py:275
+#: submissions/templates/submissions/_shared_questions.html:467
+#: submissions/templates/submissions/_shared_questions.html:610
+msgid "Rarely"
+msgstr "شاذ و نادر ہی"
+
+#: submissions/models.py:276
+#: submissions/templates/submissions/_shared_questions.html:473
+#: submissions/templates/submissions/_shared_questions.html:616
+msgid "Sometimes"
+msgstr "کبھی کبھار"
+
+#: submissions/models.py:277
+#: submissions/templates/submissions/_shared_questions.html:479
+#: submissions/templates/submissions/_shared_questions.html:622
+msgid "Often"
+msgstr "اکثر"
+
+#: submissions/models.py:278
+#: submissions/templates/submissions/_shared_questions.html:485
+#: submissions/templates/submissions/_shared_questions.html:628
+msgid "Always"
+msgstr "ہمیشہ"
+
+#: submissions/models.py:313
+#: submissions/templates/submissions/_shared_questions.html:693
+msgid "Less than once a week"
+msgstr "ہفتے میں ایک بار سے کم"
+
+#: submissions/models.py:314
+#: submissions/templates/submissions/_shared_questions.html:699
+msgid "Once or twice a week"
+msgstr "ہفتے میں ایک یا دو بار"
+
+#: submissions/models.py:315
+#: submissions/templates/submissions/_shared_questions.html:705
+msgid "Three or four times a week"
+msgstr "ہفتے میں تین یا چار بار"
+
+#: submissions/models.py:316
+#: submissions/templates/submissions/_shared_questions.html:711
+msgid "Every day of the week"
+msgstr "ہفتے کا ہر دن"
+
+#: submissions/models.py:324 submissions/models.py:337
+#: submissions/templates/submissions/_shared_questions.html:737
+#: submissions/templates/submissions/_shared_questions.html:788
+msgid "Very well supported"
+msgstr "بہت اچھی طرح سے مدد کی ہے"
+
+#: submissions/models.py:325 submissions/models.py:338
+#: submissions/templates/submissions/_shared_questions.html:743
+#: submissions/templates/submissions/_shared_questions.html:794
+msgid "Well supported"
+msgstr "اچھی طرح سے مدد کی ہے"
+
+#: submissions/models.py:326 submissions/models.py:339
+#: submissions/templates/submissions/_shared_questions.html:749
+#: submissions/templates/submissions/_shared_questions.html:800
+msgid "Neutral"
+msgstr "غیر جانبدار"
+
+#: submissions/models.py:327 submissions/models.py:340
+#: submissions/templates/submissions/_shared_questions.html:755
+#: submissions/templates/submissions/_shared_questions.html:806
+msgid "Poorly supported"
+msgstr "ناقص طریقے سے مدد کی ہے"
+
+#: submissions/models.py:328 submissions/models.py:341
+#: submissions/templates/submissions/_shared_questions.html:761
+#: submissions/templates/submissions/_shared_questions.html:812
+msgid "Very poorly supported"
+msgstr "بہت ناقص طریقے سے مدد کی ہے"
+
+#: submissions/templates/submissions/_shared_questions.html:16
+msgid ""
+"21. If your child uses a smartphone or smartwatch to manage their diabetes, "
+"are they able to use it during lesson time at school?"
+msgstr "اگر آپ کا بچہ اپنی ذیابیطس کے انتظام کے لیے اسمارٹ فون یا اسمارٹ واچ استعمال کرتا ہے، تو کیا وہ اسکول میں اسباق کے دوران اسے استعمال کر سکتا ہے؟"
+
+#: submissions/templates/submissions/_shared_questions.html:18
+msgid ""
+"21. If you use a smartphone or smartwatch to manage your diabetes, are you "
+"able to use it during lesson time at school?"
+msgstr "21. اگر آپ اپنی ذیابیطس کے انتظام کے لیے اسمارٹ فون یا اسمارٹ واچ استعمال کرتے ہیں، تو کیا آپ اسکول میں اسباق کے دوران اسے استعمال کر سکتے ہیں؟"
+
+#: submissions/templates/submissions/_shared_questions.html:55
+msgid ""
+"22. Is your child offered a private room at school for diabetes care, even "
+"if they don't use it?"
+msgstr "22. کیا آپ کے بچے کو ذیابیطس کی دیکھ بھال کے لیے اسکول میں ایک نجی کمرہ پیش کیا جاتا ہے، چاہے وہ اسے استعمال نہ بھی کرتے ہوں؟"
+
+#: submissions/templates/submissions/_shared_questions.html:57
+msgid ""
+"22. Are you offered a private room at school for diabetes care, even if you "
+"don't use it?"
+msgstr "22. کیا آپ کو ذیابیطس کی دیکھ بھال کے لیے اسکول میں ایک نجی کمرہ پیش کیا جاتا ہے، چاہے آپ اسے استعمال نہ بھی کرتے ہوں؟"
+
+#: submissions/templates/submissions/_shared_questions.html:60
+msgid ""
+"E.g. For administering insulin, checking blood glucose, changing pump set, "
+"or anything else related to diabetes care"
+msgstr "مثلاً انسولین کے انتظام، خون میں گلوکوز کی جانچ، پمپ سیٹ تبدیل کرنے، یا ذیابیطس کی دیکھ بھال سے متعلق کسی اور چیز کے لیے"
+
+#: submissions/templates/submissions/_shared_questions.html:101
+msgid ""
+"23. Is your child allowed to manage diabetes in the classroom if required?"
+msgstr "23. ضرورت پڑنے پر کیا آپ کے بچے کو کلاس روم میں ذیابیطس کا انتظام کرنے کی اجازت ہوتی ہے؟"
+
+#: submissions/templates/submissions/_shared_questions.html:103
+msgid "23. Are you allowed to manage diabetes in the classroom if required?"
+msgstr "23. اگر ضرورت ہو تو کیا آپ کو کلاس روم میں ذیابیطس کا انتظام کرنے کی اجازت ہے؟"
+
+#: submissions/templates/submissions/_shared_questions.html:106
+msgid "This includes checking blood glucose or giving insulin."
+msgstr "اس میں خون میں گلوکوز کی جانچ یا انسولین دینا شامل ہے۔"
+
+#: submissions/templates/submissions/_shared_questions.html:147
+msgid ""
+"24. Is there a trained member of staff at school who can help your child "
+"with diabetes management?"
+msgstr "24. کیا اسکول میں عملے کا کوئی ایسا تربیت یافتہ رکن ہے جو ذیابیطس کے انتظام میں آپ کے بچے کی مدد کر سکتا ہو؟"
+
+#: submissions/templates/submissions/_shared_questions.html:149
+msgid ""
+"24. Is there a trained member of staff at school who can help you with "
+"diabetes management?"
+msgstr "24. کیا اسکول میں عملے کا کوئی تربیت یافتہ رکن ہے جو ذیابیطس کے انتظام میں آپ کی مدد کر سکتا ہے؟"
+
+#: submissions/templates/submissions/_shared_questions.html:152
+msgid ""
+"This includes checking blood glucose, administering insulin, and providing "
+"support in emergencies. This training should be provided by the diabetes "
+"team."
+msgstr "اس میں خون میں گلوکوز کی جانچ، انسولین لگانا اور ہنگامی حالات میں مدد فراہم کرنا شامل ہے۔ یہ تربیت ذیابیطس ٹیم کو فراہم کرنی چاہیئے۔"
+
+#: submissions/templates/submissions/_shared_questions.html:187
+msgid ""
+"25. Does your child's school provide enough information about school meals "
+"for carb-counting?"
+msgstr "25. کیا آپ کے بچے کا اسکول کارب کی گنتی کے لیے اسکول کے کھانوں کے بارے میں کافی معلومات فراہم کرتا ہے؟"
+
+#: submissions/templates/submissions/_shared_questions.html:189
+msgid ""
+"25. Does your school provide enough information about school meals for carb-"
+"counting?"
+msgstr "25. کیا آپ کا اسکول کارب کی گنتی کے لیے اسکول کے کھانوں کے بارے میں کافی معلومات فراہم کرتا ہے؟"
+
+#: submissions/templates/submissions/_shared_questions.html:194
+msgid ""
+"This includes information about carbohydrate content and portion sizes to "
+"help your child adjust insulin to match."
+msgstr "اس میں کاربوہائیڈریٹ کے مواد اور پورشن کے سائز کے بارے میں معلومات شامل ہوتی ہیں تاکہ آپ کے بچے کو مماثل بنانے کے لیے انسولین کم یا زیادہ کرنے میں مدد ملے۔"
+
+#: submissions/templates/submissions/_shared_questions.html:196
+msgid ""
+"This includes information about carbohydrate content and portion sizes to "
+"help you adjust insulin to match."
+msgstr "اس میں کاربوہائیڈریٹ کے مواد اور پورشن کے سائز کے بارے میں معلومات شامل ہوتی ہیں تاکہ آپ کو مماثل بنانے کے لیے انسولین کم یا زیادہ کرنے میں مدد ملے۔"
+
+#: submissions/templates/submissions/_shared_questions.html:237
+msgid "Impact on Education"
+msgstr "تعلیم پر اثر"
+
+#: submissions/templates/submissions/_shared_questions.html:240
+msgid ""
+"This section asks about how your child's diabetes impacts their education."
+msgstr "یہ سیکشن اس بارے میں پوچھتا ہے کہ آپ کے بچے کی ذیابیطس اس کی تعلیم کو کیسے متاثر کرتی ہے۔"
+
+#: submissions/templates/submissions/_shared_questions.html:242
+msgid "This section asks about how your diabetes impacts your education."
+msgstr "یہ سیکشن اس بارے میں پوچھتا ہے کہ آپ کی ذیابیطس آپ کی تعلیم کو کیسے متاثر کرتی ہے۔"
+
+#: submissions/templates/submissions/_shared_questions.html:251
+msgid ""
+"26. In the past year, how many times has your child missed one or more "
+"lessons in any given day to attend diabetes-related hospital appointments?"
+msgstr "26. پچھلے سال میں، آپ کے بچے نے کتنی مرتبہ ذیابیطس سے متعلقہ ہسپتال کی اپوائنٹمنٹس میں شرکت کے لیے کسی دن میں ایک یا زیادہ اسباق چھوڑے ہیں؟"
+
+#: submissions/templates/submissions/_shared_questions.html:253
+msgid ""
+"26. In the past year, how many times have you missed one or more lessons in "
+"any given day to attend diabetes-related hospital appointments?"
+msgstr "26. پچھلے سال میں، آپ نے کتنی مرتبہ ذیابیطس سے متعلقہ ہسپتال کی اپوائنٹمنٹس میں شرکت کے لیے کسی دن میں ایک یا زیادہ اسباق چھوڑے ہیں؟"
+
+#: submissions/templates/submissions/_shared_questions.html:256
+msgid ""
+"This could include routine appointments for the diabetes clinic or other "
+"appointments with a PDSN, dietitian, psychologist etc. (not inpatient "
+"hospital stays)"
+msgstr "اس میں ذیابیطس کے کلینک کے لیے معمول کی اپوائنٹمنٹس یا PDSN، ماہرِ غذائیت، ماہرِ نفسیات وغیرہ کے ساتھ دیگر اپوائنٹمنٹس شامل ہو سکتی ہیں (ہسپتال میں داخلے کا دورانیہ نہیں)"
+
+#: submissions/templates/submissions/_shared_questions.html:268
+msgid ""
+"27. Are your child's absences for diabetes-related appointments authorised "
+"by their school?"
+msgstr "27. کیا آپ کے بچے کی ذیابیطس سے متعلقہ اپوائنٹمنٹس کے لیے غیر حاضری کو اس کے اسکول کی طرف سے مجاز قرار دیا جاتا ہے؟"
+
+#: submissions/templates/submissions/_shared_questions.html:270
+msgid ""
+"27. Are your absences for diabetes-related appointments authorised by your "
+"school?"
+msgstr "27. کیا آپ کی ذیابیطس سے متعلقہ اپوائنٹمنٹس کے لیے غیر حاضری کو آپ کے اسکول کی طرف سے مجاز قرار دیا جاتا ہے؟"
+
+#: submissions/templates/submissions/_shared_questions.html:273
+msgid ""
+"School absences due to health appointments should not be classed as "
+"unauthorised."
+msgstr "صحت سے متعلق اپوائنٹمنٹس کی وجہ سے اسکول کی غیر حاضریوں کو غیر مجاز قرار نہیں دیا جانا چاہیئے۔"
+
+#: submissions/templates/submissions/_shared_questions.html:308
+msgid ""
+"28. Has your child's school attendance records been negatively impacted by "
+"attending diabetes clinic appointments?"
+msgstr "28. کیا ذیابیطس کے کلینک کی اپوائنٹمنٹس میں شرکت سے آپ کے بچے کے اسکول میں حاضری کے ریکارڈ پر منفی اثر پڑا ہے؟"
+
+#: submissions/templates/submissions/_shared_questions.html:310
+msgid ""
+"28. Has your school attendance records been negatively impacted by attending "
+"diabetes clinic appointments?"
+msgstr "28. کیا ذیابیطس کے کلینک کی اپوائنٹمنٹس میں شرکت سے آپ کے اسکول میں حاضری کے ریکارڈ پر منفی اثر پڑا ہے؟"
+
+#: submissions/templates/submissions/_shared_questions.html:313
+msgid ""
+"School absences due to attending health appointments should not reduce the "
+"percentage attendance."
+msgstr "صحت سے متعلق اپوائنٹمنٹس میں شرکت کی وجہ سے اسکول کی غیر حاضریوں کو حاضری کا فیصد کم نہیں کرنا چاہیئے۔"
+
+#: submissions/templates/submissions/_shared_questions.html:342
+msgid ""
+"29. In the past year, how many days has your child had off school/home "
+"education because of illness related to their diabetes?"
+msgstr "29. پچھلے سال میں، آپ کے بچے کی ذیابیطس سے متعلق بیماری کی وجہ سے اسکول میں / گھر پر تعلیم سے کتنے دن چھٹی ہوئی؟"
+
+#: submissions/templates/submissions/_shared_questions.html:344
+msgid ""
+"29. In the past year, how many days have you had off school/home education "
+"because of illness related to your diabetes?"
+msgstr "29. پچھلے سال میں، آپ کی ذیابیطس سے متعلق بیماری کی وجہ سے اسکول میں / گھر پر تعلیم سے کتنے دن چھٹی ہوئی؟"
+
+#: submissions/templates/submissions/_shared_questions.html:347
+msgid ""
+"This could include staying off school at home or include a hospital admission"
+msgstr "اس میں اسکول سے چھٹی کر کے گھر پر رہنا یا اسپتال میں داخلہ شامل ہوسکتا ہے"
+
+#: submissions/templates/submissions/_shared_questions.html:359
+msgid ""
+"30. Has your child ever had to move schools due to difficulties in managing "
+"their diabetes?"
+msgstr "30. کیا آپ کے بچے کو اپنی ذیابیطس کے انتظام میں مشکلات کی وجہ سے کبھی اسکول بدلنا پڑا ہے؟"
+
+#: submissions/templates/submissions/_shared_questions.html:361
+msgid ""
+"30. Have you ever had to move schools due to difficulties in managing your "
+"diabetes?"
+msgstr "30. کیا آپ کو اپنی ذیابیطس کے انتظام میں مشکلات کی وجہ سے کبھی اسکول بدلنا پڑا ہے؟"
+
+#: submissions/templates/submissions/_shared_questions.html:386
+msgid ""
+"31. Has your child ever been excluded from any of the below activities "
+"because of their diabetes?"
+msgstr "31. کیا آپ کے بچے کو اپنی ذیابیطس کی وجہ سے کبھی بھی اسکول کی ذیل میں سے کسی ایک سرگرمی سے خارج کیا گیا ہے؟"
+
+#: submissions/templates/submissions/_shared_questions.html:388
+msgid ""
+"31. Have you ever been excluded from any of the below activities because of "
+"your diabetes?"
+msgstr "31. کیا آپ کو اپنی ذیابیطس کی وجہ سے کبھی بھی اسکول کی ذیل میں سے کسی ایک سرگرمی سے خارج کیا گیا ہے؟"
+
+#: submissions/templates/submissions/_shared_questions.html:391
+#: submissions/templates/submissions/child_form.html:477
+#: submissions/templates/submissions/child_form.html:508
+#: submissions/templates/submissions/parent_form.html:583
+#: submissions/templates/submissions/parent_form.html:614
+msgid "Select all that apply"
+msgstr "ان سب کو منتخب کریں جن کا اطلاق ہوتا ہے"
+
+#: submissions/templates/submissions/_shared_questions.html:398
+msgid "Lessons (e.g. PE, food tech)"
+msgstr "اسباق (مثلاً PE، فوڈ ٹیک)"
+
+#: submissions/templates/submissions/_shared_questions.html:404
+msgid "Sports clubs"
+msgstr "اسپورٹس کلب"
+
+#: submissions/templates/submissions/_shared_questions.html:410
+msgid "School day trips"
+msgstr "اسکول کے دن کے ٹرپ"
+
+#: submissions/templates/submissions/_shared_questions.html:416
+msgid "Overnight/Residential school trips"
+msgstr "اسکول کے رات گزارنے والے / رہائشی ٹرپ"
+
+#: submissions/templates/submissions/_shared_questions.html:422
+msgid "Parties/celebrations"
+msgstr "پارٹیاں/جشن"
+
+#: submissions/templates/submissions/_shared_questions.html:434
+msgid "None of the above"
+msgstr "مندرجہ بالا میں سے کوئی بھی نہیں"
+
+#: submissions/templates/submissions/_shared_questions.html:439
+#: submissions/templates/submissions/child_form.html:334
+#: submissions/templates/submissions/parent_form.html:340
+msgid "Please specify"
+msgstr "براہ کرم وضاحت کریں"
+
+#: submissions/templates/submissions/_shared_questions.html:451
+msgid ""
+"32. Do you feel that your child's diabetes affects their performance in "
+"school/home education?"
+msgstr "32. کیا آپ محسوس کرتے ہیں کہ آپ کے بچے کی ذیابیطس اسکول میں / گھر پر تعلیم میں اس کی کارکردگی کو متاثر کرتی ہے؟"
+
+#: submissions/templates/submissions/_shared_questions.html:453
+msgid ""
+"32. Do you feel that your diabetes affects your performance in school/home "
+"education?"
+msgstr "32. کیا آپ محسوس کرتے ہیں کہ آپ کی ذیابیطس اسکول میں / گھر پر تعلیم میں آپ کی کارکردگی کو متاثر کرتی ہے؟"
+
+#: submissions/templates/submissions/_shared_questions.html:502
+msgid ""
+"33. Do your child's teachers have a good understanding of how diabetes can "
+"affect learning?"
+msgstr "33. کیا آپ کے بچے کے اساتذہ کو اس بات کی اچھی سمجھ ہے کہ ذیابیطس سیکھنے کو کیسے متاثر کر سکتی ہے؟"
+
+#: submissions/templates/submissions/_shared_questions.html:504
+msgid ""
+"33. Do your teachers have a good understanding of how diabetes can affect "
+"learning?"
+msgstr "33. کیا آپ کے اساتذہ کو اس بات کی اچھی سمجھ ہے کہ ذیابیطس سیکھنے کو کیسے متاثر کر سکتی ہے؟"
+
+#: submissions/templates/submissions/_shared_questions.html:507
+msgid ""
+"E.g. When blood glucose is too high or low, it may affect concentration or "
+"memory."
+msgstr "مثال کے طور پر جب خون میں گلوکوز بہت زیادہ یا کم ہو تو یہ ارتکاز یا یادداشت کو متاثر کر سکتا ہے۔"
+
+#: submissions/templates/submissions/_shared_questions.html:548
+msgid ""
+"34. Has your child ever been offered any reasonable adjustments because of "
+"their diabetes?"
+msgstr "34. کیا آپ کے بچے کو اس کی ذیابیطس کی وجہ سے کبھی کسی معقول ایڈجسٹمنٹ کی پیشکش کی گئی ہے؟"
+
+#: submissions/templates/submissions/_shared_questions.html:550
+msgid ""
+"34. Have you ever been offered any reasonable adjustments because of your "
+"diabetes?"
+msgstr "34. کیا آپ کو آپ کی ذیابیطس کی وجہ سے کبھی کسی معقول ایڈجسٹمنٹ کی پیشکش کی گئی ہے؟"
+
+#: submissions/templates/submissions/_shared_questions.html:553
+msgid ""
+"(e.g. additional time in exams, snacks or drinks during class, fast passes "
+"for lunch queues)"
+msgstr "(مثلاً امتحانات میں اضافی وقت، کلاس کے دوران اسنیکس یا مشروبات، دوپہر کے کھانے کی قطاروں کے لیے تیز رفتار پاس)"
+
+#: submissions/templates/submissions/_shared_questions.html:580
+msgid "Social and Emotional Impact"
+msgstr "سماجی اور جذباتی اثرات"
+
+#: submissions/templates/submissions/_shared_questions.html:583
+msgid ""
+"This section asks about how your child's diabetes impacts their wellbeing at "
+"school."
+msgstr "یہ سیکشن اس بارے میں پوچھتا ہے کہ آپ کے بچے کی ذیابیطس اسکول میں اس کی بہبود کو کیسے متاثر کرتی ہے۔"
+
+#: submissions/templates/submissions/_shared_questions.html:585
+msgid ""
+"This section asks about how your diabetes impacts your wellbeing at school."
+msgstr "یہ سیکشن اس بارے میں پوچھتا ہے کہ آپ کی ذیابیطس اسکول میں آپ کی بہبود کو کیسے متاثر کرتی ہے۔"
+
+#: submissions/templates/submissions/_shared_questions.html:594
+msgid ""
+"35. Has your child ever felt left out or treated differently by other "
+"students or staff members because of their diabetes?"
+msgstr "35. کیا آپ کے بچے نے کبھی ایسا محسوس کیا ہے کہ اس کی ذیابیطس کی وجہ سے دوسرے طالب علموں یا عملے کے ارکان نے اسے مسترد کیا ہو یا اس سے مختلف سلوک کیا ہو؟"
+
+#: submissions/templates/submissions/_shared_questions.html:596
+msgid ""
+"35. Have you ever felt left out or treated differently by other students or "
+"staff members because of your diabetes?"
+msgstr "35. کیا آپ نے کبھی ایسا محسوس کیا ہے کہ آپ کی ذیابیطس کی وجہ سے دوسرے طالب علموں یا عملے کے ارکان نے آپ کو مسترد کیا ہو یا آپ سے مختلف سلوک کیا ہو؟"
+
+#: submissions/templates/submissions/_shared_questions.html:645
+msgid ""
+"36. Have you ever lost income due to taking time off work to attend your "
+"child's school for diabetes care?"
+msgstr "36. کیا آپ نے ذیابیطس کی دیکھ بھال کے لیے اپنے بچے کے اسکول جانے کے لیے کام سے وقت نکالنے کی وجہ سے کبھی آمدنی کا نقصان اٹھایا ہے؟"
+
+#: submissions/templates/submissions/_shared_questions.html:647
+msgid ""
+"E.g. Attending your child's school for diabetes management or your child "
+"being sent home because of diabetes-related illness."
+msgstr "مثلاً ذیابیطس کے انتظام کے لیے اپنے بچے کے اسکول میں جانا پڑے یا آپ کے بچے کو ذیابیطس سے متعلقہ بیماری کی وجہ سے گھر بھیجا جائے۔"
+
+#: submissions/templates/submissions/_shared_questions.html:677
+msgid ""
+"37. How often do you feel anxiety or stress related to your child's diabetes "
+"while they're at school?"
+msgstr "37. جب آپ کا بچہ اسکول میں ہوتا ہے تو آپ اس کی ذیابیطس سے متعلق کتنی کثرت سے اضطراب یا تناؤ محسوس کرتے ہیں؟"
+
+#: submissions/templates/submissions/_shared_questions.html:679
+msgid ""
+"37. How often do you feel anxiety or stress related to your diabetes while "
+"you're at school?"
+msgstr "37. جب آپ اسکول میں ہوتے ہیں تو آپ اپنی ذیابیطس سے متعلق کتنی کثرت سے اضطراب یا تناؤ محسوس کرتے ہیں؟"
+
+#: submissions/templates/submissions/_shared_questions.html:720
+msgid "And finally…"
+msgstr "اور آخر میں…"
+
+#: submissions/templates/submissions/_shared_questions.html:727
+msgid ""
+"38. How well has your school supported you to manage your child's diabetes "
+"safely alongside their education?"
+msgstr "38. آپ کے اسکول نے آپ کے بچے کی تعلیم کے ساتھ ساتھ اس کی ذیابیطس کا محفوظ طریقے سے انتظام کرنے میں آپ کی کتنی مدد کی ہے؟"
+
+#: submissions/templates/submissions/_shared_questions.html:729
+msgid ""
+"38. How well has your school supported you to manage your diabetes safely "
+"alongside your education?"
+msgstr "38. آپ کے اسکول نے آپ کی تعلیم کے ساتھ ساتھ آپ کی ذیابیطس کا محفوظ طریقے سے انتظام کرنے میں آپ کی کتنی مدد کی ہے؟"
+
+#: submissions/templates/submissions/_shared_questions.html:778
+msgid ""
+"39. How well has your diabetes team supported you to manage your child's "
+"diabetes safely alongside their education?"
+msgstr "39. آپ کی ذیابیطس ٹیم نے آپ کے بچے کی تعلیم کے ساتھ ساتھ اس کی ذیابیطس کا محفوظ طریقے سے انتظام کرنے میں آپ کی کتنی مدد کی ہے؟"
+
+#: submissions/templates/submissions/_shared_questions.html:780
+msgid ""
+"39. How well has your diabetes team supported you to manage your diabetes "
+"safely alongside your education?"
+msgstr "39. آپ کی ذیابیطس ٹیم نے آپ کی تعلیم کے ساتھ ساتھ آپ کی ذیابیطس کا محفوظ طریقے سے انتظام کرنے میں آپ کی کتنی مدد کی ہے؟"
+
+#: submissions/templates/submissions/_shared_questions.html:822
+msgid "40. What has worked well?"
+msgstr "40. کیا فائدہ مند رہا ہے؟"
+
+#: submissions/templates/submissions/_shared_questions.html:826
+msgid ""
+"What has been helpful about the support your child has at school to manage "
+"their diabetes?"
+msgstr "اپنی ذیابیطس کا انتظام کرنے کے لیے اسکول میں آپ کے بچے کو جو مدد ملتی ہے اس کے بارے میں کیا مددگار ثابت ہوا ہے؟"
+
+#: submissions/templates/submissions/_shared_questions.html:828
+msgid ""
+"What has been helpful about the support you have at school to manage your "
+"diabetes?"
+msgstr "اپنی ذیابیطس کا انتظام کرنے کے لیے اسکول میں آپ کو جو مدد ملتی ہے اس کے بارے میں کیا مددگار ثابت ہوا ہے؟"
+
+#: submissions/templates/submissions/_shared_questions.html:840
+msgid "41. What hasn't worked well?"
+msgstr "41. کیا فائدہ مند نہیں رہا ہے؟"
+
+#: submissions/templates/submissions/_shared_questions.html:844
+msgid ""
+"What difficulties have you faced in managing your child's diabetes at school?"
+msgstr "اسکول میں اپنے بچے کی ذیابیطس کا انتظام کرنے میں آپ کو کن مشکلات کا سامنا کرنا پڑا ہے؟"
+
+#: submissions/templates/submissions/_shared_questions.html:846
+msgid "What difficulties have you faced in managing your diabetes at school?"
+msgstr "اسکول میں اپنی ذیابیطس کا انتظام کرنے میں آپ کو کن مشکلات کا سامنا کرنا پڑا ہے؟"
+
+#: submissions/templates/submissions/_shared_questions.html:859
+msgid ""
+"42. What could your school or diabetes team do differently to improve your "
+"child's experience?"
+msgstr "42. آپ کا اسکول یا ذیابیطس ٹیم آپ کے بچے کے تجربے کو بہتر بنانے کے لیے کون سا مختلف طریقہ اختیار کر سکتے ہیں؟"
+
+#: submissions/templates/submissions/_shared_questions.html:861
+msgid ""
+"42. What could your school or diabetes team do differently to improve your "
+"experience?"
+msgstr "42. آپ کا اسکول یا ذیابیطس ٹیم آپ کے تجربے کو بہتر بنانے کے لیے کون سا مختلف طریقہ اختیار کر سکتے ہیں؟"
+
+#: submissions/templates/submissions/_shared_questions.html:874
+msgid "Start again"
+msgstr "دوبارہ شروع کریں"
+
+#: submissions/templates/submissions/_shared_questions.html:879
+msgid "Submit"
+msgstr "جمع کرائیں"
+
+#: submissions/templates/submissions/child_form.html:10
+#: submissions/templates/submissions/form.html:10
+#: submissions/templates/submissions/parent_form.html:10
+msgid "Go back"
+msgstr "واپس جائیں"
+
+#: submissions/templates/submissions/child_form.html:14
+msgid "Young person survey"
+msgstr "نوجوان کا سروے"
+
+#: submissions/templates/submissions/child_form.html:15
+msgid ""
+"Please answer the following questions about your experience at school since "
+"being diagnosed with diabetes."
+msgstr "براہ کرم ذیابیطس کی تشخیص ہونے کے بعد سے اسکول میں اپنے تجربے کے بارے میں درج ذیل سوالات کے جواب دیں۔"
+
+#: submissions/templates/submissions/child_form.html:25
+#: submissions/templates/submissions/parent_form.html:25
+msgid "Demographics"
+msgstr "آبادیات"
+
+#: submissions/templates/submissions/child_form.html:26
+#: submissions/templates/submissions/parent_form.html:26
+msgid ""
+"We'd like to know a bit more about you so we can tailor our questions. We "
+"will also use this information to understand if children and young people "
+"with diabetes from different backgrounds have different experiences at "
+"school. All questions in this section are mandatory, but you may select "
+"'Prefer not to say' for some."
+msgstr "ہم آپ کے بارے میں کچھ مزید جاننا چاہیں گے تاکہ ہم اپنے سوالات کو آپ کے مطابق بنا سکیں۔ ہم اس معلومات کو یہ سمجھنے کے لیے بھی استعمال کریں گے کہ آیا مختلف پس منظر سے تعلق رکھنے والے ذیابیطس کے شکار بچوں اور نوجوانوں کے اسکول میں تجربات مختلف ہوتے ہیں۔ اس سیکشن میں تمام سوالات لازمی ہیں، لیکن آپ کچھ کے لیے 'نہ کہنے کو ترجیح دیتے/دیتی ہیں' منتخب کر سکتے ہیں۔"
+
+#: submissions/templates/submissions/child_form.html:32
+#: submissions/templates/submissions/parent_form.html:32
+msgid "1. Please select the region where your diabetes clinic is located."
+msgstr "1. براہ کرم وہ علاقہ منتخب کریں جہاں آپ کا ذیابیطس کلینک واقع ہے۔"
+
+#: submissions/templates/submissions/child_form.html:34
+#: submissions/templates/submissions/parent_form.html:34
+msgid "Ask your diabetes team if you are unsure."
+msgstr "اگر آپ پریقین نہیں ہیں تو اپنی ذیابیطس ٹیم سے پوچھیں۔"
+
+#: submissions/templates/submissions/child_form.html:115
+#: submissions/templates/submissions/parent_form.html:115
+msgid ""
+"2. Please select the hospital where the diabetes clinic that you currently "
+"attend is normally held."
+msgstr "2. براہ کرم وہ ہسپتال منتخب کریں جہاں ذیابیطس کا وہ کلینک عام طور پر منعقد کیا جاتا ہے جس میں آپ موجودہ طور پر جاتے ہیں۔"
+
+#: submissions/templates/submissions/child_form.html:117
+#: submissions/templates/submissions/parent_form.html:117
+msgid ""
+"List of clinics depends on region selected above. Please type the name for "
+"now."
+msgstr "کلینکس کی فہرست، علاقے کے لحاظ سے۔ براہ کرم ابھی نام ٹائپ کریں۔"
+
+#: submissions/templates/submissions/child_form.html:128
+msgid "4. Are you a…"
+msgstr "4. کیا آپ…"
+
+#: submissions/templates/submissions/child_form.html:163
+msgid "6. What type of diabetes do you have?"
+msgstr "6. آپ کو کس قسم کی ذیابیطس ہے؟"
+
+#: submissions/templates/submissions/child_form.html:192
+msgid "7. At what age were you diagnosed with diabetes?"
+msgstr "7. آپ کو کس عمر میں ذیابیطس کی تشخیص ہوئی؟"
+
+#: submissions/templates/submissions/child_form.html:233
+msgid "8. Which of the following best describes your ethnicity?"
+msgstr "8. درج ذیل میں سے کیا آپ کی نسل کی بہترین وضاحت کرتا ہے؟"
+
+#: submissions/templates/submissions/child_form.html:280
+msgid "9. What stage of education are you in?"
+msgstr "9. آپ تعلیم کے کس مرحلے میں ہیں؟"
+
+#: submissions/templates/submissions/child_form.html:345
+msgid "10. Which type of school or education do you attend?"
+msgstr "10. آپ کس قسم کے اسکول میں جاتے یا کون سی تعلیم حاصل کرتے ہیں؟"
+
+#: submissions/templates/submissions/child_form.html:353
+#: submissions/templates/submissions/parent_form.html:359
+msgid ""
+"These are schools where you do not have to pay to attend. This includes "
+"academies, colleges, and grammar schools."
+msgstr "یہ وہ اسکول ہیں جہاں آپ کو حصول تعلیم کے لیے ادائیگی نہیں کرنی پڑتی ہے۔ ان میں اکیڈیمیاں، کالج اور گرامر اسکول شامل ہیں۔"
+
+#: submissions/templates/submissions/child_form.html:360
+#: submissions/templates/submissions/parent_form.html:366
+msgid ""
+"These are schools that charge fees to attend. Please select this even if you "
+"have received a scholarship or bursary."
+msgstr "یہ وہ اسکول ہیں جو تعلیم دینے کے لیے فیس لیتے ہیں۔ براہ کرم اسے منتخب کریں چاہے آپ نے اسکالرشپ یا برسری حاصل کی ہو۔"
+
+#: submissions/templates/submissions/child_form.html:376
+msgid ""
+"11. Was the decision to home educate related to your diabetes diagnosis?"
+msgstr "11. کیا گھر پر تعلیم دینے کا فیصلہ آپ کی ذیابیطس کی تشخیص سے متعلق تھا؟"
+
+#: submissions/templates/submissions/child_form.html:411
+msgid "12. Are you eligible for free school meals?"
+msgstr "12. کیا آپ اسکول کے مفت کھانے کے اہل ہیں؟"
+
+#: submissions/templates/submissions/child_form.html:445
+#: submissions/templates/submissions/parent_form.html:551
+msgid "Managing Diabetes"
+msgstr "ذیابیطس کا انتظام"
+
+#: submissions/templates/submissions/child_form.html:446
+msgid ""
+"This section asks about your diabetes treatment. We will use this "
+"information to see if children and young people using different diabetes "
+"technologies have different experiences at school."
+msgstr "یہ سیکشن آپ کے ذیابیطس کے علاج کے بارے میں پوچھتا ہے۔ ہم ان معلومات کو یہ دیکھنے کے لیے استعمال کریں گے کہ آیا ذیابیطس کی مختلف ٹیکنالوجیز استعمال کرنے والے بچوں اور نوجوانوں کے اسکول میں تجربات مختلف ہوتے ہیں۔"
+
+#: submissions/templates/submissions/child_form.html:452
+msgid ""
+"16. Do you need to administer insulin or monitor blood glucose to manage "
+"your diabetes when in school?"
+msgstr "16. کیا آپ کو اسکول میں اپنی ذیابیطس کا انتظام کرنے کے لیے انسولین لگانے یا خون میں گلوکوز کی نگرانی کرنے کی ضرورت ہوتی ہے؟"
+
+#: submissions/templates/submissions/child_form.html:475
+msgid "17. How do you administer insulin in school?"
+msgstr "17. آپ اسکول میں انسولین کیسے لگاتے ہیں؟"
+
+#: submissions/templates/submissions/child_form.html:484
+#: submissions/templates/submissions/parent_form.html:590
+msgid "Injection/Smart insulin pen – e.g. Novopen, InPen"
+msgstr "انجیکشن/اسمارٹ انسولین قلم – جیسے نووو پین ، ان پین"
+
+#: submissions/templates/submissions/child_form.html:490
+#: submissions/templates/submissions/parent_form.html:596
+msgid ""
+"Insulin pump (including as part of a Hybrid Closed Loop system) – e.g. "
+"Omnipod, MiniMed, Tandem"
+msgstr "انسولین پمپ (بشمول ایک ہائبرڈ کلوزڈ لوپ سسٹم کے حصے کے طور پر) – جیسے اومنی پوڈ ، منی میڈ ، ٹینڈم"
+
+#: submissions/templates/submissions/child_form.html:496
+msgid "N/A – I do not administer insulin in school"
+msgstr "N/A – میں اسکول میں انسولین نہیں لگاتا/لگاتی"
+
+#: submissions/templates/submissions/child_form.html:506
+msgid "18. How do you monitor blood glucose levels in school?"
+msgstr "18. آپ اسکول میں خون میں گلوکوز کی سطح کو کیسے مانیٹر کرتے ہیں؟"
+
+#: submissions/templates/submissions/child_form.html:515
+#: submissions/templates/submissions/parent_form.html:621
+msgid "Finger prick testing"
+msgstr "انگلی میں سوئی چبھو کر جانچ"
+
+#: submissions/templates/submissions/child_form.html:521
+#: submissions/templates/submissions/parent_form.html:627
+msgid ""
+"Continuous glucose monitor (including as part of a Hybrid Closed Loop "
+"system) e.g. Dexcom, FreeStyle Libre 2 Plus or 3 Plus"
+msgstr "مسلسل گلوکوز مانیٹر (بشمول ایک ہائبرڈ کلوزڈ لوپ سسٹم کے حصے کے طور پر) جیسے ڈیکس کام ، فری اسٹائل لائبر 2 پلس یا 3 پلس"
+
+#: submissions/templates/submissions/child_form.html:527
+msgid "N/A – I do not monitor blood glucose at school"
+msgstr "N/A – میں اسکول میں گلوکوز کی سطح کو مانیٹر نہیں کرتا/کرتی"
+
+#: submissions/templates/submissions/confirmation.html:7
+msgid "Survey submitted"
+msgstr "سروے جمع ہو گیا"
+
+#: submissions/templates/submissions/confirmation.html:10
+msgid "Thank you for sharing your experience."
+msgstr "اپنا تجربہ شیئر کرنے کا شکریہ۔"
+
+#: submissions/templates/submissions/confirmation.html:14
+msgid "What happens next"
+msgstr "اب آگے کیا ہوتا ہے"
+
+#: submissions/templates/submissions/confirmation.html:15
+msgid ""
+"Your feedback helps us improve diabetes services for children and young "
+"people."
+msgstr "آپ کے تاثرات بچوں اور نوجوانوں کے لیے ذیابیطس کی خدمات کو بہتر بنانے میں ہماری مدد کرتے ہیں۔"
+
+#: submissions/templates/submissions/confirmation.html:19
+msgid "Start a new survey"
+msgstr "ایک نیا سروے شروع کریں"
+
+#: submissions/templates/submissions/form.html:14
+msgid "Are you…"
+msgstr "کیا آپ…"
+
+#: submissions/templates/submissions/form.html:19
+msgid "Please select one of the following"
+msgstr "براہ کرم درج ذیل میں سے ایک منتخب کریں"
+
+#: submissions/templates/submissions/form.html:39
+msgid "Continue"
+msgstr "جاری رکھیں"
+
+#: submissions/templates/submissions/landing.html:5
+msgid "National Paediatric Diabetes Audit PREM"
+msgstr "نیشنل پیڈیاٹرک ذیابیطس آڈٹ PREM"
+
+#: submissions/templates/submissions/landing.html:6
+msgid "Patient Reported Experience Measure"
+msgstr "مریض کی رپورٹ شدہ تجربے کی پیمائش"
+
+#: submissions/templates/submissions/landing.html:11
+msgid "Choose your language"
+msgstr "اپنی زبان کا انتخاب کریں"
+
+#: submissions/templates/submissions/landing.html:28
+msgid "Get started"
+msgstr "شروع کریں"
+
+#: submissions/templates/submissions/parent_form.html:14
+msgid "Parent/carer survey"
+msgstr "والدین/نگہداشت دہندہ کا سروے"
+
+#: submissions/templates/submissions/parent_form.html:15
+msgid ""
+"Please answer the following questions about your child's experience at "
+"school since being diagnosed with diabetes."
+msgstr "براہ کرم ذیابیطس کی تشخیص ہونے کے بعد سے اسکول میں اپنے بچے کے تجربے کے بارے میں درج ذیل سوالات کے جواب دیں۔"
+
+#: submissions/templates/submissions/parent_form.html:128
+msgid "5. Relationship to your child with diabetes"
+msgstr "5. ذیابیطس کے شکار بچے سے آپ کا رشتہ"
+
+#: submissions/templates/submissions/parent_form.html:169
+msgid "6. What type of diabetes does your child have?"
+msgstr "6. آپ کے بچے کو کس قسم کی ذیابیطس ہے؟"
+
+#: submissions/templates/submissions/parent_form.html:198
+msgid "7. At what age was your child diagnosed with diabetes?"
+msgstr "7. آپ کے بچے کو کس عمر میں ذیابیطس کی تشخیص ہوئی؟"
+
+#: submissions/templates/submissions/parent_form.html:239
+msgid "8. Which of the following best describes your child's ethnicity?"
+msgstr "8. درج ذیل میں سے کیا آپ کے بچے کی نسل کی بہترین وضاحت کرتا ہے؟"
+
+#: submissions/templates/submissions/parent_form.html:286
+msgid "9. What stage of education is your child in?"
+msgstr "9. آپ کا بچہ تعلیم کے کس مرحلے میں ہے؟"
+
+#: submissions/templates/submissions/parent_form.html:351
+msgid "10. Which type of school or education does your child attend?"
+msgstr "10. آپ کا بچہ کس قسم کے اسکول میں جاتا یا کون سی تعلیم حاصل کرتا ہے؟"
+
+#: submissions/templates/submissions/parent_form.html:382
+msgid ""
+"11. Was your decision to home educate related to your child's diabetes "
+"diagnosis?"
+msgstr "11. کیا گھر پر تعلیم دینے کا آپ کا فیصلہ آپ کے بچے کی ذیابیطس کی تشخیص کی وجہ سے تھا؟"
+
+#: submissions/templates/submissions/parent_form.html:417
+msgid "12. Is your child eligible for free school meals?"
+msgstr "12. کیا آپ کا بچہ اسکول کے مفت کھانے کا اہل ہے؟"
+
+#: submissions/templates/submissions/parent_form.html:451
+msgid "School Health Care Plans"
+msgstr "اسکول کے نگہداشت صحت کے پلانز"
+
+#: submissions/templates/submissions/parent_form.html:452
+msgid ""
+"We would like to know if you and your child have received formal support in "
+"managing their diabetes alongside their education."
+msgstr "ہم یہ جاننا چاہیں گے کہ آیا آپ اور آپ کے بچے کو اپنی تعلیم کے ساتھ ساتھ اپنی ذیابیطس کے انتظام میں باضابطہ مدد ملی ہے۔"
+
+#: submissions/templates/submissions/parent_form.html:458
+msgid ""
+"13. Does your child have a school healthcare plan specifically for their "
+"diabetes?"
+msgstr "13. کیا آپ کے بچے کا خاص طور پر اپنی ذیابیطس کے لیے اسکول کا نگہداشت صحت کا پلان ہے؟"
+
+#: submissions/templates/submissions/parent_form.html:460
+msgid ""
+"This is a plan made with your diabetes team and school. It could be an "
+"informal or a formal plan, such as Individual Healthcare Plans (IHP), "
+"Records of Needs, or Education, Health and Care Plans (EHCP)."
+msgstr "یہ آپ کی ذیابیطس ٹیم اور اسکول کے ساتھ بنایا گیا پلان ہوتا ہے۔ یہ ایک غیر رسمی یا رسمی منصوبہ ہو سکتا ہے، جیسے نگہداشت صحت کے انفرادی پلانز (IHP)، ضروریات کے ریکارڈز، یا تعلیم، صحت اور نگہداشت کے پلانز (EHCP)۔"
+
+#: submissions/templates/submissions/parent_form.html:488
+msgid ""
+"14. Does the school healthcare plan that's in place cover all your child's "
+"diabetes needs at school?"
+msgstr "14. کیا اسکول کا نگہداشت صحت کا موجودہ پلان اسکول میں آپ کے بچے کی ذیابیطس کی تمام ضروریات کو پورا کرتا ہے؟"
+
+#: submissions/templates/submissions/parent_form.html:523
+msgid ""
+"15. Does your child's school have a direct contact within your child's "
+"diabetes team if they need advice or support?"
+msgstr "15. کیا آپ کے بچے کے اسکول کا آپ کے بچے کی ذیابیطس ٹیم کے ساتھ براہ راست رابطہ ہے اگر انہیں مشورہ یا مدد کی ضرورت ہو؟"
+
+#: submissions/templates/submissions/parent_form.html:552
+msgid ""
+"This section asks about your child's diabetes treatment. We will use this "
+"information to see if children and young people using different diabetes "
+"technologies have different experiences at school."
+msgstr "یہ سیکشن آپ کے بچے کے ذیابیطس کے علاج کے بارے میں پوچھتا ہے۔ ہم ان معلومات کو یہ دیکھنے کے لیے استعمال کریں گے کہ آیا ذیابیطس کی مختلف ٹیکنالوجیز استعمال کرنے والے بچوں اور نوجوانوں کے اسکول میں تجربات مختلف ہوتے ہیں۔"
+
+#: submissions/templates/submissions/parent_form.html:558
+msgid ""
+"16. Does your child need to administer insulin or monitor blood glucose to "
+"manage their diabetes when in school?"
+msgstr "16. کیا آپ کے بچے کو اسکول میں اپنی ذیابیطس کا انتظام کرنے کے لیے انسولین لگانے یا خون میں گلوکوز کی نگرانی کرنے کی ضرورت ہوتی ہے؟"
+
+#: submissions/templates/submissions/parent_form.html:581
+msgid "17. How does your child administer insulin in school?"
+msgstr "17. آپ کا بچہ اسکول میں انسولین کیسے لگاتا ہے؟"
+
+#: submissions/templates/submissions/parent_form.html:602
+msgid "N/A – My child does not administer insulin in school"
+msgstr "N/A – میرا بچہ اسکول میں انسولین نہیں لگاتا ہے"
+
+#: submissions/templates/submissions/parent_form.html:612
+msgid "18. How does your child monitor blood glucose levels in school?"
+msgstr "18. آپ کا بچہ اسکول میں خون میں گلوکوز کی سطح کو کیسے مانیٹر کرتا ہے؟"
+
+#: submissions/templates/submissions/parent_form.html:633
+msgid "N/A – My child does not monitor blood glucose at school"
+msgstr "N/A – میرا بچہ اسکول میں گلوکوز کی سطح کو مانیٹر نہیں کرتا"
+
+#: submissions/templates/submissions/parent_form.html:643
+msgid "19. Can you follow/monitor your child's blood glucose remotely?"
+msgstr "19. کیا آپ فاصلے سے اپنے بچے کے خون میں گلوکوز کی جانچ/نگرانی کر سکتے ہیں؟"
+
+#: submissions/templates/submissions/parent_form.html:678
+msgid ""
+"20. Are you able to contact your child's school during the day if you are "
+"concerned about their diabetes?"
+msgstr "20. کیا آپ دن میں اپنے بچے کے اسکول سے رابطہ کر سکتے ہیں، اگر آپ کو اس کی ذیابیطس کے بارے میں تشویش ہو؟"

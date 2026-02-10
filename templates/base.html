@@ -1,7 +1,7 @@
 {% load static %}
 {% load i18n %}
 <!DOCTYPE html>
-<html lang="{{ LANGUAGE_CODE }}">
+<html lang="{{ LANGUAGE_CODE }}" {% if LANGUAGE_CODE == "ur" %}dir="rtl"{% endif %}>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,7 +21,7 @@
     <div class="nhsuk-width-container nhsuk-header__container">
       <div class="nhsuk-header__service">
         <a class="nhsuk-header__service-logo" href="/" aria-label="NPDA PREM homepage">
-          <img src="{% static 'images/npda-logo.png' %}" alt="NPDA" height="40" style="vertical-align: middle; margin-right: 8px;">
+          <img src="{% static 'images/npda-logo.png' %}" alt="NPDA" height="40" style="vertical-align: middle; {% if LANGUAGE_CODE == 'ur' %}margin-left: 8px;{% else %}margin-right: 8px;{% endif %}">
           <span class="nhsuk-header__service-name">RCPCH &mdash; NPDA PREM</span>
         </a>
       </div>

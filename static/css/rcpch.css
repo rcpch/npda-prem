@@ -182,3 +182,45 @@ a:focus,
   background-color: #F3F3F3;
   border-top: 4px solid #11A7F2;
 }
+
+/* =============================================
+   RTL (Right-to-Left) overrides for Urdu
+   ============================================= */
+
+[dir="rtl"] .nhsuk-back-link__link {
+  text-decoration: none;
+}
+
+[dir="rtl"] .nhsuk-back-link__link .nhsuk-icon__chevron-left {
+  transform: rotate(180deg);
+}
+
+[dir="rtl"] .nhsuk-radios__label {
+  padding-left: 0;
+  padding-right: 44px;
+}
+
+[dir="rtl"] .nhsuk-radios__label::before {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .nhsuk-radios__label::after {
+  left: auto;
+  right: 10px;
+}
+
+[dir="rtl"] .nhsuk-checkboxes__label {
+  padding-left: 0;
+  padding-right: 44px;
+}
+
+[dir="rtl"] .nhsuk-checkboxes__label::before {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .nhsuk-checkboxes__label::after {
+  left: auto;
+  right: 11px;
+}

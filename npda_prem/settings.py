@@ -116,6 +116,7 @@ LANGUAGES = [
     ("ur", _("Urdu")),
     ("pl", _("Polish")),
     ("uk", _("Ukrainian")),
+    ("pa", _("Punjabi")),
 ]
 
 LOCALE_PATHS = [

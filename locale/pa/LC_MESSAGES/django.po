@@ -1,0 +1,1263 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-10 12:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: npda_prem/settings.py:114
+msgid "English"
+msgstr "English"
+
+#: npda_prem/settings.py:115
+msgid "Cymraeg"
+msgstr "Cymraeg"
+
+#: npda_prem/settings.py:116
+msgid "Urdu"
+msgstr "Urdu"
+
+#: npda_prem/settings.py:117
+msgid "Polish"
+msgstr "Polish"
+
+#: npda_prem/settings.py:118
+msgid "Ukrainian"
+msgstr "Ukrainian"
+
+#: npda_prem/settings.py:119
+msgid "Punjabi"
+msgstr "ਪੰਜਾਬੀ"
+
+#: submissions/models.py:8 submissions/templates/submissions/form.html:25
+msgid "A child or young person with diabetes"
+msgstr "ਸ਼ੂਗਰ ਵਾਲਾ ਬੱਚਾ ਜਾਂ ਨੌਜਵਾਨ ਵਿਅਕਤੀ"
+
+#: submissions/models.py:9 submissions/templates/submissions/form.html:31
+msgid "The parent/carer of a child or young person with diabetes"
+msgstr "ਸ਼ੂਗਰ ਵਾਲੇ ਬੱਚੇ ਜਾਂ ਨੌਜਵਾਨ ਵਿਅਕਤੀ ਦਾ ਮਾਤਾ-ਪਿਤਾ/ਦੇਖਭਾਲਕਰਤਾ"
+
+#: submissions/models.py:20
+#: submissions/templates/submissions/child_form.html:40
+#: submissions/templates/submissions/parent_form.html:40
+msgid "North East & North Cumbria"
+msgstr "ਨਾਰਥ ਈਸਟ & ਨਾਰਥ ਕੁੰਬ੍ਰਿਆ"
+
+#: submissions/models.py:21
+#: submissions/templates/submissions/child_form.html:46
+#: submissions/templates/submissions/parent_form.html:46
+msgid "North West"
+msgstr "ਨਾਰਥ ਵੈਸਟ"
+
+#: submissions/models.py:22
+#: submissions/templates/submissions/child_form.html:52
+#: submissions/templates/submissions/parent_form.html:52
+msgid "Yorkshire & Humber"
+msgstr "ਯੌਰਕਸ਼ਾਇਰ ਅਤੇ ਹੰਬਰ"
+
+#: submissions/models.py:23
+#: submissions/templates/submissions/child_form.html:58
+#: submissions/templates/submissions/parent_form.html:58
+msgid "East Midlands"
+msgstr "ਈਸਟ ਮਿਡਲੈਂਡਜ਼"
+
+#: submissions/models.py:24
+#: submissions/templates/submissions/child_form.html:64
+#: submissions/templates/submissions/parent_form.html:64
+msgid "West Midlands"
+msgstr "ਵੈਸਟ ਮਿਡਲੈਂਡਜ਼"
+
+#: submissions/models.py:25
+#: submissions/templates/submissions/child_form.html:70
+#: submissions/templates/submissions/parent_form.html:70
+msgid "East of England"
+msgstr "ਈਸਟ ਆਫ਼ ਇੰਗਲੈਂਡ"
+
+#: submissions/models.py:26
+#: submissions/templates/submissions/child_form.html:76
+#: submissions/templates/submissions/parent_form.html:76
+msgid "South Central"
+msgstr "ਸਾਊਥ ਸੈਂਟਰਲ"
+
+#: submissions/models.py:27
+#: submissions/templates/submissions/child_form.html:82
+#: submissions/templates/submissions/parent_form.html:82
+msgid "London & South East"
+msgstr "ਲੰਡਨ ਅਤੇ ਸਾਊਥ ਈਸਟ"
+
+#: submissions/models.py:28
+#: submissions/templates/submissions/child_form.html:88
+#: submissions/templates/submissions/parent_form.html:88
+msgid "South West"
+msgstr "ਸਾਊਥ ਵੈਸਟ"
+
+#: submissions/models.py:29
+#: submissions/templates/submissions/child_form.html:94
+#: submissions/templates/submissions/parent_form.html:94
+msgid "Thames Valley"
+msgstr "ਥੇਮਜ਼ ਵੈਲੀ"
+
+#: submissions/models.py:30
+#: submissions/templates/submissions/child_form.html:100
+#: submissions/templates/submissions/parent_form.html:100
+msgid "Wales"
+msgstr "ਵੇਲਜ਼"
+
+#: submissions/models.py:31
+#: submissions/templates/submissions/child_form.html:106
+#: submissions/templates/submissions/parent_form.html:106
+msgid "Jersey"
+msgstr "ਜਰਸੀ"
+
+#: submissions/models.py:44
+#: submissions/templates/submissions/child_form.html:135
+msgid "Boy"
+msgstr "ਮੁੰਡਾ"
+
+#: submissions/models.py:45
+#: submissions/templates/submissions/child_form.html:141
+msgid "Girl"
+msgstr "ਕੁੜੀ"
+
+#: submissions/models.py:46
+#: submissions/templates/submissions/child_form.html:147
+msgid "A gender not listed here"
+msgstr "ਇੱਥੇ ਸੂਚੀਬੱਧ ਨਹੀਂ ਕੀਤਾ ਗਿਆ ਲਿੰਗ"
+
+#: submissions/models.py:47 submissions/models.py:94 submissions/models.py:133
+#: submissions/models.py:144
+#: submissions/templates/submissions/child_form.html:153
+#: submissions/templates/submissions/child_form.html:270
+#: submissions/templates/submissions/child_form.html:401
+#: submissions/templates/submissions/child_form.html:436
+#: submissions/templates/submissions/parent_form.html:276
+#: submissions/templates/submissions/parent_form.html:407
+#: submissions/templates/submissions/parent_form.html:442
+msgid "Prefer not to say"
+msgstr "ਦੱਸਣਾ ਪਸੰਦ ਨਹੀਂ"
+
+#: submissions/models.py:55
+#: submissions/templates/submissions/parent_form.html:135
+msgid "Mother"
+msgstr "ਮਾਂ"
+
+#: submissions/models.py:56
+#: submissions/templates/submissions/parent_form.html:141
+msgid "Father"
+msgstr "ਪਿਤਾ"
+
+#: submissions/models.py:57
+#: submissions/templates/submissions/parent_form.html:147
+msgid "Grandmother"
+msgstr "ਦਾਦੀ"
+
+#: submissions/models.py:58
+#: submissions/templates/submissions/parent_form.html:153
+msgid "Grandfather"
+msgstr "ਦਾਦਾ"
+
+#: submissions/models.py:59
+#: submissions/templates/submissions/parent_form.html:159
+msgid "Other guardian or family member"
+msgstr "ਹੋਰ ਸਰਪ੍ਰਸਤ ਜਾਂ ਪਰਿਵਾਰਕ ਮੈਂਬਰ"
+
+#: submissions/models.py:67
+#: submissions/templates/submissions/child_form.html:170
+#: submissions/templates/submissions/parent_form.html:176
+msgid "Type 1"
+msgstr "ਟਾਈਪ 1"
+
+#: submissions/models.py:68
+#: submissions/templates/submissions/child_form.html:176
+#: submissions/templates/submissions/parent_form.html:182
+msgid "Type 2"
+msgstr "ਟਾਈਪ 2"
+
+#: submissions/models.py:69 submissions/models.py:93 submissions/models.py:109
+#: submissions/templates/submissions/_shared_questions.html:428
+#: submissions/templates/submissions/child_form.html:182
+#: submissions/templates/submissions/child_form.html:264
+#: submissions/templates/submissions/child_form.html:329
+#: submissions/templates/submissions/parent_form.html:188
+#: submissions/templates/submissions/parent_form.html:270
+#: submissions/templates/submissions/parent_form.html:335
+msgid "Other"
+msgstr "ਹੋਰ"
+
+#: submissions/models.py:77
+#: submissions/templates/submissions/child_form.html:199
+#: submissions/templates/submissions/parent_form.html:205
+msgid "3 years or younger"
+msgstr "3 ਸਾਲ ਜਾਂ ਇਸ ਤੋਂ ਘੱਟ"
+
+#: submissions/models.py:78
+#: submissions/templates/submissions/child_form.html:205
+#: submissions/templates/submissions/parent_form.html:211
+msgid "4 – 7 years"
+msgstr "4-7 ਸਾਲ"
+
+#: submissions/models.py:79
+#: submissions/templates/submissions/child_form.html:211
+#: submissions/templates/submissions/parent_form.html:217
+msgid "8 – 11 years"
+msgstr "8-11 ਸਾਲ"
+
+#: submissions/models.py:80
+#: submissions/templates/submissions/child_form.html:217
+#: submissions/templates/submissions/parent_form.html:223
+msgid "12 – 16 years"
+msgstr "12-16 ਸਾਲ"
+
+#: submissions/models.py:81
+#: submissions/templates/submissions/child_form.html:223
+#: submissions/templates/submissions/parent_form.html:229
+msgid "17 – 19 years"
+msgstr "17-19 ਸਾਲ"
+
+#: submissions/models.py:89
+#: submissions/templates/submissions/child_form.html:240
+#: submissions/templates/submissions/parent_form.html:246
+msgid "White"
+msgstr "ਗੋਰਾ"
+
+#: submissions/models.py:90
+#: submissions/templates/submissions/child_form.html:246
+#: submissions/templates/submissions/parent_form.html:252
+msgid "Black"
+msgstr "ਕਾਲਾ"
+
+#: submissions/models.py:91
+#: submissions/templates/submissions/child_form.html:252
+#: submissions/templates/submissions/parent_form.html:258
+msgid "Asian"
+msgstr "ਏਸ਼ੀਆਈ"
+
+#: submissions/models.py:92
+#: submissions/templates/submissions/child_form.html:258
+#: submissions/templates/submissions/parent_form.html:264
+msgid "Mixed"
+msgstr "ਮਿਸ਼ਰਤ"
+
+#: submissions/models.py:102
+#: submissions/templates/submissions/child_form.html:287
+#: submissions/templates/submissions/parent_form.html:293
+msgid "Nursery"
+msgstr "ਨਰਸਰੀ"
+
+#: submissions/models.py:103
+#: submissions/templates/submissions/child_form.html:293
+#: submissions/templates/submissions/parent_form.html:299
+msgid "Reception"
+msgstr "ਰਿਸੈਪਸ਼ਨ"
+
+#: submissions/models.py:104
+#: submissions/templates/submissions/child_form.html:299
+#: submissions/templates/submissions/parent_form.html:305
+msgid "Key stage 1 (Years 1 & 2)"
+msgstr "ਮੁੱਖ ਪੜਾਅ 1 (ਸਾਲ 1 ਅਤੇ 2)"
+
+#: submissions/models.py:105
+#: submissions/templates/submissions/child_form.html:305
+#: submissions/templates/submissions/parent_form.html:311
+msgid "Key stage 2 (Years 3 to 6)"
+msgstr "ਮੁੱਖ ਪੜਾਅ 2 (ਸਾਲ 3 ਤੋਂ 6)"
+
+#: submissions/models.py:106
+#: submissions/templates/submissions/child_form.html:311
+#: submissions/templates/submissions/parent_form.html:317
+msgid "Key stage 3 (Years 7 to 9)"
+msgstr "ਮੁੱਖ ਪੜਾਅ 3 (ਸਾਲ 7 ਤੋਂ 9)"
+
+#: submissions/models.py:107
+#: submissions/templates/submissions/child_form.html:317
+#: submissions/templates/submissions/parent_form.html:323
+msgid "Key stage 4 (Years 10 & 11)"
+msgstr "ਮੁੱਖ ਪੜਾਅ 4 (ਸਾਲ 10 ਅਤੇ 11)"
+
+#: submissions/models.py:108
+#: submissions/templates/submissions/child_form.html:323
+#: submissions/templates/submissions/parent_form.html:329
+msgid "Key stage 5 (Years 12 & 13)"
+msgstr "ਮੁੱਖ ਪੜਾਅ 5 (ਸਾਲ 12 ਅਤੇ 13)"
+
+#: submissions/models.py:120
+#: submissions/templates/submissions/child_form.html:352
+#: submissions/templates/submissions/parent_form.html:358
+msgid "State funded school"
+msgstr "ਰਾਜ ਤੋਂ ਫੰਡ ਪ੍ਰਾਪਤ ਸਕੂਲ"
+
+#: submissions/models.py:121
+#: submissions/templates/submissions/child_form.html:359
+#: submissions/templates/submissions/parent_form.html:365
+msgid "Private school"
+msgstr "ਨਿੱਜੀ ਸਕੂਲ"
+
+#: submissions/models.py:122
+#: submissions/templates/submissions/child_form.html:366
+#: submissions/templates/submissions/parent_form.html:372
+msgid "Home schooled/educated"
+msgstr "ਘਰੇਲੂ ਸਿੱਖਿਆ/ਸਿੱਖਿਅਤ"
+
+#: submissions/models.py:130
+#: submissions/templates/submissions/child_form.html:383
+#: submissions/templates/submissions/parent_form.html:389
+msgid "No, it was for other reasons"
+msgstr "ਨਹੀਂ, ਇਹ ਹੋਰ ਕਾਰਨਾਂ ਕਰਕੇ ਸੀ"
+
+#: submissions/models.py:131
+#: submissions/templates/submissions/child_form.html:389
+#: submissions/templates/submissions/parent_form.html:395
+msgid "Partly, the diabetes diagnosis influenced my decision"
+msgstr "ਅੰਸ਼ਕ ਤੌਰ 'ਤੇ, ਸ਼ੂਗਰ ਦੀ ਜਾਂਚ ਨੇ ਮੇਰੇ ਫੈਸਲੇ ਨੂੰ ਪ੍ਰਭਾਵਿਤ ਕੀਤਾ"
+
+#: submissions/models.py:132
+#: submissions/templates/submissions/child_form.html:395
+#: submissions/templates/submissions/parent_form.html:401
+msgid "Yes, it was mainly because of the diabetes diagnosis"
+msgstr "ਹਾਂ, ਇਹ ਮੁੱਖ ਤੌਰ 'ਤੇ ਸ਼ੂਗਰ ਦੀ ਜਾਂਚ ਦੇ ਕਾਰਨ ਸੀ"
+
+#: submissions/models.py:141 submissions/models.py:152
+#: submissions/models.py:162 submissions/models.py:178
+#: submissions/models.py:292
+#: submissions/templates/submissions/_shared_questions.html:319
+#: submissions/templates/submissions/_shared_questions.html:369
+#: submissions/templates/submissions/_shared_questions.html:559
+#: submissions/templates/submissions/_shared_questions.html:653
+#: submissions/templates/submissions/child_form.html:418
+#: submissions/templates/submissions/child_form.html:459
+#: submissions/templates/submissions/parent_form.html:424
+#: submissions/templates/submissions/parent_form.html:466
+#: submissions/templates/submissions/parent_form.html:495
+#: submissions/templates/submissions/parent_form.html:530
+#: submissions/templates/submissions/parent_form.html:565
+msgid "Yes"
+msgstr "ਹਾਂ"
+
+#: submissions/models.py:142 submissions/models.py:153
+#: submissions/models.py:164 submissions/models.py:179
+#: submissions/models.py:293
+#: submissions/templates/submissions/_shared_questions.html:325
+#: submissions/templates/submissions/_shared_questions.html:375
+#: submissions/templates/submissions/_shared_questions.html:565
+#: submissions/templates/submissions/_shared_questions.html:659
+#: submissions/templates/submissions/child_form.html:424
+#: submissions/templates/submissions/child_form.html:465
+#: submissions/templates/submissions/parent_form.html:430
+#: submissions/templates/submissions/parent_form.html:472
+#: submissions/templates/submissions/parent_form.html:507
+#: submissions/templates/submissions/parent_form.html:536
+#: submissions/templates/submissions/parent_form.html:571
+msgid "No"
+msgstr "ਨਹੀਂ"
+
+#: submissions/models.py:143 submissions/models.py:154
+#: submissions/models.py:165 submissions/models.py:196
+#: submissions/models.py:207 submissions/models.py:279
+#: submissions/templates/submissions/_shared_questions.html:84
+#: submissions/templates/submissions/_shared_questions.html:130
+#: submissions/templates/submissions/_shared_questions.html:176
+#: submissions/templates/submissions/_shared_questions.html:222
+#: submissions/templates/submissions/_shared_questions.html:297
+#: submissions/templates/submissions/_shared_questions.html:331
+#: submissions/templates/submissions/_shared_questions.html:491
+#: submissions/templates/submissions/_shared_questions.html:531
+#: submissions/templates/submissions/_shared_questions.html:634
+#: submissions/templates/submissions/child_form.html:430
+#: submissions/templates/submissions/parent_form.html:436
+#: submissions/templates/submissions/parent_form.html:478
+#: submissions/templates/submissions/parent_form.html:513
+#: submissions/templates/submissions/parent_form.html:542
+#: submissions/templates/submissions/parent_form.html:668
+#: submissions/templates/submissions/parent_form.html:703
+msgid "I don't know"
+msgstr "ਮੈਨੂੰ ਨਹੀਂ ਪਤਾ"
+
+#: submissions/models.py:163
+#: submissions/templates/submissions/parent_form.html:501
+msgid "Partially covers diabetes needs at school"
+msgstr "ਅੰਸ਼ਕ ਤੌਰ 'ਤੇ ਸਕੂਲ ਵਿੱਚ ਸ਼ੂਗਰ ਸਬੰਧੀ ਜ਼ਰੂਰਤਾਂ ਨੂੰ ਕਵਰ ਕਰਦੀ ਹੈ"
+
+#: submissions/models.py:193 submissions/models.py:204
+#: submissions/models.py:216
+#: submissions/templates/submissions/_shared_questions.html:26
+#: submissions/templates/submissions/_shared_questions.html:66
+#: submissions/templates/submissions/_shared_questions.html:112
+#: submissions/templates/submissions/_shared_questions.html:158
+#: submissions/templates/submissions/_shared_questions.html:204
+#: submissions/templates/submissions/_shared_questions.html:279
+#: submissions/templates/submissions/_shared_questions.html:513
+#: submissions/templates/submissions/parent_form.html:650
+#: submissions/templates/submissions/parent_form.html:685
+msgid "Yes, always"
+msgstr "ਹਾਂ, ਹਮੇਸ਼ਾ"
+
+#: submissions/models.py:194 submissions/models.py:205
+#: submissions/models.py:217
+#: submissions/templates/submissions/_shared_questions.html:32
+#: submissions/templates/submissions/_shared_questions.html:72
+#: submissions/templates/submissions/_shared_questions.html:118
+#: submissions/templates/submissions/_shared_questions.html:164
+#: submissions/templates/submissions/_shared_questions.html:210
+#: submissions/templates/submissions/_shared_questions.html:285
+#: submissions/templates/submissions/_shared_questions.html:519
+#: submissions/templates/submissions/parent_form.html:656
+#: submissions/templates/submissions/parent_form.html:691
+msgid "Yes, sometimes"
+msgstr "ਹਾਂ, ਕਈ ਵਾਰ"
+
+#: submissions/models.py:195 submissions/models.py:206
+#: submissions/models.py:218
+#: submissions/templates/submissions/_shared_questions.html:38
+#: submissions/templates/submissions/_shared_questions.html:78
+#: submissions/templates/submissions/_shared_questions.html:124
+#: submissions/templates/submissions/_shared_questions.html:170
+#: submissions/templates/submissions/_shared_questions.html:216
+#: submissions/templates/submissions/_shared_questions.html:291
+#: submissions/templates/submissions/_shared_questions.html:525
+#: submissions/templates/submissions/parent_form.html:662
+#: submissions/templates/submissions/parent_form.html:697
+msgid "No, never"
+msgstr "ਨਹੀਂ, ਕਦੇ ਨਹੀਂ"
+
+#: submissions/models.py:208 submissions/models.py:219
+#: submissions/models.py:294 submissions/models.py:329
+#: submissions/templates/submissions/_shared_questions.html:44
+#: submissions/templates/submissions/_shared_questions.html:90
+#: submissions/templates/submissions/_shared_questions.html:136
+#: submissions/templates/submissions/_shared_questions.html:228
+#: submissions/templates/submissions/_shared_questions.html:537
+#: submissions/templates/submissions/_shared_questions.html:571
+#: submissions/templates/submissions/_shared_questions.html:665
+#: submissions/templates/submissions/_shared_questions.html:767
+#: submissions/templates/submissions/parent_form.html:709
+msgid "Not applicable"
+msgstr "ਲਾਗੂ ਨਹੀਂ"
+
+#: submissions/models.py:274 submissions/models.py:312
+#: submissions/templates/submissions/_shared_questions.html:461
+#: submissions/templates/submissions/_shared_questions.html:604
+#: submissions/templates/submissions/_shared_questions.html:687
+msgid "Never"
+msgstr "ਕਦੇ ਨਹੀਂ"
+
+#: submissions/models.py:275
+#: submissions/templates/submissions/_shared_questions.html:467
+#: submissions/templates/submissions/_shared_questions.html:610
+msgid "Rarely"
+msgstr "ਬਹੁਤ ਘੱਟ"
+
+#: submissions/models.py:276
+#: submissions/templates/submissions/_shared_questions.html:473
+#: submissions/templates/submissions/_shared_questions.html:616
+msgid "Sometimes"
+msgstr "ਕਦੇ-ਕਦੇ"
+
+#: submissions/models.py:277
+#: submissions/templates/submissions/_shared_questions.html:479
+#: submissions/templates/submissions/_shared_questions.html:622
+msgid "Often"
+msgstr "ਅਕਸਰ"
+
+#: submissions/models.py:278
+#: submissions/templates/submissions/_shared_questions.html:485
+#: submissions/templates/submissions/_shared_questions.html:628
+msgid "Always"
+msgstr "ਹਮੇਸ਼ਾ"
+
+#: submissions/models.py:313
+#: submissions/templates/submissions/_shared_questions.html:693
+msgid "Less than once a week"
+msgstr "ਹਫ਼ਤੇ ਵਿੱਚ ਇੱਕ ਵਾਰ ਤੋਂ ਘੱਟ"
+
+#: submissions/models.py:314
+#: submissions/templates/submissions/_shared_questions.html:699
+msgid "Once or twice a week"
+msgstr "ਹਫ਼ਤੇ ਵਿੱਚ ਇੱਕ ਜਾਂ ਦੋ ਵਾਰ"
+
+#: submissions/models.py:315
+#: submissions/templates/submissions/_shared_questions.html:705
+msgid "Three or four times a week"
+msgstr "ਹਫ਼ਤੇ ਵਿੱਚ ਤਿੰਨ ਜਾਂ ਚਾਰ ਵਾਰ"
+
+#: submissions/models.py:316
+#: submissions/templates/submissions/_shared_questions.html:711
+msgid "Every day of the week"
+msgstr "ਹਫ਼ਤੇ ਦਾ ਹਰ ਦਿਨ"
+
+#: submissions/models.py:324 submissions/models.py:337
+#: submissions/templates/submissions/_shared_questions.html:737
+#: submissions/templates/submissions/_shared_questions.html:788
+msgid "Very well supported"
+msgstr "ਬਹੁਤ ਵਧੀਆ ਸਹਾਇਤਾ"
+
+#: submissions/models.py:325 submissions/models.py:338
+#: submissions/templates/submissions/_shared_questions.html:743
+#: submissions/templates/submissions/_shared_questions.html:794
+msgid "Well supported"
+msgstr "ਵਧੀਆ ਸਹਾਇਤਾ"
+
+#: submissions/models.py:326 submissions/models.py:339
+#: submissions/templates/submissions/_shared_questions.html:749
+#: submissions/templates/submissions/_shared_questions.html:800
+msgid "Neutral"
+msgstr "ਨਿਰਪੱਖ"
+
+#: submissions/models.py:327 submissions/models.py:340
+#: submissions/templates/submissions/_shared_questions.html:755
+#: submissions/templates/submissions/_shared_questions.html:806
+msgid "Poorly supported"
+msgstr "ਘੱਟ ਸਹਾਇਤਾ"
+
+#: submissions/models.py:328 submissions/models.py:341
+#: submissions/templates/submissions/_shared_questions.html:761
+#: submissions/templates/submissions/_shared_questions.html:812
+msgid "Very poorly supported"
+msgstr "ਬਹੁਤ ਘੱਟ ਸਹਾਇਤਾ"
+
+#: submissions/templates/submissions/_shared_questions.html:16
+msgid ""
+"21. If your child uses a smartphone or smartwatch to manage their diabetes, "
+"are they able to use it during lesson time at school?"
+msgstr "21. ਜੇਕਰ ਤੁਹਾਡਾ ਬੱਚਾ ਆਪਣੀ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ ਸਮਾਰਟਫੋਨ ਜਾਂ ਸਮਾਰਟਵਾਚ ਦੀ ਵਰਤੋਂ ਕਰਦਾ ਹੈ, ਤਾਂ ਕੀ ਉਹ ਸਕੂਲ ਵਿੱਚ ਪੜ੍ਹਾਈ ਦੌਰਾਨ ਇਸਦੀ ਵਰਤੋਂ ਕਰ ਸਕਦੇ ਹਨ?"
+
+#: submissions/templates/submissions/_shared_questions.html:18
+msgid ""
+"21. If you use a smartphone or smartwatch to manage your diabetes, are you "
+"able to use it during lesson time at school?"
+msgstr "21. ਜੇਕਰ ਤੁਸੀਂ ਆਪਣੀ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ ਸਮਾਰਟਫੋਨ ਜਾਂ ਸਮਾਰਟਵਾਚ ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹੋ, ਤਾਂ ਕੀ ਤੁਸੀਂ ਸਕੂਲ ਵਿੱਚ ਪੜ੍ਹਾਈ ਦੌਰਾਨ ਇਸਦੀ ਵਰਤੋਂ ਕਰ ਸਕਦੇ ਹੋ?"
+
+#: submissions/templates/submissions/_shared_questions.html:55
+msgid ""
+"22. Is your child offered a private room at school for diabetes care, even "
+"if they don't use it?"
+msgstr "22. ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਡਾਇਬੀਟੀਜ਼ ਦੀ ਦੇਖਭਾਲ ਲਈ ਸਕੂਲ ਵਿੱਚ ਇੱਕ ਨਿੱਜੀ ਕਮਰਾ ਦਿੱਤਾ ਜਾਂਦਾ ਹੈ, ਭਾਵੇਂ ਉਹ ਇਸਦੀ ਵਰਤੋਂ ਨਹੀਂ ਕਰਦੇ?"
+
+#: submissions/templates/submissions/_shared_questions.html:57
+msgid ""
+"22. Are you offered a private room at school for diabetes care, even if you "
+"don't use it?"
+msgstr "22. ਕੀ ਤੁਹਾਨੂੰ ਸ਼ੂਗਰ ਸਬੰਧੀ ਦੇਖਭਾਲ ਲਈ ਸਕੂਲ ਵਿੱਚ ਇੱਕ ਨਿੱਜੀ ਕਮਰੇ ਦੀ ਪੇਸ਼ਕਸ਼ ਕੀਤੀ ਜਾਂਦੀ ਹੈ, ਭਾਵੇਂ ਤੁਸੀਂ ਇਸਦੀ ਵਰਤੋਂ ਨਹੀਂ ਕਰਦੇ?"
+
+#: submissions/templates/submissions/_shared_questions.html:60
+msgid ""
+"E.g. For administering insulin, checking blood glucose, changing pump set, "
+"or anything else related to diabetes care"
+msgstr "ਜਿਵੇਂ ਕਿ ਇਨਸੁਲਿਨ ਦੇਣ, ਖੂਨ ਵਿੱਚ ਗਲੂਕੋਜ਼ ਦੀ ਜਾਂਚ ਕਰਨ, ਪੰਪ ਸੈੱਟ ਬਦਲਣ, ਜਾਂ ਡਾਇਬੀਟੀਜ਼ ਦੀ ਦੇਖਭਾਲ ਨਾਲ ਸਬੰਧਤ ਕਿਸੇ ਹੋਰ ਚੀਜ਼ ਲਈ"
+
+#: submissions/templates/submissions/_shared_questions.html:101
+msgid ""
+"23. Is your child allowed to manage diabetes in the classroom if required?"
+msgstr "23. ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਲੋੜ ਪੈਣ 'ਤੇ ਕਲਾਸਰੂਮ ਵਿੱਚ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਹੈ?"
+
+#: submissions/templates/submissions/_shared_questions.html:103
+msgid "23. Are you allowed to manage diabetes in the classroom if required?"
+msgstr "23. ਕੀ ਲੋੜ ਪੈਣ 'ਤੇ ਤੁਹਾਨੂੰ ਕਲਾਸਰੂਮ ਵਿੱਚ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਹੈ?"
+
+#: submissions/templates/submissions/_shared_questions.html:106
+msgid "This includes checking blood glucose or giving insulin."
+msgstr "ਇਸ ਵਿੱਚ ਖੂਨ ਵਿੱਚ ਗਲੂਕੋਜ਼ ਦੀ ਜਾਂਚ ਕਰਨਾ ਜਾਂ ਇਨਸੁਲਿਨ ਦੇਣਾ ਸ਼ਾਮਲ ਹੈ।"
+
+#: submissions/templates/submissions/_shared_questions.html:147
+msgid ""
+"24. Is there a trained member of staff at school who can help your child "
+"with diabetes management?"
+msgstr "24. ਕੀ ਸਕੂਲ ਵਿੱਚ ਕੋਈ ਸਿਖਲਾਈ ਪ੍ਰਾਪਤ ਸਟਾਫ ਮੈਂਬਰ ਹੈ ਜੋ ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਵਿੱਚ ਮਦਦ ਕਰ ਸਕਦਾ ਹੈ?"
+
+#: submissions/templates/submissions/_shared_questions.html:149
+msgid ""
+"24. Is there a trained member of staff at school who can help you with "
+"diabetes management?"
+msgstr "24. ਕੀ ਸਕੂਲ ਵਿੱਚ ਕੋਈ ਸਿਖਲਾਈ ਪ੍ਰਾਪਤ ਸਟਾਫ ਮੈਂਬਰ ਹੈ ਜੋ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਵਿੱਚ ਤੁਹਾਡੀ ਮਦਦ ਕਰ ਸਕਦਾ ਹੈ?"
+
+#: submissions/templates/submissions/_shared_questions.html:152
+msgid ""
+"This includes checking blood glucose, administering insulin, and providing "
+"support in emergencies. This training should be provided by the diabetes "
+"team."
+msgstr "ਇਸ ਵਿੱਚ ਖੂਨ ਵਿੱਚ ਗਲੂਕੋਜ਼ ਦੀ ਜਾਂਚ ਕਰਨਾ, ਇਨਸੁਲਿਨ ਦੇਣਾ, ਅਤੇ ਐਮਰਜੈਂਸੀ ਵਿੱਚ ਸਹਾਇਤਾ ਪ੍ਰਦਾਨ ਕਰਨਾ ਸ਼ਾਮਲ ਹੈ। ਇਹ ਸਿਖਲਾਈ ਸ਼ੂਗਰ ਟੀਮ ਦੁਆਰਾ ਪ੍ਰਦਾਨ ਕੀਤੀ ਜਾਣੀ ਚਾਹੀਦੀ ਹੈ।"
+
+#: submissions/templates/submissions/_shared_questions.html:187
+msgid ""
+"25. Does your child's school provide enough information about school meals "
+"for carb-counting?"
+msgstr "25. ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਦਾ ਸਕੂਲ ਕਾਰਬੋਹਾਈਡਰੇਟ-ਗਿਣਤੀ ਲਈ ਸਕੂਲੀ ਭੋਜਨ ਬਾਰੇ ਕਾਫ਼ੀ ਜਾਣਕਾਰੀ ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ?"
+
+#: submissions/templates/submissions/_shared_questions.html:189
+msgid ""
+"25. Does your school provide enough information about school meals for carb-"
+"counting?"
+msgstr "25. ਕੀ ਤੁਹਾਡਾ ਸਕੂਲ ਕਾਰਬੋਹਾਈਡਰੇਟ-ਗਿਣਤੀ ਲਈ ਸਕੂਲ ਦੇ ਭੋਜਨ ਬਾਰੇ ਕਾਫ਼ੀ ਜਾਣਕਾਰੀ ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ?"
+
+#: submissions/templates/submissions/_shared_questions.html:194
+msgid ""
+"This includes information about carbohydrate content and portion sizes to "
+"help your child adjust insulin to match."
+msgstr "ਇਸ ਵਿੱਚ ਕਾਰਬੋਹਾਈਡਰੇਟ ਸਮੱਗਰੀ ਅਤੇ ਭੋਜਨ ਦੀ ਮਾਤਰਾ ਬਾਰੇ ਜਾਣਕਾਰੀ ਸ਼ਾਮਲ ਹੈ ਤਾਂ ਜੋ ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਇਨਸੁਲਿਨ ਨੂੰ ਮੇਲਣ ਲਈ ਅਨੁਕੂਲ ਬਣਾਉਣ ਵਿੱਚ ਮਦਦ ਕੀਤੀ ਜਾ ਸਕੇ।"
+
+#: submissions/templates/submissions/_shared_questions.html:196
+msgid ""
+"This includes information about carbohydrate content and portion sizes to "
+"help you adjust insulin to match."
+msgstr "ਇਸ ਵਿੱਚ ਕਾਰਬੋਹਾਈਡਰੇਟ ਸਮੱਗਰੀ ਅਤੇ ਭੋਜਨ ਦੀ ਮਾਤਰਾ ਬਾਰੇ ਜਾਣਕਾਰੀ ਸ਼ਾਮਲ ਹੈ ਤਾਂ ਜੋ ਤੁਹਾਨੂੰ ਇਨਸੁਲਿਨ ਨੂੰ ਮੇਲਣ ਲਈ ਅਨੁਕੂਲ ਬਣਾਉਣ ਵਿੱਚ ਮਦਦ ਕੀਤੀ ਜਾ ਸਕੇ।"
+
+#: submissions/templates/submissions/_shared_questions.html:237
+msgid "Impact on Education"
+msgstr "ਸਿੱਖਿਆ 'ਤੇ ਪ੍ਰਭਾਵ"
+
+#: submissions/templates/submissions/_shared_questions.html:240
+msgid ""
+"This section asks about how your child's diabetes impacts their education."
+msgstr "ਇਹ ਭਾਗ ਪੁੱਛਦਾ ਹੈ ਕਿ ਤੁਹਾਡੇ ਬੱਚੇ ਦੀ ਸ਼ੂਗਰ ਉਨ੍ਹਾਂ ਦੀ ਸਿੱਖਿਆ ਨੂੰ ਕਿਵੇਂ ਪ੍ਰਭਾਵਤ ਕਰਦੀ ਹੈ।"
+
+#: submissions/templates/submissions/_shared_questions.html:242
+msgid "This section asks about how your diabetes impacts your education."
+msgstr "ਇਹ ਭਾਗ ਪੁੱਛਦਾ ਹੈ ਕਿ ਤੁਹਾਡੀ ਸ਼ੂਗਰ ਤੁਹਾਡੀ ਸਿੱਖਿਆ ਨੂੰ ਕਿਵੇਂ ਪ੍ਰਭਾਵਤ ਕਰਦੀ ਹੈ।"
+
+#: submissions/templates/submissions/_shared_questions.html:251
+msgid ""
+"26. In the past year, how many times has your child missed one or more "
+"lessons in any given day to attend diabetes-related hospital appointments?"
+msgstr "26. ਪਿਛਲੇ ਸਾਲ, ਤੁਹਾਡੇ ਬੱਚੇ ਨੇ ਸ਼ੂਗਰ ਨਾਲ ਸਬੰਧਤ ਹਸਪਤਾਲ ਦੀਆਂ ਮੁਲਾਕਾਤਾਂ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਣ ਲਈ ਕਿਸੇ ਵੀ ਦਿਨ ਵਿੱਚ ਕਿੰਨੀ ਵਾਰ ਇੱਕ ਜਾਂ ਵੱਧ ਪਾਠ ਖੁੰਝੇ ਹਨ?"
+
+#: submissions/templates/submissions/_shared_questions.html:253
+msgid ""
+"26. In the past year, how many times have you missed one or more lessons in "
+"any given day to attend diabetes-related hospital appointments?"
+msgstr "26. ਪਿਛਲੇ ਸਾਲ ਵਿੱਚ, ਤੁਸੀਂ ਸ਼ੂਗਰ-ਸਬੰਧਤ ਹਸਪਤਾਲ ਦੀਆਂ ਮੁਲਾਕਾਤਾਂ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਣ ਲਈ ਕਿਸੇ ਵੀ ਦਿਨ ਵਿੱਚ ਕਿੰਨੀ ਵਾਰ ਇੱਕ ਜਾਂ ਵੱਧ ਪਾਠ ਖੁੰਝੇ ਹਨ?"
+
+#: submissions/templates/submissions/_shared_questions.html:256
+msgid ""
+"This could include routine appointments for the diabetes clinic or other "
+"appointments with a PDSN, dietitian, psychologist etc. (not inpatient "
+"hospital stays)"
+msgstr "ਇਸ ਵਿੱਚ ਸ਼ੂਗਰ ਕਲੀਨਿਕ ਲਈ ਰੁਟੀਨ ਮੁਲਾਕਾਤਾਂ ਜਾਂ PDSN, ਡਾਇਟੀਸ਼ੀਅਨ, ਮਨੋਵਿਗਿਆਨੀ ਆਦਿ ਨਾਲ ਹੋਰ ਮੁਲਾਕਾਤਾਂ ਸ਼ਾਮਲ ਹੋ ਸਕਦੀਆਂ ਹਨ (ਹਸਪਤਾਲ ਵਿੱਚ ਭਰਤੀ ਰਹਿਣ ਦੇ ਸਮੇਂ ਨਹੀਂ)"
+
+#: submissions/templates/submissions/_shared_questions.html:268
+msgid ""
+"27. Are your child's absences for diabetes-related appointments authorised "
+"by their school?"
+msgstr "27. ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਦੀਆਂ ਸ਼ੂਗਰ ਨਾਲ ਸਬੰਧਤ ਮੁਲਾਕਾਤਾਂ ਲਈ ਗੈਰਹਾਜ਼ਰੀਆਂ ਉਨ੍ਹਾਂ ਦੇ ਸਕੂਲ ਦੁਆਰਾ ਅਧਿਕਾਰਤ ਹਨ?"
+
+#: submissions/templates/submissions/_shared_questions.html:270
+msgid ""
+"27. Are your absences for diabetes-related appointments authorised by your "
+"school?"
+msgstr "27. ਕੀ ਤੁਹਾਡੀਆਂ ਸ਼ੂਗਰ-ਸਬੰਧਤ ਮੁਲਾਕਾਤਾਂ ਲਈ ਗੈਰਹਾਜ਼ਰੀਆਂ ਤੁਹਾਡੇ ਸਕੂਲ ਦੁਆਰਾ ਅਧਿਕਾਰਤ ਹਨ?"
+
+#: submissions/templates/submissions/_shared_questions.html:273
+msgid ""
+"School absences due to health appointments should not be classed as "
+"unauthorised."
+msgstr "ਸਿਹਤ ਮੁਲਾਕਾਤਾਂ ਦੇ ਕਾਰਨ ਹੋਈਆਂ ਸਕੂਲ ਦੀਆਂ ਗੈਰਹਾਜ਼ਰੀਆਂ ਨੂੰ ਅਣਅਧਿਕਾਰਤ ਨਹੀਂ ਮੰਨਿਆ ਜਾਣਾ ਚਾਹੀਦਾ ਹੈ।"
+
+#: submissions/templates/submissions/_shared_questions.html:308
+msgid ""
+"28. Has your child's school attendance records been negatively impacted by "
+"attending diabetes clinic appointments?"
+msgstr "28. ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਦੇ ਸਕੂਲ ਹਾਜ਼ਰੀ ਰਿਕਾਰਡਾਂ 'ਤੇ ਸ਼ੂਗਰ ਕਲੀਨਿਕ ਦੀਆਂ ਮੁਲਾਕਾਤਾਂ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਣ ਨਾਲ ਨਕਾਰਾਤਮਕ ਪ੍ਰਭਾਵ ਪਿਆ ਹੈ?"
+
+#: submissions/templates/submissions/_shared_questions.html:310
+msgid ""
+"28. Has your school attendance records been negatively impacted by attending "
+"diabetes clinic appointments?"
+msgstr "28. ਕੀ ਡਾਇਬੀਟੀਜ਼ ਕਲੀਨਿਕ ਮੁਲਾਕਾਤਾਂ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਣ ਨਾਲ ਤੁਹਾਡੇ ਸਕੂਲ ਹਾਜ਼ਰੀ ਰਿਕਾਰਡ 'ਤੇ ਨਕਾਰਾਤਮਕ ਪ੍ਰਭਾਵ ਪਿਆ ਹੈ?"
+
+#: submissions/templates/submissions/_shared_questions.html:313
+msgid ""
+"School absences due to attending health appointments should not reduce the "
+"percentage attendance."
+msgstr "ਸਿਹਤ ਮੁਲਾਕਾਤਾਂ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਣ ਕਾਰਨ ਸਕੂਲ ਗੈਰਹਾਜ਼ਰੀਆਂ ਨੂੰ ਹਾਜ਼ਰੀ ਪ੍ਰਤੀਸ਼ਤ ਨੂੰ ਨਹੀਂ ਘਟਾਉਣਾ ਚਾਹੀਦਾ।"
+
+#: submissions/templates/submissions/_shared_questions.html:342
+msgid ""
+"29. In the past year, how many days has your child had off school/home "
+"education because of illness related to their diabetes?"
+msgstr "29. ਪਿਛਲੇ ਸਾਲ, ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਸ਼ੂਗਰ ਨਾਲ ਸਬੰਧਤ ਬਿਮਾਰੀ ਕਾਰਨ ਸਕੂਲ/ਘਰੇਲੂ ਸਿੱਖਿਆ ਤੋਂ ਕਿੰਨੇ ਦਿਨ ਛੁੱਟੀ ਲਈ ਹੈ?"
+
+#: submissions/templates/submissions/_shared_questions.html:344
+msgid ""
+"29. In the past year, how many days have you had off school/home education "
+"because of illness related to your diabetes?"
+msgstr "29. ਪਿਛਲੇ ਸਾਲ, ਤੁਹਾਡੀ ਸ਼ੂਗਰ ਨਾਲ ਸਬੰਧਤ ਬਿਮਾਰੀ ਕਾਰਨ ਤੁਸੀਂ ਸਕੂਲ/ਘਰੇਲੂ ਸਿੱਖਿਆ ਤੋਂ ਕਿੰਨੇ ਦਿਨ ਛੁੱਟੀ ਲਈ ਹੈ?"
+
+#: submissions/templates/submissions/_shared_questions.html:347
+msgid ""
+"This could include staying off school at home or include a hospital admission"
+msgstr "ਇਸ ਵਿੱਚ ਘਰ ਵਿੱਚ ਸਕੂਲ ਤੋਂ ਛੁੱਟੀ ਰਹਿਣਾ ਜਾਂ ਹਸਪਤਾਲ ਵਿੱਚ ਦਾਖਲ ਹੋਣਾ ਸ਼ਾਮਲ ਹੋ ਸਕਦਾ ਹੈ"
+
+#: submissions/templates/submissions/_shared_questions.html:359
+msgid ""
+"30. Has your child ever had to move schools due to difficulties in managing "
+"their diabetes?"
+msgstr "30. ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਕਦੇ ਆਪਣੀ ਸ਼ੂਗਰ ਦੇ ਪ੍ਰਬੰਧਨ ਵਿੱਚ ਮੁਸ਼ਕਲਾਂ ਕਾਰਨ ਸਕੂਲ ਬਦਲਣਾ ਪਿਆ ਹੈ?"
+
+#: submissions/templates/submissions/_shared_questions.html:361
+msgid ""
+"30. Have you ever had to move schools due to difficulties in managing your "
+"diabetes?"
+msgstr "30. ਕੀ ਤੁਹਾਨੂੰ ਕਦੇ ਆਪਣੀ ਸ਼ੂਗਰ ਦੇ ਪ੍ਰਬੰਧਨ ਵਿੱਚ ਮੁਸ਼ਕਲਾਂ ਕਾਰਨ ਸਕੂਲ ਬਦਲਣਾ ਪਿਆ ਹੈ?"
+
+#: submissions/templates/submissions/_shared_questions.html:386
+msgid ""
+"31. Has your child ever been excluded from any of the below activities "
+"because of their diabetes?"
+msgstr "31. ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਕਦੇ ਵੀ ਆਪਣੀ ਸ਼ੂਗਰ ਦੇ ਕਾਰਨ ਹੇਠ ਲਿਖੀਆਂ ਗਤੀਵਿਧੀਆਂ ਵਿੱਚੋਂ ਕਿਸੇ ਤੋਂ ਬਾਹਰ ਰੱਖਿਆ ਗਿਆ ਹੈ?"
+
+#: submissions/templates/submissions/_shared_questions.html:388
+msgid ""
+"31. Have you ever been excluded from any of the below activities because of "
+"your diabetes?"
+msgstr "31. ਕੀ ਤੁਹਾਨੂੰ ਕਦੇ ਆਪਣੀ ਸ਼ੂਗਰ ਦੇ ਕਾਰਨ ਹੇਠਾਂ ਦਿੱਤੀਆਂ ਕਿਸੇ ਵੀ ਗਤੀਵਿਧੀਆਂ ਤੋਂ ਬਾਹਰ ਰੱਖਿਆ ਗਿਆ ਹੈ?"
+
+#: submissions/templates/submissions/_shared_questions.html:391
+#: submissions/templates/submissions/child_form.html:477
+#: submissions/templates/submissions/child_form.html:508
+#: submissions/templates/submissions/parent_form.html:583
+#: submissions/templates/submissions/parent_form.html:614
+msgid "Select all that apply"
+msgstr "ਉਹ ਸਾਰੇ ਚੁਣੋ ਜੋ ਲਾਗੂ ਹੁੰਦੇ ਹਨ"
+
+#: submissions/templates/submissions/_shared_questions.html:398
+msgid "Lessons (e.g. PE, food tech)"
+msgstr "ਸਬਕ (ਜਿਵੇਂ ਕਿ PE, ਫੂਡ ਟੈਕ)"
+
+#: submissions/templates/submissions/_shared_questions.html:404
+msgid "Sports clubs"
+msgstr "ਖੇਡ ਕਲੱਬ"
+
+#: submissions/templates/submissions/_shared_questions.html:410
+msgid "School day trips"
+msgstr "ਦਿਨ ਦੇ ਸਕੂਲੀ ਦੌਰੇ"
+
+#: submissions/templates/submissions/_shared_questions.html:416
+msgid "Overnight/Residential school trips"
+msgstr "ਰਾਤ ਭਰ ਦੇ/ਰਿਹਾਇਸ਼ੀ ਸਕੂਲ ਦੌਰੇ"
+
+#: submissions/templates/submissions/_shared_questions.html:422
+msgid "Parties/celebrations"
+msgstr "ਪਾਰਟੀਆਂ/ਜਸ਼ਨ"
+
+#: submissions/templates/submissions/_shared_questions.html:434
+msgid "None of the above"
+msgstr "ਉਪਰੋਕਤ ਵਿੱਚੋਂ ਕੋਈ ਨਹੀਂ"
+
+#: submissions/templates/submissions/_shared_questions.html:439
+#: submissions/templates/submissions/child_form.html:334
+#: submissions/templates/submissions/parent_form.html:340
+msgid "Please specify"
+msgstr "ਕਿਰਪਾ ਕਰਕੇ ਦੱਸੋ"
+
+#: submissions/templates/submissions/_shared_questions.html:451
+msgid ""
+"32. Do you feel that your child's diabetes affects their performance in "
+"school/home education?"
+msgstr "32. ਕੀ ਤੁਹਾਨੂੰ ਲੱਗਦਾ ਹੈ ਕਿ ਤੁਹਾਡੇ ਬੱਚੇ ਦੀ ਸ਼ੂਗਰ ਤੁਹਾਡੇ ਬੱਚੇ ਦੇ ਸਕੂਲ/ਘਰੇਲੂ ਸਿੱਖਿਆ ਵਿੱਚ ਪ੍ਰਦਰਸ਼ਨ ਨੂੰ ਪ੍ਰਭਾਵਿਤ ਕਰਦੀ ਹੈ?"
+
+#: submissions/templates/submissions/_shared_questions.html:453
+msgid ""
+"32. Do you feel that your diabetes affects your performance in school/home "
+"education?"
+msgstr "32. ਕੀ ਤੁਹਾਨੂੰ ਲੱਗਦਾ ਹੈ ਕਿ ਤੁਹਾਡੀ ਸ਼ੂਗਰ ਸਕੂਲ/ਘਰੇਲੂ ਸਿੱਖਿਆ ਵਿੱਚ ਤੁਹਾਡੇ ਪ੍ਰਦਰਸ਼ਨ ਨੂੰ ਪ੍ਰਭਾਵਿਤ ਕਰਦੀ ਹੈ?"
+
+#: submissions/templates/submissions/_shared_questions.html:502
+msgid ""
+"33. Do your child's teachers have a good understanding of how diabetes can "
+"affect learning?"
+msgstr "33. ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਦੇ ਅਧਿਆਪਕਾਂ ਨੂੰ ਇਸ ਗੱਲ ਦੀ ਚੰਗੀ ਸਮਝ ਹੈ ਕਿ ਸ਼ੂਗਰ ਸਿੱਖਣ ਨੂੰ ਕਿਵੇਂ ਪ੍ਰਭਾਵਿਤ ਕਰ ਸਕਦੀ ਹੈ?"
+
+#: submissions/templates/submissions/_shared_questions.html:504
+msgid ""
+"33. Do your teachers have a good understanding of how diabetes can affect "
+"learning?"
+msgstr "33. ਕੀ ਤੁਹਾਡੇ ਅਧਿਆਪਕਾਂ ਨੂੰ ਚੰਗੀ ਸਮਝ ਹੈ ਕਿ ਸ਼ੂਗਰ ਕਿਸੇ ਦੇ ਸਿੱਖਣ ਨੂੰ ਕਿਵੇਂ ਪ੍ਰਭਾਵਿਤ ਕਰ ਸਕਦੀ ਹੈ?"
+
+#: submissions/templates/submissions/_shared_questions.html:507
+msgid ""
+"E.g. When blood glucose is too high or low, it may affect concentration or "
+"memory."
+msgstr "ਉਦਾਹਰਨ ਲਈ ਜਦੋਂ ਖੂਨ ਵਿੱਚ ਗਲੂਕੋਜ਼ ਬਹੁਤ ਜ਼ਿਆਦਾ ਜਾਂ ਘੱਟ ਹੁੰਦਾ ਹੈ, ਤਾਂ ਇਹ ਇਕਾਗਰਤਾ ਜਾਂ ਯਾਦਦਾਸ਼ਤ ਨੂੰ ਪ੍ਰਭਾਵਿਤ ਕਰ ਸਕਦੀ ਹੈ।"
+
+#: submissions/templates/submissions/_shared_questions.html:548
+msgid ""
+"34. Has your child ever been offered any reasonable adjustments because of "
+"their diabetes?"
+msgstr "34. ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਕਦੇ ਉਸਦੀ ਸ਼ੂਗਰ ਦੇ ਕਾਰਨ ਕੋਈ ਵਾਜਬ ਸਮਾਯੋਜਨ ਦੀ ਪੇਸ਼ਕਸ਼ ਕੀਤੀ ਗਈ ਹੈ?"
+
+#: submissions/templates/submissions/_shared_questions.html:550
+msgid ""
+"34. Have you ever been offered any reasonable adjustments because of your "
+"diabetes?"
+msgstr "34. ਕੀ ਤੁਹਾਨੂੰ ਕਦੇ ਤੁਹਾਡੀ ਸ਼ੂਗਰ ਕਾਰਨ ਕੋਈ ਵਾਜਬ ਤਬਦੀਲੀ ਦੀ ਪੇਸ਼ਕਸ਼ ਕੀਤੀ ਗਈ ਹੈ?"
+
+#: submissions/templates/submissions/_shared_questions.html:553
+msgid ""
+"(e.g. additional time in exams, snacks or drinks during class, fast passes "
+"for lunch queues)"
+msgstr "(ਜਿਵੇਂ ਕਿ ਪ੍ਰੀਖਿਆਵਾਂ ਵਿੱਚ ਵਾਧੂ ਸਮਾਂ, ਕਲਾਸ ਦੌਰਾਨ ਸਨੈਕਸ ਜਾਂ ਪੀਣ ਵਾਲੇ ਪਦਾਰਥ, ਦੁਪਹਿਰ ਦੇ ਖਾਣੇ ਦੀਆਂ ਕਤਾਰਾਂ ਲਈ ਤੇਜ਼ ਪਾਸ)"
+
+#: submissions/templates/submissions/_shared_questions.html:580
+msgid "Social and Emotional Impact"
+msgstr "ਸਮਾਜਿਕ ਅਤੇ ਭਾਵਨਾਤਮਕ ਪ੍ਰਭਾਵ"
+
+#: submissions/templates/submissions/_shared_questions.html:583
+msgid ""
+"This section asks about how your child's diabetes impacts their wellbeing at "
+"school."
+msgstr "ਇਹ ਭਾਗ ਇਸ ਬਾਰੇ ਪੁੱਛਦਾ ਹੈ ਕਿ ਤੁਹਾਡੇ ਬੱਚੇ ਦੀ ਸ਼ੂਗਰ ਸਕੂਲ ਵਿੱਚ ਉਨ੍ਹਾਂ ਦੀ ਤੰਦਰੁਸਤੀ ਨੂੰ ਕਿਵੇਂ ਪ੍ਰਭਾਵਤ ਕਰਦੀ ਹੈ।"
+
+#: submissions/templates/submissions/_shared_questions.html:585
+msgid ""
+"This section asks about how your diabetes impacts your wellbeing at school."
+msgstr "ਇਹ ਭਾਗ ਪੁੱਛਦਾ ਹੈ ਕਿ ਤੁਹਾਡੀ ਸ਼ੂਗਰ ਸਕੂਲ ਵਿੱਚ ਤੁਹਾਡੀ ਤੰਦਰੁਸਤੀ ਨੂੰ ਕਿਵੇਂ ਪ੍ਰਭਾਵਤ ਕਰਦੀ ਹੈ।"
+
+#: submissions/templates/submissions/_shared_questions.html:594
+msgid ""
+"35. Has your child ever felt left out or treated differently by other "
+"students or staff members because of their diabetes?"
+msgstr "35. ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਨੇ ਕਦੇ ਆਪਣੀ ਸ਼ੂਗਰ ਦੇ ਕਾਰਨ ਦੂਜੇ ਵਿਦਿਆਰਥੀਆਂ ਜਾਂ ਸਟਾਫ ਮੈਂਬਰਾਂ ਦੁਆਰਾ ਛੱਡਿਆ ਜਾਂ ਵੱਖਰਾ ਵਿਵਹਾਰ ਕੀਤਾ ਮਹਿਸੂਸ ਕੀਤਾ ਹੈ?"
+
+#: submissions/templates/submissions/_shared_questions.html:596
+msgid ""
+"35. Have you ever felt left out or treated differently by other students or "
+"staff members because of your diabetes?"
+msgstr "35. ਕੀ ਤੁਸੀਂ ਕਦੇ ਆਪਣੀ ਸ਼ੂਗਰ ਦੇ ਕਾਰਨ ਦੂਜੇ ਵਿਦਿਆਰਥੀਆਂ ਜਾਂ ਸਟਾਫ ਮੈਂਬਰਾਂ ਦੁਆਰਾ ਅਲੱਗ ਰੱਖਿਆ ਜਾਣਾ ਜਾਂ ਵੱਖਰਾ ਵਿਵਹਾਰ ਕੀਤਾ ਗਿਆ ਮਹਿਸੂਸ ਕੀਤਾ ਹੈ?"
+
+#: submissions/templates/submissions/_shared_questions.html:645
+msgid ""
+"36. Have you ever lost income due to taking time off work to attend your "
+"child's school for diabetes care?"
+msgstr "36. ਕੀ ਤੁਸੀਂ ਕਦੇ ਸ਼ੂਗਰ ਦੀ ਦੇਖਭਾਲ ਲਈ ਆਪਣੇ ਬੱਚੇ ਦੇ ਸਕੂਲ ਜਾਣ ਲਈ ਕੰਮ ਤੋਂ ਸਮਾਂ ਕੱਢਣ ਕਾਰਨ ਆਮਦਨ ਤੋਂ ਖੁੰਝੇ ਹੋ?"
+
+#: submissions/templates/submissions/_shared_questions.html:647
+msgid ""
+"E.g. Attending your child's school for diabetes management or your child "
+"being sent home because of diabetes-related illness."
+msgstr "ਜਿਵੇਂ ਕਿ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ ਆਪਣੇ ਬੱਚੇ ਦੇ ਸਕੂਲ ਜਾਣਾ ਜਾਂ ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਸ਼ੂਗਰ ਨਾਲ ਸਬੰਧਤ ਬਿਮਾਰੀ ਕਾਰਨ ਘਰ ਭੇਜ ਦਿੱਤਾ ਜਾਣਾ।"
+
+#: submissions/templates/submissions/_shared_questions.html:677
+msgid ""
+"37. How often do you feel anxiety or stress related to your child's diabetes "
+"while they're at school?"
+msgstr "37. ਤੁਹਾਡੇ ਬੱਚੇ ਦੇ ਸਕੂਲ ਵਿੱਚ ਹੋਣ 'ਤੇ ਤੁਸੀਂ ਅਕਸਰ ਕਿੰਨਾ ਚਿੰਤਿਤ ਜਾਂ ਤਣਾਅ ਮਹਿਸੂਸ ਕਰਦੇ ਹੋ?"
+
+#: submissions/templates/submissions/_shared_questions.html:679
+msgid ""
+"37. How often do you feel anxiety or stress related to your diabetes while "
+"you're at school?"
+msgstr "37. ਜਦੋਂ ਤੁਸੀਂ ਸਕੂਲ ਵਿੱਚ ਹੁੰਦੇ ਹੋ ਤਾਂ ਤੁਸੀਂ ਅਕਸਰ ਕਿੰਨਾ ਆਪਣੀ ਸ਼ੂਗਰ ਨਾਲ ਸਬੰਧਤ ਚਿੰਤਾ ਜਾਂ ਤਣਾਅ ਮਹਿਸੂਸ ਕਰਦੇ ਹੋ?"
+
+#: submissions/templates/submissions/_shared_questions.html:720
+msgid "And finally…"
+msgstr "ਅਤੇ ਅੰਤ ਵਿੱਚ…"
+
+#: submissions/templates/submissions/_shared_questions.html:727
+msgid ""
+"38. How well has your school supported you to manage your child's diabetes "
+"safely alongside their education?"
+msgstr "38. ਤੁਹਾਡੇ ਸਕੂਲ ਨੇ ਤੁਹਾਡੇ ਬੱਚੇ ਦੀ ਸ਼ੂਗਰ ਨੂੰ ਉਸਦੀ ਸਿੱਖਿਆ ਦੇ ਨਾਲ-ਨਾਲ ਸੁਰੱਖਿਅਤ ਢੰਗ ਨਾਲ ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ ਕਿੰਨੀ ਚੰਗੀ ਤਰ੍ਹਾਂ ਸਹਾਇਤਾ ਕੀਤੀ ਹੈ?"
+
+#: submissions/templates/submissions/_shared_questions.html:729
+msgid ""
+"38. How well has your school supported you to manage your diabetes safely "
+"alongside your education?"
+msgstr "38. ਤੁਹਾਡੇ ਸਕੂਲ ਨੇ ਤੁਹਾਡੀ ਸਿੱਖਿਆ ਦੇ ਨਾਲ-ਨਾਲ ਤੁਹਾਡੀ ਸ਼ੂਗਰ ਨੂੰ ਸੁਰੱਖਿਅਤ ਢੰਗ ਨਾਲ ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ ਤੁਹਾਡੀ ਕਿੰਨੀ ਚੰਗੀ ਤਰ੍ਹਾਂ ਸਹਾਇਤਾ ਕੀਤੀ ਹੈ?"
+
+#: submissions/templates/submissions/_shared_questions.html:778
+msgid ""
+"39. How well has your diabetes team supported you to manage your child's "
+"diabetes safely alongside their education?"
+msgstr "39. ਤੁਹਾਡੀ ਡਾਇਬੀਟੀਜ਼ ਟੀਮ ਨੇ ਤੁਹਾਡੇ ਬੱਚੇ ਦੀ ਸ਼ੂਗਰ ਨੂੰ ਉਸਦੀ ਸਿੱਖਿਆ ਦੇ ਨਾਲ-ਨਾਲ ਸੁਰੱਖਿਅਤ ਢੰਗ ਨਾਲ ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ ਕਿੰਨੀ ਚੰਗੀ ਤਰ੍ਹਾਂ ਸਹਾਇਤਾ ਕੀਤੀ ਹੈ?"
+
+#: submissions/templates/submissions/_shared_questions.html:780
+msgid ""
+"39. How well has your diabetes team supported you to manage your diabetes "
+"safely alongside your education?"
+msgstr "39. ਤੁਹਾਡੀ ਡਾਇਬੀਟੀਜ਼ ਟੀਮ ਨੇ ਤੁਹਾਡੀ ਸਿੱਖਿਆ ਦੇ ਨਾਲ-ਨਾਲ ਤੁਹਾਡੀ ਡਾਇਬੀਟੀਜ਼ ਦਾ ਸੁਰੱਖਿਅਤ ਢੰਗ ਨਾਲ ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ ਤੁਹਾਡੀ ਕਿੰਨੀ ਚੰਗੀ ਤਰ੍ਹਾਂ ਸਹਾਇਤਾ ਕੀਤੀ ਹੈ?"
+
+#: submissions/templates/submissions/_shared_questions.html:822
+msgid "40. What has worked well?"
+msgstr "40. ਕਿਹੜੀ ਚੀਜ਼ ਨੇ ਚੰਗੀ ਤਰ੍ਹਾਂ ਕੰਮ ਕੀਤਾ ਹੈ?"
+
+#: submissions/templates/submissions/_shared_questions.html:826
+msgid ""
+"What has been helpful about the support your child has at school to manage "
+"their diabetes?"
+msgstr "ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਸਕੂਲ ਵਿਖੇ ਉਨ੍ਹਾਂ ਦੀ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ ਮਿਲਣ ਵਾਲੀ ਸਹਾਇਤਾ ਬਾਰੇ ਕਿਹੜੀ ਚੀਜ਼ ਮਦਦਗਾਰ ਰਹੀ ਹੈ?"
+
+#: submissions/templates/submissions/_shared_questions.html:828
+msgid ""
+"What has been helpful about the support you have at school to manage your "
+"diabetes?"
+msgstr "ਸਕੂਲ ਵਿਖੇ ਤੁਹਾਡੀ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ ਮਿਲਣ ਵਾਲੀ ਸਹਾਇਤਾ ਬਾਰੇ ਕਿਹੜੀ ਚੀਜ਼ ਮਦਦਗਾਰ ਰਹੀ ਹੈ?"
+
+#: submissions/templates/submissions/_shared_questions.html:840
+msgid "41. What hasn't worked well?"
+msgstr "41. ਕਿਹੜੀ ਚੀਜ਼ ਨੇ ਚੰਗੀ ਤਰ੍ਹਾਂ ਕੰਮ ਨਹੀਂ ਕੀਤਾ ਹੈ?"
+
+#: submissions/templates/submissions/_shared_questions.html:844
+msgid ""
+"What difficulties have you faced in managing your child's diabetes at school?"
+msgstr "ਸਕੂਲ ਵਿੱਚ ਆਪਣੇ ਬੱਚੇ ਦੀ ਸ਼ੂਗਰ ਦੇ ਪ੍ਰਬੰਧਨ ਵਿੱਚ ਤੁਹਾਨੂੰ ਕਿਹੜੀਆਂ ਮੁਸ਼ਕਲਾਂ ਦਾ ਸਾਹਮਣਾ ਕਰਨਾ ਪਿਆ ਹੈ?"
+
+#: submissions/templates/submissions/_shared_questions.html:846
+msgid "What difficulties have you faced in managing your diabetes at school?"
+msgstr "ਸਕੂਲ ਵਿੱਚ ਆਪਣੀ ਸ਼ੂਗਰ ਦੇ ਪ੍ਰਬੰਧਨ ਵਿੱਚ ਤੁਹਾਨੂੰ ਕਿਹੜੀਆਂ ਮੁਸ਼ਕਲਾਂ ਦਾ ਸਾਹਮਣਾ ਕਰਨਾ ਪਿਆ ਹੈ?"
+
+#: submissions/templates/submissions/_shared_questions.html:859
+msgid ""
+"42. What could your school or diabetes team do differently to improve your "
+"child's experience?"
+msgstr "42. ਤੁਹਾਡਾ ਸਕੂਲ ਜਾਂ ਡਾਇਬੀਟੀਜ਼ ਟੀਮ ਤੁਹਾਡੇ ਬੱਚੇ ਦੇ ਅਨੁਭਵ ਨੂੰ ਬਿਹਤਰ ਬਣਾਉਣ ਲਈ ਵੱਖਰੇ ਢੰਗ ਨਾਲ ਕੀ ਕਰ ਸਕਦੀ ਹੈ?"
+
+#: submissions/templates/submissions/_shared_questions.html:861
+msgid ""
+"42. What could your school or diabetes team do differently to improve your "
+"experience?"
+msgstr "42. ਤੁਹਾਡਾ ਸਕੂਲ ਜਾਂ ਡਾਇਬੀਟੀਜ਼ ਟੀਮ ਤੁਹਾਡੇ ਅਨੁਭਵ ਨੂੰ ਬਿਹਤਰ ਬਣਾਉਣ ਲਈ ਵੱਖਰੇ ਢੰਗ ਨਾਲ ਕੀ ਕਰ ਸਕਦੀ ਹੈ?"
+
+#: submissions/templates/submissions/_shared_questions.html:874
+msgid "Start again"
+msgstr "ਦੁਬਾਰਾ ਸ਼ੁਰੂ ਕਰੋ"
+
+#: submissions/templates/submissions/_shared_questions.html:879
+msgid "Submit"
+msgstr "ਜਮ੍ਹਾਂ ਕਰੋ"
+
+#: submissions/templates/submissions/child_form.html:10
+#: submissions/templates/submissions/form.html:10
+#: submissions/templates/submissions/parent_form.html:10
+msgid "Go back"
+msgstr "ਵਾਪਸ ਜਾਓ"
+
+#: submissions/templates/submissions/child_form.html:14
+msgid "Young person survey"
+msgstr "ਨੌਜਵਾਨ ਵਿਅਕਤੀ ਸਰਵੇਖਣ"
+
+#: submissions/templates/submissions/child_form.html:15
+msgid ""
+"Please answer the following questions about your experience at school since "
+"being diagnosed with diabetes."
+msgstr "ਕਿਰਪਾ ਕਰਕੇ ਸ਼ੂਗਰ ਦੀ ਜਾਂਚ ਹੋਣ ਤੋਂ ਬਾਅਦ ਸਕੂਲ ਵਿੱਚ ਆਪਣੇ ਅਨੁਭਵ ਬਾਰੇ ਹੇਠਾਂ ਦਿੱਤੇ ਸਵਾਲਾਂ ਦੇ ਜਵਾਬ ਦਿਓ।"
+
+#: submissions/templates/submissions/child_form.html:25
+#: submissions/templates/submissions/parent_form.html:25
+msgid "Demographics"
+msgstr "ਜਨ ਅੰਕੜੇ"
+
+#: submissions/templates/submissions/child_form.html:26
+#: submissions/templates/submissions/parent_form.html:26
+msgid ""
+"We'd like to know a bit more about you so we can tailor our questions. We "
+"will also use this information to understand if children and young people "
+"with diabetes from different backgrounds have different experiences at "
+"school. All questions in this section are mandatory, but you may select "
+"'Prefer not to say' for some."
+msgstr "ਅਸੀਂ ਤੁਹਾਡੇ ਬਾਰੇ ਥੋੜ੍ਹਾ ਹੋਰ ਜਾਣਨਾ ਚਾਹੁੰਦੇ ਹਾਂ ਤਾਂ ਜੋ ਅਸੀਂ ਆਪਣੇ ਸਵਾਲ ਅਨੁਕੂਲ ਬਣਾ ਸਕੀਏ। ਅਸੀਂ ਇਸ ਜਾਣਕਾਰੀ ਦੀ ਵਰਤੋਂ ਇਹ ਸਮਝਣ ਲਈ ਵੀ ਕਰਾਂਗੇ ਕਿ ਕੀ ਵੱਖ-ਵੱਖ ਪਿਛੋਕੜ ਵਾਲੇ ਸ਼ੂਗਰ ਵਾਲੇ ਬੱਚਿਆਂ ਅਤੇ ਨੌਜਵਾਨਾਂ ਦੇ ਸਕੂਲ ਵਿੱਚ ਵੱਖੋ-ਵੱਖਰੇ ਅਨੁਭਵ ਹਨ। ਇਸ ਭਾਗ ਵਿੱਚ ਸਾਰੇ ਸਵਾਲ ਲਾਜ਼ਮੀ ਹਨ, ਪਰ ਤੁਸੀਂ ਕੁਝ ਲਈ 'ਦੱਸਣਾ ਪਸੰਦ ਨਹੀਂ' ਚੁਣ ਸਕਦੇ ਹੋ।"
+
+#: submissions/templates/submissions/child_form.html:32
+#: submissions/templates/submissions/parent_form.html:32
+msgid "1. Please select the region where your diabetes clinic is located."
+msgstr "1. ਕਿਰਪਾ ਕਰਕੇ ਉਹ ਖੇਤਰ ਚੁਣੋ ਜਿੱਥੇ ਤੁਹਾਡਾ ਡਾਇਬੀਟੀਜ਼ ਕਲੀਨਿਕ ਸਥਿਤ ਹੈ।"
+
+#: submissions/templates/submissions/child_form.html:34
+#: submissions/templates/submissions/parent_form.html:34
+msgid "Ask your diabetes team if you are unsure."
+msgstr "ਜੇਕਰ ਤੁਹਾਨੂੰ ਚੰਗੀ ਤਰ੍ਹਾਂ ਨਹੀਂ ਪਤਾ ਹੈ ਤਾਂ ਆਪਣੀ ਡਾਇਬੀਟੀਜ਼ ਟੀਮ ਨੂੰ ਪੁੱਛੋ।"
+
+#: submissions/templates/submissions/child_form.html:115
+#: submissions/templates/submissions/parent_form.html:115
+msgid ""
+"2. Please select the hospital where the diabetes clinic that you currently "
+"attend is normally held."
+msgstr "2. ਕਿਰਪਾ ਕਰਕੇ ਉਹ ਹਸਪਤਾਲ ਚੁਣੋ ਜਿੱਥੇ ਤੁਹਾਡਾ ਡਾਇਬੀਟੀਜ਼ ਕਲੀਨਿਕ ਆਮ ਤੌਰ 'ਤੇ ਆਯੋਜਿਤ ਕੀਤਾ ਜਾਂਦਾ ਹੈ।"
+
+#: submissions/templates/submissions/child_form.html:117
+#: submissions/templates/submissions/parent_form.html:117
+msgid ""
+"List of clinics depends on region selected above. Please type the name for "
+"now."
+msgstr "ਕਲੀਨਿਕਾਂ ਦੀ ਸੂਚੀ, ਖੇਤਰ ਦੇ ਅਧਾਰ ਤੇ। ਕਿਰਪਾ ਕਰਕੇ ਹੁਣ ਲਈ ਨਾਮ ਟਾਈਪ ਕਰੋ।"
+
+#: submissions/templates/submissions/child_form.html:128
+msgid "4. Are you a…"
+msgstr "4. ਕੀ ਤੁਸੀਂ ਇਹ ਹੋ…"
+
+#: submissions/templates/submissions/child_form.html:163
+msgid "6. What type of diabetes do you have?"
+msgstr "6. ਤੁਹਾਨੂੰ ਕਿਸ ਕਿਸਮ ਦੀ ਸ਼ੂਗਰ ਹੈ?"
+
+#: submissions/templates/submissions/child_form.html:192
+msgid "7. At what age were you diagnosed with diabetes?"
+msgstr "7. ਤੁਹਾਨੂੰ ਕਿਸ ਉਮਰ ਵਿੱਚ ਸ਼ੂਗਰ ਦਾ ਪਤਾ ਲੱਗਿਆ?"
+
+#: submissions/templates/submissions/child_form.html:233
+msgid "8. Which of the following best describes your ethnicity?"
+msgstr "8. ਹੇਠਾਂ ਦਿੱਤਿਆਂ ਵਿੱਚੋਂ ਕਿਹੜਾ ਤੁਹਾਡੀ ਜਾਤੀਅਤਾ ਨੂੰ ਸਭ ਤੋਂ ਵਧੀਆ ਢੰਗ ਨਾਲ ਦਰਸਾਉਂਦਾ ਹੈ?"
+
+#: submissions/templates/submissions/child_form.html:280
+msgid "9. What stage of education are you in?"
+msgstr "9. ਤੁਸੀਂ ਸਿੱਖਿਆ ਦੇ ਕਿਸ ਪੜਾਅ ਵਿੱਚ ਹੋ?"
+
+#: submissions/templates/submissions/child_form.html:345
+msgid "10. Which type of school or education do you attend?"
+msgstr "10. ਤੁਸੀਂ ਕਿਸ ਕਿਸਮ ਦੇ ਸਕੂਲ ਵਿੱਚ ਜਾਂਦੇ ਹੋ ਜਾਂ ਸਿੱਖਿਆ ਪ੍ਰਾਪਤ ਕਰਦੇ ਹੋ?"
+
+#: submissions/templates/submissions/child_form.html:353
+#: submissions/templates/submissions/parent_form.html:359
+msgid ""
+"These are schools where you do not have to pay to attend. This includes "
+"academies, colleges, and grammar schools."
+msgstr "ਇਹ ਉਹ ਸਕੂਲ ਹਨ ਜਿੱਥੇ ਤੁਹਾਨੂੰ ਪੜ੍ਹਾਈ ਲਈ ਭੁਗਤਾਨ ਨਹੀਂ ਕਰਨਾ ਪੈਂਦਾ। ਇਸ ਵਿੱਚ ਅਕੈਡਮੀਆਂ, ਕਾਲਜ ਅਤੇ ਗਰਾਮਰ ਸਕੂਲ ਸ਼ਾਮਲ ਹਨ।"
+
+#: submissions/templates/submissions/child_form.html:360
+#: submissions/templates/submissions/parent_form.html:366
+msgid ""
+"These are schools that charge fees to attend. Please select this even if you "
+"have received a scholarship or bursary."
+msgstr "ਇਹ ਉਹ ਸਕੂਲ ਹਨ ਜੋ ਪੜ੍ਹਾਈ ਲਈ ਫੀਸ ਲੈਂਦੇ ਹਨ। ਕਿਰਪਾ ਕਰਕੇ ਇਸਨੂੰ ਚੁਣੋ ਭਾਵੇਂ ਤੁਹਾਨੂੰ ਸਕਾਲਰਸ਼ਿਪ ਜਾਂ ਬਰਸਰੀ ਮਿਲੀ ਹੋਵੇ।"
+
+#: submissions/templates/submissions/child_form.html:376
+msgid ""
+"11. Was the decision to home educate related to your diabetes diagnosis?"
+msgstr "11. ਕੀ ਘਰ ਵਿੱਚ ਪੜ੍ਹਾਈ ਕਰਨ ਦਾ ਫੈਸਲਾ ਤੁਹਾਡੀ ਸ਼ੂਗਰ ਦੀ ਜਾਂਚ ਨਾਲ ਸਬੰਧਤ ਸੀ?"
+
+#: submissions/templates/submissions/child_form.html:411
+msgid "12. Are you eligible for free school meals?"
+msgstr "12. ਕੀ ਤੁਸੀਂ ਮੁਫ਼ਤ ਸਕੂਲੀ ਭੋਜਨ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਯੋਗ ਹੋ?"
+
+#: submissions/templates/submissions/child_form.html:445
+#: submissions/templates/submissions/parent_form.html:551
+msgid "Managing Diabetes"
+msgstr "ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ"
+
+#: submissions/templates/submissions/child_form.html:446
+msgid ""
+"This section asks about your diabetes treatment. We will use this "
+"information to see if children and young people using different diabetes "
+"technologies have different experiences at school."
+msgstr "ਇਹ ਭਾਗ ਤੁਹਾਡੇ ਸ਼ੂਗਰ ਦੇ ਇਲਾਜ ਬਾਰੇ ਪੁੱਛਦਾ ਹੈ। ਅਸੀਂ ਇਸ ਜਾਣਕਾਰੀ ਦੀ ਵਰਤੋਂ ਇਹ ਦੇਖਣ ਲਈ ਕਰਾਂਗੇ ਕਿ ਕੀ ਵੱਖ-ਵੱਖ ਸ਼ੂਗਰ ਤਕਨੀਕਾਂ ਦੀ ਵਰਤੋਂ ਕਰਨ ਵਾਲੇ ਬੱਚਿਆਂ ਅਤੇ ਨੌਜਵਾਨਾਂ ਦੇ ਸਕੂਲ ਵਿੱਚ ਵੱਖੋ-ਵੱਖਰੇ ਅਨੁਭਵ ਹੁੰਦੇ ਹਨ।"
+
+#: submissions/templates/submissions/child_form.html:452
+msgid ""
+"16. Do you need to administer insulin or monitor blood glucose to manage "
+"your diabetes when in school?"
+msgstr "16. ਕੀ ਤੁਹਾਨੂੰ ਸਕੂਲ ਵਿੱਚ ਆਪਣੀ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ ਇਨਸੁਲਿਨ ਲਗਾਉਣ ਜਾਂ ਖੂਨ ਵਿਚਲੇ ਗਲੂਕੋਜ਼ ਦੀ ਨਿਗਰਾਨੀ ਕਰਨ ਦੀ ਲੋੜ ਹੈ?"
+
+#: submissions/templates/submissions/child_form.html:475
+msgid "17. How do you administer insulin in school?"
+msgstr "17. ਤੁਸੀਂ ਸਕੂਲ ਵਿੱਚ ਇਨਸੁਲਿਨ ਕਿਵੇਂ ਲਗਾਉਂਦੇ ਹੋ?"
+
+#: submissions/templates/submissions/child_form.html:484
+#: submissions/templates/submissions/parent_form.html:590
+msgid "Injection/Smart insulin pen – e.g. Novopen, InPen"
+msgstr "ਇੰਜੈਕਸ਼ਨ/ਸਮਾਰਟ ਇਨਸੁਲਿਨ ਪੈੱਨ - ਉਦਾਹਰਨ ਲਈ Novopen, InPen"
+
+#: submissions/templates/submissions/child_form.html:490
+#: submissions/templates/submissions/parent_form.html:596
+msgid ""
+"Insulin pump (including as part of a Hybrid Closed Loop system) – e.g. "
+"Omnipod, MiniMed, Tandem"
+msgstr "ਇਨਸੁਲਿਨ ਪੰਪ (ਹਾਈਬ੍ਰਿਡ ਕਲੋਜ਼ਡ ਲੂਪ ਸਿਸਟਮ ਦੇ ਹਿੱਸੇ ਵਜੋਂ ਸ਼ਾਮਲ ਹੈ) - ਉਦਾਹਰਨ ਲਈ Omnipod, MiniMed, Tandem"
+
+#: submissions/templates/submissions/child_form.html:496
+msgid "N/A – I do not administer insulin in school"
+msgstr "ਲਾਗੂ ਨਹੀਂ - ਮੈਂ ਸਕੂਲ ਵਿੱਚ ਇਨਸੁਲਿਨ ਨਹੀਂ ਲਗਾਉਂਦਾ/ਦੀ"
+
+#: submissions/templates/submissions/child_form.html:506
+msgid "18. How do you monitor blood glucose levels in school?"
+msgstr "18. ਤੁਸੀਂ ਸਕੂਲ ਵਿੱਚ ਖੂਨ ਵਿੱਚ ਗਲੂਕੋਜ਼ ਦੇ ਪੱਧਰਾਂ ਦੀ ਨਿਗਰਾਨੀ ਕਿਵੇਂ ਕਰਦੇ ਹੋ?"
+
+#: submissions/templates/submissions/child_form.html:515
+#: submissions/templates/submissions/parent_form.html:621
+msgid "Finger prick testing"
+msgstr "ਫਿੰਗਰ ਪ੍ਰਿਕ ਟੈਸਟਿੰਗ"
+
+#: submissions/templates/submissions/child_form.html:521
+#: submissions/templates/submissions/parent_form.html:627
+msgid ""
+"Continuous glucose monitor (including as part of a Hybrid Closed Loop "
+"system) e.g. Dexcom, FreeStyle Libre 2 Plus or 3 Plus"
+msgstr "ਨਿਰੰਤਰ ਗਲੂਕੋਜ਼ ਮਾਨੀਟਰ (ਹਾਈਬ੍ਰਿਡ ਕਲੋਜ਼ਡ ਲੂਪ ਸਿਸਟਮ ਦੇ ਹਿੱਸੇ ਵਜੋਂ ਸ਼ਾਮਲ ਹੈ) ਜਿਵੇਂ ਕਿ Dexcom, FreeStyle Libre 2 Plus ਜਾਂ 3 Plus"
+
+#: submissions/templates/submissions/child_form.html:527
+msgid "N/A – I do not monitor blood glucose at school"
+msgstr "N/A – ਮੈਂ ਸਕੂਲ ਵਿੱਚ ਬਲੱਡ ਗਲੂਕੋਜ਼ ਦੀ ਨਿਗਰਾਨੀ ਨਹੀਂ ਕਰਦਾ/ਦੀ"
+
+#: submissions/templates/submissions/confirmation.html:7
+msgid "Survey submitted"
+msgstr "ਸਰਵੇਖਣ ਜਮ੍ਹਾਂ ਹੋ ਗਿਆ"
+
+#: submissions/templates/submissions/confirmation.html:10
+msgid "Thank you for sharing your experience."
+msgstr "ਆਪਣਾ ਅਨੁਭਵ ਸਾਂਝਾ ਕਰਨ ਲਈ ਧੰਨਵਾਦ।"
+
+#: submissions/templates/submissions/confirmation.html:14
+msgid "What happens next"
+msgstr "ਅੱਗੇ ਕੀ ਹੋਵੇਗਾ"
+
+#: submissions/templates/submissions/confirmation.html:15
+msgid ""
+"Your feedback helps us improve diabetes services for children and young "
+"people."
+msgstr "ਤੁਹਾਡੀ ਫੀਡਬੈਕ ਬੱਚਿਆਂ ਅਤੇ ਨੌਜਵਾਨਾਂ ਲਈ ਸ਼ੂਗਰ ਸੇਵਾਵਾਂ ਨੂੰ ਬਿਹਤਰ ਬਣਾਉਣ ਵਿੱਚ ਸਾਡੀ ਮਦਦ ਕਰਦੀ ਹੈ।"
+
+#: submissions/templates/submissions/confirmation.html:19
+msgid "Start a new survey"
+msgstr "ਨਵਾਂ ਸਰਵੇਖਣ ਸ਼ੁਰੂ ਕਰੋ"
+
+#: submissions/templates/submissions/form.html:14
+msgid "Are you…"
+msgstr "ਕੀ ਤੁਸੀਂ ਇਹ ਹੋ…"
+
+#: submissions/templates/submissions/form.html:19
+msgid "Please select one of the following"
+msgstr "ਕਿਰਪਾ ਕਰਕੇ ਹੇਠਾਂ ਦਿੱਤਿਆਂ ਵਿੱਚੋਂ ਇੱਕ ਚੁਣੋ"
+
+#: submissions/templates/submissions/form.html:39
+msgid "Continue"
+msgstr "ਜਾਰੀ ਰੱਖੋ"
+
+#: submissions/templates/submissions/landing.html:5
+msgid "National Paediatric Diabetes Audit PREM"
+msgstr "ਨੈਸ਼ਨਲ ਪੀਡੀਆਟ੍ਰਿਕ ਡਾਇਬੀਟੀਜ਼ ਆਡਿਟ PREM"
+
+#: submissions/templates/submissions/landing.html:6
+msgid "Patient Reported Experience Measure"
+msgstr "ਮਰੀਜ਼ ਦੁਆਰਾ ਦੱਸੀ ਗਈ ਅਨੁਭਵ ਮਾਪ"
+
+#: submissions/templates/submissions/landing.html:11
+msgid "Choose your language"
+msgstr "ਆਪਣੀ ਭਾਸ਼ਾ ਚੁਣੋ"
+
+#: submissions/templates/submissions/landing.html:28
+msgid "Get started"
+msgstr "ਸ਼ੁਰੂ ਕਰੋ"
+
+#: submissions/templates/submissions/parent_form.html:14
+msgid "Parent/carer survey"
+msgstr "ਮਾਪੇ/ਦੇਖਭਾਲ ਕਰਨ ਵਾਲੇ ਸਰਵੇਖਣ"
+
+#: submissions/templates/submissions/parent_form.html:15
+msgid ""
+"Please answer the following questions about your child's experience at "
+"school since being diagnosed with diabetes."
+msgstr "ਕਿਰਪਾ ਕਰਕੇ ਸ਼ੂਗਰ ਦੀ ਜਾਂਚ ਹੋਣ ਤੋਂ ਬਾਅਦ ਸਕੂਲ ਵਿੱਚ ਆਪਣੇ ਬੱਚੇ ਦੇ ਅਨੁਭਵ ਬਾਰੇ ਹੇਠਾਂ ਦਿੱਤੇ ਸਵਾਲਾਂ ਦੇ ਜਵਾਬ ਦਿਓ।"
+
+#: submissions/templates/submissions/parent_form.html:128
+msgid "5. Relationship to your child with diabetes"
+msgstr "5. ਸ਼ੂਗਰ ਵਾਲੇ ਤੁਹਾਡੇ ਬੱਚੇ ਨਾਲ ਸਬੰਧ"
+
+#: submissions/templates/submissions/parent_form.html:169
+msgid "6. What type of diabetes does your child have?"
+msgstr "6. ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਕਿਸ ਕਿਸਮ ਦੀ ਸ਼ੂਗਰ ਹੈ?"
+
+#: submissions/templates/submissions/parent_form.html:198
+msgid "7. At what age was your child diagnosed with diabetes?"
+msgstr "7. ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਕਿਸ ਉਮਰ ਵਿੱਚ ਸ਼ੂਗਰ ਦਾ ਪਤਾ ਲੱਗਿਆ ਸੀ?"
+
+#: submissions/templates/submissions/parent_form.html:239
+msgid "8. Which of the following best describes your child's ethnicity?"
+msgstr "8. ਹੇਠਾਂ ਵਿੱਚੋਂ ਕਿਹੜਾ ਤੁਹਾਡੇ ਬੱਚੇ ਦੀ ਜਾਤੀਅਤਾ ਨੂੰ ਸਭ ਤੋਂ ਵਧੀਆ ਢੰਗ ਨਾਲ ਦਰਸਾਉਂਦਾ ਹੈ?"
+
+#: submissions/templates/submissions/parent_form.html:286
+msgid "9. What stage of education is your child in?"
+msgstr "9. ਤੁਹਾਡਾ ਬੱਚਾ ਸਿੱਖਿਆ ਦੇ ਕਿਸ ਪੜਾਅ ਵਿੱਚ ਹੈ?"
+
+#: submissions/templates/submissions/parent_form.html:351
+msgid "10. Which type of school or education does your child attend?"
+msgstr "10. ਤੁਹਾਡਾ ਬੱਚਾ ਕਿਸ ਕਿਸਮ ਦੇ ਸਕੂਲ ਵਿੱਚ ਜਾਂਦਾ ਹੈ ਜਾਂ ਸਿੱਖਿਆ ਪ੍ਰਾਪਤ ਕਰਦਾ ਹੈ?"
+
+#: submissions/templates/submissions/parent_form.html:382
+msgid ""
+"11. Was your decision to home educate related to your child's diabetes "
+"diagnosis?"
+msgstr "11. ਕੀ ਘਰ ਵਿੱਚ ਪੜ੍ਹਾਈ ਕਰਨ ਦਾ ਤੁਹਾਡਾ ਫੈਸਲਾ ਤੁਹਾਡੇ ਬੱਚੇ ਦੀ ਸ਼ੂਗਰ ਦੀ ਜਾਂਚ ਨਾਲ ਸਬੰਧਤ ਸੀ?"
+
+#: submissions/templates/submissions/parent_form.html:417
+msgid "12. Is your child eligible for free school meals?"
+msgstr "12. ਕੀ ਤੁਹਾਡਾ ਬੱਚਾ ਮੁਫਤ ਸਕੂਲੀ ਭੋਜਨ ਪ੍ਰਾਪਤ ਕਰਨ ਦੇ ਯੋਗ ਹੈ?"
+
+#: submissions/templates/submissions/parent_form.html:451
+msgid "School Health Care Plans"
+msgstr "ਸਕੂਲ ਦੀਆਂ ਸਿਹਤ ਸੰਭਾਲ ਯੋਜਨਾਵਾਂ"
+
+#: submissions/templates/submissions/parent_form.html:452
+msgid ""
+"We would like to know if you and your child have received formal support in "
+"managing their diabetes alongside their education."
+msgstr "ਅਸੀਂ ਜਾਣਨਾ ਚਾਹੁੰਦੇ ਹਾਂ ਕਿ ਕੀ ਤੁਹਾਨੂੰ ਅਤੇ ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਆਪਣੀ ਸਿੱਖਿਆ ਦੇ ਨਾਲ-ਨਾਲ ਆਪਣੀ ਸ਼ੂਗਰ ਦੇ ਪ੍ਰਬੰਧਨ ਵਿੱਚ ਰਸਮੀ ਸਹਾਇਤਾ ਮਿਲੀ ਹੈ।"
+
+#: submissions/templates/submissions/parent_form.html:458
+msgid ""
+"13. Does your child have a school healthcare plan specifically for their "
+"diabetes?"
+msgstr "13. ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਕੋਲ ਖਾਸ ਤੌਰ 'ਤੇ ਆਪਣੀ ਸ਼ੂਗਰ ਲਈ ਸਕੂਲ ਸਿਹਤ ਸੰਭਾਲ ਯੋਜਨਾ ਹੈ?"
+
+#: submissions/templates/submissions/parent_form.html:460
+msgid ""
+"This is a plan made with your diabetes team and school. It could be an "
+"informal or a formal plan, such as Individual Healthcare Plans (IHP), "
+"Records of Needs, or Education, Health and Care Plans (EHCP)."
+msgstr "ਇਹ ਤੁਹਾਡੀ ਸ਼ੂਗਰ ਟੀਮ ਅਤੇ ਸਕੂਲ ਨਾਲ ਬਣਾਈ ਗਈ ਯੋਜਨਾ ਹੈ। ਇਹ ਇੱਕ ਗੈਰ-ਰਸਮੀ ਜਾਂ ਰਸਮੀ ਯੋਜਨਾ ਹੋ ਸਕਦੀ ਹੈ, ਜਿਵੇਂ ਕਿ ਇੰਡੀਵਿਡੁਅਲ ਹੈਲਥਕੇਅਰ ਪਲਾਨਜ਼ (IHP), ਰਿਕਾਰਡਸ ਆਫ ਨੀਡਜ਼, ਜਾਂ ਐਡੂਕੇਸ਼ਨ, ਹੈਲਥ ਐਂਡ ਕੇਅਰ ਪਲਾਨਜ਼ (EHCP)"
+
+#: submissions/templates/submissions/parent_form.html:488
+msgid ""
+"14. Does the school healthcare plan that's in place cover all your child's "
+"diabetes needs at school?"
+msgstr "14. ਕੀ ਸਕੂਲ ਦੀ ਸਿਹਤ ਸੰਭਾਲ ਯੋਜਨਾ ਜੋ ਲਾਗੂ ਕੀਤੀ ਗਈ ਹੈ, ਤੁਹਾਡੇ ਬੱਚੇ ਦੀਆਂ ਸਕੂਲ ਵਿੱਚ ਸ਼ੂਗਰ ਦੀਆਂ ਸਾਰੀਆਂ ਜ਼ਰੂਰਤਾਂ ਨੂੰ ਪੂਰਾ ਕਰਦੀ ਹੈ?"
+
+#: submissions/templates/submissions/parent_form.html:523
+msgid ""
+"15. Does your child's school have a direct contact within your child's "
+"diabetes team if they need advice or support?"
+msgstr "15. ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਦੇ ਸਕੂਲ ਦਾ ਤੁਹਾਡੇ ਬੱਚੇ ਦੀ ਸ਼ੂਗਰ ਟੀਮ ਦੇ ਅੰਦਰ ਸਿੱਧਾ ਸੰਪਰਕ ਹੈ ਜੇ ਉਹਨਾਂ ਨੂੰ ਸਲਾਹ ਜਾਂ ਸਹਾਇਤਾ ਦੀ ਲੋੜ ਹੈ?"
+
+#: submissions/templates/submissions/parent_form.html:552
+msgid ""
+"This section asks about your child's diabetes treatment. We will use this "
+"information to see if children and young people using different diabetes "
+"technologies have different experiences at school."
+msgstr "ਇਹ ਭਾਗ ਤੁਹਾਡੇ ਬੱਚੇ ਦੇ ਸ਼ੂਗਰ ਦੇ ਇਲਾਜ ਬਾਰੇ ਪੁੱਛਦਾ ਹੈ। ਅਸੀਂ ਇਸ ਜਾਣਕਾਰੀ ਦੀ ਵਰਤੋਂ ਇਹ ਦੇਖਣ ਲਈ ਕਰਾਂਗੇ ਕਿ ਕੀ ਵੱਖ-ਵੱਖ ਸ਼ੂਗਰ ਤਕਨਾਲੋਜੀਆਂ ਦੀ ਵਰਤੋਂ ਕਰਨ ਵਾਲੇ ਬੱਚਿਆਂ ਅਤੇ ਨੌਜਵਾਨਾਂ ਨੂੰ ਸਕੂਲ ਵਿੱਚ ਵੱਖੋ-ਵੱਖਰੇ ਅਨੁਭਵ ਹੁੰਦੇ ਹਨ।"
+
+#: submissions/templates/submissions/parent_form.html:558
+msgid ""
+"16. Does your child need to administer insulin or monitor blood glucose to "
+"manage their diabetes when in school?"
+msgstr "16. ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਸਕੂਲ ਵਿੱਚ ਆਪਣੀ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ ਇਨਸੁਲਿਨ ਦੇਣ ਜਾਂ ਖੂਨ ਵਿੱਚ ਗਲੂਕੋਜ਼ ਦੀ ਨਿਗਰਾਨੀ ਕਰਨ ਦੀ ਲੋੜ ਹੈ?"
+
+#: submissions/templates/submissions/parent_form.html:581
+msgid "17. How does your child administer insulin in school?"
+msgstr "17. ਤੁਹਾਡਾ ਬੱਚਾ ਸਕੂਲ ਵਿੱਚ ਇਨਸੁਲਿਨ ਕਿਵੇਂ ਲੈਂਦਾ ਹੈ?"
+
+#: submissions/templates/submissions/parent_form.html:602
+msgid "N/A – My child does not administer insulin in school"
+msgstr "ਲਾਗੂ ਨਹੀਂ – ਮੇਰਾ ​​ਬੱਚਾ ਸਕੂਲ ਵਿੱਚ ਇਨਸੁਲਿਨ ਨਹੀਂ ਲੈਂਦਾ/ਦੀ ਹੈ"
+
+#: submissions/templates/submissions/parent_form.html:612
+msgid "18. How does your child monitor blood glucose levels in school?"
+msgstr "18. ਤੁਹਾਡਾ ਬੱਚਾ ਸਕੂਲ ਵਿੱਚ ਬਲੱਡ ਗਲੂਕੋਜ਼ ਦੇ ਪੱਧਰਾਂ ਦੀ ਨਿਗਰਾਨੀ ਕਿਵੇਂ ਕਰਦਾ ਹੈ?"
+
+#: submissions/templates/submissions/parent_form.html:633
+msgid "N/A – My child does not monitor blood glucose at school"
+msgstr "ਲਾਗੂ ਨਹੀਂ– ਮੇਰਾ ​​ਬੱਚਾ ਸਕੂਲ ਵਿੱਚ ਬਲੱਡ ਗਲੂਕੋਜ਼ ਦੀ ਨਿਗਰਾਨੀ ਨਹੀਂ ਕਰਦਾ/ਦੀ"
+
+#: submissions/templates/submissions/parent_form.html:643
+msgid "19. Can you follow/monitor your child's blood glucose remotely?"
+msgstr "19. ਕੀ ਤੁਸੀਂ ਆਪਣੇ ਬੱਚੇ ਦੇ ਬਲੱਡ ਗਲੂਕੋਜ਼ ਦੀ ਦੂਰ ਰਹਿ ਕੇ ਦੇਖ ਸਕਦੇ/ਨਿਗਰਾਨੀ ਕਰ ਸਕਦੇ ਹੋ?"
+
+#: submissions/templates/submissions/parent_form.html:678
+msgid ""
+"20. Are you able to contact your child's school during the day if you are "
+"concerned about their diabetes?"
+msgstr "20. ਜੇਕਰ ਤੁਸੀਂ ਉਨ੍ਹਾਂ ਦੀ ਸ਼ੂਗਰ ਬਾਰੇ ਚਿੰਤਤ ਹੋ ਤਾਂ ਕੀ ਤੁਸੀਂ ਦਿਨ ਵੇਲੇ ਆਪਣੇ ਬੱਚੇ ਦੇ ਸਕੂਲ ਨਾਲ ਸੰਪਰਕ ਕਰ ਸਕਦੇ ਹੋ?"
