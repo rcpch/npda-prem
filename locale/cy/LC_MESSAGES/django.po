@@ -1,0 +1,1261 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-10 11:17+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n==2) ? 1 : (n != 8 && n != "
+"11) ? 2 : 3;\n"
+
+#: npda_prem/settings.py:113
+msgid "English"
+msgstr "English"
+
+#: npda_prem/settings.py:114
+msgid "Cymraeg"
+msgstr "Cymraeg"
+
+#: npda_prem/settings.py:115
+msgid "Urdu"
+msgstr "Urdu"
+
+#: npda_prem/settings.py:116
+msgid "Polish"
+msgstr "Polish"
+
+#: npda_prem/settings.py:117
+msgid "Ukrainian"
+msgstr "Ukrainian"
+
+#: submissions/models.py:8 submissions/templates/submissions/form.html:25
+msgid "A child or young person with diabetes"
+msgstr "Blentyn neu berson ifanc sydd â diabetes"
+
+#: submissions/models.py:9 submissions/templates/submissions/form.html:31
+msgid "The parent/carer of a child or young person with diabetes"
+msgstr "Rhiant/gofalwr i blentyn neu berson ifanc sydd â diabetes"
+
+#: submissions/models.py:20
+#: submissions/templates/submissions/child_form.html:40
+#: submissions/templates/submissions/parent_form.html:40
+msgid "North East & North Cumbria"
+msgstr "Gogledd-ddwyrain Lloegr a Gogledd Cumbria"
+
+#: submissions/models.py:21
+#: submissions/templates/submissions/child_form.html:46
+#: submissions/templates/submissions/parent_form.html:46
+msgid "North West"
+msgstr "Gogledd-orllewin Lloegr"
+
+#: submissions/models.py:22
+#: submissions/templates/submissions/child_form.html:52
+#: submissions/templates/submissions/parent_form.html:52
+msgid "Yorkshire & Humber"
+msgstr "Swydd Efrog a Humber"
+
+#: submissions/models.py:23
+#: submissions/templates/submissions/child_form.html:58
+#: submissions/templates/submissions/parent_form.html:58
+msgid "East Midlands"
+msgstr "Dwyrain Canolbarth Lloegr"
+
+#: submissions/models.py:24
+#: submissions/templates/submissions/child_form.html:64
+#: submissions/templates/submissions/parent_form.html:64
+msgid "West Midlands"
+msgstr "Gorllewin Canolbarth Lloegr"
+
+#: submissions/models.py:25
+#: submissions/templates/submissions/child_form.html:70
+#: submissions/templates/submissions/parent_form.html:70
+msgid "East of England"
+msgstr "Dwyrain Lloegr"
+
+#: submissions/models.py:26
+#: submissions/templates/submissions/child_form.html:76
+#: submissions/templates/submissions/parent_form.html:76
+msgid "South Central"
+msgstr "Canol De Lloegr"
+
+#: submissions/models.py:27
+#: submissions/templates/submissions/child_form.html:82
+#: submissions/templates/submissions/parent_form.html:82
+msgid "London & South East"
+msgstr "Llundain a De-ddwyrain Lloegr"
+
+#: submissions/models.py:28
+#: submissions/templates/submissions/child_form.html:88
+#: submissions/templates/submissions/parent_form.html:88
+msgid "South West"
+msgstr "De-orllewin Lloegr"
+
+#: submissions/models.py:29
+#: submissions/templates/submissions/child_form.html:94
+#: submissions/templates/submissions/parent_form.html:94
+msgid "Thames Valley"
+msgstr "Dyffryn Tafwys"
+
+#: submissions/models.py:30
+#: submissions/templates/submissions/child_form.html:100
+#: submissions/templates/submissions/parent_form.html:100
+msgid "Wales"
+msgstr "Cymru"
+
+#: submissions/models.py:31
+#: submissions/templates/submissions/child_form.html:106
+#: submissions/templates/submissions/parent_form.html:106
+msgid "Jersey"
+msgstr "Jersey"
+
+#: submissions/models.py:44
+#: submissions/templates/submissions/child_form.html:135
+msgid "Boy"
+msgstr "Bachgen"
+
+#: submissions/models.py:45
+#: submissions/templates/submissions/child_form.html:141
+msgid "Girl"
+msgstr "Geneth"
+
+#: submissions/models.py:46
+#: submissions/templates/submissions/child_form.html:147
+msgid "A gender not listed here"
+msgstr "Rhywedd sydd ddim wedi’i restru yma"
+
+#: submissions/models.py:47 submissions/models.py:94 submissions/models.py:133
+#: submissions/models.py:144
+#: submissions/templates/submissions/child_form.html:153
+#: submissions/templates/submissions/child_form.html:270
+#: submissions/templates/submissions/child_form.html:401
+#: submissions/templates/submissions/child_form.html:436
+#: submissions/templates/submissions/parent_form.html:276
+#: submissions/templates/submissions/parent_form.html:407
+#: submissions/templates/submissions/parent_form.html:442
+msgid "Prefer not to say"
+msgstr "Gwell gennyf beidio â dweud"
+
+#: submissions/models.py:55
+#: submissions/templates/submissions/parent_form.html:135
+msgid "Mother"
+msgstr "Mam"
+
+#: submissions/models.py:56
+#: submissions/templates/submissions/parent_form.html:141
+msgid "Father"
+msgstr "Tad"
+
+#: submissions/models.py:57
+#: submissions/templates/submissions/parent_form.html:147
+msgid "Grandmother"
+msgstr "Nain / Mam-gu"
+
+#: submissions/models.py:58
+#: submissions/templates/submissions/parent_form.html:153
+msgid "Grandfather"
+msgstr "Taid / Tad-cu"
+
+#: submissions/models.py:59
+#: submissions/templates/submissions/parent_form.html:159
+msgid "Other guardian or family member"
+msgstr "Gwarcheidwad arall neu aelod o’r teulu"
+
+#: submissions/models.py:67
+#: submissions/templates/submissions/child_form.html:170
+#: submissions/templates/submissions/parent_form.html:176
+msgid "Type 1"
+msgstr "Math 1"
+
+#: submissions/models.py:68
+#: submissions/templates/submissions/child_form.html:176
+#: submissions/templates/submissions/parent_form.html:182
+msgid "Type 2"
+msgstr "Math 2"
+
+#: submissions/models.py:69 submissions/models.py:93 submissions/models.py:109
+#: submissions/templates/submissions/_shared_questions.html:428
+#: submissions/templates/submissions/child_form.html:182
+#: submissions/templates/submissions/child_form.html:264
+#: submissions/templates/submissions/child_form.html:329
+#: submissions/templates/submissions/parent_form.html:188
+#: submissions/templates/submissions/parent_form.html:270
+#: submissions/templates/submissions/parent_form.html:335
+msgid "Other"
+msgstr "Arall"
+
+#: submissions/models.py:77
+#: submissions/templates/submissions/child_form.html:199
+#: submissions/templates/submissions/parent_form.html:205
+msgid "3 years or younger"
+msgstr "3 blwydd oed neu iau"
+
+#: submissions/models.py:78
+#: submissions/templates/submissions/child_form.html:205
+#: submissions/templates/submissions/parent_form.html:211
+msgid "4 – 7 years"
+msgstr "4-7 mlwydd oed"
+
+#: submissions/models.py:79
+#: submissions/templates/submissions/child_form.html:211
+#: submissions/templates/submissions/parent_form.html:217
+msgid "8 – 11 years"
+msgstr "8-11 mlwydd oed"
+
+#: submissions/models.py:80
+#: submissions/templates/submissions/child_form.html:217
+#: submissions/templates/submissions/parent_form.html:223
+msgid "12 – 16 years"
+msgstr "12-16 mlwydd oed"
+
+#: submissions/models.py:81
+#: submissions/templates/submissions/child_form.html:223
+#: submissions/templates/submissions/parent_form.html:229
+msgid "17 – 19 years"
+msgstr "17-19 mlwydd oed"
+
+#: submissions/models.py:89
+#: submissions/templates/submissions/child_form.html:240
+#: submissions/templates/submissions/parent_form.html:246
+msgid "White"
+msgstr "Gwyn"
+
+#: submissions/models.py:90
+#: submissions/templates/submissions/child_form.html:246
+#: submissions/templates/submissions/parent_form.html:252
+msgid "Black"
+msgstr "Du"
+
+#: submissions/models.py:91
+#: submissions/templates/submissions/child_form.html:252
+#: submissions/templates/submissions/parent_form.html:258
+msgid "Asian"
+msgstr "Asiaidd"
+
+#: submissions/models.py:92
+#: submissions/templates/submissions/child_form.html:258
+#: submissions/templates/submissions/parent_form.html:264
+msgid "Mixed"
+msgstr "Cymysg"
+
+#: submissions/models.py:102
+#: submissions/templates/submissions/child_form.html:287
+#: submissions/templates/submissions/parent_form.html:293
+msgid "Nursery"
+msgstr "Meithrinfa/Dosbarth Meithrin"
+
+#: submissions/models.py:103
+#: submissions/templates/submissions/child_form.html:293
+#: submissions/templates/submissions/parent_form.html:299
+msgid "Reception"
+msgstr "Dosbarth Derbyn"
+
+#: submissions/models.py:104
+#: submissions/templates/submissions/child_form.html:299
+#: submissions/templates/submissions/parent_form.html:305
+msgid "Key stage 1 (Years 1 & 2)"
+msgstr "Cyfnod allweddol 1 (Blwyddyn 1 a 2)"
+
+#: submissions/models.py:105
+#: submissions/templates/submissions/child_form.html:305
+#: submissions/templates/submissions/parent_form.html:311
+msgid "Key stage 2 (Years 3 to 6)"
+msgstr "Cyfnod allweddol 2 (Blwyddyn 3 i 6)"
+
+#: submissions/models.py:106
+#: submissions/templates/submissions/child_form.html:311
+#: submissions/templates/submissions/parent_form.html:317
+msgid "Key stage 3 (Years 7 to 9)"
+msgstr "Cyfnod allweddol 3 (Blwyddyn 7 i 9)"
+
+#: submissions/models.py:107
+#: submissions/templates/submissions/child_form.html:317
+#: submissions/templates/submissions/parent_form.html:323
+msgid "Key stage 4 (Years 10 & 11)"
+msgstr "Cyfnod allweddol 4 (Blwyddyn 10 a 11)"
+
+#: submissions/models.py:108
+#: submissions/templates/submissions/child_form.html:323
+#: submissions/templates/submissions/parent_form.html:329
+msgid "Key stage 5 (Years 12 & 13)"
+msgstr "Cyfnod allweddol 5 (Blwyddyn 12 a 13)"
+
+#: submissions/models.py:120
+#: submissions/templates/submissions/child_form.html:352
+#: submissions/templates/submissions/parent_form.html:358
+msgid "State funded school"
+msgstr "Ysgol sy'n cael ei hariannu gan y wladwriaeth"
+
+#: submissions/models.py:121
+#: submissions/templates/submissions/child_form.html:359
+#: submissions/templates/submissions/parent_form.html:365
+msgid "Private school"
+msgstr "Ysgol breifat"
+
+#: submissions/models.py:122
+#: submissions/templates/submissions/child_form.html:366
+#: submissions/templates/submissions/parent_form.html:372
+msgid "Home schooled/educated"
+msgstr "Ysgol gartref/addysg gartref"
+
+#: submissions/models.py:130
+#: submissions/templates/submissions/child_form.html:383
+#: submissions/templates/submissions/parent_form.html:389
+msgid "No, it was for other reasons"
+msgstr "Nac oedd, roedd am resymau gwahanol"
+
+#: submissions/models.py:131
+#: submissions/templates/submissions/child_form.html:389
+#: submissions/templates/submissions/parent_form.html:395
+msgid "Partly, the diabetes diagnosis influenced my decision"
+msgstr "Yn rhannol, dylanwadodd y diagnosis o ddiabetes ar fy mhenderfyniad"
+
+#: submissions/models.py:132
+#: submissions/templates/submissions/child_form.html:395
+#: submissions/templates/submissions/parent_form.html:401
+msgid "Yes, it was mainly because of the diabetes diagnosis"
+msgstr "Oedd, roedd yn bennaf oherwydd y diagnosis o ddiabetes"
+
+#: submissions/models.py:141 submissions/models.py:152
+#: submissions/models.py:162 submissions/models.py:178
+#: submissions/models.py:292
+#: submissions/templates/submissions/_shared_questions.html:319
+#: submissions/templates/submissions/_shared_questions.html:369
+#: submissions/templates/submissions/_shared_questions.html:559
+#: submissions/templates/submissions/_shared_questions.html:653
+#: submissions/templates/submissions/child_form.html:418
+#: submissions/templates/submissions/child_form.html:459
+#: submissions/templates/submissions/parent_form.html:424
+#: submissions/templates/submissions/parent_form.html:466
+#: submissions/templates/submissions/parent_form.html:495
+#: submissions/templates/submissions/parent_form.html:530
+#: submissions/templates/submissions/parent_form.html:565
+msgid "Yes"
+msgstr "Ydw"
+
+#: submissions/models.py:142 submissions/models.py:153
+#: submissions/models.py:164 submissions/models.py:179
+#: submissions/models.py:293
+#: submissions/templates/submissions/_shared_questions.html:325
+#: submissions/templates/submissions/_shared_questions.html:375
+#: submissions/templates/submissions/_shared_questions.html:565
+#: submissions/templates/submissions/_shared_questions.html:659
+#: submissions/templates/submissions/child_form.html:424
+#: submissions/templates/submissions/child_form.html:465
+#: submissions/templates/submissions/parent_form.html:430
+#: submissions/templates/submissions/parent_form.html:472
+#: submissions/templates/submissions/parent_form.html:507
+#: submissions/templates/submissions/parent_form.html:536
+#: submissions/templates/submissions/parent_form.html:571
+msgid "No"
+msgstr "Nac ydw"
+
+#: submissions/models.py:143 submissions/models.py:154
+#: submissions/models.py:165 submissions/models.py:196
+#: submissions/models.py:207 submissions/models.py:279
+#: submissions/templates/submissions/_shared_questions.html:84
+#: submissions/templates/submissions/_shared_questions.html:130
+#: submissions/templates/submissions/_shared_questions.html:176
+#: submissions/templates/submissions/_shared_questions.html:222
+#: submissions/templates/submissions/_shared_questions.html:297
+#: submissions/templates/submissions/_shared_questions.html:331
+#: submissions/templates/submissions/_shared_questions.html:491
+#: submissions/templates/submissions/_shared_questions.html:531
+#: submissions/templates/submissions/_shared_questions.html:634
+#: submissions/templates/submissions/child_form.html:430
+#: submissions/templates/submissions/parent_form.html:436
+#: submissions/templates/submissions/parent_form.html:478
+#: submissions/templates/submissions/parent_form.html:513
+#: submissions/templates/submissions/parent_form.html:542
+#: submissions/templates/submissions/parent_form.html:668
+#: submissions/templates/submissions/parent_form.html:703
+msgid "I don't know"
+msgstr "Ddim yn gwybod"
+
+#: submissions/models.py:163
+#: submissions/templates/submissions/parent_form.html:501
+msgid "Partially covers diabetes needs at school"
+msgstr "Mae’n cwmpasu anghenion diabetes yn yr ysgol yn rhannol"
+
+#: submissions/models.py:193 submissions/models.py:204
+#: submissions/models.py:216
+#: submissions/templates/submissions/_shared_questions.html:26
+#: submissions/templates/submissions/_shared_questions.html:66
+#: submissions/templates/submissions/_shared_questions.html:112
+#: submissions/templates/submissions/_shared_questions.html:158
+#: submissions/templates/submissions/_shared_questions.html:204
+#: submissions/templates/submissions/_shared_questions.html:279
+#: submissions/templates/submissions/_shared_questions.html:513
+#: submissions/templates/submissions/parent_form.html:650
+#: submissions/templates/submissions/parent_form.html:685
+msgid "Yes, always"
+msgstr "Oes, bob amser"
+
+#: submissions/models.py:194 submissions/models.py:205
+#: submissions/models.py:217
+#: submissions/templates/submissions/_shared_questions.html:32
+#: submissions/templates/submissions/_shared_questions.html:72
+#: submissions/templates/submissions/_shared_questions.html:118
+#: submissions/templates/submissions/_shared_questions.html:164
+#: submissions/templates/submissions/_shared_questions.html:210
+#: submissions/templates/submissions/_shared_questions.html:285
+#: submissions/templates/submissions/_shared_questions.html:519
+#: submissions/templates/submissions/parent_form.html:656
+#: submissions/templates/submissions/parent_form.html:691
+msgid "Yes, sometimes"
+msgstr "Oes, weithiau"
+
+#: submissions/models.py:195 submissions/models.py:206
+#: submissions/models.py:218
+#: submissions/templates/submissions/_shared_questions.html:38
+#: submissions/templates/submissions/_shared_questions.html:78
+#: submissions/templates/submissions/_shared_questions.html:124
+#: submissions/templates/submissions/_shared_questions.html:170
+#: submissions/templates/submissions/_shared_questions.html:216
+#: submissions/templates/submissions/_shared_questions.html:291
+#: submissions/templates/submissions/_shared_questions.html:525
+#: submissions/templates/submissions/parent_form.html:662
+#: submissions/templates/submissions/parent_form.html:697
+msgid "No, never"
+msgstr "Nac oes, byth"
+
+#: submissions/models.py:208 submissions/models.py:219
+#: submissions/models.py:294 submissions/models.py:329
+#: submissions/templates/submissions/_shared_questions.html:44
+#: submissions/templates/submissions/_shared_questions.html:90
+#: submissions/templates/submissions/_shared_questions.html:136
+#: submissions/templates/submissions/_shared_questions.html:228
+#: submissions/templates/submissions/_shared_questions.html:537
+#: submissions/templates/submissions/_shared_questions.html:571
+#: submissions/templates/submissions/_shared_questions.html:665
+#: submissions/templates/submissions/_shared_questions.html:767
+#: submissions/templates/submissions/parent_form.html:709
+msgid "Not applicable"
+msgstr "Amherthnasol"
+
+#: submissions/models.py:274 submissions/models.py:312
+#: submissions/templates/submissions/_shared_questions.html:461
+#: submissions/templates/submissions/_shared_questions.html:604
+#: submissions/templates/submissions/_shared_questions.html:687
+msgid "Never"
+msgstr "Byth"
+
+#: submissions/models.py:275
+#: submissions/templates/submissions/_shared_questions.html:467
+#: submissions/templates/submissions/_shared_questions.html:610
+msgid "Rarely"
+msgstr "Anaml"
+
+#: submissions/models.py:276
+#: submissions/templates/submissions/_shared_questions.html:473
+#: submissions/templates/submissions/_shared_questions.html:616
+msgid "Sometimes"
+msgstr "Weithiau"
+
+#: submissions/models.py:277
+#: submissions/templates/submissions/_shared_questions.html:479
+#: submissions/templates/submissions/_shared_questions.html:622
+msgid "Often"
+msgstr "Yn aml"
+
+#: submissions/models.py:278
+#: submissions/templates/submissions/_shared_questions.html:485
+#: submissions/templates/submissions/_shared_questions.html:628
+msgid "Always"
+msgstr "Bob amser"
+
+#: submissions/models.py:313
+#: submissions/templates/submissions/_shared_questions.html:693
+msgid "Less than once a week"
+msgstr "Llai nag unwaith yr wythnos"
+
+#: submissions/models.py:314
+#: submissions/templates/submissions/_shared_questions.html:699
+msgid "Once or twice a week"
+msgstr "Unwaith neu ddwywaith yr wythnos"
+
+#: submissions/models.py:315
+#: submissions/templates/submissions/_shared_questions.html:705
+msgid "Three or four times a week"
+msgstr "Tair neu bedair gwaith yr wythnos"
+
+#: submissions/models.py:316
+#: submissions/templates/submissions/_shared_questions.html:711
+msgid "Every day of the week"
+msgstr "Pob diwrnod o'r wythnos"
+
+#: submissions/models.py:324 submissions/models.py:337
+#: submissions/templates/submissions/_shared_questions.html:737
+#: submissions/templates/submissions/_shared_questions.html:788
+msgid "Very well supported"
+msgstr "Cefnogaeth dda iawn"
+
+#: submissions/models.py:325 submissions/models.py:338
+#: submissions/templates/submissions/_shared_questions.html:743
+#: submissions/templates/submissions/_shared_questions.html:794
+msgid "Well supported"
+msgstr "Cefnogaeth dda"
+
+#: submissions/models.py:326 submissions/models.py:339
+#: submissions/templates/submissions/_shared_questions.html:749
+#: submissions/templates/submissions/_shared_questions.html:800
+msgid "Neutral"
+msgstr "Niwtral"
+
+#: submissions/models.py:327 submissions/models.py:340
+#: submissions/templates/submissions/_shared_questions.html:755
+#: submissions/templates/submissions/_shared_questions.html:806
+msgid "Poorly supported"
+msgstr "Cefnogaeth wael"
+
+#: submissions/models.py:328 submissions/models.py:341
+#: submissions/templates/submissions/_shared_questions.html:761
+#: submissions/templates/submissions/_shared_questions.html:812
+msgid "Very poorly supported"
+msgstr "Cefnogaeth wael iawn"
+
+#: submissions/templates/submissions/_shared_questions.html:16
+msgid ""
+"21. If your child uses a smartphone or smartwatch to manage their diabetes, "
+"are they able to use it during lesson time at school?"
+msgstr "21. Os yw eich plentyn yn defnyddio ffôn clyfar neu oriawr glyfar i fonitro ei ddiabetes, a yw'n gallu ei ddefnyddio yn ystod amser gwersi yn yr ysgol?"
+
+#: submissions/templates/submissions/_shared_questions.html:18
+msgid ""
+"21. If you use a smartphone or smartwatch to manage your diabetes, are you "
+"able to use it during lesson time at school?"
+msgstr "21. Os wyt ti'n defnyddio ffôn clyfar neu oriawr glyfar i fonitro dy ddiabetes, wyt ti'n gallu ei ddefnyddio yn ystod amser gwersi yn yr ysgol?"
+
+#: submissions/templates/submissions/_shared_questions.html:55
+msgid ""
+"22. Is your child offered a private room at school for diabetes care, even "
+"if they don't use it?"
+msgstr "22. A yw eich plentyn yn cael cynnig ystafell breifat ar gyfer ei ofal diabetes, hyd yn oed os nad yw'n ei defnyddio?"
+
+#: submissions/templates/submissions/_shared_questions.html:57
+msgid ""
+"22. Are you offered a private room at school for diabetes care, even if you "
+"don't use it?"
+msgstr "22. Wyt ti'n cael cynnig ystafell breifat yn yr ysgol ar gyfer gofal diabetes, hyd yn oed os dwyt ti ddim yn ei ddefnyddio?"
+
+#: submissions/templates/submissions/_shared_questions.html:60
+msgid ""
+"E.g. For administering insulin, checking blood glucose, changing pump set, "
+"or anything else related to diabetes care"
+msgstr "E.e. Ar gyfer rhoi inswlin, gwirio glwcos y gwaed, newid set pwmp, neu unrhyw beth arall sy'n ymwneud â gofal diabetes"
+
+#: submissions/templates/submissions/_shared_questions.html:101
+msgid ""
+"23. Is your child allowed to manage diabetes in the classroom if required?"
+msgstr "23. Ydy eich plentyn yn cael rheoli diabetes yn y dosbarth os oes angen?"
+
+#: submissions/templates/submissions/_shared_questions.html:103
+msgid "23. Are you allowed to manage diabetes in the classroom if required?"
+msgstr "23. Wyt ti'n cael rheoli diabetes yn y dosbarth os oes angen?"
+
+#: submissions/templates/submissions/_shared_questions.html:106
+msgid "This includes checking blood glucose or giving insulin."
+msgstr "Mae hyn yn cynnwys gwirio glwcos y gwaed neu roi inswlin."
+
+#: submissions/templates/submissions/_shared_questions.html:147
+msgid ""
+"24. Is there a trained member of staff at school who can help your child "
+"with diabetes management?"
+msgstr "24. A oes aelod o staff hyfforddedig yn yr ysgol sy'n gallu helpu eich plentyn i reoli diabetes?"
+
+#: submissions/templates/submissions/_shared_questions.html:149
+msgid ""
+"24. Is there a trained member of staff at school who can help you with "
+"diabetes management?"
+msgstr "24. A oes aelod o staff hyfforddedig yn yr ysgol sy'n gallu dy helpu i reoli diabetes?"
+
+#: submissions/templates/submissions/_shared_questions.html:152
+msgid ""
+"This includes checking blood glucose, administering insulin, and providing "
+"support in emergencies. This training should be provided by the diabetes "
+"team."
+msgstr "Mae hyn yn cynnwys gwirio glwcos y gwaed, rhoi inswlin, a darparu cymorth mewn argyfyngau. Dylai'r hyfforddiant hwn gael ei ddarparu gan y tîm diabetes."
+
+#: submissions/templates/submissions/_shared_questions.html:187
+msgid ""
+"25. Does your child's school provide enough information about school meals "
+"for carb-counting?"
+msgstr "25. Ydy ysgol eich plentyn yn darparu digon o wybodaeth am brydau ysgol ar gyfer cyfrif carbohydradau?"
+
+#: submissions/templates/submissions/_shared_questions.html:189
+msgid ""
+"25. Does your school provide enough information about school meals for carb-"
+"counting?"
+msgstr "25. Ydy dy ysgol yn darparu digon o wybodaeth am brydau ysgol ar gyfer cyfrif carbohydradau?"
+
+#: submissions/templates/submissions/_shared_questions.html:194
+msgid ""
+"This includes information about carbohydrate content and portion sizes to "
+"help your child adjust insulin to match."
+msgstr "Mae hyn yn cynnwys gwybodaeth am gynnwys carbohydradau a meintiau prydau i helpu eich plentyn i addasu inswlin i gyd-fynd."
+
+#: submissions/templates/submissions/_shared_questions.html:196
+msgid ""
+"This includes information about carbohydrate content and portion sizes to "
+"help you adjust insulin to match."
+msgstr "Mae hyn yn cynnwys gwybodaeth am gynnwys carbohydradau a meintiau prydau i dy helpu i addasu inswlin i gyd-fynd."
+
+#: submissions/templates/submissions/_shared_questions.html:237
+msgid "Impact on Education"
+msgstr "Effaith ar Addysg"
+
+#: submissions/templates/submissions/_shared_questions.html:240
+msgid ""
+"This section asks about how your child's diabetes impacts their education."
+msgstr "Mae'r adran hon yn holi sut mae diabetes eich plentyn yn effeithio ar ei addysg."
+
+#: submissions/templates/submissions/_shared_questions.html:242
+msgid "This section asks about how your diabetes impacts your education."
+msgstr "Mae'r adran hon yn holi sut mae dy ddiabetes yn effeithio ar dy addysg."
+
+#: submissions/templates/submissions/_shared_questions.html:251
+msgid ""
+"26. In the past year, how many times has your child missed one or more "
+"lessons in any given day to attend diabetes-related hospital appointments?"
+msgstr "26. Yn ystod y flwyddyn ddiwethaf, sawl gwaith mae eich plentyn wedi methu un neu ragor o wersi mewn diwrnod penodol i fynd i apwyntiadau ysbyty sy'n ymwneud â diabetes?"
+
+#: submissions/templates/submissions/_shared_questions.html:253
+msgid ""
+"26. In the past year, how many times have you missed one or more lessons in "
+"any given day to attend diabetes-related hospital appointments?"
+msgstr "26. Yn ystod y flwyddyn ddiwethaf, sawl gwaith wyt ti wedi methu un neu ragor o wersi mewn diwrnod penodol i fynd i apwyntiadau ysbyty sy'n ymwneud â diabetes?"
+
+#: submissions/templates/submissions/_shared_questions.html:256
+msgid ""
+"This could include routine appointments for the diabetes clinic or other "
+"appointments with a PDSN, dietitian, psychologist etc. (not inpatient "
+"hospital stays)"
+msgstr "Gallai hyn gynnwys apwyntiadau arferol ar gyfer y clinig diabetes neu apwyntiadau eraill gyda PDSN, deietegydd, seicolegydd ac ati (ddim aros yn yr ysbyty fel claf mewnol)"
+
+#: submissions/templates/submissions/_shared_questions.html:268
+msgid ""
+"27. Are your child's absences for diabetes-related appointments authorised "
+"by their school?"
+msgstr "27. A yw absenoldebau eich plentyn ar gyfer apwyntiadau sy'n ymwneud â diabetes yn cael eu hawdurdodi gan ei ysgol?"
+
+#: submissions/templates/submissions/_shared_questions.html:270
+msgid ""
+"27. Are your absences for diabetes-related appointments authorised by your "
+"school?"
+msgstr "27. Ydy dy absenoldebau ar gyfer apwyntiadau sy'n ymwneud â diabetes yn cael eu hawdurdodi gan dy ysgol?"
+
+#: submissions/templates/submissions/_shared_questions.html:273
+msgid ""
+"School absences due to health appointments should not be classed as "
+"unauthorised."
+msgstr "Ni ddylai absenoldebau o'r ysgol oherwydd apwyntiadau iechyd gael eu cyfrif fel rhai anawdurdodedig."
+
+#: submissions/templates/submissions/_shared_questions.html:308
+msgid ""
+"28. Has your child's school attendance records been negatively impacted by "
+"attending diabetes clinic appointments?"
+msgstr "28. A yw mynd i apwyntiadau clinig diabetes wedi effeithio'n negyddol ar gofnodion presenoldeb eich plentyn yn yr ysgol?"
+
+#: submissions/templates/submissions/_shared_questions.html:310
+msgid ""
+"28. Has your school attendance records been negatively impacted by attending "
+"diabetes clinic appointments?"
+msgstr "28. Ydy mynd i apwyntiadau clinig diabetes wedi effeithio'n negyddol ar dy gofnodion presenoldeb yn yr ysgol?"
+
+#: submissions/templates/submissions/_shared_questions.html:313
+msgid ""
+"School absences due to attending health appointments should not reduce the "
+"percentage attendance."
+msgstr "Ni ddylai absenoldebau o'r ysgol oherwydd apwyntiadau iechyd leihau canran presenoldeb."
+
+#: submissions/templates/submissions/_shared_questions.html:342
+msgid ""
+"29. In the past year, how many days has your child had off school/home "
+"education because of illness related to their diabetes?"
+msgstr "29. Yn ystod y flwyddyn ddiwethaf, sawl diwrnod mae eich plentyn wedi bod yn absennol o'r ysgol/addysg gartref oherwydd salwch a oedd yn gysylltiedig â'i ddiabetes?"
+
+#: submissions/templates/submissions/_shared_questions.html:344
+msgid ""
+"29. In the past year, how many days have you had off school/home education "
+"because of illness related to your diabetes?"
+msgstr "29. Yn ystod y flwyddyn ddiwethaf, sawl diwrnod wyt ti wedi bod yn absennol o'r ysgol/addysg gartref oherwydd salwch oedd yn gysylltiedig â dy ddiabetes?"
+
+#: submissions/templates/submissions/_shared_questions.html:347
+msgid ""
+"This could include staying off school at home or include a hospital admission"
+msgstr "Gallai hyn gynnwys aros gartref yn lle mynd i'r ysgol neu gynnwys mynd i'r ysbyty"
+
+#: submissions/templates/submissions/_shared_questions.html:359
+msgid ""
+"30. Has your child ever had to move schools due to difficulties in managing "
+"their diabetes?"
+msgstr "30. A yw eich plentyn erioed wedi gorfod symud ysgol oherwydd trafferthion gyda rheoli ei ddiabetes?"
+
+#: submissions/templates/submissions/_shared_questions.html:361
+msgid ""
+"30. Have you ever had to move schools due to difficulties in managing your "
+"diabetes?"
+msgstr "30. Wyt ti erioed wedi gorfod symud ysgol oherwydd trafferthion gyda rheoli dy ddiabetes?"
+
+#: submissions/templates/submissions/_shared_questions.html:386
+msgid ""
+"31. Has your child ever been excluded from any of the below activities "
+"because of their diabetes?"
+msgstr "31. A yw eich plentyn erioed wedi cael ei eithrio o unrhyw un o'r gweithgareddau isod oherwydd ei ddiabetes?"
+
+#: submissions/templates/submissions/_shared_questions.html:388
+msgid ""
+"31. Have you ever been excluded from any of the below activities because of "
+"your diabetes?"
+msgstr "31. Wyt ti erioed wedi cael dy eithrio o unrhyw un o'r gweithgareddau isod oherwydd dy ddiabetes?"
+
+#: submissions/templates/submissions/_shared_questions.html:391
+#: submissions/templates/submissions/child_form.html:477
+#: submissions/templates/submissions/child_form.html:508
+#: submissions/templates/submissions/parent_form.html:583
+#: submissions/templates/submissions/parent_form.html:614
+msgid "Select all that apply"
+msgstr "Dewiswch bob un sy'n berthnasol"
+
+#: submissions/templates/submissions/_shared_questions.html:398
+msgid "Lessons (e.g. PE, food tech)"
+msgstr "Gwersi (e.e. ymarfer corff, technoleg bwyd)"
+
+#: submissions/templates/submissions/_shared_questions.html:404
+msgid "Sports clubs"
+msgstr "Clybiau chwaraeon"
+
+#: submissions/templates/submissions/_shared_questions.html:410
+msgid "School day trips"
+msgstr "Teithiau diwrnod gyda’r ysgol"
+
+#: submissions/templates/submissions/_shared_questions.html:416
+msgid "Overnight/Residential school trips"
+msgstr "Teithiau dros nos/preswyl gyda’r ysgol"
+
+#: submissions/templates/submissions/_shared_questions.html:422
+msgid "Parties/celebrations"
+msgstr "Partïon/dathliadau"
+
+#: submissions/templates/submissions/_shared_questions.html:434
+msgid "None of the above"
+msgstr "Dim un o'r uchod"
+
+#: submissions/templates/submissions/_shared_questions.html:439
+#: submissions/templates/submissions/child_form.html:334
+#: submissions/templates/submissions/parent_form.html:340
+msgid "Please specify"
+msgstr "Nodwch os gwelwch yn dda"
+
+#: submissions/templates/submissions/_shared_questions.html:451
+msgid ""
+"32. Do you feel that your child's diabetes affects their performance in "
+"school/home education?"
+msgstr "32. A ydych chi'n teimlo bod diabetes eich plentyn yn effeithio ar berfformiad eich plentyn yn yr ysgol/addysg gartref?"
+
+#: submissions/templates/submissions/_shared_questions.html:453
+msgid ""
+"32. Do you feel that your diabetes affects your performance in school/home "
+"education?"
+msgstr "32. Wyt ti'n teimlo bod dy ddiabetes yn effeithio ar dy berfformiad yn yr ysgol/yn dy addysg gartref?"
+
+#: submissions/templates/submissions/_shared_questions.html:502
+msgid ""
+"33. Do your child's teachers have a good understanding of how diabetes can "
+"affect learning?"
+msgstr "33. A oes gan athrawon eich plentyn ddealltwriaeth dda o sut all diabetes effeithio ar ddysgu?"
+
+#: submissions/templates/submissions/_shared_questions.html:504
+msgid ""
+"33. Do your teachers have a good understanding of how diabetes can affect "
+"learning?"
+msgstr "33. Oes gan dy athrawon ddealltwriaeth dda o sut all diabetes effeithio ar ddysgu?"
+
+#: submissions/templates/submissions/_shared_questions.html:507
+msgid ""
+"E.g. When blood glucose is too high or low, it may affect concentration or "
+"memory."
+msgstr "E.e. Pan mae lefelau glwcos y gwaed yn rhy uchel neu'n rhy isel, gall effeithio ar lefelau canolbwyntio neu gof."
+
+#: submissions/templates/submissions/_shared_questions.html:548
+msgid ""
+"34. Has your child ever been offered any reasonable adjustments because of "
+"their diabetes?"
+msgstr "34. A yw eich plentyn erioed wedi cael cynnig unrhyw addasiadau rhesymol oherwydd ei ddiabetes?"
+
+#: submissions/templates/submissions/_shared_questions.html:550
+msgid ""
+"34. Have you ever been offered any reasonable adjustments because of your "
+"diabetes?"
+msgstr "34. Wyt ti erioed wedi cael cynnig addasiadau rhesymol oherwydd dy ddiabetes?"
+
+#: submissions/templates/submissions/_shared_questions.html:553
+msgid ""
+"(e.g. additional time in exams, snacks or drinks during class, fast passes "
+"for lunch queues)"
+msgstr "(e.e. amser ychwanegol mewn arholiadau, byrbrydau neu ddiodydd yn ystod dosbarthiadau, hawl i fynd i flaen ciwiau cinio)"
+
+#: submissions/templates/submissions/_shared_questions.html:580
+msgid "Social and Emotional Impact"
+msgstr "Effaith Gymdeithasol ac Emosiynol"
+
+#: submissions/templates/submissions/_shared_questions.html:583
+msgid ""
+"This section asks about how your child's diabetes impacts their wellbeing at "
+"school."
+msgstr "Mae'r adran hon yn holi sut mae diabetes eich plentyn yn effeithio ar ei lesiant yn yr ysgol."
+
+#: submissions/templates/submissions/_shared_questions.html:585
+msgid ""
+"This section asks about how your diabetes impacts your wellbeing at school."
+msgstr "Mae'r adran hon yn holi sut mae dy ddiabetes yn effeithio ar dy lesiant yn yr ysgol."
+
+#: submissions/templates/submissions/_shared_questions.html:594
+msgid ""
+"35. Has your child ever felt left out or treated differently by other "
+"students or staff members because of their diabetes?"
+msgstr "35. A yw eich plentyn erioed wedi teimlo ei fod yn cael ei eithrio neu ei drin yn wahanol gan aelodau o staff neu fyfyrwyr eraill oherwydd ei ddiabetes?"
+
+#: submissions/templates/submissions/_shared_questions.html:596
+msgid ""
+"35. Have you ever felt left out or treated differently by other students or "
+"staff members because of your diabetes?"
+msgstr "35. Wyt ti erioed wedi teimlo dy fod yn cael dy eithrio neu dy drin yn wahanol gan aelodau o staff neu fyfyrwyr eraill oherwydd dy ddiabetes?"
+
+#: submissions/templates/submissions/_shared_questions.html:645
+msgid ""
+"36. Have you ever lost income due to taking time off work to attend your "
+"child's school for diabetes care?"
+msgstr "36. A ydych chi erioed wedi colli incwm o ganlyniad i gymryd amser i ffwrdd o'r gwaith i fynd i ysgol eich plentyn ar gyfer gofal diabetes?"
+
+#: submissions/templates/submissions/_shared_questions.html:647
+msgid ""
+"E.g. Attending your child's school for diabetes management or your child "
+"being sent home because of diabetes-related illness."
+msgstr "E.e. Mynd i ysgol eich plentyn ar gyfer rheoli diabetes neu eich plentyn yn cael ei anfon adref oherwydd salwch sy'n gysylltiedig â diabetes."
+
+#: submissions/templates/submissions/_shared_questions.html:677
+msgid ""
+"37. How often do you feel anxiety or stress related to your child's diabetes "
+"while they're at school?"
+msgstr "37. Pa mor aml ydych chi'n teimlo pryder neu straen sy'n gysylltiedig â diabetes eich plentyn pan mae yn yr ysgol?"
+
+#: submissions/templates/submissions/_shared_questions.html:679
+msgid ""
+"37. How often do you feel anxiety or stress related to your diabetes while "
+"you're at school?"
+msgstr "37. Pa mor aml wyt ti'n teimlo pryder neu straen sy'n gysylltiedig â dy ddiabetes pan rwyt ti yn yr ysgol?"
+
+#: submissions/templates/submissions/_shared_questions.html:720
+msgid "And finally…"
+msgstr "Ac yn olaf…"
+
+#: submissions/templates/submissions/_shared_questions.html:727
+msgid ""
+"38. How well has your school supported you to manage your child's diabetes "
+"safely alongside their education?"
+msgstr "38. Pa mor dda mae ysgol eich plentyn wedi eich cefnogi i reoli diabetes eich plentyn yn ddiogel ochr yn ochr â'i addysg?"
+
+#: submissions/templates/submissions/_shared_questions.html:729
+msgid ""
+"38. How well has your school supported you to manage your diabetes safely "
+"alongside your education?"
+msgstr "38. Pa mor dda mae dy ysgol wedi dy gefnogi i reoli dy ddiabetes yn ddiogel ochr yn ochr â dy addysg?"
+
+#: submissions/templates/submissions/_shared_questions.html:778
+msgid ""
+"39. How well has your diabetes team supported you to manage your child's "
+"diabetes safely alongside their education?"
+msgstr "39. Pa mor dda mae tîm diabetes eich plentyn wedi eich cefnogi i reoli diabetes eich plentyn yn ddiogel ochr yn ochr â'i addysg?"
+
+#: submissions/templates/submissions/_shared_questions.html:780
+msgid ""
+"39. How well has your diabetes team supported you to manage your diabetes "
+"safely alongside your education?"
+msgstr "39. Pa mor dda mae dy dîm diabetes wedi dy gefnogi i reoli dy ddiabetes yn ddiogel ochr yn ochr â dy addysg?"
+
+#: submissions/templates/submissions/_shared_questions.html:822
+msgid "40. What has worked well?"
+msgstr "40. Beth sydd wedi gweithio'n dda?"
+
+#: submissions/templates/submissions/_shared_questions.html:826
+msgid ""
+"What has been helpful about the support your child has at school to manage "
+"their diabetes?"
+msgstr "Beth sydd wedi bod yn ddefnyddiol am y cymorth y mae eich plentyn wedi ei gael yn yr ysgol i reoli ei ddiabetes?"
+
+#: submissions/templates/submissions/_shared_questions.html:828
+msgid ""
+"What has been helpful about the support you have at school to manage your "
+"diabetes?"
+msgstr "Beth sydd wedi bod yn ddefnyddiol am y cymorth rwyt ti wedi ei gael yn yr ysgol i reoli dy ddiabetes?"
+
+#: submissions/templates/submissions/_shared_questions.html:840
+msgid "41. What hasn't worked well?"
+msgstr "41. Beth sydd heb weithio'n dda?"
+
+#: submissions/templates/submissions/_shared_questions.html:844
+msgid ""
+"What difficulties have you faced in managing your child's diabetes at school?"
+msgstr "Pa anawsterau ydych chi wedi eu hwynebu wrth reoli diabetes eich plentyn yn yr ysgol?"
+
+#: submissions/templates/submissions/_shared_questions.html:846
+msgid "What difficulties have you faced in managing your diabetes at school?"
+msgstr "Pa anawsterau wyt ti wedi eu hwynebu wrth reoli dy ddiabetes yn yr ysgol?"
+
+#: submissions/templates/submissions/_shared_questions.html:859
+msgid ""
+"42. What could your school or diabetes team do differently to improve your "
+"child's experience?"
+msgstr "42. Beth allai eich ysgol neu eich tîm diabetes ei wneud yn wahanol i wella profiad eich plentyn?"
+
+#: submissions/templates/submissions/_shared_questions.html:861
+msgid ""
+"42. What could your school or diabetes team do differently to improve your "
+"experience?"
+msgstr "42. Beth allai dy ysgol neu dy dîm diabetes ei wneud yn wahanol i wella dy brofiad?"
+
+#: submissions/templates/submissions/_shared_questions.html:874
+msgid "Start again"
+msgstr "Dechrau eto"
+
+#: submissions/templates/submissions/_shared_questions.html:879
+msgid "Submit"
+msgstr "Cyflwyno"
+
+#: submissions/templates/submissions/child_form.html:10
+#: submissions/templates/submissions/form.html:10
+#: submissions/templates/submissions/parent_form.html:10
+msgid "Go back"
+msgstr "Mynd yn ôl"
+
+#: submissions/templates/submissions/child_form.html:14
+msgid "Young person survey"
+msgstr "Arolwg person ifanc"
+
+#: submissions/templates/submissions/child_form.html:15
+msgid ""
+"Please answer the following questions about your experience at school since "
+"being diagnosed with diabetes."
+msgstr "Atebwch y cwestiynau canlynol am eich profiad yn yr ysgol ers cael diagnosis o ddiabetes."
+
+#: submissions/templates/submissions/child_form.html:25
+#: submissions/templates/submissions/parent_form.html:25
+msgid "Demographics"
+msgstr "Demograffeg"
+
+#: submissions/templates/submissions/child_form.html:26
+#: submissions/templates/submissions/parent_form.html:26
+msgid ""
+"We'd like to know a bit more about you so we can tailor our questions. We "
+"will also use this information to understand if children and young people "
+"with diabetes from different backgrounds have different experiences at "
+"school. All questions in this section are mandatory, but you may select "
+"'Prefer not to say' for some."
+msgstr "Hoffem wybod ychydig mwy amdanoch chi er mwyn teilwra ein cwestiynau. Byddwn hefyd yn defnyddio'r wybodaeth hon i ddeall a yw plant a phobl ifanc â diabetes o gefndiroedd gwahanol yn cael profiadau gwahanol yn yr ysgol. Mae pob cwestiwn yn yr adran hon yn orfodol, ond gallwch ddewis 'Gwell gennyf beidio â dweud' ar gyfer rhai."
+
+#: submissions/templates/submissions/child_form.html:32
+#: submissions/templates/submissions/parent_form.html:32
+msgid "1. Please select the region where your diabetes clinic is located."
+msgstr "1. Dewiswch y rhanbarth lle mae eich clinig diabetes."
+
+#: submissions/templates/submissions/child_form.html:34
+#: submissions/templates/submissions/parent_form.html:34
+msgid "Ask your diabetes team if you are unsure."
+msgstr "Gofynnwch i'ch tîm diabetes os ydych chi'n ansicr."
+
+#: submissions/templates/submissions/child_form.html:115
+#: submissions/templates/submissions/parent_form.html:115
+msgid ""
+"2. Please select the hospital where the diabetes clinic that you currently "
+"attend is normally held."
+msgstr "2. Dewiswch yr ysbyty lle mae'r clinig diabetes rydych chi'n ei fynychu ar hyn o bryd yn cael ei gynnal fel arfer."
+
+#: submissions/templates/submissions/child_form.html:117
+#: submissions/templates/submissions/parent_form.html:117
+msgid ""
+"List of clinics depends on region selected above. Please type the name for "
+"now."
+msgstr "Mae'r rhestr o glinigau yn dibynnu ar y rhanbarth a ddewiswyd uchod. Teipiwch yr enw am y tro."
+
+#: submissions/templates/submissions/child_form.html:128
+msgid "4. Are you a…"
+msgstr "4. Wyt ti'n ystyried dy hun fel:"
+
+#: submissions/templates/submissions/child_form.html:163
+msgid "6. What type of diabetes do you have?"
+msgstr "6. Pa fath o ddiabetes sydd gennyt ti?"
+
+#: submissions/templates/submissions/child_form.html:192
+msgid "7. At what age were you diagnosed with diabetes?"
+msgstr "7. Faint oed oeddet ti pan ges di ddiagnosis o ddiabetes?"
+
+#: submissions/templates/submissions/child_form.html:233
+msgid "8. Which of the following best describes your ethnicity?"
+msgstr "8. Pa un o'r canlynol sy'n disgrifio dy ethnigrwydd orau?"
+
+#: submissions/templates/submissions/child_form.html:280
+msgid "9. What stage of education are you in?"
+msgstr "9. Ym mha gyfnod addysg wyt ti?"
+
+#: submissions/templates/submissions/child_form.html:345
+msgid "10. Which type of school or education do you attend?"
+msgstr "10. Pa fath o ysgol neu addysg wyt ti'n ei mynychu?"
+
+#: submissions/templates/submissions/child_form.html:353
+#: submissions/templates/submissions/parent_form.html:359
+msgid ""
+"These are schools where you do not have to pay to attend. This includes "
+"academies, colleges, and grammar schools."
+msgstr "Sef ysgolion sydd am ddim i'w mynychu. Mae'r rhain yn cynnwys academïau, colegau, ac ysgolion gramadeg."
+
+#: submissions/templates/submissions/child_form.html:360
+#: submissions/templates/submissions/parent_form.html:366
+msgid ""
+"These are schools that charge fees to attend. Please select this even if you "
+"have received a scholarship or bursary."
+msgstr "Sef ysgolion sy'n codi ffioedd i'w mynychu. Dewiswch yr opsiwn yma hyd yn oed os ydych chi wedi cael ysgoloriaeth neu fwrsariaeth."
+
+#: submissions/templates/submissions/child_form.html:376
+msgid ""
+"11. Was the decision to home educate related to your diabetes diagnosis?"
+msgstr "11. A oedd y penderfyniad i roi addysg gartref yn ymwneud â dy ddiagnosis diabetes?"
+
+#: submissions/templates/submissions/child_form.html:411
+msgid "12. Are you eligible for free school meals?"
+msgstr "12. Wyt ti'n gymwys am brydau ysgol am ddim?"
+
+#: submissions/templates/submissions/child_form.html:445
+#: submissions/templates/submissions/parent_form.html:551
+msgid "Managing Diabetes"
+msgstr "Rheoli Diabetes"
+
+#: submissions/templates/submissions/child_form.html:446
+msgid ""
+"This section asks about your diabetes treatment. We will use this "
+"information to see if children and young people using different diabetes "
+"technologies have different experiences at school."
+msgstr "Mae'r adran hon yn gofyn am dy driniaeth diabetes. Byddwn yn defnyddio'r wybodaeth hon i weld a yw plant a phobl ifanc sy'n defnyddio technolegau diabetes gwahanol yn cael profiadau gwahanol yn yr ysgol."
+
+#: submissions/templates/submissions/child_form.html:452
+msgid ""
+"16. Do you need to administer insulin or monitor blood glucose to manage "
+"your diabetes when in school?"
+msgstr "16. Wyt ti angen rhoi inswlin neu fonitro glwcos y gwaed i reoli dy ddiabetes yn yr ysgol?"
+
+#: submissions/templates/submissions/child_form.html:475
+msgid "17. How do you administer insulin in school?"
+msgstr "17. Sut wyt ti'n rhoi inswlin yn yr ysgol?"
+
+#: submissions/templates/submissions/child_form.html:484
+#: submissions/templates/submissions/parent_form.html:590
+msgid "Injection/Smart insulin pen – e.g. Novopen, InPen"
+msgstr "Pigiad/Pin inswlin clyfar - e.e. Novopen, InPen"
+
+#: submissions/templates/submissions/child_form.html:490
+#: submissions/templates/submissions/parent_form.html:596
+msgid ""
+"Insulin pump (including as part of a Hybrid Closed Loop system) – e.g. "
+"Omnipod, MiniMed, Tandem"
+msgstr "Pwmp inswlin (gan gynnwys fel rhan o system Dolen Gaeedig Hybrid) e.e. Omnipod, MiniMed, Tandem"
+
+#: submissions/templates/submissions/child_form.html:496
+msgid "N/A – I do not administer insulin in school"
+msgstr "Amherthnasol - Dydw i ddim yn rhoi inswlin yn yr ysgol"
+
+#: submissions/templates/submissions/child_form.html:506
+msgid "18. How do you monitor blood glucose levels in school?"
+msgstr "18. Sut wyt ti'n monitro lefelau glwcos y gwaed yn yr ysgol?"
+
+#: submissions/templates/submissions/child_form.html:515
+#: submissions/templates/submissions/parent_form.html:621
+msgid "Finger prick testing"
+msgstr "Prawf pigiad bys"
+
+#: submissions/templates/submissions/child_form.html:521
+#: submissions/templates/submissions/parent_form.html:627
+msgid ""
+"Continuous glucose monitor (including as part of a Hybrid Closed Loop "
+"system) e.g. Dexcom, FreeStyle Libre 2 Plus or 3 Plus"
+msgstr "Monitro glwcos yn gyson (gan gynnwys fel rhan o system Dolen Gaeedig Hybrid) e.e. Dexcom, FreeStyle Libre 2 Plus neu 3 Plus"
+
+#: submissions/templates/submissions/child_form.html:527
+msgid "N/A – I do not monitor blood glucose at school"
+msgstr "Amherthnasol - Dydw i ddim yn monitro glwcos y gwaed yn yr ysgol"
+
+#: submissions/templates/submissions/confirmation.html:7
+msgid "Survey submitted"
+msgstr "Arolwg wedi'i gyflwyno"
+
+#: submissions/templates/submissions/confirmation.html:10
+msgid "Thank you for sharing your experience."
+msgstr "Diolch am rannu eich profiad."
+
+#: submissions/templates/submissions/confirmation.html:14
+msgid "What happens next"
+msgstr "Beth sy'n digwydd nesaf"
+
+#: submissions/templates/submissions/confirmation.html:15
+msgid ""
+"Your feedback helps us improve diabetes services for children and young "
+"people."
+msgstr "Mae eich adborth yn ein helpu i wella gwasanaethau diabetes ar gyfer plant a phobl ifanc."
+
+#: submissions/templates/submissions/confirmation.html:19
+msgid "Start a new survey"
+msgstr "Dechrau arolwg newydd"
+
+#: submissions/templates/submissions/form.html:14
+msgid "Are you…"
+msgstr "Ydych chi’n…"
+
+#: submissions/templates/submissions/form.html:19
+msgid "Please select one of the following"
+msgstr "Dewiswch un o'r canlynol"
+
+#: submissions/templates/submissions/form.html:39
+msgid "Continue"
+msgstr "Parhau"
+
+#: submissions/templates/submissions/landing.html:5
+msgid "National Paediatric Diabetes Audit PREM"
+msgstr "Archwiliad Diabetes Pediatreg Cenedlaethol PREM"
+
+#: submissions/templates/submissions/landing.html:6
+msgid "Patient Reported Experience Measure"
+msgstr "Mesur Profiad a Adroddir gan Gleifion"
+
+#: submissions/templates/submissions/landing.html:11
+msgid "Choose your language"
+msgstr "Dewiswch eich iaith"
+
+#: submissions/templates/submissions/landing.html:28
+msgid "Get started"
+msgstr "Dechrau"
+
+#: submissions/templates/submissions/parent_form.html:14
+msgid "Parent/carer survey"
+msgstr "Arolwg rhiant/gofalwr"
+
+#: submissions/templates/submissions/parent_form.html:15
+msgid ""
+"Please answer the following questions about your child's experience at "
+"school since being diagnosed with diabetes."
+msgstr "Atebwch y cwestiynau canlynol am brofiad eich plentyn yn yr ysgol ers cael diagnosis o ddiabetes."
+
+#: submissions/templates/submissions/parent_form.html:128
+msgid "5. Relationship to your child with diabetes"
+msgstr "5. Eich perthynas i'ch plentyn sydd â diabetes"
+
+#: submissions/templates/submissions/parent_form.html:169
+msgid "6. What type of diabetes does your child have?"
+msgstr "6. Pa fath o ddiabetes sydd gan eich plentyn?"
+
+#: submissions/templates/submissions/parent_form.html:198
+msgid "7. At what age was your child diagnosed with diabetes?"
+msgstr "7. Faint oed oedd eich plentyn pan gafodd ddiagnosis o ddiabetes?"
+
+#: submissions/templates/submissions/parent_form.html:239
+msgid "8. Which of the following best describes your child's ethnicity?"
+msgstr "8. Pa un o'r canlynol sy'n disgrifio ethnigrwydd eich plentyn orau?"
+
+#: submissions/templates/submissions/parent_form.html:286
+msgid "9. What stage of education is your child in?"
+msgstr "9. Ym mha gyfnod addysg mae eich plentyn?"
+
+#: submissions/templates/submissions/parent_form.html:351
+msgid "10. Which type of school or education does your child attend?"
+msgstr "10. Pa fath o ysgol neu addysg mae eich plentyn yn ei mynychu?"
+
+#: submissions/templates/submissions/parent_form.html:382
+msgid ""
+"11. Was your decision to home educate related to your child's diabetes "
+"diagnosis?"
+msgstr "11. A oedd eich penderfyniad i roi addysg gartref yn ymwneud â diagnosis diabetes eich plentyn?"
+
+#: submissions/templates/submissions/parent_form.html:417
+msgid "12. Is your child eligible for free school meals?"
+msgstr "12. A yw eich plentyn yn gymwys am brydau ysgol am ddim?"
+
+#: submissions/templates/submissions/parent_form.html:451
+msgid "School Health Care Plans"
+msgstr "Cynlluniau Gofal Iechyd Ysgolion"
+
+#: submissions/templates/submissions/parent_form.html:452
+msgid ""
+"We would like to know if you and your child have received formal support in "
+"managing their diabetes alongside their education."
+msgstr "Hoffem wybod a ydych chi a'ch plentyn wedi cael cymorth ffurfiol wrth reoli ei ddiabetes ochr yn ochr â'i addysg."
+
+#: submissions/templates/submissions/parent_form.html:458
+msgid ""
+"13. Does your child have a school healthcare plan specifically for their "
+"diabetes?"
+msgstr "13. A oes gan eich plentyn gynllun gofal iechyd ysgol yn benodol ar gyfer ei ddiabetes?"
+
+#: submissions/templates/submissions/parent_form.html:460
+msgid ""
+"This is a plan made with your diabetes team and school. It could be an "
+"informal or a formal plan, such as Individual Healthcare Plans (IHP), "
+"Records of Needs, or Education, Health and Care Plans (EHCP)."
+msgstr "Mae hwn yn gynllun a wnaed gyda'ch tîm diabetes a'r ysgol. Gallai fod yn gynllun anffurfiol neu'n gynllun ffurfiol, megis Cynlluniau Gofal Iechyd Unigol (IHP), Cofnod Anghenion, neu Gynlluniau Addysg, Iechyd a Gofal (EHCP)."
+
+#: submissions/templates/submissions/parent_form.html:488
+msgid ""
+"14. Does the school healthcare plan that's in place cover all your child's "
+"diabetes needs at school?"
+msgstr "14. A yw'r cynllun gofal iechyd ysgol sydd ar waith yn cwmpasu holl anghenion diabetes eich plentyn yn yr ysgol?"
+
+#: submissions/templates/submissions/parent_form.html:523
+msgid ""
+"15. Does your child's school have a direct contact within your child's "
+"diabetes team if they need advice or support?"
+msgstr "15. A oes gan ysgol eich plentyn gyswllt uniongyrchol â thîm diabetes eich plentyn os yw angen cyngor neu gymorth?"
+
+#: submissions/templates/submissions/parent_form.html:552
+msgid ""
+"This section asks about your child's diabetes treatment. We will use this "
+"information to see if children and young people using different diabetes "
+"technologies have different experiences at school."
+msgstr "Mae'r adran hon yn gofyn am driniaeth diabetes eich plentyn. Byddwn yn defnyddio'r wybodaeth hon i weld a yw plant a phobl ifanc sy'n defnyddio technolegau diabetes gwahanol yn cael profiadau gwahanol yn yr ysgol."
+
+#: submissions/templates/submissions/parent_form.html:558
+msgid ""
+"16. Does your child need to administer insulin or monitor blood glucose to "
+"manage their diabetes when in school?"
+msgstr "16. A yw eich plentyn angen rhoi inswlin neu fonitro glwcos y gwaed i reoli ei ddiabetes yn yr ysgol?"
+
+#: submissions/templates/submissions/parent_form.html:581
+msgid "17. How does your child administer insulin in school?"
+msgstr "17. Sut mae eich plentyn yn rhoi inswlin yn yr ysgol?"
+
+#: submissions/templates/submissions/parent_form.html:602
+msgid "N/A – My child does not administer insulin in school"
+msgstr "Amherthnasol - Nid yw fy mhlentyn yn rhoi inswlin yn yr ysgol"
+
+#: submissions/templates/submissions/parent_form.html:612
+msgid "18. How does your child monitor blood glucose levels in school?"
+msgstr "18. Sut mae eich plentyn yn monitro lefelau glwcos y gwaed yn yr ysgol?"
+
+#: submissions/templates/submissions/parent_form.html:633
+msgid "N/A – My child does not monitor blood glucose at school"
+msgstr "Amherthnasol - Nid yw fy mhlentyn yn monitro glwcos y gwaed yn yr ysgol"
+
+#: submissions/templates/submissions/parent_form.html:643
+msgid "19. Can you follow/monitor your child's blood glucose remotely?"
+msgstr "19. A allwch chi ddilyn/monitro glwcos gwaed eich plentyn o bell?"
+
+#: submissions/templates/submissions/parent_form.html:678
+msgid ""
+"20. Are you able to contact your child's school during the day if you are "
+"concerned about their diabetes?"
+msgstr "20. A ydych chi'n gallu cysylltu ag ysgol eich plentyn yn ystod y diwrnod os ydych chi'n pryderu am ei ddiabetes?"
