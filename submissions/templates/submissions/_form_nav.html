@@ -1,0 +1,22 @@
+{% load i18n %}
+
+{# Form section navigation                                                #}
+{# Expected context variables:                                             #}
+{#   sections        – list of dicts: [{slug, title}, ...]                 #}
+{#   current_index   – 0-based index of the current section                #}
+{#   prev_url        – URL of previous section (None if first)             #}
+{#   next_url        – URL of next section (None if last)                  #}
+{#   is_last_section – boolean                                             #}
+{#   submit_url      – URL for the form submit action                      #}
+{#   total_sections  – total number of sections                            #}
+
+<div class="nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-6">
+  <p class="nhsuk-body-s nhsuk-u-secondary-text-color nhsuk-u-margin-bottom-2">
+    {% blocktrans with current=current_display total=total_sections %}Section {{ current }} of {{ total }}{% endblocktrans %}
+  </p>
+  <div style="display:flex; gap:4px;">
+    {% for section in sections %}
+      <div style="flex:1; height:8px; border-radius:4px; background:{% if forloop.counter0 <= current_index %}#005eb8{% else %}#d8dde0{% endif %};"></div>
+    {% endfor %}
+  </div>
+</div>

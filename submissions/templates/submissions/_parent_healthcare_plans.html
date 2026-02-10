@@ -1,0 +1,116 @@
+{% load i18n %}
+{# ================================================================== #}
+{# PARTIAL: School Health Care Plans (Q13–Q15) – Parent/Carer only     #}
+{# Included by the parent form wrapper. Expects:                       #}
+{#   - submission     (Submission instance or None)                     #}
+{#   - autosave_url_name  (e.g. "parent_autosave")                     #}
+{# ================================================================== #}
+
+<h2>{% trans "School Health Care Plans" %}</h2>
+<p>{% trans "We would like to know if you and your child have received formal support in managing their diabetes alongside their education." %}</p>
+
+{# --- Q13: Healthcare plan ----------------------------------------- #}
+<div class="nhsuk-form-group">
+  <fieldset class="nhsuk-fieldset">
+    <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m">
+      {% trans "13. Does your child have a school healthcare plan specifically for their diabetes?" %}
+    </legend>
+    <div id="q13-hint" class="nhsuk-hint">{% trans "This is a plan made with your diabetes team and school. It could be an informal or a formal plan, such as Individual Healthcare Plans (IHP), Records of Needs, or Education, Health and Care Plans (EHCP)." %}</div>
+    <div class="nhsuk-radios" data-module="nhsuk-radios">
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="q13-yes" name="q13_healthcare_plan" type="radio" value="yes"
+               {% if submission and submission.q13_healthcare_plan == "yes" %}checked{% endif %}
+               hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+        <label class="nhsuk-label nhsuk-radios__label" for="q13-yes">{% trans "Yes" %}</label>
+      </div>
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="q13-no" name="q13_healthcare_plan" type="radio" value="no"
+               {% if submission and submission.q13_healthcare_plan == "no" %}checked{% endif %}
+               hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+        <label class="nhsuk-label nhsuk-radios__label" for="q13-no">{% trans "No" %}</label>
+      </div>
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="q13-dk" name="q13_healthcare_plan" type="radio" value="dont-know"
+               {% if submission and submission.q13_healthcare_plan == "dont-know" %}checked{% endif %}
+               hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+        <label class="nhsuk-label nhsuk-radios__label" for="q13-dk">{% trans "I don't know" %}</label>
+      </div>
+    </div>
+  </fieldset>
+</div>
+
+{# --- Q14: Plan coverage (shown if Q13=yes) ------------------------ #}
+<div id="q14-container" class="nhsuk-form-group" style="{% if not submission or submission.q13_healthcare_plan != 'yes' %}display:none{% endif %}">
+  <fieldset class="nhsuk-fieldset">
+    <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m">
+      {% trans "14. Does the school healthcare plan that's in place cover all your child's diabetes needs at school?" %}
+    </legend>
+    <div class="nhsuk-radios" data-module="nhsuk-radios">
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="q14-yes" name="q14_plan_coverage" type="radio" value="yes"
+               {% if submission and submission.q14_plan_coverage == "yes" %}checked{% endif %}
+               hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+        <label class="nhsuk-label nhsuk-radios__label" for="q14-yes">{% trans "Yes" %}</label>
+      </div>
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="q14-partially" name="q14_plan_coverage" type="radio" value="partially"
+               {% if submission and submission.q14_plan_coverage == "partially" %}checked{% endif %}
+               hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+        <label class="nhsuk-label nhsuk-radios__label" for="q14-partially">{% trans "Partially covers diabetes needs at school" %}</label>
+      </div>
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="q14-no" name="q14_plan_coverage" type="radio" value="no"
+               {% if submission and submission.q14_plan_coverage == "no" %}checked{% endif %}
+               hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+        <label class="nhsuk-label nhsuk-radios__label" for="q14-no">{% trans "No" %}</label>
+      </div>
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="q14-dk" name="q14_plan_coverage" type="radio" value="dont-know"
+               {% if submission and submission.q14_plan_coverage == "dont-know" %}checked{% endif %}
+               hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+        <label class="nhsuk-label nhsuk-radios__label" for="q14-dk">{% trans "I don't know" %}</label>
+      </div>
+    </div>
+  </fieldset>
+</div>
+
+{# --- Q15: School contact with diabetes team ----------------------- #}
+<div class="nhsuk-form-group">
+  <fieldset class="nhsuk-fieldset">
+    <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m">
+      {% trans "15. Does your child's school have a direct contact within your child's diabetes team if they need advice or support?" %}
+    </legend>
+    <div class="nhsuk-radios" data-module="nhsuk-radios">
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="q15-yes" name="q15_school_contact" type="radio" value="yes"
+               {% if submission and submission.q15_school_contact == "yes" %}checked{% endif %}
+               hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+        <label class="nhsuk-label nhsuk-radios__label" for="q15-yes">{% trans "Yes" %}</label>
+      </div>
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="q15-no" name="q15_school_contact" type="radio" value="no"
+               {% if submission and submission.q15_school_contact == "no" %}checked{% endif %}
+               hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+        <label class="nhsuk-label nhsuk-radios__label" for="q15-no">{% trans "No" %}</label>
+      </div>
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="q15-dk" name="q15_school_contact" type="radio" value="dont-know"
+               {% if submission and submission.q15_school_contact == "dont-know" %}checked{% endif %}
+               hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+        <label class="nhsuk-label nhsuk-radios__label" for="q15-dk">{% trans "I don't know" %}</label>
+      </div>
+    </div>
+  </fieldset>
+</div>
+
+{# --- Skip-logic JS for this section ------------------------------ #}
+<script>
+(function() {
+  // Q13 -> Q14: Show plan coverage when "yes" is selected
+  document.querySelectorAll('input[name="q13_healthcare_plan"]').forEach(function(radio) {
+    radio.addEventListener('change', function() {
+      document.getElementById('q14-container').style.display = this.value === 'yes' ? '' : 'none';
+    });
+  });
+})();
+</script>

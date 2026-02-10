@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+from django.http import Http404, HttpResponse
 from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
 from django.views.decorators.http import require_POST
@@ -80,6 +80,93 @@ def _save_fields(submission, request):
 
 
 # ---------------------------------------------------------------------------
+# Section definitions
+# ---------------------------------------------------------------------------
+
+PARENT_SECTIONS = [
+    {
+        "slug": "demographics",
+        "title": "Demographics",
+        "template": "submissions/_parent_demographics.html",
+    },
+    {
+        "slug": "healthcare-plans",
+        "title": "School Health Care Plans",
+        "template": "submissions/_parent_healthcare_plans.html",
+    },
+    {
+        "slug": "managing-diabetes",
+        "title": "Managing Diabetes",
+        "template": "submissions/_parent_managing_diabetes.html",
+    },
+    {
+        "slug": "education-impact",
+        "title": "Impact on Education",
+        "template": "submissions/_shared_education_impact.html",
+    },
+    {
+        "slug": "wellbeing",
+        "title": "Social and Emotional Impact",
+        "template": "submissions/_shared_wellbeing.html",
+    },
+]
+
+CHILD_SECTIONS = [
+    {
+        "slug": "demographics",
+        "title": "Demographics",
+        "template": "submissions/_child_demographics.html",
+    },
+    {
+        "slug": "managing-diabetes",
+        "title": "Managing Diabetes",
+        "template": "submissions/_child_managing_diabetes.html",
+    },
+    {
+        "slug": "education-impact",
+        "title": "Impact on Education",
+        "template": "submissions/_shared_education_impact.html",
+    },
+    {
+        "slug": "wellbeing",
+        "title": "Social and Emotional Impact",
+        "template": "submissions/_shared_wellbeing.html",
+    },
+]
+
+
+def _section_context(sections, section_slug, form_url_name, request):
+    """Build template context for the current section."""
+    slugs = [s["slug"] for s in sections]
+    if section_slug not in slugs:
+        raise Http404
+    idx = slugs.index(section_slug)
+    lang_qs = _lang_qs(request)
+
+    prev_url = (
+        reverse(form_url_name, kwargs={"section": slugs[idx - 1]}) + lang_qs
+        if idx > 0
+        else None
+    )
+    next_url = (
+        reverse(form_url_name, kwargs={"section": slugs[idx + 1]}) + lang_qs
+        if idx < len(sections) - 1
+        else None
+    )
+
+    return {
+        "sections": sections,
+        "current_index": idx,
+        "current_display": idx + 1,
+        "total_sections": len(sections),
+        "section_template": sections[idx]["template"],
+        "prev_url": prev_url,
+        "next_url": next_url,
+        "is_last_section": idx == len(sections) - 1,
+    }
+
+
+# ---------------------------------------------------------------------------
 # Pages
 # ---------------------------------------------------------------------------
 
@@ -99,7 +186,13 @@ def confirmation(request):
 # Parent form
 # ---------------------------------------------------------------------------
 
-def parent_form(request):
+def parent_form(request, section=None):
+    if section is None:
+        return redirect(
+            reverse("parent_form_section", kwargs={"section": PARENT_SECTIONS[0]["slug"]})
+            + _lang_qs(request)
+        )
+
     submission = None
     submission_id = request.session.get("submission_id")
 
@@ -111,7 +204,9 @@ def parent_form(request):
         except Submission.DoesNotExist:
             del request.session["submission_id"]
 
-    return render(request, "submissions/parent_form.html", {"submission": submission})
+    ctx = _section_context(PARENT_SECTIONS, section, "parent_form_section", request)
+    ctx["submission"] = submission
+    return render(request, "submissions/parent_form.html", ctx)
 
 
 @require_POST
@@ -155,7 +250,13 @@ def parent_submit(request):
 # Child / young person form
 # ---------------------------------------------------------------------------
 
-def child_form(request):
+def child_form(request, section=None):
+    if section is None:
+        return redirect(
+            reverse("child_form_section", kwargs={"section": CHILD_SECTIONS[0]["slug"]})
+            + _lang_qs(request)
+        )
+
     submission = None
     submission_id = request.session.get("submission_id")
 
@@ -167,7 +268,9 @@ def child_form(request):
         except Submission.DoesNotExist:
             del request.session["submission_id"]
 
-    return render(request, "submissions/child_form.html", {"submission": submission})
+    ctx = _section_context(CHILD_SECTIONS, section, "child_form_section", request)
+    ctx["submission"] = submission
+    return render(request, "submissions/child_form.html", ctx)
 
 
 @require_POST

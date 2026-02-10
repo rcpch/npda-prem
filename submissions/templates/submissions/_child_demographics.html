@@ -1,0 +1,444 @@
+{% load i18n %}
+{# ================================================================== #}
+{# Child/Young Person Demographics partial (Q1, Q2, Q4, Q6–Q12)      #}
+{# Included by the child form wrapper. No Q3 (age) or Q5 (relation). #}
+{# ================================================================== #}
+
+  {# ================================================================== #}
+  {# SECTION: Demographics                                               #}
+  {# ================================================================== #}
+  <h2>{% trans "Demographics" %}</h2>
+  <p>{% trans "We'd like to know a bit more about you so we can tailor our questions. We will also use this information to understand if children and young people with diabetes from different backgrounds have different experiences at school. All questions in this section are mandatory, but you may select 'Prefer not to say' for some." %}</p>
+
+  {# --- Q1: Region --------------------------------------------------- #}
+  <div class="nhsuk-form-group">
+    <fieldset class="nhsuk-fieldset">
+      <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m">
+        {% trans "1. Please select the region where your diabetes clinic is located." %}
+      </legend>
+      <div id="q1-hint" class="nhsuk-hint">{% trans "Ask your diabetes team if you are unsure." %}</div>
+      <div class="nhsuk-radios" data-module="nhsuk-radios">
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q1-nenc" name="q1_region" type="radio" value="north-east-north-cumbria"
+                 {% if submission and submission.q1_region == "north-east-north-cumbria" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q1-nenc">{% trans "North East & North Cumbria" %}</label>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q1-nw" name="q1_region" type="radio" value="north-west"
+                 {% if submission and submission.q1_region == "north-west" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q1-nw">{% trans "North West" %}</label>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q1-yh" name="q1_region" type="radio" value="yorkshire-humber"
+                 {% if submission and submission.q1_region == "yorkshire-humber" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q1-yh">{% trans "Yorkshire & Humber" %}</label>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q1-em" name="q1_region" type="radio" value="east-midlands"
+                 {% if submission and submission.q1_region == "east-midlands" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q1-em">{% trans "East Midlands" %}</label>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q1-wm" name="q1_region" type="radio" value="west-midlands"
+                 {% if submission and submission.q1_region == "west-midlands" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q1-wm">{% trans "West Midlands" %}</label>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q1-ee" name="q1_region" type="radio" value="east-of-england"
+                 {% if submission and submission.q1_region == "east-of-england" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q1-ee">{% trans "East of England" %}</label>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q1-sc" name="q1_region" type="radio" value="south-central"
+                 {% if submission and submission.q1_region == "south-central" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q1-sc">{% trans "South Central" %}</label>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q1-lse" name="q1_region" type="radio" value="london-south-east"
+                 {% if submission and submission.q1_region == "london-south-east" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q1-lse">{% trans "London & South East" %}</label>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q1-sw" name="q1_region" type="radio" value="south-west"
+                 {% if submission and submission.q1_region == "south-west" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q1-sw">{% trans "South West" %}</label>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q1-tv" name="q1_region" type="radio" value="thames-valley"
+                 {% if submission and submission.q1_region == "thames-valley" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q1-tv">{% trans "Thames Valley" %}</label>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q1-wales" name="q1_region" type="radio" value="wales"
+                 {% if submission and submission.q1_region == "wales" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q1-wales">{% trans "Wales" %}</label>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q1-jersey" name="q1_region" type="radio" value="jersey"
+                 {% if submission and submission.q1_region == "jersey" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q1-jersey">{% trans "Jersey" %}</label>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+
+  {# --- Q2: Hospital ------------------------------------------------- #}
+  <div class="nhsuk-form-group">
+    <label class="nhsuk-label nhsuk-label--m" for="q2_hospital">
+      {% trans "2. Please select the hospital where the diabetes clinic that you currently attend is normally held." %}
+    </label>
+    <div id="q2-hint" class="nhsuk-hint">{% trans "List of clinics depends on region selected above. Please type the name for now." %}</div>
+    <input class="nhsuk-input" id="q2_hospital" name="q2_hospital" type="text"
+           value="{{ submission.q2_hospital|default:'' }}"
+           hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}"
+           hx-trigger="change" hx-swap="none">
+  </div>
+
+  {# --- Q4: Gender (CYP only) ---------------------------------------- #}
+  <div class="nhsuk-form-group">
+    <fieldset class="nhsuk-fieldset">
+      <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m">
+        {% trans "4. Are you a…" %}
+      </legend>
+      <div class="nhsuk-radios" data-module="nhsuk-radios">
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q4-boy" name="q4_gender" type="radio" value="boy"
+                 {% if submission and submission.q4_gender == "boy" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q4-boy">{% trans "Boy" %}</label>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q4-girl" name="q4_gender" type="radio" value="girl"
+                 {% if submission and submission.q4_gender == "girl" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q4-girl">{% trans "Girl" %}</label>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q4-other" name="q4_gender" type="radio" value="other"
+                 {% if submission and submission.q4_gender == "other" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q4-other">{% trans "A gender not listed here" %}</label>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q4-pnts" name="q4_gender" type="radio" value="prefer-not-to-say"
+                 {% if submission and submission.q4_gender == "prefer-not-to-say" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q4-pnts">{% trans "Prefer not to say" %}</label>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+
+  {# --- Q6: Diabetes type -------------------------------------------- #}
+  <div class="nhsuk-form-group">
+    <fieldset class="nhsuk-fieldset">
+      <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m">
+        {% trans "6. What type of diabetes do you have?" %}
+      </legend>
+      <div class="nhsuk-radios" data-module="nhsuk-radios">
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q6-type1" name="q6_diabetes_type" type="radio" value="type1"
+                 {% if submission and submission.q6_diabetes_type == "type1" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q6-type1">{% trans "Type 1" %}</label>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q6-type2" name="q6_diabetes_type" type="radio" value="type2"
+                 {% if submission and submission.q6_diabetes_type == "type2" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q6-type2">{% trans "Type 2" %}</label>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q6-other" name="q6_diabetes_type" type="radio" value="other"
+                 {% if submission and submission.q6_diabetes_type == "other" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q6-other">{% trans "Other" %}</label>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+
+  {# --- Q7: Age at diagnosis ----------------------------------------- #}
+  <div class="nhsuk-form-group">
+    <fieldset class="nhsuk-fieldset">
+      <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m">
+        {% trans "7. At what age were you diagnosed with diabetes?" %}
+      </legend>
+      <div class="nhsuk-radios" data-module="nhsuk-radios">
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q7-0-3" name="q7_age_at_diagnosis" type="radio" value="0-3"
+                 {% if submission and submission.q7_age_at_diagnosis == "0-3" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q7-0-3">{% trans "3 years or younger" %}</label>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q7-4-7" name="q7_age_at_diagnosis" type="radio" value="4-7"
+                 {% if submission and submission.q7_age_at_diagnosis == "4-7" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q7-4-7">{% trans "4 – 7 years" %}</label>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q7-8-11" name="q7_age_at_diagnosis" type="radio" value="8-11"
+                 {% if submission and submission.q7_age_at_diagnosis == "8-11" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q7-8-11">{% trans "8 – 11 years" %}</label>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q7-12-16" name="q7_age_at_diagnosis" type="radio" value="12-16"
+                 {% if submission and submission.q7_age_at_diagnosis == "12-16" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q7-12-16">{% trans "12 – 16 years" %}</label>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q7-17-19" name="q7_age_at_diagnosis" type="radio" value="17-19"
+                 {% if submission and submission.q7_age_at_diagnosis == "17-19" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q7-17-19">{% trans "17 – 19 years" %}</label>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+
+  {# --- Q8: Ethnicity ------------------------------------------------ #}
+  <div class="nhsuk-form-group">
+    <fieldset class="nhsuk-fieldset">
+      <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m">
+        {% trans "8. Which of the following best describes your ethnicity?" %}
+      </legend>
+      <div class="nhsuk-radios" data-module="nhsuk-radios">
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q8-white" name="q8_ethnicity" type="radio" value="white"
+                 {% if submission and submission.q8_ethnicity == "white" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q8-white">{% trans "White" %}</label>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q8-black" name="q8_ethnicity" type="radio" value="black"
+                 {% if submission and submission.q8_ethnicity == "black" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q8-black">{% trans "Black" %}</label>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q8-asian" name="q8_ethnicity" type="radio" value="asian"
+                 {% if submission and submission.q8_ethnicity == "asian" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q8-asian">{% trans "Asian" %}</label>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q8-mixed" name="q8_ethnicity" type="radio" value="mixed"
+                 {% if submission and submission.q8_ethnicity == "mixed" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q8-mixed">{% trans "Mixed" %}</label>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q8-other" name="q8_ethnicity" type="radio" value="other"
+                 {% if submission and submission.q8_ethnicity == "other" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q8-other">{% trans "Other" %}</label>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q8-pnts" name="q8_ethnicity" type="radio" value="prefer-not-to-say"
+                 {% if submission and submission.q8_ethnicity == "prefer-not-to-say" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q8-pnts">{% trans "Prefer not to say" %}</label>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+
+  {# --- Q9: Education stage ------------------------------------------ #}
+  <div class="nhsuk-form-group">
+    <fieldset class="nhsuk-fieldset">
+      <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m">
+        {% trans "9. What stage of education are you in?" %}
+      </legend>
+      <div class="nhsuk-radios" data-module="nhsuk-radios">
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q9-nursery" name="q9_education_stage" type="radio" value="nursery"
+                 {% if submission and submission.q9_education_stage == "nursery" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q9-nursery">{% trans "Nursery" %}</label>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q9-reception" name="q9_education_stage" type="radio" value="reception"
+                 {% if submission and submission.q9_education_stage == "reception" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q9-reception">{% trans "Reception" %}</label>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q9-ks1" name="q9_education_stage" type="radio" value="ks1"
+                 {% if submission and submission.q9_education_stage == "ks1" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q9-ks1">{% trans "Key stage 1 (Years 1 & 2)" %}</label>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q9-ks2" name="q9_education_stage" type="radio" value="ks2"
+                 {% if submission and submission.q9_education_stage == "ks2" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q9-ks2">{% trans "Key stage 2 (Years 3 to 6)" %}</label>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q9-ks3" name="q9_education_stage" type="radio" value="ks3"
+                 {% if submission and submission.q9_education_stage == "ks3" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q9-ks3">{% trans "Key stage 3 (Years 7 to 9)" %}</label>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q9-ks4" name="q9_education_stage" type="radio" value="ks4"
+                 {% if submission and submission.q9_education_stage == "ks4" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q9-ks4">{% trans "Key stage 4 (Years 10 & 11)" %}</label>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q9-ks5" name="q9_education_stage" type="radio" value="ks5"
+                 {% if submission and submission.q9_education_stage == "ks5" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q9-ks5">{% trans "Key stage 5 (Years 12 & 13)" %}</label>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q9-other" name="q9_education_stage" type="radio" value="other"
+                 {% if submission and submission.q9_education_stage == "other" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q9-other">{% trans "Other" %}</label>
+        </div>
+      </div>
+    </fieldset>
+    <div id="q9-other-container" class="nhsuk-form-group nhsuk-u-margin-top-3" style="{% if not submission or submission.q9_education_stage != 'other' %}display:none{% endif %}">
+      <label class="nhsuk-label" for="q9_education_stage_other">{% trans "Please specify" %}</label>
+      <input class="nhsuk-input nhsuk-input--width-20" id="q9_education_stage_other" name="q9_education_stage_other" type="text"
+             value="{{ submission.q9_education_stage_other|default:'' }}"
+             hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+    </div>
+  </div>
+
+  {# --- Q10: School type --------------------------------------------- #}
+  <div class="nhsuk-form-group">
+    <fieldset class="nhsuk-fieldset">
+      <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m">
+        {% trans "10. Which type of school or education do you attend?" %}
+      </legend>
+      <div class="nhsuk-radios" data-module="nhsuk-radios">
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q10-state" name="q10_school_type" type="radio" value="state"
+                 {% if submission and submission.q10_school_type == "state" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q10-state">{% trans "State funded school" %}</label>
+          <div class="nhsuk-hint nhsuk-radios__hint">{% trans "These are schools where you do not have to pay to attend. This includes academies, colleges, and grammar schools." %}</div>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q10-private" name="q10_school_type" type="radio" value="private"
+                 {% if submission and submission.q10_school_type == "private" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q10-private">{% trans "Private school" %}</label>
+          <div class="nhsuk-hint nhsuk-radios__hint">{% trans "These are schools that charge fees to attend. Please select this even if you have received a scholarship or bursary." %}</div>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q10-home" name="q10_school_type" type="radio" value="home"
+                 {% if submission and submission.q10_school_type == "home" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q10-home">{% trans "Home schooled/educated" %}</label>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+
+  {# --- Q11: Home education reason (shown if Q10=home) --------------- #}
+  <div id="q11-container" class="nhsuk-form-group" style="{% if not submission or submission.q10_school_type != 'home' %}display:none{% endif %}">
+    <fieldset class="nhsuk-fieldset">
+      <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m">
+        {% trans "11. Was the decision to home educate related to your diabetes diagnosis?" %}
+      </legend>
+      <div class="nhsuk-radios" data-module="nhsuk-radios">
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q11-no" name="q11_home_education_reason" type="radio" value="no"
+                 {% if submission and submission.q11_home_education_reason == "no" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q11-no">{% trans "No, it was for other reasons" %}</label>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q11-partly" name="q11_home_education_reason" type="radio" value="partly"
+                 {% if submission and submission.q11_home_education_reason == "partly" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q11-partly">{% trans "Partly, the diabetes diagnosis influenced my decision" %}</label>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q11-yes" name="q11_home_education_reason" type="radio" value="yes"
+                 {% if submission and submission.q11_home_education_reason == "yes" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q11-yes">{% trans "Yes, it was mainly because of the diabetes diagnosis" %}</label>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q11-pnts" name="q11_home_education_reason" type="radio" value="prefer-not-to-say"
+                 {% if submission and submission.q11_home_education_reason == "prefer-not-to-say" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q11-pnts">{% trans "Prefer not to say" %}</label>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+
+  {# --- Q12: Free school meals --------------------------------------- #}
+  <div class="nhsuk-form-group">
+    <fieldset class="nhsuk-fieldset">
+      <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m">
+        {% trans "12. Are you eligible for free school meals?" %}
+      </legend>
+      <div class="nhsuk-radios" data-module="nhsuk-radios">
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q12-yes" name="q12_free_school_meals" type="radio" value="yes"
+                 {% if submission and submission.q12_free_school_meals == "yes" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q12-yes">{% trans "Yes" %}</label>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q12-no" name="q12_free_school_meals" type="radio" value="no"
+                 {% if submission and submission.q12_free_school_meals == "no" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q12-no">{% trans "No" %}</label>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q12-dk" name="q12_free_school_meals" type="radio" value="dont-know"
+                 {% if submission and submission.q12_free_school_meals == "dont-know" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q12-dk">{% trans "I don't know" %}</label>
+        </div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q12-pnts" name="q12_free_school_meals" type="radio" value="prefer-not-to-say"
+                 {% if submission and submission.q12_free_school_meals == "prefer-not-to-say" %}checked{% endif %}
+                 hx-post="{% url autosave_url_name %}?lang={{ request.GET.lang|default:'en' }}" hx-trigger="change" hx-swap="none">
+          <label class="nhsuk-label nhsuk-radios__label" for="q12-pnts">{% trans "Prefer not to say" %}</label>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+
+{# --- Skip-logic JavaScript for demographics ----------------------- #}
+<script>
+(function() {
+  // Q9: Show "Other" text input when "other" is selected
+  document.querySelectorAll('input[name="q9_education_stage"]').forEach(function(radio) {
+    radio.addEventListener('change', function() {
+      document.getElementById('q9-other-container').style.display = this.value === 'other' ? '' : 'none';
+    });
+  });
+
+  // Q10 -> Q11: Show home-education reason when "home" is selected
+  document.querySelectorAll('input[name="q10_school_type"]').forEach(function(radio) {
+    radio.addEventListener('change', function() {
+      document.getElementById('q11-container').style.display = this.value === 'home' ? '' : 'none';
+    });
+  });
+})();
+</script>
