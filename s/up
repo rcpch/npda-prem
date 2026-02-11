@@ -1,0 +1,5 @@
+#!/bin/bash -e
+
+uv sync
+uv run manage.py migrate
+uv run manage.py runserver
