@@ -166,7 +166,21 @@ def landing(request):
     return render(request, "submissions/landing.html")
 
 
-def submission_form(request, lang):
+def clinic_form(request, lang):
+    """Q1 (region) and Q2 (hospital) – asked before role selection."""
+    if request.method == "POST":
+        request.session["q1_region"] = request.POST.get("q1_region", "")
+        request.session["q2_hospital"] = request.POST.get("q2_hospital", "")
+        return redirect(reverse("role_form", kwargs={"lang": lang}))
+
+    return render(request, "submissions/clinic.html", {
+        "lang": lang,
+        "q1_region": request.session.get("q1_region", ""),
+        "q2_hospital": request.session.get("q2_hospital", ""),
+    })
+
+
+def role_form(request, lang):
     return render(request, "submissions/form.html", {"lang": lang})
 
 
@@ -215,6 +229,8 @@ def parent_autosave(request, lang):
         submission = Submission.objects.create(
             role="parent",
             language=lang,
+            q1_region=request.session.get("q1_region", ""),
+            q2_hospital=request.session.get("q2_hospital", ""),
         )
         request.session["submission_id"] = submission.pk
 
@@ -278,6 +294,8 @@ def child_autosave(request, lang):
         submission = Submission.objects.create(
             role="cyp",
             language=lang,
+            q1_region=request.session.get("q1_region", ""),
+            q2_hospital=request.session.get("q2_hospital", ""),
         )
         request.session["submission_id"] = submission.pk
 

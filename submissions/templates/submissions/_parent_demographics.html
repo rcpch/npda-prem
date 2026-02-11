@@ -1,7 +1,7 @@
 {% load i18n %}
 
 {# ================================================================== #}
-{# Q1 – Q12: Parent/carer demographics section                        #}
+{# Q5 – Q12: Parent/carer demographics section                        #}
 {# Expected context variables:                                         #}
 {#   submission          – Submission model instance (may be None)      #}
 {#   autosave_url_name   – "parent_autosave" or "child_autosave"       #}
@@ -9,102 +9,6 @@
 
   <h2>{% trans "Demographics" %}</h2>
   <p>{% trans "We'd like to know a bit more about you so we can tailor our questions. We will also use this information to understand if children and young people with diabetes from different backgrounds have different experiences at school. All questions in this section are mandatory, but you may select 'Prefer not to say' for some." %}</p>
-
-  {# --- Q1: Region --------------------------------------------------- #}
-  <div class="nhsuk-form-group">
-    <fieldset class="nhsuk-fieldset">
-      <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m">
-        {% trans "1. Please select the region where your diabetes clinic is located." %}
-      </legend>
-      <div id="q1-hint" class="nhsuk-hint">{% trans "Ask your diabetes team if you are unsure." %}</div>
-      <div class="nhsuk-radios" data-module="nhsuk-radios">
-        <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="q1-nenc" name="q1_region" type="radio" value="north-east-north-cumbria"
-                 {% if submission and submission.q1_region == "north-east-north-cumbria" %}checked{% endif %}
-                 hx-post="{% url autosave_url_name lang=lang %}" hx-trigger="change" hx-swap="none">
-          <label class="nhsuk-label nhsuk-radios__label" for="q1-nenc">{% trans "North East & North Cumbria" %}</label>
-        </div>
-        <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="q1-nw" name="q1_region" type="radio" value="north-west"
-                 {% if submission and submission.q1_region == "north-west" %}checked{% endif %}
-                 hx-post="{% url autosave_url_name lang=lang %}" hx-trigger="change" hx-swap="none">
-          <label class="nhsuk-label nhsuk-radios__label" for="q1-nw">{% trans "North West" %}</label>
-        </div>
-        <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="q1-yh" name="q1_region" type="radio" value="yorkshire-humber"
-                 {% if submission and submission.q1_region == "yorkshire-humber" %}checked{% endif %}
-                 hx-post="{% url autosave_url_name lang=lang %}" hx-trigger="change" hx-swap="none">
-          <label class="nhsuk-label nhsuk-radios__label" for="q1-yh">{% trans "Yorkshire & Humber" %}</label>
-        </div>
-        <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="q1-em" name="q1_region" type="radio" value="east-midlands"
-                 {% if submission and submission.q1_region == "east-midlands" %}checked{% endif %}
-                 hx-post="{% url autosave_url_name lang=lang %}" hx-trigger="change" hx-swap="none">
-          <label class="nhsuk-label nhsuk-radios__label" for="q1-em">{% trans "East Midlands" %}</label>
-        </div>
-        <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="q1-wm" name="q1_region" type="radio" value="west-midlands"
-                 {% if submission and submission.q1_region == "west-midlands" %}checked{% endif %}
-                 hx-post="{% url autosave_url_name lang=lang %}" hx-trigger="change" hx-swap="none">
-          <label class="nhsuk-label nhsuk-radios__label" for="q1-wm">{% trans "West Midlands" %}</label>
-        </div>
-        <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="q1-ee" name="q1_region" type="radio" value="east-of-england"
-                 {% if submission and submission.q1_region == "east-of-england" %}checked{% endif %}
-                 hx-post="{% url autosave_url_name lang=lang %}" hx-trigger="change" hx-swap="none">
-          <label class="nhsuk-label nhsuk-radios__label" for="q1-ee">{% trans "East of England" %}</label>
-        </div>
-        <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="q1-sc" name="q1_region" type="radio" value="south-central"
-                 {% if submission and submission.q1_region == "south-central" %}checked{% endif %}
-                 hx-post="{% url autosave_url_name lang=lang %}" hx-trigger="change" hx-swap="none">
-          <label class="nhsuk-label nhsuk-radios__label" for="q1-sc">{% trans "South Central" %}</label>
-        </div>
-        <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="q1-lse" name="q1_region" type="radio" value="london-south-east"
-                 {% if submission and submission.q1_region == "london-south-east" %}checked{% endif %}
-                 hx-post="{% url autosave_url_name lang=lang %}" hx-trigger="change" hx-swap="none">
-          <label class="nhsuk-label nhsuk-radios__label" for="q1-lse">{% trans "London & South East" %}</label>
-        </div>
-        <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="q1-sw" name="q1_region" type="radio" value="south-west"
-                 {% if submission and submission.q1_region == "south-west" %}checked{% endif %}
-                 hx-post="{% url autosave_url_name lang=lang %}" hx-trigger="change" hx-swap="none">
-          <label class="nhsuk-label nhsuk-radios__label" for="q1-sw">{% trans "South West" %}</label>
-        </div>
-        <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="q1-tv" name="q1_region" type="radio" value="thames-valley"
-                 {% if submission and submission.q1_region == "thames-valley" %}checked{% endif %}
-                 hx-post="{% url autosave_url_name lang=lang %}" hx-trigger="change" hx-swap="none">
-          <label class="nhsuk-label nhsuk-radios__label" for="q1-tv">{% trans "Thames Valley" %}</label>
-        </div>
-        <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="q1-wales" name="q1_region" type="radio" value="wales"
-                 {% if submission and submission.q1_region == "wales" %}checked{% endif %}
-                 hx-post="{% url autosave_url_name lang=lang %}" hx-trigger="change" hx-swap="none">
-          <label class="nhsuk-label nhsuk-radios__label" for="q1-wales">{% trans "Wales" %}</label>
-        </div>
-        <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="q1-jersey" name="q1_region" type="radio" value="jersey"
-                 {% if submission and submission.q1_region == "jersey" %}checked{% endif %}
-                 hx-post="{% url autosave_url_name lang=lang %}" hx-trigger="change" hx-swap="none">
-          <label class="nhsuk-label nhsuk-radios__label" for="q1-jersey">{% trans "Jersey" %}</label>
-        </div>
-      </div>
-    </fieldset>
-  </div>
-
-  {# --- Q2: Hospital ------------------------------------------------- #}
-  <div class="nhsuk-form-group">
-    <label class="nhsuk-label nhsuk-label--m" for="q2_hospital">
-      {% trans "2. Please select the hospital where the diabetes clinic that you currently attend is normally held." %}
-    </label>
-    <div id="q2-hint" class="nhsuk-hint">{% trans "List of clinics depends on region selected above. Please type the name for now." %}</div>
-    <input class="nhsuk-input" id="q2_hospital" name="q2_hospital" type="text"
-           value="{{ submission.q2_hospital|default:'' }}"
-           hx-post="{% url autosave_url_name lang=lang %}"
-           hx-trigger="change" hx-swap="none">
-  </div>
 
   {# --- Q5: Relationship (P/C only) ---------------------------------- #}
   <div class="nhsuk-form-group">
