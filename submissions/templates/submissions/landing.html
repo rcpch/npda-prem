@@ -24,7 +24,7 @@
   </fieldset>
 </div>
 
-<a class="nhsuk-button" id="get-started" href="{% url 'submission_form' %}?lang=en" data-module="nhsuk-button">
+<a class="nhsuk-button" id="get-started" href="{% url 'submission_form' lang='en' %}" data-module="nhsuk-button">
   {% trans "Get started" %}
 </a>
 
@@ -32,11 +32,10 @@
   (function() {
     var radios = document.querySelectorAll('input[name="language"]');
     var button = document.getElementById('get-started');
-    var baseUrl = "{% url 'submission_form' %}";
 
     radios.forEach(function(radio) {
       radio.addEventListener('change', function() {
-        button.href = baseUrl + '?lang=' + this.value;
+        button.href = '/' + this.value + '/form/';
       });
     });
   })();

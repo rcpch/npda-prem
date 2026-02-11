@@ -6,14 +6,6 @@ from django.views.decorators.http import require_POST
 from .models import Submission
 
 
-def _get_lang(request):
-    return request.GET.get("lang", "en")
-
-
-def _lang_qs(request):
-    return f"?lang={_get_lang(request)}"
-
-
 # Simple fields that map directly from POST key to model field (CharField / TextField).
 SIMPLE_FIELDS = [
     "q1_region",
@@ -135,21 +127,20 @@ CHILD_SECTIONS = [
 ]
 
 
-def _section_context(sections, section_slug, form_url_name, request):
+def _section_context(sections, section_slug, form_url_name, lang):
     """Build template context for the current section."""
     slugs = [s["slug"] for s in sections]
     if section_slug not in slugs:
         raise Http404
     idx = slugs.index(section_slug)
-    lang_qs = _lang_qs(request)
 
     prev_url = (
-        reverse(form_url_name, kwargs={"section": slugs[idx - 1]}) + lang_qs
+        reverse(form_url_name, kwargs={"lang": lang, "section": slugs[idx - 1]})
         if idx > 0
         else None
     )
     next_url = (
-        reverse(form_url_name, kwargs={"section": slugs[idx + 1]}) + lang_qs
+        reverse(form_url_name, kwargs={"lang": lang, "section": slugs[idx + 1]})
         if idx < len(sections) - 1
         else None
     )
@@ -163,6 +154,7 @@ def _section_context(sections, section_slug, form_url_name, request):
         "prev_url": prev_url,
         "next_url": next_url,
         "is_last_section": idx == len(sections) - 1,
+        "lang": lang,
     }
 
 
@@ -174,23 +166,22 @@ def landing(request):
     return render(request, "submissions/landing.html")
 
 
-def submission_form(request):
-    return render(request, "submissions/form.html")
+def submission_form(request, lang):
+    return render(request, "submissions/form.html", {"lang": lang})
 
 
-def confirmation(request):
-    return render(request, "submissions/confirmation.html")
+def confirmation(request, lang):
+    return render(request, "submissions/confirmation.html", {"lang": lang})
 
 
 # ---------------------------------------------------------------------------
 # Parent form
 # ---------------------------------------------------------------------------
 
-def parent_form(request, section=None):
+def parent_form(request, lang, section=None):
     if section is None:
         return redirect(
-            reverse("parent_form_section", kwargs={"section": PARENT_SECTIONS[0]["slug"]})
-            + _lang_qs(request)
+            reverse("parent_form_section", kwargs={"lang": lang, "section": PARENT_SECTIONS[0]["slug"]})
         )
 
     submission = None
@@ -204,13 +195,13 @@ def parent_form(request, section=None):
         except Submission.DoesNotExist:
             del request.session["submission_id"]
 
-    ctx = _section_context(PARENT_SECTIONS, section, "parent_form_section", request)
+    ctx = _section_context(PARENT_SECTIONS, section, "parent_form_section", lang)
     ctx["submission"] = submission
     return render(request, "submissions/parent_form.html", ctx)
 
 
 @require_POST
-def parent_autosave(request):
+def parent_autosave(request, lang):
     submission_id = request.session.get("submission_id")
     submission = None
 
@@ -223,7 +214,7 @@ def parent_autosave(request):
     if submission is None:
         submission = Submission.objects.create(
             role="parent",
-            language=_get_lang(request),
+            language=lang,
         )
         request.session["submission_id"] = submission.pk
 
@@ -232,29 +223,28 @@ def parent_autosave(request):
 
 
 @require_POST
-def parent_submit(request):
+def parent_submit(request, lang):
     submission_id = request.session.get("submission_id")
 
     if not submission_id:
-        return redirect(reverse("parent_form") + _lang_qs(request))
+        return redirect(reverse("parent_form", kwargs={"lang": lang}))
 
     submission = get_object_or_404(Submission, pk=submission_id, submitted=False)
     submission.submitted = True
     submission.save()
 
     del request.session["submission_id"]
-    return redirect(reverse("confirmation") + _lang_qs(request))
+    return redirect(reverse("confirmation", kwargs={"lang": lang}))
 
 
 # ---------------------------------------------------------------------------
 # Child / young person form
 # ---------------------------------------------------------------------------
 
-def child_form(request, section=None):
+def child_form(request, lang, section=None):
     if section is None:
         return redirect(
-            reverse("child_form_section", kwargs={"section": CHILD_SECTIONS[0]["slug"]})
-            + _lang_qs(request)
+            reverse("child_form_section", kwargs={"lang": lang, "section": CHILD_SECTIONS[0]["slug"]})
         )
 
     submission = None
@@ -268,13 +258,13 @@ def child_form(request, section=None):
         except Submission.DoesNotExist:
             del request.session["submission_id"]
 
-    ctx = _section_context(CHILD_SECTIONS, section, "child_form_section", request)
+    ctx = _section_context(CHILD_SECTIONS, section, "child_form_section", lang)
     ctx["submission"] = submission
     return render(request, "submissions/child_form.html", ctx)
 
 
 @require_POST
-def child_autosave(request):
+def child_autosave(request, lang):
     submission_id = request.session.get("submission_id")
     submission = None
 
@@ -287,7 +277,7 @@ def child_autosave(request):
     if submission is None:
         submission = Submission.objects.create(
             role="cyp",
-            language=_get_lang(request),
+            language=lang,
         )
         request.session["submission_id"] = submission.pk
 
@@ -296,25 +286,25 @@ def child_autosave(request):
 
 
 @require_POST
-def child_submit(request):
+def child_submit(request, lang):
     submission_id = request.session.get("submission_id")
 
     if not submission_id:
-        return redirect(reverse("child_form") + _lang_qs(request))
+        return redirect(reverse("child_form", kwargs={"lang": lang}))
 
     submission = get_object_or_404(Submission, pk=submission_id, submitted=False)
     submission.submitted = True
     submission.save()
 
     del request.session["submission_id"]
-    return redirect(reverse("confirmation") + _lang_qs(request))
+    return redirect(reverse("confirmation", kwargs={"lang": lang}))
 
 
 # ---------------------------------------------------------------------------
 # Start again
 # ---------------------------------------------------------------------------
 
-def start_again(request):
+def start_again(request, lang):
     submission_id = request.session.get("submission_id")
     if submission_id:
         Submission.objects.filter(pk=submission_id, submitted=False).delete()

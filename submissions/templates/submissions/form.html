@@ -43,12 +43,12 @@
   (function() {
     var radios = document.querySelectorAll('input[name="role"]');
     var button = document.getElementById('continue-btn');
-    var lang = new URLSearchParams(window.location.search).get('lang') || 'en';
+    var parentUrl = "{% url 'parent_form' lang=lang %}";
+    var childUrl = "{% url 'child_form' lang=lang %}";
 
     radios.forEach(function(radio) {
       radio.addEventListener('change', function() {
-        var url = this.value === 'parent' ? '{% url "parent_form" %}' : '{% url "child_form" %}';
-        button.href = url + '?lang=' + encodeURIComponent(lang);
+        button.href = this.value === 'parent' ? parentUrl : childUrl;
       });
     });
   })();
