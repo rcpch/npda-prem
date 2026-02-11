@@ -24,3 +24,8 @@ s/up
 - Whitenoise to serve static assets
 - Front and back matter from document
 - Refactor to use template partials #savethetokens
+- Oauth login to Django admin against whitelist of RCPCH user names
+- namespaced dot string approach to translations
+  - bring across from translations spreadsheet to ensure accuracy
+- Weird double arrows on back buttons
+- Header fixes - one header at the top
