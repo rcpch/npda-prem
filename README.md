@@ -32,4 +32,7 @@ Visit http://localhost:8000/.
 - Check with IG about cookie messaging
 - Admin emails to me
 - Request logging
+- Favicon
+- Remove htmx from unpkg
+- Embed font rather than Google Fonts?
 - prodmon?

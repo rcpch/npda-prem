@@ -175,6 +175,7 @@ def region_form(request, lang):
     return render(request, "submissions/clinic.html", {
         "lang": lang,
         "q1_region": request.session.get("q1_region", ""),
+        "clinics": get_all_clinics(),
     })
 
 
