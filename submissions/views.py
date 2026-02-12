@@ -1,15 +1,16 @@
+import json
+
 from django.http import Http404, HttpResponse
 from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
 from django.views.decorators.http import require_POST
 
+from .clinics import get_all_clinics, get_clinics_for_region
 from .models import Submission
 
 
 # Simple fields that map directly from POST key to model field (CharField / TextField).
 SIMPLE_FIELDS = [
-    "q1_region",
-    "q2_hospital",
     "q4_gender",
     "q5_relationship",
     "q6_diabetes_type",
@@ -166,17 +167,52 @@ def landing(request):
     return render(request, "submissions/landing.html")
 
 
-def clinic_form(request, lang):
-    """Q1 (region) and Q2 (hospital) – asked before role selection."""
+def clinic_or_region(request, lang):
+    """Step 1: select the region (or 'unsure')."""
     if request.method == "POST":
-        request.session["q1_region"] = request.POST.get("q1_region", "")
-        request.session["q2_hospital"] = request.POST.get("q2_hospital", "")
+        clinic_value = request.POST.get("clinic", "")
+        region = request.POST.get("region", "")
+
+        if clinic_value:
+            for clinic in get_all_clinics():
+                if clinic_value == f"{clinic['name']} - {clinic['region']}":
+                    request.session["pz_code"] = clinic["pz_code"]
+            
+            if "pz_code" in request.session:
+                return redirect(reverse("role_form", kwargs={"lang": lang}))
+        else:
+            request.session["region"] = region
+            return redirect(reverse("clinic_in_region", kwargs={"lang": lang}))
+
+    clinic_values = [f"{clinic['name']} - {clinic['region']}" for clinic in get_all_clinics()]
+    clinic_values_json = json.dumps(clinic_values)
+
+    return render(request, "submissions/clinic_or_region.html", {
+        "lang": lang,
+        "region": request.session.get("region", ""),
+        "clinic_values_json": clinic_values_json
+    })
+
+
+def clinic_in_region(request, lang):
+    """Step 2: select the clinic from the chosen region (or all if unsure)."""
+    region = request.session.get("region", "")
+
+    if request.method == "POST":
+        pz_code = request.POST.get("pz_code", "")
+        request.session["pz_code"] = pz_code
         return redirect(reverse("role_form", kwargs={"lang": lang}))
 
-    return render(request, "submissions/clinic.html", {
+    if region == "unsure" or not region:
+        clinics = get_all_clinics()
+    else:
+        clinics = get_clinics_for_region(region)
+
+    return render(request, "submissions/clinic_select.html", {
         "lang": lang,
-        "q1_region": request.session.get("q1_region", ""),
-        "q2_hospital": request.session.get("q2_hospital", ""),
+        "region": region,
+        "clinics": clinics,
+        "selected_pz_code": request.session.get("pz_code", ""),
     })
 
 
@@ -229,8 +265,7 @@ def parent_autosave(request, lang):
         submission = Submission.objects.create(
             role="parent",
             language=lang,
-            q1_region=request.session.get("q1_region", ""),
-            q2_hospital=request.session.get("q2_hospital", ""),
+            pz_code=request.session.get("pz_code", ""),
         )
         request.session["submission_id"] = submission.pk
 
@@ -294,8 +329,7 @@ def child_autosave(request, lang):
         submission = Submission.objects.create(
             role="cyp",
             language=lang,
-            q1_region=request.session.get("q1_region", ""),
-            q2_hospital=request.session.get("q2_hospital", ""),
+            pz_code=request.session.get("pz_code", ""),
         )
         request.session["submission_id"] = submission.pk
 

@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+<div class="nhsuk-back-link">
+  <a class="nhsuk-back-link__link" href="{% url 'clinic_or_region' lang=lang %}">
+    <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+      <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+    </svg>
+    {% trans "Go back" %}
+  </a>
+</div>
+
+<form method="post" novalidate>
+  {% csrf_token %}
+
+  <div class="nhsuk-form-group">
+    <fieldset class="nhsuk-fieldset">
+      <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m">
+        {% trans "2. Please select the hospital where the diabetes clinic that you currently attend is normally held." %}
+      </legend>
+      <div class="nhsuk-radios" data-module="nhsuk-radios">
+        {% for clinic in clinics %}
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="clinic-{{ forloop.counter }}"
+                 name="pz_code" type="radio" value="{{ clinic.pz_code }}"
+                 {% if selected_pz_code == clinic.pz_code %}checked{% endif %}>
+          <label class="nhsuk-label nhsuk-radios__label" for="clinic-{{ forloop.counter }}">
+            {{ clinic.name }}
+          </label>
+        </div>
+        {% endfor %}
+      </div>
+    </fieldset>
+  </div>
+
+  <button class="nhsuk-button" type="submit" data-module="nhsuk-button">
+    {% trans "Continue" %}
+  </button>
+</form>
+{% endblock %}

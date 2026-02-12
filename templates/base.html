@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap">
   <link rel="stylesheet" href="{% static 'nhsuk/nhsuk-frontend-10.3.1.min.css' %}">
   <link rel="stylesheet" href="{% static 'css/rcpch.css' %}">
+  <link rel="stylesheet" href="{% static 'accessible-autocomplete/accessible-autocomplete-3.0.1.min.css' %}" />
 </head>
 <body>
   <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
@@ -47,5 +48,6 @@
     window.NHSUKFrontend && window.NHSUKFrontend.initAll();
   </script>
   <script src="https://unpkg.com/htmx.org@2.0.4"></script>
+  <script src="{% static 'accessible-autocomplete/accessible-autocomplete-3.0.1.min.js' %}"></script>
 </body>
 </html>
