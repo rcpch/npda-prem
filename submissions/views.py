@@ -165,12 +165,12 @@ def landing(request):
     return render(request, "submissions/landing.html")
 
 
-def clinic_or_region_form(request, lang):
+def clinic_or_region(request, lang):
     """Step 1: select the region (or 'unsure')."""
     if request.method == "POST":
         region = request.POST.get("q1_region", "")
         request.session["q1_region"] = region
-        return redirect(reverse("clinic_form", kwargs={"lang": lang}))
+        return redirect(reverse("clinic_in_region", kwargs={"lang": lang}))
 
     return render(request, "submissions/clinic_or_region.html", {
         "lang": lang,
@@ -179,7 +179,7 @@ def clinic_or_region_form(request, lang):
     })
 
 
-def clinic_form(request, lang):
+def clinic_in_region(request, lang):
     """Step 2: select the clinic from the chosen region (or all if unsure)."""
     region = request.session.get("q1_region", "")
 

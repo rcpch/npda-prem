@@ -6,8 +6,8 @@ urlpatterns = [
     # Landing page -- no language prefix, always English
     path("", views.landing, name="landing"),
     # All other pages under /<lang>/...
-    path("<str:lang>/form/clinic-or-region", views.clinic_or_region_form, name="clinic_or_region_form"),
-    path("<str:lang>/form/clinic/", views.clinic_form, name="clinic_form"),
+    path("<str:lang>/form/clinic-or-region", views.clinic_or_region, name="clinic_or_region"),
+    path("<str:lang>/form/clinic-in-region/", views.clinic_in_region, name="clinic_in_region"),
     path("<str:lang>/form/role/", views.role_form, name="role_form"),
     # Parent form
     path("<str:lang>/form/parent/", views.parent_form, name="parent_form"),
