@@ -10,4 +10,8 @@ WORKDIR /app/
 # (Excludes any files/dirs matched by patterns in .dockerignore)
 COPY . /app/
 
+# Install dependencies
 RUN uv sync
+
+# Collect and compress static files
+RUN uv run manage.py collectstatic --no-input

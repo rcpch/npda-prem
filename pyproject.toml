@@ -10,5 +10,6 @@ dependencies = [
     "python-dotenv==1.2.1",
     "psycopg[binary]==3.3.2",
     "azure-identity==1.25.2",
-    "gunicorn==25.0.3"
+    "gunicorn==25.0.3",
+    "whitenoise==6.11.0"
 ]
