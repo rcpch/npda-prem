@@ -32,4 +32,5 @@ Visit http://localhost:8000/.
 - Weird double arrows on back buttons
 - Check with IG about cookie messaging
 - Admin emails to me
+- Request logging
 - prodmon?
