@@ -1,0 +1,12 @@
+#!/bin/bash -e
+
+uv sync
+uv run manage.py write_azure_pg_password_file
+uv run manage.py makemigrations
+uv run manage.py migrate
+uv run django-admin compilemessages
+uv run gunicorn \
+    --bind=0.0.0.0:8000 \
+    --timeout 600 \
+    --workers 3 \
+    project.wsgi

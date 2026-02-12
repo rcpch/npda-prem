@@ -8,5 +8,7 @@ license = "AGPL-3.0-or-later"
 dependencies = [
     "django==6.0.2",
     "python-dotenv==1.2.1",
-    "psycopg[binary]==3.3.2"
+    "psycopg[binary]==3.3.2",
+    "azure-identity==1.25.2",
+    "gunicorn==25.0.3"
 ]

@@ -82,15 +82,23 @@ WSGI_APPLICATION = "npda_prem.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
+database_config = {
+    "ENGINE": "django.db.backends.postgresql",
+    "NAME": os.environ["POSTGRES_DB"],
+    "USER": os.environ["POSTGRES_USER"],
+    "HOST": os.environ["POSTGRES_HOST"],
+    "PORT": os.environ["POSTGRES_PORT"],
+}
+
+password_file = os.environ.get("POSTGRES_DB_PASSWORD_FILE")
+
+if password_file:
+    database_config["OPTIONS"] = {"passfile": password_file}
+else:
+    database_config["PASSWORD"] = os.environ.get("POSTGRES_PASSWORD")
+
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": os.environ["POSTGRES_DB"],
-        "USER": os.environ["POSTGRES_USER"],
-        "HOST": os.environ["POSTGRES_HOST"],
-        "PORT": os.environ["POSTGRES_PORT"],
-        "PASSWORD": os.environ["POSTGRES_PASSWORD"],
-    }
+    "default": database_config
 }
 
 

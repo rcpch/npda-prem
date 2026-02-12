@@ -7,9 +7,11 @@ cp .env.template .env
 s/up
 ```
 
+Visit http://localhost:8000/.
+
 ## TODO
 
-- Add Azure password file config and stand up in ACA
+- Stand up in ACA
 - Q4 should say "do you identify as" (check translations?)
 - Skip Q10 if Q9 is nursery
 - Remove header and blurb before section X of X
@@ -29,3 +31,5 @@ s/up
   - bring across from translations spreadsheet to ensure accuracy
 - Weird double arrows on back buttons
 - Check with IG about cookie messaging
+- Admin emails to me
+- prodmon?
