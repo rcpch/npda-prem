@@ -3,7 +3,7 @@
 ## Get started
 
 ```
-cp .env.template .env
+cp envs/.env.template envs/.env
 s/up
 ```
 
