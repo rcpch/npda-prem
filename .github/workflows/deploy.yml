@@ -24,7 +24,7 @@ jobs:
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
       
       - name: '.env file for testing'
-      - run: 'cp envs/.env.template envs/.env'
+        run: 'cp envs/.env.template envs/.env'
 
       - name: 'Run CI script'
         env:
