@@ -21,11 +21,6 @@
   {% include section_template with autosave_url_name="parent_autosave" role="parent" %}
 
   {% if is_last_section %}
-    <p>
-      <a class="nhsuk-button nhsuk-button--secondary" href="{% url 'start_again' lang=lang %}">
-        {% trans "Start again" %}
-      </a>
-    </p>
     <button class="nhsuk-button" type="submit" data-module="nhsuk-button">
       {% trans "Submit" %}
     </button>

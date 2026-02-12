@@ -356,10 +356,10 @@ def child_submit(request, lang):
 # Start again
 # ---------------------------------------------------------------------------
 
-def start_again(request, lang):
+@require_POST
+def start_again(request):
     submission_id = request.session.get("submission_id")
     if submission_id:
-        Submission.objects.filter(pk=submission_id, submitted=False).delete()
         del request.session["submission_id"]
 
     return redirect(reverse("landing"))

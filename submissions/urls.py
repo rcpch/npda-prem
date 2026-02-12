@@ -20,6 +20,6 @@ urlpatterns = [
     path("<str:lang>/form/child/submit/", views.child_submit, name="child_submit"),
     path("<str:lang>/form/child/<slug:section>/", views.child_form, name="child_form_section"),
     # Other
-    path("<str:lang>/form/start-again/", views.start_again, name="start_again"),
+    path("/start-again/", views.start_again, name="start_again"),
     path("<str:lang>/form/confirmation/", views.confirmation, name="confirmation"),
 ]
