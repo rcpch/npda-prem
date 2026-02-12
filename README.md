@@ -11,7 +11,7 @@ Visit http://localhost:8000/.
 
 ## TODO
 
-- Stand up in ACA
+- GitHub pr check and deploy pipeline
 - Q4 should say "do you identify as" (check translations?)
 - Skip Q10 if Q9 is nursery
 - Remove header and blurb before section X of X
@@ -23,7 +23,6 @@ Visit http://localhost:8000/.
 - Remove question numbers since they're not sequential to someone filling out the form
 - Consider isolating conditional questions onto separate pages (triggered by first answer)
   - This is gov.uk style
-- Whitenoise to serve static assets
 - Front and back matter from document
 - Refactor to use template partials #savethetokens
 - Oauth login to Django admin against whitelist of RCPCH user names
