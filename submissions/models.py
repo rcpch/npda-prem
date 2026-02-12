@@ -15,28 +15,6 @@ class Submission(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
-    # -- Q1: Region --------------------------------------------------------
-    REGION_CHOICES = [
-        ("north-east-north-cumbria", _("North East & North Cumbria")),
-        ("north-west", _("North West")),
-        ("yorkshire-humber", _("Yorkshire & Humber")),
-        ("east-midlands", _("East Midlands")),
-        ("west-midlands", _("West Midlands")),
-        ("east-of-england", _("East of England")),
-        ("south-central", _("South Central")),
-        ("london-south-east", _("London & South East")),
-        ("south-west", _("South West")),
-        ("thames-valley", _("Thames Valley")),
-        ("wales", _("Wales")),
-        ("jersey", _("Jersey")),
-    ]
-    q1_region = models.CharField(
-        max_length=30, choices=REGION_CHOICES, blank=True, default="",
-    )
-
-    # -- Q2: Hospital / clinic (depends on region – free text for now) -----
-    q2_hospital = models.CharField(max_length=200, blank=True, default="")
-
     # -- PZ code (canonical clinic identifier from selection flow) ----------
     pz_code = models.CharField(max_length=10, blank=True, default="")
 

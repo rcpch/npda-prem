@@ -16,7 +16,6 @@ def export_as_csv(modeladmin, request, queryset):
         "role",
         "language",
         "submitted",
-        "q1_region",
         "q2_hospital",
         "q4_gender",
         "q5_relationship",
@@ -80,7 +79,7 @@ def export_as_csv(modeladmin, request, queryset):
 
 @admin.register(Submission)
 class SubmissionAdmin(admin.ModelAdmin):
-    list_display = ("id", "role", "language", "submitted", "q1_region", "q38_school_support", "created_at")
-    list_filter = ("role", "submitted", "language", "q1_region")
+    list_display = ("id", "role", "language", "submitted", "pz_code", "q38_school_support", "created_at")
+    list_filter = ("role", "submitted", "language", "pz_code")
     readonly_fields = ("created_at", "updated_at")
     actions = [export_as_csv]

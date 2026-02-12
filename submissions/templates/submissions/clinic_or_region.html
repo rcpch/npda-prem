@@ -11,7 +11,7 @@
   </a>
 </div>
 
-<form method="post" novalidate>
+<form id="clinic-form" method="post" novalidate>
   {% csrf_token %}
 
   <div class="nhsuk-form-group">
@@ -23,7 +23,15 @@
     </fieldset>
   </div>
 
+  <button class="nhsuk-button" type="submit" data-module="nhsuk-button">
+    {% trans "Select" %}
+  </button>
+</form>
+
   <h3>{% trans 'or' %}</h3>
+
+<form method="post" novalidate>
+  {% csrf_token %}
 
   <div class="nhsuk-form-group">
     <fieldset class="nhsuk-fieldset">
@@ -33,69 +41,69 @@
       <div id="q1-hint" class="nhsuk-hint">{% trans "Ask your diabetes team if you are unsure." %}</div>
       <div class="nhsuk-radios" data-module="nhsuk-radios">
         <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="q1-nenc" name="q1_region" type="radio" value="north-east-north-cumbria"
-                 {% if q1_region == "north-east-north-cumbria" %}checked{% endif %}>
+          <input class="nhsuk-radios__input" id="q1-nenc" name="region" type="radio" value="north-east-north-cumbria"
+                 {% if region == "north-east-north-cumbria" %}checked{% endif %}>
           <label class="nhsuk-label nhsuk-radios__label" for="q1-nenc">{% trans "North East & North Cumbria" %}</label>
         </div>
         <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="q1-nw" name="q1_region" type="radio" value="north-west"
-                 {% if q1_region == "north-west" %}checked{% endif %}>
+          <input class="nhsuk-radios__input" id="q1-nw" name="region" type="radio" value="north-west"
+                 {% if region == "north-west" %}checked{% endif %}>
           <label class="nhsuk-label nhsuk-radios__label" for="q1-nw">{% trans "North West" %}</label>
         </div>
         <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="q1-yh" name="q1_region" type="radio" value="yorkshire-humber"
-                 {% if q1_region == "yorkshire-humber" %}checked{% endif %}>
+          <input class="nhsuk-radios__input" id="q1-yh" name="region" type="radio" value="yorkshire-humber"
+                 {% if region == "yorkshire-humber" %}checked{% endif %}>
           <label class="nhsuk-label nhsuk-radios__label" for="q1-yh">{% trans "Yorkshire & Humber" %}</label>
         </div>
         <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="q1-em" name="q1_region" type="radio" value="east-midlands"
-                 {% if q1_region == "east-midlands" %}checked{% endif %}>
+          <input class="nhsuk-radios__input" id="q1-em" name="region" type="radio" value="east-midlands"
+                 {% if region == "east-midlands" %}checked{% endif %}>
           <label class="nhsuk-label nhsuk-radios__label" for="q1-em">{% trans "East Midlands" %}</label>
         </div>
         <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="q1-wm" name="q1_region" type="radio" value="west-midlands"
-                 {% if q1_region == "west-midlands" %}checked{% endif %}>
+          <input class="nhsuk-radios__input" id="q1-wm" name="region" type="radio" value="west-midlands"
+                 {% if region == "west-midlands" %}checked{% endif %}>
           <label class="nhsuk-label nhsuk-radios__label" for="q1-wm">{% trans "West Midlands" %}</label>
         </div>
         <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="q1-ee" name="q1_region" type="radio" value="east-of-england"
-                 {% if q1_region == "east-of-england" %}checked{% endif %}>
+          <input class="nhsuk-radios__input" id="q1-ee" name="region" type="radio" value="east-of-england"
+                 {% if region == "east-of-england" %}checked{% endif %}>
           <label class="nhsuk-label nhsuk-radios__label" for="q1-ee">{% trans "East of England" %}</label>
         </div>
         <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="q1-sc" name="q1_region" type="radio" value="south-central"
-                 {% if q1_region == "south-central" %}checked{% endif %}>
+          <input class="nhsuk-radios__input" id="q1-sc" name="region" type="radio" value="south-central"
+                 {% if region == "south-central" %}checked{% endif %}>
           <label class="nhsuk-label nhsuk-radios__label" for="q1-sc">{% trans "South Central" %}</label>
         </div>
         <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="q1-lse" name="q1_region" type="radio" value="london-south-east"
-                 {% if q1_region == "london-south-east" %}checked{% endif %}>
+          <input class="nhsuk-radios__input" id="q1-lse" name="region" type="radio" value="london-south-east"
+                 {% if region == "london-south-east" %}checked{% endif %}>
           <label class="nhsuk-label nhsuk-radios__label" for="q1-lse">{% trans "London & South East" %}</label>
         </div>
         <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="q1-sw" name="q1_region" type="radio" value="south-west"
-                 {% if q1_region == "south-west" %}checked{% endif %}>
+          <input class="nhsuk-radios__input" id="q1-sw" name="region" type="radio" value="south-west"
+                 {% if region == "south-west" %}checked{% endif %}>
           <label class="nhsuk-label nhsuk-radios__label" for="q1-sw">{% trans "South West" %}</label>
         </div>
         <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="q1-tv" name="q1_region" type="radio" value="thames-valley"
-                 {% if q1_region == "thames-valley" %}checked{% endif %}>
+          <input class="nhsuk-radios__input" id="q1-tv" name="region" type="radio" value="thames-valley"
+                 {% if region == "thames-valley" %}checked{% endif %}>
           <label class="nhsuk-label nhsuk-radios__label" for="q1-tv">{% trans "Thames Valley" %}</label>
         </div>
         <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="q1-wales" name="q1_region" type="radio" value="wales"
-                 {% if q1_region == "wales" %}checked{% endif %}>
+          <input class="nhsuk-radios__input" id="q1-wales" name="region" type="radio" value="wales"
+                 {% if region == "wales" %}checked{% endif %}>
           <label class="nhsuk-label nhsuk-radios__label" for="q1-wales">{% trans "Wales" %}</label>
         </div>
         <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="q1-jersey" name="q1_region" type="radio" value="jersey"
-                 {% if q1_region == "jersey" %}checked{% endif %}>
+          <input class="nhsuk-radios__input" id="q1-jersey" name="region" type="radio" value="jersey"
+                 {% if region == "jersey" %}checked{% endif %}>
           <label class="nhsuk-label nhsuk-radios__label" for="q1-jersey">{% trans "Jersey" %}</label>
         </div>
         <div class="nhsuk-radios__divider">{% trans "or" %}</div>
         <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="q1-unsure" name="q1_region" type="radio" value="unsure"
-                 {% if q1_region == "unsure" %}checked{% endif %}>
+          <input class="nhsuk-radios__input" id="q1-unsure" name="region" type="radio" value="unsure"
+                 {% if region == "unsure" %}checked{% endif %}>
           <label class="nhsuk-label nhsuk-radios__label" for="q1-unsure">{% trans "I'm not sure" %}</label>
         </div>
       </div>
@@ -103,24 +111,26 @@
   </div>
 
   <button class="nhsuk-button" type="submit" data-module="nhsuk-button">
-    {% trans "Continue" %}
+    {% trans "Select" %}
   </button>
 </form>
 
+<script type="application/json" id="clinic-values">
+  {{clinic_values_json|safe }}
+</script>
+
 <script>
-  const clinics = [
-    {% for clinic in clinics %}
-       "{{ clinic.name|safe }} - {{ clinic.region|safe }}",
-    {% endfor %}
-  ]
+  const clinicValuesJson = document.getElementById('clinic-values').textContent;
+  const clinicValues = JSON.parse(clinicValuesJson);
 
   document.addEventListener('DOMContentLoaded', function () {
-    const element = document.getElementById('location-picker');
+    const autoComplete = document.getElementById('location-picker');
 
     accessibleAutocomplete({
-      element,
+      element: autoComplete,
       id: 'location-autocomplete',
-      source: clinics,
+      name: 'clinic',
+      source: clinicValues,
       showAllValues: true
     });
   });

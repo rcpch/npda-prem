@@ -13,11 +13,14 @@ Visit http://localhost:8000/.
 
 - GitHub pr check
 - Q4 should say "do you identify as" (check translations?)
+- Start again deletes submission??!
+- Fix going back to change unit
+  - Generate submission ID in session up front and modify it?
+  - Also add "selected" to role, atm it doesn't remember what you answered
 - Skip Q10 if Q9 is nursery
 - Remove header and blurb before section X of X
 - Translate section X of X?
 - Typeahead lookup for clinic names using familiar list, save resulting PZ code
-- Infer region from clinic name?
 - Start again buttons on each page
 - Change language button on each page (can redirect to homepage with prefilled next link?)
 - Remove question numbers since they're not sequential to someone filling out the form
@@ -35,4 +38,5 @@ Visit http://localhost:8000/.
 - Favicon
 - Remove htmx from unpkg
 - Embed font rather than Google Fonts?
+- Test autocomplete on iPad
 - prodmon?
