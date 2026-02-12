@@ -28,4 +28,4 @@ s/up
 - namespaced dot string approach to translations
   - bring across from translations spreadsheet to ensure accuracy
 - Weird double arrows on back buttons
-- Header fixes - one header at the top
+- Check with IG about cookie messaging
