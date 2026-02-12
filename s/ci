@@ -1,0 +1,18 @@
+#!/bin/bash -e
+
+az acr login --name ${AZURE_REGISTRY_NAME}
+
+# Build the app
+docker compose build
+
+# Push the image to Azure. This allows us to deploy in an emergency before the tests complete
+azure_tag="${AZURE_REGISTRY_NAME}.azurecr.io/noda-prem:${GITHUB_SHA}"
+docker tag npda-prem:built ${azure_tag}
+docker push ${azure_tag}
+
+# Deploy to production
+az containerapp revision copy \
+    --name ${AZURE_LIVE_APP_NAME} \
+    --resource-group ${AZURE_RESOURCE_GROUP} \
+    --image ${azure_tag} \
+    --query 'properties.provisioningState'
