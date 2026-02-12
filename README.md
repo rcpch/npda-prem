@@ -28,7 +28,6 @@ Visit http://localhost:8000/.
 - Oauth login to Django admin against whitelist of RCPCH user names
 - namespaced dot string approach to translations
   - bring across from translations spreadsheet to ensure accuracy
-- Weird double arrows on back buttons
 - Check with IG about cookie messaging
 - Admin emails to me
 - Request logging

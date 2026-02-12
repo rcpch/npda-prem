@@ -138,7 +138,7 @@ def _section_context(sections, section_slug, form_url_name, lang):
     prev_url = (
         reverse(form_url_name, kwargs={"lang": lang, "section": slugs[idx - 1]})
         if idx > 0
-        else None
+        else reverse("role_form", kwargs={"lang": lang})
     )
     next_url = (
         reverse(form_url_name, kwargs={"lang": lang, "section": slugs[idx + 1]})
