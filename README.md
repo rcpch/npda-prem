@@ -11,7 +11,7 @@ Visit http://localhost:8000/.
 
 ## TODO
 
-- GitHub pr check and deploy pipeline
+- GitHub pr check
 - Q4 should say "do you identify as" (check translations?)
 - Skip Q10 if Q9 is nursery
 - Remove header and blurb before section X of X
