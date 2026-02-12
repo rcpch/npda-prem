@@ -40,4 +40,5 @@ Visit http://localhost:8000/.
 - Embed font rather than Google Fonts?
 - Test autocomplete on iPad
 - Feedback to user that an answer hasn't saved
+- Put behind Cloudflare so we have levers to pull if it's abused
 - prodmon?
