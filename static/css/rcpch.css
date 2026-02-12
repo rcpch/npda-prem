@@ -224,3 +224,8 @@ a:focus,
   left: auto;
   right: 11px;
 }
+
+/* z-index weirdness out of the box with the gov.uk autocomplete */
+.autocomplete__dropdown-arrow-down {
+  z-index: 1 !important; 
+}
