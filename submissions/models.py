@@ -37,6 +37,9 @@ class Submission(models.Model):
     # -- Q2: Hospital / clinic (depends on region – free text for now) -----
     q2_hospital = models.CharField(max_length=200, blank=True, default="")
 
+    # -- PZ code (canonical clinic identifier from selection flow) ----------
+    pz_code = models.CharField(max_length=10, blank=True, default="")
+
     # -- Q3: Are you… (maps to role field above) ---------------------------
 
     # -- Q4: Gender (CYP only) --------------------------------------------

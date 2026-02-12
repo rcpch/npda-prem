@@ -14,7 +14,6 @@
 <form method="post" novalidate>
   {% csrf_token %}
 
-  {# --- Q1: Region --------------------------------------------------- #}
   <div class="nhsuk-form-group">
     <fieldset class="nhsuk-fieldset">
       <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m">
@@ -82,18 +81,14 @@
                  {% if q1_region == "jersey" %}checked{% endif %}>
           <label class="nhsuk-label nhsuk-radios__label" for="q1-jersey">{% trans "Jersey" %}</label>
         </div>
+        <div class="nhsuk-radios__divider">{% trans "or" %}</div>
+        <div class="nhsuk-radios__item">
+          <input class="nhsuk-radios__input" id="q1-unsure" name="q1_region" type="radio" value="unsure"
+                 {% if q1_region == "unsure" %}checked{% endif %}>
+          <label class="nhsuk-label nhsuk-radios__label" for="q1-unsure">{% trans "I'm not sure" %}</label>
+        </div>
       </div>
     </fieldset>
-  </div>
-
-  {# --- Q2: Hospital ------------------------------------------------- #}
-  <div class="nhsuk-form-group">
-    <label class="nhsuk-label nhsuk-label--m" for="q2_hospital">
-      {% trans "2. Please select the hospital where the diabetes clinic that you currently attend is normally held." %}
-    </label>
-    <div id="q2-hint" class="nhsuk-hint">{% trans "List of clinics depends on region selected above. Please type the name for now." %}</div>
-    <input class="nhsuk-input" id="q2_hospital" name="q2_hospital" type="text"
-           value="{{ q2_hospital }}">
   </div>
 
   <button class="nhsuk-button" type="submit" data-module="nhsuk-button">

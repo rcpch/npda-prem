@@ -3,13 +3,12 @@ from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
 from django.views.decorators.http import require_POST
 
+from .clinics import get_all_clinics, get_clinics_for_region
 from .models import Submission
 
 
 # Simple fields that map directly from POST key to model field (CharField / TextField).
 SIMPLE_FIELDS = [
-    "q1_region",
-    "q2_hospital",
     "q4_gender",
     "q5_relationship",
     "q6_diabetes_type",
@@ -166,17 +165,38 @@ def landing(request):
     return render(request, "submissions/landing.html")
 
 
-def clinic_form(request, lang):
-    """Q1 (region) and Q2 (hospital) – asked before role selection."""
+def region_form(request, lang):
+    """Step 1: select the region (or 'unsure')."""
     if request.method == "POST":
-        request.session["q1_region"] = request.POST.get("q1_region", "")
-        request.session["q2_hospital"] = request.POST.get("q2_hospital", "")
-        return redirect(reverse("role_form", kwargs={"lang": lang}))
+        region = request.POST.get("q1_region", "")
+        request.session["q1_region"] = region
+        return redirect(reverse("clinic_form", kwargs={"lang": lang}))
 
     return render(request, "submissions/clinic.html", {
         "lang": lang,
         "q1_region": request.session.get("q1_region", ""),
-        "q2_hospital": request.session.get("q2_hospital", ""),
+    })
+
+
+def clinic_form(request, lang):
+    """Step 2: select the clinic from the chosen region (or all if unsure)."""
+    region = request.session.get("q1_region", "")
+
+    if request.method == "POST":
+        pz_code = request.POST.get("pz_code", "")
+        request.session["pz_code"] = pz_code
+        return redirect(reverse("role_form", kwargs={"lang": lang}))
+
+    if region == "unsure" or not region:
+        clinics = get_all_clinics()
+    else:
+        clinics = get_clinics_for_region(region)
+
+    return render(request, "submissions/clinic_select.html", {
+        "lang": lang,
+        "region": region,
+        "clinics": clinics,
+        "selected_pz_code": request.session.get("pz_code", ""),
     })
 
 
@@ -230,7 +250,7 @@ def parent_autosave(request, lang):
             role="parent",
             language=lang,
             q1_region=request.session.get("q1_region", ""),
-            q2_hospital=request.session.get("q2_hospital", ""),
+            pz_code=request.session.get("pz_code", ""),
         )
         request.session["submission_id"] = submission.pk
 
@@ -295,7 +315,7 @@ def child_autosave(request, lang):
             role="cyp",
             language=lang,
             q1_region=request.session.get("q1_region", ""),
-            q2_hospital=request.session.get("q2_hospital", ""),
+            pz_code=request.session.get("pz_code", ""),
         )
         request.session["submission_id"] = submission.pk
 
