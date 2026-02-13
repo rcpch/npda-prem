@@ -38,11 +38,11 @@
       </legend>
       <div id="q1-hint" class="nhsuk-hint">{% trans "Ask your diabetes team if you are unsure." %}</div>
       <div class="nhsuk-radios" data-module="nhsuk-radios">
-        {% for region in regions_with_slugs %}
-          {% include "submissions/partials/radio-input.html" with id="q1-{region.0}" name="region" value=region.0 label=region.1 field_value=region.0 autosave=False %}
+        {% for region_with_slug in regions_with_slugs %}
+          {% include "submissions/partials/radio-input.html" with id=region_with_slug.0 name="region" value=region_with_slug.0 label=region_with_slug.1 field_value=region autosave=False %}
         {% endfor %}
         <div class="nhsuk-radios__divider">{% trans "or" %}</div>
-        {% include "submissions/partials/radio-input.html" with id="q1-unsure" name="region" value="unsure" label="I'm not sure" field_value=region.0 autosave=False %}
+        {% include "submissions/partials/radio-input.html" with id="unsure" name="region" value="unsure" label="I'm not sure" field_value=region.0 autosave=False %}
       </div>
     </fieldset>
   </div>
