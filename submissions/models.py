@@ -15,6 +15,49 @@ DIABETES_TYPE_CHOICES = [
     ("other", _("Other")),
 ]
 
+AGE_DIAGNOSIS_CHOICES = [
+    ("0-3", _("3 years or younger")),
+    ("4-7", _("4 – 7 years")),
+    ("8-11", _("8 – 11 years")),
+    ("12-16", _("12 – 16 years")),
+    ("17-19", _("17 – 19 years")),
+]
+
+ETHNICITY_CHOICES = [
+    ("white", _("White")),
+    ("black", _("Black")),
+    ("asian", _("Asian")),
+    ("mixed", _("Mixed")),
+    ("other", _("Other")),
+    ("prefer-not-to-say", _("Prefer not to say")),
+]
+
+EDUCATION_STAGE_CHOICES_WITH_HINTS = [
+    ("nursery", _("Nursery"), _("Ages < 4yrs")),
+    ("reception", _("Reception"), _("Ages 4-5yrs")),
+    ("ks1", _("Key stage 1 (Years 1 & 2)"), _("Ages 5-7yrs")),
+    ("ks2", _("Key stage 2 (Years 3 to 6)"), _("Ages 7-11yrs")),
+    ("ks3", _("Key stage 3 (Years 7 to 9)"), _("Ages 11-14yrs")),
+    ("ks4", _("Key stage 4 (Years 10 & 11)"), _("Ages 14-16yrs")),
+    ("ks5", _("Key stage 5 (Years 12 & 13)"), _("Ages 16-18yrs")),
+    ("other", _("Other"), None),
+]
+
+EDUCATION_STAGE_CHOICES = [(value, label) for value, label, hint in EDUCATION_STAGE_CHOICES_WITH_HINTS]
+
+SCHOOL_TYPE_CHOICES = [
+    ("state", _("State funded school")),
+    ("private", _("Private school")),
+    ("home", _("Home schooled/educated")),
+]
+
+HOME_ED_CHOICES = [
+    ("no", _("No, it was for other reasons")),
+    ("partly", _("Partly, the diabetes diagnosis influenced my decision")),
+    ("yes", _("Yes, it was mainly because of the diabetes diagnosis")),
+    ("prefer-not-to-say", _("Prefer not to say")),
+]
+
 class Submission(models.Model):
     # -- Metadata ----------------------------------------------------------
     ROLE_CHOICES = [
@@ -56,41 +99,16 @@ class Submission(models.Model):
     )
 
     # -- Q7: Age at diagnosis ----------------------------------------------
-    AGE_DIAGNOSIS_CHOICES = [
-        ("0-3", _("3 years or younger")),
-        ("4-7", _("4 – 7 years")),
-        ("8-11", _("8 – 11 years")),
-        ("12-16", _("12 – 16 years")),
-        ("17-19", _("17 – 19 years")),
-    ]
     q7_age_at_diagnosis = models.CharField(
         max_length=10, choices=AGE_DIAGNOSIS_CHOICES, blank=True, default="",
     )
 
     # -- Q8: Ethnicity -----------------------------------------------------
-    ETHNICITY_CHOICES = [
-        ("white", _("White")),
-        ("black", _("Black")),
-        ("asian", _("Asian")),
-        ("mixed", _("Mixed")),
-        ("other", _("Other")),
-        ("prefer-not-to-say", _("Prefer not to say")),
-    ]
     q8_ethnicity = models.CharField(
         max_length=20, choices=ETHNICITY_CHOICES, blank=True, default="",
     )
 
     # -- Q9: Education stage -----------------------------------------------
-    EDUCATION_STAGE_CHOICES = [
-        ("nursery", _("Nursery")),
-        ("reception", _("Reception")),
-        ("ks1", _("Key stage 1 (Years 1 & 2)")),
-        ("ks2", _("Key stage 2 (Years 3 to 6)")),
-        ("ks3", _("Key stage 3 (Years 7 to 9)")),
-        ("ks4", _("Key stage 4 (Years 10 & 11)")),
-        ("ks5", _("Key stage 5 (Years 12 & 13)")),
-        ("other", _("Other")),
-    ]
     q9_education_stage = models.CharField(
         max_length=20, choices=EDUCATION_STAGE_CHOICES, blank=True, default="",
     )
@@ -99,22 +117,11 @@ class Submission(models.Model):
     )
 
     # -- Q10: School type --------------------------------------------------
-    SCHOOL_TYPE_CHOICES = [
-        ("state", _("State funded school")),
-        ("private", _("Private school")),
-        ("home", _("Home schooled/educated")),
-    ]
     q10_school_type = models.CharField(
         max_length=10, choices=SCHOOL_TYPE_CHOICES, blank=True, default="",
     )
 
     # -- Q11: Home education related to diabetes (shown if Q10=home) -------
-    HOME_ED_CHOICES = [
-        ("no", _("No, it was for other reasons")),
-        ("partly", _("Partly, the diabetes diagnosis influenced my decision")),
-        ("yes", _("Yes, it was mainly because of the diabetes diagnosis")),
-        ("prefer-not-to-say", _("Prefer not to say")),
-    ]
     q11_home_education_reason = models.CharField(
         max_length=20, choices=HOME_ED_CHOICES, blank=True, default="",
     )

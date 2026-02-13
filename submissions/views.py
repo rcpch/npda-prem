@@ -229,15 +229,18 @@ def question(request, lang, role, section, question):
         raise Http404
 
     question_data = None
-    for q in section_data["questions"]:
+    question_ix = 0
+
+    for ix, q in enumerate(section_data["questions"]):
         if q["id"] == question:
             question_data = q
+            question_ix = ix
             break
     
     if question_data is None:
         raise Http404
 
-    question_data["title"] = question_data["title"].get(role, "")
+    question_data["title"] = question_data["title"][role]
 
     submission = None
     submission_id = request.session.get("submission_id")
@@ -260,26 +263,45 @@ def question(request, lang, role, section, question):
             request.session["submission_id"] = submission.pk
         
         save_response(request, submission)
+
+        request.session["previous_question_id"] = question_data["id"]
+        next_question_id = None
+
+        if "next_question" in question_data:
+            next_question_options = question_data["next_question"]
+            value = request.POST.get(question_data["id"], "")
+
+            if value in next_question_options:
+                next_question_id = next_question_options[value]
+            else:
+                next_question_id = next_question_options["_"]
+        
+        if not next_question_id:
+            if question_ix < len(section_data["questions"]) - 1:
+                next_question_id = section_data["questions"][question_ix + 1]["id"]
+            else:
+                # TODO
+                # No more questions in this section, go to next section or confirmation
+                pass
+
         next_url = reverse("question", kwargs={
             "lang": lang,
             "role": role,
             "section": section_data["slug"],
-            "question": question_data["next_question"],
+            "question": next_question_id,
         })
 
         return redirect(next_url)
 
-    prev_url = reverse("role_form", kwargs={"lang": lang}) # default to role form if no previous question
-
-    for q in section_data["questions"]:
-        if q["next_question"] == question_data["id"]:
-            prev_url = reverse("question", kwargs={
-                "lang": lang,
-                "role": role,
-                "section": section_data["slug"],
-                "question": q["id"],
-            })
-            break
+    if not request.session.get("previous_question_id"):
+        prev_url = reverse("role_form", kwargs={"lang": lang}) # default to role form if no previous question
+    else:
+        prev_url = reverse("question", kwargs={
+            "lang": lang,
+            "role": role,
+            "section": section_data["slug"],
+            "question": request.session["previous_question_id"],
+        })
 
     # TODO: next prev (and how to measure progress across sections?)
     ctx = {
