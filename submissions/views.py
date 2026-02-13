@@ -241,9 +241,6 @@ def build_form(request, lang, sections, section_slug, form_prefix):
 
     return render(request, f"submissions/{form_prefix}.html", ctx)
 
-# ---------------------------------------------------------------------------
-# Parent form
-# ---------------------------------------------------------------------------
 
 def parent_form(request, lang, section=None):
     return build_form(
@@ -252,6 +249,16 @@ def parent_form(request, lang, section=None):
         section_slug=section,
         sections=PARENT_SECTIONS,
         form_prefix="parent_form"
+    )
+
+
+def child_form(request, lang, section=None):
+    return build_form(
+        request=request,
+        lang=lang,
+        section_slug=section,
+        sections=CHILD_SECTIONS,
+        form_prefix="child_form"
     )
 
 
@@ -288,40 +295,11 @@ def autosave(request, lang, role):
 
 
 @require_POST
-def parent_submit(request, lang):
+def submit(request, lang, role):
     submission_id = request.session.get("submission_id")
 
     if not submission_id:
-        return redirect(reverse("parent_form", kwargs={"lang": lang}))
-
-    submission = get_object_or_404(Submission, pk=submission_id, submitted=False)
-    submission.submitted = True
-    submission.save()
-
-    del request.session["submission_id"]
-    return redirect(reverse("confirmation", kwargs={"lang": lang}))
-
-
-# ---------------------------------------------------------------------------
-# Child / young person form
-# ---------------------------------------------------------------------------
-
-def child_form(request, lang, section=None):
-    return build_form(
-        request=request,
-        lang=lang,
-        section_slug=section,
-        sections=CHILD_SECTIONS,
-        form_prefix="child_form"
-    )
-
-
-@require_POST
-def child_submit(request, lang):
-    submission_id = request.session.get("submission_id")
-
-    if not submission_id:
-        return redirect(reverse("child_form", kwargs={"lang": lang}))
+        return redirect(reverse(f"{role}_form", kwargs={"lang": lang}))
 
     submission = get_object_or_404(Submission, pk=submission_id, submitted=False)
     submission.submitted = True

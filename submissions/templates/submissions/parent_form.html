@@ -12,7 +12,7 @@
 {% include "submissions/_form_nav.html" %}
 
 <form method="post"
-      action="{% url 'parent_submit' lang=lang %}"
+      action="{% url 'submit' lang=lang role='parent' %}"
       novalidate>
   {% csrf_token %}
 
