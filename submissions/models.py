@@ -45,11 +45,13 @@ EDUCATION_STAGE_CHOICES_WITH_HINTS = [
 
 EDUCATION_STAGE_CHOICES = [(value, label) for value, label, hint in EDUCATION_STAGE_CHOICES_WITH_HINTS]
 
-SCHOOL_TYPE_CHOICES = [
-    ("state", _("State funded school")),
-    ("private", _("Private school")),
-    ("home", _("Home schooled/educated")),
+SCHOOL_TYPE_CHOICES_WITH_HINTS = [
+    ("state", _("State funded school"), _("q10.state.hint")),
+    ("private", _("Private school"), _("q10.private.hint")),
+    ("home", _("Home schooled/educated"), None),
 ]
+
+SCHOOL_TYPE_CHOICES = [(value, label) for value, label, hint in SCHOOL_TYPE_CHOICES_WITH_HINTS]
 
 HOME_ED_CHOICES = [
     ("no", _("No, it was for other reasons")),

@@ -5,5 +5,12 @@
         {% if autosave is None or autosave %}
             hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none"
         {% endif %}>
-    <label class="nhsuk-label nhsuk-radios__label" for="{{id}}">{% trans label %}</label>
+    <label class="nhsuk-label nhsuk-radios__label" for="{{id}}">
+        {% trans label %}
+    </label>
+    {% if hint %}
+        <div id="{{id}}-item-hint" class="nhsuk-hint nhsuk-radios__hint">
+          {{hint}}
+        </div>
+    {% endif %}
 </div>

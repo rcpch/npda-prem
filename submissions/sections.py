@@ -72,7 +72,7 @@ def build_sections():
                     "parent": _("q10.parent.title"),
                 },
                 "type": "radio",
-                "options": SCHOOL_TYPE_CHOICES,
+                "options": SCHOOL_TYPE_CHOICES_WITH_HINTS,
                 "next_question": {
                     "home": "q11_home_education_reason",
                     "_": "q12_free_school_meals",

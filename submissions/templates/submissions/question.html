@@ -19,7 +19,7 @@
             </legend>
             <div class="nhsuk-radios" data-module="nhsuk-radios">
                 {% for option in question.options %}
-                    {% include "submissions/partials/radio-input.html" with id=question.id|add:"-"|add:option.0 name=question.id value=option.0 label=option.1 field_value=field_value %}
+                    {% include "submissions/partials/radio-input.html" with id=question.id|add:"-"|add:option.0 name=question.id value=option.0 label=option.1 field_value=field_value hint=option.2 %}
                 {% endfor %}
             </div>
         </fieldset>
