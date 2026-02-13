@@ -264,7 +264,10 @@ def question(request, lang, role, section, question):
         
         save_response(request, submission)
 
-        request.session["previous_question_id"] = question_data["id"]
+        previous_question_ids = request.session.get("previous_question_ids", [])
+        previous_question_ids.append(question_data["id"])
+        request.session["previous_question_ids"] = previous_question_ids
+
         next_question_id = None
 
         if "next_question" in question_data:
@@ -292,15 +295,27 @@ def question(request, lang, role, section, question):
         })
 
         return redirect(next_url)
+    
+    # Prune history (TODO MRB: needs to understand section too?)
+    previous_question_ids_before = request.session.get("previous_question_ids", [])
+    previous_question_ids_after = []
 
-    if not request.session.get("previous_question_id"):
+    for previous_question_id in previous_question_ids_before:
+        if previous_question_id == question_data["id"]:
+            break
+        
+        previous_question_ids_after.append(previous_question_id)
+    
+    request.session["previous_question_ids"] = previous_question_ids_after
+
+    if not request.session.get("previous_question_ids"):
         prev_url = reverse("role_form", kwargs={"lang": lang}) # default to role form if no previous question
     else:
         prev_url = reverse("question", kwargs={
             "lang": lang,
             "role": role,
             "section": section_data["slug"],
-            "question": request.session["previous_question_id"],
+            "question": request.session["previous_question_ids"][-1],
         })
 
     # TODO: next prev (and how to measure progress across sections?)
