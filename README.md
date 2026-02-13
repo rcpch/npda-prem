@@ -34,7 +34,6 @@ My list
 - Consider isolating conditional questions onto separate pages (triggered by first answer)
   - This is gov.uk style
 - Front and back matter from document
-- Refactor to use template partials #savethetokens
 - Oauth login to Django admin against whitelist of RCPCH user names
 - namespaced dot string approach to translations
   - bring across from translations spreadsheet to ensure accuracy
