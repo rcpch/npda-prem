@@ -2,6 +2,19 @@ from django.db import models
 from django.utils.translation import gettext_lazy as _
 
 
+GENDER_CHOICES = [
+    ("boy", _("q4.boy")),
+    ("girl", _("q4.girl")),
+    ("other", _("q4.other")),
+    ("prefer-not-to-say", _("q4.prefer-not-to-say")),
+]
+
+DIABETES_TYPE_CHOICES = [
+    ("type1", _("Type 1")),
+    ("type2", _("Type 2")),
+    ("other", _("Other")),
+]
+
 class Submission(models.Model):
     # -- Metadata ----------------------------------------------------------
     ROLE_CHOICES = [
@@ -21,12 +34,6 @@ class Submission(models.Model):
     # -- Q3: Are you… (maps to role field above) ---------------------------
 
     # -- Q4: Gender (CYP only) --------------------------------------------
-    GENDER_CHOICES = [
-        ("boy", _("Boy")),
-        ("girl", _("Girl")),
-        ("other", _("A gender not listed here")),
-        ("prefer-not-to-say", _("Prefer not to say")),
-    ]
     q4_gender = models.CharField(
         max_length=20, choices=GENDER_CHOICES, blank=True, default="",
     )
@@ -44,11 +51,6 @@ class Submission(models.Model):
     )
 
     # -- Q6: Diabetes type -------------------------------------------------
-    DIABETES_TYPE_CHOICES = [
-        ("type1", _("Type 1")),
-        ("type2", _("Type 2")),
-        ("other", _("Other")),
-    ]
     q6_diabetes_type = models.CharField(
         max_length=10, choices=DIABETES_TYPE_CHOICES, blank=True, default="",
     )

@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -15,29 +16,27 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && "
-"(n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && "
-"n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: npda_prem/settings.py:133
 msgid "English"
-msgstr "English"
+msgstr ""
 
 #: npda_prem/settings.py:134
 msgid "Cymraeg"
-msgstr "Cymraeg"
+msgstr ""
 
 #: npda_prem/settings.py:135
 msgid "Urdu"
-msgstr "Urdu"
+msgstr ""
 
 #: npda_prem/settings.py:136
 msgid "Polish"
-msgstr "Polish"
+msgstr ""
 
 #: npda_prem/settings.py:137
 msgid "Ukrainian"
-msgstr "Ukrainian"
+msgstr ""
 
 #: npda_prem/settings.py:138
 msgid "Punjabi"
@@ -45,253 +44,249 @@ msgstr ""
 
 #: submissions/models.py:6
 msgid "q4.boy"
-msgstr ""
+msgstr "Boy"
 
 #: submissions/models.py:7
 msgid "q4.girl"
-msgstr ""
+msgstr "Girl"
 
 #: submissions/models.py:8
-#, fuzzy
-#| msgid "Mother"
 msgid "q4.other"
-msgstr "Matka"
+msgstr "A gender not listed here"
 
 #: submissions/models.py:9
-#, fuzzy
-#| msgid "Prefer not to say"
 msgid "q4.prefer-not-to-say"
-msgstr "Wolę nie odpowiadać"
+msgstr "Prefer not to say"
 
 #: submissions/models.py:13
 msgid "Type 1"
-msgstr "Typu 1"
+msgstr ""
 
 #: submissions/models.py:14
 msgid "Type 2"
-msgstr "Typu 2"
+msgstr ""
 
 #: submissions/models.py:15 submissions/models.py:76 submissions/models.py:92
 msgid "Other"
-msgstr "Inne"
+msgstr ""
 
 #: submissions/models.py:21 submissions/templates/submissions/role_form.html:20
 msgid "A child or young person with diabetes"
-msgstr "Dzieckiem lub młodą osobą z cukrzycą"
+msgstr ""
 
 #: submissions/models.py:22 submissions/templates/submissions/role_form.html:26
 msgid "The parent/carer of a child or young person with diabetes"
-msgstr "Rodzicem/opiekunem dziecka lub młodej osoby z cukrzycą"
+msgstr ""
 
 #: submissions/models.py:43
 msgid "Mother"
-msgstr "Matka"
+msgstr ""
 
 #: submissions/models.py:44
 msgid "Father"
-msgstr "Ojciec"
+msgstr ""
 
 #: submissions/models.py:45
 msgid "Grandmother"
-msgstr "Babcia"
+msgstr ""
 
 #: submissions/models.py:46
 msgid "Grandfather"
-msgstr "Dziadek"
+msgstr ""
 
 #: submissions/models.py:47
 msgid "Other guardian or family member"
-msgstr "Inny opiekun lub członek rodziny"
+msgstr ""
 
 #: submissions/models.py:60
 msgid "3 years or younger"
-msgstr "3 lata lub mniej"
+msgstr ""
 
 #: submissions/models.py:61
 msgid "4 – 7 years"
-msgstr "4-7 lat"
+msgstr ""
 
 #: submissions/models.py:62
 msgid "8 – 11 years"
-msgstr "8-11 lat"
+msgstr ""
 
 #: submissions/models.py:63
 msgid "12 – 16 years"
-msgstr "12-16 lat"
+msgstr ""
 
 #: submissions/models.py:64
 msgid "17 – 19 years"
-msgstr "17-19 lat"
+msgstr ""
 
 #: submissions/models.py:72
 msgid "White"
-msgstr "Białe"
+msgstr ""
 
 #: submissions/models.py:73
 msgid "Black"
-msgstr "Czarne"
+msgstr ""
 
 #: submissions/models.py:74
 msgid "Asian"
-msgstr "Azjatyckie"
+msgstr ""
 
 #: submissions/models.py:75
 msgid "Mixed"
-msgstr "Mieszane"
+msgstr ""
 
 #: submissions/models.py:77 submissions/models.py:116 submissions/models.py:127
 msgid "Prefer not to say"
-msgstr "Wolę nie odpowiadać"
+msgstr ""
 
 #: submissions/models.py:85
 msgid "Nursery"
-msgstr "Żłobek"
+msgstr ""
 
 #: submissions/models.py:86
 msgid "Reception"
-msgstr "Klasa przygotowawcza"
+msgstr ""
 
 #: submissions/models.py:87
 msgid "Key stage 1 (Years 1 & 2)"
-msgstr "Kluczowy etap 1 (klasa 1 i 2)"
+msgstr ""
 
 #: submissions/models.py:88
 msgid "Key stage 2 (Years 3 to 6)"
-msgstr "Kluczowy etap 2 (klasy 3 do 6)"
+msgstr ""
 
 #: submissions/models.py:89
 msgid "Key stage 3 (Years 7 to 9)"
-msgstr "Kluczowy etap 3 (klasy 7 do 9)"
+msgstr ""
 
 #: submissions/models.py:90
 msgid "Key stage 4 (Years 10 & 11)"
-msgstr "Kluczowy etap 4 (klasa 10 i 11)"
+msgstr ""
 
 #: submissions/models.py:91
 msgid "Key stage 5 (Years 12 & 13)"
-msgstr "Kluczowy etap 5 (klasa 12 i 13)"
+msgstr ""
 
 #: submissions/models.py:103
 msgid "State funded school"
-msgstr "Szkoła finansowana przez państwo"
+msgstr ""
 
 #: submissions/models.py:104
 msgid "Private school"
-msgstr "Szkoła prywatna"
+msgstr ""
 
 #: submissions/models.py:105
 msgid "Home schooled/educated"
-msgstr "Nauczanie domowe"
+msgstr ""
 
 #: submissions/models.py:113
 msgid "No, it was for other reasons"
-msgstr "Nie, powody były inne"
+msgstr ""
 
 #: submissions/models.py:114
 msgid "Partly, the diabetes diagnosis influenced my decision"
-msgstr "Częściowo; diagnoza cukrzycy wpłynęła na moją decyzję"
+msgstr ""
 
 #: submissions/models.py:115
 msgid "Yes, it was mainly because of the diabetes diagnosis"
-msgstr "Tak, decyzja została podjęta głównie z uwagi na diagnozę cukrzycy"
+msgstr ""
 
 #: submissions/models.py:124 submissions/models.py:135
 #: submissions/models.py:145 submissions/models.py:161
 #: submissions/models.py:275
 msgid "Yes"
-msgstr "Tak"
+msgstr ""
 
 #: submissions/models.py:125 submissions/models.py:136
 #: submissions/models.py:147 submissions/models.py:162
 #: submissions/models.py:276
 msgid "No"
-msgstr "Nie"
+msgstr ""
 
 #: submissions/models.py:126 submissions/models.py:137
 #: submissions/models.py:148 submissions/models.py:179
 #: submissions/models.py:190 submissions/models.py:262
 msgid "I don't know"
-msgstr "Nie wiem"
+msgstr ""
 
 #: submissions/models.py:146
 msgid "Partially covers diabetes needs at school"
-msgstr "Częściowo obejmuje potrzeby związane z cukrzycą w szkole"
+msgstr ""
 
 #: submissions/models.py:176 submissions/models.py:187
 #: submissions/models.py:199
 msgid "Yes, always"
-msgstr "Tak, zawsze"
+msgstr ""
 
 #: submissions/models.py:177 submissions/models.py:188
 #: submissions/models.py:200
 msgid "Yes, sometimes"
-msgstr "Tak, czasami"
+msgstr ""
 
 #: submissions/models.py:178 submissions/models.py:189
 #: submissions/models.py:201
 msgid "No, never"
-msgstr "Nie, nigdy"
+msgstr ""
 
 #: submissions/models.py:191 submissions/models.py:202
 #: submissions/models.py:277 submissions/models.py:312
 msgid "Not applicable"
-msgstr "Nie dotyczy"
+msgstr ""
 
 #: submissions/models.py:257 submissions/models.py:295
 msgid "Never"
-msgstr "Nigdy"
+msgstr ""
 
 #: submissions/models.py:258
 msgid "Rarely"
-msgstr "Rzadko"
+msgstr ""
 
 #: submissions/models.py:259
 msgid "Sometimes"
-msgstr "Czasami"
+msgstr ""
 
 #: submissions/models.py:260
 msgid "Often"
-msgstr "Często"
+msgstr ""
 
 #: submissions/models.py:261
 msgid "Always"
-msgstr "Zawsze"
+msgstr ""
 
 #: submissions/models.py:296
 msgid "Less than once a week"
-msgstr "Rzadziej niż raz w tygodniu"
+msgstr ""
 
 #: submissions/models.py:297
 msgid "Once or twice a week"
-msgstr "Raz lub dwa razy w tygodniu"
+msgstr ""
 
 #: submissions/models.py:298
 msgid "Three or four times a week"
-msgstr "Trzy lub cztery razy w tygodniu"
+msgstr ""
 
 #: submissions/models.py:299
 msgid "Every day of the week"
-msgstr "Każdego dnia tygodnia"
+msgstr ""
 
 #: submissions/models.py:307 submissions/models.py:320
 msgid "Very well supported"
-msgstr "Bardzo duże wsparcie"
+msgstr ""
 
 #: submissions/models.py:308 submissions/models.py:321
 msgid "Well supported"
-msgstr "Duże wsparcie"
+msgstr ""
 
 #: submissions/models.py:309 submissions/models.py:322
 msgid "Neutral"
-msgstr "Neutralne"
+msgstr ""
 
 #: submissions/models.py:310 submissions/models.py:323
 msgid "Poorly supported"
-msgstr "Słabe wsparcie"
+msgstr ""
 
 #: submissions/models.py:311 submissions/models.py:324
 msgid "Very poorly supported"
-msgstr "Bardzo słabe wsparcie"
+msgstr ""
 
 #: submissions/templates/submissions/_child_demographics.html:11
 #: submissions/templates/submissions/_parent_demographics.html:10
@@ -302,42 +297,36 @@ msgid ""
 "school. All questions in this section are mandatory, but you may select "
 "'Prefer not to say' for some."
 msgstr ""
-"Chcielibyśmy dowiedzieć się o Tobie nieco więcej, abyśmy mogli dostosować "
-"nasze pytania. Wykorzystamy te informacje również po to, aby zrozumieć, czy "
-"dzieci i młodzież z cukrzycą z różnych środowisk mają różne doświadczenia w "
-"szkole. Wszystkie pytania w tej sekcji są obowiązkowe, ale w przypadku "
-"niektórych z nich można wybrać opcję „Wolę nie odpowiadać”."
 
 #: submissions/templates/submissions/_child_demographics.html:17
 msgid "4. Are you a…"
-msgstr "4. Identyfikuję się jako…"
+msgstr ""
 
 #: submissions/templates/submissions/_child_demographics.html:32
 msgid "6. What type of diabetes do you have?"
-msgstr "6. Jakiego typu jest Twoja cukrzyca?"
+msgstr ""
 
 #: submissions/templates/submissions/_child_demographics.html:46
 msgid "7. At what age were you diagnosed with diabetes?"
-msgstr "7. W jakim wieku zdiagnozowano u Ciebie cukrzycę?"
+msgstr ""
 
 #: submissions/templates/submissions/_child_demographics.html:62
 msgid "8. Which of the following best describes your ethnicity?"
 msgstr ""
-"8. Które z poniższych określeń najlepiej opisuje Twoje pochodzenie etniczne?"
 
 #: submissions/templates/submissions/_child_demographics.html:79
 msgid "9. What stage of education are you in?"
-msgstr "9. Na jakim etapie edukacji jesteś?"
+msgstr ""
 
 #: submissions/templates/submissions/_child_demographics.html:93
 #: submissions/templates/submissions/_parent_demographics.html:93
 #: submissions/templates/submissions/_shared_education_impact.html:132
 msgid "Please specify"
-msgstr "Proszę sprecyzować"
+msgstr ""
 
 #: submissions/templates/submissions/_child_demographics.html:104
 msgid "10. Which type of school or education do you attend?"
-msgstr "10. Do jakiego rodzaju szkoły lub instytucji edukacyjnej uczęszczasz?"
+msgstr ""
 
 #: submissions/templates/submissions/_child_demographics.html:109
 #: submissions/templates/submissions/_parent_demographics.html:108
@@ -345,8 +334,6 @@ msgid ""
 "These are schools where you do not have to pay to attend. This includes "
 "academies, colleges, and grammar schools."
 msgstr ""
-"Są to szkoły, za które nie trzeba płacić. Są to m.in. akademie, koledże i "
-"selektywne szkoły średnie."
 
 #: submissions/templates/submissions/_child_demographics.html:113
 #: submissions/templates/submissions/_parent_demographics.html:110
@@ -354,24 +341,20 @@ msgid ""
 "These are schools that charge fees to attend. Please select this even if you "
 "have received a scholarship or bursary."
 msgstr ""
-"Są to szkoły, które pobierają czesne. Proszę zaznaczyć tę opcję, jeśli masz "
-"stypendium naukowe lub socjalne."
 
 #: submissions/templates/submissions/_child_demographics.html:124
 msgid ""
 "11. Was the decision to home educate related to your diabetes diagnosis?"
 msgstr ""
-"11. Czy decyzja o wyborze nauczania domowego była związana z Twoją diagnozą "
-"cukrzycy?"
 
 #: submissions/templates/submissions/_child_demographics.html:139
 msgid "12. Are you eligible for free school meals?"
-msgstr "12. Czy masz prawo do korzystania z bezpłatnych posiłków w szkole?"
+msgstr ""
 
 #: submissions/templates/submissions/_child_managing_diabetes.html:10
 #: submissions/templates/submissions/_parent_managing_diabetes.html:7
 msgid "Managing Diabetes"
-msgstr "Kontrolowanie cukrzycy"
+msgstr ""
 
 #: submissions/templates/submissions/_child_managing_diabetes.html:11
 msgid ""
@@ -379,21 +362,16 @@ msgid ""
 "information to see if children and young people using different diabetes "
 "technologies have different experiences at school."
 msgstr ""
-"W tej części pytamy o leczenie cukrzycy. Wykorzystamy te informacje, aby "
-"sprawdzić czy dzieci i młodzież korzystający z różnych technologii "
-"diabetologicznych mają różne doświadczenia w szkole."
 
 #: submissions/templates/submissions/_child_managing_diabetes.html:17
 msgid ""
 "16. Do you need to administer insulin or monitor blood glucose to manage "
 "your diabetes when in school?"
 msgstr ""
-"16. Czy potrzebujesz podawać sobie insulinę lub monitorować poziom glukozy "
-"we krwi, aby kontrolować swoją cukrzycę, kiedy jesteś w szkole?"
 
 #: submissions/templates/submissions/_child_managing_diabetes.html:30
 msgid "17. How do you administer insulin in school?"
-msgstr "17. W jaki sposób podajesz sobie insulinę w szkole?"
+msgstr ""
 
 #: submissions/templates/submissions/_child_managing_diabetes.html:32
 #: submissions/templates/submissions/_child_managing_diabetes.html:50
@@ -401,11 +379,11 @@ msgstr "17. W jaki sposób podajesz sobie insulinę w szkole?"
 #: submissions/templates/submissions/_parent_managing_diabetes.html:47
 #: submissions/templates/submissions/_shared_education_impact.html:117
 msgid "Select all that apply"
-msgstr "Zaznacz wszystkie pasujące odpowiedzi"
+msgstr ""
 
 #: submissions/templates/submissions/_child_managing_diabetes.html:48
 msgid "18. How do you monitor blood glucose levels in school?"
-msgstr "18. W jaki sposób monitorujesz poziom glukozy we krwi w szkole?"
+msgstr ""
 
 #: submissions/templates/submissions/_form_nav.html:15
 #, python-format
@@ -414,70 +392,57 @@ msgstr ""
 
 #: submissions/templates/submissions/_parent_demographics.html:9
 msgid "Demographics"
-msgstr "Dane demograficzne"
+msgstr ""
 
 #: submissions/templates/submissions/_parent_demographics.html:16
 msgid "5. Relationship to your child with diabetes"
-msgstr "5. Relacja do Państwa dziecka z cukrzycą"
+msgstr ""
 
 #: submissions/templates/submissions/_parent_demographics.html:32
 msgid "6. What type of diabetes does your child have?"
-msgstr "6. Jakiego typu cukrzycę ma Państwa dziecko?"
+msgstr ""
 
 #: submissions/templates/submissions/_parent_demographics.html:46
 msgid "7. At what age was your child diagnosed with diabetes?"
-msgstr "7. W jakim wieku zdiagnozowano u Państwa dziecka cukrzycę?"
+msgstr ""
 
 #: submissions/templates/submissions/_parent_demographics.html:62
 msgid "8. Which of the following best describes your child's ethnicity?"
 msgstr ""
-"8. Które z poniższych określeń najlepiej opisuje pochodzenie etniczne "
-"Państwa dziecka?"
 
 #: submissions/templates/submissions/_parent_demographics.html:79
 msgid "9. What stage of education is your child in?"
-msgstr "9. Na jakim etapie edukacji znajduje się Państwa dziecko?"
+msgstr ""
 
 #: submissions/templates/submissions/_parent_demographics.html:104
 msgid "10. Which type of school or education does your child attend?"
 msgstr ""
-"10. Do jakiego rodzaju szkoły lub instytucji edukacyjnej uczęszcza Państwa "
-"dziecko?"
 
 #: submissions/templates/submissions/_parent_demographics.html:120
 msgid ""
 "11. Was your decision to home educate related to your child's diabetes "
 "diagnosis?"
 msgstr ""
-"11. Czy Państwa decyzja o wyborze nauczania domowego była związana z "
-"diagnozą cukrzycy u Państwa dziecka?"
 
 #: submissions/templates/submissions/_parent_demographics.html:135
 msgid "12. Is your child eligible for free school meals?"
 msgstr ""
-"12. Czy Państwa dziecko ma prawo do korzystania z bezpłatnych posiłków w "
-"szkole?"
 
 #: submissions/templates/submissions/_parent_healthcare_plans.html:8
 msgid "School Health Care Plans"
-msgstr "Szkolne plany opieki zdrowotnej"
+msgstr ""
 
 #: submissions/templates/submissions/_parent_healthcare_plans.html:9
 msgid ""
 "We would like to know if you and your child have received formal support in "
 "managing their diabetes alongside their education."
 msgstr ""
-"Chcielibyśmy wiedzieć, czy Państwo i Państwa dziecko korzystacie z "
-"formalnego wsparcia w zakresie kontrolowania jego cukrzycy w kontekście "
-"edukacyjnym."
 
 #: submissions/templates/submissions/_parent_healthcare_plans.html:15
 msgid ""
 "13. Does your child have a school healthcare plan specifically for their "
 "diabetes?"
 msgstr ""
-"13. Czy Państwa dziecko jest objęte szkolnym planem opieki zdrowotnej "
-"dotyczącym konkretnie jego cukrzycy?"
 
 #: submissions/templates/submissions/_parent_healthcare_plans.html:17
 msgid ""
@@ -485,26 +450,18 @@ msgid ""
 "informal or a formal plan, such as Individual Healthcare Plans (IHP), "
 "Records of Needs, or Education, Health and Care Plans (EHCP)."
 msgstr ""
-"Jest to plan sporządzony przy udziale Państwa zespołu ds. cukrzycy i szkoły. "
-"Może to być plan nieformalny lub formalny, np. Indywidualne Plany Opieki "
-"Zdrowotnej (IHP), Dokumentacje Potrzeb lub Plany w zakresie Edukacji, "
-"Zdrowia i Opieki (EHCP)."
 
 #: submissions/templates/submissions/_parent_healthcare_plans.html:30
 msgid ""
 "14. Does the school healthcare plan that's in place cover all your child's "
 "diabetes needs at school?"
 msgstr ""
-"14. Czy obowiązujący szkolny plan opieki zdrowotnej obejmuje wszystkie "
-"potrzeby Państwa dziecka związane z cukrzycą w szkole?"
 
 #: submissions/templates/submissions/_parent_healthcare_plans.html:45
 msgid ""
 "15. Does your child's school have a direct contact within your child's "
 "diabetes team if they need advice or support?"
 msgstr ""
-"15. Czy szkoła Państwa dziecka ma bezpośredni kontakt z zespołem ds. "
-"cukrzycy Państwa dziecka, jeśli potrzebuje porady lub wsparcia?"
 
 #: submissions/templates/submissions/_parent_managing_diabetes.html:8
 msgid ""
@@ -512,73 +469,55 @@ msgid ""
 "information to see if children and young people using different diabetes "
 "technologies have different experiences at school."
 msgstr ""
-"W tej części pytamy o leczenie cukrzycy Państwa dziecka. Wykorzystamy te "
-"informacje, aby sprawdzić czy dzieci i młodzież korzystający z różnych "
-"technologii diabetologicznych mają różne doświadczenia w szkole."
 
 #: submissions/templates/submissions/_parent_managing_diabetes.html:14
 msgid ""
 "16. Does your child need to administer insulin or monitor blood glucose to "
 "manage their diabetes when in school?"
 msgstr ""
-"16. Czy Państwa dziecko potrzebuje podawać sobie insulinę lub monitorować "
-"poziom glukozy we krwi, aby kontrolować swoją cukrzycę, kiedy jest w szkole?"
 
 #: submissions/templates/submissions/_parent_managing_diabetes.html:27
 msgid "17. How does your child administer insulin in school?"
-msgstr "17. W jaki sposób dziecko podaje sobie insulinę w szkole?"
+msgstr ""
 
 #: submissions/templates/submissions/_parent_managing_diabetes.html:45
 msgid "18. How does your child monitor blood glucose levels in school?"
 msgstr ""
-"18. W jaki sposób Państwa dziecko monitoruje poziom glukozy we krwi w szkole?"
 
 #: submissions/templates/submissions/_parent_managing_diabetes.html:63
 msgid "19. Can you follow/monitor your child's blood glucose remotely?"
 msgstr ""
-"19. Czy mogą Państwo zdalnie śledzić/monitorować poziom glukozy we krwi "
-"Państwa dziecka?"
 
 #: submissions/templates/submissions/_parent_managing_diabetes.html:78
 msgid ""
 "20. Are you able to contact your child's school during the day if you are "
 "concerned about their diabetes?"
 msgstr ""
-"20. Czy mają Państwo możliwość kontaktowania się ze szkołą Państwa dziecka w "
-"ciągu dnia, jeśli mają Państwo obawy dotyczące jego cukrzycy?"
 
 #: submissions/templates/submissions/_shared_education_impact.html:8
 msgid "Impact on Education"
-msgstr "Wpływ na edukację"
+msgstr ""
 
 #: submissions/templates/submissions/_shared_education_impact.html:11
 msgid ""
 "This section asks about how your child's diabetes impacts their education."
 msgstr ""
-"W tej sekcji pytamy o to, jak cukrzyca Państwa dziecka wpływa na jego "
-"edukację."
 
 #: submissions/templates/submissions/_shared_education_impact.html:13
 msgid "This section asks about how your diabetes impacts your education."
-msgstr "W tej sekcji pytamy o to, jak Twoja cukrzyca wpływa na Twoją edukację."
+msgstr ""
 
 #: submissions/templates/submissions/_shared_education_impact.html:22
 msgid ""
 "26. In the past year, how many times has your child missed one or more "
 "lessons in any given day to attend diabetes-related hospital appointments?"
 msgstr ""
-"26. Ile razy w ubiegłym roku Państwa dziecko opuściło jedną lub więcej "
-"lekcji w jakimkolwiek dniu, aby udać się na wizytę do szpitala w związku ze "
-"swoją cukrzycą?"
 
 #: submissions/templates/submissions/_shared_education_impact.html:24
 msgid ""
 "26. In the past year, how many times have you missed one or more lessons in "
 "any given day to attend diabetes-related hospital appointments?"
 msgstr ""
-"26. Ile razy w ubiegłym roku opuściłeś(-aś) jedną lub więcej lekcji w "
-"jakimkolwiek dniu, aby udać się na wizytę do szpitala w związku ze swoją "
-"cukrzycą?"
 
 #: submissions/templates/submissions/_shared_education_impact.html:27
 msgid ""
@@ -586,250 +525,186 @@ msgid ""
 "appointments with a PDSN, dietitian, psychologist etc. (not inpatient "
 "hospital stays)"
 msgstr ""
-"Może to obejmować rutynowe wizyty w klinice diabetologicznej lub inne wizyty "
-"u specjalistycznej pielęgniarki ds. cukrzycy dziecięcej (PDSN), dietetyka, "
-"psychologa itp. (nie pobyty w szpitalu)"
 
 #: submissions/templates/submissions/_shared_education_impact.html:39
 msgid ""
 "27. Are your child's absences for diabetes-related appointments authorised "
 "by their school?"
 msgstr ""
-"27. Czy nieobecności Państwa dziecka w szkole, spowodowane wizytami "
-"związanymi z cukrzycą zostały usprawiedliwione przez szkołę?"
 
 #: submissions/templates/submissions/_shared_education_impact.html:41
 msgid ""
 "27. Are your absences for diabetes-related appointments authorised by your "
 "school?"
 msgstr ""
-"27. Czy Twoje nieobecności w szkole, spowodowane wizytami związanymi z "
-"cukrzycą zostały usprawiedliwione przez szkołę?"
 
 #: submissions/templates/submissions/_shared_education_impact.html:44
 msgid ""
 "School absences due to health appointments should not be classed as "
 "unauthorised."
 msgstr ""
-"Nieobecności w szkole spowodowane wizytami u lekarza nie powinny być "
-"klasyfikowane jako nieusprawiedliwione."
 
 #: submissions/templates/submissions/_shared_education_impact.html:59
 msgid ""
 "28. Has your child's school attendance records been negatively impacted by "
 "attending diabetes clinic appointments?"
 msgstr ""
-"28. Czy wizyty w klinice diabetologicznej negatywnie wpłynęły na odnowaną "
-"frekwencję Państwa dziecka w szkole?"
 
 #: submissions/templates/submissions/_shared_education_impact.html:61
 msgid ""
 "28. Has your school attendance records been negatively impacted by attending "
 "diabetes clinic appointments?"
 msgstr ""
-"28. Czy wizyty w klinice diabetologicznej negatywnie wpłynęły na Twoją "
-"odnowaną frekwencję w szkole?"
 
 #: submissions/templates/submissions/_shared_education_impact.html:64
 msgid ""
 "School absences due to attending health appointments should not reduce the "
 "percentage attendance."
 msgstr ""
-"Nieobecności w szkole spowodowane wizytami u lekarza nie powinny obniżać "
-"procentowej frekwencji."
 
 #: submissions/templates/submissions/_shared_education_impact.html:78
 msgid ""
 "29. In the past year, how many days has your child had off school/home "
 "education because of illness related to their diabetes?"
 msgstr ""
-"29. Ile dni szkoły/nauczania domowego opuściło w ubiegłym roku Państwa "
-"dziecko z powodu choroby związanej z cukrzycą?"
 
 #: submissions/templates/submissions/_shared_education_impact.html:80
 msgid ""
 "29. In the past year, how many days have you had off school/home education "
 "because of illness related to your diabetes?"
 msgstr ""
-"29. Ile dni szkoły/nauczania domowego opuściłeś(-aś) w ubiegłym roku z "
-"powodu choroby związanej z Twoją cukrzycą?"
 
 #: submissions/templates/submissions/_shared_education_impact.html:83
 msgid ""
 "This could include staying off school at home or include a hospital admission"
 msgstr ""
-"Może to obejmować pozostawanie w domu zamiast pójścia do szkoły lub pobyty w "
-"szpitalu"
 
 #: submissions/templates/submissions/_shared_education_impact.html:95
 msgid ""
 "30. Has your child ever had to move schools due to difficulties in managing "
 "their diabetes?"
 msgstr ""
-"30. Czy Państwa dziecko kiedykolwiek musiało zmienić szkołę z powodu "
-"trudności z kontrolowaniem swojej cukrzycy?"
 
 #: submissions/templates/submissions/_shared_education_impact.html:97
 msgid ""
 "30. Have you ever had to move schools due to difficulties in managing your "
 "diabetes?"
 msgstr ""
-"30. Czy kiedykolwiek musiałeś(-aś) zmienić szkołę z powodu trudności z "
-"kontrolowaniem swojej cukrzycy?"
 
 #: submissions/templates/submissions/_shared_education_impact.html:112
 msgid ""
 "31. Has your child ever been excluded from any of the below activities "
 "because of their diabetes?"
 msgstr ""
-"31. Czy Państwa dziecko było kiedykolwiek wykluczone z którejkolwiek z "
-"poniższych aktywności ze względu na swoją cukrzycę?"
 
 #: submissions/templates/submissions/_shared_education_impact.html:114
 msgid ""
 "31. Have you ever been excluded from any of the below activities because of "
 "your diabetes?"
 msgstr ""
-"31. Czy kiedykolwiek byłeś(-aś) wykluczony(-a) z którejkolwiek z poniższych "
-"aktywności ze względu na swoją cukrzycę?"
 
 #: submissions/templates/submissions/_shared_education_impact.html:144
 msgid ""
 "32. Do you feel that your child's diabetes affects their performance in "
 "school/home education?"
 msgstr ""
-"32. Czy mają Państwo poczucie, że cukrzyca Państwa dziecka wpływa na jego "
-"wyniki w szkole/nauczaniu domowym?"
 
 #: submissions/templates/submissions/_shared_education_impact.html:146
 msgid ""
 "32. Do you feel that your diabetes affects your performance in school/home "
 "education?"
 msgstr ""
-"32. Czy masz poczucie, że Twoja cukrzyca wpływa na Twoje wyniki w szkole/"
-"nauczaniu domowym?"
 
 #: submissions/templates/submissions/_shared_education_impact.html:165
 msgid ""
 "33. Do your child's teachers have a good understanding of how diabetes can "
 "affect learning?"
 msgstr ""
-"33. Czy nauczyciele Państwa dziecka dobrze rozumieją, jak cukrzyca może "
-"wpływać na naukę?"
 
 #: submissions/templates/submissions/_shared_education_impact.html:167
 msgid ""
 "33. Do your teachers have a good understanding of how diabetes can affect "
 "learning?"
 msgstr ""
-"33. Czy Twoi nauczyciele dobrze rozumieją, jak cukrzyca może wpływać na "
-"naukę?"
 
 #: submissions/templates/submissions/_shared_education_impact.html:170
 msgid ""
 "E.g. When blood glucose is too high or low, it may affect concentration or "
 "memory."
 msgstr ""
-"Np. Kiedy poziom glukozy we krwi jest zbyt wysoki lub niski, może to wpływać "
-"na koncentrację lub pamięć."
 
 #: submissions/templates/submissions/_shared_education_impact.html:186
 msgid ""
 "34. Has your child ever been offered any reasonable adjustments because of "
 "their diabetes?"
 msgstr ""
-"34. Czy Państwa dziecku kiedykolwiek zaproponowano rozsądne udogodnienia ze "
-"względu na jego cukrzycę?"
 
 #: submissions/templates/submissions/_shared_education_impact.html:188
 msgid ""
 "34. Have you ever been offered any reasonable adjustments because of your "
 "diabetes?"
 msgstr ""
-"34. Czy kiedykolwiek zaproponowano Ci rozsądne udogodnienia ze względu na "
-"Twoją cukrzycę?"
 
 #: submissions/templates/submissions/_shared_education_impact.html:191
 msgid ""
 "(e.g. additional time in exams, snacks or drinks during class, fast passes "
 "for lunch queues)"
 msgstr ""
-"(np. dodatkowy czas na egzaminach, przekąski lub napoje w trakcie zajęć, "
-"pierwszeństwo w kolejce po lunch)"
 
 #: submissions/templates/submissions/_shared_managing_diabetes_q21_q25.html:13
 msgid ""
 "21. If your child uses a smartphone or smartwatch to manage their diabetes, "
 "are they able to use it during lesson time at school?"
 msgstr ""
-"21. Jeśli Państwa dziecko używa smartfona lub smartwatcha do kontrolowania "
-"swojej cukrzycy, czy może używać go w trakcie lekcji w szkole?"
 
 #: submissions/templates/submissions/_shared_managing_diabetes_q21_q25.html:15
 msgid ""
 "21. If you use a smartphone or smartwatch to manage your diabetes, are you "
 "able to use it during lesson time at school?"
 msgstr ""
-"21. Jeśli używasz smartfona lub smartwatcha do kontrolowania swojej "
-"cukrzycy, czy możesz używać go w trakcie lekcji w szkole?"
 
 #: submissions/templates/submissions/_shared_managing_diabetes_q21_q25.html:32
 msgid ""
 "22. Is your child offered a private room at school for diabetes care, even "
 "if they don't use it?"
 msgstr ""
-"22. Czy Państwa dziecko ma możliwość korzystania z prywatnego pomieszczenia "
-"w szkole do kontrolowania cukrzycy, nawet jeśli go nie używa?"
 
 #: submissions/templates/submissions/_shared_managing_diabetes_q21_q25.html:34
 msgid ""
 "22. Are you offered a private room at school for diabetes care, even if you "
 "don't use it?"
 msgstr ""
-"22. Czy masz możliwość korzystania z prywatnego pomieszczenia w szkole do "
-"kontrolowania cukrzycy, nawet jeśli go nie używasz?"
 
 #: submissions/templates/submissions/_shared_managing_diabetes_q21_q25.html:37
 msgid ""
 "E.g. For administering insulin, checking blood glucose, changing pump set, "
 "or anything else related to diabetes care"
 msgstr ""
-"Np. do podawania insuliny, sprawdzania poziomu glukozy we krwi, wymiany "
-"pompy lub czegokolwiek innego związanego z kontrolowaniem cukrzycy"
 
 #: submissions/templates/submissions/_shared_managing_diabetes_q21_q25.html:53
 msgid ""
 "23. Is your child allowed to manage diabetes in the classroom if required?"
 msgstr ""
-"23. Czy Państwa dziecko ma możliwość kontrolowania cukrzycy w klasie, jeśli "
-"jest to niezbędne?"
 
 #: submissions/templates/submissions/_shared_managing_diabetes_q21_q25.html:55
 msgid "23. Are you allowed to manage diabetes in the classroom if required?"
 msgstr ""
-"23. Czy masz możliwość kontrolowania cukrzycy w klasie, jeśli jest to "
-"niezbędne?"
 
 #: submissions/templates/submissions/_shared_managing_diabetes_q21_q25.html:58
 msgid "This includes checking blood glucose or giving insulin."
 msgstr ""
-"Obejmuje to sprawdzanie poziomu glukozy we krwi lub podawanie insuliny."
 
 #: submissions/templates/submissions/_shared_managing_diabetes_q21_q25.html:74
 msgid ""
 "24. Is there a trained member of staff at school who can help your child "
 "with diabetes management?"
 msgstr ""
-"24. Czy w szkole jest przeszkolony pracownik, który może pomóc Państwa "
-"dziecku w kontrolowaniu cukrzycy?"
 
 #: submissions/templates/submissions/_shared_managing_diabetes_q21_q25.html:76
 msgid ""
 "24. Is there a trained member of staff at school who can help you with "
 "diabetes management?"
 msgstr ""
-"24. Czy w szkole jest przeszkolony pracownik, który może Ci pomóc w "
-"kontrolowaniu cukrzycy?"
 
 #: submissions/templates/submissions/_shared_managing_diabetes_q21_q25.html:79
 msgid ""
@@ -837,200 +712,150 @@ msgid ""
 "support in emergencies. This training should be provided by the diabetes "
 "team."
 msgstr ""
-"Obejmuje to sprawdzanie poziomu glukozy we krwi, podawanie insuliny i "
-"udzielanie wsparcia w nagłych przypadkach. Szkolenie to powinien "
-"przeprowadzić zespół ds. cukrzycy."
 
 #: submissions/templates/submissions/_shared_managing_diabetes_q21_q25.html:94
 msgid ""
 "25. Does your child's school provide enough information about school meals "
 "for carb-counting?"
 msgstr ""
-"25. Czy szkoła Państwa dziecka zapewnia wystarczająco dużo informacji na "
-"temat posiłków szkolnych do celów liczenia węglowodanów?"
 
 #: submissions/templates/submissions/_shared_managing_diabetes_q21_q25.html:96
 msgid ""
 "25. Does your school provide enough information about school meals for carb-"
 "counting?"
 msgstr ""
-"25. Czy Twoja szkoła zapewnia wystarczająco dużo informacji na temat "
-"posiłków szkolnych do celów liczenia węglowodanów?"
 
 #: submissions/templates/submissions/_shared_managing_diabetes_q21_q25.html:101
 msgid ""
 "This includes information about carbohydrate content and portion sizes to "
 "help your child adjust insulin to match."
 msgstr ""
-"Obejmuje to informacje na temat zawartości węglowodanów i rozmiarów porcji, "
-"aby pomóc dziecku wyregulować poziom insuliny."
 
 #: submissions/templates/submissions/_shared_managing_diabetes_q21_q25.html:103
 msgid ""
 "This includes information about carbohydrate content and portion sizes to "
 "help you adjust insulin to match."
 msgstr ""
-"Obejmuje to informacje na temat zawartości węglowodanów i rozmiarów porcji, "
-"aby pomóc Ci wyregulować poziom insuliny."
 
 #: submissions/templates/submissions/_shared_wellbeing.html:8
 msgid "Social and Emotional Impact"
-msgstr "Konsekwencje społeczne i emocjonalne"
+msgstr ""
 
 #: submissions/templates/submissions/_shared_wellbeing.html:11
 msgid ""
 "This section asks about how your child's diabetes impacts their wellbeing at "
 "school."
 msgstr ""
-"W tej części pytamy o to, jak cukrzyca Państwa dziecka wpływa na jego "
-"dobrostan w szkole."
 
 #: submissions/templates/submissions/_shared_wellbeing.html:13
 msgid ""
 "This section asks about how your diabetes impacts your wellbeing at school."
 msgstr ""
-"W tej części pytamy o to, jak Twoja cukrzyca wpływa na Twój dobrostan w "
-"szkole."
 
 #: submissions/templates/submissions/_shared_wellbeing.html:22
 msgid ""
 "35. Has your child ever felt left out or treated differently by other "
 "students or staff members because of their diabetes?"
 msgstr ""
-"35. Czy Państwa dziecko kiedykolwiek czuło się wykluczone lub traktowane "
-"inaczej przez pozostałych uczniów lub pracowników szkoły ze względu na swoją "
-"cukrzycę?"
 
 #: submissions/templates/submissions/_shared_wellbeing.html:24
 msgid ""
 "35. Have you ever felt left out or treated differently by other students or "
 "staff members because of your diabetes?"
 msgstr ""
-"35. Czy kiedykolwiek czułeś(-aś) się wykluczony(-a) lub traktowany(-a) "
-"inaczej przez pozostałych uczniów lub pracowników szkoły ze względu na swoją "
-"cukrzycę?"
 
 #: submissions/templates/submissions/_shared_wellbeing.html:43
 msgid ""
 "36. Have you ever lost income due to taking time off work to attend your "
 "child's school for diabetes care?"
 msgstr ""
-"36. Czy kiedykolwiek stracili Państwo dochód z uwagi na konieczność wzięcia "
-"wolnego w pracy, aby pojechać do szkoły Państwa dziecka w związku z "
-"kontrolowaniem jego cukrzycy?"
 
 #: submissions/templates/submissions/_shared_wellbeing.html:45
 msgid ""
 "E.g. Attending your child's school for diabetes management or your child "
 "being sent home because of diabetes-related illness."
 msgstr ""
-"Np. udanie się do szkoły swojego dziecka w związku z kontrolowaniem jego "
-"cukrzycy lub zwolnienie dziecka z zajęć i odesłanie go do domu z powodu "
-"choroby związanej z cukrzycą."
 
 #: submissions/templates/submissions/_shared_wellbeing.html:60
 msgid ""
 "37. How often do you feel anxiety or stress related to your child's diabetes "
 "while they're at school?"
 msgstr ""
-"37. Jak często czują Państwo lęk lub stres związany z cukrzycą swojego "
-"dziecka, kiedy jest ono w szkole?"
 
 #: submissions/templates/submissions/_shared_wellbeing.html:62
 msgid ""
 "37. How often do you feel anxiety or stress related to your diabetes while "
 "you're at school?"
 msgstr ""
-"37. Jak często czujesz lęk lub stres związany ze swoją cukrzycą, będąc w "
-"szkole?"
 
 #: submissions/templates/submissions/_shared_wellbeing.html:75
 msgid "And finally…"
-msgstr "Na koniec…"
+msgstr ""
 
 #: submissions/templates/submissions/_shared_wellbeing.html:82
 msgid ""
 "38. How well has your school supported you to manage your child's diabetes "
 "safely alongside their education?"
 msgstr ""
-"38. Jakie wsparcie zapewniła Państwu szkoła w zakresie bezpiecznego "
-"kontrolowania cukrzycy Państwa dziecka podczas zajęć szkolnych?"
 
 #: submissions/templates/submissions/_shared_wellbeing.html:84
 msgid ""
 "38. How well has your school supported you to manage your diabetes safely "
 "alongside your education?"
 msgstr ""
-"38. Jakie wsparcie zapewniła Ci szkoła w zakresie bezpiecznego kontrolowania "
-"Twojej cukrzycy podczas zajęć szkolnych?"
 
 #: submissions/templates/submissions/_shared_wellbeing.html:103
 msgid ""
 "39. How well has your diabetes team supported you to manage your child's "
 "diabetes safely alongside their education?"
 msgstr ""
-"39. Jakie wsparcie zapewnił Państwu zespół ds. cukrzycy w zakresie "
-"bezpiecznego kontrolowania cukrzycy Państwa dziecka podczas zajęć szkolnych?"
 
 #: submissions/templates/submissions/_shared_wellbeing.html:105
 msgid ""
 "39. How well has your diabetes team supported you to manage your diabetes "
 "safely alongside your education?"
 msgstr ""
-"39. Jakie wsparcie zapewnił Ci zespół ds. cukrzycy w zakresie bezpiecznego "
-"kontrolowania Twojej cukrzycy podczas zajęć szkolnych?"
 
 #: submissions/templates/submissions/_shared_wellbeing.html:122
 msgid "40. What has worked well?"
-msgstr "40. Co się sprawdziło?"
+msgstr ""
 
 #: submissions/templates/submissions/_shared_wellbeing.html:126
 msgid ""
 "What has been helpful about the support your child has at school to manage "
 "their diabetes?"
 msgstr ""
-"Co okazało się pomocne, jeśli chodzi o wspieranie kontrolowania cukrzycy "
-"Państwa dziecka w szkole?"
 
 #: submissions/templates/submissions/_shared_wellbeing.html:128
 msgid ""
 "What has been helpful about the support you have at school to manage your "
 "diabetes?"
 msgstr ""
-"Co okazało się pomocne, jeśli chodzi o wsparcie, z jakiego korzystasz, aby "
-"kontrolować cukrzycę w szkole?"
 
 #: submissions/templates/submissions/_shared_wellbeing.html:140
 msgid "41. What hasn't worked well?"
-msgstr "41. Co się nie sprawdziło?"
+msgstr ""
 
 #: submissions/templates/submissions/_shared_wellbeing.html:144
 msgid ""
 "What difficulties have you faced in managing your child's diabetes at school?"
 msgstr ""
-"Z jakimi trudnościami spotkali się Państwo, jeśli chodzi o kontrolowanie "
-"cukrzycy Państwa dziecka w szkole?"
 
 #: submissions/templates/submissions/_shared_wellbeing.html:146
 msgid "What difficulties have you faced in managing your diabetes at school?"
 msgstr ""
-"Jakie spotkały Cię trudności, jeśli chodzi o kontrolowanie cukrzycy w szkole?"
 
 #: submissions/templates/submissions/_shared_wellbeing.html:159
 msgid ""
 "42. What could your school or diabetes team do differently to improve your "
 "child's experience?"
 msgstr ""
-"42. Co Państwa szkoła lub zespół ds. cukrzycy mogliby robić inaczej, aby "
-"zapewnić Państwa dziecku lepsze doświadczenie?"
 
 #: submissions/templates/submissions/_shared_wellbeing.html:161
 msgid ""
 "42. What could your school or diabetes team do differently to improve your "
 "experience?"
 msgstr ""
-"42. Co Twoja szkoła lub zespół ds. cukrzycy mogliby robić inaczej, aby "
-"zapewnić Ci lepsze doświadczenie?"
 
 #: submissions/templates/submissions/clinic_in_region.html:8
 #: submissions/templates/submissions/clinic_or_region.html:8
@@ -1038,7 +863,7 @@ msgstr ""
 #: submissions/templates/submissions/question.html:8
 #: submissions/templates/submissions/role_form.html:8
 msgid "Go back"
-msgstr "Wróć"
+msgstr ""
 
 #: submissions/templates/submissions/clinic_in_region.html:18
 #: submissions/templates/submissions/clinic_or_region.html:18
@@ -1046,15 +871,13 @@ msgid ""
 "2. Please select the hospital where the diabetes clinic that you currently "
 "attend is normally held."
 msgstr ""
-"2. Zaznacz szpital, w którym zwykle znajduje się klinika diabetologii, z "
-"której obecnie korzystasz."
 
 #: submissions/templates/submissions/clinic_in_region.html:29
 #: submissions/templates/submissions/form.html:32
 #: submissions/templates/submissions/question.html:30
 #: submissions/templates/submissions/role_form.html:34
 msgid "Continue"
-msgstr "Kontynuuj"
+msgstr ""
 
 #: submissions/templates/submissions/clinic_or_region.html:25
 #: submissions/templates/submissions/clinic_or_region.html:51
@@ -1068,39 +891,37 @@ msgstr ""
 
 #: submissions/templates/submissions/clinic_or_region.html:37
 msgid "1. Please select the region where your diabetes clinic is located."
-msgstr "1. Wybierz region, w którym znajduje się Twoja klinika diabetologii."
+msgstr ""
 
 #: submissions/templates/submissions/clinic_or_region.html:39
 msgid "Ask your diabetes team if you are unsure."
-msgstr "Jeśli nie masz pewności, zapytaj o to swój zespół ds. cukrzycy."
+msgstr ""
 
 #: submissions/templates/submissions/confirmation.html:7
 msgid "Survey submitted"
-msgstr "Ankieta została wysłana"
+msgstr ""
 
 #: submissions/templates/submissions/confirmation.html:10
 msgid "Thank you for sharing your experience."
-msgstr "Dziękujemy za podzielenie się swoim doświadczeniem."
+msgstr ""
 
 #: submissions/templates/submissions/confirmation.html:14
 msgid "What happens next"
-msgstr "Co dalej"
+msgstr ""
 
 #: submissions/templates/submissions/confirmation.html:15
 msgid ""
 "Your feedback helps us improve diabetes services for children and young "
 "people."
 msgstr ""
-"Opinie użytkowników pomagają nam ulepszać usługi diabetologiczne dla dzieci "
-"i młodzieży."
 
 #: submissions/templates/submissions/confirmation.html:19
 msgid "Start a new survey"
-msgstr "Rozpocznij nową ankietę"
+msgstr ""
 
 #: submissions/templates/submissions/form.html:27
 msgid "Submit"
-msgstr "Wyślij"
+msgstr ""
 
 #: submissions/templates/submissions/form.html:30
 #: submissions/templates/submissions/question.html:29
@@ -1109,164 +930,32 @@ msgstr ""
 
 #: submissions/templates/submissions/landing.html:9
 msgid "Choose your language"
-msgstr "Wybierz swój język"
+msgstr ""
 
 #: submissions/templates/submissions/landing.html:26
 msgid "Get started"
-msgstr "Rozpocznij"
+msgstr ""
 
 #: submissions/templates/submissions/role_form.html:12
 msgid "Are you…"
-msgstr "Jestem..."
+msgstr ""
 
 #: submissions/views.py:80
 msgid "q4.child.title"
-msgstr ""
+msgstr "Do you identify as a"
 
 #: submissions/views.py:81
 msgid "q4.parent.title"
-msgstr ""
+msgstr "Do you identify as a"
 
 #: submissions/views.py:91
 msgid "q6.child.title"
-msgstr ""
+msgstr "What type of diabetes do you have?"
 
 #: submissions/views.py:92
 msgid "q6.parent.title"
-msgstr ""
+msgstr "What type of diabetes do does your child have?"
 
 #: templates/base.html:32
 msgid "Start again"
-msgstr "Zacznij od nowa"
-
-#~ msgid "Boy"
-#~ msgstr "Chłopiec"
-
-#~ msgid "Girl"
-#~ msgstr "Dziewczyna"
-
-#~ msgid "A gender not listed here"
-#~ msgstr "Płeć, która nie została tu wymieniona"
-
-#~ msgid "North East & North Cumbria"
-#~ msgstr "North East i North Cumbria"
-
-#~ msgid "North West"
-#~ msgstr "North West"
-
-#~ msgid "Yorkshire & Humber"
-#~ msgstr "Yorkshire i Humber"
-
-#~ msgid "East Midlands"
-#~ msgstr "East Midlands"
-
-#~ msgid "West Midlands"
-#~ msgstr "West Midlands"
-
-#~ msgid "East of England"
-#~ msgstr "East of England"
-
-#~ msgid "South Central"
-#~ msgstr "South Central"
-
-#~ msgid "London & South East"
-#~ msgstr "London i South East"
-
-#~ msgid "South West"
-#~ msgstr "South West"
-
-#~ msgid "Thames Valley"
-#~ msgstr "Thames Valley"
-
-#~ msgid "Wales"
-#~ msgstr "Walia"
-
-#~ msgid "Jersey"
-#~ msgstr "Jersey"
-
-#~ msgid "Lessons (e.g. PE, food tech)"
-#~ msgstr "Lekcje (np. w-f, technologie żywnościowe)"
-
-#~ msgid "Sports clubs"
-#~ msgstr "Klub sportowy"
-
-#~ msgid "School day trips"
-#~ msgstr "Wycieczki szkolne w ciągu dnia"
-
-#~ msgid "Overnight/Residential school trips"
-#~ msgstr "Wycieczki szkolne z noclegami"
-
-#~ msgid "Parties/celebrations"
-#~ msgstr "Imprezy/święta"
-
-#~ msgid "None of the above"
-#~ msgstr "Żadne z powyższych"
-
-#~ msgid "Young person survey"
-#~ msgstr "Ankieta dla młodej osoby"
-
-#~ msgid ""
-#~ "Please answer the following questions about your experience at school "
-#~ "since being diagnosed with diabetes."
-#~ msgstr ""
-#~ "Odpowiedz na poniższe pytania dotyczące Twoich doświadczeń w szkole od "
-#~ "momentu zdiagnozowania cukrzycy."
-
-#~ msgid ""
-#~ "List of clinics depends on region selected above. Please type the name "
-#~ "for now."
-#~ msgstr ""
-#~ "Lista klinik zależy od wybranego powyżej regionu. Na razie proszę wpisać "
-#~ "nazwę."
-
-#~ msgid "Injection/Smart insulin pen – e.g. Novopen, InPen"
-#~ msgstr "Zastrzyk/Inteligentny wstrzykiwacz - np. Novopen, InPen"
-
-#~ msgid ""
-#~ "Insulin pump (including as part of a Hybrid Closed Loop system) – e.g. "
-#~ "Omnipod, MiniMed, Tandem"
-#~ msgstr ""
-#~ "Pompa insulinowa (w tym w ramach hybrydowego systemu zamkniętej pętli) - "
-#~ "np. Omnipod, MiniMed, Tandem"
-
-#~ msgid "N/A – I do not administer insulin in school"
-#~ msgstr "Nie dotyczy - nie podaję sobie insuliny w szkole"
-
-#~ msgid "Finger prick testing"
-#~ msgstr "Badanie z nakłucia palca"
-
-#~ msgid ""
-#~ "Continuous glucose monitor (including as part of a Hybrid Closed Loop "
-#~ "system) e.g. Dexcom, FreeStyle Libre 2 Plus or 3 Plus"
-#~ msgstr ""
-#~ "Ciągły monitoring glukozy (w tym w ramach hybrydowego systemu zamkniętej "
-#~ "pętli), np. Dexcom, FreeStyle Libre 2 Plus lub 3 Plus"
-
-#~ msgid "N/A – I do not monitor blood glucose at school"
-#~ msgstr "Nie dotyczy - nie monitoruję poziomu glukozy we krwi w szkole"
-
-#~ msgid "Please select one of the following"
-#~ msgstr "Proszę wybrać jedną z poniższych opcji"
-
-#~ msgid "National Paediatric Diabetes Audit PREM"
-#~ msgstr "Krajowy Audyt Pediatrycznej Cukrzycy PREM"
-
-#~ msgid "Patient Reported Experience Measure"
-#~ msgstr "Kwestionariusz Doświadczeń Pacjenta"
-
-#~ msgid "Parent/carer survey"
-#~ msgstr "Ankieta dla rodzica/opiekuna"
-
-#~ msgid ""
-#~ "Please answer the following questions about your child's experience at "
-#~ "school since being diagnosed with diabetes."
-#~ msgstr ""
-#~ "Proszę odpowiedzieć na poniższe pytania dotyczące doświadczeń Państwa "
-#~ "dziecka w szkole od momentu zdiagnozowania u niego cukrzycy."
-
-#~ msgid "N/A – My child does not administer insulin in school"
-#~ msgstr "Nie dotyczy - moje dziecko nie podaje sobie insuliny w szkole"
-
-#~ msgid "N/A – My child does not monitor blood glucose at school"
-#~ msgstr ""
-#~ "Nie dotyczy - moje dziecko nie monitoruje poziomu glukozy we krwi w szkole"
+msgstr ""

@@ -14,6 +14,7 @@ urlpatterns = [
     path("<str:lang>/<slug:role>/autosave/", views.autosave, name="autosave"),
     path("<str:lang>/<slug:role>/submit/", views.submit, name="submit"),
     path("<str:lang>/<slug:role>/<slug:section>/", views.form, name="form_section"),
+    path("<str:lang>/<slug:role>/<slug:section>/<slug:question>/", views.question, name="question"),
     # Done!
     # Other
     path("start-again/", views.start_again, name="start_again"),

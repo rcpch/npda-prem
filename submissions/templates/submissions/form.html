@@ -16,7 +16,11 @@
       novalidate>
   {% csrf_token %}
 
-  {% include section_template with role=role %}
+  {% if question %}
+    {% include "submissions/partials/question.html" %}
+  {% else %}
+    {% include section_template with role=role %}
+  {% endif %}
 
   {% if is_last_section %}
     <button class="nhsuk-button" type="submit" data-module="nhsuk-button">

@@ -4,9 +4,10 @@ from django.http import Http404, HttpResponse
 from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
 from django.views.decorators.http import require_POST
+from django.utils.translation import gettext as _
 
 from .clinics import get_all_clinics, get_clinics_for_region, REGION_SLUG_MAP
-from .models import Submission
+from .models import Submission, GENDER_CHOICES, DIABETES_TYPE_CHOICES
 
 
 # Simple fields that map directly from POST key to model field (CharField / TextField).
@@ -63,56 +64,64 @@ JSON_FIELDS = [
 # Section definitions
 # ---------------------------------------------------------------------------
 
-PARENT_SECTIONS = [
-    {
-        "slug": "demographics",
-        "title": "Demographics",
-        "template": "submissions/_parent_demographics.html",
-    },
-    {
-        "slug": "healthcare-plans",
-        "title": "School Health Care Plans",
-        "template": "submissions/_parent_healthcare_plans.html",
-    },
-    {
-        "slug": "managing-diabetes",
-        "title": "Managing Diabetes",
-        "template": "submissions/_parent_managing_diabetes.html",
-    },
-    {
-        "slug": "education-impact",
-        "title": "Impact on Education",
-        "template": "submissions/_shared_education_impact.html",
-    },
-    {
-        "slug": "wellbeing",
-        "title": "Social and Emotional Impact",
-        "template": "submissions/_shared_wellbeing.html",
-    },
-]
-
-CHILD_SECTIONS = [
-    {
-        "slug": "demographics",
-        "title": "Demographics",
-        "template": "submissions/_child_demographics.html",
-    },
-    {
-        "slug": "managing-diabetes",
-        "title": "Managing Diabetes",
-        "template": "submissions/_child_managing_diabetes.html",
-    },
-    {
-        "slug": "education-impact",
-        "title": "Impact on Education",
-        "template": "submissions/_shared_education_impact.html",
-    },
-    {
-        "slug": "wellbeing",
-        "title": "Social and Emotional Impact",
-        "template": "submissions/_shared_wellbeing.html",
-    },
-]
+# Needs to be a function for translations to work properly
+def build_sections():
+    return [
+        {
+            "slug": "demographics",
+            "title": "Demographics",
+            "template": "submissions/_child_demographics.html",
+            "roles": ["cyp", "parent"],
+            "questions": [
+                {
+                    "id": "q4_gender",
+                    "roles": ["cyp"],
+                    "title": {
+                        "cyp": _("q4.child.title"),
+                        "parent": _("q4.parent.title"),
+                    },
+                    "type": "radio",
+                    "options": GENDER_CHOICES,
+                    "next_question": "q6_diabetes_type",
+                },
+                {
+                    "id": "q6_diabetes_type",
+                    "roles": ["cyp", "parent"],
+                    "title": {
+                        "cyp": _("q6.child.title"),
+                        "parent": _("q6.parent.title"),
+                    },
+                    "type": "radio",
+                    "options": DIABETES_TYPE_CHOICES,
+                    "next_question": "q7_age_at_diagnosis",
+                }
+            ]
+        },
+        {
+            "slug": "healthcare-plans",
+            "title": "School Health Care Plans",
+            "template": "submissions/_parent_healthcare_plans.html",
+            "roles": ["parent"],
+        },
+        {
+            "slug": "managing-diabetes",
+            "title": "Managing Diabetes",
+            "template": "submissions/_child_managing_diabetes.html",
+            "roles": ["cyp", "parent"],
+        },
+        {
+            "slug": "education-impact",
+            "title": "Impact on Education",
+            "template": "submissions/_shared_education_impact.html",
+            "roles": ["cyp", "parent"],
+        },
+        {
+            "slug": "wellbeing",
+            "title": "Social and Emotional Impact",
+            "template": "submissions/_shared_wellbeing.html",
+            "roles": ["cyp", "parent"],
+        },
+    ]
 
 
 # ---------------------------------------------------------------------------
@@ -220,7 +229,7 @@ def get_idx_prev_next(lang, role, sections, section):
 def form(request, lang, role, section=None):
     form_url_name = f"{role}_section"
 
-    sections = PARENT_SECTIONS if role == "parent" else CHILD_SECTIONS
+    sections = [s for s in build_sections() if role in s.get("roles", [])]
 
     if section is None:
         return redirect(
@@ -259,6 +268,84 @@ def form(request, lang, role, section=None):
     return render(request, f"submissions/form.html", ctx)
 
 
+def save_response(request ,submission):
+    for field in SIMPLE_FIELDS:
+        if field in request.POST:
+            setattr(submission, field, request.POST[field])
+
+    for field in JSON_FIELDS:
+        if field in request.POST:
+            setattr(submission, field, [v for v in request.POST.getlist(field) if v])
+
+    submission.save()
+
+
+def question(request, lang, role, section, question):
+    sections = [s for s in build_sections() if role in s.get("roles", [])]
+
+    section_data = None
+    for s in sections:
+        if s["slug"] == section:
+            section_data = s
+            break
+
+    if section_data is None:
+        raise Http404
+
+    question_data = None
+    for q in section_data["questions"]:
+        if q["id"] == question:
+            question_data = q
+            break
+    
+    if question_data is None:
+        raise Http404
+
+    question_data["title"] = question_data["title"].get(role, "")
+
+    submission = None
+    submission_id = request.session.get("submission_id")
+
+    if submission_id:
+        try:
+            submission = Submission.objects.get(
+                pk=submission_id, submitted=False
+            )
+        except Submission.DoesNotExist:
+            pass
+    
+    if request.POST:
+        if submission is None:
+            submission = Submission.objects.create(
+                role=role,
+                language=lang,
+                pz_code=request.session.get("pz_code", ""),
+            )
+            request.session["submission_id"] = submission.pk
+        
+        save_response(request, submission)
+        next_url = reverse("question", kwargs={
+            "lang": lang,
+            "role": role,
+            "section": section_data["slug"],
+            "question": question_data["next_question"],
+        })
+
+        return redirect(next_url)
+
+    # TODO: next prev (and how to measure progress across sections?)
+    ctx = {
+        "question": question_data,
+        "field_value": getattr(submission, question_data["id"]) if submission else None,
+        "lang": lang,
+        "role": role,
+    }
+
+    ctx["submission"] = submission
+
+    return render(request, f"submissions/question.html", ctx)
+
+
 @require_POST
 def autosave(request, lang, role):
     submission_id = request.session.get("submission_id")
@@ -278,15 +365,7 @@ def autosave(request, lang, role):
         )
         request.session["submission_id"] = submission.pk
 
-    for field in SIMPLE_FIELDS:
-        if field in request.POST:
-            setattr(submission, field, request.POST[field])
-
-    for field in JSON_FIELDS:
-        if field in request.POST:
-            setattr(submission, field, [v for v in request.POST.getlist(field) if v])
-
-    submission.save()
+    save_response(request, submission)
 
     return HttpResponse(status=204)
 
