@@ -23,9 +23,6 @@ My list
 - Dry refactor probably broke make messages? Check!
 - Display current role and unit in UI?
 - Q4 should say "do you identify as" (check translations?)
-- Fix going back to change unit
-  - Generate submission ID in session up front and modify it?
-  - Also add "selected" to role, atm it doesn't remember what you answered
 - Skip Q10 if Q9 is nursery
 - Remove header and blurb before section X of X
 - Translate section X of X?
