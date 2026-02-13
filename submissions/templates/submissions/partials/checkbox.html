@@ -1,0 +1,7 @@
+{% load i18n %}
+<div class="nhsuk-checkboxes__item">
+    <input class="nhsuk-checkboxes__input" id="{{id}}" name="{{name}}" type="checkbox" value="{{value}}"
+            {% if submission and value in field %}checked{% endif %}
+            hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-include="[name='{{name}}']" hx-swap="none">
+    <label class="nhsuk-label nhsuk-checkboxes__label" for="{{id}}">{% trans label %}</label>
+</div>
