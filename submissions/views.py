@@ -220,9 +220,12 @@ def question(request, lang, role, section, question):
     sections = [s for s in build_sections() if role in s.get("roles", [])]
 
     section_data = None
-    for s in sections:
+    section_ix = 0
+
+    for ix, s in enumerate(sections):
         if s["slug"] == section:
             section_data = s
+            section_ix = ix
             break
 
     if section_data is None:
@@ -268,6 +271,7 @@ def question(request, lang, role, section, question):
         previous_question_ids.append(question_data["id"])
         request.session["previous_question_ids"] = previous_question_ids
 
+        next_section_id = section_data["slug"]
         next_question_id = None
 
         if "next_question" in question_data:
@@ -283,14 +287,17 @@ def question(request, lang, role, section, question):
             if question_ix < len(section_data["questions"]) - 1:
                 next_question_id = section_data["questions"][question_ix + 1]["id"]
             else:
-                # TODO
-                # No more questions in this section, go to next section or confirmation
-                pass
+                if section_ix < len(sections) - 1:
+                    next_section_id = sections[section_ix + 1]["slug"]
+                    next_question_id = sections[section_ix + 1]["questions"][0]["id"]
+                else:
+                    # TODO: fini - go to confirmation 
+                    pass
 
         next_url = reverse("question", kwargs={
             "lang": lang,
             "role": role,
-            "section": section_data["slug"],
+            "section": next_section_id,
             "question": next_question_id,
         })
 

@@ -2,6 +2,8 @@ from django.utils.translation import gettext as _
 
 from .models import *
 
+# TODO MRB: would this be better as dataclasses?
+
 # Needs to be a function for translations to work properly
 def build_sections():
     s1_demographics = {
@@ -101,8 +103,29 @@ def build_sections():
         ]
     }
 
+    s3_managing_diabetes = {
+        "slug": "managing_diabetes",
+        "title": _("Managing Diabetes"),
+        "template": "submissions/_child_managing_diabetes.html",
+        "roles": ["cyp", "parent"],
+        "questions": [
+            {
+                "id": "q16_insulin_or_monitor",
+                "roles": ["cyp", "parent"],
+                "title": {
+                    "cyp": _("q16.child.title"),
+                    "parent": _("q16.parent.title"),
+                },
+                "type": "radio",
+                "options": YES_NO_CHOICES
+            }
+        ]
+    }
+
     sections = [
         s1_demographics,
+        # TODO MRB: s2 only for parents
+        s3_managing_diabetes,
     ]
 
     return sections

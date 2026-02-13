@@ -2,6 +2,11 @@ from django.db import models
 from django.utils.translation import gettext_lazy as _
 
 
+YES_NO_CHOICES = [
+    ("yes", _("Yes")),
+    ("no", _("No")),
+]
+
 GENDER_CHOICES = [
     ("boy", _("q4.boy")),
     ("girl", _("q4.girl")),
@@ -167,10 +172,6 @@ class Submission(models.Model):
     )
 
     # -- Q16: Need to administer insulin / monitor in school ---------------
-    YES_NO_CHOICES = [
-        ("yes", _("Yes")),
-        ("no", _("No")),
-    ]
     q16_insulin_or_monitor = models.CharField(
         max_length=5, choices=YES_NO_CHOICES, blank=True, default="",
     )
