@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+<div class="nhsuk-back-link nhsuk-u-margin-bottom-3">
+  <a class="nhsuk-back-link__link" href="{{ prev_url }}">
+    {% trans "Go back" %}
+  </a>
+</div>
+
+<h2 class="nhsuk-heading-l">{{section.title}}</h2>
+<p>{{section.introduction}}</p>
+<nav class="nhsuk-u-margin-top-6" aria-label="{% trans 'Form navigation' %}">
+    <a href="{{ next_url }}" class="nhsuk-button" data-module="nhsuk-button">
+        {% trans "Continue" %}
+    </a>
+</nav>
+{% endblock %}

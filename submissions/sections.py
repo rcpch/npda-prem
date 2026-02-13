@@ -9,7 +9,7 @@ def build_sections():
     s1_demographics = {
         "slug": "demographics",
         "title": _("Demographics"),
-        "template": "submissions/_child_demographics.html",
+        "introduction": _("demographics.introduction"),
         "roles": ["cyp", "parent"],
         "questions": [
             {
@@ -106,6 +106,7 @@ def build_sections():
     s3_managing_diabetes = {
         "slug": "managing_diabetes",
         "title": _("Managing Diabetes"),
+        "introduction": _("managing_diabetes.introduction"),
         "template": "submissions/_child_managing_diabetes.html",
         "roles": ["cyp", "parent"],
         "questions": [

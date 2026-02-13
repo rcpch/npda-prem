@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-13 21:20+0000\n"
+"POT-Creation-Date: 2026-02-13 22:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,255 +41,380 @@ msgstr "Ukrainian"
 msgid "Punjabi"
 msgstr "Punjabi"
 
-#: submissions/models.py:6
+#: submissions/models.py:6 submissions/models.py:69 submissions/models.py:150
+#: submissions/models.py:160 submissions/models.py:286
+msgid "Yes"
+msgstr "جی ہاں"
+
+#: submissions/models.py:7 submissions/models.py:70 submissions/models.py:151
+#: submissions/models.py:162 submissions/models.py:287
+msgid "No"
+msgstr "نہیں"
+
+#: submissions/models.py:11
 msgid "q4.boy"
 msgstr ""
 
-#: submissions/models.py:7
+#: submissions/models.py:12
 msgid "q4.girl"
 msgstr ""
 
-#: submissions/models.py:8
+#: submissions/models.py:13
 #, fuzzy
 #| msgid "Mother"
 msgid "q4.other"
 msgstr "ماں"
 
-#: submissions/models.py:9
+#: submissions/models.py:14
 #, fuzzy
 #| msgid "Prefer not to say"
 msgid "q4.prefer-not-to-say"
 msgstr "نہ کہنے کو ترجیح دیتے/دیتی ہیں"
 
-#: submissions/models.py:13
+#: submissions/models.py:18
 msgid "Type 1"
 msgstr "قسم 1"
 
-#: submissions/models.py:14
+#: submissions/models.py:19
 msgid "Type 2"
 msgstr "قسم 2"
 
-#: submissions/models.py:15 submissions/models.py:76 submissions/models.py:92
+#: submissions/models.py:20 submissions/models.py:36 submissions/models.py:48
 msgid "Other"
 msgstr "دیگر"
 
-#: submissions/models.py:21 submissions/templates/submissions/role_form.html:20
-msgid "A child or young person with diabetes"
-msgstr "ذیابیطس کا شکار بچہ یا نوجوان ہیں"
-
-#: submissions/models.py:22 submissions/templates/submissions/role_form.html:26
-msgid "The parent/carer of a child or young person with diabetes"
-msgstr "ذیابیطس والے بچے یا نوجوان کے والدین/نگہداشت دہندہ ہیں"
-
-#: submissions/models.py:43
-msgid "Mother"
-msgstr "ماں"
-
-#: submissions/models.py:44
-msgid "Father"
-msgstr "باپ"
-
-#: submissions/models.py:45
-msgid "Grandmother"
-msgstr "دادی/نانی"
-
-#: submissions/models.py:46
-msgid "Grandfather"
-msgstr "دادا/نانا"
-
-#: submissions/models.py:47
-msgid "Other guardian or family member"
-msgstr "دیگر سر پرست یا خاندان کا فرد"
-
-#: submissions/models.py:60
+#: submissions/models.py:24
 msgid "3 years or younger"
 msgstr "3 سال یا اس سے کم عمر"
 
-#: submissions/models.py:61
+#: submissions/models.py:25
 msgid "4 – 7 years"
 msgstr "4-7 سال"
 
-#: submissions/models.py:62
+#: submissions/models.py:26
 msgid "8 – 11 years"
 msgstr "8-11 سال"
 
-#: submissions/models.py:63
+#: submissions/models.py:27
 msgid "12 – 16 years"
 msgstr "12-16 سال"
 
-#: submissions/models.py:64
+#: submissions/models.py:28
 msgid "17 – 19 years"
 msgstr "17-19 سال"
 
-#: submissions/models.py:72
+#: submissions/models.py:32
 msgid "White"
 msgstr "سفید فام"
 
-#: submissions/models.py:73
+#: submissions/models.py:33
 msgid "Black"
 msgstr "سیاہ فام"
 
-#: submissions/models.py:74
+#: submissions/models.py:34
 msgid "Asian"
 msgstr "ایشیائی"
 
-#: submissions/models.py:75
+#: submissions/models.py:35
 msgid "Mixed"
 msgstr "ملا جلا"
 
-#: submissions/models.py:77 submissions/models.py:116 submissions/models.py:127
+#: submissions/models.py:37 submissions/models.py:65 submissions/models.py:72
 msgid "Prefer not to say"
 msgstr "نہ کہنے کو ترجیح دیتے/دیتی ہیں"
 
-#: submissions/models.py:85
+#: submissions/models.py:41
 msgid "Nursery"
 msgstr "نرسری"
 
-#: submissions/models.py:86
+#: submissions/models.py:41
+msgid "Ages < 4yrs"
+msgstr ""
+
+#: submissions/models.py:42
 msgid "Reception"
 msgstr "ریسپشن"
 
-#: submissions/models.py:87
+#: submissions/models.py:42
+msgid "Ages 4-5yrs"
+msgstr ""
+
+#: submissions/models.py:43
 msgid "Key stage 1 (Years 1 & 2)"
 msgstr "کلیدی مرحلہ 1 (سال 1 اور 2)"
 
-#: submissions/models.py:88
+#: submissions/models.py:43
+msgid "Ages 5-7yrs"
+msgstr ""
+
+#: submissions/models.py:44
 msgid "Key stage 2 (Years 3 to 6)"
 msgstr "کلیدی مرحلہ 2 (سال 3 سے 6)"
 
-#: submissions/models.py:89
+#: submissions/models.py:44
+msgid "Ages 7-11yrs"
+msgstr ""
+
+#: submissions/models.py:45
 msgid "Key stage 3 (Years 7 to 9)"
 msgstr "کلیدی مرحلہ 3 (سال 7 سے 9)"
 
-#: submissions/models.py:90
+#: submissions/models.py:45
+msgid "Ages 11-14yrs"
+msgstr ""
+
+#: submissions/models.py:46
 msgid "Key stage 4 (Years 10 & 11)"
 msgstr "کلیدی مرحلہ 4 (سال 10 اور 11)"
 
-#: submissions/models.py:91
+#: submissions/models.py:46
+msgid "Ages 14-16yrs"
+msgstr ""
+
+#: submissions/models.py:47
 msgid "Key stage 5 (Years 12 & 13)"
 msgstr "کلیدی مرحلہ 5 (سال 12 اور 13)"
 
-#: submissions/models.py:103
+#: submissions/models.py:47
+msgid "Ages 16-18yrs"
+msgstr ""
+
+#: submissions/models.py:54
 msgid "State funded school"
 msgstr "ریاستی مالی معاونت سے چلنے والے اسکول"
 
-#: submissions/models.py:104
+#: submissions/models.py:54
+msgid "q10.state.hint"
+msgstr ""
+
+#: submissions/models.py:55
 msgid "Private school"
 msgstr "پرائیویٹ اسکول"
 
-#: submissions/models.py:105
+#: submissions/models.py:55
+msgid "q10.private.hint"
+msgstr ""
+
+#: submissions/models.py:56
 msgid "Home schooled/educated"
 msgstr "گھر پر ہی اسکولنگ ہوئی/تعلیم حاصل کی"
 
-#: submissions/models.py:113
+#: submissions/models.py:62
 msgid "No, it was for other reasons"
 msgstr "نہیں، اس کی وجوہات دوسری تھیں"
 
-#: submissions/models.py:114
+#: submissions/models.py:63
 msgid "Partly, the diabetes diagnosis influenced my decision"
 msgstr "جزوی طور پر، ذیابیطس کی تشخیص میرے فیصلے پر اثرانداز ہوئی تھی"
 
-#: submissions/models.py:115
+#: submissions/models.py:64
 msgid "Yes, it was mainly because of the diabetes diagnosis"
 msgstr "جی ہاں، یہ بنیادی طور پر ذیابیطس کی تشخیص کی وجہ سے ہی تھا"
 
-#: submissions/models.py:124 submissions/models.py:135
-#: submissions/models.py:145 submissions/models.py:161
-#: submissions/models.py:275
-msgid "Yes"
-msgstr "جی ہاں"
-
-#: submissions/models.py:125 submissions/models.py:136
-#: submissions/models.py:147 submissions/models.py:162
-#: submissions/models.py:276
-msgid "No"
-msgstr "نہیں"
-
-#: submissions/models.py:126 submissions/models.py:137
-#: submissions/models.py:148 submissions/models.py:179
-#: submissions/models.py:190 submissions/models.py:262
+#: submissions/models.py:71 submissions/models.py:152 submissions/models.py:163
+#: submissions/models.py:190 submissions/models.py:201
+#: submissions/models.py:273
 msgid "I don't know"
 msgstr "میں نہیں جانتا/جانتی"
 
-#: submissions/models.py:146
+#: submissions/models.py:78 submissions/templates/submissions/role_form.html:20
+msgid "A child or young person with diabetes"
+msgstr "ذیابیطس کا شکار بچہ یا نوجوان ہیں"
+
+#: submissions/models.py:79 submissions/templates/submissions/role_form.html:26
+msgid "The parent/carer of a child or young person with diabetes"
+msgstr "ذیابیطس والے بچے یا نوجوان کے والدین/نگہداشت دہندہ ہیں"
+
+#: submissions/models.py:100
+msgid "Mother"
+msgstr "ماں"
+
+#: submissions/models.py:101
+msgid "Father"
+msgstr "باپ"
+
+#: submissions/models.py:102
+msgid "Grandmother"
+msgstr "دادی/نانی"
+
+#: submissions/models.py:103
+msgid "Grandfather"
+msgstr "دادا/نانا"
+
+#: submissions/models.py:104
+msgid "Other guardian or family member"
+msgstr "دیگر سر پرست یا خاندان کا فرد"
+
+#: submissions/models.py:161
 msgid "Partially covers diabetes needs at school"
 msgstr "اسکول میں ذیابیطس کی ضروریات کو جزوی طور پر پورا کرتا ہے"
 
-#: submissions/models.py:176 submissions/models.py:187
-#: submissions/models.py:199
+#: submissions/models.py:187 submissions/models.py:198
+#: submissions/models.py:210
 msgid "Yes, always"
 msgstr "ہاں، ہمیشہ"
 
-#: submissions/models.py:177 submissions/models.py:188
-#: submissions/models.py:200
+#: submissions/models.py:188 submissions/models.py:199
+#: submissions/models.py:211
 msgid "Yes, sometimes"
 msgstr "ہاں، کبھی کبھار"
 
-#: submissions/models.py:178 submissions/models.py:189
-#: submissions/models.py:201
+#: submissions/models.py:189 submissions/models.py:200
+#: submissions/models.py:212
 msgid "No, never"
 msgstr "نہیں، کبھی نہیں"
 
-#: submissions/models.py:191 submissions/models.py:202
-#: submissions/models.py:277 submissions/models.py:312
+#: submissions/models.py:202 submissions/models.py:213
+#: submissions/models.py:288 submissions/models.py:323
 msgid "Not applicable"
 msgstr "قابل اطلاق نہیں"
 
-#: submissions/models.py:257 submissions/models.py:295
+#: submissions/models.py:268 submissions/models.py:306
 msgid "Never"
 msgstr "کبھی نہیں"
 
-#: submissions/models.py:258
+#: submissions/models.py:269
 msgid "Rarely"
 msgstr "شاذ و نادر ہی"
 
-#: submissions/models.py:259
+#: submissions/models.py:270
 msgid "Sometimes"
 msgstr "کبھی کبھار"
 
-#: submissions/models.py:260
+#: submissions/models.py:271
 msgid "Often"
 msgstr "اکثر"
 
-#: submissions/models.py:261
+#: submissions/models.py:272
 msgid "Always"
 msgstr "ہمیشہ"
 
-#: submissions/models.py:296
+#: submissions/models.py:307
 msgid "Less than once a week"
 msgstr "ہفتے میں ایک بار سے کم"
 
-#: submissions/models.py:297
+#: submissions/models.py:308
 msgid "Once or twice a week"
 msgstr "ہفتے میں ایک یا دو بار"
 
-#: submissions/models.py:298
+#: submissions/models.py:309
 msgid "Three or four times a week"
 msgstr "ہفتے میں تین یا چار بار"
 
-#: submissions/models.py:299
+#: submissions/models.py:310
 msgid "Every day of the week"
 msgstr "ہفتے کا ہر دن"
 
-#: submissions/models.py:307 submissions/models.py:320
+#: submissions/models.py:318 submissions/models.py:331
 msgid "Very well supported"
 msgstr "بہت اچھی طرح سے مدد کی ہے"
 
-#: submissions/models.py:308 submissions/models.py:321
+#: submissions/models.py:319 submissions/models.py:332
 msgid "Well supported"
 msgstr "اچھی طرح سے مدد کی ہے"
 
-#: submissions/models.py:309 submissions/models.py:322
+#: submissions/models.py:320 submissions/models.py:333
 msgid "Neutral"
 msgstr "غیر جانبدار"
 
-#: submissions/models.py:310 submissions/models.py:323
+#: submissions/models.py:321 submissions/models.py:334
 msgid "Poorly supported"
 msgstr "ناقص طریقے سے مدد کی ہے"
 
-#: submissions/models.py:311 submissions/models.py:324
+#: submissions/models.py:322 submissions/models.py:335
 msgid "Very poorly supported"
 msgstr "بہت ناقص طریقے سے مدد کی ہے"
+
+#: submissions/sections.py:11
+#: submissions/templates/submissions/_parent_demographics.html:9
+msgid "Demographics"
+msgstr "آبادیات"
+
+#: submissions/sections.py:12
+msgid "demographics.introduction"
+msgstr ""
+
+#: submissions/sections.py:19
+msgid "q4.child.title"
+msgstr ""
+
+#: submissions/sections.py:20
+msgid "q4.parent.title"
+msgstr ""
+
+#: submissions/sections.py:29
+msgid "q6.child.title"
+msgstr ""
+
+#: submissions/sections.py:30
+msgid "q6.parent.title"
+msgstr ""
+
+#: submissions/sections.py:39
+msgid "q7.child.title"
+msgstr ""
+
+#: submissions/sections.py:40
+msgid "q7.parent.title"
+msgstr ""
+
+#: submissions/sections.py:49
+msgid "q8.child.title"
+msgstr ""
+
+#: submissions/sections.py:50
+msgid "q8.parent.title"
+msgstr ""
+
+#: submissions/sections.py:59
+msgid "q9.child.title"
+msgstr ""
+
+#: submissions/sections.py:60
+msgid "q9.parent.title"
+msgstr ""
+
+#: submissions/sections.py:73
+msgid "q10.child.title"
+msgstr ""
+
+#: submissions/sections.py:74
+msgid "q10.parent.title"
+msgstr ""
+
+#: submissions/sections.py:87
+msgid "q11.child.title"
+msgstr ""
+
+#: submissions/sections.py:88
+msgid "q11.parent.title"
+msgstr ""
+
+#: submissions/sections.py:97
+msgid "q12.child.title"
+msgstr ""
+
+#: submissions/sections.py:98
+msgid "q12.parent.title"
+msgstr ""
+
+#: submissions/sections.py:108
+#: submissions/templates/submissions/_child_managing_diabetes.html:10
+#: submissions/templates/submissions/_parent_managing_diabetes.html:7
+msgid "Managing Diabetes"
+msgstr "ذیابیطس کا انتظام"
+
+#: submissions/sections.py:109
+msgid "managing_diabetes.introduction"
+msgstr ""
+
+#: submissions/sections.py:117
+msgid "q16.child.title"
+msgstr ""
+
+#: submissions/sections.py:118
+msgid "q16.parent.title"
+msgstr ""
 
 #: submissions/templates/submissions/_child_demographics.html:11
 #: submissions/templates/submissions/_parent_demographics.html:10
@@ -364,11 +489,6 @@ msgstr ""
 msgid "12. Are you eligible for free school meals?"
 msgstr "12. کیا آپ اسکول کے مفت کھانے کے اہل ہیں؟"
 
-#: submissions/templates/submissions/_child_managing_diabetes.html:10
-#: submissions/templates/submissions/_parent_managing_diabetes.html:7
-msgid "Managing Diabetes"
-msgstr "ذیابیطس کا انتظام"
-
 #: submissions/templates/submissions/_child_managing_diabetes.html:11
 msgid ""
 "This section asks about your diabetes treatment. We will use this "
@@ -407,10 +527,6 @@ msgstr "18. آپ اسکول میں خون میں گلوکوز کی سطح کو �
 #, python-format
 msgid "Section %(current)s of %(total)s"
 msgstr ""
-
-#: submissions/templates/submissions/_parent_demographics.html:9
-msgid "Demographics"
-msgstr "آبادیات"
 
 #: submissions/templates/submissions/_parent_demographics.html:16
 msgid "5. Relationship to your child with diabetes"
@@ -1032,7 +1148,7 @@ msgstr ""
 
 #: submissions/templates/submissions/clinic_in_region.html:29
 #: submissions/templates/submissions/form.html:32
-#: submissions/templates/submissions/question.html:30
+#: submissions/templates/submissions/question.html:29
 #: submissions/templates/submissions/role_form.html:34
 msgid "Continue"
 msgstr "جاری رکھیں"
@@ -1084,7 +1200,7 @@ msgid "Submit"
 msgstr "جمع کرائیں"
 
 #: submissions/templates/submissions/form.html:30
-#: submissions/templates/submissions/question.html:29
+#: submissions/templates/submissions/question.html:28
 msgid "Form navigation"
 msgstr ""
 
@@ -1099,22 +1215,6 @@ msgstr "شروع کریں"
 #: submissions/templates/submissions/role_form.html:12
 msgid "Are you…"
 msgstr "کیا آپ…"
-
-#: submissions/views.py:80
-msgid "q4.child.title"
-msgstr ""
-
-#: submissions/views.py:81
-msgid "q4.parent.title"
-msgstr ""
-
-#: submissions/views.py:91
-msgid "q6.child.title"
-msgstr ""
-
-#: submissions/views.py:92
-msgid "q6.parent.title"
-msgstr ""
 
 #: templates/base.html:32
 msgid "Start again"

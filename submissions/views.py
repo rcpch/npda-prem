@@ -216,6 +216,68 @@ def save_response(request ,submission):
     submission.save()
 
 
+def get_prev_url(request, lang, role, section_data_slug, question_data_id):
+    # Prune history
+    history_before = request.session.get("history", [])
+    history_after = []
+
+    for (section_slug, question_id) in history_before:
+        if section_slug == section_data_slug and question_id == question_data_id:
+            break
+        
+        history_after.append((section_slug, question_id))
+    
+    request.session["history"] = history_after
+
+    if not request.session.get("history"):
+        prev_url = reverse("role_form", kwargs={"lang": lang}) # default to role form if no previous question
+    else:
+        prev_url = reverse("question", kwargs={
+            "lang": lang,
+            "role": role,
+            "section": request.session["history"][-1][0],
+            "question": request.session["history"][-1][1],
+        })
+
+    return prev_url
+
+
+def section(request, lang, role, section):
+    sections = [s for s in build_sections() if role in s.get("roles", [])]
+
+    section_data = None
+    section_ix = 0
+
+    for ix, s in enumerate(sections):
+        if s["slug"] == section:
+            section_data = s
+            section_ix = ix
+            break
+
+    if section_data is None:
+        raise Http404
+
+    prev_url = get_prev_url(request, lang, role, section_data["slug"], question_data_id=None)
+
+    next_url = reverse("question", kwargs={
+        "lang": lang,
+        "role": role,
+        "section": section_data["slug"],
+        "question": section_data["questions"][0]["id"],
+    })
+
+    ctx = {
+        "section": section_data,
+        "prev_url": prev_url,
+        "next_url": next_url,
+        "lang": lang,
+        "role": role,
+    }
+
+    return render(request, f"submissions/section.html", ctx)
+
+
+
 def question(request, lang, role, section, question):
     sections = [s for s in build_sections() if role in s.get("roles", [])]
 
@@ -290,41 +352,28 @@ def question(request, lang, role, section, question):
             else:
                 if section_ix < len(sections) - 1:
                     next_section_id = sections[section_ix + 1]["slug"]
-                    next_question_id = sections[section_ix + 1]["questions"][0]["id"]
+                    next_question_id = None # intro
                 else:
                     # TODO: fini - go to confirmation 
                     pass
 
-        next_url = reverse("question", kwargs={
-            "lang": lang,
-            "role": role,
-            "section": next_section_id,
-            "question": next_question_id,
-        })
+        if next_question_id is None:
+            next_url = reverse("section", kwargs={
+                "lang": lang,
+                "role": role,
+                "section": next_section_id,
+            })
+        else:
+            next_url = reverse("question", kwargs={
+                "lang": lang,
+                "role": role,
+                "section": next_section_id,
+                "question": next_question_id,
+            })
 
         return redirect(next_url)
     
-    # Prune history
-    history_before = request.session.get("history", [])
-    history_after = []
-
-    for (section_slug, question_id) in history_before:
-        if section_slug == section_data["slug"] and question_id == question_data["id"]:
-            break
-        
-        history_after.append((section_slug, question_id))
-    
-    request.session["history"] = history_after
-
-    if not request.session.get("history"):
-        prev_url = reverse("role_form", kwargs={"lang": lang}) # default to role form if no previous question
-    else:
-        prev_url = reverse("question", kwargs={
-            "lang": lang,
-            "role": role,
-            "section": request.session["history"][-1][0],
-            "question": request.session["history"][-1][1],
-        })
+    prev_url = get_prev_url(request, lang, role, section_data["slug"], question_data["id"])
 
     # TODO: next prev (and how to measure progress across sections?)
     ctx = {

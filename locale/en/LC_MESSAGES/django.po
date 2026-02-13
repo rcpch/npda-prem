@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-13 21:20+0000\n"
+"POT-Creation-Date: 2026-02-13 22:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,251 +42,404 @@ msgstr ""
 msgid "Punjabi"
 msgstr ""
 
-#: submissions/models.py:6
-msgid "q4.boy"
-msgstr "Boy"
-
-#: submissions/models.py:7
-msgid "q4.girl"
-msgstr "Girl"
-
-#: submissions/models.py:8
-msgid "q4.other"
-msgstr "A gender not listed here"
-
-#: submissions/models.py:9
-msgid "q4.prefer-not-to-say"
-msgstr "Prefer not to say"
-
-#: submissions/models.py:13
-msgid "Type 1"
-msgstr ""
-
-#: submissions/models.py:14
-msgid "Type 2"
-msgstr ""
-
-#: submissions/models.py:15 submissions/models.py:76 submissions/models.py:92
-msgid "Other"
-msgstr ""
-
-#: submissions/models.py:21 submissions/templates/submissions/role_form.html:20
-msgid "A child or young person with diabetes"
-msgstr ""
-
-#: submissions/models.py:22 submissions/templates/submissions/role_form.html:26
-msgid "The parent/carer of a child or young person with diabetes"
-msgstr ""
-
-#: submissions/models.py:43
-msgid "Mother"
-msgstr ""
-
-#: submissions/models.py:44
-msgid "Father"
-msgstr ""
-
-#: submissions/models.py:45
-msgid "Grandmother"
-msgstr ""
-
-#: submissions/models.py:46
-msgid "Grandfather"
-msgstr ""
-
-#: submissions/models.py:47
-msgid "Other guardian or family member"
-msgstr ""
-
-#: submissions/models.py:60
-msgid "3 years or younger"
-msgstr ""
-
-#: submissions/models.py:61
-msgid "4 – 7 years"
-msgstr ""
-
-#: submissions/models.py:62
-msgid "8 – 11 years"
-msgstr ""
-
-#: submissions/models.py:63
-msgid "12 – 16 years"
-msgstr ""
-
-#: submissions/models.py:64
-msgid "17 – 19 years"
-msgstr ""
-
-#: submissions/models.py:72
-msgid "White"
-msgstr ""
-
-#: submissions/models.py:73
-msgid "Black"
-msgstr ""
-
-#: submissions/models.py:74
-msgid "Asian"
-msgstr ""
-
-#: submissions/models.py:75
-msgid "Mixed"
-msgstr ""
-
-#: submissions/models.py:77 submissions/models.py:116 submissions/models.py:127
-msgid "Prefer not to say"
-msgstr ""
-
-#: submissions/models.py:85
-msgid "Nursery"
-msgstr ""
-
-#: submissions/models.py:86
-msgid "Reception"
-msgstr ""
-
-#: submissions/models.py:87
-msgid "Key stage 1 (Years 1 & 2)"
-msgstr ""
-
-#: submissions/models.py:88
-msgid "Key stage 2 (Years 3 to 6)"
-msgstr ""
-
-#: submissions/models.py:89
-msgid "Key stage 3 (Years 7 to 9)"
-msgstr ""
-
-#: submissions/models.py:90
-msgid "Key stage 4 (Years 10 & 11)"
-msgstr ""
-
-#: submissions/models.py:91
-msgid "Key stage 5 (Years 12 & 13)"
-msgstr ""
-
-#: submissions/models.py:103
-msgid "State funded school"
-msgstr ""
-
-#: submissions/models.py:104
-msgid "Private school"
-msgstr ""
-
-#: submissions/models.py:105
-msgid "Home schooled/educated"
-msgstr ""
-
-#: submissions/models.py:113
-msgid "No, it was for other reasons"
-msgstr ""
-
-#: submissions/models.py:114
-msgid "Partly, the diabetes diagnosis influenced my decision"
-msgstr ""
-
-#: submissions/models.py:115
-msgid "Yes, it was mainly because of the diabetes diagnosis"
-msgstr ""
-
-#: submissions/models.py:124 submissions/models.py:135
-#: submissions/models.py:145 submissions/models.py:161
-#: submissions/models.py:275
+#: submissions/models.py:6 submissions/models.py:69 submissions/models.py:150
+#: submissions/models.py:160 submissions/models.py:286
 msgid "Yes"
 msgstr ""
 
-#: submissions/models.py:125 submissions/models.py:136
-#: submissions/models.py:147 submissions/models.py:162
-#: submissions/models.py:276
+#: submissions/models.py:7 submissions/models.py:70 submissions/models.py:151
+#: submissions/models.py:162 submissions/models.py:287
 msgid "No"
 msgstr ""
 
-#: submissions/models.py:126 submissions/models.py:137
-#: submissions/models.py:148 submissions/models.py:179
-#: submissions/models.py:190 submissions/models.py:262
+#: submissions/models.py:11
+msgid "q4.boy"
+msgstr "Boy"
+
+#: submissions/models.py:12
+msgid "q4.girl"
+msgstr "Girl"
+
+#: submissions/models.py:13
+msgid "q4.other"
+msgstr "A gender not listed here"
+
+#: submissions/models.py:14
+msgid "q4.prefer-not-to-say"
+msgstr "Prefer not to say"
+
+#: submissions/models.py:18
+msgid "Type 1"
+msgstr ""
+
+#: submissions/models.py:19
+msgid "Type 2"
+msgstr ""
+
+#: submissions/models.py:20 submissions/models.py:36 submissions/models.py:48
+msgid "Other"
+msgstr ""
+
+#: submissions/models.py:24
+msgid "3 years or younger"
+msgstr ""
+
+#: submissions/models.py:25
+msgid "4 – 7 years"
+msgstr ""
+
+#: submissions/models.py:26
+msgid "8 – 11 years"
+msgstr ""
+
+#: submissions/models.py:27
+msgid "12 – 16 years"
+msgstr ""
+
+#: submissions/models.py:28
+msgid "17 – 19 years"
+msgstr ""
+
+#: submissions/models.py:32
+msgid "White"
+msgstr ""
+
+#: submissions/models.py:33
+msgid "Black"
+msgstr ""
+
+#: submissions/models.py:34
+msgid "Asian"
+msgstr ""
+
+#: submissions/models.py:35
+msgid "Mixed"
+msgstr ""
+
+#: submissions/models.py:37 submissions/models.py:65 submissions/models.py:72
+msgid "Prefer not to say"
+msgstr ""
+
+#: submissions/models.py:41
+msgid "Nursery"
+msgstr ""
+
+#: submissions/models.py:41
+msgid "Ages < 4yrs"
+msgstr ""
+
+#: submissions/models.py:42
+msgid "Reception"
+msgstr ""
+
+#: submissions/models.py:42
+msgid "Ages 4-5yrs"
+msgstr ""
+
+#: submissions/models.py:43
+msgid "Key stage 1 (Years 1 & 2)"
+msgstr ""
+
+#: submissions/models.py:43
+msgid "Ages 5-7yrs"
+msgstr ""
+
+#: submissions/models.py:44
+msgid "Key stage 2 (Years 3 to 6)"
+msgstr ""
+
+#: submissions/models.py:44
+msgid "Ages 7-11yrs"
+msgstr ""
+
+#: submissions/models.py:45
+msgid "Key stage 3 (Years 7 to 9)"
+msgstr ""
+
+#: submissions/models.py:45
+msgid "Ages 11-14yrs"
+msgstr ""
+
+#: submissions/models.py:46
+msgid "Key stage 4 (Years 10 & 11)"
+msgstr ""
+
+#: submissions/models.py:46
+msgid "Ages 14-16yrs"
+msgstr ""
+
+#: submissions/models.py:47
+msgid "Key stage 5 (Years 12 & 13)"
+msgstr ""
+
+#: submissions/models.py:47
+msgid "Ages 16-18yrs"
+msgstr ""
+
+#: submissions/models.py:54
+msgid "State funded school"
+msgstr ""
+
+#: submissions/models.py:54
+msgid "q10.state.hint"
+msgstr ""
+
+#: submissions/models.py:55
+msgid "Private school"
+msgstr ""
+
+#: submissions/models.py:55
+msgid "q10.private.hint"
+msgstr ""
+
+#: submissions/models.py:56
+msgid "Home schooled/educated"
+msgstr ""
+
+#: submissions/models.py:62
+msgid "No, it was for other reasons"
+msgstr ""
+
+#: submissions/models.py:63
+msgid "Partly, the diabetes diagnosis influenced my decision"
+msgstr ""
+
+#: submissions/models.py:64
+msgid "Yes, it was mainly because of the diabetes diagnosis"
+msgstr ""
+
+#: submissions/models.py:71 submissions/models.py:152 submissions/models.py:163
+#: submissions/models.py:190 submissions/models.py:201
+#: submissions/models.py:273
 msgid "I don't know"
 msgstr ""
 
-#: submissions/models.py:146
+#: submissions/models.py:78 submissions/templates/submissions/role_form.html:20
+msgid "A child or young person with diabetes"
+msgstr ""
+
+#: submissions/models.py:79 submissions/templates/submissions/role_form.html:26
+msgid "The parent/carer of a child or young person with diabetes"
+msgstr ""
+
+#: submissions/models.py:100
+msgid "Mother"
+msgstr ""
+
+#: submissions/models.py:101
+msgid "Father"
+msgstr ""
+
+#: submissions/models.py:102
+msgid "Grandmother"
+msgstr ""
+
+#: submissions/models.py:103
+msgid "Grandfather"
+msgstr ""
+
+#: submissions/models.py:104
+msgid "Other guardian or family member"
+msgstr ""
+
+#: submissions/models.py:161
 msgid "Partially covers diabetes needs at school"
 msgstr ""
 
-#: submissions/models.py:176 submissions/models.py:187
-#: submissions/models.py:199
+#: submissions/models.py:187 submissions/models.py:198
+#: submissions/models.py:210
 msgid "Yes, always"
 msgstr ""
 
-#: submissions/models.py:177 submissions/models.py:188
-#: submissions/models.py:200
+#: submissions/models.py:188 submissions/models.py:199
+#: submissions/models.py:211
 msgid "Yes, sometimes"
 msgstr ""
 
-#: submissions/models.py:178 submissions/models.py:189
-#: submissions/models.py:201
+#: submissions/models.py:189 submissions/models.py:200
+#: submissions/models.py:212
 msgid "No, never"
 msgstr ""
 
-#: submissions/models.py:191 submissions/models.py:202
-#: submissions/models.py:277 submissions/models.py:312
+#: submissions/models.py:202 submissions/models.py:213
+#: submissions/models.py:288 submissions/models.py:323
 msgid "Not applicable"
 msgstr ""
 
-#: submissions/models.py:257 submissions/models.py:295
+#: submissions/models.py:268 submissions/models.py:306
 msgid "Never"
 msgstr ""
 
-#: submissions/models.py:258
+#: submissions/models.py:269
 msgid "Rarely"
 msgstr ""
 
-#: submissions/models.py:259
+#: submissions/models.py:270
 msgid "Sometimes"
 msgstr ""
 
-#: submissions/models.py:260
+#: submissions/models.py:271
 msgid "Often"
 msgstr ""
 
-#: submissions/models.py:261
+#: submissions/models.py:272
 msgid "Always"
 msgstr ""
 
-#: submissions/models.py:296
+#: submissions/models.py:307
 msgid "Less than once a week"
 msgstr ""
 
-#: submissions/models.py:297
+#: submissions/models.py:308
 msgid "Once or twice a week"
 msgstr ""
 
-#: submissions/models.py:298
+#: submissions/models.py:309
 msgid "Three or four times a week"
 msgstr ""
 
-#: submissions/models.py:299
+#: submissions/models.py:310
 msgid "Every day of the week"
 msgstr ""
 
-#: submissions/models.py:307 submissions/models.py:320
+#: submissions/models.py:318 submissions/models.py:331
 msgid "Very well supported"
 msgstr ""
 
-#: submissions/models.py:308 submissions/models.py:321
+#: submissions/models.py:319 submissions/models.py:332
 msgid "Well supported"
 msgstr ""
 
-#: submissions/models.py:309 submissions/models.py:322
+#: submissions/models.py:320 submissions/models.py:333
 msgid "Neutral"
 msgstr ""
 
-#: submissions/models.py:310 submissions/models.py:323
+#: submissions/models.py:321 submissions/models.py:334
 msgid "Poorly supported"
 msgstr ""
 
-#: submissions/models.py:311 submissions/models.py:324
+#: submissions/models.py:322 submissions/models.py:335
 msgid "Very poorly supported"
 msgstr ""
+
+#: submissions/sections.py:11
+#: submissions/templates/submissions/_parent_demographics.html:9
+msgid "Demographics"
+msgstr ""
+
+#: submissions/sections.py:12
+msgid "demographics.introduction"
+msgstr "We’d like to know a bit more about you so we can tailor our questions. We will also use this information to understand if children and young people with diabetes from different backgrounds have different experiences at school. All questions in this section are mandatory, but you may select ‘Prefer not to say’ for some. "
+
+#: submissions/sections.py:19
+msgid "q4.child.title"
+msgstr "Do you identify as a"
+
+#: submissions/sections.py:20
+msgid "q4.parent.title"
+msgstr "Do you identify as a"
+
+#: submissions/sections.py:29
+msgid "q6.child.title"
+msgstr "What type of diabetes do you have?"
+
+#: submissions/sections.py:30
+msgid "q6.parent.title"
+msgstr "What type of diabetes do does your child have?"
+
+#: submissions/sections.py:39
+#, fuzzy
+#| msgid "q4.child.title"
+msgid "q7.child.title"
+msgstr "Do you identify as a"
+
+#: submissions/sections.py:40
+#, fuzzy
+#| msgid "q4.parent.title"
+msgid "q7.parent.title"
+msgstr "Do you identify as a"
+
+#: submissions/sections.py:49
+#, fuzzy
+#| msgid "q4.child.title"
+msgid "q8.child.title"
+msgstr "Do you identify as a"
+
+#: submissions/sections.py:50
+#, fuzzy
+#| msgid "q4.parent.title"
+msgid "q8.parent.title"
+msgstr "Do you identify as a"
+
+#: submissions/sections.py:59
+#, fuzzy
+#| msgid "q4.child.title"
+msgid "q9.child.title"
+msgstr "Do you identify as a"
+
+#: submissions/sections.py:60
+#, fuzzy
+#| msgid "q4.parent.title"
+msgid "q9.parent.title"
+msgstr "Do you identify as a"
+
+#: submissions/sections.py:73
+#, fuzzy
+#| msgid "q4.child.title"
+msgid "q10.child.title"
+msgstr "Do you identify as a"
+
+#: submissions/sections.py:74
+#, fuzzy
+#| msgid "q4.parent.title"
+msgid "q10.parent.title"
+msgstr "Do you identify as a"
+
+#: submissions/sections.py:87
+#, fuzzy
+#| msgid "q4.child.title"
+msgid "q11.child.title"
+msgstr "Do you identify as a"
+
+#: submissions/sections.py:88
+#, fuzzy
+#| msgid "q4.parent.title"
+msgid "q11.parent.title"
+msgstr "Do you identify as a"
+
+#: submissions/sections.py:97
+#, fuzzy
+#| msgid "q4.child.title"
+msgid "q12.child.title"
+msgstr "Do you identify as a"
+
+#: submissions/sections.py:98
+#, fuzzy
+#| msgid "q4.parent.title"
+msgid "q12.parent.title"
+msgstr "Do you identify as a"
+
+#: submissions/sections.py:108
+#: submissions/templates/submissions/_child_managing_diabetes.html:10
+#: submissions/templates/submissions/_parent_managing_diabetes.html:7
+msgid "Managing Diabetes"
+msgstr ""
+
+#: submissions/sections.py:109
+msgid "managing_diabetes.introduction"
+msgstr "This section asks about your/your child’s diabetes treatment. We will use this information to see if children and young people using different diabetes technologies have different experiences at school."
+
+#: submissions/sections.py:117
+#, fuzzy
+#| msgid "q6.child.title"
+msgid "q16.child.title"
+msgstr "What type of diabetes do you have?"
+
+#: submissions/sections.py:118
+#, fuzzy
+#| msgid "q6.parent.title"
+msgid "q16.parent.title"
+msgstr "What type of diabetes do does your child have?"
 
 #: submissions/templates/submissions/_child_demographics.html:11
 #: submissions/templates/submissions/_parent_demographics.html:10
@@ -351,11 +504,6 @@ msgstr ""
 msgid "12. Are you eligible for free school meals?"
 msgstr ""
 
-#: submissions/templates/submissions/_child_managing_diabetes.html:10
-#: submissions/templates/submissions/_parent_managing_diabetes.html:7
-msgid "Managing Diabetes"
-msgstr ""
-
 #: submissions/templates/submissions/_child_managing_diabetes.html:11
 msgid ""
 "This section asks about your diabetes treatment. We will use this "
@@ -388,10 +536,6 @@ msgstr ""
 #: submissions/templates/submissions/_form_nav.html:15
 #, python-format
 msgid "Section %(current)s of %(total)s"
-msgstr ""
-
-#: submissions/templates/submissions/_parent_demographics.html:9
-msgid "Demographics"
 msgstr ""
 
 #: submissions/templates/submissions/_parent_demographics.html:16
@@ -874,7 +1018,7 @@ msgstr ""
 
 #: submissions/templates/submissions/clinic_in_region.html:29
 #: submissions/templates/submissions/form.html:32
-#: submissions/templates/submissions/question.html:30
+#: submissions/templates/submissions/question.html:29
 #: submissions/templates/submissions/role_form.html:34
 msgid "Continue"
 msgstr ""
@@ -924,7 +1068,7 @@ msgid "Submit"
 msgstr ""
 
 #: submissions/templates/submissions/form.html:30
-#: submissions/templates/submissions/question.html:29
+#: submissions/templates/submissions/question.html:28
 msgid "Form navigation"
 msgstr ""
 
@@ -939,22 +1083,6 @@ msgstr ""
 #: submissions/templates/submissions/role_form.html:12
 msgid "Are you…"
 msgstr ""
-
-#: submissions/views.py:80
-msgid "q4.child.title"
-msgstr "Do you identify as a"
-
-#: submissions/views.py:81
-msgid "q4.parent.title"
-msgstr "Do you identify as a"
-
-#: submissions/views.py:91
-msgid "q6.child.title"
-msgstr "What type of diabetes do you have?"
-
-#: submissions/views.py:92
-msgid "q6.parent.title"
-msgstr "What type of diabetes do does your child have?"
 
 #: templates/base.html:32
 msgid "Start again"

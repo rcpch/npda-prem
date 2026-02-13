@@ -39,7 +39,7 @@
     var radios = document.querySelectorAll('input[name="role"]');
     var button = document.getElementById('continue-btn');
     var parentUrl = "{% url 'form' lang=lang role='parent' %}";
-    var childUrl = "{% url 'question' lang=lang role='cyp' section='demographics' question='q4_gender' %}";
+    var childUrl = "{% url 'section' lang=lang role='cyp' section='demographics' %}";
 
     radios.forEach(function(radio) {
       radio.addEventListener('change', function() {
