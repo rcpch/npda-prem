@@ -72,6 +72,12 @@ FREE_SCHOOL_MEALS_CHOICES = [
     ("prefer-not-to-say", _("Prefer not to say")),
 ]
 
+INSULIN_METHOD_OPTIONS = [
+    ("injection", _("Injection/Smart insulin pen – e.g. Novopen, InPen")),
+    ("pump", _("Insulin pump (including as part of a Hybrid Closed Loop system) – e.g. Omnipod, MiniMed, Tandem")),
+    ("na", _("N/A – My child does not administer insulin in school")),
+]
+
 class Submission(models.Model):
     # -- Metadata ----------------------------------------------------------
     ROLE_CHOICES = [

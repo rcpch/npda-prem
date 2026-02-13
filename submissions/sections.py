@@ -119,6 +119,17 @@ def build_sections():
                 },
                 "type": "radio",
                 "options": YES_NO_CHOICES
+            },
+            {
+                "id": "q17_insulin_method",
+                "roles": ["cyp", "parent"],
+                "title": {
+                    "cyp": _("q17.child.title"),
+                    "parent": _("q17.parent.title"),
+                },
+                "hint": _("q17.hint"),
+                "type": "checkbox",
+                "options": INSULIN_METHOD_OPTIONS
             }
         ]
     }

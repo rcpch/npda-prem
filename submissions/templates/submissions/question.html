@@ -17,11 +17,26 @@
             <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m">
                 {{ question.title }}
             </legend>
+            {% if question.hint %}
+                <div id="{{ question.id }}-hint" class="nhsuk-hint">
+                    {{ question.hint }}
+                </div>
+            {% endif %}
+            {% if question.type == "radio" %}
             <div class="nhsuk-radios" data-module="nhsuk-radios">
                 {% for option in question.options %}
                     {% include "submissions/partials/radio-input.html" with id=question.id|add:"-"|add:option.0 name=question.id value=option.0 label=option.1 field_value=field_value hint=option.2 %}
                 {% endfor %}
             </div>
+            {% endif %}
+            {% if question.type == "checkbox" %}
+                <input type="hidden" name="{{question.id}}" value="">
+                <div class="nhsuk-checkboxes" data-module="nhsuk-checkboxes">
+                    {% for option in question.options %}
+                        {% include "submissions/partials/checkbox.html" with id=question.id|add:"-"|add:option.0 name=question.id value=option.0 label=option.1 field_value=field_value %}
+                    {% endfor %}
+                </div>
+            {% endif %}
         </fieldset>
     </div>
 
