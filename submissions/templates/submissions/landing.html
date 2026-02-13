@@ -33,7 +33,13 @@
 
     radios.forEach(function(radio) {
       radio.addEventListener('change', function() {
-        button.href = '/' + this.value + '/form/';
+        const url = new URL(button.href);
+
+        const parts = url.pathname.split('/');
+        parts[1] = this.value; // Update the language part of the URL
+        url.pathname = parts.join('/'); // Reconstruct the URL with the new language
+
+        button.href = url.toString();
       });
     });
   })();
