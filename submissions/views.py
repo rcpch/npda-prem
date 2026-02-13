@@ -173,7 +173,7 @@ def clinic_in_region(request, lang):
 
 
 def role_form(request, lang):
-    return render(request, "submissions/form.html", {"lang": lang})
+    return render(request, "submissions/role_form.html", {"lang": lang})
 
 
 def confirmation(request, lang):
