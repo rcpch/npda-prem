@@ -2,6 +2,8 @@
 <div class="nhsuk-radios__item">
     <input class="nhsuk-radios__input" id="{{id}}" name="{{name}}" type="radio" value="{{value}}"
         {% if field_value == value %}checked{% endif %}
-        hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
+        {% if autosave is None or autosave %}
+            hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none"
+        {% endif %}>
     <label class="nhsuk-label nhsuk-radios__label" for="{{id}}">{% trans label %}</label>
 </div>

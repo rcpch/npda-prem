@@ -19,7 +19,7 @@
       </legend>
       <div class="nhsuk-radios" data-module="nhsuk-radios">
         {% for clinic in clinics %}
-        {% include "submissions/partials/radio-input.html" with id="clinic-"|add:forloop.counter name="pz_code" value=clinic.pz_code label=clinic.name field_value=selected_pz_code %}
+          {% include "submissions/partials/radio-input.html" with id="clinic-"|add:forloop.counter name="pz_code" value=clinic.pz_code label=clinic.name field_value=selected_pz_code autosave=False %}
         {% endfor %}
       </div>
     </fieldset>

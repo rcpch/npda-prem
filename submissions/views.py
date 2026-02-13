@@ -164,7 +164,7 @@ def clinic_in_region(request, lang):
     else:
         clinics = get_clinics_for_region(region)
 
-    return render(request, "submissions/clinic_select.html", {
+    return render(request, "submissions/clinic_in_region.html", {
         "lang": lang,
         "region": region,
         "clinics": clinics,
