@@ -145,14 +145,25 @@ def clinic_or_region(request, lang):
     regions = sorted(set(clinic["region"] for clinic in clinics))
     regions_with_slugs = [(REGION_SLUG_MAP[r], r) for r in regions]
 
-    clinic_values = [f"{clinic['name']} - {clinic['region']}" for clinic in get_all_clinics()]
-    clinic_values_json = json.dumps(clinic_values)
+    clinic_names_with_regions = [f"{clinic['name']} - {clinic['region']}" for clinic in get_all_clinics()]
+
+    selected_clinic_name_with_region = None
+    if "pz_code" in request.session:
+        for clinic in clinics:
+            if clinic["pz_code"] == request.session["pz_code"]:
+                selected_clinic_name_with_region = f"{clinic['name']} - {clinic['region']}"
+                break
+    
+    clinic_json = json.dumps({
+        "clinic_names_with_regions": clinic_names_with_regions,
+        "selected_clinic_name_with_region": selected_clinic_name_with_region
+    })
 
     return render(request, "submissions/clinic_or_region.html", {
         "lang": lang,
         "region": request.session.get("region", ""),
         "regions_with_slugs": regions_with_slugs,
-        "clinic_values_json": clinic_values_json
+        "clinic_json": clinic_json
     })
 
 

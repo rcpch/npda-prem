@@ -52,13 +52,12 @@
   </button>
 </form>
 
-<script type="application/json" id="clinic-values">
-  {{clinic_values_json|safe }}
+<script type="application/json" id="clinic-data">
+  {{clinic_json|safe }}
 </script>
 
 <script>
-  const clinicValuesJson = document.getElementById('clinic-values').textContent;
-  const clinicValues = JSON.parse(clinicValuesJson);
+  const { clinic_names_with_regions, selected_clinic_name_with_region } = JSON.parse(document.getElementById('clinic-data').textContent);
 
   document.addEventListener('DOMContentLoaded', function () {
     const autoComplete = document.getElementById('location-picker');
@@ -67,7 +66,8 @@
       element: autoComplete,
       id: 'location-autocomplete',
       name: 'clinic',
-      source: clinicValues,
+      source: clinic_names_with_regions,
+      defaultValue: selected_clinic_name_with_region || '',
       showAllValues: true
     });
   });
