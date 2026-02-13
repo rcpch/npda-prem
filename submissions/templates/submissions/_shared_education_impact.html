@@ -117,48 +117,15 @@
     <div id="q31-hint" class="nhsuk-hint">{% trans "Select all that apply" %}</div>
     <input type="hidden" name="q31_excluded_activities" value="">
     <div class="nhsuk-checkboxes" data-module="nhsuk-checkboxes">
-      <div class="nhsuk-checkboxes__item">
-        <input class="nhsuk-checkboxes__input" id="q31-lessons" name="q31_excluded_activities" type="checkbox" value="lessons"
-               {% if submission and "lessons" in submission.q31_excluded_activities %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-include="[name='q31_excluded_activities']" hx-swap="none">
-        <label class="nhsuk-label nhsuk-checkboxes__label" for="q31-lessons">{% trans "Lessons (e.g. PE, food tech)" %}</label>
-      </div>
-      <div class="nhsuk-checkboxes__item">
-        <input class="nhsuk-checkboxes__input" id="q31-sports-clubs" name="q31_excluded_activities" type="checkbox" value="sports-clubs"
-               {% if submission and "sports-clubs" in submission.q31_excluded_activities %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-include="[name='q31_excluded_activities']" hx-swap="none">
-        <label class="nhsuk-label nhsuk-checkboxes__label" for="q31-sports-clubs">{% trans "Sports clubs" %}</label>
-      </div>
-      <div class="nhsuk-checkboxes__item">
-        <input class="nhsuk-checkboxes__input" id="q31-day-trips" name="q31_excluded_activities" type="checkbox" value="day-trips"
-               {% if submission and "day-trips" in submission.q31_excluded_activities %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-include="[name='q31_excluded_activities']" hx-swap="none">
-        <label class="nhsuk-label nhsuk-checkboxes__label" for="q31-day-trips">{% trans "School day trips" %}</label>
-      </div>
-      <div class="nhsuk-checkboxes__item">
-        <input class="nhsuk-checkboxes__input" id="q31-overnight-trips" name="q31_excluded_activities" type="checkbox" value="overnight-trips"
-               {% if submission and "overnight-trips" in submission.q31_excluded_activities %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-include="[name='q31_excluded_activities']" hx-swap="none">
-        <label class="nhsuk-label nhsuk-checkboxes__label" for="q31-overnight-trips">{% trans "Overnight/Residential school trips" %}</label>
-      </div>
-      <div class="nhsuk-checkboxes__item">
-        <input class="nhsuk-checkboxes__input" id="q31-parties" name="q31_excluded_activities" type="checkbox" value="parties"
-               {% if submission and "parties" in submission.q31_excluded_activities %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-include="[name='q31_excluded_activities']" hx-swap="none">
-        <label class="nhsuk-label nhsuk-checkboxes__label" for="q31-parties">{% trans "Parties/celebrations" %}</label>
-      </div>
-      <div class="nhsuk-checkboxes__item">
-        <input class="nhsuk-checkboxes__input" id="q31-other" name="q31_excluded_activities" type="checkbox" value="other"
-               {% if submission and "other" in submission.q31_excluded_activities %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-include="[name='q31_excluded_activities']" hx-swap="none">
-        <label class="nhsuk-label nhsuk-checkboxes__label" for="q31-other">{% trans "Other" %}</label>
-      </div>
-      <div class="nhsuk-checkboxes__item">
-        <input class="nhsuk-checkboxes__input" id="q31-none" name="q31_excluded_activities" type="checkbox" value="none"
-               {% if submission and "none" in submission.q31_excluded_activities %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-include="[name='q31_excluded_activities']" hx-swap="none">
-        <label class="nhsuk-label nhsuk-checkboxes__label" for="q31-none">{% trans "None of the above" %}</label>
-      </div>
+      {% with name="q31_excluded_activities" field=submission.q31_excluded_activities %}
+        {% include "submissions/partials/checkbox.html" with id="q31-lessons" value="lessons" label="Lessons (e.g. PE, food tech)" %}
+        {% include "submissions/partials/checkbox.html" with id="q31-sports-clubs" value="sports-clubs" label="Sports clubs" %}
+        {% include "submissions/partials/checkbox.html" with id="q31-day-trips" value="day-trips" label="School day trips" %}
+        {% include "submissions/partials/checkbox.html" with id="q31-overnight-trips" value="overnight-trips" label="Overnight/Residential school trips" %}
+        {% include "submissions/partials/checkbox.html" with id="q31-parties" value="parties" label="Parties/celebrations" %}
+        {% include "submissions/partials/checkbox.html" with id="q31-other" value="other" label="Other" %}
+        {% include "submissions/partials/checkbox.html" with id="q31-none" value="none" label="None of the above" %}
+      {% endwith %}
     </div>
   </fieldset>
   <div id="q31-other-container" class="nhsuk-form-group nhsuk-u-margin-top-3" style="{% if not submission or 'other' not in submission.q31_excluded_activities %}display:none{% endif %}">

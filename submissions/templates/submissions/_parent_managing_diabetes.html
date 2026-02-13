@@ -29,24 +29,11 @@
     <div id="q17-hint" class="nhsuk-hint">{% trans "Select all that apply" %}</div>
     <input type="hidden" name="q17_insulin_method" value="">
     <div class="nhsuk-checkboxes" data-module="nhsuk-checkboxes">
-      <div class="nhsuk-checkboxes__item">
-        <input class="nhsuk-checkboxes__input" id="q17-injection" name="q17_insulin_method" type="checkbox" value="injection"
-               {% if submission and "injection" in submission.q17_insulin_method %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-include="[name='q17_insulin_method']" hx-swap="none">
-        <label class="nhsuk-label nhsuk-checkboxes__label" for="q17-injection">{% trans "Injection/Smart insulin pen – e.g. Novopen, InPen" %}</label>
-      </div>
-      <div class="nhsuk-checkboxes__item">
-        <input class="nhsuk-checkboxes__input" id="q17-pump" name="q17_insulin_method" type="checkbox" value="pump"
-               {% if submission and "pump" in submission.q17_insulin_method %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-include="[name='q17_insulin_method']" hx-swap="none">
-        <label class="nhsuk-label nhsuk-checkboxes__label" for="q17-pump">{% trans "Insulin pump (including as part of a Hybrid Closed Loop system) – e.g. Omnipod, MiniMed, Tandem" %}</label>
-      </div>
-      <div class="nhsuk-checkboxes__item">
-        <input class="nhsuk-checkboxes__input" id="q17-na" name="q17_insulin_method" type="checkbox" value="na"
-               {% if submission and "na" in submission.q17_insulin_method %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-include="[name='q17_insulin_method']" hx-swap="none">
-        <label class="nhsuk-label nhsuk-checkboxes__label" for="q17-na">{% trans "N/A – My child does not administer insulin in school" %}</label>
-      </div>
+      {% with name="q17_insulin_method" field=submission.q17_insulin_method %}
+        {% include "submissions/partials/checkbox.html" with id="q17-injection" value="injection" label="Injection/Smart insulin pen – e.g. Novopen, InPen" %}
+        {% include "submissions/partials/checkbox.html" with id="q17-pump" value="pump" label="Insulin pump (including as part of a Hybrid Closed Loop system) – e.g. Omnipod, MiniMed, Tandem" %}
+        {% include "submissions/partials/checkbox.html" with id="q17-na" value="na" label="N/A – My child does not administer insulin in school" %}
+      {% endwith %}
     </div>
   </fieldset>
 </div>
@@ -60,24 +47,11 @@
     <div id="q18-hint" class="nhsuk-hint">{% trans "Select all that apply" %}</div>
     <input type="hidden" name="q18_glucose_monitoring" value="">
     <div class="nhsuk-checkboxes" data-module="nhsuk-checkboxes">
-      <div class="nhsuk-checkboxes__item">
-        <input class="nhsuk-checkboxes__input" id="q18-finger" name="q18_glucose_monitoring" type="checkbox" value="finger-prick"
-               {% if submission and "finger-prick" in submission.q18_glucose_monitoring %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-include="[name='q18_glucose_monitoring']" hx-swap="none">
-        <label class="nhsuk-label nhsuk-checkboxes__label" for="q18-finger">{% trans "Finger prick testing" %}</label>
-      </div>
-      <div class="nhsuk-checkboxes__item">
-        <input class="nhsuk-checkboxes__input" id="q18-cgm" name="q18_glucose_monitoring" type="checkbox" value="cgm"
-               {% if submission and "cgm" in submission.q18_glucose_monitoring %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-include="[name='q18_glucose_monitoring']" hx-swap="none">
-        <label class="nhsuk-label nhsuk-checkboxes__label" for="q18-cgm">{% trans "Continuous glucose monitor (including as part of a Hybrid Closed Loop system) e.g. Dexcom, FreeStyle Libre 2 Plus or 3 Plus" %}</label>
-      </div>
-      <div class="nhsuk-checkboxes__item">
-        <input class="nhsuk-checkboxes__input" id="q18-na" name="q18_glucose_monitoring" type="checkbox" value="na"
-               {% if submission and "na" in submission.q18_glucose_monitoring %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-include="[name='q18_glucose_monitoring']" hx-swap="none">
-        <label class="nhsuk-label nhsuk-checkboxes__label" for="q18-na">{% trans "N/A – My child does not monitor blood glucose at school" %}</label>
-      </div>
+      {% with name="q18_glucose_monitoring" field=submission.q18_glucose_monitoring %}
+        {% include "submissions/partials/checkbox.html" with id="q18-finger" value="finger-prick" label="Finger prick testing" %}
+        {% include "submissions/partials/checkbox.html" with id="q18-cgm" value="cgm" label="Continuous glucose monitor (including as part of a Hybrid Closed Loop system) e.g. Dexcom, FreeStyle Libre 2 Plus or 3 Plus" %}
+        {% include "submissions/partials/checkbox.html" with id="q18-na" value="na" label="N/A – My child does not monitor blood glucose at school" %}
+      {% endwith %}
     </div>
   </fieldset>
 </div>
