@@ -11,6 +11,13 @@ Visit http://localhost:8000/.
 
 ## TODO
 
+Zarro boogs (one page per question as GDS intended)
+
+Number entry
+Text field (including other values)
+
+Then unleash the bot. Ask it to use raw translation strings for big long paragraphs.
+
 Requested by team
 
 - Show count of answers broken down by unit (admins)
@@ -21,15 +28,11 @@ My list
 
 - GitHub pr check
 - Dry refactor probably broke make messages? Check!
-- Display current role and unit in UI?
+- Start again button is massive - move it down to the footer
+- Deep link to unit (iPad mode option at the bottom, select unit)
 - Q4 should say "do you identify as" (check translations?)
-- Skip Q10 if Q9 is nursery
-- Remove header and blurb before section X of X
-- Translate section X of X?
-- Change language button on each page (can redirect to homepage with prefilled next link?)
+- Put back section X of X and submit for translations
 - Remove question numbers since they're not sequential to someone filling out the form
-- Consider isolating conditional questions onto separate pages (triggered by first answer)
-  - This is gov.uk style
 - Front and back matter from document
 - Oauth login to Django admin against whitelist of RCPCH user names
 - namespaced dot string approach to translations
@@ -40,12 +43,12 @@ My list
 - Favicon
 - Remove htmx from unpkg
 - Embed font rather than Google Fonts?
-- Test autocomplete on iPad
-- Feedback to user that an answer hasn't saved
 - Put behind Cloudflare so we have levers to pull if it's abused
-- Show error to user if answers fail to save!
 - Include PZ code in CSV export
 - Rationalise cyp and child in URL -> cyp
 - hx-boost? does it change the URL without writing a history entry?
 - Go back skips over the introduction (arguably a feature?)
+- Triple check translations
+  - Get the bot to go byte for byte between the web page and the translations spreadsheets?
+  - Submit additional translations (e.g. section X of X)
 - prodmon?
