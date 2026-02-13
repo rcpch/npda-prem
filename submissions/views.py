@@ -267,9 +267,10 @@ def question(request, lang, role, section, question):
         
         save_response(request, submission)
 
-        previous_question_ids = request.session.get("previous_question_ids", [])
-        previous_question_ids.append(question_data["id"])
-        request.session["previous_question_ids"] = previous_question_ids
+        # TODO MRB: my kingdom for a dataclass!
+        history = request.session.get("history", [])
+        history.append((section_data["slug"], question_data["id"]))
+        request.session["history"] = history
 
         next_section_id = section_data["slug"]
         next_question_id = None
@@ -303,26 +304,26 @@ def question(request, lang, role, section, question):
 
         return redirect(next_url)
     
-    # Prune history (TODO MRB: needs to understand section too?)
-    previous_question_ids_before = request.session.get("previous_question_ids", [])
-    previous_question_ids_after = []
+    # Prune history
+    history_before = request.session.get("history", [])
+    history_after = []
 
-    for previous_question_id in previous_question_ids_before:
-        if previous_question_id == question_data["id"]:
+    for (section_slug, question_id) in history_before:
+        if section_slug == section_data["slug"] and question_id == question_data["id"]:
             break
         
-        previous_question_ids_after.append(previous_question_id)
+        history_after.append((section_slug, question_id))
     
-    request.session["previous_question_ids"] = previous_question_ids_after
+    request.session["history"] = history_after
 
-    if not request.session.get("previous_question_ids"):
+    if not request.session.get("history"):
         prev_url = reverse("role_form", kwargs={"lang": lang}) # default to role form if no previous question
     else:
         prev_url = reverse("question", kwargs={
             "lang": lang,
             "role": role,
-            "section": section_data["slug"],
-            "question": request.session["previous_question_ids"][-1],
+            "section": request.session["history"][-1][0],
+            "question": request.session["history"][-1][1],
         })
 
     # TODO: next prev (and how to measure progress across sections?)
