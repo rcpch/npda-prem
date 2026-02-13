@@ -19,14 +19,7 @@
       </legend>
       <div class="nhsuk-radios" data-module="nhsuk-radios">
         {% for clinic in clinics %}
-        <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="clinic-{{ forloop.counter }}"
-                 name="pz_code" type="radio" value="{{ clinic.pz_code }}"
-                 {% if selected_pz_code == clinic.pz_code %}checked{% endif %}>
-          <label class="nhsuk-label nhsuk-radios__label" for="clinic-{{ forloop.counter }}">
-            {{ clinic.name }}
-          </label>
-        </div>
+        {% include "submissions/partials/radio-input.html" with id="clinic-"|add:forloop.counter name="pz_code" value=clinic.pz_code label=clinic.name field_value=selected_pz_code %}
         {% endfor %}
       </div>
     </fieldset>

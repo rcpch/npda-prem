@@ -14,18 +14,8 @@
       {% trans "16. Does your child need to administer insulin or monitor blood glucose to manage their diabetes when in school?" %}
     </legend>
     <div class="nhsuk-radios" data-module="nhsuk-radios">
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="q16-yes" name="q16_insulin_or_monitor" type="radio" value="yes"
-               {% if submission and submission.q16_insulin_or_monitor == "yes" %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
-        <label class="nhsuk-label nhsuk-radios__label" for="q16-yes">{% trans "Yes" %}</label>
-      </div>
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="q16-no" name="q16_insulin_or_monitor" type="radio" value="no"
-               {% if submission and submission.q16_insulin_or_monitor == "no" %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
-        <label class="nhsuk-label nhsuk-radios__label" for="q16-no">{% trans "No" %}</label>
-      </div>
+      {% include "submissions/partials/radio-input.html" with id="q16-yes" name="q16_insulin_or_monitor" value="yes" label="Yes" field_value=submission.q16_insulin_or_monitor %}
+      {% include "submissions/partials/radio-input.html" with id="q16-no" name="q16_insulin_or_monitor" value="no" label="No" field_value=submission.q16_insulin_or_monitor %}
     </div>
   </fieldset>
 </div>
@@ -99,30 +89,10 @@
       {% trans "19. Can you follow/monitor your child's blood glucose remotely?" %}
     </legend>
     <div class="nhsuk-radios" data-module="nhsuk-radios">
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="q19-yes-always" name="q19_remote_monitoring" type="radio" value="yes-always"
-               {% if submission and submission.q19_remote_monitoring == "yes-always" %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
-        <label class="nhsuk-label nhsuk-radios__label" for="q19-yes-always">{% trans "Yes, always" %}</label>
-      </div>
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="q19-yes-sometimes" name="q19_remote_monitoring" type="radio" value="yes-sometimes"
-               {% if submission and submission.q19_remote_monitoring == "yes-sometimes" %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
-        <label class="nhsuk-label nhsuk-radios__label" for="q19-yes-sometimes">{% trans "Yes, sometimes" %}</label>
-      </div>
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="q19-no-never" name="q19_remote_monitoring" type="radio" value="no-never"
-               {% if submission and submission.q19_remote_monitoring == "no-never" %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
-        <label class="nhsuk-label nhsuk-radios__label" for="q19-no-never">{% trans "No, never" %}</label>
-      </div>
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="q19-dont-know" name="q19_remote_monitoring" type="radio" value="dont-know"
-               {% if submission and submission.q19_remote_monitoring == "dont-know" %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
-        <label class="nhsuk-label nhsuk-radios__label" for="q19-dont-know">{% trans "I don't know" %}</label>
-      </div>
+      {% include "submissions/partials/radio-input.html" with id="q19-yes-always" name="q19_remote_monitoring" value="yes-always" label="Yes, always" field_value=submission.q19_remote_monitoring %}
+      {% include "submissions/partials/radio-input.html" with id="q19-yes-sometimes" name="q19_remote_monitoring" value="yes-sometimes" label="Yes, sometimes" field_value=submission.q19_remote_monitoring %}
+      {% include "submissions/partials/radio-input.html" with id="q19-no-never" name="q19_remote_monitoring" value="no-never" label="No, never" field_value=submission.q19_remote_monitoring %}
+      {% include "submissions/partials/radio-input.html" with id="q19-dont-know" name="q19_remote_monitoring" value="dont-know" label="I don't know" field_value=submission.q19_remote_monitoring %}
     </div>
   </fieldset>
 </div>
@@ -134,36 +104,11 @@
       {% trans "20. Are you able to contact your child's school during the day if you are concerned about their diabetes?" %}
     </legend>
     <div class="nhsuk-radios" data-module="nhsuk-radios">
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="q20-yes-always" name="q20_contact_school" type="radio" value="yes-always"
-               {% if submission and submission.q20_contact_school == "yes-always" %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
-        <label class="nhsuk-label nhsuk-radios__label" for="q20-yes-always">{% trans "Yes, always" %}</label>
-      </div>
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="q20-yes-sometimes" name="q20_contact_school" type="radio" value="yes-sometimes"
-               {% if submission and submission.q20_contact_school == "yes-sometimes" %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
-        <label class="nhsuk-label nhsuk-radios__label" for="q20-yes-sometimes">{% trans "Yes, sometimes" %}</label>
-      </div>
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="q20-no-never" name="q20_contact_school" type="radio" value="no-never"
-               {% if submission and submission.q20_contact_school == "no-never" %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
-        <label class="nhsuk-label nhsuk-radios__label" for="q20-no-never">{% trans "No, never" %}</label>
-      </div>
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="q20-dont-know" name="q20_contact_school" type="radio" value="dont-know"
-               {% if submission and submission.q20_contact_school == "dont-know" %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
-        <label class="nhsuk-label nhsuk-radios__label" for="q20-dont-know">{% trans "I don't know" %}</label>
-      </div>
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="q20-na" name="q20_contact_school" type="radio" value="not-applicable"
-               {% if submission and submission.q20_contact_school == "not-applicable" %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
-        <label class="nhsuk-label nhsuk-radios__label" for="q20-na">{% trans "Not applicable" %}</label>
-      </div>
+      {% include "submissions/partials/radio-input.html" with id="q20-yes-always" name="q20_contact_school" value="yes-always" label="Yes, always" field_value=submission.q20_contact_school %}
+      {% include "submissions/partials/radio-input.html" with id="q20-yes-sometimes" name="q20_contact_school" value="yes-sometimes" label="Yes, sometimes" field_value=submission.q20_contact_school %}
+      {% include "submissions/partials/radio-input.html" with id="q20-no-never" name="q20_contact_school" value="no-never" label="No, never" field_value=submission.q20_contact_school %}
+      {% include "submissions/partials/radio-input.html" with id="q20-dont-know" name="q20_contact_school" value="dont-know" label="I don't know" field_value=submission.q20_contact_school %}
+      {% include "submissions/partials/radio-input.html" with id="q20-na" name="q20_contact_school" value="not-applicable" label="Not applicable" field_value=submission.q20_contact_school %}
     </div>
   </fieldset>
 </div>

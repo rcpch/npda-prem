@@ -1,7 +1,7 @@
 {% load i18n %}
 <div class="nhsuk-radios__item">
     <input class="nhsuk-radios__input" id="{{id}}" name="{{name}}" type="radio" value="{{value}}"
-        {% if submission and submission.q4_gender == value %}checked{% endif %}
+        {% if checked %}checked{% elif field_value == value %}checked{% endif %}
         hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
     <label class="nhsuk-label nhsuk-radios__label" for="{{id}}">{% trans label %}</label>
 </div>

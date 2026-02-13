@@ -11,12 +11,7 @@
     <div class="nhsuk-radios">
       {% get_available_languages as LANGUAGES %}
       {% for lang_code, lang_name in LANGUAGES %}
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="language-{{ lang_code }}" name="language" type="radio" value="{{ lang_code }}"{% if forloop.first %} checked{% endif %}>
-        <label class="nhsuk-label nhsuk-radios__label" for="language-{{ lang_code }}">
-          {% trans lang_name %}
-        </label>
-      </div>
+      {% include "submissions/partials/radio-input.html" with id="language-"|add:lang_code name="language" value=lang_code label=lang_name field_value=selected_language checked=forloop.first %}
       {% endfor %}
     </div>
   </fieldset>

@@ -17,18 +17,8 @@
       {% trans "16. Do you need to administer insulin or monitor blood glucose to manage your diabetes when in school?" %}
     </legend>
     <div class="nhsuk-radios" data-module="nhsuk-radios">
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="q16-yes" name="q16_insulin_or_monitor" type="radio" value="yes"
-               {% if submission and submission.q16_insulin_or_monitor == "yes" %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
-        <label class="nhsuk-label nhsuk-radios__label" for="q16-yes">{% trans "Yes" %}</label>
-      </div>
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="q16-no" name="q16_insulin_or_monitor" type="radio" value="no"
-               {% if submission and submission.q16_insulin_or_monitor == "no" %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
-        <label class="nhsuk-label nhsuk-radios__label" for="q16-no">{% trans "No" %}</label>
-      </div>
+      {% include "submissions/partials/radio-input.html" with id="q16-yes" name="q16_insulin_or_monitor" value="yes" label="Yes" field_value=submission.q16_insulin_or_monitor %}
+      {% include "submissions/partials/radio-input.html" with id="q16-no" name="q16_insulin_or_monitor" value="no" label="No" field_value=submission.q16_insulin_or_monitor %}
     </div>
   </fieldset>
 </div>

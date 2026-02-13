@@ -25,42 +25,12 @@
       {% endif %}
     </legend>
     <div class="nhsuk-radios" data-module="nhsuk-radios">
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="q35-never" name="q35_felt_left_out" type="radio" value="never"
-               {% if submission and submission.q35_felt_left_out == "never" %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
-        <label class="nhsuk-label nhsuk-radios__label" for="q35-never">{% trans "Never" %}</label>
-      </div>
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="q35-rarely" name="q35_felt_left_out" type="radio" value="rarely"
-               {% if submission and submission.q35_felt_left_out == "rarely" %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
-        <label class="nhsuk-label nhsuk-radios__label" for="q35-rarely">{% trans "Rarely" %}</label>
-      </div>
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="q35-sometimes" name="q35_felt_left_out" type="radio" value="sometimes"
-               {% if submission and submission.q35_felt_left_out == "sometimes" %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
-        <label class="nhsuk-label nhsuk-radios__label" for="q35-sometimes">{% trans "Sometimes" %}</label>
-      </div>
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="q35-often" name="q35_felt_left_out" type="radio" value="often"
-               {% if submission and submission.q35_felt_left_out == "often" %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
-        <label class="nhsuk-label nhsuk-radios__label" for="q35-often">{% trans "Often" %}</label>
-      </div>
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="q35-always" name="q35_felt_left_out" type="radio" value="always"
-               {% if submission and submission.q35_felt_left_out == "always" %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
-        <label class="nhsuk-label nhsuk-radios__label" for="q35-always">{% trans "Always" %}</label>
-      </div>
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="q35-dont-know" name="q35_felt_left_out" type="radio" value="dont-know"
-               {% if submission and submission.q35_felt_left_out == "dont-know" %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
-        <label class="nhsuk-label nhsuk-radios__label" for="q35-dont-know">{% trans "I don't know" %}</label>
-      </div>
+      {% include "submissions/partials/radio-input.html" with id="q35-never" name="q35_felt_left_out" value="never" label="Never" field_value=submission.q35_felt_left_out %}
+      {% include "submissions/partials/radio-input.html" with id="q35-rarely" name="q35_felt_left_out" value="rarely" label="Rarely" field_value=submission.q35_felt_left_out %}
+      {% include "submissions/partials/radio-input.html" with id="q35-sometimes" name="q35_felt_left_out" value="sometimes" label="Sometimes" field_value=submission.q35_felt_left_out %}
+      {% include "submissions/partials/radio-input.html" with id="q35-often" name="q35_felt_left_out" value="often" label="Often" field_value=submission.q35_felt_left_out %}
+      {% include "submissions/partials/radio-input.html" with id="q35-always" name="q35_felt_left_out" value="always" label="Always" field_value=submission.q35_felt_left_out %}
+      {% include "submissions/partials/radio-input.html" with id="q35-dont-know" name="q35_felt_left_out" value="dont-know" label="I don't know" field_value=submission.q35_felt_left_out %}
     </div>
   </fieldset>
 </div>
@@ -74,24 +44,9 @@
     </legend>
     <div id="q36-hint" class="nhsuk-hint">{% trans "E.g. Attending your child's school for diabetes management or your child being sent home because of diabetes-related illness." %}</div>
     <div class="nhsuk-radios" data-module="nhsuk-radios">
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="q36-yes" name="q36_lost_income" type="radio" value="yes"
-               {% if submission and submission.q36_lost_income == "yes" %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
-        <label class="nhsuk-label nhsuk-radios__label" for="q36-yes">{% trans "Yes" %}</label>
-      </div>
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="q36-no" name="q36_lost_income" type="radio" value="no"
-               {% if submission and submission.q36_lost_income == "no" %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
-        <label class="nhsuk-label nhsuk-radios__label" for="q36-no">{% trans "No" %}</label>
-      </div>
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="q36-not-applicable" name="q36_lost_income" type="radio" value="not-applicable"
-               {% if submission and submission.q36_lost_income == "not-applicable" %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
-        <label class="nhsuk-label nhsuk-radios__label" for="q36-not-applicable">{% trans "Not applicable" %}</label>
-      </div>
+      {% include "submissions/partials/radio-input.html" with id="q36-yes" name="q36_lost_income" value="yes" label="Yes" field_value=submission.q36_lost_income %}
+      {% include "submissions/partials/radio-input.html" with id="q36-no" name="q36_lost_income" value="no" label="No" field_value=submission.q36_lost_income %}
+      {% include "submissions/partials/radio-input.html" with id="q36-not-applicable" name="q36_lost_income" value="not-applicable" label="Not applicable" field_value=submission.q36_lost_income %}
     </div>
   </fieldset>
 </div>
@@ -108,36 +63,11 @@
       {% endif %}
     </legend>
     <div class="nhsuk-radios" data-module="nhsuk-radios">
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="q37-never" name="q37_anxiety_frequency" type="radio" value="never"
-               {% if submission and submission.q37_anxiety_frequency == "never" %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
-        <label class="nhsuk-label nhsuk-radios__label" for="q37-never">{% trans "Never" %}</label>
-      </div>
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="q37-less-than-weekly" name="q37_anxiety_frequency" type="radio" value="less-than-weekly"
-               {% if submission and submission.q37_anxiety_frequency == "less-than-weekly" %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
-        <label class="nhsuk-label nhsuk-radios__label" for="q37-less-than-weekly">{% trans "Less than once a week" %}</label>
-      </div>
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="q37-once-or-twice" name="q37_anxiety_frequency" type="radio" value="once-or-twice"
-               {% if submission and submission.q37_anxiety_frequency == "once-or-twice" %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
-        <label class="nhsuk-label nhsuk-radios__label" for="q37-once-or-twice">{% trans "Once or twice a week" %}</label>
-      </div>
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="q37-three-or-four" name="q37_anxiety_frequency" type="radio" value="three-or-four"
-               {% if submission and submission.q37_anxiety_frequency == "three-or-four" %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
-        <label class="nhsuk-label nhsuk-radios__label" for="q37-three-or-four">{% trans "Three or four times a week" %}</label>
-      </div>
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="q37-every-day" name="q37_anxiety_frequency" type="radio" value="every-day"
-               {% if submission and submission.q37_anxiety_frequency == "every-day" %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
-        <label class="nhsuk-label nhsuk-radios__label" for="q37-every-day">{% trans "Every day of the week" %}</label>
-      </div>
+      {% include "submissions/partials/radio-input.html" with id="q37-never" name="q37_anxiety_frequency" value="never" label="Never" field_value=submission.q37_anxiety_frequency %}
+      {% include "submissions/partials/radio-input.html" with id="q37-less-than-weekly" name="q37_anxiety_frequency" value="less-than-weekly" label="Less than once a week" field_value=submission.q37_anxiety_frequency %}
+      {% include "submissions/partials/radio-input.html" with id="q37-once-or-twice" name="q37_anxiety_frequency" value="once-or-twice" label="Once or twice a week" field_value=submission.q37_anxiety_frequency %}
+      {% include "submissions/partials/radio-input.html" with id="q37-three-or-four" name="q37_anxiety_frequency" value="three-or-four" label="Three or four times a week" field_value=submission.q37_anxiety_frequency %}
+      {% include "submissions/partials/radio-input.html" with id="q37-every-day" name="q37_anxiety_frequency" value="every-day" label="Every day of the week" field_value=submission.q37_anxiety_frequency %}
     </div>
   </fieldset>
 </div>
@@ -155,42 +85,12 @@
       {% endif %}
     </legend>
     <div class="nhsuk-radios" data-module="nhsuk-radios">
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="q38-very-well" name="q38_school_support" type="radio" value="very-well"
-               {% if submission and submission.q38_school_support == "very-well" %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
-        <label class="nhsuk-label nhsuk-radios__label" for="q38-very-well">{% trans "Very well supported" %}</label>
-      </div>
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="q38-well" name="q38_school_support" type="radio" value="well"
-               {% if submission and submission.q38_school_support == "well" %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
-        <label class="nhsuk-label nhsuk-radios__label" for="q38-well">{% trans "Well supported" %}</label>
-      </div>
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="q38-neutral" name="q38_school_support" type="radio" value="neutral"
-               {% if submission and submission.q38_school_support == "neutral" %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
-        <label class="nhsuk-label nhsuk-radios__label" for="q38-neutral">{% trans "Neutral" %}</label>
-      </div>
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="q38-poorly" name="q38_school_support" type="radio" value="poorly"
-               {% if submission and submission.q38_school_support == "poorly" %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
-        <label class="nhsuk-label nhsuk-radios__label" for="q38-poorly">{% trans "Poorly supported" %}</label>
-      </div>
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="q38-very-poorly" name="q38_school_support" type="radio" value="very-poorly"
-               {% if submission and submission.q38_school_support == "very-poorly" %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
-        <label class="nhsuk-label nhsuk-radios__label" for="q38-very-poorly">{% trans "Very poorly supported" %}</label>
-      </div>
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="q38-not-applicable" name="q38_school_support" type="radio" value="not-applicable"
-               {% if submission and submission.q38_school_support == "not-applicable" %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
-        <label class="nhsuk-label nhsuk-radios__label" for="q38-not-applicable">{% trans "Not applicable" %}</label>
-      </div>
+      {% include "submissions/partials/radio-input.html" with id="q38-very-well" name="q38_school_support" value="very-well" label="Very well supported" field_value=submission.q38_school_support %}
+      {% include "submissions/partials/radio-input.html" with id="q38-well" name="q38_school_support" value="well" label="Well supported" field_value=submission.q38_school_support %}
+      {% include "submissions/partials/radio-input.html" with id="q38-neutral" name="q38_school_support" value="neutral" label="Neutral" field_value=submission.q38_school_support %}
+      {% include "submissions/partials/radio-input.html" with id="q38-poorly" name="q38_school_support" value="poorly" label="Poorly supported" field_value=submission.q38_school_support %}
+      {% include "submissions/partials/radio-input.html" with id="q38-very-poorly" name="q38_school_support" value="very-poorly" label="Very poorly supported" field_value=submission.q38_school_support %}
+      {% include "submissions/partials/radio-input.html" with id="q38-not-applicable" name="q38_school_support" value="not-applicable" label="Not applicable" field_value=submission.q38_school_support %}
     </div>
   </fieldset>
 </div>
@@ -206,36 +106,11 @@
       {% endif %}
     </legend>
     <div class="nhsuk-radios" data-module="nhsuk-radios">
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="q39-very-well" name="q39_team_support" type="radio" value="very-well"
-               {% if submission and submission.q39_team_support == "very-well" %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
-        <label class="nhsuk-label nhsuk-radios__label" for="q39-very-well">{% trans "Very well supported" %}</label>
-      </div>
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="q39-well" name="q39_team_support" type="radio" value="well"
-               {% if submission and submission.q39_team_support == "well" %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
-        <label class="nhsuk-label nhsuk-radios__label" for="q39-well">{% trans "Well supported" %}</label>
-      </div>
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="q39-neutral" name="q39_team_support" type="radio" value="neutral"
-               {% if submission and submission.q39_team_support == "neutral" %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
-        <label class="nhsuk-label nhsuk-radios__label" for="q39-neutral">{% trans "Neutral" %}</label>
-      </div>
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="q39-poorly" name="q39_team_support" type="radio" value="poorly"
-               {% if submission and submission.q39_team_support == "poorly" %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
-        <label class="nhsuk-label nhsuk-radios__label" for="q39-poorly">{% trans "Poorly supported" %}</label>
-      </div>
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="q39-very-poorly" name="q39_team_support" type="radio" value="very-poorly"
-               {% if submission and submission.q39_team_support == "very-poorly" %}checked{% endif %}
-               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
-        <label class="nhsuk-label nhsuk-radios__label" for="q39-very-poorly">{% trans "Very poorly supported" %}</label>
-      </div>
+      {% include "submissions/partials/radio-input.html" with id="q39-very-well" name="q39_team_support" value="very-well" label="Very well supported" field_value=submission.q39_team_support %}
+      {% include "submissions/partials/radio-input.html" with id="q39-well" name="q39_team_support" value="well" label="Well supported" field_value=submission.q39_team_support %}
+      {% include "submissions/partials/radio-input.html" with id="q39-neutral" name="q39_team_support" value="neutral" label="Neutral" field_value=submission.q39_team_support %}
+      {% include "submissions/partials/radio-input.html" with id="q39-poorly" name="q39_team_support" value="poorly" label="Poorly supported" field_value=submission.q39_team_support %}
+      {% include "submissions/partials/radio-input.html" with id="q39-very-poorly" name="q39_team_support" value="very-poorly" label="Very poorly supported" field_value=submission.q39_team_support %}
     </div>
   </fieldset>
 </div>
