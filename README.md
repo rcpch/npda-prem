@@ -20,6 +20,7 @@ Requested by team
 My list
 
 - GitHub pr check
+- Dry refactor probably broke make messages? Check!
 - Display current role and unit in UI?
 - Q4 should say "do you identify as" (check translations?)
 - Fix going back to change unit

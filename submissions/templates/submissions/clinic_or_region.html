@@ -38,72 +38,11 @@
       </legend>
       <div id="q1-hint" class="nhsuk-hint">{% trans "Ask your diabetes team if you are unsure." %}</div>
       <div class="nhsuk-radios" data-module="nhsuk-radios">
-        <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="q1-nenc" name="region" type="radio" value="north-east-north-cumbria"
-                 {% if region == "north-east-north-cumbria" %}checked{% endif %}>
-          <label class="nhsuk-label nhsuk-radios__label" for="q1-nenc">{% trans "North East & North Cumbria" %}</label>
-        </div>
-        <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="q1-nw" name="region" type="radio" value="north-west"
-                 {% if region == "north-west" %}checked{% endif %}>
-          <label class="nhsuk-label nhsuk-radios__label" for="q1-nw">{% trans "North West" %}</label>
-        </div>
-        <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="q1-yh" name="region" type="radio" value="yorkshire-humber"
-                 {% if region == "yorkshire-humber" %}checked{% endif %}>
-          <label class="nhsuk-label nhsuk-radios__label" for="q1-yh">{% trans "Yorkshire & Humber" %}</label>
-        </div>
-        <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="q1-em" name="region" type="radio" value="east-midlands"
-                 {% if region == "east-midlands" %}checked{% endif %}>
-          <label class="nhsuk-label nhsuk-radios__label" for="q1-em">{% trans "East Midlands" %}</label>
-        </div>
-        <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="q1-wm" name="region" type="radio" value="west-midlands"
-                 {% if region == "west-midlands" %}checked{% endif %}>
-          <label class="nhsuk-label nhsuk-radios__label" for="q1-wm">{% trans "West Midlands" %}</label>
-        </div>
-        <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="q1-ee" name="region" type="radio" value="east-of-england"
-                 {% if region == "east-of-england" %}checked{% endif %}>
-          <label class="nhsuk-label nhsuk-radios__label" for="q1-ee">{% trans "East of England" %}</label>
-        </div>
-        <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="q1-sc" name="region" type="radio" value="south-central"
-                 {% if region == "south-central" %}checked{% endif %}>
-          <label class="nhsuk-label nhsuk-radios__label" for="q1-sc">{% trans "South Central" %}</label>
-        </div>
-        <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="q1-lse" name="region" type="radio" value="london-south-east"
-                 {% if region == "london-south-east" %}checked{% endif %}>
-          <label class="nhsuk-label nhsuk-radios__label" for="q1-lse">{% trans "London & South East" %}</label>
-        </div>
-        <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="q1-sw" name="region" type="radio" value="south-west"
-                 {% if region == "south-west" %}checked{% endif %}>
-          <label class="nhsuk-label nhsuk-radios__label" for="q1-sw">{% trans "South West" %}</label>
-        </div>
-        <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="q1-tv" name="region" type="radio" value="thames-valley"
-                 {% if region == "thames-valley" %}checked{% endif %}>
-          <label class="nhsuk-label nhsuk-radios__label" for="q1-tv">{% trans "Thames Valley" %}</label>
-        </div>
-        <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="q1-wales" name="region" type="radio" value="wales"
-                 {% if region == "wales" %}checked{% endif %}>
-          <label class="nhsuk-label nhsuk-radios__label" for="q1-wales">{% trans "Wales" %}</label>
-        </div>
-        <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="q1-jersey" name="region" type="radio" value="jersey"
-                 {% if region == "jersey" %}checked{% endif %}>
-          <label class="nhsuk-label nhsuk-radios__label" for="q1-jersey">{% trans "Jersey" %}</label>
-        </div>
+        {% for region in regions_with_slugs %}
+          {% include "submissions/partials/radio-input.html" with id="q1-{region.0}" name="region" value=region.0 label=region.1 field_value=region.0 autosave=False %}
+        {% endfor %}
         <div class="nhsuk-radios__divider">{% trans "or" %}</div>
-        <div class="nhsuk-radios__item">
-          <input class="nhsuk-radios__input" id="q1-unsure" name="region" type="radio" value="unsure"
-                 {% if region == "unsure" %}checked{% endif %}>
-          <label class="nhsuk-label nhsuk-radios__label" for="q1-unsure">{% trans "I'm not sure" %}</label>
-        </div>
+        {% include "submissions/partials/radio-input.html" with id="q1-unsure" name="region" value="unsure" label="I'm not sure" field_value=region.0 autosave=False %}
       </div>
     </fieldset>
   </div>

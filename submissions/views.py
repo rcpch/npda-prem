@@ -5,7 +5,7 @@ from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
 from django.views.decorators.http import require_POST
 
-from .clinics import get_all_clinics, get_clinics_for_region
+from .clinics import get_all_clinics, get_clinics_for_region, REGION_SLUG_MAP
 from .models import Submission
 
 
@@ -140,12 +140,18 @@ def clinic_or_region(request, lang):
             request.session["region"] = region
             return redirect(reverse("clinic_in_region", kwargs={"lang": lang}))
 
+    clinics = get_all_clinics()
+    
+    regions = sorted(set(clinic["region"] for clinic in clinics))
+    regions_with_slugs = [(REGION_SLUG_MAP[r], r) for r in regions]
+
     clinic_values = [f"{clinic['name']} - {clinic['region']}" for clinic in get_all_clinics()]
     clinic_values_json = json.dumps(clinic_values)
 
     return render(request, "submissions/clinic_or_region.html", {
         "lang": lang,
         "region": request.session.get("region", ""),
+        "regions_with_slugs": regions_with_slugs,
         "clinic_values_json": clinic_values_json
     })
 
