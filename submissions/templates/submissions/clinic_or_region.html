@@ -42,7 +42,7 @@
           {% include "submissions/partials/radio-input.html" with id=region_with_slug.0 name="region" value=region_with_slug.0 label=region_with_slug.1 field_value=region autosave=False %}
         {% endfor %}
         <div class="nhsuk-radios__divider">{% trans "or" %}</div>
-        {% include "submissions/partials/radio-input.html" with id="unsure" name="region" value="unsure" label="I'm not sure" field_value=region.0 autosave=False %}
+        {% include "submissions/partials/radio-input.html" with id="unsure" name="region" value="all" label="I'm not sure" field_value=region.0 autosave=False %}
       </div>
     </fieldset>
   </div>

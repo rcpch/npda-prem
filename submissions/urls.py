@@ -7,7 +7,7 @@ urlpatterns = [
     path("", views.landing, name="landing"),
     # All other pages under /<lang>/...
     path("<str:lang>/clinic-or-region", views.clinic_or_region, name="clinic_or_region"),
-    path("<str:lang>/clinic-in-region/", views.clinic_in_region, name="clinic_in_region"),
+    path("<str:lang>/clinic-in-region/<slug:region>/", views.clinic_in_region, name="clinic_in_region"),
     path("<str:lang>/role/", views.role_form, name="role_form"),
     # Parent form
     path("<str:lang>/parent/", views.parent_form, name="parent_form"),

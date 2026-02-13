@@ -137,8 +137,7 @@ def clinic_or_region(request, lang):
             if "pz_code" in request.session:
                 return redirect(reverse("role_form", kwargs={"lang": lang}))
         else:
-            request.session["region"] = region
-            return redirect(reverse("clinic_in_region", kwargs={"lang": lang}))
+            return redirect(reverse("clinic_in_region", kwargs={"lang": lang, "region": region}))
 
     clinics = get_all_clinics()
     
@@ -161,22 +160,20 @@ def clinic_or_region(request, lang):
 
     return render(request, "submissions/clinic_or_region.html", {
         "lang": lang,
-        "region": request.session.get("region", ""),
+        "region": None, # always select again
         "regions_with_slugs": regions_with_slugs,
         "clinic_json": clinic_json
     })
 
 
-def clinic_in_region(request, lang):
+def clinic_in_region(request, lang, region):
     """Step 2: select the clinic from the chosen region (or all if unsure)."""
-    region = request.session.get("region", "")
-
     if request.method == "POST":
         pz_code = request.POST.get("pz_code", "")
         request.session["pz_code"] = pz_code
         return redirect(reverse("role_form", kwargs={"lang": lang}))
 
-    if region == "unsure" or not region:
+    if region == "all":
         clinics = get_all_clinics()
     else:
         clinics = get_clinics_for_region(region)
@@ -185,7 +182,7 @@ def clinic_in_region(request, lang):
         "lang": lang,
         "region": region,
         "clinics": clinics,
-        "selected_pz_code": request.session.get("pz_code", ""),
+        "pz_code": request.session.get("pz_code", ""),
     })
 
 
