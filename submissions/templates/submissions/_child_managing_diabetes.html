@@ -4,7 +4,6 @@
 {# Child Managing Diabetes partial – Q16, Q17, Q18 + shared Q21–Q25  #}
 {# Expected context variables:                                        #}
 {#   submission          – Submission model instance (may be None)     #}
-{#   autosave_url_name   – "child_autosave"                           #}
 {#   role                – "cyp"                                      #}
 {# ================================================================== #}
 
@@ -21,13 +20,13 @@
       <div class="nhsuk-radios__item">
         <input class="nhsuk-radios__input" id="q16-yes" name="q16_insulin_or_monitor" type="radio" value="yes"
                {% if submission and submission.q16_insulin_or_monitor == "yes" %}checked{% endif %}
-               hx-post="{%  url autosave_url_name lang=lang  %}" hx-trigger="change" hx-swap="none">
+               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
         <label class="nhsuk-label nhsuk-radios__label" for="q16-yes">{% trans "Yes" %}</label>
       </div>
       <div class="nhsuk-radios__item">
         <input class="nhsuk-radios__input" id="q16-no" name="q16_insulin_or_monitor" type="radio" value="no"
                {% if submission and submission.q16_insulin_or_monitor == "no" %}checked{% endif %}
-               hx-post="{%  url autosave_url_name lang=lang  %}" hx-trigger="change" hx-swap="none">
+               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-swap="none">
         <label class="nhsuk-label nhsuk-radios__label" for="q16-no">{% trans "No" %}</label>
       </div>
     </div>
@@ -46,19 +45,19 @@
       <div class="nhsuk-checkboxes__item">
         <input class="nhsuk-checkboxes__input" id="q17-injection" name="q17_insulin_method" type="checkbox" value="injection"
                {% if submission and "injection" in submission.q17_insulin_method %}checked{% endif %}
-               hx-post="{%  url autosave_url_name lang=lang  %}" hx-trigger="change" hx-include="[name='q17_insulin_method']" hx-swap="none">
+               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-include="[name='q17_insulin_method']" hx-swap="none">
         <label class="nhsuk-label nhsuk-checkboxes__label" for="q17-injection">{% trans "Injection/Smart insulin pen – e.g. Novopen, InPen" %}</label>
       </div>
       <div class="nhsuk-checkboxes__item">
         <input class="nhsuk-checkboxes__input" id="q17-pump" name="q17_insulin_method" type="checkbox" value="pump"
                {% if submission and "pump" in submission.q17_insulin_method %}checked{% endif %}
-               hx-post="{%  url autosave_url_name lang=lang  %}" hx-trigger="change" hx-include="[name='q17_insulin_method']" hx-swap="none">
+               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-include="[name='q17_insulin_method']" hx-swap="none">
         <label class="nhsuk-label nhsuk-checkboxes__label" for="q17-pump">{% trans "Insulin pump (including as part of a Hybrid Closed Loop system) – e.g. Omnipod, MiniMed, Tandem" %}</label>
       </div>
       <div class="nhsuk-checkboxes__item">
         <input class="nhsuk-checkboxes__input" id="q17-na" name="q17_insulin_method" type="checkbox" value="na"
                {% if submission and "na" in submission.q17_insulin_method %}checked{% endif %}
-               hx-post="{%  url autosave_url_name lang=lang  %}" hx-trigger="change" hx-include="[name='q17_insulin_method']" hx-swap="none">
+               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-include="[name='q17_insulin_method']" hx-swap="none">
         <label class="nhsuk-label nhsuk-checkboxes__label" for="q17-na">{% trans "N/A – I do not administer insulin in school" %}</label>
       </div>
     </div>
@@ -77,26 +76,26 @@
       <div class="nhsuk-checkboxes__item">
         <input class="nhsuk-checkboxes__input" id="q18-finger" name="q18_glucose_monitoring" type="checkbox" value="finger-prick"
                {% if submission and "finger-prick" in submission.q18_glucose_monitoring %}checked{% endif %}
-               hx-post="{%  url autosave_url_name lang=lang  %}" hx-trigger="change" hx-include="[name='q18_glucose_monitoring']" hx-swap="none">
+               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-include="[name='q18_glucose_monitoring']" hx-swap="none">
         <label class="nhsuk-label nhsuk-checkboxes__label" for="q18-finger">{% trans "Finger prick testing" %}</label>
       </div>
       <div class="nhsuk-checkboxes__item">
         <input class="nhsuk-checkboxes__input" id="q18-cgm" name="q18_glucose_monitoring" type="checkbox" value="cgm"
                {% if submission and "cgm" in submission.q18_glucose_monitoring %}checked{% endif %}
-               hx-post="{%  url autosave_url_name lang=lang  %}" hx-trigger="change" hx-include="[name='q18_glucose_monitoring']" hx-swap="none">
+               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-include="[name='q18_glucose_monitoring']" hx-swap="none">
         <label class="nhsuk-label nhsuk-checkboxes__label" for="q18-cgm">{% trans "Continuous glucose monitor (including as part of a Hybrid Closed Loop system) e.g. Dexcom, FreeStyle Libre 2 Plus or 3 Plus" %}</label>
       </div>
       <div class="nhsuk-checkboxes__item">
         <input class="nhsuk-checkboxes__input" id="q18-na" name="q18_glucose_monitoring" type="checkbox" value="na"
                {% if submission and "na" in submission.q18_glucose_monitoring %}checked{% endif %}
-               hx-post="{%  url autosave_url_name lang=lang  %}" hx-trigger="change" hx-include="[name='q18_glucose_monitoring']" hx-swap="none">
+               hx-post="{%  url 'autosave' lang=lang role=role  %}" hx-trigger="change" hx-include="[name='q18_glucose_monitoring']" hx-swap="none">
         <label class="nhsuk-label nhsuk-checkboxes__label" for="q18-na">{% trans "N/A – I do not monitor blood glucose at school" %}</label>
       </div>
     </div>
   </fieldset>
 </div>
 
-{% include "submissions/_shared_managing_diabetes_q21_q25.html" with autosave_url_name=autosave_url_name role=role %}
+{% include "submissions/_shared_managing_diabetes_q21_q25.html" %}
 
 <script>
 (function() {

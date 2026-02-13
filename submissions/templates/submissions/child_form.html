@@ -16,7 +16,7 @@
       novalidate>
   {% csrf_token %}
 
-  {% include section_template with autosave_url_name="child_autosave" role="cyp" %}
+  {% include section_template with role="cyp" %}
 
   {% if is_last_section %}
     <button class="nhsuk-button" type="submit" data-module="nhsuk-button">

@@ -59,19 +59,6 @@ JSON_FIELDS = [
 ]
 
 
-def _save_fields(submission, request):
-    """Update a submission from POST data (autosave or final submit)."""
-    for field in SIMPLE_FIELDS:
-        if field in request.POST:
-            setattr(submission, field, request.POST[field])
-
-    for field in JSON_FIELDS:
-        if field in request.POST:
-            setattr(submission, field, [v for v in request.POST.getlist(field) if v])
-
-    submission.save()
-
-
 # ---------------------------------------------------------------------------
 # Section definitions
 # ---------------------------------------------------------------------------
@@ -216,7 +203,9 @@ def get_idx_prev_next(lang, sections, section_slug, form_url_name):
     return (idx, prev_url, next_url)
 
 
-def build_form(request, lang, sections, section_slug, form_url_name):
+def build_form(request, lang, sections, section_slug, form_prefix):
+    form_url_name = f"{form_prefix}_section"
+
     if section_slug is None:
         return redirect(
             reverse(form_url_name, kwargs={"lang": lang, "section": sections[0]["slug"]})
@@ -250,7 +239,7 @@ def build_form(request, lang, sections, section_slug, form_url_name):
 
     ctx["submission"] = submission
 
-    return render(request, "submissions/parent_form.html", ctx)
+    return render(request, f"submissions/{form_prefix}.html", ctx)
 
 # ---------------------------------------------------------------------------
 # Parent form
@@ -262,12 +251,12 @@ def parent_form(request, lang, section=None):
         lang=lang,
         section_slug=section,
         sections=PARENT_SECTIONS,
-        form_url_name="parent_form_section"
+        form_prefix="parent_form"
     )
 
 
 @require_POST
-def parent_autosave(request, lang):
+def autosave(request, lang, role):
     submission_id = request.session.get("submission_id")
     submission = None
 
@@ -279,13 +268,22 @@ def parent_autosave(request, lang):
 
     if submission is None:
         submission = Submission.objects.create(
-            role="parent",
+            role=role,
             language=lang,
             pz_code=request.session.get("pz_code", ""),
         )
         request.session["submission_id"] = submission.pk
 
-    _save_fields(submission, request)
+    for field in SIMPLE_FIELDS:
+        if field in request.POST:
+            setattr(submission, field, request.POST[field])
+
+    for field in JSON_FIELDS:
+        if field in request.POST:
+            setattr(submission, field, [v for v in request.POST.getlist(field) if v])
+
+    submission.save()
+
     return HttpResponse(status=204)
 
 
@@ -314,31 +312,8 @@ def child_form(request, lang, section=None):
         lang=lang,
         section_slug=section,
         sections=CHILD_SECTIONS,
-        form_url_name="child_form_section"
+        form_prefix="child_form"
     )
-
-
-@require_POST
-def child_autosave(request, lang):
-    submission_id = request.session.get("submission_id")
-    submission = None
-
-    if submission_id:
-        try:
-            submission = Submission.objects.get(pk=submission_id, submitted=False)
-        except Submission.DoesNotExist:
-            pass
-
-    if submission is None:
-        submission = Submission.objects.create(
-            role="cyp",
-            language=lang,
-            pz_code=request.session.get("pz_code", ""),
-        )
-        request.session["submission_id"] = submission.pk
-
-    _save_fields(submission, request)
-    return HttpResponse(status=204)
 
 
 @require_POST
