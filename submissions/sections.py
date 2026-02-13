@@ -87,6 +87,16 @@ def build_sections():
                 },
                 "type": "radio",
                 "options": HOME_ED_CHOICES,
+            },
+            {
+                "id": "q12_free_school_meals",
+                "roles": ["cyp", "parent"],
+                "title": {
+                    "cyp": _("q12.child.title"),
+                    "parent": _("q12.parent.title"),
+                },
+                "type": "radio",
+                "options": FREE_SCHOOL_MEALS_CHOICES,
             }
         ]
     }

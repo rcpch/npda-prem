@@ -58,6 +58,13 @@ HOME_ED_CHOICES = [
     ("prefer-not-to-say", _("Prefer not to say")),
 ]
 
+FREE_SCHOOL_MEALS_CHOICES = [
+    ("yes", _("Yes")),
+    ("no", _("No")),
+    ("dont-know", _("I don't know")),
+    ("prefer-not-to-say", _("Prefer not to say")),
+]
+
 class Submission(models.Model):
     # -- Metadata ----------------------------------------------------------
     ROLE_CHOICES = [
@@ -127,12 +134,6 @@ class Submission(models.Model):
     )
 
     # -- Q12: Free school meals --------------------------------------------
-    FREE_SCHOOL_MEALS_CHOICES = [
-        ("yes", _("Yes")),
-        ("no", _("No")),
-        ("dont-know", _("I don't know")),
-        ("prefer-not-to-say", _("Prefer not to say")),
-    ]
     q12_free_school_meals = models.CharField(
         max_length=20, choices=FREE_SCHOOL_MEALS_CHOICES, blank=True, default="",
     )
