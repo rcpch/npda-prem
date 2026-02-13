@@ -20,5 +20,5 @@ urlpatterns = [
     # Done!
     path("<str:lang>/confirmation/", views.confirmation, name="confirmation"),
     # Other
-    path("/start-again/", views.start_again, name="start_again"),
+    path("start-again/", views.start_again, name="start_again"),
 ]
