@@ -193,12 +193,12 @@ def confirmation(request, lang):
     return render(request, "submissions/confirmation.html", {"lang": lang})
 
 
-
-def _section_context(sections, section_slug, form_url_name, lang):
-    """Build template context for the current section."""
+def get_idx_prev_next(lang, sections, section_slug, form_url_name):
     slugs = [s["slug"] for s in sections]
+
     if section_slug not in slugs:
         raise Http404
+    
     idx = slugs.index(section_slug)
 
     prev_url = (
@@ -206,23 +206,14 @@ def _section_context(sections, section_slug, form_url_name, lang):
         if idx > 0
         else reverse("role_form", kwargs={"lang": lang})
     )
+
     next_url = (
         reverse(form_url_name, kwargs={"lang": lang, "section": slugs[idx + 1]})
         if idx < len(sections) - 1
         else None
     )
 
-    return {
-        "sections": sections,
-        "current_index": idx,
-        "current_display": idx + 1,
-        "total_sections": len(sections),
-        "section_template": sections[idx]["template"],
-        "prev_url": prev_url,
-        "next_url": next_url,
-        "is_last_section": idx == len(sections) - 1,
-        "lang": lang,
-    }
+    return (idx, prev_url, next_url)
 
 
 def build_form(request, lang, sections, section_slug, form_url_name):
@@ -243,12 +234,19 @@ def build_form(request, lang, sections, section_slug, form_url_name):
             del request.session["submission_id"]
             return redirect(reverse("landing"))
 
-    ctx = _section_context(
-        sections=sections,
-        section_slug=section_slug,
-        form_url_name=form_url_name,
-        lang=lang
-    )
+    (idx, prev_url, next_url) = get_idx_prev_next(lang, sections, section_slug, form_url_name)
+
+    ctx = {
+        "sections": sections,
+        "current_index": idx,
+        "current_display": idx + 1,
+        "total_sections": len(sections),
+        "section_template": sections[idx]["template"],
+        "prev_url": prev_url,
+        "next_url": next_url,
+        "is_last_section": idx == len(sections) - 1,
+        "lang": lang,
+    }
 
     ctx["submission"] = submission
 
@@ -318,26 +316,6 @@ def child_form(request, lang, section=None):
         sections=CHILD_SECTIONS,
         form_url_name="child_form_section"
     )
-
-    if section is None:
-        return redirect(
-            reverse("child_form_section", kwargs={"lang": lang, "section": CHILD_SECTIONS[0]["slug"]})
-        )
-
-    submission = None
-    submission_id = request.session.get("submission_id")
-
-    if submission_id:
-        try:
-            submission = Submission.objects.get(
-                pk=submission_id, role="cyp", submitted=False
-            )
-        except Submission.DoesNotExist:
-            del request.session["submission_id"]
-
-    ctx = _section_context(CHILD_SECTIONS, section, "child_form_section", lang)
-    ctx["submission"] = submission
-    return render(request, "submissions/child_form.html", ctx)
 
 
 @require_POST
