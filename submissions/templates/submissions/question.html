@@ -47,8 +47,45 @@
     </div>
 
     <nav class="nhsuk-u-margin-top-6" aria-label="{% trans 'Form navigation' %}">
-      <input type="submit" class="nhsuk-button" value="{% trans 'Continue' %}">
+      <input type="submit" class="nhsuk-button" id="continue-btn" value="{% trans 'Continue' %}" disabled aria-disabled="true">
     </nav>
 
 </form>
+
+<script>
+  (function() {
+    var btn = document.getElementById('continue-btn');
+    var form = btn.closest('form');
+    var qid = '{{ question.id }}';
+    var qtype = '{{ question.type }}';
+
+    function hasAnswer() {
+      if (qtype === 'radio') {
+        return form.querySelector('input[name="' + qid + '"]:checked') !== null;
+      }
+      if (qtype === 'checkbox') {
+        return form.querySelector('input[name="' + qid + '"][type="checkbox"]:checked') !== null;
+      }
+      if (qtype === 'number' || qtype === 'textarea') {
+        var el = form.querySelector('[name="' + qid + '"]');
+        return el && el.value.trim() !== '';
+      }
+      return false;
+    }
+
+    function toggle() {
+      if (hasAnswer()) {
+        btn.disabled = false;
+        btn.removeAttribute('aria-disabled');
+      } else {
+        btn.disabled = true;
+        btn.setAttribute('aria-disabled', 'true');
+      }
+    }
+
+    toggle();
+    form.addEventListener('change', toggle);
+    form.addEventListener('input', toggle);
+  })();
+</script>
 {% endblock %}

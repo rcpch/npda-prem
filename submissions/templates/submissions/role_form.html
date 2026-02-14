@@ -30,7 +30,7 @@
   </fieldset>
 </div>
 
-<a class="nhsuk-button" id="continue-btn" href="#" data-module="nhsuk-button">
+<a class="nhsuk-button nhsuk-button--disabled" id="continue-btn" href="#" data-module="nhsuk-button" aria-disabled="true">
   {% trans "Continue" %}
 </a>
 
@@ -41,9 +41,15 @@
     var parentUrl = "{% url 'section' lang=lang role='parent' section='demographics' %}";
     var childUrl = "{% url 'section' lang=lang role='cyp' section='demographics' %}";
 
+    button.addEventListener('click', function(e) {
+      if (button.getAttribute('aria-disabled') === 'true') e.preventDefault();
+    });
+
     radios.forEach(function(radio) {
       radio.addEventListener('change', function() {
         button.href = this.value === 'parent' ? parentUrl : childUrl;
+        button.classList.remove('nhsuk-button--disabled');
+        button.removeAttribute('aria-disabled');
       });
     });
   })();
