@@ -15,13 +15,14 @@
                 Skip the first question and set the diabetes unit automatically so multiple people
                 can complete the survey on the same device (e.g. within the hospital itself).
             </div>
+            <div id="location-picker" class="autocomplete-wrapper"></div>
             <div class="nhsuk-checkboxes" data-module="nhsuk-checkboxes">
-            <div class="nhsuk-checkboxes__item">
-                <input class="nhsuk-checkboxes__input" id="tablet-mode" name="tablet-mode" type="checkbox" value="email">
-                <label class="nhsuk-label nhsuk-checkboxes__label" for="tablet-mode">
-                    Tablet Mode
-                </label>
-            </div>
+                <div class="nhsuk-checkboxes__item">
+                    <input class="nhsuk-checkboxes__input" id="tablet-mode" name="tablet-mode" type="checkbox" value="email">
+                    <label class="nhsuk-label nhsuk-checkboxes__label" for="tablet-mode">
+                        Tablet Mode
+                    </label>
+                </div>
             </div>
         </fieldset>
     </div>
@@ -29,4 +30,6 @@
       <input type="submit" class="nhsuk-button" id="continue-btn" value="{% trans 'Save' %}">
     </nav>
 </form>
+
+{% include "submissions/partials/clinic-search-js.html" %}
 {% endblock %}

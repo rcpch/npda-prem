@@ -1,0 +1,20 @@
+<script type="application/json" id="clinic-data">
+  {{clinic_json|safe }}
+</script>
+
+<script>
+  const { clinic_names_with_regions, selected_clinic_name_with_region } = JSON.parse(document.getElementById('clinic-data').textContent);
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const autoComplete = document.getElementById('location-picker');
+
+    accessibleAutocomplete({
+      element: autoComplete,
+      id: 'location-autocomplete',
+      name: 'clinic',
+      source: clinic_names_with_regions,
+      defaultValue: selected_clinic_name_with_region || '',
+      showAllValues: true
+    });
+  });
+</script>
