@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+<form method="post" novalidate>
+    {% csrf_token %}
+    <div class="nhsuk-form-group">
+        <fieldset class="nhsuk-fieldset" aria-describedby="tablet-mode-hint">
+            <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+            <h1 class="nhsuk-fieldset__heading">
+                Tablet Mode
+            </h1>
+            </legend>
+            <div id="tablet-mode-hint" class="nhsuk-hint">
+                Skip the first question and set the diabetes unit automatically so multiple people
+                can complete the survey on the same device (e.g. within the hospital itself).
+            </div>
+            <div class="nhsuk-checkboxes" data-module="nhsuk-checkboxes">
+            <div class="nhsuk-checkboxes__item">
+                <input class="nhsuk-checkboxes__input" id="tablet-mode" name="tablet-mode" type="checkbox" value="email">
+                <label class="nhsuk-label nhsuk-checkboxes__label" for="tablet-mode">
+                    Tablet Mode
+                </label>
+            </div>
+            </div>
+        </fieldset>
+    </div>
+    <nav class="nhsuk-u-margin-top-6" aria-label="{% trans 'Form navigation' %}">
+      <input type="submit" class="nhsuk-button" id="continue-btn" value="{% trans 'Save' %}">
+    </nav>
+</form>
+{% endblock %}

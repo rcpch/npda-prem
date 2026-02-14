@@ -35,6 +35,7 @@ My list
 - hx-boost? does it change the URL without writing a history entry?
 - Go back skips over the introduction (arguably a feature?)
 - Triple check translations
+  - "I'm not sure" is not translated?
   - Get the bot to go byte for byte between the web page and the translations spreadsheets?
   - Submit additional translations (e.g. section X of X)
 - prodmon?

@@ -5,6 +5,7 @@ from . import views
 urlpatterns = [
     # Landing page -- no language prefix, always English
     path("", views.landing, name="landing"),
+    path("tablet-mode/", views.tablet_mode, name="tablet_mode"),
     # All other pages under /<lang>/...
     path("<str:lang>/clinic-or-region", views.clinic_or_region, name="clinic_or_region"),
     path("<str:lang>/clinic-in-region/<slug:region>/", views.clinic_in_region, name="clinic_in_region"),

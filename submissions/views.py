@@ -394,3 +394,7 @@ def start_again(request):
         del request.session["submission_id"]
 
     return redirect(reverse("landing"))
+
+
+def tablet_mode(request):
+    return render(request, "submissions/tablet-mode.html", {})
