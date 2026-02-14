@@ -37,6 +37,12 @@
                     {% endfor %}
                 </div>
             {% endif %}
+            {% if question.type == "number" %}
+                <input class="nhsuk-input nhsuk-input--width-4" id="{{ question.id }}" name="{{ question.id }}" type="number" value="{{ field_value|default:'' }}" min="0">
+            {% endif %}
+            {% if question.type == "textarea" %}
+                <textarea class="nhsuk-textarea" id="{{ question.id }}" name="{{ question.id }}" rows="5">{{ field_value|default:'' }}</textarea>
+            {% endif %}
         </fieldset>
     </div>
 

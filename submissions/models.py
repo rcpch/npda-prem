@@ -78,6 +78,106 @@ INSULIN_METHOD_OPTIONS = [
     ("na", _("N/A – My child does not administer insulin in school")),
 ]
 
+GLUCOSE_MONITORING_OPTIONS = [
+    ("finger-prick", _("Finger prick testing")),
+    ("cgm", _("Continuous glucose monitor (including as part of a Hybrid Closed Loop system) e.g. Dexcom, FreeStyle Libre 2 Plus or 3 Plus")),
+    ("na", _("q18.na")),
+]
+
+RELATIONSHIP_CHOICES = [
+    ("mother", _("Mother")),
+    ("father", _("Father")),
+    ("grandmother", _("Grandmother")),
+    ("grandfather", _("Grandfather")),
+    ("other", _("Other guardian or family member")),
+]
+
+YES_NO_DONTKNOW_CHOICES = [
+    ("yes", _("Yes")),
+    ("no", _("No")),
+    ("dont-know", _("I don't know")),
+]
+
+PLAN_COVERAGE_CHOICES = [
+    ("yes", _("Yes")),
+    ("partially", _("Partially covers diabetes needs at school")),
+    ("no", _("No")),
+    ("dont-know", _("I don't know")),
+]
+
+FREQUENCY_4_CHOICES = [
+    ("yes-always", _("Yes, always")),
+    ("yes-sometimes", _("Yes, sometimes")),
+    ("no-never", _("No, never")),
+    ("dont-know", _("I don't know")),
+]
+
+FREQUENCY_5_CHOICES = [
+    ("yes-always", _("Yes, always")),
+    ("yes-sometimes", _("Yes, sometimes")),
+    ("no-never", _("No, never")),
+    ("dont-know", _("I don't know")),
+    ("not-applicable", _("Not applicable")),
+]
+
+FREQUENCY_4_NA_CHOICES = [
+    ("yes-always", _("Yes, always")),
+    ("yes-sometimes", _("Yes, sometimes")),
+    ("no-never", _("No, never")),
+    ("not-applicable", _("Not applicable")),
+]
+
+FREQUENCY_6_CHOICES = [
+    ("never", _("Never")),
+    ("rarely", _("Rarely")),
+    ("sometimes", _("Sometimes")),
+    ("often", _("Often")),
+    ("always", _("Always")),
+    ("dont-know", _("I don't know")),
+]
+
+YES_NO_NA_CHOICES = [
+    ("yes", _("Yes")),
+    ("no", _("No")),
+    ("not-applicable", _("Not applicable")),
+]
+
+ANXIETY_CHOICES = [
+    ("never", _("Never")),
+    ("less-than-weekly", _("Less than once a week")),
+    ("once-or-twice", _("Once or twice a week")),
+    ("three-or-four", _("Three or four times a week")),
+    ("every-day", _("Every day of the week")),
+]
+
+SUPPORT_CHOICES = [
+    ("very-well", _("Very well supported")),
+    ("well", _("Well supported")),
+    ("neutral", _("Neutral")),
+    ("poorly", _("Poorly supported")),
+    ("very-poorly", _("Very poorly supported")),
+    ("not-applicable", _("Not applicable")),
+]
+
+TEAM_SUPPORT_CHOICES = [
+    ("very-well", _("Very well supported")),
+    ("well", _("Well supported")),
+    ("neutral", _("Neutral")),
+    ("poorly", _("Poorly supported")),
+    ("very-poorly", _("Very poorly supported")),
+]
+
+EXCLUDED_ACTIVITIES_OPTIONS = [
+    ("lessons", _("Lessons (e.g. PE, food tech)")),
+    ("sports-clubs", _("Sports clubs")),
+    ("day-trips", _("School day trips")),
+    ("overnight-trips", _("Overnight/Residential school trips")),
+    ("parties", _("Parties/celebrations")),
+    ("other", _("Other")),
+    ("none", _("None of the above")),
+]
+
+
 class Submission(models.Model):
     # -- Metadata ----------------------------------------------------------
     ROLE_CHOICES = [
@@ -102,13 +202,6 @@ class Submission(models.Model):
     )
 
     # -- Q5: Relationship to child (P/C only) -----------------------------
-    RELATIONSHIP_CHOICES = [
-        ("mother", _("Mother")),
-        ("father", _("Father")),
-        ("grandmother", _("Grandmother")),
-        ("grandfather", _("Grandfather")),
-        ("other", _("Other guardian or family member")),
-    ]
     q5_relationship = models.CharField(
         max_length=20, choices=RELATIONSHIP_CHOICES, blank=True, default="",
     )
@@ -152,22 +245,11 @@ class Submission(models.Model):
     )
 
     # -- Q13: School healthcare plan (P/C only) ----------------------------
-    YES_NO_DONTKNOW_CHOICES = [
-        ("yes", _("Yes")),
-        ("no", _("No")),
-        ("dont-know", _("I don't know")),
-    ]
     q13_healthcare_plan = models.CharField(
         max_length=10, choices=YES_NO_DONTKNOW_CHOICES, blank=True, default="",
     )
 
     # -- Q14: Plan covers needs (P/C only, shown if Q13=yes) ---------------
-    PLAN_COVERAGE_CHOICES = [
-        ("yes", _("Yes")),
-        ("partially", _("Partially covers diabetes needs at school")),
-        ("no", _("No")),
-        ("dont-know", _("I don't know")),
-    ]
     q14_plan_coverage = models.CharField(
         max_length=12, choices=PLAN_COVERAGE_CHOICES, blank=True, default="",
     )
@@ -189,35 +271,16 @@ class Submission(models.Model):
     q18_glucose_monitoring = models.JSONField(default=list, blank=True)
 
     # -- Q19: Remote monitoring (P/C only) ---------------------------------
-    FREQUENCY_4_CHOICES = [
-        ("yes-always", _("Yes, always")),
-        ("yes-sometimes", _("Yes, sometimes")),
-        ("no-never", _("No, never")),
-        ("dont-know", _("I don't know")),
-    ]
     q19_remote_monitoring = models.CharField(
         max_length=15, choices=FREQUENCY_4_CHOICES, blank=True, default="",
     )
 
     # -- Q20: Contact school during day (P/C only) -------------------------
-    FREQUENCY_5_CHOICES = [
-        ("yes-always", _("Yes, always")),
-        ("yes-sometimes", _("Yes, sometimes")),
-        ("no-never", _("No, never")),
-        ("dont-know", _("I don't know")),
-        ("not-applicable", _("Not applicable")),
-    ]
     q20_contact_school = models.CharField(
         max_length=15, choices=FREQUENCY_5_CHOICES, blank=True, default="",
     )
 
     # -- Q21: Smartphone/smartwatch use in school --------------------------
-    FREQUENCY_4_NA_CHOICES = [
-        ("yes-always", _("Yes, always")),
-        ("yes-sometimes", _("Yes, sometimes")),
-        ("no-never", _("No, never")),
-        ("not-applicable", _("Not applicable")),
-    ]
     q21_smartphone_use = models.CharField(
         max_length=15, choices=FREQUENCY_4_NA_CHOICES, blank=True, default="",
     )
@@ -270,14 +333,6 @@ class Submission(models.Model):
     )
 
     # -- Q32: Performance impact -------------------------------------------
-    FREQUENCY_6_CHOICES = [
-        ("never", _("Never")),
-        ("rarely", _("Rarely")),
-        ("sometimes", _("Sometimes")),
-        ("often", _("Often")),
-        ("always", _("Always")),
-        ("dont-know", _("I don't know")),
-    ]
     q32_performance_impact = models.CharField(
         max_length=15, choices=FREQUENCY_6_CHOICES, blank=True, default="",
     )
@@ -288,11 +343,6 @@ class Submission(models.Model):
     )
 
     # -- Q34: Reasonable adjustments offered -------------------------------
-    YES_NO_NA_CHOICES = [
-        ("yes", _("Yes")),
-        ("no", _("No")),
-        ("not-applicable", _("Not applicable")),
-    ]
     q34_reasonable_adjustments = models.CharField(
         max_length=15, choices=YES_NO_NA_CHOICES, blank=True, default="",
     )
@@ -308,38 +358,16 @@ class Submission(models.Model):
     )
 
     # -- Q37: Anxiety/stress frequency -------------------------------------
-    ANXIETY_CHOICES = [
-        ("never", _("Never")),
-        ("less-than-weekly", _("Less than once a week")),
-        ("once-or-twice", _("Once or twice a week")),
-        ("three-or-four", _("Three or four times a week")),
-        ("every-day", _("Every day of the week")),
-    ]
     q37_anxiety_frequency = models.CharField(
         max_length=20, choices=ANXIETY_CHOICES, blank=True, default="",
     )
 
     # -- Q38: School support rating ----------------------------------------
-    SUPPORT_CHOICES = [
-        ("very-well", _("Very well supported")),
-        ("well", _("Well supported")),
-        ("neutral", _("Neutral")),
-        ("poorly", _("Poorly supported")),
-        ("very-poorly", _("Very poorly supported")),
-        ("not-applicable", _("Not applicable")),
-    ]
     q38_school_support = models.CharField(
         max_length=15, choices=SUPPORT_CHOICES, blank=True, default="",
     )
 
     # -- Q39: Diabetes team support rating ---------------------------------
-    TEAM_SUPPORT_CHOICES = [
-        ("very-well", _("Very well supported")),
-        ("well", _("Well supported")),
-        ("neutral", _("Neutral")),
-        ("poorly", _("Poorly supported")),
-        ("very-poorly", _("Very poorly supported")),
-    ]
     q39_team_support = models.CharField(
         max_length=15, choices=TEAM_SUPPORT_CHOICES, blank=True, default="",
     )

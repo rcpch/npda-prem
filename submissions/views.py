@@ -259,11 +259,13 @@ def section(request, lang, role, section):
 
     prev_url = get_prev_url(request, lang, role, section_data["slug"], question_data_id=None)
 
+    role_questions = [q for q in section_data["questions"] if role in q.get("roles", [])]
+
     next_url = reverse("question", kwargs={
         "lang": lang,
         "role": role,
         "section": section_data["slug"],
-        "question": section_data["questions"][0]["id"],
+        "question": role_questions[0]["id"],
     })
 
     ctx = {
@@ -293,15 +295,18 @@ def question(request, lang, role, section, question):
     if section_data is None:
         raise Http404
 
+    # Filter questions by role within this section
+    role_questions = [q for q in section_data["questions"] if role in q.get("roles", [])]
+
     question_data = None
     question_ix = 0
 
-    for ix, q in enumerate(section_data["questions"]):
+    for ix, q in enumerate(role_questions):
         if q["id"] == question:
             question_data = q
             question_ix = ix
             break
-    
+
     if question_data is None:
         raise Http404
 
@@ -347,15 +352,19 @@ def question(request, lang, role, section, question):
                 next_question_id = next_question_options["_"]
         
         if not next_question_id:
-            if question_ix < len(section_data["questions"]) - 1:
-                next_question_id = section_data["questions"][question_ix + 1]["id"]
+            if question_ix < len(role_questions) - 1:
+                next_question_id = role_questions[question_ix + 1]["id"]
             else:
                 if section_ix < len(sections) - 1:
                     next_section_id = sections[section_ix + 1]["slug"]
                     next_question_id = None # intro
                 else:
-                    # TODO: fini - go to confirmation 
-                    pass
+                    # Last question in last section — submit and go to confirmation
+                    submission.submitted = True
+                    submission.save()
+                    del request.session["submission_id"]
+                    request.session.pop("history", None)
+                    return redirect(reverse("confirmation", kwargs={"lang": lang}))
 
         if next_question_id is None:
             next_url = reverse("section", kwargs={
