@@ -11,13 +11,6 @@ Visit http://localhost:8000/.
 
 ## TODO
 
-Zarro boogs (one page per question as GDS intended)
-
-Number entry
-Text field (including other values)
-
-Then unleash the bot. Ask it to use raw translation strings for big long paragraphs.
-
 Requested by team
 
 - Show count of answers broken down by unit (admins)
