@@ -396,6 +396,10 @@ def start_again(request):
     submission_id = request.session.get("submission_id")
     if submission_id:
         del request.session["submission_id"]
+    
+    pz_code = request.session.get("pz_code")
+    if pz_code:
+        del request.session["pz_code"]
 
     return redirect(reverse("landing"))
 

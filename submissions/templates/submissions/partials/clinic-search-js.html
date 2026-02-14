@@ -7,6 +7,12 @@
 
   document.addEventListener('DOMContentLoaded', function () {
     const autoComplete = document.getElementById('location-picker');
+    const submit = autoComplete.closest('form').querySelector('button[type="submit"]');
+
+    if(selected_clinic_name_with_region) {
+      submit.disabled = false;
+      submit.ariaDisabled = false;
+    }
 
     accessibleAutocomplete({
       element: autoComplete,
@@ -14,7 +20,11 @@
       name: 'clinic',
       source: clinic_names_with_regions,
       defaultValue: selected_clinic_name_with_region || '',
-      showAllValues: true
+      showAllValues: true,
+      onConfirm: () => {
+        submit.disabled = false;
+        submit.ariaDisabled = false;
+      }
     });
   });
 </script>
