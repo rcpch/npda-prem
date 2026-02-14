@@ -20,16 +20,12 @@ Requested by team
 My list
 
 - GitHub pr check
-- Dry refactor probably broke make messages? Check!
 - Start again button is massive - move it down to the footer
 - Deep link to unit (iPad mode option at the bottom, select unit)
 - Q4 should say "do you identify as" (check translations?)
 - Put back section X of X and submit for translations
-- Remove question numbers since they're not sequential to someone filling out the form
 - Front and back matter from document
 - Oauth login to Django admin against whitelist of RCPCH user names
-- namespaced dot string approach to translations
-  - bring across from translations spreadsheet to ensure accuracy
 - Check with IG about cookie messaging
 - Admin emails to me
 - Request logging
