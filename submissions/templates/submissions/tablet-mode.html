@@ -2,8 +2,9 @@
 {% load i18n %}
 
 {% block content %}
-<form method="post" novalidate>
+ <form method="post" novalidate>
     {% csrf_token %}
+    <input type="hidden" name="action" value="enable_tablet_mode">
     <div class="nhsuk-form-group">
         <fieldset class="nhsuk-fieldset" aria-describedby="tablet-mode-hint">
             <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
@@ -16,18 +17,17 @@
                 can complete the survey on the same device (e.g. within the hospital itself).
             </div>
             <div id="location-picker" class="autocomplete-wrapper"></div>
-            <div class="nhsuk-checkboxes" data-module="nhsuk-checkboxes">
-                <div class="nhsuk-checkboxes__item">
-                    <input class="nhsuk-checkboxes__input" id="tablet-mode" name="tablet-mode" type="checkbox" value="email">
-                    <label class="nhsuk-label nhsuk-checkboxes__label" for="tablet-mode">
-                        Tablet Mode
-                    </label>
-                </div>
-            </div>
         </fieldset>
     </div>
     <nav class="nhsuk-u-margin-top-6" aria-label="{% trans 'Form navigation' %}">
-      <input type="submit" class="nhsuk-button" id="continue-btn" value="{% trans 'Save' %}">
+      <input type="submit" class="nhsuk-button" id="enable-btn" value="{% trans 'Enable' %}" disabled aria-disabled="true">
+    </nav>
+</form>
+<form method="post" novalidate>
+    {% csrf_token %}
+    <input type="hidden" name="action" value="disable_tablet_mode">
+    <nav>
+        <input type="submit" class="nhsuk-button nhsuk-button--secondary" id="disable-btn" value="{% trans 'Disable' %}" disabled aria-disabled="true">
     </nav>
 </form>
 

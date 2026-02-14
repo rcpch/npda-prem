@@ -21,6 +21,7 @@ My list
 - Deep link to unit (iPad mode option at the bottom, select unit)
 - If you follow the start link and you already have a session redirect you back to the next unanswered question
 - Correctly apply aria disabled?
+- Shouldn't be able to submit region and clinic radios without selecting an option (also test role form)
 - Q4 should say "do you identify as" (check translations?)
 - Put back section X of X and submit for translations
 - Front and back matter from document
