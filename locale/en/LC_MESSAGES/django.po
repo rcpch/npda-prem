@@ -3,12 +3,11 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-13 22:45+0000\n"
+"POT-Creation-Date: 2026-02-14 07:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,13 +41,13 @@ msgstr ""
 msgid "Punjabi"
 msgstr ""
 
-#: submissions/models.py:6 submissions/models.py:69 submissions/models.py:150
-#: submissions/models.py:160 submissions/models.py:286
+#: submissions/models.py:6 submissions/models.py:69 submissions/models.py:96
+#: submissions/models.py:102 submissions/models.py:140
 msgid "Yes"
 msgstr ""
 
-#: submissions/models.py:7 submissions/models.py:70 submissions/models.py:151
-#: submissions/models.py:162 submissions/models.py:287
+#: submissions/models.py:7 submissions/models.py:70 submissions/models.py:97
+#: submissions/models.py:104 submissions/models.py:141
 msgid "No"
 msgstr ""
 
@@ -77,6 +76,7 @@ msgid "Type 2"
 msgstr ""
 
 #: submissions/models.py:20 submissions/models.py:36 submissions/models.py:48
+#: submissions/models.py:176
 msgid "Other"
 msgstr ""
 
@@ -182,7 +182,7 @@ msgstr ""
 
 #: submissions/models.py:54
 msgid "q10.state.hint"
-msgstr ""
+msgstr "These are schools where you do not have to pay to attend. This includes academies, colleges, and grammar schools."
 
 #: submissions/models.py:55
 msgid "Private school"
@@ -190,7 +190,7 @@ msgstr ""
 
 #: submissions/models.py:55
 msgid "q10.private.hint"
-msgstr ""
+msgstr "These are schools that charge fees to attend. Please select this even if you have received a scholarship or bursary."
 
 #: submissions/models.py:56
 msgid "Home schooled/educated"
@@ -208,238 +208,575 @@ msgstr ""
 msgid "Yes, it was mainly because of the diabetes diagnosis"
 msgstr ""
 
-#: submissions/models.py:71 submissions/models.py:152 submissions/models.py:163
-#: submissions/models.py:190 submissions/models.py:201
-#: submissions/models.py:273
+#: submissions/models.py:71 submissions/models.py:98 submissions/models.py:105
+#: submissions/models.py:112 submissions/models.py:119
+#: submissions/models.py:136
 msgid "I don't know"
 msgstr ""
 
-#: submissions/models.py:78 submissions/templates/submissions/role_form.html:20
-msgid "A child or young person with diabetes"
+#: submissions/models.py:76
+msgid "Injection/Smart insulin pen – e.g. Novopen, InPen"
 msgstr ""
 
-#: submissions/models.py:79 submissions/templates/submissions/role_form.html:26
-msgid "The parent/carer of a child or young person with diabetes"
+#: submissions/models.py:77
+msgid ""
+"Insulin pump (including as part of a Hybrid Closed Loop system) – e.g. "
+"Omnipod, MiniMed, Tandem"
 msgstr ""
 
-#: submissions/models.py:100
+#: submissions/models.py:78
+msgid "N/A – My child does not administer insulin in school"
+msgstr ""
+
+#: submissions/models.py:82
+msgid "Finger prick testing"
+msgstr ""
+
+#: submissions/models.py:83
+msgid ""
+"Continuous glucose monitor (including as part of a Hybrid Closed Loop "
+"system) e.g. Dexcom, FreeStyle Libre 2 Plus or 3 Plus"
+msgstr ""
+
+#: submissions/models.py:84
+msgid "q18.na"
+msgstr "N/A – I do not monitor blood glucose in school"
+
+#: submissions/models.py:88
 msgid "Mother"
 msgstr ""
 
-#: submissions/models.py:101
+#: submissions/models.py:89
 msgid "Father"
 msgstr ""
 
-#: submissions/models.py:102
+#: submissions/models.py:90
 msgid "Grandmother"
 msgstr ""
 
-#: submissions/models.py:103
+#: submissions/models.py:91
 msgid "Grandfather"
 msgstr ""
 
-#: submissions/models.py:104
+#: submissions/models.py:92
 msgid "Other guardian or family member"
 msgstr ""
 
-#: submissions/models.py:161
+#: submissions/models.py:103
 msgid "Partially covers diabetes needs at school"
 msgstr ""
 
-#: submissions/models.py:187 submissions/models.py:198
-#: submissions/models.py:210
+#: submissions/models.py:109 submissions/models.py:116
+#: submissions/models.py:124
 msgid "Yes, always"
 msgstr ""
 
-#: submissions/models.py:188 submissions/models.py:199
-#: submissions/models.py:211
+#: submissions/models.py:110 submissions/models.py:117
+#: submissions/models.py:125
 msgid "Yes, sometimes"
 msgstr ""
 
-#: submissions/models.py:189 submissions/models.py:200
-#: submissions/models.py:212
+#: submissions/models.py:111 submissions/models.py:118
+#: submissions/models.py:126
 msgid "No, never"
 msgstr ""
 
-#: submissions/models.py:202 submissions/models.py:213
-#: submissions/models.py:288 submissions/models.py:323
+#: submissions/models.py:120 submissions/models.py:127
+#: submissions/models.py:142 submissions/models.py:159
 msgid "Not applicable"
 msgstr ""
 
-#: submissions/models.py:268 submissions/models.py:306
+#: submissions/models.py:131 submissions/models.py:146
 msgid "Never"
 msgstr ""
 
-#: submissions/models.py:269
+#: submissions/models.py:132
 msgid "Rarely"
 msgstr ""
 
-#: submissions/models.py:270
+#: submissions/models.py:133
 msgid "Sometimes"
 msgstr ""
 
-#: submissions/models.py:271
+#: submissions/models.py:134
 msgid "Often"
 msgstr ""
 
-#: submissions/models.py:272
+#: submissions/models.py:135
 msgid "Always"
 msgstr ""
 
-#: submissions/models.py:307
+#: submissions/models.py:147
 msgid "Less than once a week"
 msgstr ""
 
-#: submissions/models.py:308
+#: submissions/models.py:148
 msgid "Once or twice a week"
 msgstr ""
 
-#: submissions/models.py:309
+#: submissions/models.py:149
 msgid "Three or four times a week"
 msgstr ""
 
-#: submissions/models.py:310
+#: submissions/models.py:150
 msgid "Every day of the week"
 msgstr ""
 
-#: submissions/models.py:318 submissions/models.py:331
+#: submissions/models.py:154 submissions/models.py:163
 msgid "Very well supported"
 msgstr ""
 
-#: submissions/models.py:319 submissions/models.py:332
+#: submissions/models.py:155 submissions/models.py:164
 msgid "Well supported"
 msgstr ""
 
-#: submissions/models.py:320 submissions/models.py:333
+#: submissions/models.py:156 submissions/models.py:165
 msgid "Neutral"
 msgstr ""
 
-#: submissions/models.py:321 submissions/models.py:334
+#: submissions/models.py:157 submissions/models.py:166
 msgid "Poorly supported"
 msgstr ""
 
-#: submissions/models.py:322 submissions/models.py:335
+#: submissions/models.py:158 submissions/models.py:167
 msgid "Very poorly supported"
 msgstr ""
 
-#: submissions/sections.py:11
+#: submissions/models.py:171
+msgid "Lessons (e.g. PE, food tech)"
+msgstr ""
+
+#: submissions/models.py:172
+msgid "Sports clubs"
+msgstr ""
+
+#: submissions/models.py:173
+msgid "School day trips"
+msgstr ""
+
+#: submissions/models.py:174
+msgid "Overnight/Residential school trips"
+msgstr ""
+
+#: submissions/models.py:175
+msgid "Parties/celebrations"
+msgstr ""
+
+#: submissions/models.py:177
+msgid "None of the above"
+msgstr ""
+
+#: submissions/models.py:184
+#: submissions/templates/submissions/role_form.html:20
+msgid "A child or young person with diabetes"
+msgstr ""
+
+#: submissions/models.py:185
+#: submissions/templates/submissions/role_form.html:26
+msgid "The parent/carer of a child or young person with diabetes"
+msgstr ""
+
+#: submissions/sections.py:10
 #: submissions/templates/submissions/_parent_demographics.html:9
 msgid "Demographics"
 msgstr ""
 
-#: submissions/sections.py:12
+#: submissions/sections.py:11
 msgid "demographics.introduction"
-msgstr "We’d like to know a bit more about you so we can tailor our questions. We will also use this information to understand if children and young people with diabetes from different backgrounds have different experiences at school. All questions in this section are mandatory, but you may select ‘Prefer not to say’ for some. "
+msgstr "We'd like to know a bit more about you so we can tailor our questions. We will also use this information to understand if children and young people with diabetes from different backgrounds have different experiences at school. All questions in this section are mandatory, but you may select 'Prefer not to say' for some."
+
+#: submissions/sections.py:18
+msgid "q4.child.title"
+msgstr "Are you a…"
 
 #: submissions/sections.py:19
-msgid "q4.child.title"
-msgstr "Do you identify as a"
-
-#: submissions/sections.py:20
 msgid "q4.parent.title"
-msgstr "Do you identify as a"
+msgstr "Are you a…"
+
+#: submissions/sections.py:28
+msgid "q5.child.title"
+msgstr "Relationship to your child with diabetes"
 
 #: submissions/sections.py:29
+msgid "q5.parent.title"
+msgstr "Relationship to your child with diabetes"
+
+#: submissions/sections.py:38
 msgid "q6.child.title"
 msgstr "What type of diabetes do you have?"
 
-#: submissions/sections.py:30
-msgid "q6.parent.title"
-msgstr "What type of diabetes do does your child have?"
-
 #: submissions/sections.py:39
-#, fuzzy
-#| msgid "q4.child.title"
-msgid "q7.child.title"
-msgstr "Do you identify as a"
+msgid "q6.parent.title"
+msgstr "What type of diabetes does your child have?"
 
-#: submissions/sections.py:40
-#, fuzzy
-#| msgid "q4.parent.title"
-msgid "q7.parent.title"
-msgstr "Do you identify as a"
+#: submissions/sections.py:48
+msgid "q7.child.title"
+msgstr "At what age were you diagnosed with diabetes?"
 
 #: submissions/sections.py:49
-#, fuzzy
-#| msgid "q4.child.title"
-msgid "q8.child.title"
-msgstr "Do you identify as a"
+msgid "q7.parent.title"
+msgstr "At what age was your child diagnosed with diabetes?"
 
-#: submissions/sections.py:50
-#, fuzzy
-#| msgid "q4.parent.title"
-msgid "q8.parent.title"
-msgstr "Do you identify as a"
+#: submissions/sections.py:58
+msgid "q8.child.title"
+msgstr "Which of the following best describes your ethnicity?"
 
 #: submissions/sections.py:59
-#, fuzzy
-#| msgid "q4.child.title"
+msgid "q8.parent.title"
+msgstr "Which of the following best describes your child's ethnicity?"
+
+#: submissions/sections.py:68
 msgid "q9.child.title"
-msgstr "Do you identify as a"
+msgstr "What stage of education are you in?"
 
-#: submissions/sections.py:60
-#, fuzzy
-#| msgid "q4.parent.title"
+#: submissions/sections.py:69
 msgid "q9.parent.title"
-msgstr "Do you identify as a"
+msgstr "What stage of education is your child in?"
 
-#: submissions/sections.py:73
-#, fuzzy
-#| msgid "q4.child.title"
+#: submissions/sections.py:82
 msgid "q10.child.title"
-msgstr "Do you identify as a"
+msgstr "Which type of school or education do you attend?"
 
-#: submissions/sections.py:74
-#, fuzzy
-#| msgid "q4.parent.title"
+#: submissions/sections.py:83
 msgid "q10.parent.title"
-msgstr "Do you identify as a"
+msgstr "Which type of school or education does your child attend?"
 
-#: submissions/sections.py:87
-#, fuzzy
-#| msgid "q4.child.title"
+#: submissions/sections.py:96
 msgid "q11.child.title"
-msgstr "Do you identify as a"
-
-#: submissions/sections.py:88
-#, fuzzy
-#| msgid "q4.parent.title"
-msgid "q11.parent.title"
-msgstr "Do you identify as a"
+msgstr "Was the decision to home educate related to your diabetes diagnosis?"
 
 #: submissions/sections.py:97
-#, fuzzy
-#| msgid "q4.child.title"
+msgid "q11.parent.title"
+msgstr "Was your decision to home educate related to your child's diabetes diagnosis?"
+
+#: submissions/sections.py:106
 msgid "q12.child.title"
-msgstr "Do you identify as a"
+msgstr "Are you eligible for free school meals?"
 
-#: submissions/sections.py:98
-#, fuzzy
-#| msgid "q4.parent.title"
+#: submissions/sections.py:107
 msgid "q12.parent.title"
-msgstr "Do you identify as a"
+msgstr "Is your child eligible for free school meals?"
 
-#: submissions/sections.py:108
+#: submissions/sections.py:117
+#: submissions/templates/submissions/_parent_healthcare_plans.html:8
+msgid "School Health Care Plans"
+msgstr ""
+
+#: submissions/sections.py:118
+msgid "healthcare_plans.introduction"
+msgstr "We would like to know if you and your child have received formal support in managing their diabetes alongside their education."
+
+#: submissions/sections.py:125
+msgid "q13.parent.title"
+msgstr "Does your child have a school healthcare plan specifically for their diabetes?"
+
+#: submissions/sections.py:127
+msgid "q13.hint"
+msgstr "This is a plan made with your diabetes team and school. It could be an informal or a formal plan, such as Individual Healthcare Plans (IHP), Records of Needs, or Education, Health and Care Plans (EHCP)."
+
+#: submissions/sections.py:139
+msgid "q14.parent.title"
+msgstr "Does the school healthcare plan that's in place cover all your child's diabetes needs at school?"
+
+#: submissions/sections.py:148
+msgid "q15.parent.title"
+msgstr "Does your child's school have a direct contact within your child's diabetes team if they need advice or support?"
+
+#: submissions/sections.py:158
 #: submissions/templates/submissions/_child_managing_diabetes.html:10
 #: submissions/templates/submissions/_parent_managing_diabetes.html:7
 msgid "Managing Diabetes"
 msgstr ""
 
-#: submissions/sections.py:109
+#: submissions/sections.py:159
 msgid "managing_diabetes.introduction"
-msgstr "This section asks about your/your child’s diabetes treatment. We will use this information to see if children and young people using different diabetes technologies have different experiences at school."
+msgstr "This section asks about your/your child's diabetes treatment. We will use this information to see if children and young people using different diabetes technologies have different experiences at school."
 
-#: submissions/sections.py:117
-#, fuzzy
-#| msgid "q6.child.title"
+#: submissions/sections.py:166
 msgid "q16.child.title"
-msgstr "What type of diabetes do you have?"
+msgstr "Do you need to administer insulin or monitor blood glucose to manage your diabetes when in school?"
 
-#: submissions/sections.py:118
-#, fuzzy
-#| msgid "q6.parent.title"
+#: submissions/sections.py:167
 msgid "q16.parent.title"
-msgstr "What type of diabetes do does your child have?"
+msgstr "Does your child need to administer insulin or monitor blood glucose to manage their diabetes when in school?"
+
+#: submissions/sections.py:180
+msgid "q17.child.title"
+msgstr "How do you administer insulin in school?"
+
+#: submissions/sections.py:181
+msgid "q17.parent.title"
+msgstr "How does your child administer insulin in school?"
+
+#: submissions/sections.py:183
+msgid "q17.hint"
+msgstr "Select all that apply"
+
+#: submissions/sections.py:191
+msgid "q18.child.title"
+msgstr "How do you monitor blood glucose levels in school?"
+
+#: submissions/sections.py:192
+msgid "q18.parent.title"
+msgstr "How does your child monitor blood glucose levels in school?"
+
+#: submissions/sections.py:194
+msgid "q18.hint"
+msgstr "Select all that apply"
+
+#: submissions/sections.py:202
+msgid "q19.parent.title"
+msgstr "Can you follow/monitor your child's blood glucose remotely?"
+
+#: submissions/sections.py:211
+msgid "q20.parent.title"
+msgstr "Are you able to contact your child's school during the day if you are concerned about their diabetes?"
+
+#: submissions/sections.py:220
+msgid "q21.child.title"
+msgstr "If you use a smartphone or smartwatch to manage your diabetes, are you able to use it during lesson time at school?"
+
+#: submissions/sections.py:221
+msgid "q21.parent.title"
+msgstr "If your child uses a smartphone or smartwatch to manage their diabetes, are they able to use it during lesson time at school?"
+
+#: submissions/sections.py:230
+msgid "q22.child.title"
+msgstr "Are you offered a private room at school for diabetes care, even if you don't use it?"
+
+#: submissions/sections.py:231
+msgid "q22.parent.title"
+msgstr "Is your child offered a private room at school for diabetes care, even if they don't use it?"
+
+#: submissions/sections.py:233
+msgid "q22.hint"
+msgstr "E.g. For administering insulin, checking blood glucose, changing pump set, or anything else related to diabetes care"
+
+#: submissions/sections.py:241
+msgid "q23.child.title"
+msgstr "Are you allowed to manage diabetes in the classroom if required?"
+
+#: submissions/sections.py:242
+msgid "q23.parent.title"
+msgstr "Is your child allowed to manage diabetes in the classroom if required?"
+
+#: submissions/sections.py:244
+msgid "q23.hint"
+msgstr "This includes checking blood glucose or giving insulin."
+
+#: submissions/sections.py:252
+msgid "q24.child.title"
+msgstr "Is there a trained member of staff at school who can help you with diabetes management?"
+
+#: submissions/sections.py:253
+msgid "q24.parent.title"
+msgstr "Is there a trained member of staff at school who can help your child with diabetes management?"
+
+#: submissions/sections.py:255
+msgid "q24.hint"
+msgstr "This includes checking blood glucose, administering insulin, and providing support in emergencies. This training should be provided by the diabetes team."
+
+#: submissions/sections.py:263
+msgid "q25.child.title"
+msgstr "Does your school provide enough information about school meals for carb-counting?"
+
+#: submissions/sections.py:264
+msgid "q25.parent.title"
+msgstr "Does your child's school provide enough information about school meals for carb-counting?"
+
+#: submissions/sections.py:266
+msgid "q25.hint"
+msgstr "This includes information about carbohydrate content and portion sizes to help you/your child adjust insulin to match."
+
+#: submissions/sections.py:275
+#: submissions/templates/submissions/_shared_education_impact.html:8
+msgid "Impact on Education"
+msgstr ""
+
+#: submissions/sections.py:276
+msgid "education_impact.introduction"
+msgstr "This section asks about how your/your child's diabetes impacts your/their education."
+
+#: submissions/sections.py:283
+msgid "q26.child.title"
+msgstr "In the past year, how many times have you missed one or more lessons in any given day to attend diabetes-related hospital appointments?"
+
+#: submissions/sections.py:284
+msgid "q26.parent.title"
+msgstr "In the past year, how many times has your child missed one or more lessons in any given day to attend diabetes-related hospital appointments?"
+
+#: submissions/sections.py:286
+msgid "q26.hint"
+msgstr "This could include routine appointments for the diabetes clinic or other appointments with a PDSN, dietitian, psychologist etc. (not inpatient hospital stays)"
+
+#: submissions/sections.py:293
+msgid "q27.child.title"
+msgstr "Are your absences for diabetes-related appointments authorised by your school?"
+
+#: submissions/sections.py:294
+msgid "q27.parent.title"
+msgstr "Are your child's absences for diabetes-related appointments authorised by their school?"
+
+#: submissions/sections.py:296
+msgid "q27.hint"
+msgstr "School absences due to health appointments should not be classed as unauthorised."
+
+#: submissions/sections.py:304
+msgid "q28.child.title"
+msgstr "Has your school attendance records been negatively impacted by attending diabetes clinic appointments?"
+
+#: submissions/sections.py:305
+msgid "q28.parent.title"
+msgstr "Has your child's school attendance records been negatively impacted by attending diabetes clinic appointments?"
+
+#: submissions/sections.py:307
+msgid "q28.hint"
+msgstr "School absences due to attending health appointments should not reduce the percentage attendance."
+
+#: submissions/sections.py:315
+msgid "q29.child.title"
+msgstr "In the past year, how many days have you had off school/home education because of illness related to your diabetes?"
+
+#: submissions/sections.py:316
+msgid "q29.parent.title"
+msgstr "In the past year, how many days has your child had off school/home education because of illness related to their diabetes?"
+
+#: submissions/sections.py:318
+msgid "q29.hint"
+msgstr "This could include staying off school at home or include a hospital admission"
+
+#: submissions/sections.py:325
+msgid "q30.child.title"
+msgstr "Have you ever had to move schools due to difficulties in managing your diabetes?"
+
+#: submissions/sections.py:326
+msgid "q30.parent.title"
+msgstr "Has your child ever had to move schools due to difficulties in managing their diabetes?"
+
+#: submissions/sections.py:335
+msgid "q31.child.title"
+msgstr "Have you ever been excluded from any of the below activities because of your diabetes?"
+
+#: submissions/sections.py:336
+msgid "q31.parent.title"
+msgstr "Has your child ever been excluded from any of the below activities because of their diabetes?"
+
+#: submissions/sections.py:338
+msgid "q31.hint"
+msgstr "Select all that apply"
+
+#: submissions/sections.py:346
+msgid "q32.child.title"
+msgstr "Do you feel that your diabetes affects your performance in school/home education?"
+
+#: submissions/sections.py:347
+msgid "q32.parent.title"
+msgstr "Do you feel that your child's diabetes affects their performance in school/home education?"
+
+#: submissions/sections.py:356
+msgid "q33.child.title"
+msgstr "Do your teachers have a good understanding of how diabetes can affect learning?"
+
+#: submissions/sections.py:357
+msgid "q33.parent.title"
+msgstr "Do your child's teachers have a good understanding of how diabetes can affect learning?"
+
+#: submissions/sections.py:359
+msgid "q33.hint"
+msgstr "E.g. When blood glucose is too high or low, it may affect concentration or memory."
+
+#: submissions/sections.py:367
+msgid "q34.child.title"
+msgstr "Have you ever been offered any reasonable adjustments because of your diabetes?"
+
+#: submissions/sections.py:368
+msgid "q34.parent.title"
+msgstr "Has your child ever been offered any reasonable adjustments because of their diabetes?"
+
+#: submissions/sections.py:370
+msgid "q34.hint"
+msgstr "(e.g. additional time in exams, snacks or drinks during class, fast passes for lunch queues)"
+
+#: submissions/sections.py:379
+#: submissions/templates/submissions/_shared_wellbeing.html:8
+msgid "Social and Emotional Impact"
+msgstr ""
+
+#: submissions/sections.py:380
+msgid "wellbeing.introduction"
+msgstr "This section asks about how your/your child's diabetes impacts your/their wellbeing at school."
+
+#: submissions/sections.py:387
+msgid "q35.child.title"
+msgstr "Have you ever felt left out or treated differently by other students or staff members because of your diabetes?"
+
+#: submissions/sections.py:388
+msgid "q35.parent.title"
+msgstr "Has your child ever felt left out or treated differently by other students or staff members because of their diabetes?"
+
+#: submissions/sections.py:397
+msgid "q36.parent.title"
+msgstr "Have you ever lost income due to taking time off work to attend your child's school for diabetes care?"
+
+#: submissions/sections.py:399
+msgid "q36.hint"
+msgstr "E.g. Attending your child's school for diabetes management or your child being sent home because of diabetes-related illness."
+
+#: submissions/sections.py:407
+msgid "q37.child.title"
+msgstr "How often do you feel anxiety or stress related to your diabetes while you're at school?"
+
+#: submissions/sections.py:408
+msgid "q37.parent.title"
+msgstr "How often do you feel anxiety or stress related to your child's diabetes while they're at school?"
+
+#: submissions/sections.py:417
+msgid "q38.child.title"
+msgstr "How well has your school supported you to manage your diabetes safely alongside your education?"
+
+#: submissions/sections.py:418
+msgid "q38.parent.title"
+msgstr "How well has your school supported you to manage your child's diabetes safely alongside their education?"
+
+#: submissions/sections.py:427
+msgid "q39.child.title"
+msgstr "How well has your diabetes team supported you to manage your diabetes safely alongside your education?"
+
+#: submissions/sections.py:428
+msgid "q39.parent.title"
+msgstr "How well has your diabetes team supported you to manage your child's diabetes safely alongside their education?"
+
+#: submissions/sections.py:437
+msgid "q40.child.title"
+msgstr "What has worked well?"
+
+#: submissions/sections.py:438
+msgid "q40.parent.title"
+msgstr "What has worked well?"
+
+#: submissions/sections.py:440
+msgid "q40.hint"
+msgstr "What has been helpful about the support you/your child has at school to manage your/their diabetes?"
+
+#: submissions/sections.py:447
+msgid "q41.child.title"
+msgstr "What hasn’t worked well?"
+
+#: submissions/sections.py:448
+msgid "q41.parent.title"
+msgstr "What hasn’t worked well?"
+
+#: submissions/sections.py:450
+msgid "q41.hint"
+msgstr "What difficulties have you faced in managing your/your child's diabetes at school?"
+
+#: submissions/sections.py:457
+msgid "q42.child.title"
+msgstr "What could your school or diabetes team do differently to improve your experience?"
+
+#: submissions/sections.py:458
+msgid "q42.parent.title"
+msgstr "What could your school or diabetes team do differently to improve your child's experience?"
 
 #: submissions/templates/submissions/_child_demographics.html:11
 #: submissions/templates/submissions/_parent_demographics.html:10
@@ -572,10 +909,6 @@ msgstr ""
 msgid "12. Is your child eligible for free school meals?"
 msgstr ""
 
-#: submissions/templates/submissions/_parent_healthcare_plans.html:8
-msgid "School Health Care Plans"
-msgstr ""
-
 #: submissions/templates/submissions/_parent_healthcare_plans.html:9
 msgid ""
 "We would like to know if you and your child have received formal support in "
@@ -636,10 +969,6 @@ msgstr ""
 msgid ""
 "20. Are you able to contact your child's school during the day if you are "
 "concerned about their diabetes?"
-msgstr ""
-
-#: submissions/templates/submissions/_shared_education_impact.html:8
-msgid "Impact on Education"
 msgstr ""
 
 #: submissions/templates/submissions/_shared_education_impact.html:11
@@ -881,10 +1210,6 @@ msgid ""
 "help you adjust insulin to match."
 msgstr ""
 
-#: submissions/templates/submissions/_shared_wellbeing.html:8
-msgid "Social and Emotional Impact"
-msgstr ""
-
 #: submissions/templates/submissions/_shared_wellbeing.html:11
 msgid ""
 "This section asks about how your child's diabetes impacts their wellbeing at "
@@ -1006,6 +1331,7 @@ msgstr ""
 #: submissions/templates/submissions/form.html:8
 #: submissions/templates/submissions/question.html:8
 #: submissions/templates/submissions/role_form.html:8
+#: submissions/templates/submissions/section.html:7
 msgid "Go back"
 msgstr ""
 
@@ -1018,8 +1344,9 @@ msgstr ""
 
 #: submissions/templates/submissions/clinic_in_region.html:29
 #: submissions/templates/submissions/form.html:32
-#: submissions/templates/submissions/question.html:29
+#: submissions/templates/submissions/question.html:50
 #: submissions/templates/submissions/role_form.html:34
+#: submissions/templates/submissions/section.html:15
 msgid "Continue"
 msgstr ""
 
@@ -1068,7 +1395,8 @@ msgid "Submit"
 msgstr ""
 
 #: submissions/templates/submissions/form.html:30
-#: submissions/templates/submissions/question.html:28
+#: submissions/templates/submissions/question.html:49
+#: submissions/templates/submissions/section.html:13
 msgid "Form navigation"
 msgstr ""
 

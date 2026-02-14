@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-13 22:45+0000\n"
+"POT-Creation-Date: 2026-02-14 07:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,33 +44,29 @@ msgstr "Ukrainian"
 msgid "Punjabi"
 msgstr ""
 
-#: submissions/models.py:6 submissions/models.py:69 submissions/models.py:150
-#: submissions/models.py:160 submissions/models.py:286
+#: submissions/models.py:6 submissions/models.py:69 submissions/models.py:96
+#: submissions/models.py:102 submissions/models.py:140
 msgid "Yes"
 msgstr "Так"
 
-#: submissions/models.py:7 submissions/models.py:70 submissions/models.py:151
-#: submissions/models.py:162 submissions/models.py:287
+#: submissions/models.py:7 submissions/models.py:70 submissions/models.py:97
+#: submissions/models.py:104 submissions/models.py:141
 msgid "No"
 msgstr "Ні"
 
 #: submissions/models.py:11
 msgid "q4.boy"
-msgstr ""
+msgstr "Хлопець"
 
 #: submissions/models.py:12
 msgid "q4.girl"
-msgstr ""
+msgstr "Дівчина"
 
 #: submissions/models.py:13
-#, fuzzy
-#| msgid "Mother"
 msgid "q4.other"
-msgstr "Мати"
+msgstr "Тут немає такої статі"
 
 #: submissions/models.py:14
-#, fuzzy
-#| msgid "Prefer not to say"
 msgid "q4.prefer-not-to-say"
 msgstr "Волію не казати"
 
@@ -83,6 +79,7 @@ msgid "Type 2"
 msgstr "Тип 2"
 
 #: submissions/models.py:20 submissions/models.py:36 submissions/models.py:48
+#: submissions/models.py:176
 msgid "Other"
 msgstr "Інший"
 
@@ -188,7 +185,7 @@ msgstr "Школа з державним фінансуванням"
 
 #: submissions/models.py:54
 msgid "q10.state.hint"
-msgstr ""
+msgstr "Це школи, за навчання в яких не потрібно платити. Це можуть бути академії, коледжі та гімназії."
 
 #: submissions/models.py:55
 msgid "Private school"
@@ -196,7 +193,7 @@ msgstr "Приватна школа"
 
 #: submissions/models.py:55
 msgid "q10.private.hint"
-msgstr ""
+msgstr "Це школи, навчання в яких платне. Виберіть цей варіант, навіть якщо вам було надано стипендію чи грант."
 
 #: submissions/models.py:56
 msgid "Home schooled/educated"
@@ -214,210 +211,583 @@ msgstr "Частково, діагноз діабету вплинув на мо
 msgid "Yes, it was mainly because of the diabetes diagnosis"
 msgstr "Так, це було головним чином через діагноз діабету"
 
-#: submissions/models.py:71 submissions/models.py:152 submissions/models.py:163
-#: submissions/models.py:190 submissions/models.py:201
-#: submissions/models.py:273
+#: submissions/models.py:71 submissions/models.py:98 submissions/models.py:105
+#: submissions/models.py:112 submissions/models.py:119
+#: submissions/models.py:136
 msgid "I don't know"
 msgstr "Не знаю"
 
-#: submissions/models.py:78 submissions/templates/submissions/role_form.html:20
-msgid "A child or young person with diabetes"
-msgstr "Дитина або молода людина з діабетом"
+#: submissions/models.py:76
+msgid "Injection/Smart insulin pen – e.g. Novopen, InPen"
+msgstr ""
+"Звичайна або інтелектуальна шприц-ручка для введення інсуліну, як-от Novopen "
+"або InPen"
 
-#: submissions/models.py:79 submissions/templates/submissions/role_form.html:26
-msgid "The parent/carer of a child or young person with diabetes"
-msgstr "Батько/мати/опікун дитини або молодої людини з діабетом"
+#: submissions/models.py:77
+msgid ""
+"Insulin pump (including as part of a Hybrid Closed Loop system) – e.g. "
+"Omnipod, MiniMed, Tandem"
+msgstr ""
+"Інсулінова помпа (зокрема як частина гібридної системи з замкнутим циклом), "
+"як-от Omnipod, MiniMed або Tandem"
 
-#: submissions/models.py:100
+#: submissions/models.py:78
+msgid "N/A – My child does not administer insulin in school"
+msgstr ""
+"Не застосовно – моїй дитині не потрібно вводити інсулін під час перебування "
+"у школі"
+
+#: submissions/models.py:82
+msgid "Finger prick testing"
+msgstr "Аналіз із проколюванням пальця"
+
+#: submissions/models.py:83
+msgid ""
+"Continuous glucose monitor (including as part of a Hybrid Closed Loop "
+"system) e.g. Dexcom, FreeStyle Libre 2 Plus or 3 Plus"
+msgstr ""
+"Монітор глюкози безперервної дії (зокрема як частина гібридної системи з "
+"замкнутим циклом), як-от Dexcom, FreeStyle Libre 2 Plus або 3 Plus"
+
+#: submissions/models.py:84
+msgid "q18.na"
+msgstr ""
+
+#: submissions/models.py:88
 msgid "Mother"
 msgstr "Мати"
 
-#: submissions/models.py:101
+#: submissions/models.py:89
 msgid "Father"
 msgstr "Батько"
 
-#: submissions/models.py:102
+#: submissions/models.py:90
 msgid "Grandmother"
 msgstr "Бабуся"
 
-#: submissions/models.py:103
+#: submissions/models.py:91
 msgid "Grandfather"
 msgstr "Дідусь"
 
-#: submissions/models.py:104
+#: submissions/models.py:92
 msgid "Other guardian or family member"
 msgstr "Інший опікун або член родини"
 
-#: submissions/models.py:161
+#: submissions/models.py:103
 msgid "Partially covers diabetes needs at school"
 msgstr "Частково покриває потреби, пов'язані з діабетом, у школі"
 
-#: submissions/models.py:187 submissions/models.py:198
-#: submissions/models.py:210
+#: submissions/models.py:109 submissions/models.py:116
+#: submissions/models.py:124
 msgid "Yes, always"
 msgstr "Так, завжди"
 
-#: submissions/models.py:188 submissions/models.py:199
-#: submissions/models.py:211
+#: submissions/models.py:110 submissions/models.py:117
+#: submissions/models.py:125
 msgid "Yes, sometimes"
 msgstr "Так, іноді"
 
-#: submissions/models.py:189 submissions/models.py:200
-#: submissions/models.py:212
+#: submissions/models.py:111 submissions/models.py:118
+#: submissions/models.py:126
 msgid "No, never"
 msgstr "Ні, ніколи"
 
-#: submissions/models.py:202 submissions/models.py:213
-#: submissions/models.py:288 submissions/models.py:323
+#: submissions/models.py:120 submissions/models.py:127
+#: submissions/models.py:142 submissions/models.py:159
 msgid "Not applicable"
 msgstr "Не застосовно"
 
-#: submissions/models.py:268 submissions/models.py:306
+#: submissions/models.py:131 submissions/models.py:146
 msgid "Never"
 msgstr "Ніколи"
 
-#: submissions/models.py:269
+#: submissions/models.py:132
 msgid "Rarely"
 msgstr "У рідкісних випадках"
 
-#: submissions/models.py:270
+#: submissions/models.py:133
 msgid "Sometimes"
 msgstr "Інколи"
 
-#: submissions/models.py:271
+#: submissions/models.py:134
 msgid "Often"
 msgstr "Часто"
 
-#: submissions/models.py:272
+#: submissions/models.py:135
 msgid "Always"
 msgstr "Постійно"
 
-#: submissions/models.py:307
+#: submissions/models.py:147
 msgid "Less than once a week"
 msgstr "Менш ніж раз на тиждень"
 
-#: submissions/models.py:308
+#: submissions/models.py:148
 msgid "Once or twice a week"
 msgstr "Раз або два на тиждень"
 
-#: submissions/models.py:309
+#: submissions/models.py:149
 msgid "Three or four times a week"
 msgstr "Три або чотири рази на тиждень"
 
-#: submissions/models.py:310
+#: submissions/models.py:150
 msgid "Every day of the week"
 msgstr "Кожного дня"
 
-#: submissions/models.py:318 submissions/models.py:331
+#: submissions/models.py:154 submissions/models.py:163
 msgid "Very well supported"
 msgstr "Дуже добре"
 
-#: submissions/models.py:319 submissions/models.py:332
+#: submissions/models.py:155 submissions/models.py:164
 msgid "Well supported"
 msgstr "Добре"
 
-#: submissions/models.py:320 submissions/models.py:333
+#: submissions/models.py:156 submissions/models.py:165
 msgid "Neutral"
 msgstr "Середньо"
 
-#: submissions/models.py:321 submissions/models.py:334
+#: submissions/models.py:157 submissions/models.py:166
 msgid "Poorly supported"
 msgstr "Погано"
 
-#: submissions/models.py:322 submissions/models.py:335
+#: submissions/models.py:158 submissions/models.py:167
 msgid "Very poorly supported"
 msgstr "Дуже погано"
 
-#: submissions/sections.py:11
+#: submissions/models.py:171
+msgid "Lessons (e.g. PE, food tech)"
+msgstr "Уроки (наприклад, фізкультура, харчові технології)"
+
+#: submissions/models.py:172
+msgid "Sports clubs"
+msgstr "Спортивні клуби"
+
+#: submissions/models.py:173
+msgid "School day trips"
+msgstr "Одноденні шкільні екскурсії"
+
+#: submissions/models.py:174
+msgid "Overnight/Residential school trips"
+msgstr "Шкільні екскурсії з ночівлею/проживанням"
+
+#: submissions/models.py:175
+msgid "Parties/celebrations"
+msgstr "Вечірки/свята"
+
+#: submissions/models.py:177
+msgid "None of the above"
+msgstr "Нічого з переліченого вище"
+
+#: submissions/models.py:184
+#: submissions/templates/submissions/role_form.html:20
+msgid "A child or young person with diabetes"
+msgstr "Дитина або молода людина з діабетом"
+
+#: submissions/models.py:185
+#: submissions/templates/submissions/role_form.html:26
+msgid "The parent/carer of a child or young person with diabetes"
+msgstr "Батько/мати/опікун дитини або молодої людини з діабетом"
+
+#: submissions/sections.py:10
 #: submissions/templates/submissions/_parent_demographics.html:9
 msgid "Demographics"
 msgstr "Демографічні дані"
 
-#: submissions/sections.py:12
+#: submissions/sections.py:11
 msgid "demographics.introduction"
-msgstr ""
+msgstr "Ми хотіли б дізнатися про вас трохи більше, щоб адаптувати запитання. Ми також використаємо цю інформацію, щоб зрозуміти, чи мають діти та молодь із діабетом із різних середовищ різний досвід у школі. Усі запитання в цьому розділі є обов'язковими, але для деяких можна обрати «Волію не казати»."
+
+#: submissions/sections.py:18
+msgid "q4.child.title"
+msgstr "Ти…"
 
 #: submissions/sections.py:19
-msgid "q4.child.title"
-msgstr ""
-
-#: submissions/sections.py:20
 msgid "q4.parent.title"
+msgstr "Ти…"
+
+#: submissions/sections.py:28
+msgid "q5.child.title"
 msgstr ""
 
 #: submissions/sections.py:29
-msgid "q6.child.title"
-msgstr ""
+msgid "q5.parent.title"
+msgstr "Ступінь спорідненості з дитиною, хворою на діабет"
 
-#: submissions/sections.py:30
-msgid "q6.parent.title"
-msgstr ""
+#: submissions/sections.py:38
+msgid "q6.child.title"
+msgstr "Який у тебе тип діабету?"
 
 #: submissions/sections.py:39
-msgid "q7.child.title"
-msgstr ""
+msgid "q6.parent.title"
+msgstr "Який тип діабету в вашої дитини?"
 
-#: submissions/sections.py:40
-msgid "q7.parent.title"
-msgstr ""
+#: submissions/sections.py:48
+msgid "q7.child.title"
+msgstr "У якому віці в тебе діагностували діабет?"
 
 #: submissions/sections.py:49
-msgid "q8.child.title"
-msgstr ""
+msgid "q7.parent.title"
+msgstr "В якому віці у вашої дитини діагностували діабет?"
 
-#: submissions/sections.py:50
-msgid "q8.parent.title"
-msgstr ""
+#: submissions/sections.py:58
+msgid "q8.child.title"
+msgstr "Що з наведеного нижче найкраще описує твою етнічну приналежність?"
 
 #: submissions/sections.py:59
+msgid "q8.parent.title"
+msgstr "Що з наведеного нижче найкраще описує етнічну приналежність вашої дитини?"
+
+#: submissions/sections.py:68
 msgid "q9.child.title"
-msgstr ""
+msgstr "На якому етапі освіти ти наразі перебуваєш?"
 
-#: submissions/sections.py:60
+#: submissions/sections.py:69
 msgid "q9.parent.title"
-msgstr ""
+msgstr "На якому етапі навчання наразі перебуває ваша дитина?"
 
-#: submissions/sections.py:73
+#: submissions/sections.py:82
 msgid "q10.child.title"
-msgstr ""
+msgstr "Школу якого типу ти відвідуєш або яку освіту ти отримуєш?"
 
-#: submissions/sections.py:74
+#: submissions/sections.py:83
 msgid "q10.parent.title"
-msgstr ""
+msgstr "Школу якого типу відвідує ваша дитина або яку освіту вона отримує?"
 
-#: submissions/sections.py:87
+#: submissions/sections.py:96
 msgid "q11.child.title"
-msgstr ""
-
-#: submissions/sections.py:88
-msgid "q11.parent.title"
-msgstr ""
+msgstr "Чи було рішення про домашнє навчання пов'язане з діагнозом діабету?"
 
 #: submissions/sections.py:97
+msgid "q11.parent.title"
+msgstr "Чи було ваше рішення навчати дитину вдома пов'язане з діагнозом діабету?"
+
+#: submissions/sections.py:106
 msgid "q12.child.title"
-msgstr ""
+msgstr "Ти маєш право на безкоштовне шкільне харчування?"
 
-#: submissions/sections.py:98
+#: submissions/sections.py:107
 msgid "q12.parent.title"
-msgstr ""
+msgstr "Ваша дитина має право на безкоштовне харчування у школі?"
 
-#: submissions/sections.py:108
+#: submissions/sections.py:117
+#: submissions/templates/submissions/_parent_healthcare_plans.html:8
+msgid "School Health Care Plans"
+msgstr "Плани медичного обслуговування у школі"
+
+#: submissions/sections.py:118
+msgid "healthcare_plans.introduction"
+msgstr "Ми хотіли б знати, чи отримували ви та ваша дитина офіційну підтримку з контролю діабету протягом навчання."
+
+#: submissions/sections.py:125
+msgid "q13.parent.title"
+msgstr "Чи має ваша дитина шкільний план медичного обслуговування, спеціально складений з урахуванням діабету?"
+
+#: submissions/sections.py:127
+msgid "q13.hint"
+msgstr "Це план, який складається разом із командою з питань діабету і школою. Це може бути неформальний або формальний план, як-от Індивідуальний план медичного обслуговування (IHP), Облік потреб або План освіти, охорони здоров'я і догляду (EHCP)."
+
+#: submissions/sections.py:139
+msgid "q14.parent.title"
+msgstr "Чи покриває шкільний план медичного обслуговування всі потреби вашої дитини, пов'язані з діабетом, у школі?"
+
+#: submissions/sections.py:148
+msgid "q15.parent.title"
+msgstr "Чи має школа вашої дитини прямий контакт із командою з питань діабету на випадок, якщо знадобиться порада чи підтримка?"
+
+#: submissions/sections.py:158
 #: submissions/templates/submissions/_child_managing_diabetes.html:10
 #: submissions/templates/submissions/_parent_managing_diabetes.html:7
 msgid "Managing Diabetes"
 msgstr "Контроль діабету"
 
-#: submissions/sections.py:109
+#: submissions/sections.py:159
 msgid "managing_diabetes.introduction"
-msgstr ""
+msgstr "Цей розділ містить запитання про лікування діабету. Ця інформація допоможе нам з'ясувати, чи мають діти і молоді люди, які використовують різні технології контролю діабету, різний досвід у школі."
 
-#: submissions/sections.py:117
+#: submissions/sections.py:166
 msgid "q16.child.title"
-msgstr ""
+msgstr "Чи потрібно тобі вводити інсулін або контролювати рівень глюкози в крові для контролю діабету під час занять у школі?"
 
-#: submissions/sections.py:118
+#: submissions/sections.py:167
 msgid "q16.parent.title"
-msgstr ""
+msgstr "Чи потрібно вашій дитині вводити інсулін або контролювати рівень глюкози у крові для контролю діабету під час занять у школі?"
+
+#: submissions/sections.py:180
+msgid "q17.child.title"
+msgstr "Як ти вводиш інсулін у школі?"
+
+#: submissions/sections.py:181
+msgid "q17.parent.title"
+msgstr "Як ваша дитина вводить інсулін під час перебування у школі?"
+
+#: submissions/sections.py:183
+msgid "q17.hint"
+msgstr "Виберіть усі варіанти, які підходять"
+
+#: submissions/sections.py:191
+msgid "q18.child.title"
+msgstr "Як ти контролюєш рівень глюкози в крові в школі?"
+
+#: submissions/sections.py:192
+msgid "q18.parent.title"
+msgstr "Як ваша дитина контролює рівень глюкози у крові під час перебування у школі?"
+
+#: submissions/sections.py:194
+msgid "q18.hint"
+msgstr "Виберіть усі варіанти, які підходять"
+
+#: submissions/sections.py:202
+msgid "q19.parent.title"
+msgstr "Чи можете ви дистанційно відстежувати/контролювати рівень глюкози у крові вашої дитини?"
+
+#: submissions/sections.py:211
+msgid "q20.parent.title"
+msgstr "Чи можете ви зв'язатися зі школою вашої дитини протягом дня, якщо вас турбує стан вашої дитини, пов'язаний із діабетом?"
+
+#: submissions/sections.py:220
+msgid "q21.child.title"
+msgstr "Якщо ти використовуєш смартфон або смарт-годинник для контролю діабету, чи дозволено використовувати цей пристрій під час занять у школі?"
+
+#: submissions/sections.py:221
+msgid "q21.parent.title"
+msgstr "Якщо ваша дитина використовує смартфон або смарт-годинник для контролю діабету, чи дозволено їй використовувати цей пристрій під час занять у школі?"
+
+#: submissions/sections.py:230
+msgid "q22.child.title"
+msgstr "Чи пропонують тобі окрему кімнату в школі для лікування діабету, навіть якщо в ній немає потреби?"
+
+#: submissions/sections.py:231
+msgid "q22.parent.title"
+msgstr "Чи пропонують вашій дитині окрему кімнату в школі для контролю діабету, навіть якщо в ній немає потреби?"
+
+#: submissions/sections.py:233
+msgid "q22.hint"
+msgstr "Наприклад, для введення інсуліну, перевірки рівня глюкози у крові, зміни помпи або будь-яких інших процедур, пов'язаних із контролем діабету."
+
+#: submissions/sections.py:241
+msgid "q23.child.title"
+msgstr "Тобі дозволено контролювати діабет у класі, якщо це необхідно?"
+
+#: submissions/sections.py:242
+msgid "q23.parent.title"
+msgstr "Вашій дитині дозволено виконувати процедури з контролю діабету в класі, коли це необхідно?"
+
+#: submissions/sections.py:244
+msgid "q23.hint"
+msgstr "Це стосується перевірки рівня глюкози в крові або введення інсуліну."
+
+#: submissions/sections.py:252
+msgid "q24.child.title"
+msgstr "Чи присутній у школі кваліфікований співробітник, який може допомогти тобі з контролем діабету?"
+
+#: submissions/sections.py:253
+msgid "q24.parent.title"
+msgstr "Чи є у школі кваліфікований співробітник, який може допомогти вашій дитині з контролем діабету?"
+
+#: submissions/sections.py:255
+msgid "q24.hint"
+msgstr "Це стосується перевірки рівня глюкози в крові, введення інсуліну та надання підтримки в екстрених ситуаціях. Таке навчання має проводитися командою з питань діабету."
+
+#: submissions/sections.py:263
+msgid "q25.child.title"
+msgstr "Чи надає школа достатньо інформації про шкільне харчування для підрахунку вуглеводів?"
+
+#: submissions/sections.py:264
+msgid "q25.parent.title"
+msgstr "Чи надає школа достатню інформацію про шкільне харчування для підрахунку вуглеводів?"
+
+#: submissions/sections.py:266
+msgid "q25.hint"
+msgstr "Це стосується інформації про вміст вуглеводів та розміри порцій, щоб допомогти тобі скоригувати відповідним чином дозу інсуліну."
+
+#: submissions/sections.py:275
+#: submissions/templates/submissions/_shared_education_impact.html:8
+msgid "Impact on Education"
+msgstr "Вплив на навчання"
+
+#: submissions/sections.py:276
+msgid "education_impact.introduction"
+msgstr "У цьому розділі запитують, як діабет впливає на твою освіту."
+
+#: submissions/sections.py:283
+msgid "q26.child.title"
+msgstr "Скільки разів протягом минулого року ти пропускав(-ла) одне або декілька занять протягом дня, щоб відвідати лікарню з приводу діабету?"
+
+#: submissions/sections.py:284
+msgid "q26.parent.title"
+msgstr "Скільки разів у минулому році ваша дитина пропускала одне або кілька занять протягом дня, щоб відвідати лікарню з приводу діабету?"
+
+#: submissions/sections.py:286
+msgid "q26.hint"
+msgstr "Це могли бути планові огляди в діабетичній клініці або зустрічі з дитячою медсестрою з діабету, дієтологом, психологом тощо (не перебування в стаціонарі)"
+
+#: submissions/sections.py:293
+msgid "q27.child.title"
+msgstr "Чи дозволяє школа тобі пропускати заняття через прийоми, пов'язані з діабетом?"
+
+#: submissions/sections.py:294
+msgid "q27.parent.title"
+msgstr "Чи дозволяє школа вашій дитині пропускати заняття через медичні прийоми, пов'язані з діабетом?"
+
+#: submissions/sections.py:296
+msgid "q27.hint"
+msgstr "Відсутність у школі через відвідування лікаря не повинна вважатися недозволеною."
+
+#: submissions/sections.py:304
+msgid "q28.child.title"
+msgstr "Чи вплинуло відвідування діабетичної клініки негативно на твої показники відвідуваності школи?"
+
+#: submissions/sections.py:305
+msgid "q28.parent.title"
+msgstr "Чи має відвідування діабетичної клініки негативний вплив на показники відвідуваності школи у вашої дитини?"
+
+#: submissions/sections.py:307
+msgid "q28.hint"
+msgstr "Пропуски занять через відвідування лікаря не повинні знижувати відсоток відвідуваності школи."
+
+#: submissions/sections.py:315
+msgid "q29.child.title"
+msgstr "Скільки днів за останній рік тобі довелося пропускати школу / навчатися вдома через хворобу, пов'язану з діабетом?"
+
+#: submissions/sections.py:316
+msgid "q29.parent.title"
+msgstr "Скільки днів за останній рік вашій дитині довелося пропустити школу/навчатися вдома через хворобу, пов'язану з діабетом?"
+
+#: submissions/sections.py:318
+msgid "q29.hint"
+msgstr "Це можуть бути пропуски школи з перебуванням удома або госпіталізація"
+
+#: submissions/sections.py:325
+msgid "q30.child.title"
+msgstr "Чи доводилося тобі колись змінювати школу через труднощі з контролем діабету?"
+
+#: submissions/sections.py:326
+msgid "q30.parent.title"
+msgstr "Чи доводилося вашій дитині змінювати школу через труднощі з контролем діабету?"
+
+#: submissions/sections.py:335
+msgid "q31.child.title"
+msgstr "Чи позбавляли тебе колись будь-якої з перелічених нижче діяльностей через діабет?"
+
+#: submissions/sections.py:336
+msgid "q31.parent.title"
+msgstr "Чи виключали вашу дитину з участі в будь-якому з перелічених нижче заходів через діабет?"
+
+#: submissions/sections.py:338
+msgid "q31.hint"
+msgstr "Виберіть усі варіанти, які підходять"
+
+#: submissions/sections.py:346
+msgid "q32.child.title"
+msgstr "Чи відчуваєш ти, що діабет впливає на твою успішність у школі / домашньому навчанні?"
+
+#: submissions/sections.py:347
+msgid "q32.parent.title"
+msgstr "Чи відчуваєте ви, що діабет впливає на успішність вашої дитини в школі/домашньому навчанні?"
+
+#: submissions/sections.py:356
+msgid "q33.child.title"
+msgstr "Чи добре твої вчителі розуміють, як діабет може впливати на навчання?"
+
+#: submissions/sections.py:357
+msgid "q33.parent.title"
+msgstr "Чи добре вчителі вашої дитини розуміють, як діабет може впливати на навчання?"
+
+#: submissions/sections.py:359
+msgid "q33.hint"
+msgstr "Наприклад, коли рівень глюкози в крові занадто високий або низький, це може вплинути на концентрацію уваги або пам'ять."
+
+#: submissions/sections.py:367
+msgid "q34.child.title"
+msgstr "Чи пропонували тобі будь-які розумні корективи через діабет?"
+
+#: submissions/sections.py:368
+msgid "q34.parent.title"
+msgstr "Чи пропонували вашій дитині будь-які розумні корективи через діабет?"
+
+#: submissions/sections.py:370
+msgid "q34.hint"
+msgstr "(Наприклад, додатковий час на іспитах, перекуси чи напої під час занять, шкільний обід без черги)"
+
+#: submissions/sections.py:379
+#: submissions/templates/submissions/_shared_wellbeing.html:8
+msgid "Social and Emotional Impact"
+msgstr "Соціальний та емоційний вплив"
+
+#: submissions/sections.py:380
+msgid "wellbeing.introduction"
+msgstr "У цьому розділі запитують, як діабет впливає на твоє самопочуття в школі."
+
+#: submissions/sections.py:387
+msgid "q35.child.title"
+msgstr "Чи почувався(-лася) ти колись покинутим(-ою) або інші учні чи шкільні співробітники ставилися до тебе інакше через діабет?"
+
+#: submissions/sections.py:388
+msgid "q35.parent.title"
+msgstr "Чи траплялося таке, щоб ваша дитина почувалася покинутою або інші учні чи шкільні співробітники ставилися до неї інакше через діабет?"
+
+#: submissions/sections.py:397
+msgid "q36.parent.title"
+msgstr "Чи доводилося вам втрачати дохід, пропускаючи роботу, щоб відвідати школу вашої дитини для вирішення питань допомоги з приводу діабету?"
+
+#: submissions/sections.py:399
+msgid "q36.hint"
+msgstr "Наприклад, ви приходили до школи, щоб надати вашій дитині домогу з контролю діабету, або вашу дитину відправляли зі школи додому через захворювання, пов'язане з діабетом."
+
+#: submissions/sections.py:407
+msgid "q37.child.title"
+msgstr "Як часто ти відчуваєш тривогу або стрес у зв'язку з діабетом під час занять у школі?"
+
+#: submissions/sections.py:408
+msgid "q37.parent.title"
+msgstr "Як часто ви відчуваєте тривогу або стрес через діабет у вашої дитини, коли дитина у школі?"
+
+#: submissions/sections.py:417
+msgid "q38.child.title"
+msgstr "Наскільки добре школа підтримувала тебе в контролі діабета для гарантування безпеки паралельно з навчанням?"
+
+#: submissions/sections.py:418
+msgid "q38.parent.title"
+msgstr "Наскільки добре школа допомагала вам безпечно контролювати діабет вашої дитини протягом навчання?"
+
+#: submissions/sections.py:427
+msgid "q39.child.title"
+msgstr "Наскільки добре твоя команда з питань діабету підтримувала тебе в контролі діабета для гарантування безпеки паралельно з навчанням?"
+
+#: submissions/sections.py:428
+msgid "q39.parent.title"
+msgstr "Наскільки добре ваша команда з питань діабету допомагала вам безпечно контролювати діабет вашої дитини протягом навчання?"
+
+#: submissions/sections.py:437
+msgid "q40.child.title"
+msgstr "Що спрацювало?"
+
+#: submissions/sections.py:438
+msgid "q40.parent.title"
+msgstr "Що спрацювало?"
+
+#: submissions/sections.py:440
+msgid "q40.hint"
+msgstr "Що було корисним у підтримці в школі для контролю діабету?"
+
+#: submissions/sections.py:447
+msgid "q41.child.title"
+msgstr "Що не спрацювало?"
+
+#: submissions/sections.py:448
+msgid "q41.parent.title"
+msgstr "Що не спрацювало?"
+
+#: submissions/sections.py:450
+msgid "q41.hint"
+msgstr "Які в тебе були труднощі, пов'язані з контролем діабету, у школі?"
+
+#: submissions/sections.py:457
+msgid "q42.child.title"
+msgstr "Що твоя школа або команда з питань діабету могла б робити по-іншому, щоб твоє шкільне життя було кращим?"
+
+#: submissions/sections.py:458
+msgid "q42.parent.title"
+msgstr "Що б могла зробити ваша школа або команда з питань діабету для покращення шкільного життя вашої дитини?"
 
 #: submissions/templates/submissions/_child_demographics.html:11
 #: submissions/templates/submissions/_parent_demographics.html:10
@@ -566,10 +936,6 @@ msgstr ""
 msgid "12. Is your child eligible for free school meals?"
 msgstr "12. Ваша дитина має право на безкоштовне харчування у школі?"
 
-#: submissions/templates/submissions/_parent_healthcare_plans.html:8
-msgid "School Health Care Plans"
-msgstr "Плани медичного обслуговування у школі"
-
 #: submissions/templates/submissions/_parent_healthcare_plans.html:9
 msgid ""
 "We would like to know if you and your child have received formal support in "
@@ -654,10 +1020,6 @@ msgid ""
 msgstr ""
 "20. Чи можете ви зв'язатися зі школою вашої дитини протягом дня, якщо вас "
 "турбує стан вашої дитини, пов'язаний із діабетом?"
-
-#: submissions/templates/submissions/_shared_education_impact.html:8
-msgid "Impact on Education"
-msgstr "Вплив на навчання"
 
 #: submissions/templates/submissions/_shared_education_impact.html:11
 msgid ""
@@ -970,10 +1332,6 @@ msgstr ""
 "Це стосується інформації про вміст вуглеводів та розміри порцій, щоб "
 "допомогти тобі скоригувати відповідним чином дозу інсуліну."
 
-#: submissions/templates/submissions/_shared_wellbeing.html:8
-msgid "Social and Emotional Impact"
-msgstr "Соціальний та емоційний вплив"
-
 #: submissions/templates/submissions/_shared_wellbeing.html:11
 msgid ""
 "This section asks about how your child's diabetes impacts their wellbeing at "
@@ -1123,6 +1481,7 @@ msgstr ""
 #: submissions/templates/submissions/form.html:8
 #: submissions/templates/submissions/question.html:8
 #: submissions/templates/submissions/role_form.html:8
+#: submissions/templates/submissions/section.html:7
 msgid "Go back"
 msgstr "Повернутися"
 
@@ -1137,8 +1496,9 @@ msgstr ""
 
 #: submissions/templates/submissions/clinic_in_region.html:29
 #: submissions/templates/submissions/form.html:32
-#: submissions/templates/submissions/question.html:29
+#: submissions/templates/submissions/question.html:50
 #: submissions/templates/submissions/role_form.html:34
+#: submissions/templates/submissions/section.html:15
 msgid "Continue"
 msgstr "Продовжити"
 
@@ -1191,7 +1551,8 @@ msgid "Submit"
 msgstr "Надіслати"
 
 #: submissions/templates/submissions/form.html:30
-#: submissions/templates/submissions/question.html:28
+#: submissions/templates/submissions/question.html:49
+#: submissions/templates/submissions/section.html:13
 msgid "Form navigation"
 msgstr ""
 
@@ -1256,24 +1617,6 @@ msgstr "Розпочати знову"
 #~ msgid "Jersey"
 #~ msgstr "Джерсі"
 
-#~ msgid "Lessons (e.g. PE, food tech)"
-#~ msgstr "Уроки (наприклад, фізкультура, харчові технології)"
-
-#~ msgid "Sports clubs"
-#~ msgstr "Спортивні клуби"
-
-#~ msgid "School day trips"
-#~ msgstr "Одноденні шкільні екскурсії"
-
-#~ msgid "Overnight/Residential school trips"
-#~ msgstr "Шкільні екскурсії з ночівлею/проживанням"
-
-#~ msgid "Parties/celebrations"
-#~ msgstr "Вечірки/свята"
-
-#~ msgid "None of the above"
-#~ msgstr "Нічого з переліченого вище"
-
 #~ msgid "Young person survey"
 #~ msgstr "Опитування для молодої людини"
 
@@ -1289,32 +1632,10 @@ msgstr "Розпочати знову"
 #~ "for now."
 #~ msgstr "Перелік клінік залежно від регіону. Поки що введіть назву."
 
-#~ msgid "Injection/Smart insulin pen – e.g. Novopen, InPen"
-#~ msgstr ""
-#~ "Звичайна або інтелектуальна шприц-ручка для введення інсуліну, як-от "
-#~ "Novopen або InPen"
-
-#~ msgid ""
-#~ "Insulin pump (including as part of a Hybrid Closed Loop system) – e.g. "
-#~ "Omnipod, MiniMed, Tandem"
-#~ msgstr ""
-#~ "Інсулінова помпа (зокрема як частина гібридної системи з замкнутим "
-#~ "циклом), як-от Omnipod, MiniMed або Tandem"
-
 #~ msgid "N/A – I do not administer insulin in school"
 #~ msgstr ""
 #~ "Не застосовно – мені не потрібно вводити інсулін під час перебування у "
 #~ "школі"
-
-#~ msgid "Finger prick testing"
-#~ msgstr "Аналіз із проколюванням пальця"
-
-#~ msgid ""
-#~ "Continuous glucose monitor (including as part of a Hybrid Closed Loop "
-#~ "system) e.g. Dexcom, FreeStyle Libre 2 Plus or 3 Plus"
-#~ msgstr ""
-#~ "Монітор глюкози безперервної дії (зокрема як частина гібридної системи з "
-#~ "замкнутим циклом), як-от Dexcom, FreeStyle Libre 2 Plus або 3 Plus"
 
 #~ msgid "N/A – I do not monitor blood glucose at school"
 #~ msgstr ""
@@ -1339,11 +1660,6 @@ msgstr "Розпочати знову"
 #~ msgstr ""
 #~ "Будь ласка, дайте відповіді на наступні запитання про досвід вашої дитини "
 #~ "у школі після діагностування діабету."
-
-#~ msgid "N/A – My child does not administer insulin in school"
-#~ msgstr ""
-#~ "Не застосовно – моїй дитині не потрібно вводити інсулін під час "
-#~ "перебування у школі"
 
 #~ msgid "N/A – My child does not monitor blood glucose at school"
 #~ msgstr ""
