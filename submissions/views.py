@@ -68,6 +68,15 @@ def landing(request):
     return render(request, "submissions/landing.html")
 
 
+def get_current_clinic_name_with_region(request, clinics):
+    clinics = get_all_clinics()
+
+    if "pz_code" in request.session:
+        for clinic in clinics:
+            if clinic["pz_code"] == request.session["pz_code"]:
+                return f"{clinic['name']} - {clinic['region']}"
+
+
 def clinic_or_region(request, lang):
     """Step 1: select the region (or 'unsure')."""
     if request.method == "POST":
@@ -91,12 +100,7 @@ def clinic_or_region(request, lang):
 
     clinic_names_with_regions = [f"{clinic['name']} - {clinic['region']}" for clinic in get_all_clinics()]
 
-    selected_clinic_name_with_region = None
-    if "pz_code" in request.session:
-        for clinic in clinics:
-            if clinic["pz_code"] == request.session["pz_code"]:
-                selected_clinic_name_with_region = f"{clinic['name']} - {clinic['region']}"
-                break
+    selected_clinic_name_with_region = get_current_clinic_name_with_region(request, clinics)
     
     clinic_json = json.dumps({
         "clinic_names_with_regions": clinic_names_with_regions,
@@ -132,7 +136,13 @@ def clinic_in_region(request, lang, region):
 
 
 def role_form(request, lang):
-    return render(request, "submissions/role_form.html", {"lang": lang})
+    # TODO MRB: needs to remember your selector
+    ctx = {
+        "lang": lang,
+        "current_clinic_name_with_region": get_current_clinic_name_with_region(request, get_all_clinics()),
+    }
+
+    return render(request, "submissions/role_form.html", ctx)
 
 
 def confirmation(request, lang):
@@ -223,7 +233,7 @@ def section(request, lang, role, section):
         "lang": lang,
         "role": role,
         "section": section_data["slug"],
-        "question": role_questions[0]["id"],
+        "question": role_questions[0]["id"]
     })
 
     ctx = {
@@ -232,6 +242,7 @@ def section(request, lang, role, section):
         "next_url": next_url,
         "lang": lang,
         "role": role,
+        "current_clinic_name_with_region": get_current_clinic_name_with_region(request, get_all_clinics()),
     }
 
     return render(request, f"submissions/section.html", ctx)
@@ -349,6 +360,7 @@ def question(request, lang, role, section, question):
         "prev_url": prev_url,
         "lang": lang,
         "role": role,
+        "current_clinic_name_with_region": get_current_clinic_name_with_region(request, get_all_clinics()),
     }
 
     ctx["submission"] = submission

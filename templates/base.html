@@ -38,6 +38,9 @@
   <footer class="nhsuk-footer" role="contentinfo">
     <div class="nhsuk-width-container">
       <div class="nhsuk-footer__meta">
+        <div class="nhsuk-hint">
+          {{current_clinic_name_with_region}}
+        </div>
         <ul class="nhsuk-footer__list">
           <li class="nhsuk-footer__list-item">
             <form method="post" action="{% url 'start_again' %}">

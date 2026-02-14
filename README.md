@@ -14,13 +14,10 @@ Visit http://localhost:8000/.
 Requested by team
 
 - Show count of answers broken down by unit (admins)
-- Don't allow moving on before all questions are answered in a section
-  - Double check no optional questions
 
 My list
 
 - GitHub pr check
-- Start again button is massive - move it down to the footer
 - Deep link to unit (iPad mode option at the bottom, select unit)
 - Q4 should say "do you identify as" (check translations?)
 - Put back section X of X and submit for translations
