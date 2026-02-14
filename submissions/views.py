@@ -162,48 +162,6 @@ def get_idx_prev_next(lang, role, sections, section):
     return (idx, prev_url, next_url)
 
 
-def form(request, lang, role, section=None):
-    form_url_name = f"{role}_section"
-
-    sections = [s for s in build_sections() if role in s.get("roles", [])]
-
-    if section is None:
-        return redirect(
-            reverse("form_section", kwargs={"lang": lang, "role": role, "section": sections[0]["slug"]})
-        )
-
-    submission = None
-    submission_id = request.session.get("submission_id")
-
-    if submission_id:
-        try:
-            submission = Submission.objects.get(
-                pk=submission_id, submitted=False
-            )
-        except Submission.DoesNotExist:
-            del request.session["submission_id"]
-            return redirect(reverse("landing"))
-
-    (idx, prev_url, next_url) = get_idx_prev_next(lang, role, sections, section)
-
-    ctx = {
-        "sections": sections,
-        "current_index": idx,
-        "current_display": idx + 1,
-        "total_sections": len(sections),
-        "section_template": sections[idx]["template"],
-        "prev_url": prev_url,
-        "next_url": next_url,
-        "is_last_section": idx == len(sections) - 1,
-        "lang": lang,
-        "role": role,
-    }
-
-    ctx["submission"] = submission
-
-    return render(request, f"submissions/form.html", ctx)
-
-
 def save_response(request ,submission):
     for field in SIMPLE_FIELDS:
         if field in request.POST:
@@ -396,30 +354,6 @@ def question(request, lang, role, section, question):
     ctx["submission"] = submission
 
     return render(request, f"submissions/question.html", ctx)
-
-
-@require_POST
-def autosave(request, lang, role):
-    submission_id = request.session.get("submission_id")
-    submission = None
-
-    if submission_id:
-        try:
-            submission = Submission.objects.get(pk=submission_id, submitted=False)
-        except Submission.DoesNotExist:
-            pass
-
-    if submission is None:
-        submission = Submission.objects.create(
-            role=role,
-            language=lang,
-            pz_code=request.session.get("pz_code", ""),
-        )
-        request.session["submission_id"] = submission.pk
-
-    save_response(request, submission)
-
-    return HttpResponse(status=204)
 
 
 @require_POST
