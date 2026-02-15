@@ -3,7 +3,7 @@
 </script>
 
 <script>
-  const { clinic_names_with_regions, selected_clinic_name_with_region } = JSON.parse(document.getElementById('clinic-data').textContent);
+  const { clinic_display_names, current_clinic_display_name } = JSON.parse(document.getElementById('clinic-data').textContent);
 
   document.addEventListener('DOMContentLoaded', function () {
     const autoComplete = document.getElementById('location-picker');
@@ -12,7 +12,7 @@
 
     const submit = autoComplete.closest('form').querySelector('[type="submit"]');
 
-    if(selected_clinic_name_with_region) {
+    if(current_clinic_display_name) {
       submit.disabled = false;
       submit.ariaDisabled = false;
     }
@@ -21,8 +21,8 @@
       element: autoComplete,
       id: 'location-autocomplete',
       name: 'clinic',
-      source: clinic_names_with_regions,
-      defaultValue: selected_clinic_name_with_region || '',
+      source: clinic_display_names,
+      defaultValue: current_clinic_display_name || '',
       showAllValues: true,
       onConfirm: () => {
         submit.disabled = false;

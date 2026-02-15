@@ -6,7 +6,13 @@ from django.urls import reverse
 from django.views.decorators.http import require_POST
 from django.utils.translation import gettext as _
 
-from .clinics import get_all_clinics, get_clinics_for_region, REGION_SLUG_MAP
+from .clinics import (
+    get_all_clinics_sorted,
+    get_clinics_for_region,
+    REGION_SLUG_MAP,
+    get_current_clinic_display_name,
+    get_all_clinic_display_names,
+)
 from .models import Submission, GENDER_CHOICES, DIABETES_TYPE_CHOICES
 from .sections import build_sections
 
@@ -69,7 +75,7 @@ def landing(request):
 
 
 def get_current_clinic_name_with_region(request, clinics):
-    clinics = get_all_clinics()
+    clinics = get_all_clinics_sorted()
 
     if "pz_code" in request.session:
         for clinic in clinics:
@@ -77,14 +83,13 @@ def get_current_clinic_name_with_region(request, clinics):
                 return f"{clinic['name']} - {clinic['region']}"
 
 
-def get_clinic_json(request, clinics):
-    clinic_names_with_regions = [f"{clinic['name']} - {clinic['region']}" for clinic in clinics]
-
-    selected_clinic_name_with_region = get_current_clinic_name_with_region(request, clinics)
+def get_clinic_json(pz_code):
+    clinic_display_names = get_all_clinic_display_names()
+    current_clinic_display_name = get_current_clinic_display_name(pz_code)
     
     clinic_json = json.dumps({
-        "clinic_names_with_regions": clinic_names_with_regions,
-        "selected_clinic_name_with_region": selected_clinic_name_with_region
+        "clinic_display_names": clinic_display_names,
+        "current_clinic_display_name": current_clinic_display_name
     })
 
     return clinic_json
@@ -97,7 +102,7 @@ def clinic_or_region(request, lang):
         region = request.POST.get("region", "")
 
         if clinic_value:
-            for clinic in get_all_clinics():
+            for clinic in get_all_clinics_sorted():
                 if clinic_value == f"{clinic['name']} - {clinic['region']}":
                     request.session["pz_code"] = clinic["pz_code"]
             
@@ -106,7 +111,7 @@ def clinic_or_region(request, lang):
         else:
             return redirect(reverse("clinic_in_region", kwargs={"lang": lang, "region": region}))
 
-    clinics = get_all_clinics()
+    clinics = get_all_clinics_sorted()
     
     regions = sorted(set(clinic["region"] for clinic in clinics))
     regions_with_slugs = [(REGION_SLUG_MAP[r], r) for r in regions]
@@ -115,7 +120,7 @@ def clinic_or_region(request, lang):
         "lang": lang,
         "region": None, # always select again
         "regions_with_slugs": regions_with_slugs,
-        "clinic_json": get_clinic_json(request, clinics),
+        "clinic_json": get_clinic_json(request.session.get("pz_code")),
     })
 
 
@@ -127,7 +132,7 @@ def clinic_in_region(request, lang, region):
         return redirect(reverse("role_form", kwargs={"lang": lang}))
 
     if region == "all":
-        clinics = get_all_clinics()
+        clinics = get_all_clinics_sorted()
     else:
         clinics = get_clinics_for_region(region)
 
@@ -136,6 +141,7 @@ def clinic_in_region(request, lang, region):
         "region": region,
         "clinics": clinics,
         "pz_code": request.session.get("pz_code", ""),
+        "clinic_json": get_clinic_json(request.session.get("pz_code")),
     })
 
 
@@ -143,7 +149,7 @@ def role_form(request, lang):
     # TODO MRB: needs to remember your selector
     ctx = {
         "lang": lang,
-        "current_clinic_name_with_region": get_current_clinic_name_with_region(request, get_all_clinics()),
+        "current_clinic_display_name": get_current_clinic_display_name(request.session.get("pz_code")),
     }
 
     return render(request, "submissions/role_form.html", ctx)
@@ -246,7 +252,7 @@ def section(request, lang, role, section):
         "next_url": next_url,
         "lang": lang,
         "role": role,
-        "current_clinic_name_with_region": get_current_clinic_name_with_region(request, get_all_clinics()),
+        "current_clinic_display_name": get_current_clinic_display_name(request.session.get("pz_code")),
     }
 
     return render(request, f"submissions/section.html", ctx)
@@ -364,7 +370,7 @@ def question(request, lang, role, section, question):
         "prev_url": prev_url,
         "lang": lang,
         "role": role,
-        "current_clinic_name_with_region": get_current_clinic_name_with_region(request, get_all_clinics()),
+        "current_clinic_display_name": get_current_clinic_display_name(request.session.get("pz_code")),
     }
 
     ctx["submission"] = submission
@@ -391,24 +397,44 @@ def submit(request, lang, role):
 # Start again
 # ---------------------------------------------------------------------------
 
+def reset_session(request):
+    keys_to_clear = ["submission_id", "history"]
+
+    if "tablet_mode" not in request.session:
+        keys_to_clear.append("pz_code")
+
+    for key in keys_to_clear:
+        if key in request.session:
+            del request.session[key]
+
 @require_POST
 def start_again(request):
-    submission_id = request.session.get("submission_id")
-    if submission_id:
-        del request.session["submission_id"]
-    
-    pz_code = request.session.get("pz_code")
-    if pz_code:
-        del request.session["pz_code"]
+    reset_session(request)
 
     return redirect(reverse("landing"))
 
 
 def tablet_mode(request):
-    clinics = get_all_clinics()
+    if request.POST:
+        action = request.POST.get("action")
+
+        match action:
+            case "enable_tablet_mode":
+                clinic_name_and_region = request.POST.get("clinic", "")
+
+
+
+                request.session["tablet_mode"] = True
+            case "disable_tablet_mode" if "tablet_mode" in request.session:
+                del request.session["tablet_mode"]
+        
+        reset_session(request)
+        return redirect(reverse("landing"))
+
+    clinics = get_all_clinics_sorted()
 
     ctx = {
-        "clinic_json": get_clinic_json(request, clinics),
+        "clinic_json": get_clinic_json(request.session.get("pz_code")),
     }
 
     return render(request, "submissions/tablet-mode.html", ctx)

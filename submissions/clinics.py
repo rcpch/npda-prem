@@ -245,6 +245,21 @@ def get_clinics_for_region(region_slug):
     )
 
 
-def get_all_clinics():
+def get_all_clinics_sorted():
     """Return all clinics sorted alphabetically by name."""
     return sorted(CLINICS, key=lambda c: c["name"].lower())
+
+
+def get_current_clinic_display_name(pz_code):
+    if pz_code is None:
+        return None
+    
+    for clinic in CLINICS:
+        if clinic["pz_code"] == pz_code:
+            return f"{clinic['name']} - {clinic['region']}"
+
+
+def get_all_clinic_display_names():
+    clinics = get_all_clinics_sorted()
+
+    return [f"{clinic['name']} - {clinic['region']}" for clinic in clinics]
