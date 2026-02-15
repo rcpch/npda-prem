@@ -41,3 +41,4 @@ My list
   - Get the bot to go byte for byte between the web page and the translations spreadsheets?
   - Submit additional translations (e.g. section X of X)
 - prodmon?
+- Need a page to say submission closed
