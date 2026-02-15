@@ -35,6 +35,16 @@ DEBUG = os.getenv("DEBUG", "False") == "True"
 ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS", "").split(",")
 CSRF_TRUSTED_ORIGINS = os.environ.get("DJANGO_CSRF_TRUSTED_ORIGINS", "").split(",")
 
+# Microsoft Entra ID OAuth (admin login)
+AZURE_TENANT_ID = os.environ.get("AZURE_TENANT_ID", "")
+AZURE_CLIENT_ID = os.environ.get("AZURE_CLIENT_ID", "")
+AZURE_CLIENT_SECRET = os.environ.get("AZURE_CLIENT_SECRET", "")
+ADMIN_ALLOWED_EMAILS = {
+    e.strip().lower()
+    for e in os.environ.get("ADMIN_ALLOWED_EMAILS", "").split(",")
+    if e.strip()
+}
+
 
 # Application definition
 
