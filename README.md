@@ -42,3 +42,4 @@ My list
   - Submit additional translations (e.g. section X of X)
 - prodmon?
 - Need a page to say submission closed
+- Email in footer to report tech issues? or is in front matter 
