@@ -49,7 +49,7 @@ ADMIN_ALLOWED_EMAILS = {
 # Application definition
 
 INSTALLED_APPS = [
-    "django.contrib.admin",
+    "npda_prem.apps.CustomAdminConfig",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",

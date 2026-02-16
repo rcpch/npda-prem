@@ -125,7 +125,3 @@ class EntraAdminSite(admin.AdminSite):
 
 
 entra_admin_site = EntraAdminSite(name="admin")
-
-# Replace the default admin site so @admin.register() decorators work
-admin.site = entra_admin_site
-admin.sites.site = entra_admin_site
