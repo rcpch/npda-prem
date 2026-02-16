@@ -49,7 +49,7 @@ ADMIN_ALLOWED_EMAILS = {
 # Application definition
 
 INSTALLED_APPS = [
-    "npda_prem.apps.CustomAdminConfig",
+    "npda_prem.apps.CustomAdminConfig" if AZURE_CLIENT_ID else "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
