@@ -1,4 +1,4 @@
-from django.contrib.admin import AdminConfig
+from django.contrib.admin.apps import AdminConfig
 
 
 class CustomAdminConfig(AdminConfig):
