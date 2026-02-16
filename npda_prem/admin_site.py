@@ -16,10 +16,10 @@ User = get_user_model()
 
 
 def _get_msal_app():
-    authority = f"https://login.microsoftonline.com/{settings.AZURE_TENANT_ID}"
+    authority = f"https://login.microsoftonline.com/{settings.ADMIN_LOGIN_AZURE_TENANT_ID}"
     return msal.ConfidentialClientApplication(
-        client_id=settings.AZURE_CLIENT_ID,
-        client_credential=settings.AZURE_CLIENT_SECRET or None,
+        client_id=settings.ADMIN_LOGIN_AZURE_CLIENT_ID,
+        client_credential=settings.ADMIN_LOGIN_AZURE_CLIENT_SECRET or None,
         authority=authority,
     )
 

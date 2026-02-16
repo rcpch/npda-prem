@@ -17,7 +17,7 @@ def write_azure_pg_password_file():
     if not password_file:
         return
 
-    password = DefaultAzureCredential().get_token("https://ossrdbms-aad.database.windows.net/.default").token
+    password = DefaultAzureCredential().get_token("https://ossrdbms-aad.database.windows.net").token
 
     with open(password_file, "w") as f:
         f.write(f"*:*:*:*:{password}")
