@@ -1,0 +1,15 @@
+{% extends "admin/base_site.html" %}
+
+{% block title %}Access denied{% endblock %}
+
+{% block content %}
+<h2>Access denied</h2>
+<p>
+  {% if email %}
+    The email address <strong>{{ email }}</strong> is not authorised to access this site.
+  {% else %}
+    No email address was returned by the identity provider.
+  {% endif %}
+</p>
+<p>If you believe this is an error, please contact your administrator.</p>
+{% endblock %}
