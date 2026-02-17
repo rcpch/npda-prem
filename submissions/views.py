@@ -422,7 +422,7 @@ def tablet_mode(request):
             case "enable_tablet_mode":
                 clinic_name_and_region = request.POST.get("clinic", "")
 
-
+                # TODO: set pz_code
 
                 request.session["tablet_mode"] = True
             case "disable_tablet_mode" if "tablet_mode" in request.session:
