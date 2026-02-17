@@ -449,6 +449,7 @@ def tablet_mode(request):
 
     ctx = {
         "clinic_json": get_clinic_json(request.session.get("pz_code")),
+        "tablet_mode_enabled": "tablet_mode" in request.session,
     }
 
     return render(request, "submissions/tablet-mode.html", ctx)

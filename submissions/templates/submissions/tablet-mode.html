@@ -27,7 +27,7 @@
     {% csrf_token %}
     <input type="hidden" name="action" value="disable_tablet_mode">
     <nav>
-        <input type="submit" class="nhsuk-button nhsuk-button--secondary" id="disable-btn" value="{% trans 'Disable' %}" disabled aria-disabled="true">
+        <input type="submit" class="nhsuk-button nhsuk-button--secondary" id="disable-btn" value="{% trans 'Disable' %}" {% if not tablet_mode_enabled %}disabled aria-disabled="true"{% endif %}>
     </nav>
 </form>
 
