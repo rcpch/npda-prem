@@ -154,9 +154,16 @@ def clinic_in_region(request, lang, region):
 
 def role_form(request, lang):
     # TODO MRB: needs to remember your selector
+
+    prev_url = reverse("clinic_or_region", kwargs={"lang": lang})
+
+    if request.session.get("tablet_mode") and "pz_code" in request.session:
+        prev_url = reverse("landing")
+
     ctx = {
         "lang": lang,
         "current_clinic_display_name": get_current_clinic_display_name(request.session.get("pz_code")),
+        "prev_url": prev_url
     }
 
     return render(request, "submissions/role_form.html", ctx)
