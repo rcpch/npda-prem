@@ -263,3 +263,9 @@ def get_all_clinic_display_names():
     clinics = get_all_clinics_sorted()
 
     return [f"{clinic['name']} - {clinic['region']}" for clinic in clinics]
+
+
+def get_pz_code_by_display_name(display_name):
+    for clinic in CLINICS:
+        if f"{clinic['name']} - {clinic['region']}" == display_name:
+            return clinic["pz_code"]

@@ -1,6 +1,7 @@
 import json
 
 from django.http import Http404, HttpResponse
+from django.core.exceptions import SuspiciousOperation
 from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
 from django.views.decorators.http import require_POST
@@ -12,6 +13,7 @@ from .clinics import (
     REGION_SLUG_MAP,
     get_current_clinic_display_name,
     get_all_clinic_display_names,
+    get_pz_code_by_display_name
 )
 from .models import Submission, GENDER_CHOICES, DIABETES_TYPE_CHOICES
 from .sections import build_sections
@@ -71,7 +73,14 @@ JSON_FIELDS = [
 # ---------------------------------------------------------------------------
 
 def landing(request):
-    return render(request, "submissions/landing.html")
+    ctx = {
+        "next_url": reverse("clinic_or_region", kwargs={"lang": "en"}),
+    }
+
+    if request.session.get("tablet_mode") and "pz_code" in request.session:
+        ctx["next_url"] = reverse("role_form", kwargs={"lang": "en"})
+
+    return render(request, "submissions/landing.html", ctx)
 
 
 def get_current_clinic_name_with_region(request, clinics):
@@ -101,13 +110,11 @@ def clinic_or_region(request, lang):
         clinic_value = request.POST.get("clinic", "")
         region = request.POST.get("region", "")
 
-        if clinic_value:
-            for clinic in get_all_clinics_sorted():
-                if clinic_value == f"{clinic['name']} - {clinic['region']}":
-                    request.session["pz_code"] = clinic["pz_code"]
-            
-            if "pz_code" in request.session:
-                return redirect(reverse("role_form", kwargs={"lang": lang}))
+        pz_code = get_pz_code_by_display_name(clinic_value)
+
+        if pz_code:
+            request.session["pz_code"] = pz_code
+            return redirect(reverse("role_form", kwargs={"lang": lang}))
         else:
             return redirect(reverse("clinic_in_region", kwargs={"lang": lang, "region": region}))
 
@@ -420,13 +427,20 @@ def tablet_mode(request):
 
         match action:
             case "enable_tablet_mode":
-                clinic_name_and_region = request.POST.get("clinic", "")
+                clinic_value = request.POST.get("clinic", "")
+                pz_code = get_pz_code_by_display_name(clinic_value)
 
-                # TODO: set pz_code
+                if not pz_code:
+                    raise SuspiciousOperation(f"Unknown clinic {clinic_value} selected for tablet mode")
 
+                request.session["pz_code"] = pz_code
                 request.session["tablet_mode"] = True
             case "disable_tablet_mode" if "tablet_mode" in request.session:
-                del request.session["tablet_mode"]
+                if "pz_code" in request.session:
+                    del request.session["pz_code"]
+                
+                if "tablet_mode" in request.session:
+                    del request.session["tablet_mode"]
         
         reset_session(request)
         return redirect(reverse("landing"))
