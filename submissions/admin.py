@@ -1,9 +1,18 @@
 import csv
 
 from django.contrib import admin
+from django.db.models import Count, Q
 from django.http import HttpResponse
+from django.template.response import TemplateResponse
+from django.urls import path
 
+from .clinics import CLINICS
 from .models import Submission
+
+# Build a lookup: pz_code → first familiar clinic name
+_PZ_NAME = {}
+for _c in CLINICS:
+    _PZ_NAME.setdefault(_c["pz_code"], _c["name"])
 
 
 @admin.action(description="Export selected submissions as CSV")
@@ -16,7 +25,7 @@ def export_as_csv(modeladmin, request, queryset):
         "role",
         "language",
         "submitted",
-        "q2_hospital",
+        "pz_code",
         "q4_gender",
         "q5_relationship",
         "q6_diabetes_type",
@@ -83,3 +92,48 @@ class SubmissionAdmin(admin.ModelAdmin):
     list_filter = ("role", "submitted", "language", "pz_code")
     readonly_fields = ("created_at", "updated_at")
     actions = [export_as_csv]
+
+    def get_urls(self):
+        urls = super().get_urls()
+        custom = [
+            path(
+                "by-pz-code/",
+                self.admin_site.admin_view(self.by_pz_code_view),
+                name="submissions_by_pz_code",
+            ),
+        ]
+        return custom + urls
+
+    def by_pz_code_view(self, request):
+        rows = (
+            Submission.objects
+            .exclude(pz_code="")
+            .values("pz_code")
+            .annotate(
+                complete=Count("id", filter=Q(submitted=True)),
+                partial=Count("id", filter=Q(submitted=False)),
+                total=Count("id"),
+            )
+            .order_by("pz_code")
+        )
+
+        data = []
+        for row in rows:
+            row["clinic_name"] = _PZ_NAME.get(row["pz_code"], "Unknown")
+            data.append(row)
+
+        totals = {
+            "complete": sum(r["complete"] for r in data),
+            "partial": sum(r["partial"] for r in data),
+            "total": sum(r["total"] for r in data),
+        }
+
+        context = {
+            **self.admin_site.each_context(request),
+            "title": "Submissions by PZ code",
+            "rows": data,
+            "totals": totals,
+        }
+        return TemplateResponse(
+            request, "admin/submissions_by_pz_code.html", context
+        )

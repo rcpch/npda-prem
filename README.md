@@ -25,7 +25,6 @@ My list
 - Q4 should say "do you identify as" (check translations?)
 - Put back section X of X and submit for translations
 - Front and back matter from document
-- Oauth login to Django admin against whitelist of RCPCH user names
 - Check with IG about cookie messaging
 - Admin emails to me
 - Request logging
@@ -42,3 +41,5 @@ My list
   - Get the bot to go byte for byte between the web page and the translations spreadsheets?
   - Submit additional translations (e.g. section X of X)
 - prodmon?
+- Need a page to say submission closed
+- Email in footer to report tech issues? or is in front matter 

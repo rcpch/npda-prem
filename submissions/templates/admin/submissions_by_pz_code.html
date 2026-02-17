@@ -1,0 +1,46 @@
+{% extends "admin/base_site.html" %}
+{% load i18n %}
+
+{% block title %}Submissions by PZ code{% endblock %}
+
+{% block content %}
+<h2>Submissions by PZ code</h2>
+
+<table>
+<thead>
+<tr>
+  <th>PZ Code</th>
+  <th>Clinic Name</th>
+  <th>Partial</th>
+  <th>Complete</th>
+  <th>Total</th>
+</tr>
+</thead>
+<tbody>
+{% for row in rows %}
+<tr>
+  <td>{{ row.pz_code }}</td>
+  <td>{{ row.clinic_name }}</td>
+  <td>{{ row.partial }}</td>
+  <td>{{ row.complete }}</td>
+  <td>{{ row.total }}</td>
+</tr>
+{% empty %}
+<tr><td colspan="5">No submissions yet.</td></tr>
+{% endfor %}
+</tbody>
+{% if rows %}
+<tfoot>
+<tr style="font-weight:bold">
+  <td colspan="2">Totals</td>
+  <td>{{ totals.partial }}</td>
+  <td>{{ totals.complete }}</td>
+  <td>{{ totals.total }}</td>
+</tr>
+</tfoot>
+{% endif %}
+</table>
+
+<br>
+<p><a href="{% url 'admin:submissions_submission_changelist' %}">&laquo; Back to submissions</a></p>
+{% endblock %}

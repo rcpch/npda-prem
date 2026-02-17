@@ -21,7 +21,7 @@ class URLPathLanguageMiddleware:
         if lang and lang in self.valid_lang_codes:
             translation.activate(lang)
             request.LANGUAGE_CODE = lang
-        elif lang and len(path_parts) > 1 and lang != "start-again":
+        elif lang and len(path_parts) > 1 and lang not in ("start-again", "admin", "static"):
             # Looks like a prefixed route but with an invalid language code
             raise Http404
         else:
