@@ -422,6 +422,13 @@ def start_again(request):
 
 
 def tablet_mode(request):
+    preselected_pz_code = None
+
+    for clinic in get_all_clinics_sorted():
+        if clinic["pz_code"] == request.GET.get("pz_code", ""):
+            preselected_pz_code = clinic["pz_code"]
+            break
+
     if request.POST:
         action = request.POST.get("action")
 
@@ -448,7 +455,7 @@ def tablet_mode(request):
     clinics = get_all_clinics_sorted()
 
     ctx = {
-        "clinic_json": get_clinic_json(request.session.get("pz_code")),
+        "clinic_json": get_clinic_json(preselected_pz_code or request.session.get("pz_code")),
         "tablet_mode_enabled": "tablet_mode" in request.session,
     }
 
