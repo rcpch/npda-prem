@@ -74,13 +74,24 @@ JSON_FIELDS = [
 
 def landing(request):
     ctx = {
-        "next_url": reverse("clinic_or_region", kwargs={"lang": "en"}),
+        # Link is modified using JS on the frontend depending on language selected
+        "next_url": reverse("front_matter", kwargs={"lang": "en"}),
     }
 
     if request.session.get("tablet_mode") and "pz_code" in request.session:
+        # TODO MRB: need to show front matter then jump straight to role form
         ctx["next_url"] = reverse("role_form", kwargs={"lang": "en"})
 
     return render(request, "submissions/landing.html", ctx)
+
+
+def front_matter(request, lang):
+    ctx = {
+        "lang": lang,
+        "next_url": reverse("clinic_or_region", kwargs={"lang": lang}),
+    }
+
+    return render(request, "submissions/front_matter.html", ctx)
 
 
 def get_current_clinic_name_with_region(request, clinics):
@@ -128,6 +139,7 @@ def clinic_or_region(request, lang):
         "region": None, # always select again
         "regions_with_slugs": regions_with_slugs,
         "clinic_json": get_clinic_json(request.session.get("pz_code")),
+        "prev_url": reverse("front_matter", kwargs={"lang": lang}),
     })
 
 

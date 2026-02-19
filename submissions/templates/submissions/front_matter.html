@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+
+<div class="nhsuk-back-link nhsuk-u-margin-bottom-3">
+  <a class="nhsuk-back-link__link" href="{% url 'landing' %}">
+    {% trans "Go back" %}
+  </a>
+</div>
+
+<h2 class="nhsuk-heading-l">
+  {% trans "What is the survey about?" %}
+</h2>
+
+<p>
+  {% trans "what_is_the_survey_about_content" %}
+</p>
+
+<h2 class="nhsuk-heading-l">
+  {% trans "What will happen to my answers?" %}
+</h2>
+
+<p>
+  {% trans "what_will_happen_to_my_answers_content" %}
+  <ul class="nhsuk-list nhsuk-list--bullet">
+    <li>{% trans "what_will_happen_to_my_answers_local" %}</li>
+    <li>{% trans "what_will_happen_to_my_answers_national" %}</li>
+  </ul>
+</p>
+
+<h2 class="nhsuk-heading-l">
+  {% trans "Who should complete the survey?" %}
+</h2>
+
+<p>
+  <ul class="nhsuk-list nhsuk-list--bullet">
+    <li>{% trans "who_should_complete_the_survey_cyp" %}</li>
+    <li>{% trans "who_should_complete_the_survey_parents" %}</li>
+  </ul>
+</p>
+
+<h2 class="nhsuk-heading-l">
+  {% trans "Is the survey anonymous?" %}
+</h2>
+
+<p>
+  {{ _("is_the_survey_anonymous_content")|linebreaks }}
+</p>
+
+<h2 class="nhsuk-heading-l">
+  {% trans "Completing the survey?" %}
+</h2>
+
+<p>
+  {{ _("completing_the_survey_content")|linebreaks }}
+</p>
+
+<h2 class="nhsuk-heading-l">
+  {% trans "Questions or help?" %}
+</h2>
+
+<p>
+  {{ _("questions_or_help_content")|linebreaks }}
+</p>
+
+<nav class="nhsuk-u-margin-top-6" aria-label="{% trans 'Form navigation' %}">
+  <a class="nhsuk-button" href="{{next_url}}">
+    {% trans 'Next' %}
+  </a>
+</nav>
+
+{% endblock %}

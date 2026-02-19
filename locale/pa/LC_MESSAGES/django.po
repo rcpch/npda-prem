@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-14 07:08+0000\n"
+"POT-Creation-Date: 2026-02-19 12:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,27 +17,27 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: npda_prem/settings.py:133
+#: npda_prem/settings.py:143
 msgid "English"
 msgstr "English"
 
-#: npda_prem/settings.py:134
+#: npda_prem/settings.py:144
 msgid "Cymraeg"
 msgstr "Cymraeg"
 
-#: npda_prem/settings.py:135
+#: npda_prem/settings.py:145
 msgid "Urdu"
 msgstr "Urdu"
 
-#: npda_prem/settings.py:136
+#: npda_prem/settings.py:146
 msgid "Polish"
 msgstr "Polish"
 
-#: npda_prem/settings.py:137
+#: npda_prem/settings.py:147
 msgid "Ukrainian"
 msgstr "Ukrainian"
 
-#: npda_prem/settings.py:138
+#: npda_prem/settings.py:148
 msgid "Punjabi"
 msgstr "ਪੰਜਾਬੀ"
 
@@ -385,7 +385,6 @@ msgid "The parent/carer of a child or young person with diabetes"
 msgstr "ਸ਼ੂਗਰ ਵਾਲੇ ਬੱਚੇ ਜਾਂ ਨੌਜਵਾਨ ਵਿਅਕਤੀ ਦਾ ਮਾਤਾ-ਪਿਤਾ/ਦੇਖਭਾਲਕਰਤਾ"
 
 #: submissions/sections.py:10
-#: submissions/templates/submissions/_parent_demographics.html:9
 msgid "Demographics"
 msgstr "ਜਨ ਅੰਕੜੇ"
 
@@ -466,7 +465,6 @@ msgid "q12.parent.title"
 msgstr ""
 
 #: submissions/sections.py:117
-#: submissions/templates/submissions/_parent_healthcare_plans.html:8
 msgid "School Health Care Plans"
 msgstr "ਸਕੂਲ ਦੀਆਂ ਸਿਹਤ ਸੰਭਾਲ ਯੋਜਨਾਵਾਂ"
 
@@ -491,8 +489,6 @@ msgid "q15.parent.title"
 msgstr ""
 
 #: submissions/sections.py:158
-#: submissions/templates/submissions/_child_managing_diabetes.html:10
-#: submissions/templates/submissions/_parent_managing_diabetes.html:7
 msgid "Managing Diabetes"
 msgstr "ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ"
 
@@ -597,7 +593,6 @@ msgid "q25.hint"
 msgstr ""
 
 #: submissions/sections.py:275
-#: submissions/templates/submissions/_shared_education_impact.html:8
 msgid "Impact on Education"
 msgstr "ਸਿੱਖਿਆ 'ਤੇ ਪ੍ਰਭਾਵ"
 
@@ -706,7 +701,6 @@ msgid "q34.hint"
 msgstr ""
 
 #: submissions/sections.py:379
-#: submissions/templates/submissions/_shared_wellbeing.html:8
 msgid "Social and Emotional Impact"
 msgstr "ਸਮਾਜਿਕ ਅਤੇ ਭਾਵਨਾਤਮਕ ਪ੍ਰਭਾਵ"
 
@@ -786,672 +780,14 @@ msgstr ""
 msgid "q42.parent.title"
 msgstr ""
 
-#: submissions/templates/submissions/_child_demographics.html:11
-#: submissions/templates/submissions/_parent_demographics.html:10
-msgid ""
-"We'd like to know a bit more about you so we can tailor our questions. We "
-"will also use this information to understand if children and young people "
-"with diabetes from different backgrounds have different experiences at "
-"school. All questions in this section are mandatory, but you may select "
-"'Prefer not to say' for some."
-msgstr ""
-"ਅਸੀਂ ਤੁਹਾਡੇ ਬਾਰੇ ਥੋੜ੍ਹਾ ਹੋਰ ਜਾਣਨਾ ਚਾਹੁੰਦੇ ਹਾਂ ਤਾਂ ਜੋ ਅਸੀਂ ਆਪਣੇ ਸਵਾਲ ਅਨੁਕੂਲ ਬਣਾ ਸਕੀਏ। ਅਸੀਂ ਇਸ "
-"ਜਾਣਕਾਰੀ ਦੀ ਵਰਤੋਂ ਇਹ ਸਮਝਣ ਲਈ ਵੀ ਕਰਾਂਗੇ ਕਿ ਕੀ ਵੱਖ-ਵੱਖ ਪਿਛੋਕੜ ਵਾਲੇ ਸ਼ੂਗਰ ਵਾਲੇ ਬੱਚਿਆਂ ਅਤੇ "
-"ਨੌਜਵਾਨਾਂ ਦੇ ਸਕੂਲ ਵਿੱਚ ਵੱਖੋ-ਵੱਖਰੇ ਅਨੁਭਵ ਹਨ। ਇਸ ਭਾਗ ਵਿੱਚ ਸਾਰੇ ਸਵਾਲ ਲਾਜ਼ਮੀ ਹਨ, ਪਰ ਤੁਸੀਂ ਕੁਝ ਲਈ "
-"'ਦੱਸਣਾ ਪਸੰਦ ਨਹੀਂ' ਚੁਣ ਸਕਦੇ ਹੋ।"
-
-#: submissions/templates/submissions/_child_demographics.html:17
-msgid "4. Are you a…"
-msgstr "4. ਕੀ ਤੁਸੀਂ ਇਹ ਹੋ…"
-
-#: submissions/templates/submissions/_child_demographics.html:32
-msgid "6. What type of diabetes do you have?"
-msgstr "6. ਤੁਹਾਨੂੰ ਕਿਸ ਕਿਸਮ ਦੀ ਸ਼ੂਗਰ ਹੈ?"
-
-#: submissions/templates/submissions/_child_demographics.html:46
-msgid "7. At what age were you diagnosed with diabetes?"
-msgstr "7. ਤੁਹਾਨੂੰ ਕਿਸ ਉਮਰ ਵਿੱਚ ਸ਼ੂਗਰ ਦਾ ਪਤਾ ਲੱਗਿਆ?"
-
-#: submissions/templates/submissions/_child_demographics.html:62
-msgid "8. Which of the following best describes your ethnicity?"
-msgstr "8. ਹੇਠਾਂ ਦਿੱਤਿਆਂ ਵਿੱਚੋਂ ਕਿਹੜਾ ਤੁਹਾਡੀ ਜਾਤੀਅਤਾ ਨੂੰ ਸਭ ਤੋਂ ਵਧੀਆ ਢੰਗ ਨਾਲ ਦਰਸਾਉਂਦਾ ਹੈ?"
-
-#: submissions/templates/submissions/_child_demographics.html:79
-msgid "9. What stage of education are you in?"
-msgstr "9. ਤੁਸੀਂ ਸਿੱਖਿਆ ਦੇ ਕਿਸ ਪੜਾਅ ਵਿੱਚ ਹੋ?"
-
-#: submissions/templates/submissions/_child_demographics.html:93
-#: submissions/templates/submissions/_parent_demographics.html:93
-#: submissions/templates/submissions/_shared_education_impact.html:132
-msgid "Please specify"
-msgstr "ਕਿਰਪਾ ਕਰਕੇ ਦੱਸੋ"
-
-#: submissions/templates/submissions/_child_demographics.html:104
-msgid "10. Which type of school or education do you attend?"
-msgstr "10. ਤੁਸੀਂ ਕਿਸ ਕਿਸਮ ਦੇ ਸਕੂਲ ਵਿੱਚ ਜਾਂਦੇ ਹੋ ਜਾਂ ਸਿੱਖਿਆ ਪ੍ਰਾਪਤ ਕਰਦੇ ਹੋ?"
-
-#: submissions/templates/submissions/_child_demographics.html:109
-#: submissions/templates/submissions/_parent_demographics.html:108
-msgid ""
-"These are schools where you do not have to pay to attend. This includes "
-"academies, colleges, and grammar schools."
-msgstr ""
-"ਇਹ ਉਹ ਸਕੂਲ ਹਨ ਜਿੱਥੇ ਤੁਹਾਨੂੰ ਪੜ੍ਹਾਈ ਲਈ ਭੁਗਤਾਨ ਨਹੀਂ ਕਰਨਾ ਪੈਂਦਾ। ਇਸ ਵਿੱਚ ਅਕੈਡਮੀਆਂ, ਕਾਲਜ ਅਤੇ "
-"ਗਰਾਮਰ ਸਕੂਲ ਸ਼ਾਮਲ ਹਨ।"
-
-#: submissions/templates/submissions/_child_demographics.html:113
-#: submissions/templates/submissions/_parent_demographics.html:110
-msgid ""
-"These are schools that charge fees to attend. Please select this even if you "
-"have received a scholarship or bursary."
-msgstr ""
-"ਇਹ ਉਹ ਸਕੂਲ ਹਨ ਜੋ ਪੜ੍ਹਾਈ ਲਈ ਫੀਸ ਲੈਂਦੇ ਹਨ। ਕਿਰਪਾ ਕਰਕੇ ਇਸਨੂੰ ਚੁਣੋ ਭਾਵੇਂ ਤੁਹਾਨੂੰ ਸਕਾਲਰਸ਼ਿਪ ਜਾਂ "
-"ਬਰਸਰੀ ਮਿਲੀ ਹੋਵੇ।"
-
-#: submissions/templates/submissions/_child_demographics.html:124
-msgid ""
-"11. Was the decision to home educate related to your diabetes diagnosis?"
-msgstr "11. ਕੀ ਘਰ ਵਿੱਚ ਪੜ੍ਹਾਈ ਕਰਨ ਦਾ ਫੈਸਲਾ ਤੁਹਾਡੀ ਸ਼ੂਗਰ ਦੀ ਜਾਂਚ ਨਾਲ ਸਬੰਧਤ ਸੀ?"
-
-#: submissions/templates/submissions/_child_demographics.html:139
-msgid "12. Are you eligible for free school meals?"
-msgstr "12. ਕੀ ਤੁਸੀਂ ਮੁਫ਼ਤ ਸਕੂਲੀ ਭੋਜਨ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਯੋਗ ਹੋ?"
-
-#: submissions/templates/submissions/_child_managing_diabetes.html:11
-msgid ""
-"This section asks about your diabetes treatment. We will use this "
-"information to see if children and young people using different diabetes "
-"technologies have different experiences at school."
-msgstr ""
-"ਇਹ ਭਾਗ ਤੁਹਾਡੇ ਸ਼ੂਗਰ ਦੇ ਇਲਾਜ ਬਾਰੇ ਪੁੱਛਦਾ ਹੈ। ਅਸੀਂ ਇਸ ਜਾਣਕਾਰੀ ਦੀ ਵਰਤੋਂ ਇਹ ਦੇਖਣ ਲਈ ਕਰਾਂਗੇ ਕਿ "
-"ਕੀ ਵੱਖ-ਵੱਖ ਸ਼ੂਗਰ ਤਕਨੀਕਾਂ ਦੀ ਵਰਤੋਂ ਕਰਨ ਵਾਲੇ ਬੱਚਿਆਂ ਅਤੇ ਨੌਜਵਾਨਾਂ ਦੇ ਸਕੂਲ ਵਿੱਚ ਵੱਖੋ-ਵੱਖਰੇ ਅਨੁਭਵ ਹੁੰਦੇ "
-"ਹਨ।"
-
-#: submissions/templates/submissions/_child_managing_diabetes.html:17
-msgid ""
-"16. Do you need to administer insulin or monitor blood glucose to manage "
-"your diabetes when in school?"
-msgstr ""
-"16. ਕੀ ਤੁਹਾਨੂੰ ਸਕੂਲ ਵਿੱਚ ਆਪਣੀ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ ਇਨਸੁਲਿਨ ਲਗਾਉਣ ਜਾਂ ਖੂਨ ਵਿਚਲੇ ਗਲੂਕੋਜ਼ ਦੀ "
-"ਨਿਗਰਾਨੀ ਕਰਨ ਦੀ ਲੋੜ ਹੈ?"
-
-#: submissions/templates/submissions/_child_managing_diabetes.html:30
-msgid "17. How do you administer insulin in school?"
-msgstr "17. ਤੁਸੀਂ ਸਕੂਲ ਵਿੱਚ ਇਨਸੁਲਿਨ ਕਿਵੇਂ ਲਗਾਉਂਦੇ ਹੋ?"
-
-#: submissions/templates/submissions/_child_managing_diabetes.html:32
-#: submissions/templates/submissions/_child_managing_diabetes.html:50
-#: submissions/templates/submissions/_parent_managing_diabetes.html:29
-#: submissions/templates/submissions/_parent_managing_diabetes.html:47
-#: submissions/templates/submissions/_shared_education_impact.html:117
-msgid "Select all that apply"
-msgstr "ਉਹ ਸਾਰੇ ਚੁਣੋ ਜੋ ਲਾਗੂ ਹੁੰਦੇ ਹਨ"
-
-#: submissions/templates/submissions/_child_managing_diabetes.html:48
-msgid "18. How do you monitor blood glucose levels in school?"
-msgstr "18. ਤੁਸੀਂ ਸਕੂਲ ਵਿੱਚ ਖੂਨ ਵਿੱਚ ਗਲੂਕੋਜ਼ ਦੇ ਪੱਧਰਾਂ ਦੀ ਨਿਗਰਾਨੀ ਕਿਵੇਂ ਕਰਦੇ ਹੋ?"
-
 #: submissions/templates/submissions/_form_nav.html:15
 #, python-format
 msgid "Section %(current)s of %(total)s"
 msgstr ""
 
-#: submissions/templates/submissions/_parent_demographics.html:16
-msgid "5. Relationship to your child with diabetes"
-msgstr "5. ਸ਼ੂਗਰ ਵਾਲੇ ਤੁਹਾਡੇ ਬੱਚੇ ਨਾਲ ਸਬੰਧ"
-
-#: submissions/templates/submissions/_parent_demographics.html:32
-msgid "6. What type of diabetes does your child have?"
-msgstr "6. ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਕਿਸ ਕਿਸਮ ਦੀ ਸ਼ੂਗਰ ਹੈ?"
-
-#: submissions/templates/submissions/_parent_demographics.html:46
-msgid "7. At what age was your child diagnosed with diabetes?"
-msgstr "7. ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਕਿਸ ਉਮਰ ਵਿੱਚ ਸ਼ੂਗਰ ਦਾ ਪਤਾ ਲੱਗਿਆ ਸੀ?"
-
-#: submissions/templates/submissions/_parent_demographics.html:62
-msgid "8. Which of the following best describes your child's ethnicity?"
-msgstr "8. ਹੇਠਾਂ ਵਿੱਚੋਂ ਕਿਹੜਾ ਤੁਹਾਡੇ ਬੱਚੇ ਦੀ ਜਾਤੀਅਤਾ ਨੂੰ ਸਭ ਤੋਂ ਵਧੀਆ ਢੰਗ ਨਾਲ ਦਰਸਾਉਂਦਾ ਹੈ?"
-
-#: submissions/templates/submissions/_parent_demographics.html:79
-msgid "9. What stage of education is your child in?"
-msgstr "9. ਤੁਹਾਡਾ ਬੱਚਾ ਸਿੱਖਿਆ ਦੇ ਕਿਸ ਪੜਾਅ ਵਿੱਚ ਹੈ?"
-
-#: submissions/templates/submissions/_parent_demographics.html:104
-msgid "10. Which type of school or education does your child attend?"
-msgstr "10. ਤੁਹਾਡਾ ਬੱਚਾ ਕਿਸ ਕਿਸਮ ਦੇ ਸਕੂਲ ਵਿੱਚ ਜਾਂਦਾ ਹੈ ਜਾਂ ਸਿੱਖਿਆ ਪ੍ਰਾਪਤ ਕਰਦਾ ਹੈ?"
-
-#: submissions/templates/submissions/_parent_demographics.html:120
-msgid ""
-"11. Was your decision to home educate related to your child's diabetes "
-"diagnosis?"
-msgstr ""
-"11. ਕੀ ਘਰ ਵਿੱਚ ਪੜ੍ਹਾਈ ਕਰਨ ਦਾ ਤੁਹਾਡਾ ਫੈਸਲਾ ਤੁਹਾਡੇ ਬੱਚੇ ਦੀ ਸ਼ੂਗਰ ਦੀ ਜਾਂਚ ਨਾਲ ਸਬੰਧਤ ਸੀ?"
-
-#: submissions/templates/submissions/_parent_demographics.html:135
-msgid "12. Is your child eligible for free school meals?"
-msgstr "12. ਕੀ ਤੁਹਾਡਾ ਬੱਚਾ ਮੁਫਤ ਸਕੂਲੀ ਭੋਜਨ ਪ੍ਰਾਪਤ ਕਰਨ ਦੇ ਯੋਗ ਹੈ?"
-
-#: submissions/templates/submissions/_parent_healthcare_plans.html:9
-msgid ""
-"We would like to know if you and your child have received formal support in "
-"managing their diabetes alongside their education."
-msgstr ""
-"ਅਸੀਂ ਜਾਣਨਾ ਚਾਹੁੰਦੇ ਹਾਂ ਕਿ ਕੀ ਤੁਹਾਨੂੰ ਅਤੇ ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਆਪਣੀ ਸਿੱਖਿਆ ਦੇ ਨਾਲ-ਨਾਲ ਆਪਣੀ ਸ਼ੂਗਰ ਦੇ "
-"ਪ੍ਰਬੰਧਨ ਵਿੱਚ ਰਸਮੀ ਸਹਾਇਤਾ ਮਿਲੀ ਹੈ।"
-
-#: submissions/templates/submissions/_parent_healthcare_plans.html:15
-msgid ""
-"13. Does your child have a school healthcare plan specifically for their "
-"diabetes?"
-msgstr "13. ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਕੋਲ ਖਾਸ ਤੌਰ 'ਤੇ ਆਪਣੀ ਸ਼ੂਗਰ ਲਈ ਸਕੂਲ ਸਿਹਤ ਸੰਭਾਲ ਯੋਜਨਾ ਹੈ?"
-
-#: submissions/templates/submissions/_parent_healthcare_plans.html:17
-msgid ""
-"This is a plan made with your diabetes team and school. It could be an "
-"informal or a formal plan, such as Individual Healthcare Plans (IHP), "
-"Records of Needs, or Education, Health and Care Plans (EHCP)."
-msgstr ""
-"ਇਹ ਤੁਹਾਡੀ ਸ਼ੂਗਰ ਟੀਮ ਅਤੇ ਸਕੂਲ ਨਾਲ ਬਣਾਈ ਗਈ ਯੋਜਨਾ ਹੈ। ਇਹ ਇੱਕ ਗੈਰ-ਰਸਮੀ ਜਾਂ ਰਸਮੀ ਯੋਜਨਾ ਹੋ "
-"ਸਕਦੀ ਹੈ, ਜਿਵੇਂ ਕਿ ਇੰਡੀਵਿਡੁਅਲ ਹੈਲਥਕੇਅਰ ਪਲਾਨਜ਼ (IHP), ਰਿਕਾਰਡਸ ਆਫ ਨੀਡਜ਼, ਜਾਂ ਐਡੂਕੇਸ਼ਨ, ਹੈਲਥ "
-"ਐਂਡ ਕੇਅਰ ਪਲਾਨਜ਼ (EHCP)"
-
-#: submissions/templates/submissions/_parent_healthcare_plans.html:30
-msgid ""
-"14. Does the school healthcare plan that's in place cover all your child's "
-"diabetes needs at school?"
-msgstr ""
-"14. ਕੀ ਸਕੂਲ ਦੀ ਸਿਹਤ ਸੰਭਾਲ ਯੋਜਨਾ ਜੋ ਲਾਗੂ ਕੀਤੀ ਗਈ ਹੈ, ਤੁਹਾਡੇ ਬੱਚੇ ਦੀਆਂ ਸਕੂਲ ਵਿੱਚ ਸ਼ੂਗਰ ਦੀਆਂ "
-"ਸਾਰੀਆਂ ਜ਼ਰੂਰਤਾਂ ਨੂੰ ਪੂਰਾ ਕਰਦੀ ਹੈ?"
-
-#: submissions/templates/submissions/_parent_healthcare_plans.html:45
-msgid ""
-"15. Does your child's school have a direct contact within your child's "
-"diabetes team if they need advice or support?"
-msgstr ""
-"15. ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਦੇ ਸਕੂਲ ਦਾ ਤੁਹਾਡੇ ਬੱਚੇ ਦੀ ਸ਼ੂਗਰ ਟੀਮ ਦੇ ਅੰਦਰ ਸਿੱਧਾ ਸੰਪਰਕ ਹੈ ਜੇ ਉਹਨਾਂ ਨੂੰ ਸਲਾਹ "
-"ਜਾਂ ਸਹਾਇਤਾ ਦੀ ਲੋੜ ਹੈ?"
-
-#: submissions/templates/submissions/_parent_managing_diabetes.html:8
-msgid ""
-"This section asks about your child's diabetes treatment. We will use this "
-"information to see if children and young people using different diabetes "
-"technologies have different experiences at school."
-msgstr ""
-"ਇਹ ਭਾਗ ਤੁਹਾਡੇ ਬੱਚੇ ਦੇ ਸ਼ੂਗਰ ਦੇ ਇਲਾਜ ਬਾਰੇ ਪੁੱਛਦਾ ਹੈ। ਅਸੀਂ ਇਸ ਜਾਣਕਾਰੀ ਦੀ ਵਰਤੋਂ ਇਹ ਦੇਖਣ ਲਈ ਕਰਾਂਗੇ "
-"ਕਿ ਕੀ ਵੱਖ-ਵੱਖ ਸ਼ੂਗਰ ਤਕਨਾਲੋਜੀਆਂ ਦੀ ਵਰਤੋਂ ਕਰਨ ਵਾਲੇ ਬੱਚਿਆਂ ਅਤੇ ਨੌਜਵਾਨਾਂ ਨੂੰ ਸਕੂਲ ਵਿੱਚ ਵੱਖੋ-ਵੱਖਰੇ ਅਨੁਭਵ "
-"ਹੁੰਦੇ ਹਨ।"
-
-#: submissions/templates/submissions/_parent_managing_diabetes.html:14
-msgid ""
-"16. Does your child need to administer insulin or monitor blood glucose to "
-"manage their diabetes when in school?"
-msgstr ""
-"16. ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਸਕੂਲ ਵਿੱਚ ਆਪਣੀ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ ਇਨਸੁਲਿਨ ਦੇਣ ਜਾਂ ਖੂਨ ਵਿੱਚ ਗਲੂਕੋਜ਼ "
-"ਦੀ ਨਿਗਰਾਨੀ ਕਰਨ ਦੀ ਲੋੜ ਹੈ?"
-
-#: submissions/templates/submissions/_parent_managing_diabetes.html:27
-msgid "17. How does your child administer insulin in school?"
-msgstr "17. ਤੁਹਾਡਾ ਬੱਚਾ ਸਕੂਲ ਵਿੱਚ ਇਨਸੁਲਿਨ ਕਿਵੇਂ ਲੈਂਦਾ ਹੈ?"
-
-#: submissions/templates/submissions/_parent_managing_diabetes.html:45
-msgid "18. How does your child monitor blood glucose levels in school?"
-msgstr "18. ਤੁਹਾਡਾ ਬੱਚਾ ਸਕੂਲ ਵਿੱਚ ਬਲੱਡ ਗਲੂਕੋਜ਼ ਦੇ ਪੱਧਰਾਂ ਦੀ ਨਿਗਰਾਨੀ ਕਿਵੇਂ ਕਰਦਾ ਹੈ?"
-
-#: submissions/templates/submissions/_parent_managing_diabetes.html:63
-msgid "19. Can you follow/monitor your child's blood glucose remotely?"
-msgstr "19. ਕੀ ਤੁਸੀਂ ਆਪਣੇ ਬੱਚੇ ਦੇ ਬਲੱਡ ਗਲੂਕੋਜ਼ ਦੀ ਦੂਰ ਰਹਿ ਕੇ ਦੇਖ ਸਕਦੇ/ਨਿਗਰਾਨੀ ਕਰ ਸਕਦੇ ਹੋ?"
-
-#: submissions/templates/submissions/_parent_managing_diabetes.html:78
-msgid ""
-"20. Are you able to contact your child's school during the day if you are "
-"concerned about their diabetes?"
-msgstr ""
-"20. ਜੇਕਰ ਤੁਸੀਂ ਉਨ੍ਹਾਂ ਦੀ ਸ਼ੂਗਰ ਬਾਰੇ ਚਿੰਤਤ ਹੋ ਤਾਂ ਕੀ ਤੁਸੀਂ ਦਿਨ ਵੇਲੇ ਆਪਣੇ ਬੱਚੇ ਦੇ ਸਕੂਲ ਨਾਲ ਸੰਪਰਕ ਕਰ "
-"ਸਕਦੇ ਹੋ?"
-
-#: submissions/templates/submissions/_shared_education_impact.html:11
-msgid ""
-"This section asks about how your child's diabetes impacts their education."
-msgstr "ਇਹ ਭਾਗ ਪੁੱਛਦਾ ਹੈ ਕਿ ਤੁਹਾਡੇ ਬੱਚੇ ਦੀ ਸ਼ੂਗਰ ਉਨ੍ਹਾਂ ਦੀ ਸਿੱਖਿਆ ਨੂੰ ਕਿਵੇਂ ਪ੍ਰਭਾਵਤ ਕਰਦੀ ਹੈ।"
-
-#: submissions/templates/submissions/_shared_education_impact.html:13
-msgid "This section asks about how your diabetes impacts your education."
-msgstr "ਇਹ ਭਾਗ ਪੁੱਛਦਾ ਹੈ ਕਿ ਤੁਹਾਡੀ ਸ਼ੂਗਰ ਤੁਹਾਡੀ ਸਿੱਖਿਆ ਨੂੰ ਕਿਵੇਂ ਪ੍ਰਭਾਵਤ ਕਰਦੀ ਹੈ।"
-
-#: submissions/templates/submissions/_shared_education_impact.html:22
-msgid ""
-"26. In the past year, how many times has your child missed one or more "
-"lessons in any given day to attend diabetes-related hospital appointments?"
-msgstr ""
-"26. ਪਿਛਲੇ ਸਾਲ, ਤੁਹਾਡੇ ਬੱਚੇ ਨੇ ਸ਼ੂਗਰ ਨਾਲ ਸਬੰਧਤ ਹਸਪਤਾਲ ਦੀਆਂ ਮੁਲਾਕਾਤਾਂ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਣ ਲਈ ਕਿਸੇ "
-"ਵੀ ਦਿਨ ਵਿੱਚ ਕਿੰਨੀ ਵਾਰ ਇੱਕ ਜਾਂ ਵੱਧ ਪਾਠ ਖੁੰਝੇ ਹਨ?"
-
-#: submissions/templates/submissions/_shared_education_impact.html:24
-msgid ""
-"26. In the past year, how many times have you missed one or more lessons in "
-"any given day to attend diabetes-related hospital appointments?"
-msgstr ""
-"26. ਪਿਛਲੇ ਸਾਲ ਵਿੱਚ, ਤੁਸੀਂ ਸ਼ੂਗਰ-ਸਬੰਧਤ ਹਸਪਤਾਲ ਦੀਆਂ ਮੁਲਾਕਾਤਾਂ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਣ ਲਈ ਕਿਸੇ ਵੀ ਦਿਨ "
-"ਵਿੱਚ ਕਿੰਨੀ ਵਾਰ ਇੱਕ ਜਾਂ ਵੱਧ ਪਾਠ ਖੁੰਝੇ ਹਨ?"
-
-#: submissions/templates/submissions/_shared_education_impact.html:27
-msgid ""
-"This could include routine appointments for the diabetes clinic or other "
-"appointments with a PDSN, dietitian, psychologist etc. (not inpatient "
-"hospital stays)"
-msgstr ""
-"ਇਸ ਵਿੱਚ ਸ਼ੂਗਰ ਕਲੀਨਿਕ ਲਈ ਰੁਟੀਨ ਮੁਲਾਕਾਤਾਂ ਜਾਂ PDSN, ਡਾਇਟੀਸ਼ੀਅਨ, ਮਨੋਵਿਗਿਆਨੀ ਆਦਿ ਨਾਲ ਹੋਰ "
-"ਮੁਲਾਕਾਤਾਂ ਸ਼ਾਮਲ ਹੋ ਸਕਦੀਆਂ ਹਨ (ਹਸਪਤਾਲ ਵਿੱਚ ਭਰਤੀ ਰਹਿਣ ਦੇ ਸਮੇਂ ਨਹੀਂ)"
-
-#: submissions/templates/submissions/_shared_education_impact.html:39
-msgid ""
-"27. Are your child's absences for diabetes-related appointments authorised "
-"by their school?"
-msgstr ""
-"27. ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਦੀਆਂ ਸ਼ੂਗਰ ਨਾਲ ਸਬੰਧਤ ਮੁਲਾਕਾਤਾਂ ਲਈ ਗੈਰਹਾਜ਼ਰੀਆਂ ਉਨ੍ਹਾਂ ਦੇ ਸਕੂਲ ਦੁਆਰਾ ਅਧਿਕਾਰਤ "
-"ਹਨ?"
-
-#: submissions/templates/submissions/_shared_education_impact.html:41
-msgid ""
-"27. Are your absences for diabetes-related appointments authorised by your "
-"school?"
-msgstr "27. ਕੀ ਤੁਹਾਡੀਆਂ ਸ਼ੂਗਰ-ਸਬੰਧਤ ਮੁਲਾਕਾਤਾਂ ਲਈ ਗੈਰਹਾਜ਼ਰੀਆਂ ਤੁਹਾਡੇ ਸਕੂਲ ਦੁਆਰਾ ਅਧਿਕਾਰਤ ਹਨ?"
-
-#: submissions/templates/submissions/_shared_education_impact.html:44
-msgid ""
-"School absences due to health appointments should not be classed as "
-"unauthorised."
-msgstr ""
-"ਸਿਹਤ ਮੁਲਾਕਾਤਾਂ ਦੇ ਕਾਰਨ ਹੋਈਆਂ ਸਕੂਲ ਦੀਆਂ ਗੈਰਹਾਜ਼ਰੀਆਂ ਨੂੰ ਅਣਅਧਿਕਾਰਤ ਨਹੀਂ ਮੰਨਿਆ ਜਾਣਾ ਚਾਹੀਦਾ ਹੈ।"
-
-#: submissions/templates/submissions/_shared_education_impact.html:59
-msgid ""
-"28. Has your child's school attendance records been negatively impacted by "
-"attending diabetes clinic appointments?"
-msgstr ""
-"28. ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਦੇ ਸਕੂਲ ਹਾਜ਼ਰੀ ਰਿਕਾਰਡਾਂ 'ਤੇ ਸ਼ੂਗਰ ਕਲੀਨਿਕ ਦੀਆਂ ਮੁਲਾਕਾਤਾਂ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਣ ਨਾਲ "
-"ਨਕਾਰਾਤਮਕ ਪ੍ਰਭਾਵ ਪਿਆ ਹੈ?"
-
-#: submissions/templates/submissions/_shared_education_impact.html:61
-msgid ""
-"28. Has your school attendance records been negatively impacted by attending "
-"diabetes clinic appointments?"
-msgstr ""
-"28. ਕੀ ਡਾਇਬੀਟੀਜ਼ ਕਲੀਨਿਕ ਮੁਲਾਕਾਤਾਂ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਣ ਨਾਲ ਤੁਹਾਡੇ ਸਕੂਲ ਹਾਜ਼ਰੀ ਰਿਕਾਰਡ 'ਤੇ "
-"ਨਕਾਰਾਤਮਕ ਪ੍ਰਭਾਵ ਪਿਆ ਹੈ?"
-
-#: submissions/templates/submissions/_shared_education_impact.html:64
-msgid ""
-"School absences due to attending health appointments should not reduce the "
-"percentage attendance."
-msgstr ""
-"ਸਿਹਤ ਮੁਲਾਕਾਤਾਂ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਣ ਕਾਰਨ ਸਕੂਲ ਗੈਰਹਾਜ਼ਰੀਆਂ ਨੂੰ ਹਾਜ਼ਰੀ ਪ੍ਰਤੀਸ਼ਤ ਨੂੰ ਨਹੀਂ ਘਟਾਉਣਾ "
-"ਚਾਹੀਦਾ।"
-
-#: submissions/templates/submissions/_shared_education_impact.html:78
-msgid ""
-"29. In the past year, how many days has your child had off school/home "
-"education because of illness related to their diabetes?"
-msgstr ""
-"29. ਪਿਛਲੇ ਸਾਲ, ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਸ਼ੂਗਰ ਨਾਲ ਸਬੰਧਤ ਬਿਮਾਰੀ ਕਾਰਨ ਸਕੂਲ/ਘਰੇਲੂ ਸਿੱਖਿਆ ਤੋਂ ਕਿੰਨੇ ਦਿਨ ਛੁੱਟੀ "
-"ਲਈ ਹੈ?"
-
-#: submissions/templates/submissions/_shared_education_impact.html:80
-msgid ""
-"29. In the past year, how many days have you had off school/home education "
-"because of illness related to your diabetes?"
-msgstr ""
-"29. ਪਿਛਲੇ ਸਾਲ, ਤੁਹਾਡੀ ਸ਼ੂਗਰ ਨਾਲ ਸਬੰਧਤ ਬਿਮਾਰੀ ਕਾਰਨ ਤੁਸੀਂ ਸਕੂਲ/ਘਰੇਲੂ ਸਿੱਖਿਆ ਤੋਂ ਕਿੰਨੇ ਦਿਨ ਛੁੱਟੀ "
-"ਲਈ ਹੈ?"
-
-#: submissions/templates/submissions/_shared_education_impact.html:83
-msgid ""
-"This could include staying off school at home or include a hospital admission"
-msgstr "ਇਸ ਵਿੱਚ ਘਰ ਵਿੱਚ ਸਕੂਲ ਤੋਂ ਛੁੱਟੀ ਰਹਿਣਾ ਜਾਂ ਹਸਪਤਾਲ ਵਿੱਚ ਦਾਖਲ ਹੋਣਾ ਸ਼ਾਮਲ ਹੋ ਸਕਦਾ ਹੈ"
-
-#: submissions/templates/submissions/_shared_education_impact.html:95
-msgid ""
-"30. Has your child ever had to move schools due to difficulties in managing "
-"their diabetes?"
-msgstr "30. ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਕਦੇ ਆਪਣੀ ਸ਼ੂਗਰ ਦੇ ਪ੍ਰਬੰਧਨ ਵਿੱਚ ਮੁਸ਼ਕਲਾਂ ਕਾਰਨ ਸਕੂਲ ਬਦਲਣਾ ਪਿਆ ਹੈ?"
-
-#: submissions/templates/submissions/_shared_education_impact.html:97
-msgid ""
-"30. Have you ever had to move schools due to difficulties in managing your "
-"diabetes?"
-msgstr "30. ਕੀ ਤੁਹਾਨੂੰ ਕਦੇ ਆਪਣੀ ਸ਼ੂਗਰ ਦੇ ਪ੍ਰਬੰਧਨ ਵਿੱਚ ਮੁਸ਼ਕਲਾਂ ਕਾਰਨ ਸਕੂਲ ਬਦਲਣਾ ਪਿਆ ਹੈ?"
-
-#: submissions/templates/submissions/_shared_education_impact.html:112
-msgid ""
-"31. Has your child ever been excluded from any of the below activities "
-"because of their diabetes?"
-msgstr ""
-"31. ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਕਦੇ ਵੀ ਆਪਣੀ ਸ਼ੂਗਰ ਦੇ ਕਾਰਨ ਹੇਠ ਲਿਖੀਆਂ ਗਤੀਵਿਧੀਆਂ ਵਿੱਚੋਂ ਕਿਸੇ ਤੋਂ ਬਾਹਰ ਰੱਖਿਆ "
-"ਗਿਆ ਹੈ?"
-
-#: submissions/templates/submissions/_shared_education_impact.html:114
-msgid ""
-"31. Have you ever been excluded from any of the below activities because of "
-"your diabetes?"
-msgstr ""
-"31. ਕੀ ਤੁਹਾਨੂੰ ਕਦੇ ਆਪਣੀ ਸ਼ੂਗਰ ਦੇ ਕਾਰਨ ਹੇਠਾਂ ਦਿੱਤੀਆਂ ਕਿਸੇ ਵੀ ਗਤੀਵਿਧੀਆਂ ਤੋਂ ਬਾਹਰ ਰੱਖਿਆ ਗਿਆ ਹੈ?"
-
-#: submissions/templates/submissions/_shared_education_impact.html:144
-msgid ""
-"32. Do you feel that your child's diabetes affects their performance in "
-"school/home education?"
-msgstr ""
-"32. ਕੀ ਤੁਹਾਨੂੰ ਲੱਗਦਾ ਹੈ ਕਿ ਤੁਹਾਡੇ ਬੱਚੇ ਦੀ ਸ਼ੂਗਰ ਤੁਹਾਡੇ ਬੱਚੇ ਦੇ ਸਕੂਲ/ਘਰੇਲੂ ਸਿੱਖਿਆ ਵਿੱਚ ਪ੍ਰਦਰਸ਼ਨ ਨੂੰ "
-"ਪ੍ਰਭਾਵਿਤ ਕਰਦੀ ਹੈ?"
-
-#: submissions/templates/submissions/_shared_education_impact.html:146
-msgid ""
-"32. Do you feel that your diabetes affects your performance in school/home "
-"education?"
-msgstr ""
-"32. ਕੀ ਤੁਹਾਨੂੰ ਲੱਗਦਾ ਹੈ ਕਿ ਤੁਹਾਡੀ ਸ਼ੂਗਰ ਸਕੂਲ/ਘਰੇਲੂ ਸਿੱਖਿਆ ਵਿੱਚ ਤੁਹਾਡੇ ਪ੍ਰਦਰਸ਼ਨ ਨੂੰ ਪ੍ਰਭਾਵਿਤ ਕਰਦੀ "
-"ਹੈ?"
-
-#: submissions/templates/submissions/_shared_education_impact.html:165
-msgid ""
-"33. Do your child's teachers have a good understanding of how diabetes can "
-"affect learning?"
-msgstr ""
-"33. ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਦੇ ਅਧਿਆਪਕਾਂ ਨੂੰ ਇਸ ਗੱਲ ਦੀ ਚੰਗੀ ਸਮਝ ਹੈ ਕਿ ਸ਼ੂਗਰ ਸਿੱਖਣ ਨੂੰ ਕਿਵੇਂ ਪ੍ਰਭਾਵਿਤ ਕਰ "
-"ਸਕਦੀ ਹੈ?"
-
-#: submissions/templates/submissions/_shared_education_impact.html:167
-msgid ""
-"33. Do your teachers have a good understanding of how diabetes can affect "
-"learning?"
-msgstr ""
-"33. ਕੀ ਤੁਹਾਡੇ ਅਧਿਆਪਕਾਂ ਨੂੰ ਚੰਗੀ ਸਮਝ ਹੈ ਕਿ ਸ਼ੂਗਰ ਕਿਸੇ ਦੇ ਸਿੱਖਣ ਨੂੰ ਕਿਵੇਂ ਪ੍ਰਭਾਵਿਤ ਕਰ ਸਕਦੀ ਹੈ?"
-
-#: submissions/templates/submissions/_shared_education_impact.html:170
-msgid ""
-"E.g. When blood glucose is too high or low, it may affect concentration or "
-"memory."
-msgstr ""
-"ਉਦਾਹਰਨ ਲਈ ਜਦੋਂ ਖੂਨ ਵਿੱਚ ਗਲੂਕੋਜ਼ ਬਹੁਤ ਜ਼ਿਆਦਾ ਜਾਂ ਘੱਟ ਹੁੰਦਾ ਹੈ, ਤਾਂ ਇਹ ਇਕਾਗਰਤਾ ਜਾਂ ਯਾਦਦਾਸ਼ਤ ਨੂੰ "
-"ਪ੍ਰਭਾਵਿਤ ਕਰ ਸਕਦੀ ਹੈ।"
-
-#: submissions/templates/submissions/_shared_education_impact.html:186
-msgid ""
-"34. Has your child ever been offered any reasonable adjustments because of "
-"their diabetes?"
-msgstr "34. ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਕਦੇ ਉਸਦੀ ਸ਼ੂਗਰ ਦੇ ਕਾਰਨ ਕੋਈ ਵਾਜਬ ਸਮਾਯੋਜਨ ਦੀ ਪੇਸ਼ਕਸ਼ ਕੀਤੀ ਗਈ ਹੈ?"
-
-#: submissions/templates/submissions/_shared_education_impact.html:188
-msgid ""
-"34. Have you ever been offered any reasonable adjustments because of your "
-"diabetes?"
-msgstr "34. ਕੀ ਤੁਹਾਨੂੰ ਕਦੇ ਤੁਹਾਡੀ ਸ਼ੂਗਰ ਕਾਰਨ ਕੋਈ ਵਾਜਬ ਤਬਦੀਲੀ ਦੀ ਪੇਸ਼ਕਸ਼ ਕੀਤੀ ਗਈ ਹੈ?"
-
-#: submissions/templates/submissions/_shared_education_impact.html:191
-msgid ""
-"(e.g. additional time in exams, snacks or drinks during class, fast passes "
-"for lunch queues)"
-msgstr ""
-"(ਜਿਵੇਂ ਕਿ ਪ੍ਰੀਖਿਆਵਾਂ ਵਿੱਚ ਵਾਧੂ ਸਮਾਂ, ਕਲਾਸ ਦੌਰਾਨ ਸਨੈਕਸ ਜਾਂ ਪੀਣ ਵਾਲੇ ਪਦਾਰਥ, ਦੁਪਹਿਰ ਦੇ ਖਾਣੇ "
-"ਦੀਆਂ ਕਤਾਰਾਂ ਲਈ ਤੇਜ਼ ਪਾਸ)"
-
-#: submissions/templates/submissions/_shared_managing_diabetes_q21_q25.html:13
-msgid ""
-"21. If your child uses a smartphone or smartwatch to manage their diabetes, "
-"are they able to use it during lesson time at school?"
-msgstr ""
-"21. ਜੇਕਰ ਤੁਹਾਡਾ ਬੱਚਾ ਆਪਣੀ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ ਸਮਾਰਟਫੋਨ ਜਾਂ ਸਮਾਰਟਵਾਚ ਦੀ ਵਰਤੋਂ ਕਰਦਾ "
-"ਹੈ, ਤਾਂ ਕੀ ਉਹ ਸਕੂਲ ਵਿੱਚ ਪੜ੍ਹਾਈ ਦੌਰਾਨ ਇਸਦੀ ਵਰਤੋਂ ਕਰ ਸਕਦੇ ਹਨ?"
-
-#: submissions/templates/submissions/_shared_managing_diabetes_q21_q25.html:15
-msgid ""
-"21. If you use a smartphone or smartwatch to manage your diabetes, are you "
-"able to use it during lesson time at school?"
-msgstr ""
-"21. ਜੇਕਰ ਤੁਸੀਂ ਆਪਣੀ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ ਸਮਾਰਟਫੋਨ ਜਾਂ ਸਮਾਰਟਵਾਚ ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹੋ, ਤਾਂ ਕੀ "
-"ਤੁਸੀਂ ਸਕੂਲ ਵਿੱਚ ਪੜ੍ਹਾਈ ਦੌਰਾਨ ਇਸਦੀ ਵਰਤੋਂ ਕਰ ਸਕਦੇ ਹੋ?"
-
-#: submissions/templates/submissions/_shared_managing_diabetes_q21_q25.html:32
-msgid ""
-"22. Is your child offered a private room at school for diabetes care, even "
-"if they don't use it?"
-msgstr ""
-"22. ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਡਾਇਬੀਟੀਜ਼ ਦੀ ਦੇਖਭਾਲ ਲਈ ਸਕੂਲ ਵਿੱਚ ਇੱਕ ਨਿੱਜੀ ਕਮਰਾ ਦਿੱਤਾ ਜਾਂਦਾ ਹੈ, ਭਾਵੇਂ "
-"ਉਹ ਇਸਦੀ ਵਰਤੋਂ ਨਹੀਂ ਕਰਦੇ?"
-
-#: submissions/templates/submissions/_shared_managing_diabetes_q21_q25.html:34
-msgid ""
-"22. Are you offered a private room at school for diabetes care, even if you "
-"don't use it?"
-msgstr ""
-"22. ਕੀ ਤੁਹਾਨੂੰ ਸ਼ੂਗਰ ਸਬੰਧੀ ਦੇਖਭਾਲ ਲਈ ਸਕੂਲ ਵਿੱਚ ਇੱਕ ਨਿੱਜੀ ਕਮਰੇ ਦੀ ਪੇਸ਼ਕਸ਼ ਕੀਤੀ ਜਾਂਦੀ ਹੈ, ਭਾਵੇਂ "
-"ਤੁਸੀਂ ਇਸਦੀ ਵਰਤੋਂ ਨਹੀਂ ਕਰਦੇ?"
-
-#: submissions/templates/submissions/_shared_managing_diabetes_q21_q25.html:37
-msgid ""
-"E.g. For administering insulin, checking blood glucose, changing pump set, "
-"or anything else related to diabetes care"
-msgstr ""
-"ਜਿਵੇਂ ਕਿ ਇਨਸੁਲਿਨ ਦੇਣ, ਖੂਨ ਵਿੱਚ ਗਲੂਕੋਜ਼ ਦੀ ਜਾਂਚ ਕਰਨ, ਪੰਪ ਸੈੱਟ ਬਦਲਣ, ਜਾਂ ਡਾਇਬੀਟੀਜ਼ ਦੀ ਦੇਖਭਾਲ "
-"ਨਾਲ ਸਬੰਧਤ ਕਿਸੇ ਹੋਰ ਚੀਜ਼ ਲਈ"
-
-#: submissions/templates/submissions/_shared_managing_diabetes_q21_q25.html:53
-msgid ""
-"23. Is your child allowed to manage diabetes in the classroom if required?"
-msgstr "23. ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਲੋੜ ਪੈਣ 'ਤੇ ਕਲਾਸਰੂਮ ਵਿੱਚ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਹੈ?"
-
-#: submissions/templates/submissions/_shared_managing_diabetes_q21_q25.html:55
-msgid "23. Are you allowed to manage diabetes in the classroom if required?"
-msgstr "23. ਕੀ ਲੋੜ ਪੈਣ 'ਤੇ ਤੁਹਾਨੂੰ ਕਲਾਸਰੂਮ ਵਿੱਚ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਹੈ?"
-
-#: submissions/templates/submissions/_shared_managing_diabetes_q21_q25.html:58
-msgid "This includes checking blood glucose or giving insulin."
-msgstr "ਇਸ ਵਿੱਚ ਖੂਨ ਵਿੱਚ ਗਲੂਕੋਜ਼ ਦੀ ਜਾਂਚ ਕਰਨਾ ਜਾਂ ਇਨਸੁਲਿਨ ਦੇਣਾ ਸ਼ਾਮਲ ਹੈ।"
-
-#: submissions/templates/submissions/_shared_managing_diabetes_q21_q25.html:74
-msgid ""
-"24. Is there a trained member of staff at school who can help your child "
-"with diabetes management?"
-msgstr ""
-"24. ਕੀ ਸਕੂਲ ਵਿੱਚ ਕੋਈ ਸਿਖਲਾਈ ਪ੍ਰਾਪਤ ਸਟਾਫ ਮੈਂਬਰ ਹੈ ਜੋ ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਵਿੱਚ "
-"ਮਦਦ ਕਰ ਸਕਦਾ ਹੈ?"
-
-#: submissions/templates/submissions/_shared_managing_diabetes_q21_q25.html:76
-msgid ""
-"24. Is there a trained member of staff at school who can help you with "
-"diabetes management?"
-msgstr ""
-"24. ਕੀ ਸਕੂਲ ਵਿੱਚ ਕੋਈ ਸਿਖਲਾਈ ਪ੍ਰਾਪਤ ਸਟਾਫ ਮੈਂਬਰ ਹੈ ਜੋ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਵਿੱਚ ਤੁਹਾਡੀ ਮਦਦ "
-"ਕਰ ਸਕਦਾ ਹੈ?"
-
-#: submissions/templates/submissions/_shared_managing_diabetes_q21_q25.html:79
-msgid ""
-"This includes checking blood glucose, administering insulin, and providing "
-"support in emergencies. This training should be provided by the diabetes "
-"team."
-msgstr ""
-"ਇਸ ਵਿੱਚ ਖੂਨ ਵਿੱਚ ਗਲੂਕੋਜ਼ ਦੀ ਜਾਂਚ ਕਰਨਾ, ਇਨਸੁਲਿਨ ਦੇਣਾ, ਅਤੇ ਐਮਰਜੈਂਸੀ ਵਿੱਚ ਸਹਾਇਤਾ ਪ੍ਰਦਾਨ ਕਰਨਾ "
-"ਸ਼ਾਮਲ ਹੈ। ਇਹ ਸਿਖਲਾਈ ਸ਼ੂਗਰ ਟੀਮ ਦੁਆਰਾ ਪ੍ਰਦਾਨ ਕੀਤੀ ਜਾਣੀ ਚਾਹੀਦੀ ਹੈ।"
-
-#: submissions/templates/submissions/_shared_managing_diabetes_q21_q25.html:94
-msgid ""
-"25. Does your child's school provide enough information about school meals "
-"for carb-counting?"
-msgstr ""
-"25. ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਦਾ ਸਕੂਲ ਕਾਰਬੋਹਾਈਡਰੇਟ-ਗਿਣਤੀ ਲਈ ਸਕੂਲੀ ਭੋਜਨ ਬਾਰੇ ਕਾਫ਼ੀ ਜਾਣਕਾਰੀ ਪ੍ਰਦਾਨ "
-"ਕਰਦਾ ਹੈ?"
-
-#: submissions/templates/submissions/_shared_managing_diabetes_q21_q25.html:96
-msgid ""
-"25. Does your school provide enough information about school meals for carb-"
-"counting?"
-msgstr ""
-"25. ਕੀ ਤੁਹਾਡਾ ਸਕੂਲ ਕਾਰਬੋਹਾਈਡਰੇਟ-ਗਿਣਤੀ ਲਈ ਸਕੂਲ ਦੇ ਭੋਜਨ ਬਾਰੇ ਕਾਫ਼ੀ ਜਾਣਕਾਰੀ ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ?"
-
-#: submissions/templates/submissions/_shared_managing_diabetes_q21_q25.html:101
-msgid ""
-"This includes information about carbohydrate content and portion sizes to "
-"help your child adjust insulin to match."
-msgstr ""
-"ਇਸ ਵਿੱਚ ਕਾਰਬੋਹਾਈਡਰੇਟ ਸਮੱਗਰੀ ਅਤੇ ਭੋਜਨ ਦੀ ਮਾਤਰਾ ਬਾਰੇ ਜਾਣਕਾਰੀ ਸ਼ਾਮਲ ਹੈ ਤਾਂ ਜੋ ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ "
-"ਇਨਸੁਲਿਨ ਨੂੰ ਮੇਲਣ ਲਈ ਅਨੁਕੂਲ ਬਣਾਉਣ ਵਿੱਚ ਮਦਦ ਕੀਤੀ ਜਾ ਸਕੇ।"
-
-#: submissions/templates/submissions/_shared_managing_diabetes_q21_q25.html:103
-msgid ""
-"This includes information about carbohydrate content and portion sizes to "
-"help you adjust insulin to match."
-msgstr ""
-"ਇਸ ਵਿੱਚ ਕਾਰਬੋਹਾਈਡਰੇਟ ਸਮੱਗਰੀ ਅਤੇ ਭੋਜਨ ਦੀ ਮਾਤਰਾ ਬਾਰੇ ਜਾਣਕਾਰੀ ਸ਼ਾਮਲ ਹੈ ਤਾਂ ਜੋ ਤੁਹਾਨੂੰ ਇਨਸੁਲਿਨ "
-"ਨੂੰ ਮੇਲਣ ਲਈ ਅਨੁਕੂਲ ਬਣਾਉਣ ਵਿੱਚ ਮਦਦ ਕੀਤੀ ਜਾ ਸਕੇ।"
-
-#: submissions/templates/submissions/_shared_wellbeing.html:11
-msgid ""
-"This section asks about how your child's diabetes impacts their wellbeing at "
-"school."
-msgstr ""
-"ਇਹ ਭਾਗ ਇਸ ਬਾਰੇ ਪੁੱਛਦਾ ਹੈ ਕਿ ਤੁਹਾਡੇ ਬੱਚੇ ਦੀ ਸ਼ੂਗਰ ਸਕੂਲ ਵਿੱਚ ਉਨ੍ਹਾਂ ਦੀ ਤੰਦਰੁਸਤੀ ਨੂੰ ਕਿਵੇਂ ਪ੍ਰਭਾਵਤ "
-"ਕਰਦੀ ਹੈ।"
-
-#: submissions/templates/submissions/_shared_wellbeing.html:13
-msgid ""
-"This section asks about how your diabetes impacts your wellbeing at school."
-msgstr "ਇਹ ਭਾਗ ਪੁੱਛਦਾ ਹੈ ਕਿ ਤੁਹਾਡੀ ਸ਼ੂਗਰ ਸਕੂਲ ਵਿੱਚ ਤੁਹਾਡੀ ਤੰਦਰੁਸਤੀ ਨੂੰ ਕਿਵੇਂ ਪ੍ਰਭਾਵਤ ਕਰਦੀ ਹੈ।"
-
-#: submissions/templates/submissions/_shared_wellbeing.html:22
-msgid ""
-"35. Has your child ever felt left out or treated differently by other "
-"students or staff members because of their diabetes?"
-msgstr ""
-"35. ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਨੇ ਕਦੇ ਆਪਣੀ ਸ਼ੂਗਰ ਦੇ ਕਾਰਨ ਦੂਜੇ ਵਿਦਿਆਰਥੀਆਂ ਜਾਂ ਸਟਾਫ ਮੈਂਬਰਾਂ ਦੁਆਰਾ ਛੱਡਿਆ ਜਾਂ "
-"ਵੱਖਰਾ ਵਿਵਹਾਰ ਕੀਤਾ ਮਹਿਸੂਸ ਕੀਤਾ ਹੈ?"
-
-#: submissions/templates/submissions/_shared_wellbeing.html:24
-msgid ""
-"35. Have you ever felt left out or treated differently by other students or "
-"staff members because of your diabetes?"
-msgstr ""
-"35. ਕੀ ਤੁਸੀਂ ਕਦੇ ਆਪਣੀ ਸ਼ੂਗਰ ਦੇ ਕਾਰਨ ਦੂਜੇ ਵਿਦਿਆਰਥੀਆਂ ਜਾਂ ਸਟਾਫ ਮੈਂਬਰਾਂ ਦੁਆਰਾ ਅਲੱਗ ਰੱਖਿਆ ਜਾਣਾ "
-"ਜਾਂ ਵੱਖਰਾ ਵਿਵਹਾਰ ਕੀਤਾ ਗਿਆ ਮਹਿਸੂਸ ਕੀਤਾ ਹੈ?"
-
-#: submissions/templates/submissions/_shared_wellbeing.html:43
-msgid ""
-"36. Have you ever lost income due to taking time off work to attend your "
-"child's school for diabetes care?"
-msgstr ""
-"36. ਕੀ ਤੁਸੀਂ ਕਦੇ ਸ਼ੂਗਰ ਦੀ ਦੇਖਭਾਲ ਲਈ ਆਪਣੇ ਬੱਚੇ ਦੇ ਸਕੂਲ ਜਾਣ ਲਈ ਕੰਮ ਤੋਂ ਸਮਾਂ ਕੱਢਣ ਕਾਰਨ ਆਮਦਨ ਤੋਂ "
-"ਖੁੰਝੇ ਹੋ?"
-
-#: submissions/templates/submissions/_shared_wellbeing.html:45
-msgid ""
-"E.g. Attending your child's school for diabetes management or your child "
-"being sent home because of diabetes-related illness."
-msgstr ""
-"ਜਿਵੇਂ ਕਿ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ ਆਪਣੇ ਬੱਚੇ ਦੇ ਸਕੂਲ ਜਾਣਾ ਜਾਂ ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਸ਼ੂਗਰ ਨਾਲ ਸਬੰਧਤ "
-"ਬਿਮਾਰੀ ਕਾਰਨ ਘਰ ਭੇਜ ਦਿੱਤਾ ਜਾਣਾ।"
-
-#: submissions/templates/submissions/_shared_wellbeing.html:60
-msgid ""
-"37. How often do you feel anxiety or stress related to your child's diabetes "
-"while they're at school?"
-msgstr "37. ਤੁਹਾਡੇ ਬੱਚੇ ਦੇ ਸਕੂਲ ਵਿੱਚ ਹੋਣ 'ਤੇ ਤੁਸੀਂ ਅਕਸਰ ਕਿੰਨਾ ਚਿੰਤਿਤ ਜਾਂ ਤਣਾਅ ਮਹਿਸੂਸ ਕਰਦੇ ਹੋ?"
-
-#: submissions/templates/submissions/_shared_wellbeing.html:62
-msgid ""
-"37. How often do you feel anxiety or stress related to your diabetes while "
-"you're at school?"
-msgstr ""
-"37. ਜਦੋਂ ਤੁਸੀਂ ਸਕੂਲ ਵਿੱਚ ਹੁੰਦੇ ਹੋ ਤਾਂ ਤੁਸੀਂ ਅਕਸਰ ਕਿੰਨਾ ਆਪਣੀ ਸ਼ੂਗਰ ਨਾਲ ਸਬੰਧਤ ਚਿੰਤਾ ਜਾਂ ਤਣਾਅ "
-"ਮਹਿਸੂਸ ਕਰਦੇ ਹੋ?"
-
-#: submissions/templates/submissions/_shared_wellbeing.html:75
-msgid "And finally…"
-msgstr "ਅਤੇ ਅੰਤ ਵਿੱਚ…"
-
-#: submissions/templates/submissions/_shared_wellbeing.html:82
-msgid ""
-"38. How well has your school supported you to manage your child's diabetes "
-"safely alongside their education?"
-msgstr ""
-"38. ਤੁਹਾਡੇ ਸਕੂਲ ਨੇ ਤੁਹਾਡੇ ਬੱਚੇ ਦੀ ਸ਼ੂਗਰ ਨੂੰ ਉਸਦੀ ਸਿੱਖਿਆ ਦੇ ਨਾਲ-ਨਾਲ ਸੁਰੱਖਿਅਤ ਢੰਗ ਨਾਲ ਪ੍ਰਬੰਧਨ ਕਰਨ "
-"ਲਈ ਕਿੰਨੀ ਚੰਗੀ ਤਰ੍ਹਾਂ ਸਹਾਇਤਾ ਕੀਤੀ ਹੈ?"
-
-#: submissions/templates/submissions/_shared_wellbeing.html:84
-msgid ""
-"38. How well has your school supported you to manage your diabetes safely "
-"alongside your education?"
-msgstr ""
-"38. ਤੁਹਾਡੇ ਸਕੂਲ ਨੇ ਤੁਹਾਡੀ ਸਿੱਖਿਆ ਦੇ ਨਾਲ-ਨਾਲ ਤੁਹਾਡੀ ਸ਼ੂਗਰ ਨੂੰ ਸੁਰੱਖਿਅਤ ਢੰਗ ਨਾਲ ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ "
-"ਤੁਹਾਡੀ ਕਿੰਨੀ ਚੰਗੀ ਤਰ੍ਹਾਂ ਸਹਾਇਤਾ ਕੀਤੀ ਹੈ?"
-
-#: submissions/templates/submissions/_shared_wellbeing.html:103
-msgid ""
-"39. How well has your diabetes team supported you to manage your child's "
-"diabetes safely alongside their education?"
-msgstr ""
-"39. ਤੁਹਾਡੀ ਡਾਇਬੀਟੀਜ਼ ਟੀਮ ਨੇ ਤੁਹਾਡੇ ਬੱਚੇ ਦੀ ਸ਼ੂਗਰ ਨੂੰ ਉਸਦੀ ਸਿੱਖਿਆ ਦੇ ਨਾਲ-ਨਾਲ ਸੁਰੱਖਿਅਤ ਢੰਗ ਨਾਲ "
-"ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ ਕਿੰਨੀ ਚੰਗੀ ਤਰ੍ਹਾਂ ਸਹਾਇਤਾ ਕੀਤੀ ਹੈ?"
-
-#: submissions/templates/submissions/_shared_wellbeing.html:105
-msgid ""
-"39. How well has your diabetes team supported you to manage your diabetes "
-"safely alongside your education?"
-msgstr ""
-"39. ਤੁਹਾਡੀ ਡਾਇਬੀਟੀਜ਼ ਟੀਮ ਨੇ ਤੁਹਾਡੀ ਸਿੱਖਿਆ ਦੇ ਨਾਲ-ਨਾਲ ਤੁਹਾਡੀ ਡਾਇਬੀਟੀਜ਼ ਦਾ ਸੁਰੱਖਿਅਤ ਢੰਗ "
-"ਨਾਲ ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ ਤੁਹਾਡੀ ਕਿੰਨੀ ਚੰਗੀ ਤਰ੍ਹਾਂ ਸਹਾਇਤਾ ਕੀਤੀ ਹੈ?"
-
-#: submissions/templates/submissions/_shared_wellbeing.html:122
-msgid "40. What has worked well?"
-msgstr "40. ਕਿਹੜੀ ਚੀਜ਼ ਨੇ ਚੰਗੀ ਤਰ੍ਹਾਂ ਕੰਮ ਕੀਤਾ ਹੈ?"
-
-#: submissions/templates/submissions/_shared_wellbeing.html:126
-msgid ""
-"What has been helpful about the support your child has at school to manage "
-"their diabetes?"
-msgstr ""
-"ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਸਕੂਲ ਵਿਖੇ ਉਨ੍ਹਾਂ ਦੀ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ ਮਿਲਣ ਵਾਲੀ ਸਹਾਇਤਾ ਬਾਰੇ ਕਿਹੜੀ ਚੀਜ਼ "
-"ਮਦਦਗਾਰ ਰਹੀ ਹੈ?"
-
-#: submissions/templates/submissions/_shared_wellbeing.html:128
-msgid ""
-"What has been helpful about the support you have at school to manage your "
-"diabetes?"
-msgstr ""
-"ਸਕੂਲ ਵਿਖੇ ਤੁਹਾਡੀ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ ਮਿਲਣ ਵਾਲੀ ਸਹਾਇਤਾ ਬਾਰੇ ਕਿਹੜੀ ਚੀਜ਼ ਮਦਦਗਾਰ ਰਹੀ "
-"ਹੈ?"
-
-#: submissions/templates/submissions/_shared_wellbeing.html:140
-msgid "41. What hasn't worked well?"
-msgstr "41. ਕਿਹੜੀ ਚੀਜ਼ ਨੇ ਚੰਗੀ ਤਰ੍ਹਾਂ ਕੰਮ ਨਹੀਂ ਕੀਤਾ ਹੈ?"
-
-#: submissions/templates/submissions/_shared_wellbeing.html:144
-msgid ""
-"What difficulties have you faced in managing your child's diabetes at school?"
-msgstr ""
-"ਸਕੂਲ ਵਿੱਚ ਆਪਣੇ ਬੱਚੇ ਦੀ ਸ਼ੂਗਰ ਦੇ ਪ੍ਰਬੰਧਨ ਵਿੱਚ ਤੁਹਾਨੂੰ ਕਿਹੜੀਆਂ ਮੁਸ਼ਕਲਾਂ ਦਾ ਸਾਹਮਣਾ ਕਰਨਾ ਪਿਆ ਹੈ?"
-
-#: submissions/templates/submissions/_shared_wellbeing.html:146
-msgid "What difficulties have you faced in managing your diabetes at school?"
-msgstr "ਸਕੂਲ ਵਿੱਚ ਆਪਣੀ ਸ਼ੂਗਰ ਦੇ ਪ੍ਰਬੰਧਨ ਵਿੱਚ ਤੁਹਾਨੂੰ ਕਿਹੜੀਆਂ ਮੁਸ਼ਕਲਾਂ ਦਾ ਸਾਹਮਣਾ ਕਰਨਾ ਪਿਆ ਹੈ?"
-
-#: submissions/templates/submissions/_shared_wellbeing.html:159
-msgid ""
-"42. What could your school or diabetes team do differently to improve your "
-"child's experience?"
-msgstr ""
-"42. ਤੁਹਾਡਾ ਸਕੂਲ ਜਾਂ ਡਾਇਬੀਟੀਜ਼ ਟੀਮ ਤੁਹਾਡੇ ਬੱਚੇ ਦੇ ਅਨੁਭਵ ਨੂੰ ਬਿਹਤਰ ਬਣਾਉਣ ਲਈ ਵੱਖਰੇ ਢੰਗ ਨਾਲ ਕੀ "
-"ਕਰ ਸਕਦੀ ਹੈ?"
-
-#: submissions/templates/submissions/_shared_wellbeing.html:161
-msgid ""
-"42. What could your school or diabetes team do differently to improve your "
-"experience?"
-msgstr ""
-"42. ਤੁਹਾਡਾ ਸਕੂਲ ਜਾਂ ਡਾਇਬੀਟੀਜ਼ ਟੀਮ ਤੁਹਾਡੇ ਅਨੁਭਵ ਨੂੰ ਬਿਹਤਰ ਬਣਾਉਣ ਲਈ ਵੱਖਰੇ ਢੰਗ ਨਾਲ ਕੀ ਕਰ "
-"ਸਕਦੀ ਹੈ?"
-
 #: submissions/templates/submissions/clinic_in_region.html:8
 #: submissions/templates/submissions/clinic_or_region.html:8
-#: submissions/templates/submissions/form.html:8
+#: submissions/templates/submissions/front_matter.html:8
 #: submissions/templates/submissions/question.html:8
 #: submissions/templates/submissions/role_form.html:8
 #: submissions/templates/submissions/section.html:7
@@ -1468,7 +804,6 @@ msgstr ""
 "ਹੈ।"
 
 #: submissions/templates/submissions/clinic_in_region.html:29
-#: submissions/templates/submissions/form.html:32
 #: submissions/templates/submissions/question.html:50
 #: submissions/templates/submissions/role_form.html:34
 #: submissions/templates/submissions/section.html:15
@@ -1516,14 +851,75 @@ msgstr ""
 msgid "Start a new survey"
 msgstr "ਨਵਾਂ ਸਰਵੇਖਣ ਸ਼ੁਰੂ ਕਰੋ"
 
-#: submissions/templates/submissions/form.html:27
-msgid "Submit"
-msgstr "ਜਮ੍ਹਾਂ ਕਰੋ"
+#: submissions/templates/submissions/front_matter.html:13
+msgid "What is the survey about?"
+msgstr ""
 
-#: submissions/templates/submissions/form.html:30
+#: submissions/templates/submissions/front_matter.html:17
+msgid "what_is_the_survey_about_content"
+msgstr ""
+
+#: submissions/templates/submissions/front_matter.html:21
+msgid "What will happen to my answers?"
+msgstr ""
+
+#: submissions/templates/submissions/front_matter.html:25
+msgid "what_will_happen_to_my_answers_content"
+msgstr ""
+
+#: submissions/templates/submissions/front_matter.html:27
+msgid "what_will_happen_to_my_answers_local"
+msgstr ""
+
+#: submissions/templates/submissions/front_matter.html:28
+msgid "what_will_happen_to_my_answers_national"
+msgstr ""
+
+#: submissions/templates/submissions/front_matter.html:33
+msgid "Who should complete the survey?"
+msgstr ""
+
+#: submissions/templates/submissions/front_matter.html:38
+msgid "who_should_complete_the_survey_cyp"
+msgstr ""
+
+#: submissions/templates/submissions/front_matter.html:39
+msgid "who_should_complete_the_survey_parents"
+msgstr ""
+
+#: submissions/templates/submissions/front_matter.html:44
+msgid "Is the survey anonymous?"
+msgstr ""
+
+#: submissions/templates/submissions/front_matter.html:48
+msgid "is_the_survey_anonymous_content"
+msgstr ""
+
+#: submissions/templates/submissions/front_matter.html:52
+msgid "Completing the survey?"
+msgstr ""
+
+#: submissions/templates/submissions/front_matter.html:56
+msgid "completing_the_survey_content"
+msgstr ""
+
+#: submissions/templates/submissions/front_matter.html:60
+msgid "Questions or help?"
+msgstr ""
+
+#: submissions/templates/submissions/front_matter.html:64
+msgid "questions_or_help_content"
+msgstr ""
+
+#: submissions/templates/submissions/front_matter.html:67
 #: submissions/templates/submissions/question.html:49
 #: submissions/templates/submissions/section.html:13
+#: submissions/templates/submissions/tablet-mode.html:22
 msgid "Form navigation"
+msgstr ""
+
+#: submissions/templates/submissions/front_matter.html:69
+msgid "Next"
 msgstr ""
 
 #: submissions/templates/submissions/landing.html:9
@@ -1538,9 +934,584 @@ msgstr "ਸ਼ੁਰੂ ਕਰੋ"
 msgid "Are you…"
 msgstr "ਕੀ ਤੁਸੀਂ ਇਹ ਹੋ…"
 
-#: templates/base.html:32
+#: submissions/templates/submissions/tablet-mode.html:23
+msgid "Enable"
+msgstr ""
+
+#: submissions/templates/submissions/tablet-mode.html:30
+msgid "Disable"
+msgstr ""
+
+#: templates/base.html:48
 msgid "Start again"
 msgstr "ਦੁਬਾਰਾ ਸ਼ੁਰੂ ਕਰੋ"
+
+#~ msgid ""
+#~ "We'd like to know a bit more about you so we can tailor our questions. We "
+#~ "will also use this information to understand if children and young people "
+#~ "with diabetes from different backgrounds have different experiences at "
+#~ "school. All questions in this section are mandatory, but you may select "
+#~ "'Prefer not to say' for some."
+#~ msgstr ""
+#~ "ਅਸੀਂ ਤੁਹਾਡੇ ਬਾਰੇ ਥੋੜ੍ਹਾ ਹੋਰ ਜਾਣਨਾ ਚਾਹੁੰਦੇ ਹਾਂ ਤਾਂ ਜੋ ਅਸੀਂ ਆਪਣੇ ਸਵਾਲ ਅਨੁਕੂਲ ਬਣਾ ਸਕੀਏ। ਅਸੀਂ "
+#~ "ਇਸ ਜਾਣਕਾਰੀ ਦੀ ਵਰਤੋਂ ਇਹ ਸਮਝਣ ਲਈ ਵੀ ਕਰਾਂਗੇ ਕਿ ਕੀ ਵੱਖ-ਵੱਖ ਪਿਛੋਕੜ ਵਾਲੇ ਸ਼ੂਗਰ ਵਾਲੇ ਬੱਚਿਆਂ "
+#~ "ਅਤੇ ਨੌਜਵਾਨਾਂ ਦੇ ਸਕੂਲ ਵਿੱਚ ਵੱਖੋ-ਵੱਖਰੇ ਅਨੁਭਵ ਹਨ। ਇਸ ਭਾਗ ਵਿੱਚ ਸਾਰੇ ਸਵਾਲ ਲਾਜ਼ਮੀ ਹਨ, ਪਰ ਤੁਸੀਂ "
+#~ "ਕੁਝ ਲਈ 'ਦੱਸਣਾ ਪਸੰਦ ਨਹੀਂ' ਚੁਣ ਸਕਦੇ ਹੋ।"
+
+#~ msgid "4. Are you a…"
+#~ msgstr "4. ਕੀ ਤੁਸੀਂ ਇਹ ਹੋ…"
+
+#~ msgid "6. What type of diabetes do you have?"
+#~ msgstr "6. ਤੁਹਾਨੂੰ ਕਿਸ ਕਿਸਮ ਦੀ ਸ਼ੂਗਰ ਹੈ?"
+
+#~ msgid "7. At what age were you diagnosed with diabetes?"
+#~ msgstr "7. ਤੁਹਾਨੂੰ ਕਿਸ ਉਮਰ ਵਿੱਚ ਸ਼ੂਗਰ ਦਾ ਪਤਾ ਲੱਗਿਆ?"
+
+#~ msgid "8. Which of the following best describes your ethnicity?"
+#~ msgstr "8. ਹੇਠਾਂ ਦਿੱਤਿਆਂ ਵਿੱਚੋਂ ਕਿਹੜਾ ਤੁਹਾਡੀ ਜਾਤੀਅਤਾ ਨੂੰ ਸਭ ਤੋਂ ਵਧੀਆ ਢੰਗ ਨਾਲ ਦਰਸਾਉਂਦਾ ਹੈ?"
+
+#~ msgid "9. What stage of education are you in?"
+#~ msgstr "9. ਤੁਸੀਂ ਸਿੱਖਿਆ ਦੇ ਕਿਸ ਪੜਾਅ ਵਿੱਚ ਹੋ?"
+
+#~ msgid "Please specify"
+#~ msgstr "ਕਿਰਪਾ ਕਰਕੇ ਦੱਸੋ"
+
+#~ msgid "10. Which type of school or education do you attend?"
+#~ msgstr "10. ਤੁਸੀਂ ਕਿਸ ਕਿਸਮ ਦੇ ਸਕੂਲ ਵਿੱਚ ਜਾਂਦੇ ਹੋ ਜਾਂ ਸਿੱਖਿਆ ਪ੍ਰਾਪਤ ਕਰਦੇ ਹੋ?"
+
+#~ msgid ""
+#~ "These are schools where you do not have to pay to attend. This includes "
+#~ "academies, colleges, and grammar schools."
+#~ msgstr ""
+#~ "ਇਹ ਉਹ ਸਕੂਲ ਹਨ ਜਿੱਥੇ ਤੁਹਾਨੂੰ ਪੜ੍ਹਾਈ ਲਈ ਭੁਗਤਾਨ ਨਹੀਂ ਕਰਨਾ ਪੈਂਦਾ। ਇਸ ਵਿੱਚ ਅਕੈਡਮੀਆਂ, ਕਾਲਜ ਅਤੇ "
+#~ "ਗਰਾਮਰ ਸਕੂਲ ਸ਼ਾਮਲ ਹਨ।"
+
+#~ msgid ""
+#~ "These are schools that charge fees to attend. Please select this even if "
+#~ "you have received a scholarship or bursary."
+#~ msgstr ""
+#~ "ਇਹ ਉਹ ਸਕੂਲ ਹਨ ਜੋ ਪੜ੍ਹਾਈ ਲਈ ਫੀਸ ਲੈਂਦੇ ਹਨ। ਕਿਰਪਾ ਕਰਕੇ ਇਸਨੂੰ ਚੁਣੋ ਭਾਵੇਂ ਤੁਹਾਨੂੰ ਸਕਾਲਰਸ਼ਿਪ ਜਾਂ "
+#~ "ਬਰਸਰੀ ਮਿਲੀ ਹੋਵੇ।"
+
+#~ msgid ""
+#~ "11. Was the decision to home educate related to your diabetes diagnosis?"
+#~ msgstr "11. ਕੀ ਘਰ ਵਿੱਚ ਪੜ੍ਹਾਈ ਕਰਨ ਦਾ ਫੈਸਲਾ ਤੁਹਾਡੀ ਸ਼ੂਗਰ ਦੀ ਜਾਂਚ ਨਾਲ ਸਬੰਧਤ ਸੀ?"
+
+#~ msgid "12. Are you eligible for free school meals?"
+#~ msgstr "12. ਕੀ ਤੁਸੀਂ ਮੁਫ਼ਤ ਸਕੂਲੀ ਭੋਜਨ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਯੋਗ ਹੋ?"
+
+#~ msgid ""
+#~ "This section asks about your diabetes treatment. We will use this "
+#~ "information to see if children and young people using different diabetes "
+#~ "technologies have different experiences at school."
+#~ msgstr ""
+#~ "ਇਹ ਭਾਗ ਤੁਹਾਡੇ ਸ਼ੂਗਰ ਦੇ ਇਲਾਜ ਬਾਰੇ ਪੁੱਛਦਾ ਹੈ। ਅਸੀਂ ਇਸ ਜਾਣਕਾਰੀ ਦੀ ਵਰਤੋਂ ਇਹ ਦੇਖਣ ਲਈ ਕਰਾਂਗੇ "
+#~ "ਕਿ ਕੀ ਵੱਖ-ਵੱਖ ਸ਼ੂਗਰ ਤਕਨੀਕਾਂ ਦੀ ਵਰਤੋਂ ਕਰਨ ਵਾਲੇ ਬੱਚਿਆਂ ਅਤੇ ਨੌਜਵਾਨਾਂ ਦੇ ਸਕੂਲ ਵਿੱਚ ਵੱਖੋ-ਵੱਖਰੇ "
+#~ "ਅਨੁਭਵ ਹੁੰਦੇ ਹਨ।"
+
+#~ msgid ""
+#~ "16. Do you need to administer insulin or monitor blood glucose to manage "
+#~ "your diabetes when in school?"
+#~ msgstr ""
+#~ "16. ਕੀ ਤੁਹਾਨੂੰ ਸਕੂਲ ਵਿੱਚ ਆਪਣੀ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ ਇਨਸੁਲਿਨ ਲਗਾਉਣ ਜਾਂ ਖੂਨ ਵਿਚਲੇ ਗਲੂਕੋਜ਼ "
+#~ "ਦੀ ਨਿਗਰਾਨੀ ਕਰਨ ਦੀ ਲੋੜ ਹੈ?"
+
+#~ msgid "17. How do you administer insulin in school?"
+#~ msgstr "17. ਤੁਸੀਂ ਸਕੂਲ ਵਿੱਚ ਇਨਸੁਲਿਨ ਕਿਵੇਂ ਲਗਾਉਂਦੇ ਹੋ?"
+
+#~ msgid "Select all that apply"
+#~ msgstr "ਉਹ ਸਾਰੇ ਚੁਣੋ ਜੋ ਲਾਗੂ ਹੁੰਦੇ ਹਨ"
+
+#~ msgid "18. How do you monitor blood glucose levels in school?"
+#~ msgstr "18. ਤੁਸੀਂ ਸਕੂਲ ਵਿੱਚ ਖੂਨ ਵਿੱਚ ਗਲੂਕੋਜ਼ ਦੇ ਪੱਧਰਾਂ ਦੀ ਨਿਗਰਾਨੀ ਕਿਵੇਂ ਕਰਦੇ ਹੋ?"
+
+#~ msgid "5. Relationship to your child with diabetes"
+#~ msgstr "5. ਸ਼ੂਗਰ ਵਾਲੇ ਤੁਹਾਡੇ ਬੱਚੇ ਨਾਲ ਸਬੰਧ"
+
+#~ msgid "6. What type of diabetes does your child have?"
+#~ msgstr "6. ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਕਿਸ ਕਿਸਮ ਦੀ ਸ਼ੂਗਰ ਹੈ?"
+
+#~ msgid "7. At what age was your child diagnosed with diabetes?"
+#~ msgstr "7. ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਕਿਸ ਉਮਰ ਵਿੱਚ ਸ਼ੂਗਰ ਦਾ ਪਤਾ ਲੱਗਿਆ ਸੀ?"
+
+#~ msgid "8. Which of the following best describes your child's ethnicity?"
+#~ msgstr "8. ਹੇਠਾਂ ਵਿੱਚੋਂ ਕਿਹੜਾ ਤੁਹਾਡੇ ਬੱਚੇ ਦੀ ਜਾਤੀਅਤਾ ਨੂੰ ਸਭ ਤੋਂ ਵਧੀਆ ਢੰਗ ਨਾਲ ਦਰਸਾਉਂਦਾ ਹੈ?"
+
+#~ msgid "9. What stage of education is your child in?"
+#~ msgstr "9. ਤੁਹਾਡਾ ਬੱਚਾ ਸਿੱਖਿਆ ਦੇ ਕਿਸ ਪੜਾਅ ਵਿੱਚ ਹੈ?"
+
+#~ msgid "10. Which type of school or education does your child attend?"
+#~ msgstr "10. ਤੁਹਾਡਾ ਬੱਚਾ ਕਿਸ ਕਿਸਮ ਦੇ ਸਕੂਲ ਵਿੱਚ ਜਾਂਦਾ ਹੈ ਜਾਂ ਸਿੱਖਿਆ ਪ੍ਰਾਪਤ ਕਰਦਾ ਹੈ?"
+
+#~ msgid ""
+#~ "11. Was your decision to home educate related to your child's diabetes "
+#~ "diagnosis?"
+#~ msgstr ""
+#~ "11. ਕੀ ਘਰ ਵਿੱਚ ਪੜ੍ਹਾਈ ਕਰਨ ਦਾ ਤੁਹਾਡਾ ਫੈਸਲਾ ਤੁਹਾਡੇ ਬੱਚੇ ਦੀ ਸ਼ੂਗਰ ਦੀ ਜਾਂਚ ਨਾਲ ਸਬੰਧਤ ਸੀ?"
+
+#~ msgid "12. Is your child eligible for free school meals?"
+#~ msgstr "12. ਕੀ ਤੁਹਾਡਾ ਬੱਚਾ ਮੁਫਤ ਸਕੂਲੀ ਭੋਜਨ ਪ੍ਰਾਪਤ ਕਰਨ ਦੇ ਯੋਗ ਹੈ?"
+
+#~ msgid ""
+#~ "We would like to know if you and your child have received formal support "
+#~ "in managing their diabetes alongside their education."
+#~ msgstr ""
+#~ "ਅਸੀਂ ਜਾਣਨਾ ਚਾਹੁੰਦੇ ਹਾਂ ਕਿ ਕੀ ਤੁਹਾਨੂੰ ਅਤੇ ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਆਪਣੀ ਸਿੱਖਿਆ ਦੇ ਨਾਲ-ਨਾਲ ਆਪਣੀ ਸ਼ੂਗਰ ਦੇ "
+#~ "ਪ੍ਰਬੰਧਨ ਵਿੱਚ ਰਸਮੀ ਸਹਾਇਤਾ ਮਿਲੀ ਹੈ।"
+
+#~ msgid ""
+#~ "13. Does your child have a school healthcare plan specifically for their "
+#~ "diabetes?"
+#~ msgstr "13. ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਕੋਲ ਖਾਸ ਤੌਰ 'ਤੇ ਆਪਣੀ ਸ਼ੂਗਰ ਲਈ ਸਕੂਲ ਸਿਹਤ ਸੰਭਾਲ ਯੋਜਨਾ ਹੈ?"
+
+#~ msgid ""
+#~ "This is a plan made with your diabetes team and school. It could be an "
+#~ "informal or a formal plan, such as Individual Healthcare Plans (IHP), "
+#~ "Records of Needs, or Education, Health and Care Plans (EHCP)."
+#~ msgstr ""
+#~ "ਇਹ ਤੁਹਾਡੀ ਸ਼ੂਗਰ ਟੀਮ ਅਤੇ ਸਕੂਲ ਨਾਲ ਬਣਾਈ ਗਈ ਯੋਜਨਾ ਹੈ। ਇਹ ਇੱਕ ਗੈਰ-ਰਸਮੀ ਜਾਂ ਰਸਮੀ ਯੋਜਨਾ ਹੋ "
+#~ "ਸਕਦੀ ਹੈ, ਜਿਵੇਂ ਕਿ ਇੰਡੀਵਿਡੁਅਲ ਹੈਲਥਕੇਅਰ ਪਲਾਨਜ਼ (IHP), ਰਿਕਾਰਡਸ ਆਫ ਨੀਡਜ਼, ਜਾਂ ਐਡੂਕੇਸ਼ਨ, "
+#~ "ਹੈਲਥ ਐਂਡ ਕੇਅਰ ਪਲਾਨਜ਼ (EHCP)"
+
+#~ msgid ""
+#~ "14. Does the school healthcare plan that's in place cover all your "
+#~ "child's diabetes needs at school?"
+#~ msgstr ""
+#~ "14. ਕੀ ਸਕੂਲ ਦੀ ਸਿਹਤ ਸੰਭਾਲ ਯੋਜਨਾ ਜੋ ਲਾਗੂ ਕੀਤੀ ਗਈ ਹੈ, ਤੁਹਾਡੇ ਬੱਚੇ ਦੀਆਂ ਸਕੂਲ ਵਿੱਚ ਸ਼ੂਗਰ ਦੀਆਂ "
+#~ "ਸਾਰੀਆਂ ਜ਼ਰੂਰਤਾਂ ਨੂੰ ਪੂਰਾ ਕਰਦੀ ਹੈ?"
+
+#~ msgid ""
+#~ "15. Does your child's school have a direct contact within your child's "
+#~ "diabetes team if they need advice or support?"
+#~ msgstr ""
+#~ "15. ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਦੇ ਸਕੂਲ ਦਾ ਤੁਹਾਡੇ ਬੱਚੇ ਦੀ ਸ਼ੂਗਰ ਟੀਮ ਦੇ ਅੰਦਰ ਸਿੱਧਾ ਸੰਪਰਕ ਹੈ ਜੇ ਉਹਨਾਂ ਨੂੰ "
+#~ "ਸਲਾਹ ਜਾਂ ਸਹਾਇਤਾ ਦੀ ਲੋੜ ਹੈ?"
+
+#~ msgid ""
+#~ "This section asks about your child's diabetes treatment. We will use this "
+#~ "information to see if children and young people using different diabetes "
+#~ "technologies have different experiences at school."
+#~ msgstr ""
+#~ "ਇਹ ਭਾਗ ਤੁਹਾਡੇ ਬੱਚੇ ਦੇ ਸ਼ੂਗਰ ਦੇ ਇਲਾਜ ਬਾਰੇ ਪੁੱਛਦਾ ਹੈ। ਅਸੀਂ ਇਸ ਜਾਣਕਾਰੀ ਦੀ ਵਰਤੋਂ ਇਹ ਦੇਖਣ ਲਈ "
+#~ "ਕਰਾਂਗੇ ਕਿ ਕੀ ਵੱਖ-ਵੱਖ ਸ਼ੂਗਰ ਤਕਨਾਲੋਜੀਆਂ ਦੀ ਵਰਤੋਂ ਕਰਨ ਵਾਲੇ ਬੱਚਿਆਂ ਅਤੇ ਨੌਜਵਾਨਾਂ ਨੂੰ ਸਕੂਲ ਵਿੱਚ ਵੱਖੋ-"
+#~ "ਵੱਖਰੇ ਅਨੁਭਵ ਹੁੰਦੇ ਹਨ।"
+
+#~ msgid ""
+#~ "16. Does your child need to administer insulin or monitor blood glucose "
+#~ "to manage their diabetes when in school?"
+#~ msgstr ""
+#~ "16. ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਸਕੂਲ ਵਿੱਚ ਆਪਣੀ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ ਇਨਸੁਲਿਨ ਦੇਣ ਜਾਂ ਖੂਨ ਵਿੱਚ "
+#~ "ਗਲੂਕੋਜ਼ ਦੀ ਨਿਗਰਾਨੀ ਕਰਨ ਦੀ ਲੋੜ ਹੈ?"
+
+#~ msgid "17. How does your child administer insulin in school?"
+#~ msgstr "17. ਤੁਹਾਡਾ ਬੱਚਾ ਸਕੂਲ ਵਿੱਚ ਇਨਸੁਲਿਨ ਕਿਵੇਂ ਲੈਂਦਾ ਹੈ?"
+
+#~ msgid "18. How does your child monitor blood glucose levels in school?"
+#~ msgstr "18. ਤੁਹਾਡਾ ਬੱਚਾ ਸਕੂਲ ਵਿੱਚ ਬਲੱਡ ਗਲੂਕੋਜ਼ ਦੇ ਪੱਧਰਾਂ ਦੀ ਨਿਗਰਾਨੀ ਕਿਵੇਂ ਕਰਦਾ ਹੈ?"
+
+#~ msgid "19. Can you follow/monitor your child's blood glucose remotely?"
+#~ msgstr "19. ਕੀ ਤੁਸੀਂ ਆਪਣੇ ਬੱਚੇ ਦੇ ਬਲੱਡ ਗਲੂਕੋਜ਼ ਦੀ ਦੂਰ ਰਹਿ ਕੇ ਦੇਖ ਸਕਦੇ/ਨਿਗਰਾਨੀ ਕਰ ਸਕਦੇ ਹੋ?"
+
+#~ msgid ""
+#~ "20. Are you able to contact your child's school during the day if you are "
+#~ "concerned about their diabetes?"
+#~ msgstr ""
+#~ "20. ਜੇਕਰ ਤੁਸੀਂ ਉਨ੍ਹਾਂ ਦੀ ਸ਼ੂਗਰ ਬਾਰੇ ਚਿੰਤਤ ਹੋ ਤਾਂ ਕੀ ਤੁਸੀਂ ਦਿਨ ਵੇਲੇ ਆਪਣੇ ਬੱਚੇ ਦੇ ਸਕੂਲ ਨਾਲ ਸੰਪਰਕ "
+#~ "ਕਰ ਸਕਦੇ ਹੋ?"
+
+#~ msgid ""
+#~ "This section asks about how your child's diabetes impacts their education."
+#~ msgstr "ਇਹ ਭਾਗ ਪੁੱਛਦਾ ਹੈ ਕਿ ਤੁਹਾਡੇ ਬੱਚੇ ਦੀ ਸ਼ੂਗਰ ਉਨ੍ਹਾਂ ਦੀ ਸਿੱਖਿਆ ਨੂੰ ਕਿਵੇਂ ਪ੍ਰਭਾਵਤ ਕਰਦੀ ਹੈ।"
+
+#~ msgid "This section asks about how your diabetes impacts your education."
+#~ msgstr "ਇਹ ਭਾਗ ਪੁੱਛਦਾ ਹੈ ਕਿ ਤੁਹਾਡੀ ਸ਼ੂਗਰ ਤੁਹਾਡੀ ਸਿੱਖਿਆ ਨੂੰ ਕਿਵੇਂ ਪ੍ਰਭਾਵਤ ਕਰਦੀ ਹੈ।"
+
+#~ msgid ""
+#~ "26. In the past year, how many times has your child missed one or more "
+#~ "lessons in any given day to attend diabetes-related hospital appointments?"
+#~ msgstr ""
+#~ "26. ਪਿਛਲੇ ਸਾਲ, ਤੁਹਾਡੇ ਬੱਚੇ ਨੇ ਸ਼ੂਗਰ ਨਾਲ ਸਬੰਧਤ ਹਸਪਤਾਲ ਦੀਆਂ ਮੁਲਾਕਾਤਾਂ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਣ ਲਈ "
+#~ "ਕਿਸੇ ਵੀ ਦਿਨ ਵਿੱਚ ਕਿੰਨੀ ਵਾਰ ਇੱਕ ਜਾਂ ਵੱਧ ਪਾਠ ਖੁੰਝੇ ਹਨ?"
+
+#~ msgid ""
+#~ "26. In the past year, how many times have you missed one or more lessons "
+#~ "in any given day to attend diabetes-related hospital appointments?"
+#~ msgstr ""
+#~ "26. ਪਿਛਲੇ ਸਾਲ ਵਿੱਚ, ਤੁਸੀਂ ਸ਼ੂਗਰ-ਸਬੰਧਤ ਹਸਪਤਾਲ ਦੀਆਂ ਮੁਲਾਕਾਤਾਂ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਣ ਲਈ ਕਿਸੇ ਵੀ "
+#~ "ਦਿਨ ਵਿੱਚ ਕਿੰਨੀ ਵਾਰ ਇੱਕ ਜਾਂ ਵੱਧ ਪਾਠ ਖੁੰਝੇ ਹਨ?"
+
+#~ msgid ""
+#~ "This could include routine appointments for the diabetes clinic or other "
+#~ "appointments with a PDSN, dietitian, psychologist etc. (not inpatient "
+#~ "hospital stays)"
+#~ msgstr ""
+#~ "ਇਸ ਵਿੱਚ ਸ਼ੂਗਰ ਕਲੀਨਿਕ ਲਈ ਰੁਟੀਨ ਮੁਲਾਕਾਤਾਂ ਜਾਂ PDSN, ਡਾਇਟੀਸ਼ੀਅਨ, ਮਨੋਵਿਗਿਆਨੀ ਆਦਿ ਨਾਲ "
+#~ "ਹੋਰ ਮੁਲਾਕਾਤਾਂ ਸ਼ਾਮਲ ਹੋ ਸਕਦੀਆਂ ਹਨ (ਹਸਪਤਾਲ ਵਿੱਚ ਭਰਤੀ ਰਹਿਣ ਦੇ ਸਮੇਂ ਨਹੀਂ)"
+
+#~ msgid ""
+#~ "27. Are your child's absences for diabetes-related appointments "
+#~ "authorised by their school?"
+#~ msgstr ""
+#~ "27. ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਦੀਆਂ ਸ਼ੂਗਰ ਨਾਲ ਸਬੰਧਤ ਮੁਲਾਕਾਤਾਂ ਲਈ ਗੈਰਹਾਜ਼ਰੀਆਂ ਉਨ੍ਹਾਂ ਦੇ ਸਕੂਲ ਦੁਆਰਾ "
+#~ "ਅਧਿਕਾਰਤ ਹਨ?"
+
+#~ msgid ""
+#~ "27. Are your absences for diabetes-related appointments authorised by "
+#~ "your school?"
+#~ msgstr ""
+#~ "27. ਕੀ ਤੁਹਾਡੀਆਂ ਸ਼ੂਗਰ-ਸਬੰਧਤ ਮੁਲਾਕਾਤਾਂ ਲਈ ਗੈਰਹਾਜ਼ਰੀਆਂ ਤੁਹਾਡੇ ਸਕੂਲ ਦੁਆਰਾ ਅਧਿਕਾਰਤ ਹਨ?"
+
+#~ msgid ""
+#~ "School absences due to health appointments should not be classed as "
+#~ "unauthorised."
+#~ msgstr ""
+#~ "ਸਿਹਤ ਮੁਲਾਕਾਤਾਂ ਦੇ ਕਾਰਨ ਹੋਈਆਂ ਸਕੂਲ ਦੀਆਂ ਗੈਰਹਾਜ਼ਰੀਆਂ ਨੂੰ ਅਣਅਧਿਕਾਰਤ ਨਹੀਂ ਮੰਨਿਆ ਜਾਣਾ ਚਾਹੀਦਾ "
+#~ "ਹੈ।"
+
+#~ msgid ""
+#~ "28. Has your child's school attendance records been negatively impacted "
+#~ "by attending diabetes clinic appointments?"
+#~ msgstr ""
+#~ "28. ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਦੇ ਸਕੂਲ ਹਾਜ਼ਰੀ ਰਿਕਾਰਡਾਂ 'ਤੇ ਸ਼ੂਗਰ ਕਲੀਨਿਕ ਦੀਆਂ ਮੁਲਾਕਾਤਾਂ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਣ "
+#~ "ਨਾਲ ਨਕਾਰਾਤਮਕ ਪ੍ਰਭਾਵ ਪਿਆ ਹੈ?"
+
+#~ msgid ""
+#~ "28. Has your school attendance records been negatively impacted by "
+#~ "attending diabetes clinic appointments?"
+#~ msgstr ""
+#~ "28. ਕੀ ਡਾਇਬੀਟੀਜ਼ ਕਲੀਨਿਕ ਮੁਲਾਕਾਤਾਂ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਣ ਨਾਲ ਤੁਹਾਡੇ ਸਕੂਲ ਹਾਜ਼ਰੀ ਰਿਕਾਰਡ 'ਤੇ "
+#~ "ਨਕਾਰਾਤਮਕ ਪ੍ਰਭਾਵ ਪਿਆ ਹੈ?"
+
+#~ msgid ""
+#~ "School absences due to attending health appointments should not reduce "
+#~ "the percentage attendance."
+#~ msgstr ""
+#~ "ਸਿਹਤ ਮੁਲਾਕਾਤਾਂ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਣ ਕਾਰਨ ਸਕੂਲ ਗੈਰਹਾਜ਼ਰੀਆਂ ਨੂੰ ਹਾਜ਼ਰੀ ਪ੍ਰਤੀਸ਼ਤ ਨੂੰ ਨਹੀਂ ਘਟਾਉਣਾ "
+#~ "ਚਾਹੀਦਾ।"
+
+#~ msgid ""
+#~ "29. In the past year, how many days has your child had off school/home "
+#~ "education because of illness related to their diabetes?"
+#~ msgstr ""
+#~ "29. ਪਿਛਲੇ ਸਾਲ, ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਸ਼ੂਗਰ ਨਾਲ ਸਬੰਧਤ ਬਿਮਾਰੀ ਕਾਰਨ ਸਕੂਲ/ਘਰੇਲੂ ਸਿੱਖਿਆ ਤੋਂ ਕਿੰਨੇ ਦਿਨ "
+#~ "ਛੁੱਟੀ ਲਈ ਹੈ?"
+
+#~ msgid ""
+#~ "29. In the past year, how many days have you had off school/home "
+#~ "education because of illness related to your diabetes?"
+#~ msgstr ""
+#~ "29. ਪਿਛਲੇ ਸਾਲ, ਤੁਹਾਡੀ ਸ਼ੂਗਰ ਨਾਲ ਸਬੰਧਤ ਬਿਮਾਰੀ ਕਾਰਨ ਤੁਸੀਂ ਸਕੂਲ/ਘਰੇਲੂ ਸਿੱਖਿਆ ਤੋਂ ਕਿੰਨੇ ਦਿਨ "
+#~ "ਛੁੱਟੀ ਲਈ ਹੈ?"
+
+#~ msgid ""
+#~ "This could include staying off school at home or include a hospital "
+#~ "admission"
+#~ msgstr "ਇਸ ਵਿੱਚ ਘਰ ਵਿੱਚ ਸਕੂਲ ਤੋਂ ਛੁੱਟੀ ਰਹਿਣਾ ਜਾਂ ਹਸਪਤਾਲ ਵਿੱਚ ਦਾਖਲ ਹੋਣਾ ਸ਼ਾਮਲ ਹੋ ਸਕਦਾ ਹੈ"
+
+#~ msgid ""
+#~ "30. Has your child ever had to move schools due to difficulties in "
+#~ "managing their diabetes?"
+#~ msgstr ""
+#~ "30. ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਕਦੇ ਆਪਣੀ ਸ਼ੂਗਰ ਦੇ ਪ੍ਰਬੰਧਨ ਵਿੱਚ ਮੁਸ਼ਕਲਾਂ ਕਾਰਨ ਸਕੂਲ ਬਦਲਣਾ ਪਿਆ ਹੈ?"
+
+#~ msgid ""
+#~ "30. Have you ever had to move schools due to difficulties in managing "
+#~ "your diabetes?"
+#~ msgstr "30. ਕੀ ਤੁਹਾਨੂੰ ਕਦੇ ਆਪਣੀ ਸ਼ੂਗਰ ਦੇ ਪ੍ਰਬੰਧਨ ਵਿੱਚ ਮੁਸ਼ਕਲਾਂ ਕਾਰਨ ਸਕੂਲ ਬਦਲਣਾ ਪਿਆ ਹੈ?"
+
+#~ msgid ""
+#~ "31. Has your child ever been excluded from any of the below activities "
+#~ "because of their diabetes?"
+#~ msgstr ""
+#~ "31. ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਕਦੇ ਵੀ ਆਪਣੀ ਸ਼ੂਗਰ ਦੇ ਕਾਰਨ ਹੇਠ ਲਿਖੀਆਂ ਗਤੀਵਿਧੀਆਂ ਵਿੱਚੋਂ ਕਿਸੇ ਤੋਂ ਬਾਹਰ "
+#~ "ਰੱਖਿਆ ਗਿਆ ਹੈ?"
+
+#~ msgid ""
+#~ "31. Have you ever been excluded from any of the below activities because "
+#~ "of your diabetes?"
+#~ msgstr ""
+#~ "31. ਕੀ ਤੁਹਾਨੂੰ ਕਦੇ ਆਪਣੀ ਸ਼ੂਗਰ ਦੇ ਕਾਰਨ ਹੇਠਾਂ ਦਿੱਤੀਆਂ ਕਿਸੇ ਵੀ ਗਤੀਵਿਧੀਆਂ ਤੋਂ ਬਾਹਰ ਰੱਖਿਆ ਗਿਆ "
+#~ "ਹੈ?"
+
+#~ msgid ""
+#~ "32. Do you feel that your child's diabetes affects their performance in "
+#~ "school/home education?"
+#~ msgstr ""
+#~ "32. ਕੀ ਤੁਹਾਨੂੰ ਲੱਗਦਾ ਹੈ ਕਿ ਤੁਹਾਡੇ ਬੱਚੇ ਦੀ ਸ਼ੂਗਰ ਤੁਹਾਡੇ ਬੱਚੇ ਦੇ ਸਕੂਲ/ਘਰੇਲੂ ਸਿੱਖਿਆ ਵਿੱਚ ਪ੍ਰਦਰਸ਼ਨ ਨੂੰ "
+#~ "ਪ੍ਰਭਾਵਿਤ ਕਰਦੀ ਹੈ?"
+
+#~ msgid ""
+#~ "32. Do you feel that your diabetes affects your performance in school/"
+#~ "home education?"
+#~ msgstr ""
+#~ "32. ਕੀ ਤੁਹਾਨੂੰ ਲੱਗਦਾ ਹੈ ਕਿ ਤੁਹਾਡੀ ਸ਼ੂਗਰ ਸਕੂਲ/ਘਰੇਲੂ ਸਿੱਖਿਆ ਵਿੱਚ ਤੁਹਾਡੇ ਪ੍ਰਦਰਸ਼ਨ ਨੂੰ ਪ੍ਰਭਾਵਿਤ "
+#~ "ਕਰਦੀ ਹੈ?"
+
+#~ msgid ""
+#~ "33. Do your child's teachers have a good understanding of how diabetes "
+#~ "can affect learning?"
+#~ msgstr ""
+#~ "33. ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਦੇ ਅਧਿਆਪਕਾਂ ਨੂੰ ਇਸ ਗੱਲ ਦੀ ਚੰਗੀ ਸਮਝ ਹੈ ਕਿ ਸ਼ੂਗਰ ਸਿੱਖਣ ਨੂੰ ਕਿਵੇਂ ਪ੍ਰਭਾਵਿਤ "
+#~ "ਕਰ ਸਕਦੀ ਹੈ?"
+
+#~ msgid ""
+#~ "33. Do your teachers have a good understanding of how diabetes can affect "
+#~ "learning?"
+#~ msgstr ""
+#~ "33. ਕੀ ਤੁਹਾਡੇ ਅਧਿਆਪਕਾਂ ਨੂੰ ਚੰਗੀ ਸਮਝ ਹੈ ਕਿ ਸ਼ੂਗਰ ਕਿਸੇ ਦੇ ਸਿੱਖਣ ਨੂੰ ਕਿਵੇਂ ਪ੍ਰਭਾਵਿਤ ਕਰ ਸਕਦੀ ਹੈ?"
+
+#~ msgid ""
+#~ "E.g. When blood glucose is too high or low, it may affect concentration "
+#~ "or memory."
+#~ msgstr ""
+#~ "ਉਦਾਹਰਨ ਲਈ ਜਦੋਂ ਖੂਨ ਵਿੱਚ ਗਲੂਕੋਜ਼ ਬਹੁਤ ਜ਼ਿਆਦਾ ਜਾਂ ਘੱਟ ਹੁੰਦਾ ਹੈ, ਤਾਂ ਇਹ ਇਕਾਗਰਤਾ ਜਾਂ ਯਾਦਦਾਸ਼ਤ "
+#~ "ਨੂੰ ਪ੍ਰਭਾਵਿਤ ਕਰ ਸਕਦੀ ਹੈ।"
+
+#~ msgid ""
+#~ "34. Has your child ever been offered any reasonable adjustments because "
+#~ "of their diabetes?"
+#~ msgstr ""
+#~ "34. ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਕਦੇ ਉਸਦੀ ਸ਼ੂਗਰ ਦੇ ਕਾਰਨ ਕੋਈ ਵਾਜਬ ਸਮਾਯੋਜਨ ਦੀ ਪੇਸ਼ਕਸ਼ ਕੀਤੀ ਗਈ ਹੈ?"
+
+#~ msgid ""
+#~ "34. Have you ever been offered any reasonable adjustments because of your "
+#~ "diabetes?"
+#~ msgstr "34. ਕੀ ਤੁਹਾਨੂੰ ਕਦੇ ਤੁਹਾਡੀ ਸ਼ੂਗਰ ਕਾਰਨ ਕੋਈ ਵਾਜਬ ਤਬਦੀਲੀ ਦੀ ਪੇਸ਼ਕਸ਼ ਕੀਤੀ ਗਈ ਹੈ?"
+
+#~ msgid ""
+#~ "(e.g. additional time in exams, snacks or drinks during class, fast "
+#~ "passes for lunch queues)"
+#~ msgstr ""
+#~ "(ਜਿਵੇਂ ਕਿ ਪ੍ਰੀਖਿਆਵਾਂ ਵਿੱਚ ਵਾਧੂ ਸਮਾਂ, ਕਲਾਸ ਦੌਰਾਨ ਸਨੈਕਸ ਜਾਂ ਪੀਣ ਵਾਲੇ ਪਦਾਰਥ, ਦੁਪਹਿਰ ਦੇ "
+#~ "ਖਾਣੇ ਦੀਆਂ ਕਤਾਰਾਂ ਲਈ ਤੇਜ਼ ਪਾਸ)"
+
+#~ msgid ""
+#~ "21. If your child uses a smartphone or smartwatch to manage their "
+#~ "diabetes, are they able to use it during lesson time at school?"
+#~ msgstr ""
+#~ "21. ਜੇਕਰ ਤੁਹਾਡਾ ਬੱਚਾ ਆਪਣੀ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ ਸਮਾਰਟਫੋਨ ਜਾਂ ਸਮਾਰਟਵਾਚ ਦੀ ਵਰਤੋਂ "
+#~ "ਕਰਦਾ ਹੈ, ਤਾਂ ਕੀ ਉਹ ਸਕੂਲ ਵਿੱਚ ਪੜ੍ਹਾਈ ਦੌਰਾਨ ਇਸਦੀ ਵਰਤੋਂ ਕਰ ਸਕਦੇ ਹਨ?"
+
+#~ msgid ""
+#~ "21. If you use a smartphone or smartwatch to manage your diabetes, are "
+#~ "you able to use it during lesson time at school?"
+#~ msgstr ""
+#~ "21. ਜੇਕਰ ਤੁਸੀਂ ਆਪਣੀ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ ਸਮਾਰਟਫੋਨ ਜਾਂ ਸਮਾਰਟਵਾਚ ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹੋ, ਤਾਂ "
+#~ "ਕੀ ਤੁਸੀਂ ਸਕੂਲ ਵਿੱਚ ਪੜ੍ਹਾਈ ਦੌਰਾਨ ਇਸਦੀ ਵਰਤੋਂ ਕਰ ਸਕਦੇ ਹੋ?"
+
+#~ msgid ""
+#~ "22. Is your child offered a private room at school for diabetes care, "
+#~ "even if they don't use it?"
+#~ msgstr ""
+#~ "22. ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਡਾਇਬੀਟੀਜ਼ ਦੀ ਦੇਖਭਾਲ ਲਈ ਸਕੂਲ ਵਿੱਚ ਇੱਕ ਨਿੱਜੀ ਕਮਰਾ ਦਿੱਤਾ ਜਾਂਦਾ ਹੈ, "
+#~ "ਭਾਵੇਂ ਉਹ ਇਸਦੀ ਵਰਤੋਂ ਨਹੀਂ ਕਰਦੇ?"
+
+#~ msgid ""
+#~ "22. Are you offered a private room at school for diabetes care, even if "
+#~ "you don't use it?"
+#~ msgstr ""
+#~ "22. ਕੀ ਤੁਹਾਨੂੰ ਸ਼ੂਗਰ ਸਬੰਧੀ ਦੇਖਭਾਲ ਲਈ ਸਕੂਲ ਵਿੱਚ ਇੱਕ ਨਿੱਜੀ ਕਮਰੇ ਦੀ ਪੇਸ਼ਕਸ਼ ਕੀਤੀ ਜਾਂਦੀ ਹੈ, "
+#~ "ਭਾਵੇਂ ਤੁਸੀਂ ਇਸਦੀ ਵਰਤੋਂ ਨਹੀਂ ਕਰਦੇ?"
+
+#~ msgid ""
+#~ "E.g. For administering insulin, checking blood glucose, changing pump "
+#~ "set, or anything else related to diabetes care"
+#~ msgstr ""
+#~ "ਜਿਵੇਂ ਕਿ ਇਨਸੁਲਿਨ ਦੇਣ, ਖੂਨ ਵਿੱਚ ਗਲੂਕੋਜ਼ ਦੀ ਜਾਂਚ ਕਰਨ, ਪੰਪ ਸੈੱਟ ਬਦਲਣ, ਜਾਂ ਡਾਇਬੀਟੀਜ਼ ਦੀ "
+#~ "ਦੇਖਭਾਲ ਨਾਲ ਸਬੰਧਤ ਕਿਸੇ ਹੋਰ ਚੀਜ਼ ਲਈ"
+
+#~ msgid ""
+#~ "23. Is your child allowed to manage diabetes in the classroom if required?"
+#~ msgstr "23. ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਲੋੜ ਪੈਣ 'ਤੇ ਕਲਾਸਰੂਮ ਵਿੱਚ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਹੈ?"
+
+#~ msgid "23. Are you allowed to manage diabetes in the classroom if required?"
+#~ msgstr "23. ਕੀ ਲੋੜ ਪੈਣ 'ਤੇ ਤੁਹਾਨੂੰ ਕਲਾਸਰੂਮ ਵਿੱਚ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਹੈ?"
+
+#~ msgid "This includes checking blood glucose or giving insulin."
+#~ msgstr "ਇਸ ਵਿੱਚ ਖੂਨ ਵਿੱਚ ਗਲੂਕੋਜ਼ ਦੀ ਜਾਂਚ ਕਰਨਾ ਜਾਂ ਇਨਸੁਲਿਨ ਦੇਣਾ ਸ਼ਾਮਲ ਹੈ।"
+
+#~ msgid ""
+#~ "24. Is there a trained member of staff at school who can help your child "
+#~ "with diabetes management?"
+#~ msgstr ""
+#~ "24. ਕੀ ਸਕੂਲ ਵਿੱਚ ਕੋਈ ਸਿਖਲਾਈ ਪ੍ਰਾਪਤ ਸਟਾਫ ਮੈਂਬਰ ਹੈ ਜੋ ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ "
+#~ "ਵਿੱਚ ਮਦਦ ਕਰ ਸਕਦਾ ਹੈ?"
+
+#~ msgid ""
+#~ "24. Is there a trained member of staff at school who can help you with "
+#~ "diabetes management?"
+#~ msgstr ""
+#~ "24. ਕੀ ਸਕੂਲ ਵਿੱਚ ਕੋਈ ਸਿਖਲਾਈ ਪ੍ਰਾਪਤ ਸਟਾਫ ਮੈਂਬਰ ਹੈ ਜੋ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਵਿੱਚ ਤੁਹਾਡੀ "
+#~ "ਮਦਦ ਕਰ ਸਕਦਾ ਹੈ?"
+
+#~ msgid ""
+#~ "This includes checking blood glucose, administering insulin, and "
+#~ "providing support in emergencies. This training should be provided by the "
+#~ "diabetes team."
+#~ msgstr ""
+#~ "ਇਸ ਵਿੱਚ ਖੂਨ ਵਿੱਚ ਗਲੂਕੋਜ਼ ਦੀ ਜਾਂਚ ਕਰਨਾ, ਇਨਸੁਲਿਨ ਦੇਣਾ, ਅਤੇ ਐਮਰਜੈਂਸੀ ਵਿੱਚ ਸਹਾਇਤਾ ਪ੍ਰਦਾਨ "
+#~ "ਕਰਨਾ ਸ਼ਾਮਲ ਹੈ। ਇਹ ਸਿਖਲਾਈ ਸ਼ੂਗਰ ਟੀਮ ਦੁਆਰਾ ਪ੍ਰਦਾਨ ਕੀਤੀ ਜਾਣੀ ਚਾਹੀਦੀ ਹੈ।"
+
+#~ msgid ""
+#~ "25. Does your child's school provide enough information about school "
+#~ "meals for carb-counting?"
+#~ msgstr ""
+#~ "25. ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਦਾ ਸਕੂਲ ਕਾਰਬੋਹਾਈਡਰੇਟ-ਗਿਣਤੀ ਲਈ ਸਕੂਲੀ ਭੋਜਨ ਬਾਰੇ ਕਾਫ਼ੀ ਜਾਣਕਾਰੀ ਪ੍ਰਦਾਨ "
+#~ "ਕਰਦਾ ਹੈ?"
+
+#~ msgid ""
+#~ "25. Does your school provide enough information about school meals for "
+#~ "carb-counting?"
+#~ msgstr ""
+#~ "25. ਕੀ ਤੁਹਾਡਾ ਸਕੂਲ ਕਾਰਬੋਹਾਈਡਰੇਟ-ਗਿਣਤੀ ਲਈ ਸਕੂਲ ਦੇ ਭੋਜਨ ਬਾਰੇ ਕਾਫ਼ੀ ਜਾਣਕਾਰੀ ਪ੍ਰਦਾਨ "
+#~ "ਕਰਦਾ ਹੈ?"
+
+#~ msgid ""
+#~ "This includes information about carbohydrate content and portion sizes to "
+#~ "help your child adjust insulin to match."
+#~ msgstr ""
+#~ "ਇਸ ਵਿੱਚ ਕਾਰਬੋਹਾਈਡਰੇਟ ਸਮੱਗਰੀ ਅਤੇ ਭੋਜਨ ਦੀ ਮਾਤਰਾ ਬਾਰੇ ਜਾਣਕਾਰੀ ਸ਼ਾਮਲ ਹੈ ਤਾਂ ਜੋ ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ "
+#~ "ਇਨਸੁਲਿਨ ਨੂੰ ਮੇਲਣ ਲਈ ਅਨੁਕੂਲ ਬਣਾਉਣ ਵਿੱਚ ਮਦਦ ਕੀਤੀ ਜਾ ਸਕੇ।"
+
+#~ msgid ""
+#~ "This includes information about carbohydrate content and portion sizes to "
+#~ "help you adjust insulin to match."
+#~ msgstr ""
+#~ "ਇਸ ਵਿੱਚ ਕਾਰਬੋਹਾਈਡਰੇਟ ਸਮੱਗਰੀ ਅਤੇ ਭੋਜਨ ਦੀ ਮਾਤਰਾ ਬਾਰੇ ਜਾਣਕਾਰੀ ਸ਼ਾਮਲ ਹੈ ਤਾਂ ਜੋ ਤੁਹਾਨੂੰ "
+#~ "ਇਨਸੁਲਿਨ ਨੂੰ ਮੇਲਣ ਲਈ ਅਨੁਕੂਲ ਬਣਾਉਣ ਵਿੱਚ ਮਦਦ ਕੀਤੀ ਜਾ ਸਕੇ।"
+
+#~ msgid ""
+#~ "This section asks about how your child's diabetes impacts their wellbeing "
+#~ "at school."
+#~ msgstr ""
+#~ "ਇਹ ਭਾਗ ਇਸ ਬਾਰੇ ਪੁੱਛਦਾ ਹੈ ਕਿ ਤੁਹਾਡੇ ਬੱਚੇ ਦੀ ਸ਼ੂਗਰ ਸਕੂਲ ਵਿੱਚ ਉਨ੍ਹਾਂ ਦੀ ਤੰਦਰੁਸਤੀ ਨੂੰ ਕਿਵੇਂ "
+#~ "ਪ੍ਰਭਾਵਤ ਕਰਦੀ ਹੈ।"
+
+#~ msgid ""
+#~ "This section asks about how your diabetes impacts your wellbeing at "
+#~ "school."
+#~ msgstr ""
+#~ "ਇਹ ਭਾਗ ਪੁੱਛਦਾ ਹੈ ਕਿ ਤੁਹਾਡੀ ਸ਼ੂਗਰ ਸਕੂਲ ਵਿੱਚ ਤੁਹਾਡੀ ਤੰਦਰੁਸਤੀ ਨੂੰ ਕਿਵੇਂ ਪ੍ਰਭਾਵਤ ਕਰਦੀ ਹੈ।"
+
+#~ msgid ""
+#~ "35. Has your child ever felt left out or treated differently by other "
+#~ "students or staff members because of their diabetes?"
+#~ msgstr ""
+#~ "35. ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਨੇ ਕਦੇ ਆਪਣੀ ਸ਼ੂਗਰ ਦੇ ਕਾਰਨ ਦੂਜੇ ਵਿਦਿਆਰਥੀਆਂ ਜਾਂ ਸਟਾਫ ਮੈਂਬਰਾਂ ਦੁਆਰਾ ਛੱਡਿਆ "
+#~ "ਜਾਂ ਵੱਖਰਾ ਵਿਵਹਾਰ ਕੀਤਾ ਮਹਿਸੂਸ ਕੀਤਾ ਹੈ?"
+
+#~ msgid ""
+#~ "35. Have you ever felt left out or treated differently by other students "
+#~ "or staff members because of your diabetes?"
+#~ msgstr ""
+#~ "35. ਕੀ ਤੁਸੀਂ ਕਦੇ ਆਪਣੀ ਸ਼ੂਗਰ ਦੇ ਕਾਰਨ ਦੂਜੇ ਵਿਦਿਆਰਥੀਆਂ ਜਾਂ ਸਟਾਫ ਮੈਂਬਰਾਂ ਦੁਆਰਾ ਅਲੱਗ ਰੱਖਿਆ "
+#~ "ਜਾਣਾ ਜਾਂ ਵੱਖਰਾ ਵਿਵਹਾਰ ਕੀਤਾ ਗਿਆ ਮਹਿਸੂਸ ਕੀਤਾ ਹੈ?"
+
+#~ msgid ""
+#~ "36. Have you ever lost income due to taking time off work to attend your "
+#~ "child's school for diabetes care?"
+#~ msgstr ""
+#~ "36. ਕੀ ਤੁਸੀਂ ਕਦੇ ਸ਼ੂਗਰ ਦੀ ਦੇਖਭਾਲ ਲਈ ਆਪਣੇ ਬੱਚੇ ਦੇ ਸਕੂਲ ਜਾਣ ਲਈ ਕੰਮ ਤੋਂ ਸਮਾਂ ਕੱਢਣ ਕਾਰਨ ਆਮਦਨ "
+#~ "ਤੋਂ ਖੁੰਝੇ ਹੋ?"
+
+#~ msgid ""
+#~ "E.g. Attending your child's school for diabetes management or your child "
+#~ "being sent home because of diabetes-related illness."
+#~ msgstr ""
+#~ "ਜਿਵੇਂ ਕਿ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ ਆਪਣੇ ਬੱਚੇ ਦੇ ਸਕੂਲ ਜਾਣਾ ਜਾਂ ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਸ਼ੂਗਰ ਨਾਲ ਸਬੰਧਤ "
+#~ "ਬਿਮਾਰੀ ਕਾਰਨ ਘਰ ਭੇਜ ਦਿੱਤਾ ਜਾਣਾ।"
+
+#~ msgid ""
+#~ "37. How often do you feel anxiety or stress related to your child's "
+#~ "diabetes while they're at school?"
+#~ msgstr ""
+#~ "37. ਤੁਹਾਡੇ ਬੱਚੇ ਦੇ ਸਕੂਲ ਵਿੱਚ ਹੋਣ 'ਤੇ ਤੁਸੀਂ ਅਕਸਰ ਕਿੰਨਾ ਚਿੰਤਿਤ ਜਾਂ ਤਣਾਅ ਮਹਿਸੂਸ ਕਰਦੇ ਹੋ?"
+
+#~ msgid ""
+#~ "37. How often do you feel anxiety or stress related to your diabetes "
+#~ "while you're at school?"
+#~ msgstr ""
+#~ "37. ਜਦੋਂ ਤੁਸੀਂ ਸਕੂਲ ਵਿੱਚ ਹੁੰਦੇ ਹੋ ਤਾਂ ਤੁਸੀਂ ਅਕਸਰ ਕਿੰਨਾ ਆਪਣੀ ਸ਼ੂਗਰ ਨਾਲ ਸਬੰਧਤ ਚਿੰਤਾ ਜਾਂ ਤਣਾਅ "
+#~ "ਮਹਿਸੂਸ ਕਰਦੇ ਹੋ?"
+
+#~ msgid "And finally…"
+#~ msgstr "ਅਤੇ ਅੰਤ ਵਿੱਚ…"
+
+#~ msgid ""
+#~ "38. How well has your school supported you to manage your child's "
+#~ "diabetes safely alongside their education?"
+#~ msgstr ""
+#~ "38. ਤੁਹਾਡੇ ਸਕੂਲ ਨੇ ਤੁਹਾਡੇ ਬੱਚੇ ਦੀ ਸ਼ੂਗਰ ਨੂੰ ਉਸਦੀ ਸਿੱਖਿਆ ਦੇ ਨਾਲ-ਨਾਲ ਸੁਰੱਖਿਅਤ ਢੰਗ ਨਾਲ ਪ੍ਰਬੰਧਨ "
+#~ "ਕਰਨ ਲਈ ਕਿੰਨੀ ਚੰਗੀ ਤਰ੍ਹਾਂ ਸਹਾਇਤਾ ਕੀਤੀ ਹੈ?"
+
+#~ msgid ""
+#~ "38. How well has your school supported you to manage your diabetes safely "
+#~ "alongside your education?"
+#~ msgstr ""
+#~ "38. ਤੁਹਾਡੇ ਸਕੂਲ ਨੇ ਤੁਹਾਡੀ ਸਿੱਖਿਆ ਦੇ ਨਾਲ-ਨਾਲ ਤੁਹਾਡੀ ਸ਼ੂਗਰ ਨੂੰ ਸੁਰੱਖਿਅਤ ਢੰਗ ਨਾਲ ਪ੍ਰਬੰਧਨ ਕਰਨ "
+#~ "ਲਈ ਤੁਹਾਡੀ ਕਿੰਨੀ ਚੰਗੀ ਤਰ੍ਹਾਂ ਸਹਾਇਤਾ ਕੀਤੀ ਹੈ?"
+
+#~ msgid ""
+#~ "39. How well has your diabetes team supported you to manage your child's "
+#~ "diabetes safely alongside their education?"
+#~ msgstr ""
+#~ "39. ਤੁਹਾਡੀ ਡਾਇਬੀਟੀਜ਼ ਟੀਮ ਨੇ ਤੁਹਾਡੇ ਬੱਚੇ ਦੀ ਸ਼ੂਗਰ ਨੂੰ ਉਸਦੀ ਸਿੱਖਿਆ ਦੇ ਨਾਲ-ਨਾਲ ਸੁਰੱਖਿਅਤ ਢੰਗ "
+#~ "ਨਾਲ ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ ਕਿੰਨੀ ਚੰਗੀ ਤਰ੍ਹਾਂ ਸਹਾਇਤਾ ਕੀਤੀ ਹੈ?"
+
+#~ msgid ""
+#~ "39. How well has your diabetes team supported you to manage your diabetes "
+#~ "safely alongside your education?"
+#~ msgstr ""
+#~ "39. ਤੁਹਾਡੀ ਡਾਇਬੀਟੀਜ਼ ਟੀਮ ਨੇ ਤੁਹਾਡੀ ਸਿੱਖਿਆ ਦੇ ਨਾਲ-ਨਾਲ ਤੁਹਾਡੀ ਡਾਇਬੀਟੀਜ਼ ਦਾ ਸੁਰੱਖਿਅਤ "
+#~ "ਢੰਗ ਨਾਲ ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ ਤੁਹਾਡੀ ਕਿੰਨੀ ਚੰਗੀ ਤਰ੍ਹਾਂ ਸਹਾਇਤਾ ਕੀਤੀ ਹੈ?"
+
+#~ msgid "40. What has worked well?"
+#~ msgstr "40. ਕਿਹੜੀ ਚੀਜ਼ ਨੇ ਚੰਗੀ ਤਰ੍ਹਾਂ ਕੰਮ ਕੀਤਾ ਹੈ?"
+
+#~ msgid ""
+#~ "What has been helpful about the support your child has at school to "
+#~ "manage their diabetes?"
+#~ msgstr ""
+#~ "ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਸਕੂਲ ਵਿਖੇ ਉਨ੍ਹਾਂ ਦੀ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ ਮਿਲਣ ਵਾਲੀ ਸਹਾਇਤਾ ਬਾਰੇ ਕਿਹੜੀ "
+#~ "ਚੀਜ਼ ਮਦਦਗਾਰ ਰਹੀ ਹੈ?"
+
+#~ msgid ""
+#~ "What has been helpful about the support you have at school to manage your "
+#~ "diabetes?"
+#~ msgstr ""
+#~ "ਸਕੂਲ ਵਿਖੇ ਤੁਹਾਡੀ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ ਮਿਲਣ ਵਾਲੀ ਸਹਾਇਤਾ ਬਾਰੇ ਕਿਹੜੀ ਚੀਜ਼ ਮਦਦਗਾਰ "
+#~ "ਰਹੀ ਹੈ?"
+
+#~ msgid "41. What hasn't worked well?"
+#~ msgstr "41. ਕਿਹੜੀ ਚੀਜ਼ ਨੇ ਚੰਗੀ ਤਰ੍ਹਾਂ ਕੰਮ ਨਹੀਂ ਕੀਤਾ ਹੈ?"
+
+#~ msgid ""
+#~ "What difficulties have you faced in managing your child's diabetes at "
+#~ "school?"
+#~ msgstr ""
+#~ "ਸਕੂਲ ਵਿੱਚ ਆਪਣੇ ਬੱਚੇ ਦੀ ਸ਼ੂਗਰ ਦੇ ਪ੍ਰਬੰਧਨ ਵਿੱਚ ਤੁਹਾਨੂੰ ਕਿਹੜੀਆਂ ਮੁਸ਼ਕਲਾਂ ਦਾ ਸਾਹਮਣਾ ਕਰਨਾ ਪਿਆ ਹੈ?"
+
+#~ msgid ""
+#~ "What difficulties have you faced in managing your diabetes at school?"
+#~ msgstr ""
+#~ "ਸਕੂਲ ਵਿੱਚ ਆਪਣੀ ਸ਼ੂਗਰ ਦੇ ਪ੍ਰਬੰਧਨ ਵਿੱਚ ਤੁਹਾਨੂੰ ਕਿਹੜੀਆਂ ਮੁਸ਼ਕਲਾਂ ਦਾ ਸਾਹਮਣਾ ਕਰਨਾ ਪਿਆ ਹੈ?"
+
+#~ msgid ""
+#~ "42. What could your school or diabetes team do differently to improve "
+#~ "your child's experience?"
+#~ msgstr ""
+#~ "42. ਤੁਹਾਡਾ ਸਕੂਲ ਜਾਂ ਡਾਇਬੀਟੀਜ਼ ਟੀਮ ਤੁਹਾਡੇ ਬੱਚੇ ਦੇ ਅਨੁਭਵ ਨੂੰ ਬਿਹਤਰ ਬਣਾਉਣ ਲਈ ਵੱਖਰੇ ਢੰਗ ਨਾਲ "
+#~ "ਕੀ ਕਰ ਸਕਦੀ ਹੈ?"
+
+#~ msgid ""
+#~ "42. What could your school or diabetes team do differently to improve "
+#~ "your experience?"
+#~ msgstr ""
+#~ "42. ਤੁਹਾਡਾ ਸਕੂਲ ਜਾਂ ਡਾਇਬੀਟੀਜ਼ ਟੀਮ ਤੁਹਾਡੇ ਅਨੁਭਵ ਨੂੰ ਬਿਹਤਰ ਬਣਾਉਣ ਲਈ ਵੱਖਰੇ ਢੰਗ ਨਾਲ ਕੀ ਕਰ "
+#~ "ਸਕਦੀ ਹੈ?"
+
+#~ msgid "Submit"
+#~ msgstr "ਜਮ੍ਹਾਂ ਕਰੋ"
 
 #~ msgid "Boy"
 #~ msgstr "ਮੁੰਡਾ"
