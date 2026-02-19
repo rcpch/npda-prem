@@ -9,35 +9,52 @@ s/up
 
 Visit http://localhost:8000/.
 
+
 ## TODO
 
-My list
+### Translations
 
-- Translations update
-  - No need to manually submit - can remove this from the "completing the survey" content. Check manually modified translations.
-  - Rename next buttons to match translations.
-  - Go back translation?
-  - Start again button translations?
+- Find empty translations msgstr ""
+- Find unused translations (agent)
+- General
+  - Make sure we use "Next" rather than "Continue" etc has we have translations for that
+  - "Go back" translation?
+  - "Start again" translation?
+  - "I'm not sure" is not translated?
+- Front matter
+  - Modify "completing the survey" as per modified english translation
+- Q4
+  - Should say "do you identify as"
 
-- Allow next without filling in free text fields
-- GitHub pr check
-- If you follow the start link and you already have a session redirect you back to the next unanswered question
-- Correctly apply aria disabled?
-- Put back section X of X and submit for translations
-- Front and back matter from document
-- Check with IG about cookie messaging
-- Admin emails to me
+
+### UI questions
+
+- If you follow the start link and you already have a session, send you back to the last unanswered question?
+- Section blurbs - standalone page or above first question?
+  - For example - the impact on education one provides no content the title doesn't already?
+  - Go back currently skips over these - is that ok?
+- Should we have some kind of progress tracking (section X of X, question X of X)?
+  - Would probably require new translations?
+- Email in footer?
+- Page for when submission is closed
+- Are we correctly applying aria disabled?
+
+
+### Bugs
+
+- Allow "Next" without filling in free text fields?
+- Replace uses of "child" in URLs etc with "cyp"
+
+
+### Infra
+
+- Domain name?
+  - prem.npda.rcpch.ac.uk?
+- Usage instructions!
+- Cloudflare Turnstile
+- GitHub PR check
+- Admin error emails to me
 - Request logging
 - Favicon
-- Put behind Cloudflare so we have levers to pull if it's abused
-- Rationalise cyp and child in URL -> cyp
-- hx-boost? does it change the URL without writing a history entry?
-- Go back skips over the introduction (arguably a feature?)
-- Triple check translations
-  - Q4 should say "do you identify as"
-  - "I'm not sure" is not translated?
-  - Get the bot to go byte for byte between the web page and the translations spreadsheets?
-  - Submit additional translations (e.g. section X of X)
-- prodmon?
-- Need a page to say submission closed
-- Email in footer to report tech issues? or is in front matter 
+- Automatic production monitoring?
+  - Probably overkill, can just monitor the submission dashboard
