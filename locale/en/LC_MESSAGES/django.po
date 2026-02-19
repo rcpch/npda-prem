@@ -901,11 +901,6 @@ msgstr ""
 "What could your school or diabetes team do differently to improve your "
 "child's experience?"
 
-#: submissions/templates/submissions/_form_nav.html:15
-#, python-format
-msgid "Section %(current)s of %(total)s"
-msgstr ""
-
 #: submissions/templates/submissions/clinic_in_region.html:8
 #: submissions/templates/submissions/clinic_or_region.html:8
 #: submissions/templates/submissions/front_matter.html:8
@@ -920,18 +915,6 @@ msgstr ""
 msgid ""
 "2. Please select the hospital where the diabetes clinic that you currently "
 "attend is normally held."
-msgstr ""
-
-#: submissions/templates/submissions/clinic_in_region.html:29
-#: submissions/templates/submissions/question.html:50
-#: submissions/templates/submissions/role_form.html:34
-#: submissions/templates/submissions/section.html:15
-msgid "Continue"
-msgstr ""
-
-#: submissions/templates/submissions/clinic_or_region.html:25
-#: submissions/templates/submissions/clinic_or_region.html:51
-msgid "Select"
 msgstr ""
 
 #: submissions/templates/submissions/clinic_or_region.html:29
@@ -1099,14 +1082,10 @@ msgstr ""
 
 #: submissions/templates/submissions/front_matter.html:69
 msgid "Next"
-msgstr ""
+msgstr "Next"
 
 #: submissions/templates/submissions/landing.html:9
 msgid "Choose your language"
-msgstr ""
-
-#: submissions/templates/submissions/landing.html:26
-msgid "Get started"
 msgstr ""
 
 #: submissions/templates/submissions/role_form.html:12

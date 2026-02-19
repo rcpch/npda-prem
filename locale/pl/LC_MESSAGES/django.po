@@ -927,11 +927,6 @@ msgstr ""
 "Co Państwa szkoła lub zespół ds. cukrzycy mogliby robić inaczej, aby "
 "zapewnić Państwa dziecku lepsze doświadczenie?"
 
-#: submissions/templates/submissions/_form_nav.html:15
-#, python-format
-msgid "Section %(current)s of %(total)s"
-msgstr ""
-
 #: submissions/templates/submissions/clinic_in_region.html:8
 #: submissions/templates/submissions/clinic_or_region.html:8
 #: submissions/templates/submissions/front_matter.html:8
@@ -949,18 +944,6 @@ msgid ""
 msgstr ""
 "2. Zaznacz szpital, w którym zwykle znajduje się klinika diabetologii, z "
 "której obecnie korzystasz."
-
-#: submissions/templates/submissions/clinic_in_region.html:29
-#: submissions/templates/submissions/question.html:50
-#: submissions/templates/submissions/role_form.html:34
-#: submissions/templates/submissions/section.html:15
-msgid "Continue"
-msgstr "Kontynuuj"
-
-#: submissions/templates/submissions/clinic_or_region.html:25
-#: submissions/templates/submissions/clinic_or_region.html:51
-msgid "Select"
-msgstr ""
 
 #: submissions/templates/submissions/clinic_or_region.html:29
 #: submissions/templates/submissions/clinic_or_region.html:44
@@ -1076,15 +1059,11 @@ msgstr ""
 
 #: submissions/templates/submissions/front_matter.html:69
 msgid "Next"
-msgstr ""
+msgstr "Dalej"
 
 #: submissions/templates/submissions/landing.html:9
 msgid "Choose your language"
 msgstr "Wybierz swój język"
-
-#: submissions/templates/submissions/landing.html:26
-msgid "Get started"
-msgstr "Rozpocznij"
 
 #: submissions/templates/submissions/role_form.html:12
 msgid "Are you…"

@@ -776,11 +776,6 @@ msgstr ""
 msgid "q42.parent.title"
 msgstr ""
 
-#: submissions/templates/submissions/_form_nav.html:15
-#, python-format
-msgid "Section %(current)s of %(total)s"
-msgstr ""
-
 #: submissions/templates/submissions/clinic_in_region.html:8
 #: submissions/templates/submissions/clinic_or_region.html:8
 #: submissions/templates/submissions/front_matter.html:8
@@ -798,18 +793,6 @@ msgid ""
 msgstr ""
 "2. ਕਿਰਪਾ ਕਰਕੇ ਉਹ ਹਸਪਤਾਲ ਚੁਣੋ ਜਿੱਥੇ ਤੁਹਾਡਾ ਡਾਇਬੀਟੀਜ਼ ਕਲੀਨਿਕ ਆਮ ਤੌਰ 'ਤੇ ਆਯੋਜਿਤ ਕੀਤਾ ਜਾਂਦਾ "
 "ਹੈ।"
-
-#: submissions/templates/submissions/clinic_in_region.html:29
-#: submissions/templates/submissions/question.html:50
-#: submissions/templates/submissions/role_form.html:34
-#: submissions/templates/submissions/section.html:15
-msgid "Continue"
-msgstr "ਜਾਰੀ ਰੱਖੋ"
-
-#: submissions/templates/submissions/clinic_or_region.html:25
-#: submissions/templates/submissions/clinic_or_region.html:51
-msgid "Select"
-msgstr ""
 
 #: submissions/templates/submissions/clinic_or_region.html:29
 #: submissions/templates/submissions/clinic_or_region.html:44
@@ -925,15 +908,11 @@ msgstr ""
 
 #: submissions/templates/submissions/front_matter.html:69
 msgid "Next"
-msgstr ""
+msgstr "ਅੱਗੇ"
 
 #: submissions/templates/submissions/landing.html:9
 msgid "Choose your language"
 msgstr "ਆਪਣੀ ਭਾਸ਼ਾ ਚੁਣੋ"
-
-#: submissions/templates/submissions/landing.html:26
-msgid "Get started"
-msgstr "ਸ਼ੁਰੂ ਕਰੋ"
 
 #: submissions/templates/submissions/role_form.html:12
 msgid "Are you…"

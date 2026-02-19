@@ -17,7 +17,6 @@ Visit http://localhost:8000/.
 - Find empty translations msgstr ""
 - Find unused translations (agent)
 - General
-  - Make sure we use "Next" rather than "Continue" etc has we have translations for that
   - "Go back" translation?
   - "Start again" translation?
   - "I'm not sure" is not translated?
