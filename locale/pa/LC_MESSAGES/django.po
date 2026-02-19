@@ -970,15 +970,15 @@ msgstr ""
 
 #: submissions/templates/submissions/confirmation.html:26
 msgid "Breakthrough T1D UK website"
-msgstr ""
+msgstr "Breakthrough T1D UK website"
 
 #: submissions/templates/submissions/confirmation.html:31
 msgid "Diabetes Research and Wellness Foundation (DWRF) website"
-msgstr ""
+msgstr "Diabetes Research and Wellness Foundation (DWRF) website"
 
 #: submissions/templates/submissions/confirmation.html:36
 msgid "Diabetes UK helpline and website"
-msgstr ""
+msgstr "Diabetes UK helpline and website"
 
 #: submissions/templates/submissions/front_matter.html:13
 msgid "What is the survey about?"
