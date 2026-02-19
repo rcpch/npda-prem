@@ -25,7 +25,6 @@ def build_sections():
                 "id": "q5_relationship",
                 "roles": ["parent"],
                 "title": {
-                    "cyp": _("q5.child.title"),
                     "parent": _("q5.parent.title"),
                 },
                 "type": "radio",

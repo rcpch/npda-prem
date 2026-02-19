@@ -405,10 +405,6 @@ msgstr "کیا آپ…"
 msgid "q4.parent.title"
 msgstr "کیا آپ…"
 
-#: submissions/sections.py:28
-msgid "q5.child.title"
-msgstr ""
-
 #: submissions/sections.py:29
 msgid "q5.parent.title"
 msgstr "ذیابیطس کے شکار بچے سے آپ کا رشتہ"

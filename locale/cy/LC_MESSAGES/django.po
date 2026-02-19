@@ -406,10 +406,6 @@ msgstr "Wyt ti'n ystyried dy hun fel:"
 msgid "q4.parent.title"
 msgstr "Wyt ti'n ystyried dy hun fel:"
 
-#: submissions/sections.py:28
-msgid "q5.child.title"
-msgstr ""
-
 #: submissions/sections.py:29
 msgid "q5.parent.title"
 msgstr "Eich perthynas i'ch plentyn sydd â diabetes"

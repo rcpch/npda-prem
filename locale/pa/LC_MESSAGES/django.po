@@ -400,10 +400,6 @@ msgstr ""
 msgid "q4.parent.title"
 msgstr ""
 
-#: submissions/sections.py:28
-msgid "q5.child.title"
-msgstr ""
-
 #: submissions/sections.py:29
 msgid "q5.parent.title"
 msgstr ""

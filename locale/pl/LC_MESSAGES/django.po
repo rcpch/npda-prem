@@ -407,10 +407,6 @@ msgstr "Identyfikuję się jako…"
 msgid "q4.parent.title"
 msgstr "Identyfikuję się jako…"
 
-#: submissions/sections.py:28
-msgid "q5.child.title"
-msgstr ""
-
 #: submissions/sections.py:29
 msgid "q5.parent.title"
 msgstr "Relacja do Państwa dziecka z cukrzycą"

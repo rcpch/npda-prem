@@ -411,10 +411,6 @@ msgstr "Ти…"
 msgid "q4.parent.title"
 msgstr "Ти…"
 
-#: submissions/sections.py:28
-msgid "q5.child.title"
-msgstr ""
-
 #: submissions/sections.py:29
 msgid "q5.parent.title"
 msgstr "Ступінь спорідненості з дитиною, хворою на діабет"
