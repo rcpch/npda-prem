@@ -53,11 +53,11 @@ msgstr "ਨਹੀਂ"
 
 #: submissions/models.py:11
 msgid "q4.boy"
-msgstr ""
+msgstr "ਮੁੰਡਾ"
 
 #: submissions/models.py:12
 msgid "q4.girl"
-msgstr ""
+msgstr "ਕੁੜੀ"
 
 #: submissions/models.py:13
 #, fuzzy
@@ -130,7 +130,7 @@ msgstr "ਨਰਸਰੀ"
 
 #: submissions/models.py:41
 msgid "Ages < 4yrs"
-msgstr ""
+msgstr "< 4 ਸਾਲ"
 
 #: submissions/models.py:42
 msgid "Reception"
@@ -138,7 +138,7 @@ msgstr "ਰਿਸੈਪਸ਼ਨ"
 
 #: submissions/models.py:42
 msgid "Ages 4-5yrs"
-msgstr ""
+msgstr "4-5 ਸਾਲ"
 
 #: submissions/models.py:43
 msgid "Key stage 1 (Years 1 & 2)"
@@ -146,7 +146,7 @@ msgstr "ਮੁੱਖ ਪੜਾਅ 1 (ਸਾਲ 1 ਅਤੇ 2)"
 
 #: submissions/models.py:43
 msgid "Ages 5-7yrs"
-msgstr ""
+msgstr "5-7 ਸਾਲ"
 
 #: submissions/models.py:44
 msgid "Key stage 2 (Years 3 to 6)"
@@ -154,7 +154,7 @@ msgstr "ਮੁੱਖ ਪੜਾਅ 2 (ਸਾਲ 3 ਤੋਂ 6)"
 
 #: submissions/models.py:44
 msgid "Ages 7-11yrs"
-msgstr ""
+msgstr "7-11 ਸਾਲ"
 
 #: submissions/models.py:45
 msgid "Key stage 3 (Years 7 to 9)"
@@ -162,7 +162,7 @@ msgstr "ਮੁੱਖ ਪੜਾਅ 3 (ਸਾਲ 7 ਤੋਂ 9)"
 
 #: submissions/models.py:45
 msgid "Ages 11-14yrs"
-msgstr ""
+msgstr "11-14 ਸਾਲ"
 
 #: submissions/models.py:46
 msgid "Key stage 4 (Years 10 & 11)"
@@ -170,7 +170,7 @@ msgstr "ਮੁੱਖ ਪੜਾਅ 4 (ਸਾਲ 10 ਅਤੇ 11)"
 
 #: submissions/models.py:46
 msgid "Ages 14-16yrs"
-msgstr ""
+msgstr "14-16 ਸਾਲ"
 
 #: submissions/models.py:47
 msgid "Key stage 5 (Years 12 & 13)"
@@ -178,7 +178,7 @@ msgstr "ਮੁੱਖ ਪੜਾਅ 5 (ਸਾਲ 12 ਅਤੇ 13)"
 
 #: submissions/models.py:47
 msgid "Ages 16-18yrs"
-msgstr ""
+msgstr "16-18 ਸਾਲ"
 
 #: submissions/models.py:54
 msgid "State funded school"
@@ -187,6 +187,8 @@ msgstr "ਰਾਜ ਤੋਂ ਫੰਡ ਪ੍ਰਾਪਤ ਸਕੂਲ"
 #: submissions/models.py:54
 msgid "q10.state.hint"
 msgstr ""
+"ਇਹ ਉਹ ਸਕੂਲ ਹਨ ਜਿੱਥੇ ਤੁਹਾਨੂੰ ਪੜ੍ਹਾਈ ਲਈ ਭੁਗਤਾਨ ਨਹੀਂ ਕਰਨਾ ਪੈਂਦਾ। ਇਸ ਵਿੱਚ "
+"ਅਕੈਡਮੀਆਂ, ਕਾਲਜ ਅਤੇ ਗਰਾਮਰ ਸਕੂਲ ਸ਼ਾਮਲ ਹਨ।"
 
 #: submissions/models.py:55
 msgid "Private school"
@@ -195,6 +197,8 @@ msgstr "ਨਿੱਜੀ ਸਕੂਲ"
 #: submissions/models.py:55
 msgid "q10.private.hint"
 msgstr ""
+"ਇਹ ਉਹ ਸਕੂਲ ਹਨ ਜੋ ਪੜ੍ਹਾਈ ਲਈ ਫੀਸ ਲੈਂਦੇ ਹਨ। ਕਿਰਪਾ ਕਰਕੇ ਇਸਨੂੰ ਚੁਣੋ ਭਾਵੇਂ "
+"ਤੁਹਾਨੂੰ ਸਕਾਲਰਸ਼ਿਪ ਜਾਂ ਬਰਸਰੀ ਮਿਲੀ ਹੋਵੇ।"
 
 #: submissions/models.py:56
 msgid "Home schooled/educated"
@@ -249,6 +253,8 @@ msgstr ""
 #: submissions/models.py:84
 msgid "q18.na"
 msgstr ""
+"N/A – ਮੈਂ ਨਹੀਂ ਕਰਦਾ/ਦੀ/ਮੇਰਾ ​​ਬੱਚਾ ਸਕੂਲ ਵਿੱਚ ਬਲੱਡ ਗਲੂਕੋਜ਼ ਦੀ ਨਿਗਰਾਨੀ "
+"ਨਹੀਂ ਕਰਦਾ/ਦੀ"
 
 #: submissions/models.py:88
 msgid "Mother"
@@ -391,74 +397,87 @@ msgstr "ਜਨ ਅੰਕੜੇ"
 #: submissions/sections.py:11
 msgid "demographics.introduction"
 msgstr ""
+"ਅਸੀਂ ਤੁਹਾਡੇ ਬਾਰੇ ਥੋੜ੍ਹਾ ਹੋਰ ਜਾਣਨਾ ਚਾਹੁੰਦੇ ਹਾਂ ਤਾਂ ਜੋ ਅਸੀਂ ਆਪਣੇ ਸਵਾਲਾਂ "
+"ਨੂੰ ਅਨੁਕੂਲ ਬਣਾ ਸਕੀਏ। ਅਸੀਂ ਇਸ ਜਾਣਕਾਰੀ ਦੀ ਵਰਤੋਂ ਇਹ ਸਮਝਣ ਲਈ ਵੀ ਕਰਾਂਗੇ ਕਿ ਕੀ "
+"ਵੱਖ-ਵੱਖ ਪਿਛੋਕੜਾਂ ਵਾਲੇ ਸ਼ੂਗਰ ਵਾਲੇ ਬੱਚਿਆਂ ਅਤੇ ਨੌਜਵਾਨਾਂ ਦਾ ਸਕੂਲ ਵਿੱਚ ਵੱਖਰਾ "
+"ਅਨੁਭਵ ਹੁੰਦਾ ਹੈ। ਇਸ ਭਾਗ ਵਿੱਚ ਸਾਰੇ ਸਵਾਲ ਲਾਜ਼ਮੀ ਹਨ, ਪਰ ਤੁਸੀਂ ਕੁਝ ਸਵਾਲਾਂ ਲਈ "
+"'ਦੱਸਣਾ ਪਸੰਦ ਨਹੀਂ' ਚੁਣ ਸਕਦੇ ਹੋ।"
 
 #: submissions/sections.py:18
 msgid "q4.child.title"
-msgstr ""
+msgstr "ਕੀ ਤੁਸੀਂ ਇਹ ਹੋ…"
 
 #: submissions/sections.py:19
 msgid "q4.parent.title"
-msgstr ""
+msgstr "ਕੀ ਤੁਸੀਂ ਇਹ ਹੋ…"
 
 #: submissions/sections.py:29
 msgid "q5.parent.title"
-msgstr ""
+msgstr "ਸ਼ੂਗਰ ਵਾਲੇ ਤੁਹਾਡੇ ਬੱਚੇ ਨਾਲ ਸਬੰਧ"
 
 #: submissions/sections.py:38
 msgid "q6.child.title"
-msgstr ""
+msgstr "ਤੁਹਾਨੂੰ ਕਿਸ ਕਿਸਮ ਦੀ ਸ਼ੂਗਰ ਹੈ?"
 
 #: submissions/sections.py:39
 msgid "q6.parent.title"
-msgstr ""
+msgstr "ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਕਿਸ ਕਿਸਮ ਦੀ ਸ਼ੂਗਰ ਹੈ?"
 
 #: submissions/sections.py:48
 msgid "q7.child.title"
-msgstr ""
+msgstr "ਤੁਹਾਨੂੰ ਕਿਸ ਉਮਰ ਵਿੱਚ ਸ਼ੂਗਰ ਦਾ ਪਤਾ ਲੱਗਿਆ?"
 
 #: submissions/sections.py:49
 msgid "q7.parent.title"
-msgstr ""
+msgstr "ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਕਿਸ ਉਮਰ ਵਿੱਚ ਸ਼ੂਗਰ ਦਾ ਪਤਾ ਲੱਗਿਆ ਸੀ?"
 
 #: submissions/sections.py:58
 msgid "q8.child.title"
 msgstr ""
+"ਹੇਠਾਂ ਦਿੱਤਿਆਂ ਵਿੱਚੋਂ ਕਿਹੜਾ ਤੁਹਾਡੀ ਜਾਤੀਅਤਾ ਨੂੰ ਸਭ ਤੋਂ ਵਧੀਆ ਢੰਗ ਨਾਲ "
+"ਦਰਸਾਉਂਦਾ ਹੈ?"
 
 #: submissions/sections.py:59
 msgid "q8.parent.title"
 msgstr ""
+"ਹੇਠਾਂ ਵਿੱਚੋਂ ਕਿਹੜਾ ਤੁਹਾਡੇ ਬੱਚੇ ਦੀ ਜਾਤੀਅਤਾ ਨੂੰ ਸਭ ਤੋਂ ਵਧੀਆ ਢੰਗ ਨਾਲ "
+"ਦਰਸਾਉਂਦਾ ਹੈ?"
 
 #: submissions/sections.py:68
 msgid "q9.child.title"
-msgstr ""
+msgstr "ਤੁਸੀਂ ਸਿੱਖਿਆ ਦੇ ਕਿਸ ਪੜਾਅ ਵਿੱਚ ਹੋ?"
 
 #: submissions/sections.py:69
 msgid "q9.parent.title"
-msgstr ""
+msgstr "ਤੁਹਾਡਾ ਬੱਚਾ ਸਿੱਖਿਆ ਦੇ ਕਿਸ ਪੜਾਅ ਵਿੱਚ ਹੈ?"
 
 #: submissions/sections.py:82
 msgid "q10.child.title"
-msgstr ""
+msgstr "ਤੁਸੀਂ ਕਿਸ ਕਿਸਮ ਦੇ ਸਕੂਲ ਵਿੱਚ ਜਾਂਦੇ ਹੋ ਜਾਂ ਸਿੱਖਿਆ ਪ੍ਰਾਪਤ ਕਰਦੇ ਹੋ?"
 
 #: submissions/sections.py:83
 msgid "q10.parent.title"
-msgstr ""
+msgstr "ਤੁਹਾਡਾ ਬੱਚਾ ਕਿਸ ਕਿਸਮ ਦੇ ਸਕੂਲ ਵਿੱਚ ਜਾਂਦੇ ਹੈ ਜਾਂ ਸਿੱਖਿਆ ਪ੍ਰਾਪਤ ਕਰਦੇ ਹੈ?"
 
 #: submissions/sections.py:96
 msgid "q11.child.title"
 msgstr ""
+"ਕੀ ਘਰ ਵਿੱਚ ਪੜ੍ਹਾਈ ਕਰਨ ਦਾ ਤੁਹਾਡਾ ਫੈਸਲਾ ਤੁਹਾਡੇ ਬੱਚੇ ਦੀ ਸ਼ੂਗਰ ਦੀ ਜਾਂਚ ਨਾਲ "
+"ਸਬੰਧਤ ਸੀ?"
 
 #: submissions/sections.py:97
 msgid "q11.parent.title"
 msgstr ""
+"ਕੀ ਘਰ ਵਿੱਚ ਪੜ੍ਹਾਈ ਕਰਨ ਦਾ ਤੁਹਾਡਾ ਫੈਸਲਾ ਤੁਹਾਡੇ ਬੱਚੇ ਦੀ ਸ਼ੂਗਰ ਦੀ ਜਾਂਚ ਨਾਲ "
+"ਸਬੰਧਤ ਸੀ?"
 
 #: submissions/sections.py:106
 msgid "q12.child.title"
-msgstr ""
+msgstr "ਕੀ ਤੁਸੀਂ ਮੁਫ਼ਤ ਸਕੂਲੀ ਭੋਜਨ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਯੋਗ ਹੋ?"
 
 #: submissions/sections.py:107
 msgid "q12.parent.title"
-msgstr ""
+msgstr "ਕੀ ਤੁਹਾਡਾ ਬੱਚਾ ਮੁਫਤ ਸਕੂਲੀ ਭੋਜਨ ਪ੍ਰਾਪਤ ਕਰਨ ਦੇ ਯੋਗ ਹੈ?"
 
 #: submissions/sections.py:117
 msgid "School Health Care Plans"
@@ -467,22 +486,31 @@ msgstr "ਸਕੂਲ ਦੀਆਂ ਸਿਹਤ ਸੰਭਾਲ ਯੋਜਨਾ�
 #: submissions/sections.py:118
 msgid "healthcare_plans.introduction"
 msgstr ""
+"ਅਸੀਂ ਜਾਣਨਾ ਚਾਹੁੰਦੇ ਹਾਂ ਕਿ ਕੀ ਤੁਹਾਨੂੰ ਅਤੇ ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਆਪਣੀ ਸਿੱਖਿਆ ਦੇ "
+"ਨਾਲ-ਨਾਲ ਆਪਣੀ ਸ਼ੂਗਰ ਦੇ ਪ੍ਰਬੰਧਨ ਵਿੱਚ ਰਸਮੀ ਸਹਾਇਤਾ ਮਿਲੀ ਹੈ।"
 
 #: submissions/sections.py:125
 msgid "q13.parent.title"
-msgstr ""
+msgstr "ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਕੋਲ ਖਾਸ ਤੌਰ 'ਤੇ ਆਪਣੀ ਸ਼ੂਗਰ ਲਈ ਸਕੂਲ ਸਿਹਤ ਸੰਭਾਲ ਯੋਜਨਾ ਹੈ?"
 
 #: submissions/sections.py:127
 msgid "q13.hint"
 msgstr ""
+"ਇਹ ਤੁਹਾਡੀ ਸ਼ੂਗਰ ਟੀਮ ਅਤੇ ਸਕੂਲ ਨਾਲ ਬਣਾਈ ਗਈ ਯੋਜਨਾ ਹੈ। ਇਹ ਇੱਕ ਗੈਰ-ਰਸਮੀ ਜਾਂ "
+"ਰਸਮੀ ਯੋਜਨਾ ਹੋ ਸਕਦੀ ਹੈ, ਜਿਵੇਂ ਕਿ ਇੰਡੀਵਿਡੁਅਲ ਹੈਲਥਕੇਅਰ ਪਲਾਨਜ਼ (IHP), ਰਿਕਾਰਡਸ "
+"ਆਫ ਨੀਡਜ਼, ਜਾਂ ਐਡੂਕੇਸ਼ਨ, ਹੈਲਥ ਐਂਡ ਕੇਅਰ ਪਲਾਨਜ਼ (EHCP)"
 
 #: submissions/sections.py:139
 msgid "q14.parent.title"
 msgstr ""
+"ਕੀ ਸਕੂਲ ਦੀ ਸਿਹਤ ਸੰਭਾਲ ਯੋਜਨਾ ਜੋ ਲਾਗੂ ਕੀਤੀ ਗਈ ਹੈ, ਤੁਹਾਡੇ ਬੱਚੇ ਦੀਆਂ ਸਕੂਲ "
+"ਵਿੱਚ ਸ਼ੂਗਰ ਦੀਆਂ ਸਾਰੀਆਂ ਜ਼ਰੂਰਤਾਂ ਨੂੰ ਪੂਰਾ ਕਰਦੀ ਹੈ?"
 
 #: submissions/sections.py:148
 msgid "q15.parent.title"
 msgstr ""
+"ਜੇਕਰ ਉਹਨਾਂ ਨੂੰ ਸਲਾਹ ਜਾਂ ਸਹਾਇਤਾ ਦੀ ਲੋੜ ਪੈਂਦੀ ਹੈ ਉਸ ਹਾਲਤ ਲਈ, ਕੀ ਤੁਹਾਡੇ "
+"ਬੱਚੇ ਦੇ ਸਕੂਲ ਦਾ ਤੁਹਾਡੇ ਬੱਚੇ ਦੀ ਸ਼ੂਗਰ ਟੀਮ ਦੇ ਅੰਦਰ ਸਿੱਧਾ ਸੰਪਰਕ ਹੈ?"
 
 #: submissions/sections.py:158
 msgid "Managing Diabetes"
@@ -491,74 +519,99 @@ msgstr "ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ"
 #: submissions/sections.py:159
 msgid "managing_diabetes.introduction"
 msgstr ""
+"ਇਹ ਭਾਗ ਤੁਹਾਡੇ/ਤੁਹਾਡੇ ਬੱਚੇ ਦੇ ਸ਼ੂਗਰ ਦੇ ਇਲਾਜ ਬਾਰੇ ਪੁੱਛਦਾ ਹੈ। ਅਸੀਂ ਇਸ "
+"ਜਾਣਕਾਰੀ ਦੀ ਵਰਤੋਂ ਇਹ ਦੇਖਣ ਲਈ ਕਰਾਂਗੇ ਕਿ ਕੀ ਵੱਖ-ਵੱਖ ਸ਼ੂਗਰ ਤਕਨੀਕਾਂ ਦੀ ਵਰਤੋਂ "
+"ਕਰਨ ਵਾਲੇ ਬੱਚਿਆਂ ਅਤੇ ਨੌਜਵਾਨਾਂ ਦੇ ਸਕੂਲ ਵਿੱਚ ਵੱਖੋ-ਵੱਖਰੇ ਅਨੁਭਵ ਹੁੰਦੇ ਹਨ।"
 
 #: submissions/sections.py:166
 msgid "q16.child.title"
 msgstr ""
+"ਕੀ ਤੁਹਾਨੂੰ ਸਕੂਲ ਵਿੱਚ ਆਪਣੀ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ ਇਨਸੁਲਿਨ ਲਗਾਉਣ ਜਾਂ ਖੂਨ "
+"ਵਿਚਲੇ ਗਲੂਕੋਜ਼ ਦੀ ਨਿਗਰਾਨੀ ਕਰਨ ਦੀ ਲੋੜ ਹੈ?"
 
 #: submissions/sections.py:167
 msgid "q16.parent.title"
 msgstr ""
+"ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਸਕੂਲ ਵਿੱਚ ਆਪਣੀ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ ਇਨਸੁਲਿਨ ਦੇਣ "
+"ਜਾਂ ਖੂਨ ਵਿੱਚ ਗਲੂਕੋਜ਼ ਦੀ ਨਿਗਰਾਨੀ ਕਰਨ ਦੀ ਲੋੜ ਹੈ?"
 
 #: submissions/sections.py:180
 msgid "q17.child.title"
-msgstr ""
+msgstr "ਤੁਸੀਂ ਸਕੂਲ ਵਿੱਚ ਇਨਸੁਲਿਨ ਕਿਵੇਂ ਲਗਾਉਂਦੇ ਹੋ?"
 
 #: submissions/sections.py:181
 msgid "q17.parent.title"
-msgstr ""
+msgstr "ਤੁਹਾਡਾ ਬੱਚਾ ਸਕੂਲ ਵਿੱਚ ਇਨਸੁਲਿਨ ਕਿਵੇਂ ਲੈਂਦਾ ਹੈ?"
 
 #: submissions/sections.py:183
 msgid "q17.hint"
-msgstr ""
+msgstr "ਉਹ ਸਾਰੇ ਚੁਣੋ ਜੋ ਲਾਗੂ ਹੁੰਦੇ ਹਨ"
 
 #: submissions/sections.py:191
 msgid "q18.child.title"
-msgstr ""
+msgstr "ਤੁਸੀਂ ਸਕੂਲ ਵਿੱਚ ਖੂਨ ਵਿੱਚ ਗਲੂਕੋਜ਼ ਦੇ ਪੱਧਰਾਂ ਦੀ ਨਿਗਰਾਨੀ ਕਿਵੇਂ ਕਰਦੇ ਹੋ?"
 
 #: submissions/sections.py:192
 msgid "q18.parent.title"
-msgstr ""
+msgstr "ਤੁਹਾਡਾ ਬੱਚਾ ਸਕੂਲ ਵਿੱਚ ਬਲੱਡ ਗਲੂਕੋਜ਼ ਦੇ ਪੱਧਰਾਂ ਦੀ ਨਿਗਰਾਨੀ ਕਿਵੇਂ ਕਰਦਾ ਹੈ?"
 
 #: submissions/sections.py:194
 msgid "q18.hint"
-msgstr ""
+msgstr "ਉਹ ਸਾਰੇ ਚੁਣੋ ਜੋ ਲਾਗੂ ਹੁੰਦੇ ਹਨ"
 
 #: submissions/sections.py:202
 msgid "q19.parent.title"
 msgstr ""
+"ਕੀ ਤੁਸੀਂ ਆਪਣੇ ਬੱਚੇ ਦੇ ਬਲੱਡ ਗਲੂਕੋਜ਼ ਦੀ ਦੂਰ ਰਹਿ ਕੇ ਦੇਖ ਸਕਦੇ/ਨਿਗਰਾਨੀ ਕਰ "
+"ਸਕਦੇ ਹੋ?"
 
 #: submissions/sections.py:211
 msgid "q20.parent.title"
 msgstr ""
+"ਜੇਕਰ ਤੁਸੀਂ ਉਨ੍ਹਾਂ ਦੀ ਸ਼ੂਗਰ ਬਾਰੇ ਚਿੰਤਤ ਹੋ ਤਾਂ ਕੀ ਤੁਸੀਂ ਦਿਨ ਵੇਲੇ ਆਪਣੇ ਬੱਚੇ "
+"ਦੇ ਸਕੂਲ ਨਾਲ ਸੰਪਰਕ ਕਰ ਸਕਦੇ ਹੋ?"
 
 #: submissions/sections.py:220
 msgid "q21.child.title"
 msgstr ""
+"ਜੇਕਰ ਤੁਸੀਂ ਆਪਣੀ/ਉਨ੍ਹਾਂ ਦੀ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ ਸਮਾਰਟਫੋਨ ਜਾਂ ਸਮਾਰਟਵਾਚ "
+"ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹੋ, ਤਾਂ ਕੀ ਤੁਸੀਂ/ਉਹ ਸਕੂਲ ਵਿੱਚ ਪੜ੍ਹਾਈ ਦੌਰਾਨ ਇਸਦੀ ਵਰਤੋਂ ਕਰ "
+"ਸਕਦੇ ਹੋ/ਹਨ?"
 
 #: submissions/sections.py:221
 msgid "q21.parent.title"
 msgstr ""
+"ਜੇਕਰ ਤੁਹਾਡਾ ਬੱਚਾ ਆਪਣੀ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ ਸਮਾਰਟਫੋਨ ਜਾਂ ਸਮਾਰਟਵਾਚ ਦੀ "
+"ਵਰਤੋਂ ਕਰਦਾ ਹੈ, ਤਾਂ ਕੀ ਤੁਸੀਂ/ਉਹ ਸਕੂਲ ਵਿੱਚ ਪੜ੍ਹਾਈ ਦੌਰਾਨ ਇਸਦੀ ਵਰਤੋਂ ਕਰ ਸਕਦੇ "
+"ਹੋ?"
 
 #: submissions/sections.py:230
 msgid "q22.child.title"
 msgstr ""
+"ਕੀ ਤੁਹਾਨੂੰ ਸ਼ੂਗਰ ਸਬੰਧੀ ਦੇਖਭਾਲ ਲਈ ਸਕੂਲ ਵਿੱਚ ਇੱਕ ਨਿੱਜੀ ਕਮਰੇ ਦੀ ਪੇਸ਼ਕਸ਼ ਕੀਤੀ "
+"ਜਾਂਦੀ ਹੈ, ਭਾਵੇਂ ਤੁਸੀਂ ਇਸਦੀ ਵਰਤੋਂ ਨਹੀਂ ਕਰਦੇ?"
 
 #: submissions/sections.py:231
 msgid "q22.parent.title"
 msgstr ""
+"ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਡਾਇਬੀਟੀਜ਼ ਦੀ ਦੇਖਭਾਲ ਲਈ ਸਕੂਲ ਵਿੱਚ ਇੱਕ ਨਿੱਜੀ ਕਮਰਾ ਦਿੱਤਾ "
+"ਜਾਂਦਾ ਹੈ, ਭਾਵੇਂ ਉਹ ਇਸਦੀ ਵਰਤੋਂ ਨਹੀਂ ਕਰਦੇ?"
 
 #: submissions/sections.py:233
 msgid "q22.hint"
 msgstr ""
+"ਜਿਵੇਂ ਕਿ ਇਨਸੁਲਿਨ ਦੇਣ, ਖੂਨ ਵਿੱਚ ਗਲੂਕੋਜ਼ ਦੀ ਜਾਂਚ ਕਰਨ, ਪੰਪ ਸੈੱਟ ਬਦਲਣ, ਜਾਂ "
+"ਸ਼ੂਗਰ ਸਬੰਧੀ ਦੇਖਭਾਲ ਨਾਲ ਸਬੰਧਤ ਕਿਸੇ ਹੋਰ ਚੀਜ਼ ਲਈ"
 
 #: submissions/sections.py:241
 msgid "q23.child.title"
-msgstr ""
+msgstr "ਕੀ ਲੋੜ ਪੈਣ 'ਤੇ ਤੁਹਾਨੂੰ ਕਲਾਸਰੂਮ ਵਿੱਚ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਹੈ?"
 
 #: submissions/sections.py:242
 msgid "q23.parent.title"
 msgstr ""
+"ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਲੋੜ ਪੈਣ 'ਤੇ ਕਲਾਸਰੂਮ ਵਿੱਚ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਦੀ "
+"ਇਜਾਜ਼ਤ ਹੈ?"
 
 #: submissions/sections.py:244
 msgid "q23.hint"
@@ -567,10 +620,14 @@ msgstr ""
 #: submissions/sections.py:252
 msgid "q24.child.title"
 msgstr ""
+"ਕੀ ਸਕੂਲ ਵਿੱਚ ਕੋਈ ਸਿਖਲਾਈ ਪ੍ਰਾਪਤ ਸਟਾਫ ਮੈਂਬਰ ਹੈ ਜੋ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ "
+"ਵਿੱਚ ਤੁਹਾਡੀ ਮਦਦ ਕਰ ਸਕਦਾ ਹੈ?"
 
 #: submissions/sections.py:253
 msgid "q24.parent.title"
 msgstr ""
+"ਕੀ ਸਕੂਲ ਵਿੱਚ ਕੋਈ ਸਿਖਲਾਈ ਪ੍ਰਾਪਤ ਸਟਾਫ ਮੈਂਬਰ ਹੈ ਜੋ ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਸ਼ੂਗਰ ਦਾ "
+"ਪ੍ਰਬੰਧਨ ਕਰਨ ਵਿੱਚ ਮਦਦ ਕਰ ਸਕਦਾ ਹੈ?"
 
 #: submissions/sections.py:255
 msgid "q24.hint"
@@ -579,14 +636,21 @@ msgstr ""
 #: submissions/sections.py:263
 msgid "q25.child.title"
 msgstr ""
+"ਕੀ ਤੁਹਾਡਾ/ਤੁਹਾਡੇ ਬੱਚੇ ਦਾ ਸਕੂਲ ਕਾਰਬੋਹਾਈਡਰੇਟ-ਗਿਣਤੀ ਲਈ ਸਕੂਲ ਦੇ ਭੋਜਨ ਬਾਰੇ "
+"ਕਾਫ਼ੀ ਜਾਣਕਾਰੀ ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ?"
 
 #: submissions/sections.py:264
 msgid "q25.parent.title"
 msgstr ""
+"ਕੀ ਤੁਹਾਡੇ/ਤੁਹਾਡੇ ਬੱਚੇ ਦਾ ਸਕੂਲ ਕਾਰਬੋਹਾਈਡਰੇਟ-ਗਿਣਤੀ ਲਈ ਸਕੂਲੀ ਭੋਜਨ ਬਾਰੇ "
+"ਕਾਫ਼ੀ ਜਾਣਕਾਰੀ ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ?"
 
 #: submissions/sections.py:266
 msgid "q25.hint"
 msgstr ""
+"ਇਸ ਵਿੱਚ ਕਾਰਬੋਹਾਈਡਰੇਟ ਸਮੱਗਰੀ ਅਤੇ ਭੋਜਨ ਦੀ ਮਾਤਰਾ ਬਾਰੇ ਜਾਣਕਾਰੀ ਸ਼ਾਮਲ ਹੈ ਤਾਂ "
+"ਜੋ ਤੁਹਾਨੂੰ/ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਇਨਸੁਲਿਨ ਨੂੰ ਮੇਲਣ ਲਈ ਅਨੁਕੂਲ ਬਣਾਉਣ ਵਿੱਚ ਮਦਦ "
+"ਕੀਤੀ ਜਾ ਸਕੇ।"
 
 #: submissions/sections.py:275
 msgid "Impact on Education"
@@ -594,107 +658,152 @@ msgstr "ਸਿੱਖਿਆ 'ਤੇ ਪ੍ਰਭਾਵ"
 
 #: submissions/sections.py:276
 msgid "education_impact.introduction"
-msgstr ""
+msgstr "ਇਹ ਭਾਗ ਪੁੱਛਦਾ ਹੈ ਕਿ ਤੁਹਾਡੀ ਸ਼ੂਗਰ ਤੁਹਾਡੀ ਸਿੱਖਿਆ ਨੂੰ ਕਿਵੇਂ ਪ੍ਰਭਾਵਤ ਕਰਦੀ ਹੈ।"
 
 #: submissions/sections.py:283
 msgid "q26.child.title"
 msgstr ""
+"ਪਿਛਲੇ ਸਾਲ ਵਿੱਚ, ਤੁਸੀਂ ਸ਼ੂਗਰ-ਸਬੰਧਤ ਹਸਪਤਾਲ ਦੀਆਂ ਮੁਲਾਕਾਤਾਂ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਣ "
+"ਲਈ ਕਿਸੇ ਵੀ ਦਿਨ ਵਿੱਚ ਕਿੰਨੀ ਵਾਰ ਇੱਕ ਜਾਂ ਵੱਧ ਪਾਠ ਖੁੰਝੇ ਹਨ?"
 
 #: submissions/sections.py:284
 msgid "q26.parent.title"
 msgstr ""
+"ਪਿਛਲੇ ਸਾਲ, ਤੁਹਾਡੇ ਬੱਚੇ ਨੇ ਸ਼ੂਗਰ ਨਾਲ ਸਬੰਧਤ ਹਸਪਤਾਲ ਦੀਆਂ ਮੁਲਾਕਾਤਾਂ ਵਿੱਚ "
+"ਸ਼ਾਮਲ ਹੋਣ ਲਈ ਕਿਸੇ ਵੀ ਦਿਨ ਵਿੱਚ ਕਿੰਨੀ ਵਾਰ ਇੱਕ ਜਾਂ ਵੱਧ ਪਾਠ ਖੁੰਝੇ ਹਨ?"
 
 #: submissions/sections.py:286
 msgid "q26.hint"
 msgstr ""
+"ਇਸ ਵਿੱਚ ਸ਼ੂਗਰ ਕਲੀਨਿਕ ਲਈ ਰੁਟੀਨ ਮੁਲਾਕਾਤਾਂ ਜਾਂ PDSN, ਡਾਇਟੀਸ਼ੀਅਨ, ਮਨੋਵਿਗਿਆਨੀ "
+"ਆਦਿ ਨਾਲ ਹੋਰ ਮੁਲਾਕਾਤਾਂ ਸ਼ਾਮਲ ਹੋ ਸਕਦੀਆਂ ਹਨ (ਹਸਪਤਾਲ ਵਿੱਚ ਭਰਤੀ ਰਹਿਣ ਦੇ ਸਮੇਂ "
+"ਨਹੀਂ)"
 
 #: submissions/sections.py:293
 msgid "q27.child.title"
 msgstr ""
+"ਕੀ ਤੁਹਾਡੀ ਸ਼ੂਗਰ-ਸਬੰਧਤ ਮੁਲਾਕਾਤਾਂ ਲਈ ਗੈਰਹਾਜ਼ਰੀਆਂ ਤੁਹਾਡੇ ਸਕੂਲ ਦੁਆਰਾ "
+"ਅਧਿਕਾਰਤ ਹਨ?"
 
 #: submissions/sections.py:294
 msgid "q27.parent.title"
 msgstr ""
+"ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਦੀਆਂ ਗੈਰਹਾਜ਼ਰੀਆਂ ਉਨ੍ਹਾਂ ਦੇ ਸਕੂਲ ਦੁਆਰਾ ਅਧਿਕਾਰਤ ਸ਼ੂਗਰ ਨਾਲ "
+"ਸਬੰਧਤ ਮੁਲਾਕਾਤਾਂ ਲਈ ਹਨ?"
 
 #: submissions/sections.py:296
 msgid "q27.hint"
 msgstr ""
+"ਸਿਹਤ ਮੁਲਾਕਾਤਾਂ ਦੇ ਕਾਰਨ ਹੋਈਆਂ ਸਕੂਲ ਦੀਆਂ ਗੈਰਹਾਜ਼ਰੀਆਂ ਨੂੰ ਅਣਅਧਿਕਾਰਤ ਨਹੀਂ "
+"ਮੰਨਿਆ ਜਾਣਾ ਚਾਹੀਦਾ ਹੈ।"
 
 #: submissions/sections.py:304
 msgid "q28.child.title"
 msgstr ""
+"ਕੀ ਡਾਇਬੀਟੀਜ਼ ਕਲੀਨਿਕ ਮੁਲਾਕਾਤਾਂ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਣ ਨਾਲ ਤੁਹਾਡੇ ਸਕੂਲ ਹਾਜ਼ਰੀ "
+"ਰਿਕਾਰਡ 'ਤੇ ਨਕਾਰਾਤਮਕ ਪ੍ਰਭਾਵ ਪਿਆ ਹੈ?"
 
 #: submissions/sections.py:305
 msgid "q28.parent.title"
 msgstr ""
+"ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਦੇ ਸਕੂਲ ਹਾਜ਼ਰੀ ਰਿਕਾਰਡਾਂ 'ਤੇ ਸ਼ੂਗਰ ਕਲੀਨਿਕ ਦੀਆਂ ਮੁਲਾਕਾਤਾਂ "
+"ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਣ ਨਾਲ ਨਕਾਰਾਤਮਕ ਪ੍ਰਭਾਵ ਪਿਆ ਹੈ?"
 
 #: submissions/sections.py:307
 msgid "q28.hint"
 msgstr ""
+"ਸਿਹਤ ਮੁਲਾਕਾਤਾਂ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਣ ਕਾਰਨ ਸਕੂਲ ਗੈਰਹਾਜ਼ਰੀਆਂ ਨੂੰ ਹਾਜ਼ਰੀ ਪ੍ਰਤੀਸ਼ਤ "
+"ਨੂੰ ਨਹੀਂ ਘਟਾਉਣਾ ਚਾਹੀਦਾ।"
 
 #: submissions/sections.py:315
 msgid "q29.child.title"
 msgstr ""
+"ਪਿਛਲੇ ਸਾਲ, ਤੁਹਾਡੀ ਸ਼ੂਗਰ ਨਾਲ ਸਬੰਧਤ ਬਿਮਾਰੀ ਕਾਰਨ ਤੁਸੀਂ ਸਕੂਲ/ਘਰੇਲੂ ਸਿੱਖਿਆ "
+"ਤੋਂ ਕਿੰਨੇ ਦਿਨ ਛੁੱਟੀ ਲਈ ਹੈ?"
 
 #: submissions/sections.py:316
 msgid "q29.parent.title"
 msgstr ""
+"ਪਿਛਲੇ ਸਾਲ, ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਸ਼ੂਗਰ ਨਾਲ ਸਬੰਧਤ ਬਿਮਾਰੀ ਕਾਰਨ ਸਕੂਲ/ਘਰੇਲੂ ਸਿੱਖਿਆ "
+"ਤੋਂ ਕਿੰਨੇ ਦਿਨ ਛੁੱਟੀ ਲਈ ਹੈ?"
 
 #: submissions/sections.py:318
 msgid "q29.hint"
-msgstr ""
+msgstr "ਇਸ ਵਿੱਚ ਘਰ ਵਿੱਚ ਸਕੂਲ ਤੋਂ ਬਾਹਰ ਰਹਿਣਾ ਜਾਂ ਹਸਪਤਾਲ ਵਿੱਚ ਦਾਖਲਾ ਸ਼ਾਮਲ ਹੋ ਸਕਦਾ ਹੈ"
 
 #: submissions/sections.py:325
 msgid "q30.child.title"
-msgstr ""
+msgstr "ਕੀ ਤੁਹਾਨੂੰ ਕਦੇ ਆਪਣੀ ਸ਼ੂਗਰ ਦੇ ਪ੍ਰਬੰਧਨ ਵਿੱਚ ਮੁਸ਼ਕਲਾਂ ਕਾਰਨ ਸਕੂਲ ਬਦਲਣਾ ਪਿਆ ਹੈ?"
 
 #: submissions/sections.py:326
 msgid "q30.parent.title"
 msgstr ""
+"ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਕਦੇ ਆਪਣੀ ਸ਼ੂਗਰ ਦੇ ਪ੍ਰਬੰਧਨ ਵਿੱਚ ਮੁਸ਼ਕਲਾਂ ਕਾਰਨ ਸਕੂਲ "
+"ਬਦਲਣਾ ਪਿਆ ਹੈ?"
 
 #: submissions/sections.py:335
 msgid "q31.child.title"
 msgstr ""
+"ਕੀ ਤੁਹਾਨੂੰ ਕਦੇ ਆਪਣੀ ਸ਼ੂਗਰ ਦੇ ਕਾਰਨ ਹੇਠਾਂ ਦਿੱਤੀਆਂ ਕਿਸੇ ਵੀ ਤਰ੍ਹਾਂ ਦੀਆਂ "
+"ਗਤੀਵਿਧੀਆਂ ਤੋਂ ਬਾਹਰ ਰੱਖਿਆ ਗਿਆ ਹੈ?"
 
 #: submissions/sections.py:336
 msgid "q31.parent.title"
 msgstr ""
+"ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਕਦੇ ਵੀ ਆਪਣੀ ਸ਼ੂਗਰ ਦੇ ਕਾਰਨ ਹੇਠ ਲਿਖੀਆਂ ਗਤੀਵਿਧੀਆਂ ਵਿੱਚੋਂ "
+"ਕਿਸੇ ਤੋਂ ਬਾਹਰ ਰੱਖਿਆ ਗਿਆ ਹੈ?"
 
 #: submissions/sections.py:338
 msgid "q31.hint"
-msgstr ""
+msgstr "ਲਾਗੂ ਹੋਣ ਵਾਲੇ ਸਾਰੇ ਚੁਣੋ"
 
 #: submissions/sections.py:346
 msgid "q32.child.title"
 msgstr ""
+"ਕੀ ਤੁਹਾਨੂੰ ਲੱਗਦਾ ਹੈ ਕਿ ਤੁਹਾਡੀ ਸ਼ੂਗਰ ਸਕੂਲ/ਘਰੇਲੂ ਸਿੱਖਿਆ ਵਿੱਚ ਤੁਹਾਡੇ "
+"ਪ੍ਰਦਰਸ਼ਨ ਨੂੰ ਪ੍ਰਭਾਵਿਤ ਕਰਦੀ ਹੈ?"
 
 #: submissions/sections.py:347
 msgid "q32.parent.title"
 msgstr ""
+"ਕੀ ਤੁਹਾਨੂੰ ਲੱਗਦਾ ਹੈ ਕਿ ਤੁਹਾਡੇ ਬੱਚੇ ਦੀ ਸ਼ੂਗਰ ਤੁਹਾਡੇ ਬੱਚੇ ਦੇ ਸਕੂਲ/ਘਰੇਲੂ "
+"ਸਿੱਖਿਆ ਵਿੱਚ ਪ੍ਰਦਰਸ਼ਨ ਨੂੰ ਪ੍ਰਭਾਵਿਤ ਕਰਦੀ ਹੈ?"
 
 #: submissions/sections.py:356
 msgid "q33.child.title"
 msgstr ""
+"ਕੀ ਤੁਹਾਡੇ ਅਧਿਆਪਕਾਂ ਨੂੰ ਚੰਗੀ ਸਮਝ ਹੈ ਕਿ ਸ਼ੂਗਰ ਕਿਸੇ ਦੇ ਸਿੱਖਣ ਨੂੰ ਕਿਵੇਂ "
+"ਪ੍ਰਭਾਵਿਤ ਕਰ ਸਕਦੀ ਹੈ?"
 
 #: submissions/sections.py:357
 msgid "q33.parent.title"
 msgstr ""
+"ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਦੇ ਅਧਿਆਪਕਾਂ ਨੂੰ ਇਸ ਗੱਲ ਦੀ ਚੰਗੀ ਸਮਝ ਹੈ ਕਿ ਸ਼ੂਗਰ ਸਿੱਖਣ ਨੂੰ "
+"ਕਿਵੇਂ ਪ੍ਰਭਾਵਿਤ ਕਰ ਸਕਦੀ ਹੈ?"
 
 #: submissions/sections.py:359
 msgid "q33.hint"
 msgstr ""
+"ਉਦਾਹਰਨ ਲਈ ਜਦੋਂ ਖੂਨ ਵਿੱਚ ਗਲੂਕੋਜ਼ ਬਹੁਤ ਜ਼ਿਆਦਾ ਜਾਂ ਘੱਟ ਹੁੰਦਾ ਹੈ, ਤਾਂ ਇਹ "
+"ਇਕਾਗਰਤਾ ਜਾਂ ਯਾਦਦਾਸ਼ਤ ਨੂੰ ਪ੍ਰਭਾਵਿਤ ਕਰ ਸਕਦੀ ਹੈ।"
 
 #: submissions/sections.py:367
 msgid "q34.child.title"
 msgstr ""
+"ਕੀ ਤੁਹਾਨੂੰ/ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਕਦੇ ਤੁਹਾਡੀ/ਉਨ੍ਹਾਂ ਦੀ ਸ਼ੂਗਰ ਕਾਰਨ ਕੋਈ ਵਾਜਬ "
+"ਤਬਦੀਲੀ ਦੀ ਪੇਸ਼ਕਸ਼ ਕੀਤੀ ਗਈ ਹੈ?"
 
 #: submissions/sections.py:368
 msgid "q34.parent.title"
 msgstr ""
+"ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਕਦੇ ਉਸਦੀ ਸ਼ੂਗਰ ਦੇ ਕਾਰਨ ਕੋਈ ਵਾਜਬ ਸਮਾਯੋਜਨ ਦੀ ਪੇਸ਼ਕਸ਼ "
+"ਕੀਤੀ ਗਈ ਹੈ?"
 
 #: submissions/sections.py:370
 msgid "q34.hint"
 msgstr ""
+"(ਜਿਵੇਂ ਕਿ ਪ੍ਰੀਖਿਆਵਾਂ ਵਿੱਚ ਵਾਧੂ ਸਮਾਂ, ਕਲਾਸ ਦੌਰਾਨ ਸਨੈਕਸ ਜਾਂ ਪੀਣ ਵਾਲੇ "
+"ਪਦਾਰਥ, ਦੁਪਹਿਰ ਦੇ ਖਾਣੇ ਦੀਆਂ ਕਤਾਰਾਂ ਲਈ ਤੇਜ਼ ਪਾਸ)"
 
 #: submissions/sections.py:379
 msgid "Social and Emotional Impact"
@@ -703,78 +812,108 @@ msgstr "ਸਮਾਜਿਕ ਅਤੇ ਭਾਵਨਾਤਮਕ ਪ੍ਰਭਾਵ
 #: submissions/sections.py:380
 msgid "wellbeing.introduction"
 msgstr ""
+"ਇਹ ਭਾਗ ਪੁੱਛਦਾ ਹੈ ਕਿ ਤੁਹਾਡੇ/ਤੁਹਾਡੇ ਬੱਚੇ ਦੀ ਸ਼ੂਗਰ ਸਕੂਲ ਵਿੱਚ ਤੁਹਾਡੀ/ਉਨ੍ਹਾਂ ਦੀ "
+"ਤੰਦਰੁਸਤੀ ਨੂੰ ਕਿਵੇਂ ਪ੍ਰਭਾਵਤ ਕਰਦੀ ਹੈ।"
 
 #: submissions/sections.py:387
 msgid "q35.child.title"
 msgstr ""
+"ਕੀ ਤੁਸੀਂ ਕਦੇ ਆਪਣੀ ਸ਼ੂਗਰ ਦੇ ਕਾਰਨ ਦੂਜੇ ਵਿਦਿਆਰਥੀਆਂ ਜਾਂ ਸਟਾਫ ਮੈਂਬਰਾਂ ਦੁਆਰਾ "
+"ਅਲੱਗ ਰੱਖਿਆ ਜਾਣਾ ਜਾਂ ਵੱਖਰਾ ਵਿਵਹਾਰ ਕੀਤਾ ਗਿਆ ਮਹਿਸੂਸ ਕੀਤਾ ਹੈ?"
 
 #: submissions/sections.py:388
 msgid "q35.parent.title"
 msgstr ""
+"ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਨੇ ਕਦੇ ਆਪਣੀ ਸ਼ੂਗਰ ਦੇ ਕਾਰਨ ਦੂਜੇ ਵਿਦਿਆਰਥੀਆਂ ਜਾਂ ਸਟਾਫ "
+"ਮੈਂਬਰਾਂ ਦੁਆਰਾ ਛੱਡਿਆ ਜਾਂ ਵੱਖਰਾ ਵਿਵਹਾਰ ਕੀਤਾ ਮਹਿਸੂਸ ਕੀਤਾ ਹੈ?"
 
 #: submissions/sections.py:397
 msgid "q36.parent.title"
 msgstr ""
+"ਕੀ ਤੁਸੀਂ ਕਦੇ ਸ਼ੂਗਰ ਦੀ ਦੇਖਭਾਲ ਲਈ ਆਪਣੇ ਬੱਚੇ ਦੇ ਸਕੂਲ ਜਾਣ ਲਈ ਕੰਮ ਤੋਂ ਸਮਾਂ "
+"ਕੱਢਣ ਕਾਰਨ ਆਮਦਨ ਤੋਂ ਖੁੰਝੇ ਹੋ?"
 
 #: submissions/sections.py:399
 msgid "q36.hint"
 msgstr ""
+"ਜਿਵੇਂ ਕਿ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ ਆਪਣੇ ਬੱਚੇ ਦੇ ਸਕੂਲ ਜਾਣਾ ਜਾਂ ਤੁਹਾਡੇ ਬੱਚੇ "
+"ਨੂੰ ਸ਼ੂਗਰ ਨਾਲ ਸਬੰਧਤ ਬਿਮਾਰੀ ਕਾਰਨ ਘਰ ਭੇਜ ਦਿੱਤਾ ਜਾਣਾ।"
 
 #: submissions/sections.py:407
 msgid "q37.child.title"
 msgstr ""
+"ਜਦੋਂ ਤੁਸੀਂ ਸਕੂਲ ਵਿੱਚ ਹੁੰਦੇ ਹੋ ਤਾਂ ਤੁਸੀਂ ਅਕਸਰ ਕਿੰਨਾ ਆਪਣੀ ਸ਼ੂਗਰ ਨਾਲ ਸਬੰਧਤ "
+"ਚਿੰਤਾ ਜਾਂ ਤਣਾਅ ਮਹਿਸੂਸ ਕਰਦੇ ਹੋ?"
 
 #: submissions/sections.py:408
 msgid "q37.parent.title"
 msgstr ""
+"ਤੁਹਾਡੇ ਬੱਚੇ ਦੇ ਸਕੂਲ ਵਿੱਚ ਹੋਣ 'ਤੇ ਤੁਸੀਂ ਅਕਸਰ ਕਿੰਨਾ ਚਿੰਤਿਤ ਜਾਂ ਤਣਾਅ ਮਹਿਸੂਸ "
+"ਕਰਦੇ ਹੋ?"
 
 #: submissions/sections.py:417
 msgid "q38.child.title"
 msgstr ""
+"ਤੁਹਾਡੇ ਸਕੂਲ ਨੇ ਤੁਹਾਡੀ ਸਿੱਖਿਆ ਦੇ ਨਾਲ-ਨਾਲ ਤੁਹਾਡੀ ਸ਼ੂਗਰ ਨੂੰ ਸੁਰੱਖਿਅਤ ਢੰਗ "
+"ਨਾਲ ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ ਤੁਹਾਡੀ ਕਿੰਨੀ ਚੰਗੀ ਤਰ੍ਹਾਂ ਸਹਾਇਤਾ ਕੀਤੀ ਹੈ?"
 
 #: submissions/sections.py:418
 msgid "q38.parent.title"
 msgstr ""
+"ਤੁਹਾਡੇ ਸਕੂਲ ਨੇ ਤੁਹਾਡੇ ਬੱਚੇ ਦੀ ਸ਼ੂਗਰ ਨੂੰ ਉਸਦੀ ਸਿੱਖਿਆ ਦੇ ਨਾਲ-ਨਾਲ ਸੁਰੱਖਿਅਤ "
+"ਢੰਗ ਨਾਲ ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ ਕਿੰਨੀ ਚੰਗੀ ਤਰ੍ਹਾਂ ਸਹਾਇਤਾ ਕੀਤੀ ਹੈ?"
 
 #: submissions/sections.py:427
 msgid "q39.child.title"
 msgstr ""
+"ਤੁਹਾਡੀ ਡਾਇਬੀਟੀਜ਼ ਟੀਮ ਨੇ ਤੁਹਾਡੀ ਸਿੱਖਿਆ ਦੇ ਨਾਲ-ਨਾਲ ਤੁਹਾਡੀ ਡਾਇਬੀਟੀਜ਼ ਦਾ "
+"ਸੁਰੱਖਿਅਤ ਢੰਗ ਨਾਲ ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ ਤੁਹਾਡੀ ਕਿੰਨੀ ਚੰਗੀ ਤਰ੍ਹਾਂ ਸਹਾਇਤਾ ਕੀਤੀ ਹੈ?"
 
 #: submissions/sections.py:428
 msgid "q39.parent.title"
 msgstr ""
+"ਤੁਹਾਡੀ ਡਾਇਬੀਟੀਜ਼ ਟੀਮ ਨੇ ਤੁਹਾਡੇ ਬੱਚੇ ਦੀ ਸ਼ੂਗਰ ਨੂੰ ਉਸਦੀ ਸਿੱਖਿਆ ਦੇ ਨਾਲ-ਨਾਲ "
+"ਸੁਰੱਖਿਅਤ ਢੰਗ ਨਾਲ ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ ਕਿੰਨੀ ਚੰਗੀ ਤਰ੍ਹਾਂ ਸਹਾਇਤਾ ਕੀਤੀ ਹੈ?"
 
 #: submissions/sections.py:437
 msgid "q40.child.title"
-msgstr ""
+msgstr "ਕਿਹੜੀ ਚੀਜ਼ ਨੇ ਚੰਗੀ ਤਰ੍ਹਾਂ ਕੰਮ ਕੀਤਾ ਹੈ?"
 
 #: submissions/sections.py:438
 msgid "q40.parent.title"
-msgstr ""
+msgstr "ਕਿਹੜੀ ਚੀਜ਼ ਨੇ ਚੰਗੀ ਤਰ੍ਹਾਂ ਕੰਮ ਕੀਤਾ ਹੈ?"
 
 #: submissions/sections.py:440
 msgid "q40.hint"
 msgstr ""
+"ਤੁਹਾਡੇ ਬੱਚੇ ਨੂੰ ਸਕੂਲ ਸਕੂਲ ਵਿਖੇ ਉਨ੍ਹਾਂ ਦੀ ਸ਼ੂਗਰ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰਨ ਲਈ ਮਿਲਣ "
+"ਵਾਲੀ ਸਹਾਇਤਾ ਬਾਰੇ ਕਿਹੜੀ ਚੀਜ਼ ਮਦਦਗਾਰ ਰਹੀ ਹੈ?"
 
 #: submissions/sections.py:447
 msgid "q41.child.title"
-msgstr ""
+msgstr "ਕਿਹੜੀ ਚੀਜ਼ ਨੇ ਚੰਗੀ ਤਰ੍ਹਾਂ ਕੰਮ ਨਹੀਂ ਕੀਤਾ ਹੈ?"
 
 #: submissions/sections.py:448
 msgid "q41.parent.title"
-msgstr ""
+msgstr "ਕਿਹੜੀ ਚੀਜ਼ ਨੇ ਚੰਗੀ ਤਰ੍ਹਾਂ ਕੰਮ ਨਹੀਂ ਕੀਤਾ ਹੈ?"
 
 #: submissions/sections.py:450
 msgid "q41.hint"
 msgstr ""
+"ਸਕੂਲ ਵਿੱਚ ਆਪਣੇ ਬੱਚੇ ਦੀ ਸ਼ੂਗਰ ਦੇ ਪ੍ਰਬੰਧਨ ਵਿੱਚ ਤੁਹਾਨੂੰ ਕਿਹੜੀਆਂ ਮੁਸ਼ਕਲਾਂ ਦਾ "
+"ਸਾਹਮਣਾ ਕਰਨਾ ਪਿਆ ਹੈ?"
 
 #: submissions/sections.py:457
 msgid "q42.child.title"
 msgstr ""
+"ਤੁਹਾਡਾ ਸਕੂਲ ਜਾਂ ਡਾਇਬੀਟੀਜ਼ ਟੀਮ ਤੁਹਾਡੇ ਅਨੁਭਵ ਨੂੰ ਬਿਹਤਰ ਬਣਾਉਣ ਲਈ ਵੱਖਰੇ ਢੰਗ "
+"ਨਾਲ ਕੀ ਕਰ ਸਕਦੀ ਹੈ?"
 
 #: submissions/sections.py:458
 msgid "q42.parent.title"
 msgstr ""
+"ਤੁਹਾਡਾ ਸਕੂਲ ਜਾਂ ਡਾਇਬੀਟੀਜ਼ ਟੀਮ ਤੁਹਾਡੇ ਬੱਚੇ ਦੇ ਅਨੁਭਵ ਨੂੰ ਬਿਹਤਰ ਬਣਾਉਣ ਲਈ "
+"ਵੱਖਰੇ ਢੰਗ ਨਾਲ ਕੀ ਕਰ ਸਕਦੀ ਹੈ?"
 
 #: submissions/templates/submissions/clinic_in_region.html:8
 #: submissions/templates/submissions/clinic_or_region.html:8
@@ -797,7 +936,7 @@ msgstr ""
 #: submissions/templates/submissions/clinic_or_region.html:29
 #: submissions/templates/submissions/clinic_or_region.html:44
 msgid "or"
-msgstr ""
+msgstr "ਜਾਂ"
 
 #: submissions/templates/submissions/clinic_or_region.html:37
 msgid "1. Please select the region where your diabetes clinic is located."
@@ -815,13 +954,15 @@ msgstr "ਆਪਣਾ ਅਨੁਭਵ ਸਾਂਝਾ ਕਰਨ ਲਈ ਧੰਨ�
 
 #: submissions/templates/submissions/confirmation.html:10
 msgid "Your responses have been saved."
-msgstr ""
+msgstr "ਤੁਹਾਡੇ ਜਵਾਬ ਸੁਰੱਖਿਅਤ ਕੀਤੇ ਗਏ ਹਨ।"
 
 #: submissions/templates/submissions/confirmation.html:15
 msgid ""
 "If you wish to enter the prize draw to win a £50 voucher, please click this "
 "link:"
 msgstr ""
+"ਜੇਕਰ ਤੁਸੀਂ £50 ਵਾਊਚਰ ਜਿੱਤਣ ਲਈ ਇਨਾਮੀ ਡਰਾਅ ਵਿੱਚ ਦਾਖਲ ਹੋਣਾ ਚਾਹੁੰਦੇ ਹੋ, ਤਾਂ "
+"ਕਿਰਪਾ ਕਰਕੇ ਇਸ ਲਿੰਕ 'ਤੇ ਕਲਿੱਕ ਕਰੋ:"
 
 #: submissions/templates/submissions/confirmation.html:20
 msgid "confirmation.issues_content"
@@ -841,70 +982,100 @@ msgstr ""
 
 #: submissions/templates/submissions/front_matter.html:13
 msgid "What is the survey about?"
-msgstr ""
+msgstr "ਸਰਵੇਖਣ ਕਿਸ ਬਾਰੇ ਹੈ?"
 
 #: submissions/templates/submissions/front_matter.html:17
 msgid "what_is_the_survey_about_content"
 msgstr ""
+"ਇਹ ਸਰਵੇਖਣ, ਜਦੋਂ ਤੋਂ ਤੁਹਾਨੂੰ ਸ਼ੂਗਰ ਦਾ ਨਿਦਾਨ ਹੋਇਆ ਹੈ ਉਸ ਸਮੇਂ ਤੋਂ ਸਕੂਲ ਵਿੱਚ "
+"ਤੁਹਾਡੇ ਅਨੁਭਵਾਂ (ਜਾਂ ਤੁਹਾਡੇ ਬੱਚੇ ਦੇ ਅਨੁਭਵ) ਬਾਰੇ ਹੈ। ਅਸੀਂ ਸਮਝਣਾ ਚਾਹੁੰਦੇ "
+"ਹਾਂ ਕਿ ਕਿਹੜੀ ਚੀਜ਼ ਵਧੀਆ ਕੰਮ ਕਰ ਰਹੀ ਹੈ ਅਤੇ ਕਿਹੜੀ ਚੀਜ਼ ਬਿਹਤਰ ਹੋ ਸਕਦੀ ਹੈ।"
 
 #: submissions/templates/submissions/front_matter.html:21
 msgid "What will happen to my answers?"
-msgstr ""
+msgstr "ਮੇਰੇ ਜਵਾਬਾਂ ਦਾ ਕੀ ਕੀਤਾ ਜਾਵੇਗਾ?"
 
 #: submissions/templates/submissions/front_matter.html:25
 msgid "what_will_happen_to_my_answers_content"
 msgstr ""
+"ਰਾਇਲ ਕਾਲਜ ਆਫ਼ ਪੀਡੀਆਟ੍ਰਿਕਸ ਐਂਡ ਚਾਈਲਡ ਹੈਲਥ (RCPCH) ਵਿਖੇ ਨੈਸ਼ਨਲ ਪੀਡੀਆਟ੍ਰਿਕ "
+"ਡਾਇਬੀਟੀਜ਼ ਆਡਿਟ (NPDA) ਟੀਮ ਜਵਾਬਾਂ ਦਾ ਵਿਸ਼ਲੇਸ਼ਣ ਕਰੇਗੀ ਅਤੇ ਇਹ ਤਿਆਰ ਕਰੇਗੀ:"
 
 #: submissions/templates/submissions/front_matter.html:27
 msgid "what_will_happen_to_my_answers_local"
 msgstr ""
+"ਉਹਨਾਂ ਦੀ ਸੇਵਾ ਵਿੱਚ ਸੁਧਾਰਾਂ ਦੀ ਯੋਜਨਾ ਬਣਾਉਣ ਵਿੱਚ ਮਦਦ ਕਰਨ ਲਈ ਤੁਹਾਡੀ "
+"ਡਾਇਬੀਟੀਜ਼ ਟੀਮ ਲਈ ਇੱਕ ਸਥਾਨਕ ਰਿਪੋਰਟ"
 
 #: submissions/templates/submissions/front_matter.html:28
 msgid "what_will_happen_to_my_answers_national"
 msgstr ""
+"ਵਿਆਪਕ ਖੇਤਰਾਂ ਵਿੱਚ ਸ਼ੂਗਰ ਦੇਖਭਾਲ ਵਿੱਚ ਸੁਧਾਰਾਂ ਦਾ ਸਮਰਥਨ ਕਰਨ ਲਈ ਇੱਕ ਰਾਸ਼ਟਰੀ "
+"ਰਿਪੋਰਟ"
 
 #: submissions/templates/submissions/front_matter.html:33
 msgid "Who should complete the survey?"
-msgstr ""
+msgstr "ਸਰਵੇਖਣ ਕਿਸਨੂੰ ਪੂਰਾ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ?"
 
 #: submissions/templates/submissions/front_matter.html:38
 msgid "who_should_complete_the_survey_cyp"
 msgstr ""
+"ਉਹ ਬੱਚੇ ਅਤੇ ਨੌਜਵਾਨ ਜਿਨ੍ਹਾਂ ਨੂੰ ਸ਼ੂਗਰ ਹੈ ਅਤੇ ਉਹ ਪ੍ਰਾਇਮਰੀ ਸਕੂਲ, ਸੈਕੰਡਰੀ "
+"ਸਕੂਲ, ਕਾਲਜ ਜਾ ਰਹੇ ਹਨ, ਜਾਂ ਘਰ ਵਿੱਚ ਪੜ੍ਹਾਈ ਕਰ ਰਹੇ ਹਨ/ਸਿੱਖਿਅਤ ਹਨ।"
 
 #: submissions/templates/submissions/front_matter.html:39
 msgid "who_should_complete_the_survey_parents"
 msgstr ""
+"ਸਾਰੇ ਉਮਰ ਵਰਗਾਂ ਦੇ ਉਨ੍ਹਾਂ ਬੱਚਿਆਂ ਅਤੇ ਨੌਜਵਾਨਾਂ ਦੇ ਮਾਪੇ/ਦੇਖਭਾਲਕਰਤਾ ਜਿਨ੍ਹਾਂ "
+"ਨੂੰ ਸ਼ੂਗਰ ਹੈ ਅਤੇ ਜੋ ਨਰਸਰੀ, ਪ੍ਰਾਇਮਰੀ ਸਕੂਲ, ਸੈਕੰਡਰੀ ਸਕੂਲ, ਕਾਲਜ ਵਿੱਚ ਪੜ੍ਹਦੇ "
+"ਹਨ, ਜਾਂ ਘਰ ਵਿੱਚ ਪੜ੍ਹਦੇ/ਪੜ੍ਹੇ-ਲਿਖੇ ਹਨ। ਜੇਕਰ ਤੁਹਾਡੇ ਕੋਲ ਸਿੱਖਿਆ ਪ੍ਰਾਪਤ ਕਰ "
+"ਰਹੇ ਸ਼ੂਗਰ ਦੇ ਨਿਦਾਨ ਵਾਲੇ ਵਾਲੇ ਕਈ ਬੱਚੇ ਹਨ, ਤਾਂ ਕਿਰਪਾ ਕਰਕੇ ਹਰੇਕ ਬੱਚੇ ਲਈ ਇੱਕ "
+"ਜਵਾਬ ਭਰੋ।"
 
 #: submissions/templates/submissions/front_matter.html:44
 msgid "Is the survey anonymous?"
-msgstr ""
+msgstr "ਕੀ ਸਰਵੇਖਣ ਗੁਮਨਾਮ ਹੈ?"
 
 #: submissions/templates/submissions/front_matter.html:48
 msgid "is_the_survey_anonymous_content"
 msgstr ""
+"ਹਾਂ।\n"
+"\n"
+"ਅਸੀਂ ਨਾਮ ਜਾਂ ਅਜਿਹੇ ਵੇਰਵੇ ਨਹੀਂ ਮੰਗਦੇ ਜੋ ਤੁਹਾਡੀ ਪਛਾਣ ਕਰ ਸਕਣ, ਇਸ ਲਈ ਤੁਹਾਡੇ ਸਥਾਨਕ ਡਾਇਬੀਟੀਜ਼ ਕਲੀਨਿਕ ਜਾਂ ਸਕੂਲ ਨੂੰ ਇਹ ਨਹੀਂ ਪਤਾ ਹੋਵੇਗਾ ਕਿ ਤੁਹਾਡੇ ਜਵਾਬ ਕਿਹੜੇ ਹਨ। ਜੇਕਰ ਤੁਸੀਂ ਕਲੀਨਿਕ ਵਿੱਚ ਸਰਵੇਖਣ ਪੂਰਾ ਕਰ ਰਹੇ ਹੋ, ਤਾਂ ਤੁਹਾਡੇ ਕੋਲ ਨਿੱਜੀ ਤਰੀਕੇ ਨਾਲ ਅਜਿਹਾ ਕਰਨ ਦਾ ਮੌਕਾ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ।\n"
+"\n"
+"ਜੇਕਰ ਤੁਸੀਂ £50 ਵਾਊਚਰ ਲਈ ਇਨਾਮੀ ਡਰਾਅ ਵਿੱਚ ਦਾਖਲ ਹੋਣਾ ਚਾਹੁੰਦੇ ਹੋ, ਤਾਂ ਅਸੀਂ ਤੁਹਾਨੂੰ ਆਪਣਾ ਈਮੇਲ ਪਤਾ ਦਰਜ ਕਰਨ ਲਈ ਕਹਾਂਗੇ। ਤੁਹਾਡਾ ਈਮੇਲ ਪਤਾ ਤੁਹਾਡੇ ਸਰਵੇਖਣ ਜਵਾਬਾਂ ਨਾਲ ਲਿੰਕ ਨਹੀਂ ਕੀਤਾ ਜਾਵੇਗਾ ਅਤੇ ਜੇਤੂ ਚੁਣੇ ਜਾਣ ਦੇ ਨਾਲ ਹੀ ਮਿਟਾ ਦਿੱਤਾ ਜਾਵੇਗਾ।"
 
 #: submissions/templates/submissions/front_matter.html:52
 msgid "Completing the survey?"
-msgstr ""
+msgstr "ਸਰਵੇਖਣ ਨੂੰ ਪੂਰਾ ਕਰਨਾ"
 
 #: submissions/templates/submissions/front_matter.html:56
 msgid "completing_the_survey_content"
 msgstr ""
+"ਸਰਵੇਖਣ ਨੂੰ ਪੂਰਾ ਹੋਣ ਵਿੱਚ 10-15 ਮਿੰਟ ਲੱਗਣੇ ਚਾਹੀਦੇ ਹਨ.. ਜੇਕਰ ਤੁਸੀਂ ਸਰਵੇਖਣ ਨੂੰ ਅੱਧ ਵਿੱਚ ਬੰਦ ਕਰ ਦਿੰਦੇ ਹੋ ਤਾਂ ਤੁਹਾਡਾ ਸਰਵੇਖਣ ਸੁਰੱਖਿਅਤ ਨਹੀਂ ਕੀਤਾ ਜਾਵੇਗਾ। ਜੇਕਰ ਤੁਸੀਂ ਸਰਵੇਖਣ ਨੂੰ ਜਲਦੀ ਖਤਮ ਕਰਨ ਦਾ ਫੈਸਲਾ ਕਰਦੇ ਹੋ, ਤਾਂ ਕਿਰਪਾ ਕਰਕੇ ਆਖਰੀ ਪੰਨੇ 'ਤੇ ਪਹੁੰਚਣ ਤੱਕ 'ਅੱਗੇ' (NEXT) ਬਟਨ 'ਤੇ ਕਲਿੱਕ ਕਰੋ ਅਤੇ ਫਿਰ 'ਸਬਮਿਟ' (SUBMIT) ਦਬਾਓ। \n"
+"\n"
+"ਸਰਵੇਖਣ ਨੂੰ ਪੂਰਾ ਕਰਨ ਲਈ, ਉਹ ਉੱਤਰ ਚੁਣੋ ਜੋ ਤੁਹਾਡੇ ਅਨੁਭਵ ਨਾਲ ਸਭ ਤੋਂ ਵਧੀਆ ਮੇਲ ਖਾਂਦੇ ਹਨ, ਜਾਂ ਜਿੱਥੇ ਇਹ ਦਿਖਾਈ ਦਿੰਦੇ ਹਨ ਉੱਥੇ ਆਪਣਾ ਜਵਾਬ ਟਾਈਪ ਕਰਨ ਲਈ ਫ੍ਰੀ ਟੈਕਸਟ ਬਾਕਸਾਂ ਦੀ ਵਰਤੋਂ ਕਰੋ। ਕੋਈ ਜਵਾਬ ਸਹੀ ਜਾਂ ਗਲਤ ਨਹੀਂ ਹਨ, ਕਿਰਪਾ ਕਰਕੇ ਸਾਨੂੰ ਦੱਸੋ ਕਿ ਤੁਸੀਂ ਕੀ ਸੋਚਦੇ ਹੋ ਅਤੇ ਉਹ ਚੁਣੋ ਜੋ ਤੁਹਾਨੂੰ ਲੱਗਦਾ ਹੈ ਕਿ ਸਵਾਲ ਦਾ ਸਭ ਤੋਂ ਢੁਕਵਾਂ ਉੱਤਰ ਹੈ।  ਜਦੋਂ ਤੁਸੀਂ ਆਪਣਾ ਜਵਾਬ ਪੂਰਾ ਕਰ ਲੈਂਦੇ ਹੋ, ਤਾਂ ਅਗਲੇ ਪੰਨੇ 'ਤੇ ਜਾਣ ਲਈ 'ਅੱਗੇ' (NEXT) ਬਟਨ ਦੀ ਚੋਣ ਕਰੋ। \n"
+"ਜੇਕਰ ਤੁਸੀਂ ਆਪਣਾ ਵਿਚਾਰ ਬਦਲਦੇ ਹੋ, ਤਾਂ ਤੁਸੀਂ ਪਿਛਲੇ ਪੰਨੇ 'ਤੇ ਵਾਪਸ ਜਾਣ ਲਈ ਪੰਨੇ ਦੇ ਹੇਠਾਂ 'ਪ੍ਰੀਵ' (PREV) ਬਟਨ 'ਤੇ ਕਲਿੱਕ ਕਰ ਸਕਦੇ ਹੋ। \n"
+"\n"
+"ਤੁਹਾਡੀ ਭਾਗੀਦਾਰੀ ਪੂਰੀ ਤਰ੍ਹਾਂ ਸਵੈਇੱਛਤ ਹੈ। ਜੇਕਰ ਤੁਸੀਂ ਨਹੀਂ ਚਾਹੁੰਦੇ ਤਾਂ ਤੁਹਾਡਾ ਹਿੱਸਾ ਲੈਣਾ ਜ਼ਰੂਰੀ ਨਹੀਂ ਹੈ। ਤੁਸੀਂ ਆਪਣੇ ਵੈੱਬ ਬ੍ਰਾਊਜ਼ਰ ਨੂੰ ਬੰਦ ਕਰਕੇ ਕਿਸੇ ਵੀ ਸਮੇਂ ਸਰਵੇਖਣ ਤੋਂ ਬਾਹਰ ਆ ਸਕਦੇ ਹੋ। ਜੇਕਰ ਤੁਸੀਂ ਕੁਝ ਸਵਾਲਾਂ ਦੇ ਜਵਾਬ ਨਹੀਂ ਦੇਣਾ ਚਾਹੁੰਦੇ, ਤਾਂ ਤੁਹਾਨੂੰ ਕੋਈ ਕਾਰਨ ਦੱਸਣ ਦੀ ਲੋੜ ਨਹੀਂ ਹੈ।"
 
 #: submissions/templates/submissions/front_matter.html:60
 msgid "Questions or help?"
-msgstr ""
+msgstr "ਸਵਾਲ ਹਨ ਜਾਂ ਮਦਦ ਚਾਹੁੰਦੇ ਹੋ?"
 
 #: submissions/templates/submissions/front_matter.html:64
 msgid "questions_or_help_content"
 msgstr ""
+"ਜੇਕਰ ਤੁਹਾਡੇ ਕੋਈ ਸਵਾਲ ਹਨ ਜਾਂ ਸਰਵੇਖਣ ਨੂੰ ਪੂਰਾ ਕਰਨ ਵਿੱਚ ਮਦਦ ਚਾਹੁੰਦੇ ਹੋ ਤਾਂ ਕਿਰਪਾ ਕਰਕੇ NPDA ਟੀਮ ਨੂੰ 020 7092 6137 'ਤੇ ਕਾਲ ਕਰੋ ਜਾਂ npda@rcpch.ac.uk 'ਤੇ ਈਮੇਲ ਕਰੋ। \n"
+"\n"
+"ਸਰਵੇਖਣ ਸ਼ੁਰੂ ਕਰਨ ਲਈ, ਕਿਰਪਾ ਕਰਕੇ ਹੇਠਾਂ ਦਿੱਤੇ 'ਅੱਗੇ' (NEXT) ਬਟਨ ਨੂੰ ਚੁਣੋ:"
 
 #: submissions/templates/submissions/front_matter.html:67
 #: submissions/templates/submissions/question.html:49
 #: submissions/templates/submissions/section.html:13
 #: submissions/templates/submissions/tablet-mode.html:22
 msgid "Form navigation"
-msgstr ""
+msgstr "ਫਾਰਮ ਨੈਵੀਗੇਸ਼ਨ"
 
 #: submissions/templates/submissions/front_matter.html:69
 msgid "Next"
@@ -920,11 +1091,11 @@ msgstr "ਕੀ ਤੁਸੀਂ ਇਹ ਹੋ…"
 
 #: submissions/templates/submissions/tablet-mode.html:23
 msgid "Enable"
-msgstr ""
+msgstr "ਸਮਰੱਥ ਕਰੋ"
 
 #: submissions/templates/submissions/tablet-mode.html:30
 msgid "Disable"
-msgstr ""
+msgstr "ਅਸਮਰੱਥ ਕਰੋ"
 
 #: templates/base.html:48
 msgid "Start again"
