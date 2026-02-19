@@ -19,37 +19,37 @@ msgstr ""
 
 #: npda_prem/settings.py:143
 msgid "English"
-msgstr ""
+msgstr "English"
 
 #: npda_prem/settings.py:144
 msgid "Cymraeg"
-msgstr ""
+msgstr "Welsh"
 
 #: npda_prem/settings.py:145
 msgid "Urdu"
-msgstr ""
+msgstr "Urdu"
 
 #: npda_prem/settings.py:146
 msgid "Polish"
-msgstr ""
+msgstr "Polish"
 
 #: npda_prem/settings.py:147
 msgid "Ukrainian"
-msgstr ""
+msgstr "Ukrainian"
 
 #: npda_prem/settings.py:148
 msgid "Punjabi"
-msgstr ""
+msgstr "Punjabi"
 
 #: submissions/models.py:6 submissions/models.py:69 submissions/models.py:96
 #: submissions/models.py:102 submissions/models.py:140
 msgid "Yes"
-msgstr ""
+msgstr "Yes"
 
 #: submissions/models.py:7 submissions/models.py:70 submissions/models.py:97
 #: submissions/models.py:104 submissions/models.py:141
 msgid "No"
-msgstr ""
+msgstr "No"
 
 #: submissions/models.py:11
 msgid "q4.boy"
@@ -69,116 +69,116 @@ msgstr "Prefer not to say"
 
 #: submissions/models.py:18
 msgid "Type 1"
-msgstr ""
+msgstr "Type 1"
 
 #: submissions/models.py:19
 msgid "Type 2"
-msgstr ""
+msgstr "Type 2"
 
 #: submissions/models.py:20 submissions/models.py:36 submissions/models.py:48
 #: submissions/models.py:176
 msgid "Other"
-msgstr ""
+msgstr "Other"
 
 #: submissions/models.py:24
 msgid "3 years or younger"
-msgstr ""
+msgstr "3 years or younger"
 
 #: submissions/models.py:25
 msgid "4 – 7 years"
-msgstr ""
+msgstr "4 – 7 years"
 
 #: submissions/models.py:26
 msgid "8 – 11 years"
-msgstr ""
+msgstr "8 – 11 years"
 
 #: submissions/models.py:27
 msgid "12 – 16 years"
-msgstr ""
+msgstr "12 – 16 years"
 
 #: submissions/models.py:28
 msgid "17 – 19 years"
-msgstr ""
+msgstr "17 – 19 years"
 
 #: submissions/models.py:32
 msgid "White"
-msgstr ""
+msgstr "White"
 
 #: submissions/models.py:33
 msgid "Black"
-msgstr ""
+msgstr "Black"
 
 #: submissions/models.py:34
 msgid "Asian"
-msgstr ""
+msgstr "Asian"
 
 #: submissions/models.py:35
 msgid "Mixed"
-msgstr ""
+msgstr "Mixed"
 
 #: submissions/models.py:37 submissions/models.py:65 submissions/models.py:72
 msgid "Prefer not to say"
-msgstr ""
+msgstr "Prefer not to say"
 
 #: submissions/models.py:41
 msgid "Nursery"
-msgstr ""
+msgstr "Nursery"
 
 #: submissions/models.py:41
 msgid "Ages < 4yrs"
-msgstr ""
+msgstr "Ages < 4yrs"
 
 #: submissions/models.py:42
 msgid "Reception"
-msgstr ""
+msgstr "Reception"
 
 #: submissions/models.py:42
 msgid "Ages 4-5yrs"
-msgstr ""
+msgstr "Ages 4-5yrs"
 
 #: submissions/models.py:43
 msgid "Key stage 1 (Years 1 & 2)"
-msgstr ""
+msgstr "Key stage 1 (Years 1 & 2)"
 
 #: submissions/models.py:43
 msgid "Ages 5-7yrs"
-msgstr ""
+msgstr "Ages 5-7yrs"
 
 #: submissions/models.py:44
 msgid "Key stage 2 (Years 3 to 6)"
-msgstr ""
+msgstr "Key stage 2 (Years 3 to 6)"
 
 #: submissions/models.py:44
 msgid "Ages 7-11yrs"
-msgstr ""
+msgstr "Ages 7-11yrs"
 
 #: submissions/models.py:45
 msgid "Key stage 3 (Years 7 to 9)"
-msgstr ""
+msgstr "Key stage 3 (Years 7 to 9)"
 
 #: submissions/models.py:45
 msgid "Ages 11-14yrs"
-msgstr ""
+msgstr "Ages 11-14yrs"
 
 #: submissions/models.py:46
 msgid "Key stage 4 (Years 10 & 11)"
-msgstr ""
+msgstr "Key stage 4 (Years 10 & 11)"
 
 #: submissions/models.py:46
 msgid "Ages 14-16yrs"
-msgstr ""
+msgstr "Ages 14-16yrs"
 
 #: submissions/models.py:47
 msgid "Key stage 5 (Years 12 & 13)"
-msgstr ""
+msgstr "Key stage 5 (Years 12 & 13)"
 
 #: submissions/models.py:47
 msgid "Ages 16-18yrs"
-msgstr ""
+msgstr "Ages 16-18yrs"
 
 #: submissions/models.py:54
 msgid "State funded school"
-msgstr ""
+msgstr "State funded school"
 
 #: submissions/models.py:54
 msgid "q10.state.hint"
@@ -188,7 +188,7 @@ msgstr ""
 
 #: submissions/models.py:55
 msgid "Private school"
-msgstr ""
+msgstr "Private school"
 
 #: submissions/models.py:55
 msgid "q10.private.hint"
@@ -198,49 +198,49 @@ msgstr ""
 
 #: submissions/models.py:56
 msgid "Home schooled/educated"
-msgstr ""
+msgstr "Home schooled/educated"
 
 #: submissions/models.py:62
 msgid "No, it was for other reasons"
-msgstr ""
+msgstr "No, it was for other reasons"
 
 #: submissions/models.py:63
 msgid "Partly, the diabetes diagnosis influenced my decision"
-msgstr ""
+msgstr "Partly, the diabetes diagnosis influenced my decision"
 
 #: submissions/models.py:64
 msgid "Yes, it was mainly because of the diabetes diagnosis"
-msgstr ""
+msgstr "Yes, it was mainly because of the diabetes diagnosis"
 
 #: submissions/models.py:71 submissions/models.py:98 submissions/models.py:105
 #: submissions/models.py:112 submissions/models.py:119
 #: submissions/models.py:136
 msgid "I don't know"
-msgstr ""
+msgstr "I don't know"
 
 #: submissions/models.py:76
 msgid "Injection/Smart insulin pen – e.g. Novopen, InPen"
-msgstr ""
+msgstr "Injection/Smart insulin pen – e.g. Novopen, InPen"
 
 #: submissions/models.py:77
 msgid ""
 "Insulin pump (including as part of a Hybrid Closed Loop system) – e.g. "
 "Omnipod, MiniMed, Tandem"
-msgstr ""
+msgstr "Insulin pump (including as part of a Hybrid Closed Loop system) – e.g. Omnipod, MiniMed, Tandem"
 
 #: submissions/models.py:78
 msgid "N/A – My child does not administer insulin in school"
-msgstr ""
+msgstr "N/A – My child does not administer insulin in school"
 
 #: submissions/models.py:82
 msgid "Finger prick testing"
-msgstr ""
+msgstr "Finger prick testing"
 
 #: submissions/models.py:83
 msgid ""
 "Continuous glucose monitor (including as part of a Hybrid Closed Loop "
 "system) e.g. Dexcom, FreeStyle Libre 2 Plus or 3 Plus"
-msgstr ""
+msgstr "Continuous glucose monitor (including as part of a Hybrid Closed Loop system) e.g. Dexcom, FreeStyle Libre 2 Plus or 3 Plus"
 
 #: submissions/models.py:84
 msgid "q18.na"
@@ -248,141 +248,141 @@ msgstr "N/A – I do not monitor blood glucose in school"
 
 #: submissions/models.py:88
 msgid "Mother"
-msgstr ""
+msgstr "Mother"
 
 #: submissions/models.py:89
 msgid "Father"
-msgstr ""
+msgstr "Father"
 
 #: submissions/models.py:90
 msgid "Grandmother"
-msgstr ""
+msgstr "Grandmother"
 
 #: submissions/models.py:91
 msgid "Grandfather"
-msgstr ""
+msgstr "Grandfather"
 
 #: submissions/models.py:92
 msgid "Other guardian or family member"
-msgstr ""
+msgstr "Other guardian or family member"
 
 #: submissions/models.py:103
 msgid "Partially covers diabetes needs at school"
-msgstr ""
+msgstr "Partially covers diabetes needs at school"
 
 #: submissions/models.py:109 submissions/models.py:116
 #: submissions/models.py:124
 msgid "Yes, always"
-msgstr ""
+msgstr "Yes, always"
 
 #: submissions/models.py:110 submissions/models.py:117
 #: submissions/models.py:125
 msgid "Yes, sometimes"
-msgstr ""
+msgstr "Yes, sometimes"
 
 #: submissions/models.py:111 submissions/models.py:118
 #: submissions/models.py:126
 msgid "No, never"
-msgstr ""
+msgstr "No, never"
 
 #: submissions/models.py:120 submissions/models.py:127
 #: submissions/models.py:142 submissions/models.py:159
 msgid "Not applicable"
-msgstr ""
+msgstr "Not applicable"
 
 #: submissions/models.py:131 submissions/models.py:146
 msgid "Never"
-msgstr ""
+msgstr "Never"
 
 #: submissions/models.py:132
 msgid "Rarely"
-msgstr ""
+msgstr "Rarely"
 
 #: submissions/models.py:133
 msgid "Sometimes"
-msgstr ""
+msgstr "Sometimes"
 
 #: submissions/models.py:134
 msgid "Often"
-msgstr ""
+msgstr "Often"
 
 #: submissions/models.py:135
 msgid "Always"
-msgstr ""
+msgstr "Always"
 
 #: submissions/models.py:147
 msgid "Less than once a week"
-msgstr ""
+msgstr "Less than once a week"
 
 #: submissions/models.py:148
 msgid "Once or twice a week"
-msgstr ""
+msgstr "Once or twice a week"
 
 #: submissions/models.py:149
 msgid "Three or four times a week"
-msgstr ""
+msgstr "Three or four times a week"
 
 #: submissions/models.py:150
 msgid "Every day of the week"
-msgstr ""
+msgstr "Every day of the week"
 
 #: submissions/models.py:154 submissions/models.py:163
 msgid "Very well supported"
-msgstr ""
+msgstr "Very well supported"
 
 #: submissions/models.py:155 submissions/models.py:164
 msgid "Well supported"
-msgstr ""
+msgstr "Well supported"
 
 #: submissions/models.py:156 submissions/models.py:165
 msgid "Neutral"
-msgstr ""
+msgstr "Neutral"
 
 #: submissions/models.py:157 submissions/models.py:166
 msgid "Poorly supported"
-msgstr ""
+msgstr "Poorly supported"
 
 #: submissions/models.py:158 submissions/models.py:167
 msgid "Very poorly supported"
-msgstr ""
+msgstr "Very poorly supported"
 
 #: submissions/models.py:171
 msgid "Lessons (e.g. PE, food tech)"
-msgstr ""
+msgstr "Lessons (e.g. PE, food tech)"
 
 #: submissions/models.py:172
 msgid "Sports clubs"
-msgstr ""
+msgstr "Sports clubs"
 
 #: submissions/models.py:173
 msgid "School day trips"
-msgstr ""
+msgstr "School day trips"
 
 #: submissions/models.py:174
 msgid "Overnight/Residential school trips"
-msgstr ""
+msgstr "Overnight/Residential school trips"
 
 #: submissions/models.py:175
 msgid "Parties/celebrations"
-msgstr ""
+msgstr "Parties/celebrations"
 
 #: submissions/models.py:177
 msgid "None of the above"
-msgstr ""
+msgstr "None of the above"
 
 #: submissions/models.py:184
 #: submissions/templates/submissions/role_form.html:20
 msgid "A child or young person with diabetes"
-msgstr ""
+msgstr "A child or young person with diabetes"
 
 #: submissions/models.py:185
 #: submissions/templates/submissions/role_form.html:26
 msgid "The parent/carer of a child or young person with diabetes"
-msgstr ""
+msgstr "The parent/carer of a child or young person with diabetes"
 
 #: submissions/sections.py:10
 msgid "Demographics"
-msgstr ""
+msgstr "Demographics"
 
 #: submissions/sections.py:11
 msgid "demographics.introduction"
@@ -464,7 +464,7 @@ msgstr "Is your child eligible for free school meals?"
 
 #: submissions/sections.py:117
 msgid "School Health Care Plans"
-msgstr ""
+msgstr "School Health Care Plans"
 
 #: submissions/sections.py:118
 msgid "healthcare_plans.introduction"
@@ -499,7 +499,7 @@ msgstr ""
 
 #: submissions/sections.py:158
 msgid "Managing Diabetes"
-msgstr ""
+msgstr "Managing Diabetes"
 
 #: submissions/sections.py:159
 msgid "managing_diabetes.introduction"
@@ -635,7 +635,7 @@ msgstr ""
 
 #: submissions/sections.py:275
 msgid "Impact on Education"
-msgstr ""
+msgstr "Impact on Education"
 
 #: submissions/sections.py:276
 msgid "education_impact.introduction"
@@ -793,7 +793,7 @@ msgstr ""
 
 #: submissions/sections.py:379
 msgid "Social and Emotional Impact"
-msgstr ""
+msgstr "Social and Emotional Impact"
 
 #: submissions/sections.py:380
 msgid "wellbeing.introduction"
@@ -908,7 +908,7 @@ msgstr ""
 #: submissions/templates/submissions/role_form.html:8
 #: submissions/templates/submissions/section.html:7
 msgid "Go back"
-msgstr ""
+msgstr "Go back"
 
 #: submissions/templates/submissions/clinic_in_region.html:18
 #: submissions/templates/submissions/clinic_or_region.html:18
@@ -916,33 +916,37 @@ msgid ""
 "2. Please select the hospital where the diabetes clinic that you currently "
 "attend is normally held."
 msgstr ""
+"2. Please select the hospital where the diabetes clinic that you currently "
+"attend is normally held."
 
 #: submissions/templates/submissions/clinic_or_region.html:29
 #: submissions/templates/submissions/clinic_or_region.html:44
 msgid "or"
-msgstr ""
+msgstr "or"
 
 #: submissions/templates/submissions/clinic_or_region.html:37
 msgid "1. Please select the region where your diabetes clinic is located."
-msgstr ""
+msgstr "1. Please select the region where your diabetes clinic is located."
 
 #: submissions/templates/submissions/clinic_or_region.html:39
 msgid "Ask your diabetes team if you are unsure."
-msgstr ""
+msgstr "Ask your diabetes team if you are unsure."
 
 #: submissions/templates/submissions/confirmation.html:7
 msgid "Thank you very much for your help"
-msgstr ""
+msgstr "Thank you very much for your help"
 
 #: submissions/templates/submissions/confirmation.html:10
 msgid "Your responses have been saved."
-msgstr ""
+msgstr "Your responses have been saved."
 
 #: submissions/templates/submissions/confirmation.html:15
 msgid ""
 "If you wish to enter the prize draw to win a £50 voucher, please click this "
 "link:"
 msgstr ""
+"If you wish to enter the prize draw to win a £50 voucher, please click this "
+"link:"
 
 #: submissions/templates/submissions/confirmation.html:20
 msgid "confirmation.issues_content"
@@ -955,15 +959,15 @@ msgstr ""
 
 #: submissions/templates/submissions/confirmation.html:26
 msgid "Breakthrough T1D UK website"
-msgstr ""
+msgstr "Breakthrough T1D UK website"
 
 #: submissions/templates/submissions/confirmation.html:31
 msgid "Diabetes Research and Wellness Foundation (DWRF) website"
-msgstr ""
+msgstr "Diabetes Research and Wellness Foundation (DWRF) website"
 
 #: submissions/templates/submissions/confirmation.html:36
 msgid "Diabetes UK helpline and website"
-msgstr ""
+msgstr "Diabetes UK helpline and website"
 
 #: submissions/templates/submissions/front_matter.html:13
 msgid "What is the survey about?"
@@ -1078,7 +1082,7 @@ msgstr ""
 #: submissions/templates/submissions/section.html:13
 #: submissions/templates/submissions/tablet-mode.html:22
 msgid "Form navigation"
-msgstr ""
+msgstr "Form navigation"
 
 #: submissions/templates/submissions/front_matter.html:69
 msgid "Next"
@@ -1086,20 +1090,20 @@ msgstr "Next"
 
 #: submissions/templates/submissions/landing.html:9
 msgid "Choose your language"
-msgstr ""
+msgstr "Choose your language"
 
 #: submissions/templates/submissions/role_form.html:12
 msgid "Are you…"
-msgstr ""
+msgstr "Are you…"
 
 #: submissions/templates/submissions/tablet-mode.html:23
 msgid "Enable"
-msgstr ""
+msgstr "Enable"
 
 #: submissions/templates/submissions/tablet-mode.html:30
 msgid "Disable"
-msgstr ""
+msgstr "Disable"
 
 #: templates/base.html:48
 msgid "Start again"
-msgstr ""
+msgstr "Start again"
