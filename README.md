@@ -19,6 +19,7 @@ My list
   - Go back translation?
   - Start again button translations?
 
+- Allow next without filling in free text fields
 - GitHub pr check
 - If you follow the start link and you already have a session redirect you back to the next unanswered question
 - Correctly apply aria disabled?

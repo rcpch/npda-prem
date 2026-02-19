@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-19 12:20+0000\n"
+"POT-Creation-Date: 2026-02-19 13:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -958,28 +958,36 @@ msgid "Ask your diabetes team if you are unsure."
 msgstr "Якщо точно не знаєш — запитай свою команду з питань діабету."
 
 #: submissions/templates/submissions/confirmation.html:7
-msgid "Survey submitted"
-msgstr "Опитування надіслано"
-
-#: submissions/templates/submissions/confirmation.html:10
-msgid "Thank you for sharing your experience."
+#, fuzzy
+#| msgid "Thank you for sharing your experience."
+msgid "Thank you very much for your help"
 msgstr "Дякуємо за те, що поділилися своїм досвідом."
 
-#: submissions/templates/submissions/confirmation.html:14
-msgid "What happens next"
-msgstr "Що далі"
+#: submissions/templates/submissions/confirmation.html:10
+msgid "Your responses have been saved."
+msgstr ""
 
 #: submissions/templates/submissions/confirmation.html:15
 msgid ""
-"Your feedback helps us improve diabetes services for children and young "
-"people."
+"If you wish to enter the prize draw to win a £50 voucher, please click this "
+"link:"
 msgstr ""
-"Ваші відгуки допомагають нам покращувати послуги з лікування діабету для "
-"дітей та молоді."
 
-#: submissions/templates/submissions/confirmation.html:19
-msgid "Start a new survey"
-msgstr "Розпочати нове опитування"
+#: submissions/templates/submissions/confirmation.html:20
+msgid "confirmation.issues_content"
+msgstr ""
+
+#: submissions/templates/submissions/confirmation.html:26
+msgid "Breakthrough T1D UK website"
+msgstr ""
+
+#: submissions/templates/submissions/confirmation.html:31
+msgid "Diabetes Research and Wellness Foundation (DWRF) website"
+msgstr ""
+
+#: submissions/templates/submissions/confirmation.html:36
+msgid "Diabetes UK helpline and website"
+msgstr ""
 
 #: submissions/templates/submissions/front_matter.html:13
 msgid "What is the survey about?"
@@ -1075,6 +1083,22 @@ msgstr ""
 #: templates/base.html:48
 msgid "Start again"
 msgstr "Розпочати знову"
+
+#~ msgid "Survey submitted"
+#~ msgstr "Опитування надіслано"
+
+#~ msgid "What happens next"
+#~ msgstr "Що далі"
+
+#~ msgid ""
+#~ "Your feedback helps us improve diabetes services for children and young "
+#~ "people."
+#~ msgstr ""
+#~ "Ваші відгуки допомагають нам покращувати послуги з лікування діабету для "
+#~ "дітей та молоді."
+
+#~ msgid "Start a new survey"
+#~ msgstr "Розпочати нове опитування"
 
 #~ msgid ""
 #~ "We'd like to know a bit more about you so we can tailor our questions. We "

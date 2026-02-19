@@ -4,19 +4,39 @@
 {% block content %}
 <div class="nhsuk-panel nhsuk-panel--confirmation">
   <h1 class="nhsuk-panel__title">
-    {% trans "Survey submitted" %}
+    {% trans "Thank you very much for your help" %}
   </h1>
   <div class="nhsuk-panel__body">
-    {% trans "Thank you for sharing your experience." %}
+    {% trans "Your responses have been saved." %}
   </div>
 </div>
 
-<h2>{% trans "What happens next" %}</h2>
-<p>{% trans "Your feedback helps us improve diabetes services for children and young people." %}</p>
+<p>
+  {% trans "If you wish to enter the prize draw to win a £50 voucher, please click this link:" %}
+  <a href="#" target="_blank" rel="noreferrer">test link</a>
+</p>
 
 <p>
-  <a class="nhsuk-button" href="{% url 'landing' %}">
-    {% trans "Start a new survey" %}
-  </a>
+  {% trans "confirmation.issues_content" %}
 </p>
+
+<ul class="nhsuk-list">
+  <li>
+    <a href="https://breakthrought1d.org.uk/knowledge-support/about-type-1-diabetes/" target="_blank">
+      {% trans "Breakthrough T1D UK website" %}
+    </a>
+  </li>
+  <li>
+    <a href="https://www.drwf.org.uk/living-with-diabetes/" target="_blank">
+      {% trans "Diabetes Research and Wellness Foundation (DWRF) website" %}
+    </a>
+  </li>
+  <li>
+    <a href="https://www.diabetes.org.uk/" target="_blank">
+      {% trans "Diabetes UK helpline and website" %}
+    </a>
+    (0345 123 3299)
+  </li>
+</ul>
+
 {% endblock %}

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-19 12:20+0000\n"
+"POT-Creation-Date: 2026-02-19 13:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -952,25 +952,37 @@ msgid "Ask your diabetes team if you are unsure."
 msgstr ""
 
 #: submissions/templates/submissions/confirmation.html:7
-msgid "Survey submitted"
+msgid "Thank you very much for your help"
 msgstr ""
 
 #: submissions/templates/submissions/confirmation.html:10
-msgid "Thank you for sharing your experience."
-msgstr ""
-
-#: submissions/templates/submissions/confirmation.html:14
-msgid "What happens next"
+msgid "Your responses have been saved."
 msgstr ""
 
 #: submissions/templates/submissions/confirmation.html:15
 msgid ""
-"Your feedback helps us improve diabetes services for children and young "
-"people."
+"If you wish to enter the prize draw to win a £50 voucher, please click this "
+"link:"
 msgstr ""
 
-#: submissions/templates/submissions/confirmation.html:19
-msgid "Start a new survey"
+#: submissions/templates/submissions/confirmation.html:20
+#| msgid "completing_the_survey_content"
+msgid "confirmation.issues_content"
+msgstr ""
+"If completing this survey has raised issues that you would like to discuss further, "
+"please contact your diabetes team or reach out to a diabetes charity, who can provide information and support about diabetes, "
+"and the emotional, social, psychological, or practical difficulties associated with diabetes."
+
+#: submissions/templates/submissions/confirmation.html:26
+msgid "Breakthrough T1D UK website"
+msgstr ""
+
+#: submissions/templates/submissions/confirmation.html:31
+msgid "Diabetes Research and Wellness Foundation (DWRF) website"
+msgstr ""
+
+#: submissions/templates/submissions/confirmation.html:36
+msgid "Diabetes UK helpline and website"
 msgstr ""
 
 #: submissions/templates/submissions/front_matter.html:13
@@ -990,15 +1002,21 @@ msgstr "What will happen to my answers?"
 
 #: submissions/templates/submissions/front_matter.html:25
 msgid "what_will_happen_to_my_answers_content"
-msgstr "The National Paediatric Diabetes Audit (NPDA) team at the Royal College of Paediatrics and Child Health (RCPCH) will analyse the responses and create:"
+msgstr ""
+"The National Paediatric Diabetes Audit (NPDA) team at the Royal College of "
+"Paediatrics and Child Health (RCPCH) will analyse the responses and create:"
 
 #: submissions/templates/submissions/front_matter.html:27
 msgid "what_will_happen_to_my_answers_local"
-msgstr "A local report for your diabetes team to help them plan improvements to their service"
+msgstr ""
+"A local report for your diabetes team to help them plan improvements to "
+"their service"
 
 #: submissions/templates/submissions/front_matter.html:28
 msgid "what_will_happen_to_my_answers_national"
-msgstr "A national report to support improvements in diabetes care across wider areas  "
+msgstr ""
+"A national report to support improvements in diabetes care across wider "
+"areas  "
 
 #: submissions/templates/submissions/front_matter.html:33
 msgid "Who should complete the survey?"
@@ -1006,14 +1024,17 @@ msgstr "Who should complete the survey?"
 
 #: submissions/templates/submissions/front_matter.html:38
 msgid "who_should_complete_the_survey_cyp"
-msgstr "Children and young people who have diabetes and are attending primary school, secondary school, college, or are home schooled/educated."
+msgstr ""
+"Children and young people who have diabetes and are attending primary "
+"school, secondary school, college, or are home schooled/educated."
 
 #: submissions/templates/submissions/front_matter.html:39
 msgid "who_should_complete_the_survey_parents"
 msgstr ""
-"Parents/carers of children and young people of all ages who have diabetes and are in "
-"nursery, primary school, secondary school, college, or are home schooled/educated. If you "
-"have multiple children with diabetes in education, please complete one response per child."
+"Parents/carers of children and young people of all ages who have diabetes "
+"and are in nursery, primary school, secondary school, college, or are home "
+"schooled/educated. If you have multiple children with diabetes in education, "
+"please complete one response per child."
 
 #: submissions/templates/submissions/front_matter.html:44
 msgid "Is the survey anonymous?"
@@ -1024,12 +1045,16 @@ msgid "is_the_survey_anonymous_content"
 msgstr ""
 "Yes\n"
 "\n"
-"We do not ask for names or details which could identify you, so your local diabetes clinic or \n"
-"school will not know which answers are yours. If you are completing the survey in clinic, you \n"
+"We do not ask for names or details which could identify you, so your local "
+"diabetes clinic or \n"
+"school will not know which answers are yours. If you are completing the "
+"survey in clinic, you \n"
 "should have the opportunity to do so in private.\n"
 "\n"
-"If you would like to enter the prize draw for a £50 voucher, we will ask you to enter your email address. \n"
-"Your email address will not be linked to your survey responses and will be deleted as soon as a winner is selected."
+"If you would like to enter the prize draw for a £50 voucher, we will ask you "
+"to enter your email address. \n"
+"Your email address will not be linked to your survey responses and will be "
+"deleted as soon as a winner is selected."
 
 #: submissions/templates/submissions/front_matter.html:52
 msgid "Completing the survey?"
@@ -1040,14 +1065,21 @@ msgid "completing_the_survey_content"
 msgstr ""
 "The survey should take 10-15 minutes to complete. \n"
 "\n"
-"To complete the survey, select the answer(s) that best match your experience, or use the free text boxes to type your response where they appear. \n"
-"There are no right or wrong answers, please just tell us what you think and chose what you think is the most appropriate answer to the question.  \n"
-"When you have completed your answer, select the ‘NEXT’ button to move to the next page. \n"
+"To complete the survey, select the answer(s) that best match your "
+"experience, or use the free text boxes to type your response where they "
+"appear. \n"
+"There are no right or wrong answers, please just tell us what you think and "
+"chose what you think is the most appropriate answer to the question.  \n"
+"When you have completed your answer, select the ‘NEXT’ button to move to the "
+"next page. \n"
 "\n"
-"If you change your mind, you can click the ‘PREV’ button at the bottom of the page to return to the previous page. \n"
+"If you change your mind, you can click the ‘PREV’ button at the bottom of "
+"the page to return to the previous page. \n"
 "\n"
-"Your participation is entirely voluntary. You do not have to take part if you do not want to. You can exit the survey at any point by closing your web browser."
-"If you do not wish to answer some of the questions, you do not have to give a reason." 
+"Your participation is entirely voluntary. You do not have to take part if "
+"you do not want to. You can exit the survey at any point by closing your web "
+"browser.If you do not wish to answer some of the questions, you do not have "
+"to give a reason."
 
 #: submissions/templates/submissions/front_matter.html:60
 msgid "Questions or help?"
@@ -1056,7 +1088,8 @@ msgstr "Questions or help?"
 #: submissions/templates/submissions/front_matter.html:64
 msgid "questions_or_help_content"
 msgstr ""
-"If you have any questions or would like help completing the survey please call the NPDA team on 020 7092 6137 or email npda@rcpch.ac.uk. \n"
+"If you have any questions or would like help completing the survey please "
+"call the NPDA team on 020 7092 6137 or email npda@rcpch.ac.uk. \n"
 "\n"
 "To begin the survey, please select the ‘NEXT’ button below: "
 
