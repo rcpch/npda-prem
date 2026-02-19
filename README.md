@@ -13,6 +13,12 @@ Visit http://localhost:8000/.
 
 My list
 
+- Translations update
+  - No need to manually submit - can remove this from the "completing the survey" content. Check manually modified translations.
+  - Rename next buttons to match translations.
+  - Go back translation?
+  - Start again button translations?
+
 - GitHub pr check
 - If you follow the start link and you already have a session redirect you back to the next unanswered question
 - Correctly apply aria disabled?

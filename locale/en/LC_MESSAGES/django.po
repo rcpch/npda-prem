@@ -1032,30 +1032,33 @@ msgstr ""
 "Your email address will not be linked to your survey responses and will be deleted as soon as a winner is selected."
 
 #: submissions/templates/submissions/front_matter.html:52
-#, fuzzy
-#| msgid "what_is_the_survey_about_content"
 msgid "Completing the survey?"
-msgstr ""
-"This survey is about your experiences at school (or your child’s experience) "
-"since being diagnosed with diabetes. We want to understand what is working "
-"well and what could be better."
+msgstr "Completing the survey?"
 
 #: submissions/templates/submissions/front_matter.html:56
-#, fuzzy
-#| msgid "what_is_the_survey_about_content"
 msgid "completing_the_survey_content"
 msgstr ""
-"This survey is about your experiences at school (or your child’s experience) "
-"since being diagnosed with diabetes. We want to understand what is working "
-"well and what could be better."
+"The survey should take 10-15 minutes to complete. \n"
+"\n"
+"To complete the survey, select the answer(s) that best match your experience, or use the free text boxes to type your response where they appear. \n"
+"There are no right or wrong answers, please just tell us what you think and chose what you think is the most appropriate answer to the question.  \n"
+"When you have completed your answer, select the ‘NEXT’ button to move to the next page. \n"
+"\n"
+"If you change your mind, you can click the ‘PREV’ button at the bottom of the page to return to the previous page. \n"
+"\n"
+"Your participation is entirely voluntary. You do not have to take part if you do not want to. You can exit the survey at any point by closing your web browser."
+"If you do not wish to answer some of the questions, you do not have to give a reason." 
 
 #: submissions/templates/submissions/front_matter.html:60
 msgid "Questions or help?"
-msgstr ""
+msgstr "Questions or help?"
 
 #: submissions/templates/submissions/front_matter.html:64
 msgid "questions_or_help_content"
 msgstr ""
+"If you have any questions or would like help completing the survey please call the NPDA team on 020 7092 6137 or email npda@rcpch.ac.uk. \n"
+"\n"
+"To begin the survey, please select the ‘NEXT’ button below: "
 
 #: submissions/templates/submissions/front_matter.html:67
 #: submissions/templates/submissions/question.html:49
