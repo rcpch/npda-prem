@@ -60,14 +60,10 @@ msgid "q4.girl"
 msgstr "ਕੁੜੀ"
 
 #: submissions/models.py:13
-#, fuzzy
-#| msgid "Mother"
 msgid "q4.other"
-msgstr "ਮਾਂ"
+msgstr "ਇੱਥੇ ਸੂਚੀਬੱਧ ਨਹੀਂ ਕੋਈ ਲਿੰਗ"
 
 #: submissions/models.py:14
-#, fuzzy
-#| msgid "Prefer not to say"
 msgid "q4.prefer-not-to-say"
 msgstr "ਦੱਸਣਾ ਪਸੰਦ ਨਹੀਂ"
 
@@ -615,7 +611,7 @@ msgstr ""
 
 #: submissions/sections.py:244
 msgid "q23.hint"
-msgstr ""
+msgstr "ਇਸ ਵਿੱਚ ਖੂਨ ਵਿੱਚ ਗਲੂਕੋਜ਼ ਦੀ ਜਾਂਚ ਕਰਨਾ ਜਾਂ ਇਨਸੁਲਿਨ ਦੇਣਾ ਸ਼ਾਮਲ ਹੈ।"
 
 #: submissions/sections.py:252
 msgid "q24.child.title"
@@ -632,6 +628,8 @@ msgstr ""
 #: submissions/sections.py:255
 msgid "q24.hint"
 msgstr ""
+"ਇਸ ਵਿੱਚ ਖੂਨ ਵਿੱਚ ਗਲੂਕੋਜ਼ ਦੀ ਜਾਂਚ ਕਰਨਾ, ਇਨਸੁਲਿਨ ਦੇਣਾ ਅਤੇ ਐਮਰਜੈਂਸੀ ਵਿੱਚ ਸਹਾਇਤਾ "
+"ਪ੍ਰਦਾਨ ਕਰਨਾ ਸ਼ਾਮਲ ਹੈ। ਇਹ ਸਿਖਲਾਈ ਡਾਇਬਟੀਜ਼ ਟੀਮ ਦੁਆਰਾ ਪ੍ਰਦਾਨ ਕੀਤੀ ਜਾਣੀ ਚਾਹੀਦੀ ਹੈ।"
 
 #: submissions/sections.py:263
 msgid "q25.child.title"
@@ -947,10 +945,8 @@ msgid "Ask your diabetes team if you are unsure."
 msgstr "ਜੇਕਰ ਤੁਹਾਨੂੰ ਚੰਗੀ ਤਰ੍ਹਾਂ ਨਹੀਂ ਪਤਾ ਹੈ ਤਾਂ ਆਪਣੀ ਡਾਇਬੀਟੀਜ਼ ਟੀਮ ਨੂੰ ਪੁੱਛੋ।"
 
 #: submissions/templates/submissions/confirmation.html:7
-#, fuzzy
-#| msgid "Thank you for sharing your experience."
 msgid "Thank you very much for your help"
-msgstr "ਆਪਣਾ ਅਨੁਭਵ ਸਾਂਝਾ ਕਰਨ ਲਈ ਧੰਨਵਾਦ।"
+msgstr "ਤੁਹਾਡੀ ਮਦਦ ਲਈ ਬਹੁਤ ਬਹੁਤ ਧੰਨਵਾਦ"
 
 #: submissions/templates/submissions/confirmation.html:10
 msgid "Your responses have been saved."
@@ -967,6 +963,11 @@ msgstr ""
 #: submissions/templates/submissions/confirmation.html:20
 msgid "confirmation.issues_content"
 msgstr ""
+"ਜੇਕਰ ਇਸ ਸਰਵੇਖਣ ਨੂੰ ਭਰਨ ਨਾਲ ਅਜਿਹੇ ਮੁੱਦੇ ਸਾਹਮਣੇ ਆਏ ਹਨ ਜਿਨ੍ਹਾਂ ਬਾਰੇ ਤੁਸੀਂ ਹੋਰ "
+"ਚਰਚਾ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ, ਤਾਂ ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਡਾਇਬਟੀਜ਼ ਟੀਮ ਨਾਲ ਸੰਪਰਕ ਕਰੋ ਜਾਂ "
+"ਕਿਸੇ ਡਾਇਬਟੀਜ਼ ਚੈਰਿਟੀ ਤੱਕ ਪਹੁੰਚੋ, ਜੋ ਡਾਇਬਟੀਜ਼ ਬਾਰੇ ਜਾਣਕਾਰੀ ਅਤੇ ਸਹਾਇਤਾ ਪ੍ਰਦਾਨ "
+"ਕਰ ਸਕਦੀ ਹੈ, ਅਤੇ ਡਾਇਬਟੀਜ਼ ਨਾਲ ਜੁੜੀਆਂ ਭਾਵਨਾਤਮਕ, ਸਮਾਜਿਕ, ਮਨੋਵਿਗਿਆਨਕ ਜਾਂ "
+"ਵਿਹਾਰਕ ਮੁਸ਼ਕਲਾਂ ਬਾਰੇ ਜਾਣਕਾਰੀ ਦੇ ਸਕਦੀ ਹੈ।"
 
 #: submissions/templates/submissions/confirmation.html:26
 msgid "Breakthrough T1D UK website"
