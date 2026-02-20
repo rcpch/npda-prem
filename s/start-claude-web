@@ -1,0 +1,85 @@
+#!/bin/bash -e
+
+# Start PostgreSQL 18, install dependencies, and launch the Django dev server.
+# For use in Claude Code on the web (no Docker available).
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_DIR="$(dirname "$SCRIPT_DIR")"
+cd "$PROJECT_DIR"
+
+# ── PostgreSQL 18 ──────────────────────────────────────────────────────────────
+
+# Install PostgreSQL 18 from the PGDG apt repository if not already present.
+if ! dpkg -s postgresql-18 &>/dev/null; then
+    echo "==> Installing PostgreSQL 18..."
+    apt-get install -y curl ca-certificates lsb-release
+    install -d /usr/share/postgresql-common/pgdg
+    curl -fsSL https://www.postgresql.org/media/keys/ACCC4CF8.asc \
+        -o /usr/share/postgresql-common/pgdg/apt.postgresql.org.asc
+    sh -c 'echo "deb [signed-by=/usr/share/postgresql-common/pgdg/apt.postgresql.org.asc] \
+https://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" \
+> /etc/apt/sources.list.d/pgdg.list'
+    apt-get update -qq
+    apt-get install -y postgresql-18
+fi
+
+# Initialise the cluster on first run, then start it.
+if ! pg_lsclusters -h 2>/dev/null | grep -q "^18 main"; then
+    echo "==> Initialising PostgreSQL 18 cluster..."
+    pg_createcluster 18 main
+fi
+
+if ! pg_ctlcluster 18 main status &>/dev/null; then
+    echo "==> Starting PostgreSQL 18..."
+    pg_ctlcluster 18 main start
+fi
+
+# Read the actual port the cluster is listening on.
+PG_PORT=$(pg_lsclusters -h | awk '/^18 main/ {print $3}')
+
+# ── Environment file ───────────────────────────────────────────────────────────
+
+if [ ! -f envs/.env ]; then
+    echo "==> Creating envs/.env from template..."
+    cp envs/.env.template envs/.env
+    # Use localhost instead of the Docker service name.
+    sed -i 's/POSTGRES_HOST="postgres"/POSTGRES_HOST="localhost"/' envs/.env
+fi
+
+# Ensure the port matches the running cluster (may differ from the template default).
+sed -i "s/^POSTGRES_PORT=.*/POSTGRES_PORT=${PG_PORT}/" envs/.env
+
+# Load env vars.
+set -a
+# shellcheck disable=SC1091
+source envs/.env
+set +a
+
+# ── Database user & database ───────────────────────────────────────────────────
+
+echo "==> Ensuring database user and database exist..."
+su -c "psql -p ${PG_PORT} -c \"CREATE USER \\\"${POSTGRES_USER}\\\" WITH PASSWORD '${POSTGRES_PASSWORD}';\" 2>/dev/null || true" postgres
+su -c "createdb -p ${PG_PORT} -O \"${POSTGRES_USER}\" \"${POSTGRES_DB}\" 2>/dev/null || true" postgres
+
+# ── Python dependencies ────────────────────────────────────────────────────────
+
+echo "==> Installing Python dependencies..."
+uv sync
+
+# ── Django setup ───────────────────────────────────────────────────────────────
+
+echo "==> Collecting static files..."
+uv run manage.py collectstatic --noinput
+
+echo "==> Running migrations..."
+uv run manage.py makemigrations
+uv run manage.py migrate
+
+echo "==> Compiling translations..."
+uv run django-admin makemessages --all
+uv run django-admin compilemessages
+
+# ── Dev server ─────────────────────────────────────────────────────────────────
+
+echo "==> Starting Django dev server on http://localhost:8000"
+uv run manage.py runserver 0.0.0.0:8000
