@@ -992,63 +992,115 @@ msgstr ""
 
 #: submissions/templates/submissions/front_matter.html:13
 msgid "What is the survey about?"
-msgstr ""
+msgstr "Na czym polega ankieta?"
 
 #: submissions/templates/submissions/front_matter.html:17
 msgid "what_is_the_survey_about_content"
 msgstr ""
+"Ankieta dotyczy Twoich doświadczeń w szkole (lub doświadczeń Twojego "
+"dziecka) od momentu zdiagnozowania cukrzycy. Chcemy zrozumieć, co działa "
+"dobrze, a co można by poprawić. "
 
 #: submissions/templates/submissions/front_matter.html:21
 msgid "What will happen to my answers?"
-msgstr ""
+msgstr "Co stanie się z moimi odpowiedziami?"
 
 #: submissions/templates/submissions/front_matter.html:25
 msgid "what_will_happen_to_my_answers_content"
 msgstr ""
+"Zespół Krajowego Audytu Diabetologicznego Dzieci (NPDA) w Królewskim "
+"Kolegium Pediatrii i Zdrowia Dziecka (RCPCH) przeanalizuje odpowiedzi i "
+"stworzy:"
 
 #: submissions/templates/submissions/front_matter.html:27
 msgid "what_will_happen_to_my_answers_local"
 msgstr ""
+"Raport lokalny dla Twojego zespołu ds. cukrzycy, który pomoże mu zaplanować "
+"ulepszenia w świadczeniu usług"
 
 #: submissions/templates/submissions/front_matter.html:28
 msgid "what_will_happen_to_my_answers_national"
 msgstr ""
+"Raport krajowy wspierający ulepszenia w opiece diabetologicznej w szerszym "
+"zakresie "
 
 #: submissions/templates/submissions/front_matter.html:33
 msgid "Who should complete the survey?"
-msgstr ""
+msgstr "Kto powinien wypełnić ankietę?"
 
 #: submissions/templates/submissions/front_matter.html:38
 msgid "who_should_complete_the_survey_cyp"
 msgstr ""
+"Dzieci i młodzież chore na cukrzycę, uczęszczające do szkoły podstawowej, "
+"gimnazjum, college'u lub uczące się w domu. "
 
 #: submissions/templates/submissions/front_matter.html:39
 msgid "who_should_complete_the_survey_parents"
 msgstr ""
+"Rodzice/opiekunowie dzieci i młodzieży w każdym wieku, chorych na cukrzycę, "
+"uczęszczających do przedszkola, szkoły podstawowej, gimnazjum, college'u lub "
+"uczących się w domu. Jeśli mają Państwo kilkoro dzieci chorych na cukrzycę, "
+"które uczęszczają do szkoły, prosimy o wypełnienie jednej odpowiedzi na każde "
+"dziecko. "
 
 #: submissions/templates/submissions/front_matter.html:44
 msgid "Is the survey anonymous?"
-msgstr ""
+msgstr "Czy ankieta jest anonimowa?"
 
 #: submissions/templates/submissions/front_matter.html:48
 msgid "is_the_survey_anonymous_content"
 msgstr ""
+"Tak. \n"
+"\n"
+"Nie prosimy o podawanie imion i nazwisk ani danych, które mogłyby Cię "
+"zidentyfikować, więc lokalna klinika diabetologiczna lub szkoła nie będą "
+"wiedziały, które odpowiedzi są Twoje. Jeśli wypełniasz ankietę w klinice, "
+"powinieneś/powinnaś mieć możliwość zrobienia tego w warunkach prywatności. \n"
+"\n"
+"Jeśli chcesz wziąć udział w losowaniu bonu o wartości 50 funtów, poprosimy "
+"Cię o podanie adresu e-mail. Twój adres e-mail nie będzie powiązany z Twoimi "
+"odpowiedziami w ankiecie i zostanie usunięty, gdy tylko zostanie wyłoniony "
+"zwycięzca."
 
 #: submissions/templates/submissions/front_matter.html:52
 msgid "Completing the survey?"
-msgstr ""
+msgstr "Wypełnienie ankiety"
 
 #: submissions/templates/submissions/front_matter.html:56
 msgid "completing_the_survey_content"
 msgstr ""
+"Wypełnienie ankiety powinno zająć 10–15 minut. Ankieta nie zostanie "
+"zapisana, jeśli zamkniesz ją w trakcie wypełniania. Jeśli zdecydujesz się "
+"zakończyć ankietę wcześniej, klikaj przycisk „DALEJ", aż dojdziesz do "
+"ostatniej strony, a następnie naciśnij „WYŚLIJ".\n"
+"\n"
+"Aby ukończyć ankietę, wybierz odpowiedzi, które najlepiej odpowiadają Twoim "
+"doświadczeniom, lub wpisz je w polach tekstowych w odpowiednim miejscu. Nie "
+"ma odpowiedzi dobrych ani złych, prosimy po prostu o podzielenie się swoją "
+"opinią i wybranie odpowiedzi, która Twoim zdaniem jest najbardziej trafna.  "
+"Po udzieleniu odpowiedzi kliknij przycisk „DALEJ", aby przejść do następnej "
+"strony. \n"
+"\n"
+"Jeśli zmienisz zdanie, możesz kliknąć przycisk „POPRZEDNIA" u dołu strony, "
+"aby powrócić do poprzedniej strony.\n"
+"\n"
+"Udział w ankiecie jest całkowicie dobrowolny. Nie musisz brać udziału, jeśli "
+"nie chcesz. Możesz zakończyć ankietę w dowolnym momencie, zamykając "
+"przeglądarkę internetową. Jeśli nie chcesz odpowiadać na niektóre pytania, "
+"nie musisz podawać przyczyny."
 
 #: submissions/templates/submissions/front_matter.html:60
 msgid "Questions or help?"
-msgstr ""
+msgstr "Masz pytania lub potrzebujesz pomocy?"
 
 #: submissions/templates/submissions/front_matter.html:64
 msgid "questions_or_help_content"
 msgstr ""
+"W przypadku pytań lub potrzeby pomocy w wypełnieniu ankiety prosimy o "
+"kontakt z zespołem NPDA pod numerem 020 7092 6137 lub wysłanie wiadomości "
+"e-mail na adres npda@rcpch.ac.uk. \n"
+"\n"
+"Aby rozpocząć ankietę, kliknij przycisk „DALEJ" poniżej:"
 
 #: submissions/templates/submissions/front_matter.html:67
 #: submissions/templates/submissions/question.html:49
