@@ -9,6 +9,11 @@
   </a>
 </div>
 
+{% if section_introduction %}
+<h2 class="nhsuk-heading-l">{{ section_title }}</h2>
+<p>{{ section_introduction }}</p>
+{% endif %}
+
 <form method="post" novalidate>
     {% csrf_token %}
 

@@ -38,8 +38,8 @@
   (function() {
     var radios = document.querySelectorAll('input[name="role"]');
     var button = document.getElementById('continue-btn');
-    var parentUrl = "{% url 'section' lang=lang role='parent' section='demographics' %}";
-    var childUrl = "{% url 'section' lang=lang role='cyp' section='demographics' %}";
+    var parentUrl = "{% url 'question' lang=lang role='parent' section='demographics' question='q5_relationship' %}";
+    var childUrl = "{% url 'question' lang=lang role='cyp' section='demographics' question='q4_gender' %}";
 
     button.addEventListener('click', function(e) {
       if (button.getAttribute('aria-disabled') === 'true') e.preventDefault();
