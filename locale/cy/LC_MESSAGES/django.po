@@ -975,63 +975,115 @@ msgstr ""
 
 #: submissions/templates/submissions/front_matter.html:13
 msgid "What is the survey about?"
-msgstr ""
+msgstr "Am beth mae'r arolwg?"
 
 #: submissions/templates/submissions/front_matter.html:17
 msgid "what_is_the_survey_about_content"
 msgstr ""
+"Mae'r arolwg hwn yn ymwneud â'ch profiadau yn yr ysgol (neu brofiad eich "
+"plentyn) ers cael diagnosis o ddiabetes. Hoffem gael dealltwriaeth o'r hyn "
+"sy'n gweithio'n dda a'r hyn a allai fod yn well. "
 
 #: submissions/templates/submissions/front_matter.html:21
 msgid "What will happen to my answers?"
-msgstr ""
+msgstr "Beth fydd yn digwydd i fy atebion?"
 
 #: submissions/templates/submissions/front_matter.html:25
 msgid "what_will_happen_to_my_answers_content"
 msgstr ""
+"Bydd tîm yr Archwiliad Cenedlaethol ar Ddiabetes Pediatreg (NPDA) yn y "
+"Coleg Brenhinol Pediatreg ac Iechyd Plant (RCPCH) yn dadansoddi'r ymatebion "
+"ac yn creu:"
 
 #: submissions/templates/submissions/front_matter.html:27
 msgid "what_will_happen_to_my_answers_local"
 msgstr ""
+"Adroddiad lleol ar gyfer eich tîm diabetes i'w helpu nhw i gynllunio "
+"gwelliannau i'w gwasanaeth"
 
 #: submissions/templates/submissions/front_matter.html:28
 msgid "what_will_happen_to_my_answers_national"
 msgstr ""
+"Adroddiad cenedlaethol i gefnogi gwelliannau mewn gofal diabetes ar draws "
+"ardaloedd ehangach "
 
 #: submissions/templates/submissions/front_matter.html:33
 msgid "Who should complete the survey?"
-msgstr ""
+msgstr "Pwy ddylai gwblhau'r arolwg?"
 
 #: submissions/templates/submissions/front_matter.html:38
 msgid "who_should_complete_the_survey_cyp"
 msgstr ""
+"Plant a phobl ifanc sydd â diabetes ac sy'n mynychu ysgol gynradd, ysgol "
+"uwchradd, coleg, neu'n cael eu haddysg gartref. "
 
 #: submissions/templates/submissions/front_matter.html:39
 msgid "who_should_complete_the_survey_parents"
 msgstr ""
+"Rhieni/gofalwyr plant a phobl ifanc o bob oed sydd â diabetes ac sy'n "
+"mynychu meithrinfa, ysgol gynradd, ysgol uwchradd, coleg, neu'n cael eu "
+"haddysg gartref. Os oes gennych chi fwy nag un plentyn sydd â diabetes ac "
+"sy'n derbyn addysg, yna bydd angen cyflwyno ymateb i bob plentyn. "
 
 #: submissions/templates/submissions/front_matter.html:44
 msgid "Is the survey anonymous?"
-msgstr ""
+msgstr "A yw'r arolwg yn ddi-enw?"
 
 #: submissions/templates/submissions/front_matter.html:48
 msgid "is_the_survey_anonymous_content"
 msgstr ""
+"Ydy. \n"
+"\n"
+"Nid ydym yn gofyn am enwau na manylion y gellid eu defnyddio i'ch adnabod "
+"chi, felly ni fydd eich clinig diabetes lleol na'ch ysgol leol yn gwybod pa "
+"atebion ydych chi wedi'u rhoi. Os ydych chi'n cwblhau'r arolwg yn y clinig, "
+"yna dylech gael y cyfle i wneud hynny mewn preifatrwydd. \n"
+"\n"
+"Os hoffech gael eich cynnwys i ennill taleb gwerth £50, yna gofynnwn i chi "
+"nodi eich cyfeiriad e-bost. Ni fydd eich cyfeiriad e-bost wedi'i gysylltu "
+"â'r atebion a roddwch yn yr arolwg a bydd yn cael ei ddileu cyn gynted ag y "
+"dewisir enillydd."
 
 #: submissions/templates/submissions/front_matter.html:52
 msgid "Completing the survey?"
-msgstr ""
+msgstr "Cwblhau'r arolwg"
 
 #: submissions/templates/submissions/front_matter.html:56
 msgid "completing_the_survey_content"
 msgstr ""
+"Dylai'r arolwg gymryd 10-15 munud i'w gwblhau.. Ni fydd yr arolwg yn cael "
+"ei gadw'n ddiogel os ydych chi'n ei gau hanner ffordd drwodd. Os ydych "
+"chi'n penderfynu rhoi'r gorau i ateb yr arolwg cyn ei gwblhau, cliciwch y "
+"botwm 'NESAF' nes eich bod yn cyrraedd y dudalen olaf ac yna pwyswch "
+"'CYFLWYNO'.\n"
+"\n"
+"Er mwyn cwblhau'r arolwg, dewiswch yr ateb(ion) sy'n cyd-fynd orau â'ch "
+"profiad, neu defnyddiwch y blychau testun rhydd i deipio eich ateb pan "
+"fyddant yn ymddangos. Nid oes yna unrhyw atebion cywir nac anghywir, felly "
+"dywedwch eich barn a dewiswch beth ydych chi'n feddwl yw'r ateb mwyaf "
+"priodol i'r cwestiwn.  Ar ôl cwblhau eich ateb, pwyswch y botwm 'NEXT' i "
+"symud i'r dudalen nesaf. \n"
+"\n"
+"Os ydych chi'n newid eich meddwl, gallwch bwyso'r botwm 'YN ÔL' ar waelod "
+"y dudalen i fynd yn ôl i'r dudalen flaenorol.\n"
+"\n"
+"Mae cymryd rhan yn gwbl wirfoddol. Does dim rhaid i chi gymryd rhan os nad "
+"ydych chi'n dymuno gwneud hynny. Gallwch roi'r gorau i gwblhau'r arolwg ar "
+"unrhyw adeg drwy gau eich porwr gwe. Os nad ydych yn dymuno ateb rhai o'r "
+"cwestiynau, yna does dim rhaid i chi roi rheswm."
 
 #: submissions/templates/submissions/front_matter.html:60
 msgid "Questions or help?"
-msgstr ""
+msgstr "Eisiau gofyn cwestiwn neu angen cymorth?"
 
 #: submissions/templates/submissions/front_matter.html:64
 msgid "questions_or_help_content"
 msgstr ""
+"Os oes gennych chi unrhyw gwestiwn neu os hoffech gymorth i gwblhau'r "
+"arolwg, yna ffoniwch y tîm NPDA ar 020 7092 6137 neu anfonwch e-bost i "
+"npda@rcpch.ac.uk\n"
+"\n"
+"I ddechrau cwblhau'r arolwg, cliciwch y botwm 'NEXT' isod:"
 
 #: submissions/templates/submissions/front_matter.html:67
 #: submissions/templates/submissions/question.html:49
