@@ -255,7 +255,7 @@ msgstr ""
 
 #: submissions/models.py:84
 msgid "q18.na"
-msgstr ""
+msgstr "Не застосовно – мені / моїй дитині не потрібно контролювати рівень глюкози в крові школі"
 
 #: submissions/models.py:88
 msgid "Mother"
