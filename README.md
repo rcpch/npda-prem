@@ -12,20 +12,6 @@ Visit http://localhost:8000/.
 
 ## TODO
 
-### Translations
-
-- Find empty translations msgstr ""
-- Find unused translations (agent)
-- General
-  - "Go back" translation?
-  - "Start again" translation?
-  - "I'm not sure" is not translated?
-- Front matter
-  - Modify "completing the survey" as per modified english translation
-- Q4
-  - Should say "do you identify as"
-
-
 ### UI questions
 
 - If you follow the start link and you already have a session, send you back to the last unanswered question?
@@ -37,6 +23,18 @@ Visit http://localhost:8000/.
 - Email in footer?
 - Page for when submission is closed
 - Are we correctly applying aria disabled?
+- Where should we apply aria labels (e.g. aria-label="Form navigation")
+- Critical accessibility results (mostly around lack of contrast in RCPCH colours the AI picked) 
+
+### Translations
+
+- Find any AI generated translations by comparing .po files to source docs
+- Front matter: Modify "completing the survey" as per modified english translation
+- Back matter full translation
+- "or"
+- "I'm not sure" on region selector
+- "Start again"
+- "Go back"
 
 
 ### Bugs
