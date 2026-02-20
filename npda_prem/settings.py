@@ -184,3 +184,6 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # Detect we are running in Azure behind Container Apps ingress. Without this
 # the admin login redirect URI generates HTTP URLs.
 SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+
+TURNSTILE_SITE_KEY = os.environ.get("TURNSTILE_SITE_KEY", "")
+TURNSTILE_SECRET_KEY = os.environ.get("TURNSTILE_SECRET_KEY", "")

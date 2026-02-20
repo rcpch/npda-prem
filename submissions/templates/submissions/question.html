@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load i18n %}
+{% load npda_prem_tags %}
 
 {% block content %}
 
@@ -45,6 +46,8 @@
             {% endif %}
         </fieldset>
     </div>
+
+    {% turnstile_form_embed %}
 
     <nav class="nhsuk-u-margin-top-6" aria-label="{% trans 'Form navigation' %}">
       <input type="submit" class="nhsuk-button" id="continue-btn" value="{% trans 'Continue' %}" disabled aria-disabled="true">
