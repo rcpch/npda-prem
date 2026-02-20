@@ -1117,13 +1117,6 @@ msgstr ""
 "\n"
 "Aby rozpocząć ankietę, kliknij przycisk „DALEJ\" poniżej:"
 
-#: submissions/templates/submissions/front_matter.html:67
-#: submissions/templates/submissions/question.html:51
-#: submissions/templates/submissions/section.html:13
-#: submissions/templates/submissions/tablet-mode.html:22
-msgid "Form navigation"
-msgstr ""
-
 #: submissions/templates/submissions/landing.html:9
 msgid "Choose your language"
 msgstr "Wybierz swój język"

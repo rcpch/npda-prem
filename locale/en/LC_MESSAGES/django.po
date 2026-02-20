@@ -1096,13 +1096,6 @@ msgstr ""
 "\n"
 "To begin the survey, please select the ‘NEXT’ button below: "
 
-#: submissions/templates/submissions/front_matter.html:67
-#: submissions/templates/submissions/question.html:51
-#: submissions/templates/submissions/section.html:13
-#: submissions/templates/submissions/tablet-mode.html:22
-msgid "Form navigation"
-msgstr "Form navigation"
-
 #: submissions/templates/submissions/landing.html:9
 msgid "Choose your language"
 msgstr "Choose your language"

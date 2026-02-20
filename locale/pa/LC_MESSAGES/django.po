@@ -1061,13 +1061,6 @@ msgstr ""
 "\n"
 "ਸਰਵੇਖਣ ਸ਼ੁਰੂ ਕਰਨ ਲਈ, ਕਿਰਪਾ ਕਰਕੇ ਹੇਠਾਂ ਦਿੱਤੇ 'ਅੱਗੇ' (NEXT) ਬਟਨ ਨੂੰ ਚੁਣੋ:"
 
-#: submissions/templates/submissions/front_matter.html:67
-#: submissions/templates/submissions/question.html:51
-#: submissions/templates/submissions/section.html:13
-#: submissions/templates/submissions/tablet-mode.html:22
-msgid "Form navigation"
-msgstr "ਫਾਰਮ ਨੈਵੀਗੇਸ਼ਨ"
-
 #: submissions/templates/submissions/landing.html:9
 msgid "Choose your language"
 msgstr "ਆਪਣੀ ਭਾਸ਼ਾ ਚੁਣੋ"
