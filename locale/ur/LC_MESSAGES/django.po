@@ -973,63 +973,116 @@ msgstr ""
 
 #: submissions/templates/submissions/front_matter.html:13
 msgid "What is the survey about?"
-msgstr ""
+msgstr "سروے کس بارے میں ہے؟"
 
 #: submissions/templates/submissions/front_matter.html:17
 msgid "what_is_the_survey_about_content"
 msgstr ""
+"یہ سروے ذیابیطس کی تشخیص کے بعد سے اسکول میں آپ کے تجربات (یا آپ کے بچے "
+"کے تجربے) کے بارے میں ہے۔ ہم یہ سمجھنا چاہتے ہیں کہ کیا فائدہ مند ہے اور "
+"کیا بہتر ہو سکتا ہے۔"
 
 #: submissions/templates/submissions/front_matter.html:21
 msgid "What will happen to my answers?"
-msgstr ""
+msgstr "میرے جوابات کا کیا ہو گا؟"
 
 #: submissions/templates/submissions/front_matter.html:25
 msgid "what_will_happen_to_my_answers_content"
 msgstr ""
+"رائل کالج آف پیڈیاٹرکس اینڈ چائلڈ ہیلتھ (RCPCH) میں نیشنل پیڈیاٹرک "
+"ذیابیطس آڈٹ (NPDA) کی ٹیم جوابات کا تجزیہ کرے گی اور مندرجہ ذیل تیار "
+"کرے گی:"
 
 #: submissions/templates/submissions/front_matter.html:27
 msgid "what_will_happen_to_my_answers_local"
 msgstr ""
+"آپ کی ذیابیطس ٹیم کے لیے ایک مقامی رپورٹ، جو اپنی خدمات میں بہتری لانے "
+"کی منصوبہ بندی کرنے میں ان کی مدد کرے گی۔"
 
 #: submissions/templates/submissions/front_matter.html:28
 msgid "what_will_happen_to_my_answers_national"
 msgstr ""
+"وسیع تر علاقوں میں ذیابیطس کی دیکھ بھال میں بہتری لانے میں معاونت کرنے "
+"کے لیے ایک قومی رپورٹ"
 
 #: submissions/templates/submissions/front_matter.html:33
 msgid "Who should complete the survey?"
-msgstr ""
+msgstr "سروے کون مکمل کرے؟"
 
 #: submissions/templates/submissions/front_matter.html:38
 msgid "who_should_complete_the_survey_cyp"
 msgstr ""
+"وہ بچے اور نوجوان جن کو ذیابیطس ہے اور وہ پرائمری اسکول، سیکنڈری اسکول، "
+"کالج میں پڑھ رہے ہیں، یا گھر  پر ہی اسکولنگ ہوتی ہے/ تعلیم حاصل کرتے "
+"ہیں۔"
 
 #: submissions/templates/submissions/front_matter.html:39
 msgid "who_should_complete_the_survey_parents"
 msgstr ""
+"بچوں اور ہر عمر کے نوجوانوں کے والدین / نگہداشت دہندگان جنہیں ذیابیطس ہے "
+"اور وہ نرسری، پرائمری اسکول، سیکنڈری اسکول، کالج میں ہیں، یا گھر  پر ہی "
+"اسکولنگ ہوتی ہے/ تعلیم حاصل کرتے ہیں۔ اگر آپ کے ذیابیطس کے شکار متعدد "
+"بچے تعلیم حاصل کر رہے ہیں، تو براہ کرم فی بچہ ایک جواب مکمل کریں۔"
 
 #: submissions/templates/submissions/front_matter.html:44
 msgid "Is the survey anonymous?"
-msgstr ""
+msgstr "کیا سروے گمنام ہے؟"
 
 #: submissions/templates/submissions/front_matter.html:48
 msgid "is_the_survey_anonymous_content"
 msgstr ""
+"جی ہاں۔\n"
+"\n"
+"ہم ایسے نام یا تفصیلات نہیں مانگتے جو آپ کی شناخت کر سکیں، اس لیے آپ کے "
+"مقامی ذیابیطس کلینک یا اسکول کو معلوم نہیں ہو گا کہ آپ کے کون سے جوابات "
+"ہیں۔ اگر آپ کلینک میں سروے مکمل کر رہے ہیں، تو آپ کو نجی طور پر ایسا "
+"کرنے کا موقع ملنا چاہیئے۔\n"
+"\n"
+"اگر آپ 50£ کے واؤچر کے لیے انعامی قرعہ اندازی میں شامل ہونا چاہتے ہیں، "
+"تو ہم آپ سے اپنا ای میل پتہ درج کرنے کو کہیں گے۔ آپ کا ای میل پتہ آپ کے "
+"سروے کے جوابات سے منسلک نہیں کیا جائے گا اور جیسے ہی کوئی فاتح منتخب "
+"ہوتا ہے اسے حذف کر دیا جائے گا۔"
 
 #: submissions/templates/submissions/front_matter.html:52
 msgid "Completing the survey?"
-msgstr ""
+msgstr "سروے مکمل کرنا"
 
 #: submissions/templates/submissions/front_matter.html:56
 msgid "completing_the_survey_content"
 msgstr ""
+"سروے کو مکمل ہونے میں 10-15 منٹ لگیں گے۔ اگر آپ اسے جزوی تکمیل کے بعد ہی "
+"بند کر دیتے ہیں، تو آپ کا سروے محفوظ نہیں کیا جائے گا۔ اگر آپ سروے کو "
+"جلد ختم کرنے کا فیصلہ کرتے ہیں، تو براہ کرم اس وقت تک 'اگلا' بٹن پر کلک "
+"کریں جب تک کہ آپ آخری صفحہ پر نہ پہنچ جائیں اور پھر 'جمع کروائیں' کو "
+"دبائیں۔\n"
+"\n"
+"سروے مکمل کرنے کے لیے، وہ جواب (جوابات) منتخب کریں جو آپ کے تجربے سے "
+"بہترین مطابقت رکھتے ہوں، یا اپنا جواب ٹائپ کرنے کے لیے فری ٹیکسٹ باکسز "
+"کا استعمال کریں جہاں بھی وہ دستیاب ہوں۔ کوئی جواب صحیح یا غلط نہیں ہے، "
+"براہ کرم ہمیں صرف یہ بتائیں کہ آپ کیا سوچتے ہیں اور آپ کے خیال میں سوال "
+"کا جو موزوں ترین جواب ہے، اسے منتخب کریں۔ جب آپ اپنا جواب مکمل کر لیں تو "
+"اگلے صفحہ پر جانے کے لیے 'اگلا' بٹن منتخب کریں۔\n"
+"\n"
+"اگر آپ اپنی رائے بدل لیتے ہیں، تو آپ پچھلے صفحے پر واپس جانے کے لیے "
+"صفحہ کے نچلے حصے میں موجود 'پچھلا' بٹن پر کلک کر سکتے ہیں۔\n"
+"\n"
+"آپ کی شرکت مکمل طور پر رضاکارانہ ہے۔ اگر آپ نہیں چاہتے ہیں تو آپ کو حصہ "
+"لینے کی ضرورت نہیں ہے۔ آپ اپنے ویب براؤزر کو بند کر کے کسی بھی وقت سروے "
+"سے باہر نکل سکتے ہیں۔ اگر آپ کچھ سوالوں کا جواب نہیں دینا چاہتے تو آپ "
+"کو وجہ بتانے کی ضرورت نہیں ہے۔"
 
 #: submissions/templates/submissions/front_matter.html:60
 msgid "Questions or help?"
-msgstr ""
+msgstr "سوالات یا مدد؟"
 
 #: submissions/templates/submissions/front_matter.html:64
 msgid "questions_or_help_content"
 msgstr ""
+"اگر آپ کے کوئی سوالات ہیں یا سروے مکمل کرنے میں مدد چاہتے ہیں تو براہ "
+"کرم NPDA ٹیم کو 020 7092 6137 پر کال کریں یا npda@rcpch.ac.uk پر ای میل "
+"کریں۔\n"
+"\n"
+"سروے شروع کرنے کے لیے، براہ کرم نیچے 'اگلا' بٹن منتخب کریں:"
 
 #: submissions/templates/submissions/front_matter.html:67
 #: submissions/templates/submissions/question.html:49
