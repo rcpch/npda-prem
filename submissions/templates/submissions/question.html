@@ -68,7 +68,10 @@
       if (qtype === 'checkbox') {
         return form.querySelector('input[name="' + qid + '"][type="checkbox"]:checked') !== null;
       }
-      if (qtype === 'number' || qtype === 'textarea') {
+      if (qtype === 'textarea') {
+        return true;
+      }
+      if (qtype === 'number') {
         var el = form.querySelector('[name="' + qid + '"]');
         return el && el.value.trim() !== '';
       }
