@@ -52,6 +52,8 @@ Visit http://localhost:8000/.
   - prem.npda.rcpch.ac.uk?
 - Usage instructions!
 - Cloudflare Turnstile
+  - Error handling (atm would be generic suspicious operation page)
+  - Move history out of session for cookie size (can just calculate it by replaying forward based on role and submission?)
 - GitHub PR check
 - Admin error emails to me
 - Request logging
