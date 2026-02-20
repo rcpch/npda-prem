@@ -877,11 +877,6 @@ msgstr ""
 "ਤੁਹਾਡਾ ਸਕੂਲ ਜਾਂ ਡਾਇਬੀਟੀਜ਼ ਟੀਮ ਤੁਹਾਡੇ ਬੱਚੇ ਦੇ ਅਨੁਭਵ ਨੂੰ ਬਿਹਤਰ ਬਣਾਉਣ ਲਈ ਵੱਖਰੇ ਢੰਗ ਨਾਲ ਕੀ ਕਰ "
 "ਸਕਦੀ ਹੈ?"
 
-#: submissions/templates/submissions/_form_nav.html:15
-#, python-format
-msgid "Section %(current)s of %(total)s"
-msgstr ""
-
 #: submissions/templates/submissions/clinic_in_region.html:8
 #: submissions/templates/submissions/clinic_or_region.html:8
 #: submissions/templates/submissions/front_matter.html:8
@@ -1064,10 +1059,6 @@ msgstr ""
 #: submissions/templates/submissions/landing.html:9
 msgid "Choose your language"
 msgstr "ਆਪਣੀ ਭਾਸ਼ਾ ਚੁਣੋ"
-
-#: submissions/templates/submissions/question.html:52
-msgid "Continue"
-msgstr ""
 
 #: submissions/templates/submissions/role_form.html:12
 msgid "Are you…"

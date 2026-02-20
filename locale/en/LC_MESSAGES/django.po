@@ -905,11 +905,6 @@ msgstr ""
 "What could your school or diabetes team do differently to improve your "
 "child's experience?"
 
-#: submissions/templates/submissions/_form_nav.html:15
-#, python-format
-msgid "Section %(current)s of %(total)s"
-msgstr ""
-
 #: submissions/templates/submissions/clinic_in_region.html:8
 #: submissions/templates/submissions/clinic_or_region.html:8
 #: submissions/templates/submissions/front_matter.html:8
@@ -1099,10 +1094,6 @@ msgstr ""
 #: submissions/templates/submissions/landing.html:9
 msgid "Choose your language"
 msgstr "Choose your language"
-
-#: submissions/templates/submissions/question.html:52
-msgid "Continue"
-msgstr ""
 
 #: submissions/templates/submissions/role_form.html:12
 msgid "Are you…"
