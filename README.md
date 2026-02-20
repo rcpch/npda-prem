@@ -15,6 +15,7 @@ Visit http://localhost:8000/.
 ### UI questions
 
 - If you follow the start link and you already have a session, send you back to the last unanswered question?
+  - Yes, to a "continue" page. Translations required.
 - Section blurbs - standalone page or above first question?
   - For example - the impact on education one provides no content the title doesn't already?
   - Go back currently skips over these - is that ok?
@@ -24,7 +25,8 @@ Visit http://localhost:8000/.
 - Page for when submission is closed
 - Are we correctly applying aria disabled?
 - Where should we apply aria labels (e.g. aria-label="Form navigation")
-- Critical accessibility results (mostly around lack of contrast in RCPCH colours the AI picked) 
+- Critical accessibility results (mostly around lack of contrast in RCPCH colours the AI picked)
+- Export submissions by PZ code as CSV
 
 ### Translations
 
@@ -40,7 +42,9 @@ Visit http://localhost:8000/.
 ### Bugs
 
 - Missing front matter in tablet mode (and also missing unit name in the footer)
+- CSRF error clicking "start again" from confirmation screen?
 - Replace uses of "child" in URLs etc with "cyp"
+- Make all questions optional except demographic questions
 
 
 ### Infra
