@@ -970,63 +970,115 @@ msgstr ""
 
 #: submissions/templates/submissions/front_matter.html:13
 msgid "What is the survey about?"
-msgstr ""
+msgstr "Про що це опитування?"
 
 #: submissions/templates/submissions/front_matter.html:17
 msgid "what_is_the_survey_about_content"
 msgstr ""
+"Це опитування стосується того, як виглядає ваше шкільне життя (або шкільне "
+"життя вашої дитини) з моменту діагностування діабету. Ми хочемо з'ясувати, "
+"що працює добре, а що можна поліпшити."
 
 #: submissions/templates/submissions/front_matter.html:21
 msgid "What will happen to my answers?"
-msgstr ""
+msgstr "Як будуть використані мої відповіді?"
 
 #: submissions/templates/submissions/front_matter.html:25
 msgid "what_will_happen_to_my_answers_content"
 msgstr ""
+"Команда Національного аудиту діабету в педіатрії (National Paediatric "
+"Diabetes Audit, NPDA) при Королівському коледжі педіатрії та дитячого "
+"здоров'я (Royal College of Paediatrics and Child Health, RCPCH) проаналізує "
+"відповіді та створить наступні документи:"
 
 #: submissions/templates/submissions/front_matter.html:27
 msgid "what_will_happen_to_my_answers_local"
 msgstr ""
+"місцевий звіт для вашої команди з питань діабету, щоб допомогти їй "
+"планувати поліпшення послуг;"
 
 #: submissions/templates/submissions/front_matter.html:28
 msgid "what_will_happen_to_my_answers_national"
 msgstr ""
+"національний звіт для сприяння поліпшенню контролю діабету в більш "
+"широкому географічному контексті."
 
 #: submissions/templates/submissions/front_matter.html:33
 msgid "Who should complete the survey?"
-msgstr ""
+msgstr "Хто має пройти опитування?"
 
 #: submissions/templates/submissions/front_matter.html:38
 msgid "who_should_complete_the_survey_cyp"
 msgstr ""
+"Діти та молоді люди, хворі на діабет, які отримують навчаються в початковій "
+"школі, середній школі, коледжі або вдома."
 
 #: submissions/templates/submissions/front_matter.html:39
 msgid "who_should_complete_the_survey_parents"
 msgstr ""
+"Батьки/опікуни дітей та молодих людей різного віку, хворих на діабет, які "
+"відвідують дитячий садок, початкову школу, середню школу, коледж або "
+"отримують освіту вдома. Якщо у вас кілька дітей з діабетом, які навчаються, "
+"надайте відповіді стосовно кожної дитини."
 
 #: submissions/templates/submissions/front_matter.html:44
 msgid "Is the survey anonymous?"
-msgstr ""
+msgstr "Опитування є анонімним?"
 
 #: submissions/templates/submissions/front_matter.html:48
 msgid "is_the_survey_anonymous_content"
 msgstr ""
+"Так.\n"
+"\n"
+"Ми не запитуємо імена чи дані, за якими вас можна ідентифікувати, тому ані "
+"ваша місцева діабетична клініка, ані школа не знатимуть, які відповіді "
+"надали саме ви. Якщо ви проходитимете опитування під час перебування у "
+"клініці, вам мають надати можливість зробити це без свідків.\n"
+"\n"
+"Якщо ви бажаєте взяти участь у розіграші ваучера на 50\u00a0фунтів "
+"стерлінгів, ми попросимо вас надати свою адресу електронної пошти. Ваша "
+"адреса електронної пошти не буде пов'язана з вашими відповідями і ми її "
+"видалимо, щойно буде обрано переможця."
 
 #: submissions/templates/submissions/front_matter.html:52
 msgid "Completing the survey?"
-msgstr ""
+msgstr "Проходження опитування"
 
 #: submissions/templates/submissions/front_matter.html:56
 msgid "completing_the_survey_content"
 msgstr ""
+"Проходження опитування займе 10—15\u00a0хвилин вашого часу. Ваші відповіді "
+"не збережуться, якщо ви закриєте опитування, не завершивши його. Якщо ви "
+"хочете пройти опитування швидше, натискайте кнопку «ДАЛІ», доки не дійдете "
+"до останньої сторінки, а потім натисніть «НАДІСЛАТИ».\n"
+"\n"
+"Під час опитування обирайте відповіді, які найточніше відображають вашу "
+"ситуацію, або користуйтеся полями для вводу тексту, щоб ввести свою "
+"відповідь на відкриті запитання. Тут немає правильних чи неправильних "
+"відповідей. Просто висловлюйте свою думку і обирайте відповіді, які "
+"здаються вам найбільш підходящими. Надавши відповідь, натисніть кнопку "
+"«ДАЛІ», щоб перейти на наступну сторінку.\n"
+"\n"
+"Якщо ви зміните свою думку, ви можете натиснути кнопку «НАЗАД» у нижній "
+"частині сторінки, щоб повернутися на попередню сторінку.\n"
+"\n"
+"Ваша участь є цілком добровільною. Ви не зобов'язані брати участь, якщо не "
+"бажаєте цього робити. Ви можете вийти з опитування в будь-який момент, "
+"просто закривши браузер. Якщо ви не бажаєте відповідати на якесь запитання, "
+"вам не потрібно пояснювати причину."
 
 #: submissions/templates/submissions/front_matter.html:60
 msgid "Questions or help?"
-msgstr ""
+msgstr "Є запитання або потрібна допомога?"
 
 #: submissions/templates/submissions/front_matter.html:64
 msgid "questions_or_help_content"
 msgstr ""
+"Якщо у вас є запитання або вам потрібна допомога з проходження опитування, "
+"зателефонуйте команді NPDA за номером 020 7092 6137 або надішліть "
+"електронного листа на адресу npda@rcpch.ac.uk\n"
+"\n"
+"Щоб розпочати опитування, натисніть кнопку «ДАЛІ» нижче:"
 
 #: submissions/templates/submissions/front_matter.html:67
 #: submissions/templates/submissions/question.html:49
