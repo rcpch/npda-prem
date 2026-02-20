@@ -187,28 +187,6 @@ def confirmation(request, lang):
     return render(request, "submissions/confirmation.html", {"lang": lang})
 
 
-def get_idx_prev_next(lang, role, sections, section):
-    slugs = [s["slug"] for s in sections]
-
-    if section not in slugs:
-        raise Http404
-    
-    idx = slugs.index(section)
-
-    prev_url = (
-        reverse("form_section", kwargs={"lang": lang, "role": role, "section": slugs[idx - 1]})
-        if idx > 0
-        else reverse("role_form", kwargs={"lang": lang})
-    )
-
-    next_url = (
-        reverse("form_section", kwargs={"lang": lang, "role": role, "section": slugs[idx + 1]})
-        if idx < len(sections) - 1
-        else None
-    )
-
-    return (idx, prev_url, next_url)
-
 
 def save_response(request ,submission):
     for field in SIMPLE_FIELDS:
