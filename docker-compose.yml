@@ -9,6 +9,8 @@ services:
     command: s/start-dev
     ports:
       - "8000:8000"
+    env_file:
+      - envs/.env # env file - NOT committed to Git
     restart: always
 
   postgres:
