@@ -39,7 +39,7 @@ Visit http://localhost:8000/.
 
 ### Bugs
 
-- Allow "Next" without filling in free text fields?
+- Missing front matter in tablet mode (and also missing unit name in the footer)
 - Replace uses of "child" in URLs etc with "cyp"
 
 
