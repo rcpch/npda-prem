@@ -128,7 +128,7 @@ msgstr "Żłobek"
 
 #: submissions/models.py:41
 msgid "Ages < 4yrs"
-msgstr ""
+msgstr "wiek < 4 lata"
 
 #: submissions/models.py:42
 msgid "Reception"
@@ -136,7 +136,7 @@ msgstr "Klasa przygotowawcza"
 
 #: submissions/models.py:42
 msgid "Ages 4-5yrs"
-msgstr ""
+msgstr "wiek 4-5 lat"
 
 #: submissions/models.py:43
 msgid "Key stage 1 (Years 1 & 2)"
@@ -144,7 +144,7 @@ msgstr "Kluczowy etap 1 (klasa 1 i 2)"
 
 #: submissions/models.py:43
 msgid "Ages 5-7yrs"
-msgstr ""
+msgstr "wiek 5-7 lat"
 
 #: submissions/models.py:44
 msgid "Key stage 2 (Years 3 to 6)"
@@ -152,7 +152,7 @@ msgstr "Kluczowy etap 2 (klasy 3 do 6)"
 
 #: submissions/models.py:44
 msgid "Ages 7-11yrs"
-msgstr ""
+msgstr "wiek 7-11 lat"
 
 #: submissions/models.py:45
 msgid "Key stage 3 (Years 7 to 9)"
@@ -160,7 +160,7 @@ msgstr "Kluczowy etap 3 (klasy 7 do 9)"
 
 #: submissions/models.py:45
 msgid "Ages 11-14yrs"
-msgstr ""
+msgstr "wiek 11-14 lat"
 
 #: submissions/models.py:46
 msgid "Key stage 4 (Years 10 & 11)"
@@ -168,7 +168,7 @@ msgstr "Kluczowy etap 4 (klasa 10 i 11)"
 
 #: submissions/models.py:46
 msgid "Ages 14-16yrs"
-msgstr ""
+msgstr "wiek 14-16 lat"
 
 #: submissions/models.py:47
 msgid "Key stage 5 (Years 12 & 13)"
@@ -176,7 +176,7 @@ msgstr "Kluczowy etap 5 (klasa 12 i 13)"
 
 #: submissions/models.py:47
 msgid "Ages 16-18yrs"
-msgstr ""
+msgstr "wiek 16-18 lat"
 
 #: submissions/models.py:54
 msgid "State funded school"

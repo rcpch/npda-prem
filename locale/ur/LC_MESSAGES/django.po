@@ -126,7 +126,7 @@ msgstr "نرسری"
 
 #: submissions/models.py:41
 msgid "Ages < 4yrs"
-msgstr ""
+msgstr "عمر <4 سال"
 
 #: submissions/models.py:42
 msgid "Reception"
@@ -134,7 +134,7 @@ msgstr "ریسپشن"
 
 #: submissions/models.py:42
 msgid "Ages 4-5yrs"
-msgstr ""
+msgstr "عمر 4-5 سال"
 
 #: submissions/models.py:43
 msgid "Key stage 1 (Years 1 & 2)"
@@ -142,7 +142,7 @@ msgstr "کلیدی مرحلہ 1 (سال 1 اور 2)"
 
 #: submissions/models.py:43
 msgid "Ages 5-7yrs"
-msgstr ""
+msgstr "عمر 5-7 سال"
 
 #: submissions/models.py:44
 msgid "Key stage 2 (Years 3 to 6)"
@@ -150,7 +150,7 @@ msgstr "کلیدی مرحلہ 2 (سال 3 سے 6)"
 
 #: submissions/models.py:44
 msgid "Ages 7-11yrs"
-msgstr ""
+msgstr "عمر 7-11 سال"
 
 #: submissions/models.py:45
 msgid "Key stage 3 (Years 7 to 9)"
@@ -158,7 +158,7 @@ msgstr "کلیدی مرحلہ 3 (سال 7 سے 9)"
 
 #: submissions/models.py:45
 msgid "Ages 11-14yrs"
-msgstr ""
+msgstr "عمر 11-14 سال"
 
 #: submissions/models.py:46
 msgid "Key stage 4 (Years 10 & 11)"
@@ -166,7 +166,7 @@ msgstr "کلیدی مرحلہ 4 (سال 10 اور 11)"
 
 #: submissions/models.py:46
 msgid "Ages 14-16yrs"
-msgstr ""
+msgstr "عمر 14-16 سال"
 
 #: submissions/models.py:47
 msgid "Key stage 5 (Years 12 & 13)"
@@ -174,7 +174,7 @@ msgstr "کلیدی مرحلہ 5 (سال 12 اور 13)"
 
 #: submissions/models.py:47
 msgid "Ages 16-18yrs"
-msgstr ""
+msgstr "عمر 16-18 سال"
 
 #: submissions/models.py:54
 msgid "State funded school"

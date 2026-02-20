@@ -129,7 +129,7 @@ msgstr "Дошкільна освіта"
 
 #: submissions/models.py:41
 msgid "Ages < 4yrs"
-msgstr ""
+msgstr "вік до 4 років"
 
 #: submissions/models.py:42
 msgid "Reception"
@@ -137,7 +137,7 @@ msgstr "Підготовка до школи"
 
 #: submissions/models.py:42
 msgid "Ages 4-5yrs"
-msgstr ""
+msgstr "вік від 4 до 5 років"
 
 #: submissions/models.py:43
 msgid "Key stage 1 (Years 1 & 2)"
@@ -145,7 +145,7 @@ msgstr "Ключовий етап 1 (1-й та 2-й класи)"
 
 #: submissions/models.py:43
 msgid "Ages 5-7yrs"
-msgstr ""
+msgstr "вік від 5 до 7 років"
 
 #: submissions/models.py:44
 msgid "Key stage 2 (Years 3 to 6)"
@@ -153,7 +153,7 @@ msgstr "Ключовий етап 2 (з 3-го до 6-го класу)"
 
 #: submissions/models.py:44
 msgid "Ages 7-11yrs"
-msgstr ""
+msgstr "вік від 7 до 11 років"
 
 #: submissions/models.py:45
 msgid "Key stage 3 (Years 7 to 9)"
@@ -161,7 +161,7 @@ msgstr "Ключовий етап 3 (з 7-го до 9-го класу)"
 
 #: submissions/models.py:45
 msgid "Ages 11-14yrs"
-msgstr ""
+msgstr "вік від 11 до 14 років"
 
 #: submissions/models.py:46
 msgid "Key stage 4 (Years 10 & 11)"
@@ -169,7 +169,7 @@ msgstr "Ключовий етап 4 (10-й та 11-й класи)"
 
 #: submissions/models.py:46
 msgid "Ages 14-16yrs"
-msgstr ""
+msgstr "вік від 14 до 16 років"
 
 #: submissions/models.py:47
 msgid "Key stage 5 (Years 12 & 13)"
@@ -177,7 +177,7 @@ msgstr "Ключовий етап 5 (12-й та 13-й класи)"
 
 #: submissions/models.py:47
 msgid "Ages 16-18yrs"
-msgstr ""
+msgstr "вік від 16 до 18 років"
 
 #: submissions/models.py:54
 msgid "State funded school"
