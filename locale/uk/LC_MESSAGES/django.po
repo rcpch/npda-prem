@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-19 13:21+0000\n"
+"POT-Creation-Date: 2026-02-20 13:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,27 +20,27 @@ msgstr ""
 "100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || "
 "(n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 
-#: npda_prem/settings.py:143
+#: npda_prem/settings.py:145
 msgid "English"
 msgstr "English"
 
-#: npda_prem/settings.py:144
+#: npda_prem/settings.py:146
 msgid "Cymraeg"
 msgstr "Cymraeg"
 
-#: npda_prem/settings.py:145
+#: npda_prem/settings.py:147
 msgid "Urdu"
 msgstr "Urdu"
 
-#: npda_prem/settings.py:146
+#: npda_prem/settings.py:148
 msgid "Polish"
 msgstr "Polish"
 
-#: npda_prem/settings.py:147
+#: npda_prem/settings.py:149
 msgid "Ukrainian"
 msgstr "Ukrainian"
 
-#: npda_prem/settings.py:148
+#: npda_prem/settings.py:150
 msgid "Punjabi"
 msgstr "Punjabi"
 
@@ -411,85 +411,85 @@ msgstr "Ти…"
 msgid "q4.parent.title"
 msgstr "Ти…"
 
-#: submissions/sections.py:29
+#: submissions/sections.py:28
 msgid "q5.parent.title"
 msgstr "Ступінь спорідненості з дитиною, хворою на діабет"
 
-#: submissions/sections.py:38
+#: submissions/sections.py:37
 msgid "q6.child.title"
 msgstr "Який у тебе тип діабету?"
 
-#: submissions/sections.py:39
+#: submissions/sections.py:38
 msgid "q6.parent.title"
 msgstr "Який тип діабету в вашої дитини?"
 
-#: submissions/sections.py:48
+#: submissions/sections.py:47
 msgid "q7.child.title"
 msgstr "У якому віці в тебе діагностували діабет?"
 
-#: submissions/sections.py:49
+#: submissions/sections.py:48
 msgid "q7.parent.title"
 msgstr "В якому віці у вашої дитини діагностували діабет?"
 
-#: submissions/sections.py:58
+#: submissions/sections.py:57
 msgid "q8.child.title"
 msgstr "Що з наведеного нижче найкраще описує твою етнічну приналежність?"
 
-#: submissions/sections.py:59
+#: submissions/sections.py:58
 msgid "q8.parent.title"
 msgstr ""
 "Що з наведеного нижче найкраще описує етнічну приналежність вашої дитини?"
 
-#: submissions/sections.py:68
+#: submissions/sections.py:67
 msgid "q9.child.title"
 msgstr "На якому етапі освіти ти наразі перебуваєш?"
 
-#: submissions/sections.py:69
+#: submissions/sections.py:68
 msgid "q9.parent.title"
 msgstr "На якому етапі навчання наразі перебуває ваша дитина?"
 
-#: submissions/sections.py:82
+#: submissions/sections.py:81
 msgid "q10.child.title"
 msgstr "Школу якого типу ти відвідуєш або яку освіту ти отримуєш?"
 
-#: submissions/sections.py:83
+#: submissions/sections.py:82
 msgid "q10.parent.title"
 msgstr "Школу якого типу відвідує ваша дитина або яку освіту вона отримує?"
 
-#: submissions/sections.py:96
+#: submissions/sections.py:95
 msgid "q11.child.title"
 msgstr "Чи було рішення про домашнє навчання пов'язане з діагнозом діабету?"
 
-#: submissions/sections.py:97
+#: submissions/sections.py:96
 msgid "q11.parent.title"
 msgstr ""
 "Чи було ваше рішення навчати дитину вдома пов'язане з діагнозом діабету?"
 
-#: submissions/sections.py:106
+#: submissions/sections.py:105
 msgid "q12.child.title"
 msgstr "Ти маєш право на безкоштовне шкільне харчування?"
 
-#: submissions/sections.py:107
+#: submissions/sections.py:106
 msgid "q12.parent.title"
 msgstr "Ваша дитина має право на безкоштовне харчування у школі?"
 
-#: submissions/sections.py:117
+#: submissions/sections.py:116
 msgid "School Health Care Plans"
 msgstr "Плани медичного обслуговування у школі"
 
-#: submissions/sections.py:118
+#: submissions/sections.py:117
 msgid "healthcare_plans.introduction"
 msgstr ""
 "Ми хотіли б знати, чи отримували ви та ваша дитина офіційну підтримку з "
 "контролю діабету протягом навчання."
 
-#: submissions/sections.py:125
+#: submissions/sections.py:124
 msgid "q13.parent.title"
 msgstr ""
 "Чи має ваша дитина шкільний план медичного обслуговування, спеціально "
 "складений з урахуванням діабету?"
 
-#: submissions/sections.py:127
+#: submissions/sections.py:126
 msgid "q13.hint"
 msgstr ""
 "Це план, який складається разом із командою з питань діабету і школою. Це "
@@ -497,411 +497,416 @@ msgstr ""
 "медичного обслуговування (IHP), Облік потреб або План освіти, охорони "
 "здоров'я і догляду (EHCP)."
 
-#: submissions/sections.py:139
+#: submissions/sections.py:138
 msgid "q14.parent.title"
 msgstr ""
 "Чи покриває шкільний план медичного обслуговування всі потреби вашої дитини, "
 "пов'язані з діабетом, у школі?"
 
-#: submissions/sections.py:148
+#: submissions/sections.py:147
 msgid "q15.parent.title"
 msgstr ""
 "Чи має школа вашої дитини прямий контакт із командою з питань діабету на "
 "випадок, якщо знадобиться порада чи підтримка?"
 
-#: submissions/sections.py:158
+#: submissions/sections.py:157
 msgid "Managing Diabetes"
 msgstr "Контроль діабету"
 
-#: submissions/sections.py:159
+#: submissions/sections.py:158
 msgid "managing_diabetes.introduction"
 msgstr ""
 "Цей розділ містить запитання про лікування діабету. Ця інформація допоможе "
 "нам з'ясувати, чи мають діти і молоді люди, які використовують різні "
 "технології контролю діабету, різний досвід у школі."
 
-#: submissions/sections.py:166
+#: submissions/sections.py:165
 msgid "q16.child.title"
 msgstr ""
 "Чи потрібно тобі вводити інсулін або контролювати рівень глюкози в крові для "
 "контролю діабету під час занять у школі?"
 
-#: submissions/sections.py:167
+#: submissions/sections.py:166
 msgid "q16.parent.title"
 msgstr ""
 "Чи потрібно вашій дитині вводити інсулін або контролювати рівень глюкози у "
 "крові для контролю діабету під час занять у школі?"
 
-#: submissions/sections.py:180
+#: submissions/sections.py:179
 msgid "q17.child.title"
 msgstr "Як ти вводиш інсулін у школі?"
 
-#: submissions/sections.py:181
+#: submissions/sections.py:180
 msgid "q17.parent.title"
 msgstr "Як ваша дитина вводить інсулін під час перебування у школі?"
 
-#: submissions/sections.py:183
+#: submissions/sections.py:182
 msgid "q17.hint"
 msgstr "Виберіть усі варіанти, які підходять"
 
-#: submissions/sections.py:191
+#: submissions/sections.py:190
 msgid "q18.child.title"
 msgstr "Як ти контролюєш рівень глюкози в крові в школі?"
 
-#: submissions/sections.py:192
+#: submissions/sections.py:191
 msgid "q18.parent.title"
 msgstr ""
 "Як ваша дитина контролює рівень глюкози у крові під час перебування у школі?"
 
-#: submissions/sections.py:194
+#: submissions/sections.py:193
 msgid "q18.hint"
 msgstr "Виберіть усі варіанти, які підходять"
 
-#: submissions/sections.py:202
+#: submissions/sections.py:201
 msgid "q19.parent.title"
 msgstr ""
 "Чи можете ви дистанційно відстежувати/контролювати рівень глюкози у крові "
 "вашої дитини?"
 
-#: submissions/sections.py:211
+#: submissions/sections.py:210
 msgid "q20.parent.title"
 msgstr ""
 "Чи можете ви зв'язатися зі школою вашої дитини протягом дня, якщо вас турбує "
 "стан вашої дитини, пов'язаний із діабетом?"
 
-#: submissions/sections.py:220
+#: submissions/sections.py:219
 msgid "q21.child.title"
 msgstr ""
 "Якщо ти використовуєш смартфон або смарт-годинник для контролю діабету, чи "
 "дозволено використовувати цей пристрій під час занять у школі?"
 
-#: submissions/sections.py:221
+#: submissions/sections.py:220
 msgid "q21.parent.title"
 msgstr ""
 "Якщо ваша дитина використовує смартфон або смарт-годинник для контролю "
 "діабету, чи дозволено їй використовувати цей пристрій під час занять у школі?"
 
-#: submissions/sections.py:230
+#: submissions/sections.py:229
 msgid "q22.child.title"
 msgstr ""
 "Чи пропонують тобі окрему кімнату в школі для лікування діабету, навіть якщо "
 "в ній немає потреби?"
 
-#: submissions/sections.py:231
+#: submissions/sections.py:230
 msgid "q22.parent.title"
 msgstr ""
 "Чи пропонують вашій дитині окрему кімнату в школі для контролю діабету, "
 "навіть якщо в ній немає потреби?"
 
-#: submissions/sections.py:233
+#: submissions/sections.py:232
 msgid "q22.hint"
 msgstr ""
 "Наприклад, для введення інсуліну, перевірки рівня глюкози у крові, зміни "
 "помпи або будь-яких інших процедур, пов'язаних із контролем діабету."
 
-#: submissions/sections.py:241
+#: submissions/sections.py:240
 msgid "q23.child.title"
 msgstr "Тобі дозволено контролювати діабет у класі, якщо це необхідно?"
 
-#: submissions/sections.py:242
+#: submissions/sections.py:241
 msgid "q23.parent.title"
 msgstr ""
 "Вашій дитині дозволено виконувати процедури з контролю діабету в класі, коли "
 "це необхідно?"
 
-#: submissions/sections.py:244
+#: submissions/sections.py:243
 msgid "q23.hint"
 msgstr "Це стосується перевірки рівня глюкози в крові або введення інсуліну."
 
-#: submissions/sections.py:252
+#: submissions/sections.py:251
 msgid "q24.child.title"
 msgstr ""
 "Чи присутній у школі кваліфікований співробітник, який може допомогти тобі з "
 "контролем діабету?"
 
-#: submissions/sections.py:253
+#: submissions/sections.py:252
 msgid "q24.parent.title"
 msgstr ""
 "Чи є у школі кваліфікований співробітник, який може допомогти вашій дитині з "
 "контролем діабету?"
 
-#: submissions/sections.py:255
+#: submissions/sections.py:254
 msgid "q24.hint"
 msgstr ""
 "Це стосується перевірки рівня глюкози в крові, введення інсуліну та надання "
 "підтримки в екстрених ситуаціях. Таке навчання має проводитися командою з "
 "питань діабету."
 
-#: submissions/sections.py:263
+#: submissions/sections.py:262
 msgid "q25.child.title"
 msgstr ""
 "Чи надає школа достатньо інформації про шкільне харчування для підрахунку "
 "вуглеводів?"
 
-#: submissions/sections.py:264
+#: submissions/sections.py:263
 msgid "q25.parent.title"
 msgstr ""
 "Чи надає школа достатню інформацію про шкільне харчування для підрахунку "
 "вуглеводів?"
 
-#: submissions/sections.py:266
+#: submissions/sections.py:265
 msgid "q25.hint"
 msgstr ""
 "Це стосується інформації про вміст вуглеводів та розміри порцій, щоб "
 "допомогти тобі скоригувати відповідним чином дозу інсуліну."
 
-#: submissions/sections.py:275
+#: submissions/sections.py:274
 msgid "Impact on Education"
 msgstr "Вплив на навчання"
 
-#: submissions/sections.py:276
+#: submissions/sections.py:275
 msgid "education_impact.introduction"
 msgstr "У цьому розділі запитують, як діабет впливає на твою освіту."
 
-#: submissions/sections.py:283
+#: submissions/sections.py:282
 msgid "q26.child.title"
 msgstr ""
 "Скільки разів протягом минулого року ти пропускав(-ла) одне або декілька "
 "занять протягом дня, щоб відвідати лікарню з приводу діабету?"
 
-#: submissions/sections.py:284
+#: submissions/sections.py:283
 msgid "q26.parent.title"
 msgstr ""
 "Скільки разів у минулому році ваша дитина пропускала одне або кілька занять "
 "протягом дня, щоб відвідати лікарню з приводу діабету?"
 
-#: submissions/sections.py:286
+#: submissions/sections.py:285
 msgid "q26.hint"
 msgstr ""
 "Це могли бути планові огляди в діабетичній клініці або зустрічі з дитячою "
 "медсестрою з діабету, дієтологом, психологом тощо (не перебування в "
 "стаціонарі)"
 
-#: submissions/sections.py:293
+#: submissions/sections.py:292
 msgid "q27.child.title"
 msgstr ""
 "Чи дозволяє школа тобі пропускати заняття через прийоми, пов'язані з "
 "діабетом?"
 
-#: submissions/sections.py:294
+#: submissions/sections.py:293
 msgid "q27.parent.title"
 msgstr ""
 "Чи дозволяє школа вашій дитині пропускати заняття через медичні прийоми, "
 "пов'язані з діабетом?"
 
-#: submissions/sections.py:296
+#: submissions/sections.py:295
 msgid "q27.hint"
 msgstr ""
 "Відсутність у школі через відвідування лікаря не повинна вважатися "
 "недозволеною."
 
-#: submissions/sections.py:304
+#: submissions/sections.py:303
 msgid "q28.child.title"
 msgstr ""
 "Чи вплинуло відвідування діабетичної клініки негативно на твої показники "
 "відвідуваності школи?"
 
-#: submissions/sections.py:305
+#: submissions/sections.py:304
 msgid "q28.parent.title"
 msgstr ""
 "Чи має відвідування діабетичної клініки негативний вплив на показники "
 "відвідуваності школи у вашої дитини?"
 
-#: submissions/sections.py:307
+#: submissions/sections.py:306
 msgid "q28.hint"
 msgstr ""
 "Пропуски занять через відвідування лікаря не повинні знижувати відсоток "
 "відвідуваності школи."
 
-#: submissions/sections.py:315
+#: submissions/sections.py:314
 msgid "q29.child.title"
 msgstr ""
 "Скільки днів за останній рік тобі довелося пропускати школу / навчатися "
 "вдома через хворобу, пов'язану з діабетом?"
 
-#: submissions/sections.py:316
+#: submissions/sections.py:315
 msgid "q29.parent.title"
 msgstr ""
 "Скільки днів за останній рік вашій дитині довелося пропустити школу/"
 "навчатися вдома через хворобу, пов'язану з діабетом?"
 
-#: submissions/sections.py:318
+#: submissions/sections.py:317
 msgid "q29.hint"
 msgstr "Це можуть бути пропуски школи з перебуванням удома або госпіталізація"
 
-#: submissions/sections.py:325
+#: submissions/sections.py:324
 msgid "q30.child.title"
 msgstr ""
 "Чи доводилося тобі колись змінювати школу через труднощі з контролем діабету?"
 
-#: submissions/sections.py:326
+#: submissions/sections.py:325
 msgid "q30.parent.title"
 msgstr ""
 "Чи доводилося вашій дитині змінювати школу через труднощі з контролем "
 "діабету?"
 
-#: submissions/sections.py:335
+#: submissions/sections.py:334
 msgid "q31.child.title"
 msgstr ""
 "Чи позбавляли тебе колись будь-якої з перелічених нижче діяльностей через "
 "діабет?"
 
-#: submissions/sections.py:336
+#: submissions/sections.py:335
 msgid "q31.parent.title"
 msgstr ""
 "Чи виключали вашу дитину з участі в будь-якому з перелічених нижче заходів "
 "через діабет?"
 
-#: submissions/sections.py:338
+#: submissions/sections.py:337
 msgid "q31.hint"
 msgstr "Виберіть усі варіанти, які підходять"
 
-#: submissions/sections.py:346
+#: submissions/sections.py:345
 msgid "q32.child.title"
 msgstr ""
 "Чи відчуваєш ти, що діабет впливає на твою успішність у школі / домашньому "
 "навчанні?"
 
-#: submissions/sections.py:347
+#: submissions/sections.py:346
 msgid "q32.parent.title"
 msgstr ""
 "Чи відчуваєте ви, що діабет впливає на успішність вашої дитини в школі/"
 "домашньому навчанні?"
 
-#: submissions/sections.py:356
+#: submissions/sections.py:355
 msgid "q33.child.title"
 msgstr "Чи добре твої вчителі розуміють, як діабет може впливати на навчання?"
 
-#: submissions/sections.py:357
+#: submissions/sections.py:356
 msgid "q33.parent.title"
 msgstr ""
 "Чи добре вчителі вашої дитини розуміють, як діабет може впливати на навчання?"
 
-#: submissions/sections.py:359
+#: submissions/sections.py:358
 msgid "q33.hint"
 msgstr ""
 "Наприклад, коли рівень глюкози в крові занадто високий або низький, це може "
 "вплинути на концентрацію уваги або пам'ять."
 
-#: submissions/sections.py:367
+#: submissions/sections.py:366
 msgid "q34.child.title"
 msgstr "Чи пропонували тобі будь-які розумні корективи через діабет?"
 
-#: submissions/sections.py:368
+#: submissions/sections.py:367
 msgid "q34.parent.title"
 msgstr "Чи пропонували вашій дитині будь-які розумні корективи через діабет?"
 
-#: submissions/sections.py:370
+#: submissions/sections.py:369
 msgid "q34.hint"
 msgstr ""
 "(Наприклад, додатковий час на іспитах, перекуси чи напої під час занять, "
 "шкільний обід без черги)"
 
-#: submissions/sections.py:379
+#: submissions/sections.py:378
 msgid "Social and Emotional Impact"
 msgstr "Соціальний та емоційний вплив"
 
-#: submissions/sections.py:380
+#: submissions/sections.py:379
 msgid "wellbeing.introduction"
 msgstr ""
 "У цьому розділі запитують, як діабет впливає на твоє самопочуття в школі."
 
-#: submissions/sections.py:387
+#: submissions/sections.py:386
 msgid "q35.child.title"
 msgstr ""
 "Чи почувався(-лася) ти колись покинутим(-ою) або інші учні чи шкільні "
 "співробітники ставилися до тебе інакше через діабет?"
 
-#: submissions/sections.py:388
+#: submissions/sections.py:387
 msgid "q35.parent.title"
 msgstr ""
 "Чи траплялося таке, щоб ваша дитина почувалася покинутою або інші учні чи "
 "шкільні співробітники ставилися до неї інакше через діабет?"
 
-#: submissions/sections.py:397
+#: submissions/sections.py:396
 msgid "q36.parent.title"
 msgstr ""
 "Чи доводилося вам втрачати дохід, пропускаючи роботу, щоб відвідати школу "
 "вашої дитини для вирішення питань допомоги з приводу діабету?"
 
-#: submissions/sections.py:399
+#: submissions/sections.py:398
 msgid "q36.hint"
 msgstr ""
 "Наприклад, ви приходили до школи, щоб надати вашій дитині домогу з контролю "
 "діабету, або вашу дитину відправляли зі школи додому через захворювання, "
 "пов'язане з діабетом."
 
-#: submissions/sections.py:407
+#: submissions/sections.py:406
 msgid "q37.child.title"
 msgstr ""
 "Як часто ти відчуваєш тривогу або стрес у зв'язку з діабетом під час занять "
 "у школі?"
 
-#: submissions/sections.py:408
+#: submissions/sections.py:407
 msgid "q37.parent.title"
 msgstr ""
 "Як часто ви відчуваєте тривогу або стрес через діабет у вашої дитини, коли "
 "дитина у школі?"
 
-#: submissions/sections.py:417
+#: submissions/sections.py:416
 msgid "q38.child.title"
 msgstr ""
 "Наскільки добре школа підтримувала тебе в контролі діабета для гарантування "
 "безпеки паралельно з навчанням?"
 
-#: submissions/sections.py:418
+#: submissions/sections.py:417
 msgid "q38.parent.title"
 msgstr ""
 "Наскільки добре школа допомагала вам безпечно контролювати діабет вашої "
 "дитини протягом навчання?"
 
-#: submissions/sections.py:427
+#: submissions/sections.py:426
 msgid "q39.child.title"
 msgstr ""
 "Наскільки добре твоя команда з питань діабету підтримувала тебе в контролі "
 "діабета для гарантування безпеки паралельно з навчанням?"
 
-#: submissions/sections.py:428
+#: submissions/sections.py:427
 msgid "q39.parent.title"
 msgstr ""
 "Наскільки добре ваша команда з питань діабету допомагала вам безпечно "
 "контролювати діабет вашої дитини протягом навчання?"
 
-#: submissions/sections.py:437
+#: submissions/sections.py:436
 msgid "q40.child.title"
 msgstr "Що спрацювало?"
 
-#: submissions/sections.py:438
+#: submissions/sections.py:437
 msgid "q40.parent.title"
 msgstr "Що спрацювало?"
 
-#: submissions/sections.py:440
+#: submissions/sections.py:439
 msgid "q40.hint"
 msgstr "Що було корисним у підтримці в школі для контролю діабету?"
 
-#: submissions/sections.py:447
+#: submissions/sections.py:446
 msgid "q41.child.title"
 msgstr "Що не спрацювало?"
 
-#: submissions/sections.py:448
+#: submissions/sections.py:447
 msgid "q41.parent.title"
 msgstr "Що не спрацювало?"
 
-#: submissions/sections.py:450
+#: submissions/sections.py:449
 msgid "q41.hint"
 msgstr "Які в тебе були труднощі, пов'язані з контролем діабету, у школі?"
 
-#: submissions/sections.py:457
+#: submissions/sections.py:456
 msgid "q42.child.title"
 msgstr ""
 "Що твоя школа або команда з питань діабету могла б робити по-іншому, щоб "
 "твоє шкільне життя було кращим?"
 
-#: submissions/sections.py:458
+#: submissions/sections.py:457
 msgid "q42.parent.title"
 msgstr ""
 "Що б могла зробити ваша школа або команда з питань діабету для покращення "
 "шкільного життя вашої дитини?"
+
+#: submissions/templates/submissions/_form_nav.html:15
+#, python-format
+msgid "Section %(current)s of %(total)s"
+msgstr ""
 
 #: submissions/templates/submissions/clinic_in_region.html:8
 #: submissions/templates/submissions/clinic_or_region.html:8
@@ -920,6 +925,16 @@ msgid ""
 msgstr ""
 "2. Обери лікарню, де розташована діабетична клініка, яку ти зазвичай "
 "відвідуєш."
+
+#: submissions/templates/submissions/clinic_in_region.html:29
+#: submissions/templates/submissions/clinic_or_region.html:25
+#: submissions/templates/submissions/clinic_or_region.html:51
+#: submissions/templates/submissions/front_matter.html:69
+#: submissions/templates/submissions/landing.html:26
+#: submissions/templates/submissions/role_form.html:34
+#: submissions/templates/submissions/section.html:15
+msgid "Next"
+msgstr "ДАЛІ"
 
 #: submissions/templates/submissions/clinic_or_region.html:29
 #: submissions/templates/submissions/clinic_or_region.html:44
@@ -994,14 +1009,14 @@ msgstr ""
 #: submissions/templates/submissions/front_matter.html:27
 msgid "what_will_happen_to_my_answers_local"
 msgstr ""
-"місцевий звіт для вашої команди з питань діабету, щоб допомогти їй "
-"планувати поліпшення послуг;"
+"місцевий звіт для вашої команди з питань діабету, щоб допомогти їй планувати "
+"поліпшення послуг;"
 
 #: submissions/templates/submissions/front_matter.html:28
 msgid "what_will_happen_to_my_answers_national"
 msgstr ""
-"національний звіт для сприяння поліпшенню контролю діабету в більш "
-"широкому географічному контексті."
+"національний звіт для сприяння поліпшенню контролю діабету в більш широкому "
+"географічному контексті."
 
 #: submissions/templates/submissions/front_matter.html:33
 msgid "Who should complete the survey?"
@@ -1035,10 +1050,10 @@ msgstr ""
 "надали саме ви. Якщо ви проходитимете опитування під час перебування у "
 "клініці, вам мають надати можливість зробити це без свідків.\n"
 "\n"
-"Якщо ви бажаєте взяти участь у розіграші ваучера на 50\u00a0фунтів "
-"стерлінгів, ми попросимо вас надати свою адресу електронної пошти. Ваша "
-"адреса електронної пошти не буде пов'язана з вашими відповідями і ми її "
-"видалимо, щойно буде обрано переможця."
+"Якщо ви бажаєте взяти участь у розіграші ваучера на 50 фунтів стерлінгів, ми "
+"попросимо вас надати свою адресу електронної пошти. Ваша адреса електронної "
+"пошти не буде пов'язана з вашими відповідями і ми її видалимо, щойно буде "
+"обрано переможця."
 
 #: submissions/templates/submissions/front_matter.html:52
 msgid "Completing the survey?"
@@ -1047,17 +1062,17 @@ msgstr "Проходження опитування"
 #: submissions/templates/submissions/front_matter.html:56
 msgid "completing_the_survey_content"
 msgstr ""
-"Проходження опитування займе 10—15\u00a0хвилин вашого часу. Ваші відповіді "
-"не збережуться, якщо ви закриєте опитування, не завершивши його. Якщо ви "
-"хочете пройти опитування швидше, натискайте кнопку «ДАЛІ», доки не дійдете "
-"до останньої сторінки, а потім натисніть «НАДІСЛАТИ».\n"
+"Проходження опитування займе 10—15 вилин вашого часу. Ваші відповіді не "
+"збережуться, якщо ви закриєте опитування, не завершивши його. Якщо ви хочете "
+"пройти опитування швидше, натискайте кнопку «ДАЛІ», доки не дійдете до "
+"останньої сторінки, а потім натисніть «НАДІСЛАТИ».\n"
 "\n"
 "Під час опитування обирайте відповіді, які найточніше відображають вашу "
 "ситуацію, або користуйтеся полями для вводу тексту, щоб ввести свою "
 "відповідь на відкриті запитання. Тут немає правильних чи неправильних "
-"відповідей. Просто висловлюйте свою думку і обирайте відповіді, які "
-"здаються вам найбільш підходящими. Надавши відповідь, натисніть кнопку "
-"«ДАЛІ», щоб перейти на наступну сторінку.\n"
+"відповідей. Просто висловлюйте свою думку і обирайте відповіді, які здаються "
+"вам найбільш підходящими. Надавши відповідь, натисніть кнопку «ДАЛІ», щоб "
+"перейти на наступну сторінку.\n"
 "\n"
 "Якщо ви зміните свою думку, ви можете натиснути кнопку «НАЗАД» у нижній "
 "частині сторінки, щоб повернутися на попередню сторінку.\n"
@@ -1081,19 +1096,19 @@ msgstr ""
 "Щоб розпочати опитування, натисніть кнопку «ДАЛІ» нижче:"
 
 #: submissions/templates/submissions/front_matter.html:67
-#: submissions/templates/submissions/question.html:49
+#: submissions/templates/submissions/question.html:51
 #: submissions/templates/submissions/section.html:13
 #: submissions/templates/submissions/tablet-mode.html:22
 msgid "Form navigation"
 msgstr ""
 
-#: submissions/templates/submissions/front_matter.html:69
-msgid "Next"
-msgstr "ДАЛІ"
-
 #: submissions/templates/submissions/landing.html:9
 msgid "Choose your language"
 msgstr "Оберіть мову"
+
+#: submissions/templates/submissions/question.html:52
+msgid "Continue"
+msgstr ""
 
 #: submissions/templates/submissions/role_form.html:12
 msgid "Are you…"
@@ -1107,6 +1122,6 @@ msgstr ""
 msgid "Disable"
 msgstr ""
 
-#: templates/base.html:48
+#: templates/base.html:49
 msgid "Start again"
 msgstr "Розпочати знову"
