@@ -16,8 +16,6 @@ def build_sections():
                 "roles": ["cyp"],
                 "title": {
                     "cyp": _("q4.child.title"),
-                    "parent": _("q4.parent.title"),
-                },
                 "type": "radio",
                 "options": GENDER_CHOICES,
             },

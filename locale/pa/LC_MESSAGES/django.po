@@ -400,10 +400,6 @@ msgstr ""
 msgid "q4.child.title"
 msgstr "ਕੀ ਤੁਸੀਂ ਇਹ ਹੋ…"
 
-#: submissions/sections.py:19
-msgid "q4.parent.title"
-msgstr "ਕੀ ਤੁਸੀਂ ਇਹ ਹੋ…"
-
 #: submissions/sections.py:28
 msgid "q5.parent.title"
 msgstr "ਸ਼ੂਗਰ ਵਾਲੇ ਤੁਹਾਡੇ ਬੱਚੇ ਨਾਲ ਸਬੰਧ"
