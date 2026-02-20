@@ -42,7 +42,7 @@ msgstr "Ukrainian"
 
 #: npda_prem/settings.py:148
 msgid "Punjabi"
-msgstr ""
+msgstr "Punjabi"
 
 #: submissions/models.py:6 submissions/models.py:69 submissions/models.py:96
 #: submissions/models.py:102 submissions/models.py:140
