@@ -6,6 +6,7 @@ from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
 from django.views.decorators.http import require_POST
 from django.utils.translation import gettext as _
+from django.conf import settings
 
 from .clinics import (
     get_all_clinics_sorted,
@@ -17,6 +18,7 @@ from .clinics import (
 )
 from .models import Submission, GENDER_CHOICES, DIABETES_TYPE_CHOICES
 from .sections import build_sections
+from .turnstile import validate_turnstile
 
 
 # Simple fields that map directly from POST key to model field (CharField / TextField).
@@ -286,6 +288,13 @@ def section(request, lang, role, section):
 
 
 def question(request, lang, role, section, question):
+    if request.POST and not request.session.get("not_a_bot"):
+        token = request.POST.get("cf-turnstile-response", "")
+
+        # throws on error
+        validate_turnstile(token, remoteip=request.META.get("REMOTE_ADDR"))
+        request.session["not_a_bot"] = True
+
     sections = [s for s in build_sections() if role in s.get("roles", [])]
 
     section_data = None
@@ -397,6 +406,8 @@ def question(request, lang, role, section, question):
         "lang": lang,
         "role": role,
         "current_clinic_display_name": get_current_clinic_display_name(request.session.get("pz_code")),
+        "turnstile_site_key": settings.TURNSTILE_SITE_KEY,
+        "not_a_bot": request.session.get("not_a_bot", False),
     }
 
     ctx["submission"] = submission
