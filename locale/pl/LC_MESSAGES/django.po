@@ -939,10 +939,10 @@ msgstr "Wróć"
 #: submissions/templates/submissions/clinic_in_region.html:18
 #: submissions/templates/submissions/clinic_or_region.html:18
 msgid ""
-"2. Please select the hospital where the diabetes clinic that you currently "
+"Please select the hospital where the diabetes clinic that you currently "
 "attend is normally held."
 msgstr ""
-"2. Zaznacz szpital, w którym zwykle znajduje się klinika diabetologii, z "
+"Zaznacz szpital, w którym zwykle znajduje się klinika diabetologii, z "
 "której obecnie korzystasz."
 
 #: submissions/templates/submissions/clinic_in_region.html:29
@@ -961,8 +961,8 @@ msgid "or"
 msgstr ""
 
 #: submissions/templates/submissions/clinic_or_region.html:37
-msgid "1. Please select the region where your diabetes clinic is located."
-msgstr "1. Wybierz region, w którym znajduje się Twoja klinika diabetologii."
+msgid "Please select the region where your diabetes clinic is located."
+msgstr "Wybierz region, w którym znajduje się Twoja klinika diabetologii."
 
 #: submissions/templates/submissions/clinic_or_region.html:39
 msgid "Ask your diabetes team if you are unsure."

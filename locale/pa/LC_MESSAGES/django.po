@@ -889,10 +889,10 @@ msgstr "ਵਾਪਸ ਜਾਓ"
 #: submissions/templates/submissions/clinic_in_region.html:18
 #: submissions/templates/submissions/clinic_or_region.html:18
 msgid ""
-"2. Please select the hospital where the diabetes clinic that you currently "
+"Please select the hospital where the diabetes clinic that you currently "
 "attend is normally held."
 msgstr ""
-"2. ਕਿਰਪਾ ਕਰਕੇ ਉਹ ਹਸਪਤਾਲ ਚੁਣੋ ਜਿੱਥੇ ਤੁਹਾਡਾ ਡਾਇਬੀਟੀਜ਼ ਕਲੀਨਿਕ ਆਮ ਤੌਰ 'ਤੇ ਆਯੋਜਿਤ ਕੀਤਾ ਜਾਂਦਾ "
+"ਕਿਰਪਾ ਕਰਕੇ ਉਹ ਹਸਪਤਾਲ ਚੁਣੋ ਜਿੱਥੇ ਤੁਹਾਡਾ ਡਾਇਬੀਟੀਜ਼ ਕਲੀਨਿਕ ਆਮ ਤੌਰ 'ਤੇ ਆਯੋਜਿਤ ਕੀਤਾ ਜਾਂਦਾ "
 "ਹੈ।"
 
 #: submissions/templates/submissions/clinic_in_region.html:29
@@ -911,8 +911,8 @@ msgid "or"
 msgstr "ਜਾਂ"
 
 #: submissions/templates/submissions/clinic_or_region.html:37
-msgid "1. Please select the region where your diabetes clinic is located."
-msgstr "1. ਕਿਰਪਾ ਕਰਕੇ ਉਹ ਖੇਤਰ ਚੁਣੋ ਜਿੱਥੇ ਤੁਹਾਡਾ ਡਾਇਬੀਟੀਜ਼ ਕਲੀਨਿਕ ਸਥਿਤ ਹੈ।"
+msgid "Please select the region where your diabetes clinic is located."
+msgstr "ਕਿਰਪਾ ਕਰਕੇ ਉਹ ਖੇਤਰ ਚੁਣੋ ਜਿੱਥੇ ਤੁਹਾਡਾ ਡਾਇਬੀਟੀਜ਼ ਕਲੀਨਿਕ ਸਥਿਤ ਹੈ।"
 
 #: submissions/templates/submissions/clinic_or_region.html:39
 msgid "Ask your diabetes team if you are unsure."

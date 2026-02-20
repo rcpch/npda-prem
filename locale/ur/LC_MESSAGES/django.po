@@ -920,10 +920,10 @@ msgstr "واپس جائیں"
 #: submissions/templates/submissions/clinic_in_region.html:18
 #: submissions/templates/submissions/clinic_or_region.html:18
 msgid ""
-"2. Please select the hospital where the diabetes clinic that you currently "
+"Please select the hospital where the diabetes clinic that you currently "
 "attend is normally held."
 msgstr ""
-"2. براہ کرم وہ ہسپتال منتخب کریں جہاں ذیابیطس کا وہ کلینک عام طور پر منعقد "
+"براہ کرم وہ ہسپتال منتخب کریں جہاں ذیابیطس کا وہ کلینک عام طور پر منعقد "
 "کیا جاتا ہے جس میں آپ موجودہ طور پر جاتے ہیں۔"
 
 #: submissions/templates/submissions/clinic_in_region.html:29
@@ -942,8 +942,8 @@ msgid "or"
 msgstr ""
 
 #: submissions/templates/submissions/clinic_or_region.html:37
-msgid "1. Please select the region where your diabetes clinic is located."
-msgstr "1. براہ کرم وہ علاقہ منتخب کریں جہاں آپ کا ذیابیطس کلینک واقع ہے۔"
+msgid "Please select the region where your diabetes clinic is located."
+msgstr "براہ کرم وہ علاقہ منتخب کریں جہاں آپ کا ذیابیطس کلینک واقع ہے۔"
 
 #: submissions/templates/submissions/clinic_or_region.html:39
 msgid "Ask your diabetes team if you are unsure."
