@@ -17,6 +17,7 @@ from .clinics import (
     get_pz_code_by_display_name
 )
 from .models import Submission, SubmissionPeriod, GENDER_CHOICES, DIABETES_TYPE_CHOICES
+from .section_navigation import _next_step, traverse_survey, count_remaining_questions
 from .sections import build_sections
 from .turnstile import validate_turnstile
 
@@ -211,32 +212,6 @@ def save_response(request ,submission):
     submission.save()
 
 
-def get_prev_url(request, lang, role, section_data_slug, question_data_id):
-    # Prune history
-    history_before = request.session.get("history", [])
-    history_after = []
-
-    for (section_slug, question_id) in history_before:
-        if section_slug == section_data_slug and question_id == question_data_id:
-            break
-        
-        history_after.append((section_slug, question_id))
-    
-    request.session["history"] = history_after
-
-    if not request.session.get("history"):
-        prev_url = reverse("role_form", kwargs={"lang": lang}) # default to role form if no previous question
-    else:
-        prev_url = reverse("question", kwargs={
-            "lang": lang,
-            "role": role,
-            "section": request.session["history"][-1][0],
-            "question": request.session["history"][-1][1],
-        })
-
-    return prev_url
-
-
 
 def question(request, lang, role, section, question):
     if request.POST and not request.session.get("not_a_bot"):
@@ -248,15 +223,7 @@ def question(request, lang, role, section, question):
 
     sections = [s for s in build_sections() if role in s.get("roles", [])]
 
-    section_data = None
-    section_ix = 0
-
-    for ix, s in enumerate(sections):
-        if s["slug"] == section:
-            section_data = s
-            section_ix = ix
-            break
-
+    section_data = next((s for s in sections if s["slug"] == section), None)
     if section_data is None:
         raise Http404
 
@@ -300,52 +267,43 @@ def question(request, lang, role, section, question):
         
         save_response(request, submission)
 
-        # TODO MRB: my kingdom for a dataclass!
-        history = request.session.get("history", [])
-        history.append((section_data["slug"], question_data["id"]))
-        request.session["history"] = history
+        next_section_slug, next_question_id = _next_step(
+            sections, role, section_data["slug"], question_data["id"], submission
+        )
 
-        next_section_id = section_data["slug"]
-        next_question_id = None
+        if next_question_id is None:
+            submission.submitted = True
+            submission.save()
+            del request.session["submission_id"]
+            return redirect(reverse("confirmation", kwargs={"lang": lang}))
 
-        if "next_question" in question_data:
-            next_question_options = question_data["next_question"]
-            value = request.POST.get(question_data["id"], "")
-
-            if value in next_question_options:
-                next_question_id = next_question_options[value]
-            else:
-                next_question_id = next_question_options["_"]
-        
-        if not next_question_id:
-            if question_ix < len(role_questions) - 1:
-                next_question_id = role_questions[question_ix + 1]["id"]
-            else:
-                if section_ix < len(sections) - 1:
-                    next_section = sections[section_ix + 1]
-                    next_section_id = next_section["slug"]
-                    next_role_questions = [q for q in next_section["questions"] if role in q.get("roles", [])]
-                    next_question_id = next_role_questions[0]["id"]
-                else:
-                    # Last question in last section — submit and go to confirmation
-                    submission.submitted = True
-                    submission.save()
-                    del request.session["submission_id"]
-                    request.session.pop("history", None)
-                    return redirect(reverse("confirmation", kwargs={"lang": lang}))
-
-        next_url = reverse("question", kwargs={
+        return redirect(reverse("question", kwargs={
             "lang": lang,
             "role": role,
-            "section": next_section_id,
+            "section": next_section_slug,
             "question": next_question_id,
-        })
-
-        return redirect(next_url)
+        }))
     
-    prev_url = get_prev_url(request, lang, role, section_data["slug"], question_data["id"])
+    result = traverse_survey(sections, role, section_data["slug"], question_data["id"], submission)
+    if result is None:
+        question_number = 1
+        prev_url = reverse("role_form", kwargs={"lang": lang})
+    else:
+        question_number, prev_s_slug, prev_q_id = result
+        if prev_q_id is None:
+            prev_url = reverse("role_form", kwargs={"lang": lang})
+        else:
+            prev_url = reverse("question", kwargs={
+                "lang": lang,
+                "role": role,
+                "section": prev_s_slug,
+                "question": prev_q_id,
+            })
 
-    # TODO: next prev (and how to measure progress across sections?)
+    question_total = (question_number - 1) + count_remaining_questions(
+        sections, role, section_data["slug"], question_data["id"]
+    )
+
     ctx = {
         "question": question_data,
         "field_value": getattr(submission, question_data["id"]) if submission else None,
@@ -355,6 +313,8 @@ def question(request, lang, role, section, question):
         "current_clinic_display_name": get_current_clinic_display_name(request.session.get("pz_code")),
         "turnstile_site_key": settings.TURNSTILE_SITE_KEY,
         "not_a_bot": request.session.get("not_a_bot", False),
+        "question_number": question_number,
+        "question_total": question_total,
     }
 
     if question_ix == 0:
@@ -386,7 +346,7 @@ def submit(request, lang, role):
 # ---------------------------------------------------------------------------
 
 def reset_session(request):
-    keys_to_clear = ["submission_id", "history"]
+    keys_to_clear = ["submission_id"]
 
     if "tablet_mode" not in request.session:
         keys_to_clear.append("pz_code")

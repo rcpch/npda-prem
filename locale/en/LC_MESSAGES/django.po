@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-20 14:22+0000\n"
+"POT-Creation-Date: 2026-02-21 10:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -374,12 +374,12 @@ msgstr "Parties/celebrations"
 msgid "None of the above"
 msgstr "None of the above"
 
-#: submissions/models.py:184
+#: submissions/models.py:196
 #: submissions/templates/submissions/role_form.html:20
 msgid "A child or young person with diabetes"
 msgstr "A child or young person with diabetes"
 
-#: submissions/models.py:185
+#: submissions/models.py:197
 #: submissions/templates/submissions/role_form.html:26
 msgid "The parent/carer of a child or young person with diabetes"
 msgstr "The parent/carer of a child or young person with diabetes"
@@ -911,7 +911,6 @@ msgstr ""
 #: submissions/templates/submissions/front_matter.html:8
 #: submissions/templates/submissions/question.html:8
 #: submissions/templates/submissions/role_form.html:8
-#: submissions/templates/submissions/section.html:7
 msgid "Go back"
 msgstr "Go back"
 
@@ -930,7 +929,6 @@ msgstr ""
 #: submissions/templates/submissions/front_matter.html:69
 #: submissions/templates/submissions/landing.html:26
 #: submissions/templates/submissions/role_form.html:34
-#: submissions/templates/submissions/section.html:15
 msgid "Next"
 msgstr "Next"
 
@@ -1096,13 +1094,28 @@ msgstr ""
 msgid "Choose your language"
 msgstr "Choose your language"
 
-#: submissions/templates/submissions/question.html:52
+#: submissions/templates/submissions/question.html:23
+#, python-format
+msgid "Question %(n)s of %(total)s"
+msgstr ""
+
+#: submissions/templates/submissions/question.html:58
 msgid "Continue"
 msgstr ""
 
 #: submissions/templates/submissions/role_form.html:12
 msgid "Are you…"
 msgstr "Are you…"
+
+#: submissions/templates/submissions/submissions_closed.html:7
+msgid "submissions_closed.title"
+msgstr "Survey submissions are currently closed"
+
+#: submissions/templates/submissions/submissions_closed.html:10
+msgid "submissions_closed.body"
+msgstr ""
+"This survey is not currently accepting responses. Please check back again "
+"later."
 
 #: submissions/templates/submissions/tablet-mode.html:23
 msgid "Enable"
@@ -1115,11 +1128,3 @@ msgstr "Disable"
 #: templates/base.html:49
 msgid "Start again"
 msgstr "Start again"
-
-#: submissions/templates/submissions/submissions_closed.html:6
-msgid "submissions_closed.title"
-msgstr "Survey submissions are currently closed"
-
-#: submissions/templates/submissions/submissions_closed.html:9
-msgid "submissions_closed.body"
-msgstr "This survey is not currently accepting responses. Please check back again later."
