@@ -17,7 +17,7 @@ from .clinics import (
     get_pz_code_by_display_name
 )
 from .models import Submission, SubmissionPeriod, GENDER_CHOICES, DIABETES_TYPE_CHOICES
-from .section_navigation import _next_step, traverse_survey, count_remaining_questions
+from .section_navigation import _next_step, traverse_survey, count_remaining_questions, find_resume_question
 from .sections import build_sections
 from .turnstile import validate_turnstile
 
@@ -86,6 +86,10 @@ def get_open_submission_period():
 def landing(request):
     if get_open_submission_period() is None:
         return render(request, "submissions/submissions_closed.html")
+
+    if request.session.get("submission_id"):
+        if Submission.objects.filter(pk=request.session["submission_id"], submitted=False).exists():
+            return redirect(reverse("resume_or_new"))
 
     ctx = {
         # Link is modified using JS on the frontend depending on language selected
@@ -197,6 +201,41 @@ def role_form(request, lang):
 
 def confirmation(request, lang):
     return render(request, "submissions/confirmation.html", {"lang": lang})
+
+
+def resume_or_new(request):
+    submission_id = request.session.get("submission_id")
+    if not submission_id:
+        return redirect(reverse("landing"))
+
+    try:
+        submission = Submission.objects.get(pk=submission_id, submitted=False)
+    except Submission.DoesNotExist:
+        if "submission_id" in request.session:
+            del request.session["submission_id"]
+        return redirect(reverse("landing"))
+
+    if request.POST:
+        action = request.POST.get("action")
+
+        if action == "continue":
+            sections = [s for s in build_sections() if submission.role in s.get("roles", [])]
+            result = find_resume_question(sections, submission.role, submission)
+            if result:
+                s_slug, q_id = result
+                return redirect(reverse("question", kwargs={
+                    "lang": submission.language,
+                    "role": submission.role,
+                    "section": s_slug,
+                    "question": q_id,
+                }))
+
+        elif action == "start_new":
+            reset_session(request)
+
+        return redirect(reverse("landing"))
+
+    return render(request, "submissions/resume_or_new.html", {})
 
 
 

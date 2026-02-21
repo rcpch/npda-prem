@@ -16,5 +16,6 @@ urlpatterns = [
     path("<str:lang>/<slug:role>/<slug:section>/<slug:question>/", views.question, name="question"),
     # Done!
     # Other
+    path("resume/", views.resume_or_new, name="resume_or_new"),
     path("start-again/", views.start_again, name="start_again"),
 ]

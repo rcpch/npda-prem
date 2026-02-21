@@ -104,6 +104,39 @@ def traverse_survey(sections, role, target_section_slug, target_question_id, sub
     return None  # target not found
 
 
+def find_resume_question(sections, role, submission):
+    """
+    Walk from the first question using saved answers to follow routing, and
+    return (section_slug, question_id) of the first question that has no saved
+    answer — i.e. where the user should resume.
+    Returns None if all reachable questions are already answered.
+    """
+    s_slug = None
+    q_id = None
+    for s in sections:
+        rqs = [q for q in s["questions"] if role in q.get("roles", [])]
+        if rqs:
+            s_slug = s["slug"]
+            q_id = rqs[0]["id"]
+            break
+
+    visited = set()
+    while q_id is not None:
+        key = (s_slug, q_id)
+        if key in visited:
+            return None
+        visited.add(key)
+
+        val = getattr(submission, q_id, None)
+        is_answered = (len(val) > 0) if isinstance(val, list) else bool(val)
+        if not is_answered:
+            return s_slug, q_id
+
+        s_slug, q_id = _next_step(sections, role, s_slug, q_id, submission)
+
+    return None
+
+
 def count_remaining_questions(sections, role, current_section_slug, current_question_id):
     """
     Count questions from the current (inclusive) to the end, following default

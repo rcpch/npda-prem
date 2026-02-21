@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+
+<form method="post" novalidate>
+    {% csrf_token %}
+
+    <div class="nhsuk-form-group">
+        <fieldset class="nhsuk-fieldset">
+            <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+                <h1 class="nhsuk-fieldset__heading">
+                    {% trans "You have an unfinished survey" %}
+                </h1>
+            </legend>
+            <p class="nhsuk-body">{% trans "Would you like to continue where you left off, or start a new submission?" %}</p>
+            <div class="nhsuk-radios" data-module="nhsuk-radios">
+                <div class="nhsuk-radios__item">
+                    <input class="nhsuk-radios__input" id="action-continue" name="action" type="radio" value="continue" checked>
+                    <label class="nhsuk-label nhsuk-radios__label" for="action-continue">
+                        {% trans "Continue where I left off" %}
+                    </label>
+                </div>
+                <div class="nhsuk-radios__item">
+                    <input class="nhsuk-radios__input" id="action-start-new" name="action" type="radio" value="start_new">
+                    <label class="nhsuk-label nhsuk-radios__label" for="action-start-new">
+                        {% trans "Start a new submission" %}
+                    </label>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+    <nav class="nhsuk-u-margin-top-6">
+        <input type="submit" class="nhsuk-button" value="{% trans 'Continue' %}">
+    </nav>
+</form>
+
+{% endblock %}
