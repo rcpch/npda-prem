@@ -211,80 +211,131 @@ def save_response(request ,submission):
     submission.save()
 
 
+def _get_saved_answer(submission, question_id):
+    """Return the saved scalar answer for routing purposes, or None."""
+    if submission is None:
+        return None
+    val = getattr(submission, question_id, None)
+    # Multi-select JSONFields return lists; they are never routing answers.
+    if isinstance(val, list):
+        return None
+    return val if val else None
+
+
+def _next_step(sections, role, section_slug, question_id, submission=None):
+    """
+    Determine the next (section_slug, question_id) from the current position,
+    using the submission's saved answer to resolve any routing.
+    Returns (None, None) if the current question is the last in the survey.
+    """
+    current_section = next((s for s in sections if s["slug"] == section_slug), None)
+    if current_section is None:
+        return None, None
+
+    role_qs = [q for q in current_section["questions"] if role in q.get("roles", [])]
+    ix = next((i for i, q in enumerate(role_qs) if q["id"] == question_id), None)
+    if ix is None:
+        return None, None
+
+    current_q = role_qs[ix]
+    next_q_id = None
+    next_s_slug = section_slug
+
+    # 1. Routing via next_question map (uses saved answer if available)
+    if "next_question" in current_q:
+        opts = current_q["next_question"]
+        answer = _get_saved_answer(submission, question_id)
+        next_q_id = opts.get(answer) if (answer is not None and answer in opts) else opts.get("_")
+
+    # 2. Sequential: next question in the same section
+    if not next_q_id and ix + 1 < len(role_qs):
+        next_q_id = role_qs[ix + 1]["id"]
+
+    # 3. First question of the next section
+    if not next_q_id:
+        s_ix = next((i for i, s in enumerate(sections) if s["slug"] == section_slug), None)
+        if s_ix is not None:
+            for s in sections[s_ix + 1:]:
+                rqs = [q for q in s["questions"] if role in q.get("roles", [])]
+                if rqs:
+                    next_s_slug = s["slug"]
+                    next_q_id = rqs[0]["id"]
+                    break
+
+    if not next_q_id:
+        return None, None  # end of survey
+
+    # If routing jumped to a question outside the current section, find its section.
+    if next_q_id not in {q["id"] for q in role_qs}:
+        for s in sections:
+            if any(q["id"] == next_q_id for q in s["questions"] if role in q.get("roles", [])):
+                next_s_slug = s["slug"]
+                break
+
+    return next_s_slug, next_q_id
+
+
+def traverse_survey(sections, role, target_section_slug, target_question_id, submission=None):
+    """
+    Walk from the first question using saved answers to follow routing decisions.
+    Returns (position, prev_section_slug, prev_question_id), position is 1-based.
+    Returns None if the target question is unreachable from the start.
+    """
+    current_s_slug = None
+    current_q_id = None
+    for s in sections:
+        rqs = [q for q in s["questions"] if role in q.get("roles", [])]
+        if rqs:
+            current_s_slug = s["slug"]
+            current_q_id = rqs[0]["id"]
+            break
+
+    if current_q_id is None:
+        return None
+
+    position = 0
+    prev_s_slug = None
+    prev_q_id = None
+    visited = set()
+
+    while current_q_id is not None:
+        key = (current_s_slug, current_q_id)
+        if key in visited:
+            return None  # cycle guard
+        visited.add(key)
+        position += 1
+
+        if current_s_slug == target_section_slug and current_q_id == target_question_id:
+            return (position, prev_s_slug, prev_q_id)
+
+        prev_s_slug = current_s_slug
+        prev_q_id = current_q_id
+        current_s_slug, current_q_id = _next_step(
+            sections, role, current_s_slug, current_q_id, submission
+        )
+
+    return None  # target not found
+
+
 def count_remaining_questions(sections, role, current_section_slug, current_question_id):
     """
-    Count questions from the current question (inclusive) to the end of the survey,
-    following default ('_') routing where defined, otherwise sequential order.
-    Questions in sections after the current one are counted linearly.
+    Count questions from the current (inclusive) to the end, following default
+    routing (no saved answers — uses sequential or '_' fallbacks only).
     """
     count = 0
-    reached_current_section = False
+    s_slug = current_section_slug
+    q_id = current_question_id
+    visited = set()
 
-    for s in sections:
-        if s["slug"] == current_section_slug:
-            reached_current_section = True
-
-        if not reached_current_section:
-            continue
-
-        role_questions = [q for q in s["questions"] if role in q.get("roles", [])]
-
-        if s["slug"] == current_section_slug:
-            current_ix = next(
-                (ix for ix, q in enumerate(role_questions) if q["id"] == current_question_id),
-                None,
-            )
-            if current_ix is None:
-                continue
-
-            visited = set()
-            ix = current_ix
-            while 0 <= ix < len(role_questions):
-                q = role_questions[ix]
-                if q["id"] in visited:
-                    break
-                visited.add(q["id"])
-                count += 1
-
-                next_q_id = q.get("next_question", {}).get("_")
-                if next_q_id:
-                    next_ix = next(
-                        (j for j, rq in enumerate(role_questions) if rq["id"] == next_q_id),
-                        None,
-                    )
-                    ix = next_ix if next_ix is not None else ix + 1
-                else:
-                    ix += 1
-        else:
-            count += len(role_questions)
+    while q_id is not None:
+        key = (s_slug, q_id)
+        if key in visited:
+            break
+        visited.add(key)
+        count += 1
+        s_slug, q_id = _next_step(sections, role, s_slug, q_id, submission=None)
 
     return count
-
-
-def get_prev_url(request, lang, role, section_data_slug, question_data_id):
-    # Prune history
-    history_before = request.session.get("history", [])
-    history_after = []
-
-    for (section_slug, question_id) in history_before:
-        if section_slug == section_data_slug and question_id == question_data_id:
-            break
-        
-        history_after.append((section_slug, question_id))
-    
-    request.session["history"] = history_after
-
-    if not request.session.get("history"):
-        prev_url = reverse("role_form", kwargs={"lang": lang}) # default to role form if no previous question
-    else:
-        prev_url = reverse("question", kwargs={
-            "lang": lang,
-            "role": role,
-            "section": request.session["history"][-1][0],
-            "question": request.session["history"][-1][1],
-        })
-
-    return prev_url
 
 
 
@@ -298,15 +349,7 @@ def question(request, lang, role, section, question):
 
     sections = [s for s in build_sections() if role in s.get("roles", [])]
 
-    section_data = None
-    section_ix = 0
-
-    for ix, s in enumerate(sections):
-        if s["slug"] == section:
-            section_data = s
-            section_ix = ix
-            break
-
+    section_data = next((s for s in sections if s["slug"] == section), None)
     if section_data is None:
         raise Http404
 
@@ -350,54 +393,40 @@ def question(request, lang, role, section, question):
         
         save_response(request, submission)
 
-        # TODO MRB: my kingdom for a dataclass!
-        history = request.session.get("history", [])
-        history.append((section_data["slug"], question_data["id"]))
-        request.session["history"] = history
+        next_section_slug, next_question_id = _next_step(
+            sections, role, section_data["slug"], question_data["id"], submission
+        )
 
-        next_section_id = section_data["slug"]
-        next_question_id = None
+        if next_question_id is None:
+            submission.submitted = True
+            submission.save()
+            del request.session["submission_id"]
+            return redirect(reverse("confirmation", kwargs={"lang": lang}))
 
-        if "next_question" in question_data:
-            next_question_options = question_data["next_question"]
-            value = request.POST.get(question_data["id"], "")
-
-            if value in next_question_options:
-                next_question_id = next_question_options[value]
-            else:
-                next_question_id = next_question_options["_"]
-        
-        if not next_question_id:
-            if question_ix < len(role_questions) - 1:
-                next_question_id = role_questions[question_ix + 1]["id"]
-            else:
-                if section_ix < len(sections) - 1:
-                    next_section = sections[section_ix + 1]
-                    next_section_id = next_section["slug"]
-                    next_role_questions = [q for q in next_section["questions"] if role in q.get("roles", [])]
-                    next_question_id = next_role_questions[0]["id"]
-                else:
-                    # Last question in last section — submit and go to confirmation
-                    submission.submitted = True
-                    submission.save()
-                    del request.session["submission_id"]
-                    request.session.pop("history", None)
-                    return redirect(reverse("confirmation", kwargs={"lang": lang}))
-
-        next_url = reverse("question", kwargs={
+        return redirect(reverse("question", kwargs={
             "lang": lang,
             "role": role,
-            "section": next_section_id,
+            "section": next_section_slug,
             "question": next_question_id,
-        })
-
-        return redirect(next_url)
+        }))
     
-    prev_url = get_prev_url(request, lang, role, section_data["slug"], question_data["id"])
+    result = traverse_survey(sections, role, section_data["slug"], question_data["id"], submission)
+    if result is None:
+        question_number = 1
+        prev_url = reverse("role_form", kwargs={"lang": lang})
+    else:
+        question_number, prev_s_slug, prev_q_id = result
+        if prev_q_id is None:
+            prev_url = reverse("role_form", kwargs={"lang": lang})
+        else:
+            prev_url = reverse("question", kwargs={
+                "lang": lang,
+                "role": role,
+                "section": prev_s_slug,
+                "question": prev_q_id,
+            })
 
-    history = request.session.get("history", [])
-    question_number = len(history) + 1
-    question_total = len(history) + count_remaining_questions(
+    question_total = (question_number - 1) + count_remaining_questions(
         sections, role, section_data["slug"], question_data["id"]
     )
 
@@ -443,7 +472,7 @@ def submit(request, lang, role):
 # ---------------------------------------------------------------------------
 
 def reset_session(request):
-    keys_to_clear = ["submission_id", "history"]
+    keys_to_clear = ["submission_id"]
 
     if "tablet_mode" not in request.session:
         keys_to_clear.append("pz_code")
