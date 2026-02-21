@@ -187,28 +187,6 @@ def confirmation(request, lang):
     return render(request, "submissions/confirmation.html", {"lang": lang})
 
 
-def get_idx_prev_next(lang, role, sections, section):
-    slugs = [s["slug"] for s in sections]
-
-    if section not in slugs:
-        raise Http404
-    
-    idx = slugs.index(section)
-
-    prev_url = (
-        reverse("form_section", kwargs={"lang": lang, "role": role, "section": slugs[idx - 1]})
-        if idx > 0
-        else reverse("role_form", kwargs={"lang": lang})
-    )
-
-    next_url = (
-        reverse("form_section", kwargs={"lang": lang, "role": role, "section": slugs[idx + 1]})
-        if idx < len(sections) - 1
-        else None
-    )
-
-    return (idx, prev_url, next_url)
-
 
 def save_response(request ,submission):
     for field in SIMPLE_FIELDS:
@@ -246,44 +224,6 @@ def get_prev_url(request, lang, role, section_data_slug, question_data_id):
         })
 
     return prev_url
-
-
-def section(request, lang, role, section):
-    sections = [s for s in build_sections() if role in s.get("roles", [])]
-
-    section_data = None
-    section_ix = 0
-
-    for ix, s in enumerate(sections):
-        if s["slug"] == section:
-            section_data = s
-            section_ix = ix
-            break
-
-    if section_data is None:
-        raise Http404
-
-    prev_url = get_prev_url(request, lang, role, section_data["slug"], question_data_id=None)
-
-    role_questions = [q for q in section_data["questions"] if role in q.get("roles", [])]
-
-    next_url = reverse("question", kwargs={
-        "lang": lang,
-        "role": role,
-        "section": section_data["slug"],
-        "question": role_questions[0]["id"]
-    })
-
-    ctx = {
-        "section": section_data,
-        "prev_url": prev_url,
-        "next_url": next_url,
-        "lang": lang,
-        "role": role,
-        "current_clinic_display_name": get_current_clinic_display_name(request.session.get("pz_code")),
-    }
-
-    return render(request, f"submissions/section.html", ctx)
 
 
 
@@ -370,8 +310,10 @@ def question(request, lang, role, section, question):
                 next_question_id = role_questions[question_ix + 1]["id"]
             else:
                 if section_ix < len(sections) - 1:
-                    next_section_id = sections[section_ix + 1]["slug"]
-                    next_question_id = None # intro
+                    next_section = sections[section_ix + 1]
+                    next_section_id = next_section["slug"]
+                    next_role_questions = [q for q in next_section["questions"] if role in q.get("roles", [])]
+                    next_question_id = next_role_questions[0]["id"]
                 else:
                     # Last question in last section — submit and go to confirmation
                     submission.submitted = True
@@ -380,19 +322,12 @@ def question(request, lang, role, section, question):
                     request.session.pop("history", None)
                     return redirect(reverse("confirmation", kwargs={"lang": lang}))
 
-        if next_question_id is None:
-            next_url = reverse("section", kwargs={
-                "lang": lang,
-                "role": role,
-                "section": next_section_id,
-            })
-        else:
-            next_url = reverse("question", kwargs={
-                "lang": lang,
-                "role": role,
-                "section": next_section_id,
-                "question": next_question_id,
-            })
+        next_url = reverse("question", kwargs={
+            "lang": lang,
+            "role": role,
+            "section": next_section_id,
+            "question": next_question_id,
+        })
 
         return redirect(next_url)
     
@@ -409,6 +344,10 @@ def question(request, lang, role, section, question):
         "turnstile_site_key": settings.TURNSTILE_SITE_KEY,
         "not_a_bot": request.session.get("not_a_bot", False),
     }
+
+    if question_ix == 0:
+        ctx["section_title"] = section_data["title"]
+        ctx["section_introduction"] = section_data.get("introduction")
 
     ctx["submission"] = submission
 
