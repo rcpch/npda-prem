@@ -42,5 +42,9 @@
 </table>
 
 <br>
-<p><a href="{% url 'admin:submissions_submission_changelist' %}">&laquo; Back to submissions</a></p>
+<p>
+  <a class="button" href="{% url 'admin:submissions_by_pz_code_csv' %}">Download as CSV</a>
+  &nbsp;
+  <a href="{% url 'admin:submissions_submission_changelist' %}">&laquo; Back to submissions</a>
+</p>
 {% endblock %}

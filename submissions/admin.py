@@ -108,6 +108,11 @@ class SubmissionAdmin(admin.ModelAdmin):
                 self.admin_site.admin_view(self.by_pz_code_view),
                 name="submissions_by_pz_code",
             ),
+            path(
+                "by-pz-code/export.csv",
+                self.admin_site.admin_view(self.by_pz_code_csv),
+                name="submissions_by_pz_code_csv",
+            ),
         ]
         return custom + urls
 
@@ -144,3 +149,33 @@ class SubmissionAdmin(admin.ModelAdmin):
         return TemplateResponse(
             request, "admin/submissions_by_pz_code.html", context
         )
+
+    def by_pz_code_csv(self, request):
+        rows = (
+            Submission.objects
+            .exclude(pz_code="")
+            .values("pz_code")
+            .annotate(
+                complete=Count("id", filter=Q(submitted=True)),
+                partial=Count("id", filter=Q(submitted=False)),
+                total=Count("id"),
+            )
+            .order_by("pz_code")
+        )
+
+        response = HttpResponse(content_type="text/csv")
+        response["Content-Disposition"] = 'attachment; filename="submissions_by_pz_code.csv"'
+
+        writer = csv.writer(response)
+        writer.writerow(["PZ Code", "Clinic Name", "Partial", "Complete", "Total"])
+
+        for row in rows:
+            writer.writerow([
+                row["pz_code"],
+                _PZ_NAME.get(row["pz_code"], "Unknown"),
+                row["partial"],
+                row["complete"],
+                row["total"],
+            ])
+
+        return response
