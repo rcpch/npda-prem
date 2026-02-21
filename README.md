@@ -31,6 +31,8 @@ Visit http://localhost:8000/.
 
 ### Bugs
 
+- Start again menu doesn't remember language
+- Role selector doesn't remember language
 - CSRF error clicking "start again" from confirmation screen?
 - Replace uses of "child" in URLs etc with "cyp"
 - Submission closed page only applies on homepage

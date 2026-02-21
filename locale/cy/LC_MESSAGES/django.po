@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-21 10:02+0000\n"
+"POT-Creation-Date: 2026-02-21 16:28+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -476,431 +476,431 @@ msgstr ""
 "Hoffem wybod a ydych chi a'ch plentyn wedi cael cymorth ffurfiol wrth reoli "
 "ei ddiabetes ochr yn ochr â'i addysg."
 
-#: submissions/sections.py:123
+#: submissions/sections.py:124
 msgid "q13.parent.title"
 msgstr ""
 "A oes gan eich plentyn gynllun gofal iechyd ysgol yn benodol ar gyfer ei "
 "ddiabetes?"
 
-#: submissions/sections.py:125
+#: submissions/sections.py:126
 msgid "q13.hint"
 msgstr ""
 "Mae hwn yn gynllun a wnaed gyda'ch tîm diabetes a'r ysgol. Gallai fod yn "
 "gynllun anffurfiol neu'n gynllun ffurfiol, megis Cynlluniau Gofal Iechyd "
 "Unigol (IHP), Cofnod Anghenion, neu Gynlluniau Addysg, Iechyd a Gofal (EHCP)."
 
-#: submissions/sections.py:137
+#: submissions/sections.py:139
 msgid "q14.parent.title"
 msgstr ""
 "A yw'r cynllun gofal iechyd ysgol sydd ar waith yn cwmpasu holl anghenion "
 "diabetes eich plentyn yn yr ysgol?"
 
-#: submissions/sections.py:146
+#: submissions/sections.py:149
 msgid "q15.parent.title"
 msgstr ""
 "A oes gan ysgol eich plentyn gyswllt uniongyrchol â thîm diabetes eich "
 "plentyn os yw angen cyngor neu gymorth?"
 
-#: submissions/sections.py:156
+#: submissions/sections.py:159
 msgid "Managing Diabetes"
 msgstr "Rheoli Diabetes"
 
-#: submissions/sections.py:157
+#: submissions/sections.py:160
 msgid "managing_diabetes.introduction"
 msgstr ""
 "Mae'r adran hon yn gofyn am dy driniaeth diabetes. Byddwn yn defnyddio'r "
 "wybodaeth hon i weld a yw plant a phobl ifanc sy'n defnyddio technolegau "
 "diabetes gwahanol yn cael profiadau gwahanol yn yr ysgol."
 
-#: submissions/sections.py:164
+#: submissions/sections.py:168
 msgid "q16.child.title"
 msgstr ""
 "Wyt ti angen rhoi inswlin neu fonitro glwcos y gwaed i reoli dy ddiabetes yn "
 "yr ysgol?"
 
-#: submissions/sections.py:165
+#: submissions/sections.py:169
 msgid "q16.parent.title"
 msgstr ""
 "A yw eich plentyn angen rhoi inswlin neu fonitro glwcos y gwaed i reoli ei "
 "ddiabetes yn yr ysgol?"
 
-#: submissions/sections.py:178
+#: submissions/sections.py:183
 msgid "q17.child.title"
 msgstr "Sut wyt ti'n rhoi inswlin yn yr ysgol?"
 
-#: submissions/sections.py:179
+#: submissions/sections.py:184
 msgid "q17.parent.title"
 msgstr "Sut mae eich plentyn yn rhoi inswlin yn yr ysgol?"
 
-#: submissions/sections.py:181
+#: submissions/sections.py:186
 msgid "q17.hint"
 msgstr "Dewiswch bob un sy'n berthnasol"
 
-#: submissions/sections.py:189
+#: submissions/sections.py:195
 msgid "q18.child.title"
 msgstr "Sut wyt ti'n monitro lefelau glwcos y gwaed yn yr ysgol?"
 
-#: submissions/sections.py:190
+#: submissions/sections.py:196
 msgid "q18.parent.title"
 msgstr "Sut mae eich plentyn yn monitro lefelau glwcos y gwaed yn yr ysgol?"
 
-#: submissions/sections.py:192
+#: submissions/sections.py:198
 msgid "q18.hint"
 msgstr "Dewiswch bob un sy'n berthnasol"
 
-#: submissions/sections.py:200
+#: submissions/sections.py:207
 msgid "q19.parent.title"
 msgstr "A allwch chi ddilyn/monitro glwcos gwaed eich plentyn o bell?"
 
-#: submissions/sections.py:209
+#: submissions/sections.py:217
 msgid "q20.parent.title"
 msgstr ""
 "A ydych chi'n gallu cysylltu ag ysgol eich plentyn yn ystod y diwrnod os "
 "ydych chi'n pryderu am ei ddiabetes?"
 
-#: submissions/sections.py:218
+#: submissions/sections.py:227
 msgid "q21.child.title"
 msgstr ""
 "Os wyt ti'n defnyddio ffôn clyfar neu oriawr glyfar i fonitro dy ddiabetes, "
 "wyt ti'n gallu ei ddefnyddio yn ystod amser gwersi yn yr ysgol?"
 
-#: submissions/sections.py:219
+#: submissions/sections.py:228
 msgid "q21.parent.title"
 msgstr ""
 "Os yw eich plentyn yn defnyddio ffôn clyfar neu oriawr glyfar i fonitro ei "
 "ddiabetes, a yw'n gallu ei ddefnyddio yn ystod amser gwersi yn yr ysgol?"
 
-#: submissions/sections.py:228
+#: submissions/sections.py:238
 msgid "q22.child.title"
 msgstr ""
 "Wyt ti'n cael cynnig ystafell breifat yn yr ysgol ar gyfer gofal diabetes, "
 "hyd yn oed os dwyt ti ddim yn ei ddefnyddio?"
 
-#: submissions/sections.py:229
+#: submissions/sections.py:239
 msgid "q22.parent.title"
 msgstr ""
 "A yw eich plentyn yn cael cynnig ystafell breifat ar gyfer ei ofal diabetes, "
 "hyd yn oed os nad yw'n ei defnyddio?"
 
-#: submissions/sections.py:231
+#: submissions/sections.py:241
 msgid "q22.hint"
 msgstr ""
 "E.e. Ar gyfer rhoi inswlin, gwirio glwcos y gwaed, newid set pwmp, neu "
 "unrhyw beth arall sy'n ymwneud â gofal diabetes"
 
-#: submissions/sections.py:239
+#: submissions/sections.py:250
 msgid "q23.child.title"
 msgstr "Wyt ti'n cael rheoli diabetes yn y dosbarth os oes angen?"
 
-#: submissions/sections.py:240
+#: submissions/sections.py:251
 msgid "q23.parent.title"
 msgstr "Ydy eich plentyn yn cael rheoli diabetes yn y dosbarth os oes angen?"
 
-#: submissions/sections.py:242
+#: submissions/sections.py:253
 msgid "q23.hint"
 msgstr "Mae hyn yn cynnwys gwirio glwcos y gwaed neu roi inswlin."
 
-#: submissions/sections.py:250
+#: submissions/sections.py:262
 msgid "q24.child.title"
 msgstr ""
 "A oes aelod o staff hyfforddedig yn yr ysgol sy'n gallu dy helpu i reoli "
 "diabetes?"
 
-#: submissions/sections.py:251
+#: submissions/sections.py:263
 msgid "q24.parent.title"
 msgstr ""
 "A oes aelod o staff hyfforddedig yn yr ysgol sy'n gallu helpu eich plentyn i "
 "reoli diabetes?"
 
-#: submissions/sections.py:253
+#: submissions/sections.py:265
 msgid "q24.hint"
 msgstr ""
 "Mae hyn yn cynnwys gwirio glwcos y gwaed, rhoi inswlin, a darparu cymorth "
 "mewn argyfyngau. Dylai'r hyfforddiant hwn gael ei ddarparu gan y tîm "
 "diabetes."
 
-#: submissions/sections.py:261
+#: submissions/sections.py:274
 msgid "q25.child.title"
 msgstr ""
 "Ydy dy ysgol yn darparu digon o wybodaeth am brydau ysgol ar gyfer cyfrif "
 "carbohydradau?"
 
-#: submissions/sections.py:262
+#: submissions/sections.py:275
 msgid "q25.parent.title"
 msgstr ""
 "Ydy ysgol eich plentyn yn darparu digon o wybodaeth am brydau ysgol ar gyfer "
 "cyfrif carbohydradau?"
 
-#: submissions/sections.py:264
+#: submissions/sections.py:277
 msgid "q25.hint"
 msgstr ""
 "Mae hyn yn cynnwys gwybodaeth am gynnwys carbohydradau a meintiau prydau i "
 "dy helpu i addasu inswlin i gyd-fynd."
 
-#: submissions/sections.py:273
+#: submissions/sections.py:286
 msgid "Impact on Education"
 msgstr "Effaith ar Addysg"
 
-#: submissions/sections.py:274
+#: submissions/sections.py:287
 msgid "education_impact.introduction"
 msgstr ""
 "Mae'r adran hon yn holi sut mae dy ddiabetes yn effeithio ar dy addysg."
 
-#: submissions/sections.py:281
+#: submissions/sections.py:295
 msgid "q26.child.title"
 msgstr ""
 "Yn ystod y flwyddyn ddiwethaf, sawl gwaith wyt ti wedi methu un neu ragor o "
 "wersi mewn diwrnod penodol i fynd i apwyntiadau ysbyty sy'n ymwneud â "
 "diabetes?"
 
-#: submissions/sections.py:282
+#: submissions/sections.py:296
 msgid "q26.parent.title"
 msgstr ""
 "Yn ystod y flwyddyn ddiwethaf, sawl gwaith mae eich plentyn wedi methu un "
 "neu ragor o wersi mewn diwrnod penodol i fynd i apwyntiadau ysbyty sy'n "
 "ymwneud â diabetes?"
 
-#: submissions/sections.py:284
+#: submissions/sections.py:298
 msgid "q26.hint"
 msgstr ""
 "Gallai hyn gynnwys apwyntiadau arferol ar gyfer y clinig diabetes neu "
 "apwyntiadau eraill gyda PDSN, deietegydd, seicolegydd ac ati (ddim aros yn "
 "yr ysbyty fel claf mewnol)"
 
-#: submissions/sections.py:291
+#: submissions/sections.py:306
 msgid "q27.child.title"
 msgstr ""
 "Ydy dy absenoldebau ar gyfer apwyntiadau sy'n ymwneud â diabetes yn cael eu "
 "hawdurdodi gan dy ysgol?"
 
-#: submissions/sections.py:292
+#: submissions/sections.py:307
 msgid "q27.parent.title"
 msgstr ""
 "A yw absenoldebau eich plentyn ar gyfer apwyntiadau sy'n ymwneud â diabetes "
 "yn cael eu hawdurdodi gan ei ysgol?"
 
-#: submissions/sections.py:294
+#: submissions/sections.py:309
 msgid "q27.hint"
 msgstr ""
 "Ni ddylai absenoldebau o'r ysgol oherwydd apwyntiadau iechyd gael eu cyfrif "
 "fel rhai anawdurdodedig."
 
-#: submissions/sections.py:302
+#: submissions/sections.py:318
 msgid "q28.child.title"
 msgstr ""
 "Ydy mynd i apwyntiadau clinig diabetes wedi effeithio'n negyddol ar dy "
 "gofnodion presenoldeb yn yr ysgol?"
 
-#: submissions/sections.py:303
+#: submissions/sections.py:319
 msgid "q28.parent.title"
 msgstr ""
 "A yw mynd i apwyntiadau clinig diabetes wedi effeithio'n negyddol ar "
 "gofnodion presenoldeb eich plentyn yn yr ysgol?"
 
-#: submissions/sections.py:305
+#: submissions/sections.py:321
 msgid "q28.hint"
 msgstr ""
 "Ni ddylai absenoldebau o'r ysgol oherwydd apwyntiadau iechyd leihau canran "
 "presenoldeb."
 
-#: submissions/sections.py:313
+#: submissions/sections.py:330
 msgid "q29.child.title"
 msgstr ""
 "Yn ystod y flwyddyn ddiwethaf, sawl diwrnod wyt ti wedi bod yn absennol o'r "
 "ysgol/addysg gartref oherwydd salwch oedd yn gysylltiedig â dy ddiabetes?"
 
-#: submissions/sections.py:314
+#: submissions/sections.py:331
 msgid "q29.parent.title"
 msgstr ""
 "Yn ystod y flwyddyn ddiwethaf, sawl diwrnod mae eich plentyn wedi bod yn "
 "absennol o'r ysgol/addysg gartref oherwydd salwch a oedd yn gysylltiedig â'i "
 "ddiabetes?"
 
-#: submissions/sections.py:316
+#: submissions/sections.py:333
 msgid "q29.hint"
 msgstr ""
 "Gallai hyn gynnwys aros gartref yn lle mynd i'r ysgol neu gynnwys mynd i'r "
 "ysbyty"
 
-#: submissions/sections.py:323
+#: submissions/sections.py:341
 msgid "q30.child.title"
 msgstr ""
 "Wyt ti erioed wedi gorfod symud ysgol oherwydd trafferthion gyda rheoli dy "
 "ddiabetes?"
 
-#: submissions/sections.py:324
+#: submissions/sections.py:342
 msgid "q30.parent.title"
 msgstr ""
 "A yw eich plentyn erioed wedi gorfod symud ysgol oherwydd trafferthion gyda "
 "rheoli ei ddiabetes?"
 
-#: submissions/sections.py:333
+#: submissions/sections.py:352
 msgid "q31.child.title"
 msgstr ""
 "Wyt ti erioed wedi cael dy eithrio o unrhyw un o'r gweithgareddau isod "
 "oherwydd dy ddiabetes?"
 
-#: submissions/sections.py:334
+#: submissions/sections.py:353
 msgid "q31.parent.title"
 msgstr ""
 "A yw eich plentyn erioed wedi cael ei eithrio o unrhyw un o'r gweithgareddau "
 "isod oherwydd ei ddiabetes?"
 
-#: submissions/sections.py:336
+#: submissions/sections.py:355
 msgid "q31.hint"
 msgstr "Dewiswch bob un sy'n berthnasol"
 
-#: submissions/sections.py:344
+#: submissions/sections.py:364
 msgid "q32.child.title"
 msgstr ""
 "Wyt ti'n teimlo bod dy ddiabetes yn effeithio ar dy berfformiad yn yr ysgol/"
 "yn dy addysg gartref?"
 
-#: submissions/sections.py:345
+#: submissions/sections.py:365
 msgid "q32.parent.title"
 msgstr ""
 "A ydych chi'n teimlo bod diabetes eich plentyn yn effeithio ar berfformiad "
 "eich plentyn yn yr ysgol/addysg gartref?"
 
-#: submissions/sections.py:354
+#: submissions/sections.py:375
 msgid "q33.child.title"
 msgstr ""
 "Oes gan dy athrawon ddealltwriaeth dda o sut all diabetes effeithio ar "
 "ddysgu?"
 
-#: submissions/sections.py:355
+#: submissions/sections.py:376
 msgid "q33.parent.title"
 msgstr ""
 "A oes gan athrawon eich plentyn ddealltwriaeth dda o sut all diabetes "
 "effeithio ar ddysgu?"
 
-#: submissions/sections.py:357
+#: submissions/sections.py:378
 msgid "q33.hint"
 msgstr ""
 "E.e. Pan mae lefelau glwcos y gwaed yn rhy uchel neu'n rhy isel, gall "
 "effeithio ar lefelau canolbwyntio neu gof."
 
-#: submissions/sections.py:365
+#: submissions/sections.py:387
 msgid "q34.child.title"
 msgstr ""
 "Wyt ti erioed wedi cael cynnig addasiadau rhesymol oherwydd dy ddiabetes?"
 
-#: submissions/sections.py:366
+#: submissions/sections.py:388
 msgid "q34.parent.title"
 msgstr ""
 "A yw eich plentyn erioed wedi cael cynnig unrhyw addasiadau rhesymol "
 "oherwydd ei ddiabetes?"
 
-#: submissions/sections.py:368
+#: submissions/sections.py:390
 msgid "q34.hint"
 msgstr ""
 "(e.e. amser ychwanegol mewn arholiadau, byrbrydau neu ddiodydd yn ystod "
 "dosbarthiadau, hawl i fynd i flaen ciwiau cinio)"
 
-#: submissions/sections.py:377
+#: submissions/sections.py:399
 msgid "Social and Emotional Impact"
 msgstr "Effaith Gymdeithasol ac Emosiynol"
 
-#: submissions/sections.py:378
+#: submissions/sections.py:400
 msgid "wellbeing.introduction"
 msgstr ""
 "Mae'r adran hon yn holi sut mae dy ddiabetes yn effeithio ar dy lesiant yn "
 "yr ysgol."
 
-#: submissions/sections.py:385
+#: submissions/sections.py:408
 msgid "q35.child.title"
 msgstr ""
 "Wyt ti erioed wedi teimlo dy fod yn cael dy eithrio neu dy drin yn wahanol "
 "gan aelodau o staff neu fyfyrwyr eraill oherwydd dy ddiabetes?"
 
-#: submissions/sections.py:386
+#: submissions/sections.py:409
 msgid "q35.parent.title"
 msgstr ""
 "A yw eich plentyn erioed wedi teimlo ei fod yn cael ei eithrio neu ei drin "
 "yn wahanol gan aelodau o staff neu fyfyrwyr eraill oherwydd ei ddiabetes?"
 
-#: submissions/sections.py:395
+#: submissions/sections.py:419
 msgid "q36.parent.title"
 msgstr ""
 "A ydych chi erioed wedi colli incwm o ganlyniad i gymryd amser i ffwrdd o'r "
 "gwaith i fynd i ysgol eich plentyn ar gyfer gofal diabetes?"
 
-#: submissions/sections.py:397
+#: submissions/sections.py:421
 msgid "q36.hint"
 msgstr ""
 "E.e. Mynd i ysgol eich plentyn ar gyfer rheoli diabetes neu eich plentyn yn "
 "cael ei anfon adref oherwydd salwch sy'n gysylltiedig â diabetes."
 
-#: submissions/sections.py:405
+#: submissions/sections.py:430
 msgid "q37.child.title"
 msgstr ""
 "Pa mor aml wyt ti'n teimlo pryder neu straen sy'n gysylltiedig â dy "
 "ddiabetes pan rwyt ti yn yr ysgol?"
 
-#: submissions/sections.py:406
+#: submissions/sections.py:431
 msgid "q37.parent.title"
 msgstr ""
 "Pa mor aml ydych chi'n teimlo pryder neu straen sy'n gysylltiedig â diabetes "
 "eich plentyn pan mae yn yr ysgol?"
 
-#: submissions/sections.py:415
+#: submissions/sections.py:441
 msgid "q38.child.title"
 msgstr ""
 "Pa mor dda mae dy ysgol wedi dy gefnogi i reoli dy ddiabetes yn ddiogel ochr "
 "yn ochr â dy addysg?"
 
-#: submissions/sections.py:416
+#: submissions/sections.py:442
 msgid "q38.parent.title"
 msgstr ""
 "Pa mor dda mae ysgol eich plentyn wedi eich cefnogi i reoli diabetes eich "
 "plentyn yn ddiogel ochr yn ochr â'i addysg?"
 
-#: submissions/sections.py:425
+#: submissions/sections.py:452
 msgid "q39.child.title"
 msgstr ""
 "Pa mor dda mae dy dîm diabetes wedi dy gefnogi i reoli dy ddiabetes yn "
 "ddiogel ochr yn ochr â dy addysg?"
 
-#: submissions/sections.py:426
+#: submissions/sections.py:453
 msgid "q39.parent.title"
 msgstr ""
 "Pa mor dda mae tîm diabetes eich plentyn wedi eich cefnogi i reoli diabetes "
 "eich plentyn yn ddiogel ochr yn ochr â'i addysg?"
 
-#: submissions/sections.py:435
+#: submissions/sections.py:462
 msgid "q40.child.title"
 msgstr "Beth sydd wedi gweithio'n dda?"
 
-#: submissions/sections.py:436
+#: submissions/sections.py:463
 msgid "q40.parent.title"
 msgstr "Beth sydd wedi gweithio'n dda?"
 
-#: submissions/sections.py:438
+#: submissions/sections.py:465
 msgid "q40.hint"
 msgstr ""
 "Beth sydd wedi bod yn ddefnyddiol am y cymorth rwyt ti wedi ei gael yn yr "
 "ysgol i reoli dy ddiabetes?"
 
-#: submissions/sections.py:445
+#: submissions/sections.py:472
 msgid "q41.child.title"
 msgstr "Beth sydd heb weithio'n dda?"
 
-#: submissions/sections.py:446
+#: submissions/sections.py:473
 msgid "q41.parent.title"
 msgstr "Beth sydd heb weithio'n dda?"
 
-#: submissions/sections.py:448
+#: submissions/sections.py:475
 msgid "q41.hint"
 msgstr ""
 "Pa anawsterau wyt ti wedi eu hwynebu wrth reoli dy ddiabetes yn yr ysgol?"
 
-#: submissions/sections.py:455
+#: submissions/sections.py:482
 msgid "q42.child.title"
 msgstr ""
 "Beth allai dy ysgol neu dy dîm diabetes ei wneud yn wahanol i wella dy "
 "brofiad?"
 
-#: submissions/sections.py:456
+#: submissions/sections.py:483
 msgid "q42.parent.title"
 msgstr ""
 "Beth allai eich ysgol neu eich tîm diabetes ei wneud yn wahanol i wella "
@@ -1103,7 +1103,25 @@ msgid "Question %(n)s of %(total)s"
 msgstr ""
 
 #: submissions/templates/submissions/question.html:58
+#: submissions/templates/submissions/resume_or_new.html:35
 msgid "Continue"
+msgstr ""
+
+#: submissions/templates/submissions/resume_or_new.html:13
+msgid "You have an unfinished survey"
+msgstr ""
+
+#: submissions/templates/submissions/resume_or_new.html:16
+msgid ""
+"Would you like to continue where you left off, or start a new submission?"
+msgstr ""
+
+#: submissions/templates/submissions/resume_or_new.html:21
+msgid "Continue where I left off"
+msgstr ""
+
+#: submissions/templates/submissions/resume_or_new.html:27
+msgid "Start a new submission"
 msgstr ""
 
 #: submissions/templates/submissions/role_form.html:12
@@ -1126,6 +1144,6 @@ msgstr ""
 msgid "Disable"
 msgstr ""
 
-#: templates/base.html:49
+#: templates/base.html:51
 msgid "Start again"
 msgstr "Dechrau eto"

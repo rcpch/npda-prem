@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-21 10:02+0000\n"
+"POT-Creation-Date: 2026-02-21 16:28+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -473,432 +473,432 @@ msgstr ""
 "ہم یہ جاننا چاہیں گے کہ آیا آپ اور آپ کے بچے کو اپنی تعلیم کے ساتھ ساتھ اپنی "
 "ذیابیطس کے انتظام میں باضابطہ مدد ملی ہے۔"
 
-#: submissions/sections.py:123
+#: submissions/sections.py:124
 msgid "q13.parent.title"
 msgstr ""
 "کیا آپ کے بچے کا خاص طور پر اپنی ذیابیطس کے لیے اسکول کا نگہداشت صحت کا پلان "
 "ہے؟"
 
-#: submissions/sections.py:125
+#: submissions/sections.py:126
 msgid "q13.hint"
 msgstr ""
 "یہ آپ کی ذیابیطس ٹیم اور اسکول کے ساتھ بنایا گیا پلان ہوتا ہے۔ یہ ایک غیر "
 "رسمی یا رسمی منصوبہ ہو سکتا ہے، جیسے نگہداشت صحت کے انفرادی پلانز (IHP)، "
 "ضروریات کے ریکارڈز، یا تعلیم، صحت اور نگہداشت کے پلانز (EHCP)۔"
 
-#: submissions/sections.py:137
+#: submissions/sections.py:139
 msgid "q14.parent.title"
 msgstr ""
 "کیا اسکول کا نگہداشت صحت کا موجودہ پلان اسکول میں آپ کے بچے کی ذیابیطس کی "
 "تمام ضروریات کو پورا کرتا ہے؟"
 
-#: submissions/sections.py:146
+#: submissions/sections.py:149
 msgid "q15.parent.title"
 msgstr ""
 "کیا آپ کے بچے کے اسکول کا آپ کے بچے کی ذیابیطس ٹیم کے ساتھ براہ راست رابطہ "
 "ہے اگر انہیں مشورہ یا مدد کی ضرورت ہو؟"
 
-#: submissions/sections.py:156
+#: submissions/sections.py:159
 msgid "Managing Diabetes"
 msgstr "ذیابیطس کا انتظام"
 
-#: submissions/sections.py:157
+#: submissions/sections.py:160
 msgid "managing_diabetes.introduction"
 msgstr ""
 "یہ سیکشن آپ کے ذیابیطس کے علاج کے بارے میں پوچھتا ہے۔ ہم ان معلومات کو یہ "
 "دیکھنے کے لیے استعمال کریں گے کہ آیا ذیابیطس کی مختلف ٹیکنالوجیز استعمال "
 "کرنے والے بچوں اور نوجوانوں کے اسکول میں تجربات مختلف ہوتے ہیں۔"
 
-#: submissions/sections.py:164
+#: submissions/sections.py:168
 msgid "q16.child.title"
 msgstr ""
 "کیا آپ کو اسکول میں اپنی ذیابیطس کا انتظام کرنے کے لیے انسولین لگانے یا خون "
 "میں گلوکوز کی نگرانی کرنے کی ضرورت ہوتی ہے؟"
 
-#: submissions/sections.py:165
+#: submissions/sections.py:169
 msgid "q16.parent.title"
 msgstr ""
 "کیا آپ کے بچے کو اسکول میں اپنی ذیابیطس کا انتظام کرنے کے لیے انسولین لگانے "
 "یا خون میں گلوکوز کی نگرانی کرنے کی ضرورت ہوتی ہے؟"
 
-#: submissions/sections.py:178
+#: submissions/sections.py:183
 msgid "q17.child.title"
 msgstr "آپ اسکول میں انسولین کیسے لگاتے ہیں؟"
 
-#: submissions/sections.py:179
+#: submissions/sections.py:184
 msgid "q17.parent.title"
 msgstr "آپ کا بچہ اسکول میں انسولین کیسے لگاتا ہے؟"
 
-#: submissions/sections.py:181
+#: submissions/sections.py:186
 msgid "q17.hint"
 msgstr "ان سب کو منتخب کریں جن کا اطلاق ہوتا ہے"
 
-#: submissions/sections.py:189
+#: submissions/sections.py:195
 msgid "q18.child.title"
 msgstr "آپ اسکول میں خون میں گلوکوز کی سطح کو کیسے مانیٹر کرتے ہیں؟"
 
-#: submissions/sections.py:190
+#: submissions/sections.py:196
 msgid "q18.parent.title"
 msgstr "آپ کا بچہ اسکول میں خون میں گلوکوز کی سطح کو کیسے مانیٹر کرتا ہے؟"
 
-#: submissions/sections.py:192
+#: submissions/sections.py:198
 msgid "q18.hint"
 msgstr "ان سب کو منتخب کریں جن کا اطلاق ہوتا ہے"
 
-#: submissions/sections.py:200
+#: submissions/sections.py:207
 msgid "q19.parent.title"
 msgstr "کیا آپ فاصلے سے اپنے بچے کے خون میں گلوکوز کی جانچ/نگرانی کر سکتے ہیں؟"
 
-#: submissions/sections.py:209
+#: submissions/sections.py:217
 msgid "q20.parent.title"
 msgstr ""
 "کیا آپ دن میں اپنے بچے کے اسکول سے رابطہ کر سکتے ہیں، اگر آپ کو اس کی "
 "ذیابیطس کے بارے میں تشویش ہو؟"
 
-#: submissions/sections.py:218
+#: submissions/sections.py:227
 msgid "q21.child.title"
 msgstr ""
 "اگر آپ اپنی ذیابیطس کے انتظام کے لیے اسمارٹ فون یا اسمارٹ واچ استعمال کرتے "
 "ہیں، تو کیا آپ اسکول میں اسباق کے دوران اسے استعمال کر سکتے ہیں؟"
 
-#: submissions/sections.py:219
+#: submissions/sections.py:228
 msgid "q21.parent.title"
 msgstr ""
 "اگر آپ کا بچہ اپنی ذیابیطس کے انتظام کے لیے اسمارٹ فون یا اسمارٹ واچ استعمال "
 "کرتا ہے، تو کیا وہ اسکول میں اسباق کے دوران اسے استعمال کر سکتا ہے؟"
 
-#: submissions/sections.py:228
+#: submissions/sections.py:238
 msgid "q22.child.title"
 msgstr ""
 "کیا آپ کو ذیابیطس کی دیکھ بھال کے لیے اسکول میں ایک نجی کمرہ پیش کیا جاتا "
 "ہے، چاہے آپ اسے استعمال نہ بھی کرتے ہوں؟"
 
-#: submissions/sections.py:229
+#: submissions/sections.py:239
 msgid "q22.parent.title"
 msgstr ""
 "کیا آپ کے بچے کو ذیابیطس کی دیکھ بھال کے لیے اسکول میں ایک نجی کمرہ پیش کیا "
 "جاتا ہے، چاہے وہ اسے استعمال نہ بھی کرتے ہوں؟"
 
-#: submissions/sections.py:231
+#: submissions/sections.py:241
 msgid "q22.hint"
 msgstr ""
 "مثلاً انسولین کے انتظام، خون میں گلوکوز کی جانچ، پمپ سیٹ تبدیل کرنے، یا "
 "ذیابیطس کی دیکھ بھال سے متعلق کسی اور چیز کے لیے"
 
-#: submissions/sections.py:239
+#: submissions/sections.py:250
 msgid "q23.child.title"
 msgstr ""
 "اگر ضرورت ہو تو کیا آپ کو کلاس روم میں ذیابیطس کا انتظام کرنے کی اجازت ہے؟"
 
-#: submissions/sections.py:240
+#: submissions/sections.py:251
 msgid "q23.parent.title"
 msgstr ""
 "ضرورت پڑنے پر کیا آپ کے بچے کو کلاس روم میں ذیابیطس کا انتظام کرنے کی اجازت "
 "ہوتی ہے؟"
 
-#: submissions/sections.py:242
+#: submissions/sections.py:253
 msgid "q23.hint"
 msgstr "اس میں خون میں گلوکوز کی جانچ یا انسولین دینا شامل ہے۔"
 
-#: submissions/sections.py:250
+#: submissions/sections.py:262
 msgid "q24.child.title"
 msgstr ""
 "کیا اسکول میں عملے کا کوئی تربیت یافتہ رکن ہے جو ذیابیطس کے انتظام میں آپ کی "
 "مدد کر سکتا ہے؟"
 
-#: submissions/sections.py:251
+#: submissions/sections.py:263
 msgid "q24.parent.title"
 msgstr ""
 "کیا اسکول میں عملے کا کوئی ایسا تربیت یافتہ رکن ہے جو ذیابیطس کے انتظام میں "
 "آپ کے بچے کی مدد کر سکتا ہو؟"
 
-#: submissions/sections.py:253
+#: submissions/sections.py:265
 msgid "q24.hint"
 msgstr ""
 "اس میں خون میں گلوکوز کی جانچ، انسولین لگانا اور ہنگامی حالات میں مدد فراہم "
 "کرنا شامل ہے۔ یہ تربیت ذیابیطس ٹیم کو فراہم کرنی چاہیئے۔"
 
-#: submissions/sections.py:261
+#: submissions/sections.py:274
 msgid "q25.child.title"
 msgstr ""
 "کیا آپ کا اسکول کارب کی گنتی کے لیے اسکول کے کھانوں کے بارے میں کافی معلومات "
 "فراہم کرتا ہے؟"
 
-#: submissions/sections.py:262
+#: submissions/sections.py:275
 msgid "q25.parent.title"
 msgstr ""
 "کیا آپ کے بچے کا اسکول کارب کی گنتی کے لیے اسکول کے کھانوں کے بارے میں کافی "
 "معلومات فراہم کرتا ہے؟"
 
-#: submissions/sections.py:264
+#: submissions/sections.py:277
 msgid "q25.hint"
 msgstr ""
 "اس میں کاربوہائیڈریٹ کے مواد اور پورشن کے سائز کے بارے میں معلومات شامل ہوتی "
 "ہیں تاکہ آپ کو مماثل بنانے کے لیے انسولین کم یا زیادہ کرنے میں مدد ملے۔"
 
-#: submissions/sections.py:273
+#: submissions/sections.py:286
 msgid "Impact on Education"
 msgstr "تعلیم پر اثر"
 
-#: submissions/sections.py:274
+#: submissions/sections.py:287
 msgid "education_impact.introduction"
 msgstr ""
 "یہ سیکشن اس بارے میں پوچھتا ہے کہ آپ کی ذیابیطس آپ کی تعلیم کو کیسے متاثر "
 "کرتی ہے۔"
 
-#: submissions/sections.py:281
+#: submissions/sections.py:295
 msgid "q26.child.title"
 msgstr ""
 "پچھلے سال میں، آپ نے کتنی مرتبہ ذیابیطس سے متعلقہ ہسپتال کی اپوائنٹمنٹس میں "
 "شرکت کے لیے کسی دن میں ایک یا زیادہ اسباق چھوڑے ہیں؟"
 
-#: submissions/sections.py:282
+#: submissions/sections.py:296
 msgid "q26.parent.title"
 msgstr ""
 "پچھلے سال میں، آپ کے بچے نے کتنی مرتبہ ذیابیطس سے متعلقہ ہسپتال کی "
 "اپوائنٹمنٹس میں شرکت کے لیے کسی دن میں ایک یا زیادہ اسباق چھوڑے ہیں؟"
 
-#: submissions/sections.py:284
+#: submissions/sections.py:298
 msgid "q26.hint"
 msgstr ""
 "اس میں ذیابیطس کے کلینک کے لیے معمول کی اپوائنٹمنٹس یا PDSN، ماہرِ غذائیت، "
 "ماہرِ نفسیات وغیرہ کے ساتھ دیگر اپوائنٹمنٹس شامل ہو سکتی ہیں (ہسپتال میں "
 "داخلے کا دورانیہ نہیں)"
 
-#: submissions/sections.py:291
+#: submissions/sections.py:306
 msgid "q27.child.title"
 msgstr ""
 "کیا آپ کی ذیابیطس سے متعلقہ اپوائنٹمنٹس کے لیے غیر حاضری کو آپ کے اسکول کی "
 "طرف سے مجاز قرار دیا جاتا ہے؟"
 
-#: submissions/sections.py:292
+#: submissions/sections.py:307
 msgid "q27.parent.title"
 msgstr ""
 "کیا آپ کے بچے کی ذیابیطس سے متعلقہ اپوائنٹمنٹس کے لیے غیر حاضری کو اس کے "
 "اسکول کی طرف سے مجاز قرار دیا جاتا ہے؟"
 
-#: submissions/sections.py:294
+#: submissions/sections.py:309
 msgid "q27.hint"
 msgstr ""
 "صحت سے متعلق اپوائنٹمنٹس کی وجہ سے اسکول کی غیر حاضریوں کو غیر مجاز قرار "
 "نہیں دیا جانا چاہیئے۔"
 
-#: submissions/sections.py:302
+#: submissions/sections.py:318
 msgid "q28.child.title"
 msgstr ""
 "کیا ذیابیطس کے کلینک کی اپوائنٹمنٹس میں شرکت سے آپ کے اسکول میں حاضری کے "
 "ریکارڈ پر منفی اثر پڑا ہے؟"
 
-#: submissions/sections.py:303
+#: submissions/sections.py:319
 msgid "q28.parent.title"
 msgstr ""
 "کیا ذیابیطس کے کلینک کی اپوائنٹمنٹس میں شرکت سے آپ کے بچے کے اسکول میں حاضری "
 "کے ریکارڈ پر منفی اثر پڑا ہے؟"
 
-#: submissions/sections.py:305
+#: submissions/sections.py:321
 msgid "q28.hint"
 msgstr ""
 "صحت سے متعلق اپوائنٹمنٹس میں شرکت کی وجہ سے اسکول کی غیر حاضریوں کو حاضری کا "
 "فیصد کم نہیں کرنا چاہیئے۔"
 
-#: submissions/sections.py:313
+#: submissions/sections.py:330
 msgid "q29.child.title"
 msgstr ""
 "پچھلے سال میں، آپ کی ذیابیطس سے متعلق بیماری کی وجہ سے اسکول میں / گھر پر "
 "تعلیم سے کتنے دن چھٹی ہوئی؟"
 
-#: submissions/sections.py:314
+#: submissions/sections.py:331
 msgid "q29.parent.title"
 msgstr ""
 "پچھلے سال میں، آپ کے بچے کی ذیابیطس سے متعلق بیماری کی وجہ سے اسکول میں / "
 "گھر پر تعلیم سے کتنے دن چھٹی ہوئی؟"
 
-#: submissions/sections.py:316
+#: submissions/sections.py:333
 msgid "q29.hint"
 msgstr ""
 "اس میں اسکول سے چھٹی کر کے گھر پر رہنا یا اسپتال میں داخلہ شامل ہوسکتا ہے"
 
-#: submissions/sections.py:323
+#: submissions/sections.py:341
 msgid "q30.child.title"
 msgstr ""
 "کیا آپ کو اپنی ذیابیطس کے انتظام میں مشکلات کی وجہ سے کبھی اسکول بدلنا پڑا "
 "ہے؟"
 
-#: submissions/sections.py:324
+#: submissions/sections.py:342
 msgid "q30.parent.title"
 msgstr ""
 "کیا آپ کے بچے کو اپنی ذیابیطس کے انتظام میں مشکلات کی وجہ سے کبھی اسکول "
 "بدلنا پڑا ہے؟"
 
-#: submissions/sections.py:333
+#: submissions/sections.py:352
 msgid "q31.child.title"
 msgstr ""
 "کیا آپ کو اپنی ذیابیطس کی وجہ سے کبھی بھی اسکول کی ذیل میں سے کسی ایک سرگرمی "
 "سے خارج کیا گیا ہے؟"
 
-#: submissions/sections.py:334
+#: submissions/sections.py:353
 msgid "q31.parent.title"
 msgstr ""
 "کیا آپ کے بچے کو اپنی ذیابیطس کی وجہ سے کبھی بھی اسکول کی ذیل میں سے کسی ایک "
 "سرگرمی سے خارج کیا گیا ہے؟"
 
-#: submissions/sections.py:336
+#: submissions/sections.py:355
 msgid "q31.hint"
 msgstr "ان سب کو منتخب کریں جن کا اطلاق ہوتا ہے"
 
-#: submissions/sections.py:344
+#: submissions/sections.py:364
 msgid "q32.child.title"
 msgstr ""
 "کیا آپ محسوس کرتے ہیں کہ آپ کی ذیابیطس اسکول میں / گھر پر تعلیم میں آپ کی "
 "کارکردگی کو متاثر کرتی ہے؟"
 
-#: submissions/sections.py:345
+#: submissions/sections.py:365
 msgid "q32.parent.title"
 msgstr ""
 "کیا آپ محسوس کرتے ہیں کہ آپ کے بچے کی ذیابیطس اسکول میں / گھر پر تعلیم میں "
 "اس کی کارکردگی کو متاثر کرتی ہے؟"
 
-#: submissions/sections.py:354
+#: submissions/sections.py:375
 msgid "q33.child.title"
 msgstr ""
 "کیا آپ کے اساتذہ کو اس بات کی اچھی سمجھ ہے کہ ذیابیطس سیکھنے کو کیسے متاثر "
 "کر سکتی ہے؟"
 
-#: submissions/sections.py:355
+#: submissions/sections.py:376
 msgid "q33.parent.title"
 msgstr ""
 "کیا آپ کے بچے کے اساتذہ کو اس بات کی اچھی سمجھ ہے کہ ذیابیطس سیکھنے کو کیسے "
 "متاثر کر سکتی ہے؟"
 
-#: submissions/sections.py:357
+#: submissions/sections.py:378
 msgid "q33.hint"
 msgstr ""
 "مثال کے طور پر جب خون میں گلوکوز بہت زیادہ یا کم ہو تو یہ ارتکاز یا یادداشت "
 "کو متاثر کر سکتا ہے۔"
 
-#: submissions/sections.py:365
+#: submissions/sections.py:387
 msgid "q34.child.title"
 msgstr ""
 "کیا آپ کو آپ کی ذیابیطس کی وجہ سے کبھی کسی معقول ایڈجسٹمنٹ کی پیشکش کی گئی "
 "ہے؟"
 
-#: submissions/sections.py:366
+#: submissions/sections.py:388
 msgid "q34.parent.title"
 msgstr ""
 "کیا آپ کے بچے کو اس کی ذیابیطس کی وجہ سے کبھی کسی معقول ایڈجسٹمنٹ کی پیشکش "
 "کی گئی ہے؟"
 
-#: submissions/sections.py:368
+#: submissions/sections.py:390
 msgid "q34.hint"
 msgstr ""
 "(مثلاً امتحانات میں اضافی وقت، کلاس کے دوران اسنیکس یا مشروبات، دوپہر کے "
 "کھانے کی قطاروں کے لیے تیز رفتار پاس)"
 
-#: submissions/sections.py:377
+#: submissions/sections.py:399
 msgid "Social and Emotional Impact"
 msgstr "سماجی اور جذباتی اثرات"
 
-#: submissions/sections.py:378
+#: submissions/sections.py:400
 msgid "wellbeing.introduction"
 msgstr ""
 "یہ سیکشن اس بارے میں پوچھتا ہے کہ آپ کی ذیابیطس اسکول میں آپ کی بہبود کو "
 "کیسے متاثر کرتی ہے۔"
 
-#: submissions/sections.py:385
+#: submissions/sections.py:408
 msgid "q35.child.title"
 msgstr ""
 "کیا آپ نے کبھی ایسا محسوس کیا ہے کہ آپ کی ذیابیطس کی وجہ سے دوسرے طالب علموں "
 "یا عملے کے ارکان نے آپ کو مسترد کیا ہو یا آپ سے مختلف سلوک کیا ہو؟"
 
-#: submissions/sections.py:386
+#: submissions/sections.py:409
 msgid "q35.parent.title"
 msgstr ""
 "کیا آپ کے بچے نے کبھی ایسا محسوس کیا ہے کہ اس کی ذیابیطس کی وجہ سے دوسرے "
 "طالب علموں یا عملے کے ارکان نے اسے مسترد کیا ہو یا اس سے مختلف سلوک کیا ہو؟"
 
-#: submissions/sections.py:395
+#: submissions/sections.py:419
 msgid "q36.parent.title"
 msgstr ""
 "کیا آپ نے ذیابیطس کی دیکھ بھال کے لیے اپنے بچے کے اسکول جانے کے لیے کام سے "
 "وقت نکالنے کی وجہ سے کبھی آمدنی کا نقصان اٹھایا ہے؟"
 
-#: submissions/sections.py:397
+#: submissions/sections.py:421
 msgid "q36.hint"
 msgstr ""
 "مثلاً ذیابیطس کے انتظام کے لیے اپنے بچے کے اسکول میں جانا پڑے یا آپ کے بچے کو "
 "ذیابیطس سے متعلقہ بیماری کی وجہ سے گھر بھیجا جائے۔"
 
-#: submissions/sections.py:405
+#: submissions/sections.py:430
 msgid "q37.child.title"
 msgstr ""
 "جب آپ اسکول میں ہوتے ہیں تو آپ اپنی ذیابیطس سے متعلق کتنی کثرت سے اضطراب یا "
 "تناؤ محسوس کرتے ہیں؟"
 
-#: submissions/sections.py:406
+#: submissions/sections.py:431
 msgid "q37.parent.title"
 msgstr ""
 "جب آپ کا بچہ اسکول میں ہوتا ہے تو آپ اس کی ذیابیطس سے متعلق کتنی کثرت سے "
 "اضطراب یا تناؤ محسوس کرتے ہیں؟"
 
-#: submissions/sections.py:415
+#: submissions/sections.py:441
 msgid "q38.child.title"
 msgstr ""
 "آپ کے اسکول نے آپ کی تعلیم کے ساتھ ساتھ آپ کی ذیابیطس کا محفوظ طریقے سے "
 "انتظام کرنے میں آپ کی کتنی مدد کی ہے؟"
 
-#: submissions/sections.py:416
+#: submissions/sections.py:442
 msgid "q38.parent.title"
 msgstr ""
 "آپ کے اسکول نے آپ کے بچے کی تعلیم کے ساتھ ساتھ اس کی ذیابیطس کا محفوظ طریقے "
 "سے انتظام کرنے میں آپ کی کتنی مدد کی ہے؟"
 
-#: submissions/sections.py:425
+#: submissions/sections.py:452
 msgid "q39.child.title"
 msgstr ""
 "آپ کی ذیابیطس ٹیم نے آپ کی تعلیم کے ساتھ ساتھ آپ کی ذیابیطس کا محفوظ طریقے "
 "سے انتظام کرنے میں آپ کی کتنی مدد کی ہے؟"
 
-#: submissions/sections.py:426
+#: submissions/sections.py:453
 msgid "q39.parent.title"
 msgstr ""
 "آپ کی ذیابیطس ٹیم نے آپ کے بچے کی تعلیم کے ساتھ ساتھ اس کی ذیابیطس کا محفوظ "
 "طریقے سے انتظام کرنے میں آپ کی کتنی مدد کی ہے؟"
 
-#: submissions/sections.py:435
+#: submissions/sections.py:462
 msgid "q40.child.title"
 msgstr "کیا فائدہ مند رہا ہے؟"
 
-#: submissions/sections.py:436
+#: submissions/sections.py:463
 msgid "q40.parent.title"
 msgstr "کیا فائدہ مند رہا ہے؟"
 
-#: submissions/sections.py:438
+#: submissions/sections.py:465
 msgid "q40.hint"
 msgstr ""
 "اپنی ذیابیطس کا انتظام کرنے کے لیے اسکول میں آپ کو جو مدد ملتی ہے اس کے بارے "
 "میں کیا مددگار ثابت ہوا ہے؟"
 
-#: submissions/sections.py:445
+#: submissions/sections.py:472
 msgid "q41.child.title"
 msgstr "کیا فائدہ مند نہیں رہا ہے؟"
 
-#: submissions/sections.py:446
+#: submissions/sections.py:473
 msgid "q41.parent.title"
 msgstr "کیا فائدہ مند نہیں رہا ہے؟"
 
-#: submissions/sections.py:448
+#: submissions/sections.py:475
 msgid "q41.hint"
 msgstr ""
 "اسکول میں اپنی ذیابیطس کا انتظام کرنے میں آپ کو کن مشکلات کا سامنا کرنا پڑا "
 "ہے؟"
 
-#: submissions/sections.py:455
+#: submissions/sections.py:482
 msgid "q42.child.title"
 msgstr ""
 "آپ کا اسکول یا ذیابیطس ٹیم آپ کے تجربے کو بہتر بنانے کے لیے کون سا مختلف "
 "طریقہ اختیار کر سکتے ہیں؟"
 
-#: submissions/sections.py:456
+#: submissions/sections.py:483
 msgid "q42.parent.title"
 msgstr ""
 "آپ کا اسکول یا ذیابیطس ٹیم آپ کے بچے کے تجربے کو بہتر بنانے کے لیے کون سا "
@@ -1099,7 +1099,25 @@ msgid "Question %(n)s of %(total)s"
 msgstr ""
 
 #: submissions/templates/submissions/question.html:58
+#: submissions/templates/submissions/resume_or_new.html:35
 msgid "Continue"
+msgstr ""
+
+#: submissions/templates/submissions/resume_or_new.html:13
+msgid "You have an unfinished survey"
+msgstr ""
+
+#: submissions/templates/submissions/resume_or_new.html:16
+msgid ""
+"Would you like to continue where you left off, or start a new submission?"
+msgstr ""
+
+#: submissions/templates/submissions/resume_or_new.html:21
+msgid "Continue where I left off"
+msgstr ""
+
+#: submissions/templates/submissions/resume_or_new.html:27
+msgid "Start a new submission"
 msgstr ""
 
 #: submissions/templates/submissions/role_form.html:12
@@ -1122,6 +1140,6 @@ msgstr ""
 msgid "Disable"
 msgstr ""
 
-#: templates/base.html:49
+#: templates/base.html:51
 msgid "Start again"
 msgstr "دوبارہ شروع کریں"
