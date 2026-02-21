@@ -356,6 +356,7 @@ def question(request, lang, role, section, question):
         "not_a_bot": request.session.get("not_a_bot", False),
         "question_number": question_number,
         "question_total": question_total,
+        "optional": question_data.get("optional", False),
     }
 
     if question_ix == 0:

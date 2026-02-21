@@ -119,6 +119,7 @@ def build_sections():
             {
                 "id": "q13_healthcare_plan",
                 "roles": ["parent"],
+                "optional": True,
                 "title": {
                     "parent": _("q13.parent.title"),
                 },
@@ -133,6 +134,7 @@ def build_sections():
             {
                 "id": "q14_plan_coverage",
                 "roles": ["parent"],
+                "optional": True,
                 "title": {
                     "parent": _("q14.parent.title"),
                 },
@@ -142,6 +144,7 @@ def build_sections():
             {
                 "id": "q15_school_contact",
                 "roles": ["parent"],
+                "optional": True,
                 "title": {
                     "parent": _("q15.parent.title"),
                 },
@@ -160,6 +163,7 @@ def build_sections():
             {
                 "id": "q16_insulin_or_monitor",
                 "roles": ["cyp", "parent"],
+                "optional": True,
                 "title": {
                     "cyp": _("q16.child.title"),
                     "parent": _("q16.parent.title"),
@@ -174,6 +178,7 @@ def build_sections():
             {
                 "id": "q17_insulin_method",
                 "roles": ["cyp", "parent"],
+                "optional": True,
                 "title": {
                     "cyp": _("q17.child.title"),
                     "parent": _("q17.parent.title"),
@@ -185,6 +190,7 @@ def build_sections():
             {
                 "id": "q18_glucose_monitoring",
                 "roles": ["cyp", "parent"],
+                "optional": True,
                 "title": {
                     "cyp": _("q18.child.title"),
                     "parent": _("q18.parent.title"),
@@ -196,6 +202,7 @@ def build_sections():
             {
                 "id": "q19_remote_monitoring",
                 "roles": ["parent"],
+                "optional": True,
                 "title": {
                     "parent": _("q19.parent.title"),
                 },
@@ -205,6 +212,7 @@ def build_sections():
             {
                 "id": "q20_contact_school",
                 "roles": ["parent"],
+                "optional": True,
                 "title": {
                     "parent": _("q20.parent.title"),
                 },
@@ -214,6 +222,7 @@ def build_sections():
             {
                 "id": "q21_smartphone_use",
                 "roles": ["cyp", "parent"],
+                "optional": True,
                 "title": {
                     "cyp": _("q21.child.title"),
                     "parent": _("q21.parent.title"),
@@ -224,6 +233,7 @@ def build_sections():
             {
                 "id": "q22_private_room",
                 "roles": ["cyp", "parent"],
+                "optional": True,
                 "title": {
                     "cyp": _("q22.child.title"),
                     "parent": _("q22.parent.title"),
@@ -235,6 +245,7 @@ def build_sections():
             {
                 "id": "q23_classroom_management",
                 "roles": ["cyp", "parent"],
+                "optional": True,
                 "title": {
                     "cyp": _("q23.child.title"),
                     "parent": _("q23.parent.title"),
@@ -246,6 +257,7 @@ def build_sections():
             {
                 "id": "q24_trained_staff",
                 "roles": ["cyp", "parent"],
+                "optional": True,
                 "title": {
                     "cyp": _("q24.child.title"),
                     "parent": _("q24.parent.title"),
@@ -257,6 +269,7 @@ def build_sections():
             {
                 "id": "q25_carb_counting",
                 "roles": ["cyp", "parent"],
+                "optional": True,
                 "title": {
                     "cyp": _("q25.child.title"),
                     "parent": _("q25.parent.title"),
@@ -277,6 +290,7 @@ def build_sections():
             {
                 "id": "q26_missed_lessons",
                 "roles": ["cyp", "parent"],
+                "optional": True,
                 "title": {
                     "cyp": _("q26.child.title"),
                     "parent": _("q26.parent.title"),
@@ -287,6 +301,7 @@ def build_sections():
             {
                 "id": "q27_absences_authorised",
                 "roles": ["cyp", "parent"],
+                "optional": True,
                 "title": {
                     "cyp": _("q27.child.title"),
                     "parent": _("q27.parent.title"),
@@ -298,6 +313,7 @@ def build_sections():
             {
                 "id": "q28_attendance_impacted",
                 "roles": ["cyp", "parent"],
+                "optional": True,
                 "title": {
                     "cyp": _("q28.child.title"),
                     "parent": _("q28.parent.title"),
@@ -309,6 +325,7 @@ def build_sections():
             {
                 "id": "q29_days_off",
                 "roles": ["cyp", "parent"],
+                "optional": True,
                 "title": {
                     "cyp": _("q29.child.title"),
                     "parent": _("q29.parent.title"),
@@ -319,6 +336,7 @@ def build_sections():
             {
                 "id": "q30_moved_schools",
                 "roles": ["cyp", "parent"],
+                "optional": True,
                 "title": {
                     "cyp": _("q30.child.title"),
                     "parent": _("q30.parent.title"),
@@ -329,6 +347,7 @@ def build_sections():
             {
                 "id": "q31_excluded_activities",
                 "roles": ["cyp", "parent"],
+                "optional": True,
                 "title": {
                     "cyp": _("q31.child.title"),
                     "parent": _("q31.parent.title"),
@@ -340,6 +359,7 @@ def build_sections():
             {
                 "id": "q32_performance_impact",
                 "roles": ["cyp", "parent"],
+                "optional": True,
                 "title": {
                     "cyp": _("q32.child.title"),
                     "parent": _("q32.parent.title"),
@@ -350,6 +370,7 @@ def build_sections():
             {
                 "id": "q33_teacher_understanding",
                 "roles": ["cyp", "parent"],
+                "optional": True,
                 "title": {
                     "cyp": _("q33.child.title"),
                     "parent": _("q33.parent.title"),
@@ -361,6 +382,7 @@ def build_sections():
             {
                 "id": "q34_reasonable_adjustments",
                 "roles": ["cyp", "parent"],
+                "optional": True,
                 "title": {
                     "cyp": _("q34.child.title"),
                     "parent": _("q34.parent.title"),
@@ -381,6 +403,7 @@ def build_sections():
             {
                 "id": "q35_felt_left_out",
                 "roles": ["cyp", "parent"],
+                "optional": True,
                 "title": {
                     "cyp": _("q35.child.title"),
                     "parent": _("q35.parent.title"),
@@ -391,6 +414,7 @@ def build_sections():
             {
                 "id": "q36_lost_income",
                 "roles": ["parent"],
+                "optional": True,
                 "title": {
                     "parent": _("q36.parent.title"),
                 },
@@ -401,6 +425,7 @@ def build_sections():
             {
                 "id": "q37_anxiety_frequency",
                 "roles": ["cyp", "parent"],
+                "optional": True,
                 "title": {
                     "cyp": _("q37.child.title"),
                     "parent": _("q37.parent.title"),
@@ -411,6 +436,7 @@ def build_sections():
             {
                 "id": "q38_school_support",
                 "roles": ["cyp", "parent"],
+                "optional": True,
                 "title": {
                     "cyp": _("q38.child.title"),
                     "parent": _("q38.parent.title"),
@@ -421,6 +447,7 @@ def build_sections():
             {
                 "id": "q39_team_support",
                 "roles": ["cyp", "parent"],
+                "optional": True,
                 "title": {
                     "cyp": _("q39.child.title"),
                     "parent": _("q39.parent.title"),
