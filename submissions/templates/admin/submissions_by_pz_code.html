@@ -1,10 +1,10 @@
 {% extends "admin/base_site.html" %}
 {% load i18n %}
 
-{% block title %}Submissions by PZ code{% endblock %}
+{% block title %}Submissions by PZ code{% if period %} – {{ period.year }}{% endif %}{% endblock %}
 
 {% block content %}
-<h2>Submissions by PZ code</h2>
+<h2>Submissions by PZ code{% if period %} – {{ period.year }}{% endif %}</h2>
 
 <table>
 <thead>
@@ -42,5 +42,9 @@
 </table>
 
 <br>
-<p><a href="{% url 'admin:submissions_submission_changelist' %}">&laquo; Back to submissions</a></p>
+<p>
+  <a class="button" href="{% url 'admin:submissions_by_pz_code_csv' %}{% if period %}?period_id={{ period.pk }}{% endif %}">Download as CSV</a>
+  &nbsp;
+  <a href="{% url 'admin:submissions_submissionperiod_changelist' %}">&laquo; Back to submission periods</a>
+</p>
 {% endblock %}

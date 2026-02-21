@@ -1,10 +1,10 @@
 import csv
 
-from django.contrib import admin
+from django.contrib import admin, messages
 from django.db.models import Count, Q
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.template.response import TemplateResponse
-from django.urls import path
+from django.urls import path, reverse
 
 from .clinics import CLINICS
 from .models import Submission, SubmissionPeriod
@@ -91,12 +91,27 @@ class SubmissionPeriodAdmin(admin.ModelAdmin):
     list_display = ("year", "is_open")
     list_editable = ("is_open",)
     ordering = ("-year",)
+    actions = ["view_submissions_by_pz_code"]
+
+    @admin.action(description="View submissions by PZ code")
+    def view_submissions_by_pz_code(self, request, queryset):
+        if queryset.count() != 1:
+            self.message_user(
+                request,
+                "Please select exactly one submission period.",
+                level=messages.ERROR,
+            )
+            return
+
+        period = queryset.first()
+        url = reverse("admin:submissions_by_pz_code") + f"?period_id={period.pk}"
+        return HttpResponseRedirect(url)
 
 
 @admin.register(Submission)
 class SubmissionAdmin(admin.ModelAdmin):
-    list_display = ("id", "role", "language", "submitted", "pz_code", "q38_school_support", "created_at")
-    list_filter = ("role", "submitted", "language", "pz_code")
+    list_display = ("id", "role", "language", "submitted", "pz_code", "submission_period", "created_at")
+    list_filter = ("role", "submitted", "language", "pz_code", "submission_period")
     readonly_fields = ("created_at", "updated_at")
     actions = [export_as_csv]
 
@@ -108,13 +123,39 @@ class SubmissionAdmin(admin.ModelAdmin):
                 self.admin_site.admin_view(self.by_pz_code_view),
                 name="submissions_by_pz_code",
             ),
+            path(
+                "by-pz-code/export.csv",
+                self.admin_site.admin_view(self.by_pz_code_csv),
+                name="submissions_by_pz_code_csv",
+            ),
         ]
         return custom + urls
 
+    def _get_period(self, request):
+        """Return (SubmissionPeriod, year_str) for the given request, or (None, None)."""
+        period_id = request.GET.get("period_id")
+        if period_id:
+            try:
+                return SubmissionPeriod.objects.get(pk=period_id), None
+            except SubmissionPeriod.DoesNotExist:
+                pass
+        return None, None
+
     def by_pz_code_view(self, request):
+        period = None
+        period_id = request.GET.get("period_id")
+        if period_id:
+            try:
+                period = SubmissionPeriod.objects.get(pk=period_id)
+            except SubmissionPeriod.DoesNotExist:
+                pass
+
+        qs = Submission.objects.exclude(pz_code="")
+        if period:
+            qs = qs.filter(submission_period=period)
+
         rows = (
-            Submission.objects
-            .exclude(pz_code="")
+            qs
             .values("pz_code")
             .annotate(
                 complete=Count("id", filter=Q(submitted=True)),
@@ -135,12 +176,61 @@ class SubmissionAdmin(admin.ModelAdmin):
             "total": sum(r["total"] for r in data),
         }
 
+        title = "Submissions by PZ code"
+        if period:
+            title += f" – {period.year}"
+
         context = {
             **self.admin_site.each_context(request),
-            "title": "Submissions by PZ code",
+            "title": title,
             "rows": data,
             "totals": totals,
+            "period": period,
         }
         return TemplateResponse(
             request, "admin/submissions_by_pz_code.html", context
         )
+
+    def by_pz_code_csv(self, request):
+        period = None
+        period_id = request.GET.get("period_id")
+        if period_id:
+            try:
+                period = SubmissionPeriod.objects.get(pk=period_id)
+            except SubmissionPeriod.DoesNotExist:
+                pass
+
+        qs = Submission.objects.exclude(pz_code="")
+        if period:
+            qs = qs.filter(submission_period=period)
+
+        rows = (
+            qs
+            .values("pz_code")
+            .annotate(
+                complete=Count("id", filter=Q(submitted=True)),
+                partial=Count("id", filter=Q(submitted=False)),
+                total=Count("id"),
+            )
+            .order_by("pz_code")
+        )
+
+        year_suffix = f"_{period.year}" if period else ""
+        filename = f"submissions_by_pz_code{year_suffix}.csv"
+
+        response = HttpResponse(content_type="text/csv")
+        response["Content-Disposition"] = f'attachment; filename="{filename}"'
+
+        writer = csv.writer(response)
+        writer.writerow(["PZ Code", "Clinic Name", "Partial", "Complete", "Total"])
+
+        for row in rows:
+            writer.writerow([
+                row["pz_code"],
+                _PZ_NAME.get(row["pz_code"], "Unknown"),
+                row["partial"],
+                row["complete"],
+                row["total"],
+            ])
+
+        return response
