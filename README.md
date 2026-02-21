@@ -14,9 +14,6 @@ Visit http://localhost:8000/.
 
 ### UI questions
 
-- If you follow the start link and you already have a session, send you back to the last unanswered question?
-  - Yes, to a "continue" page. Translations required.
-- Page for when submission is closed
 - Are we correctly applying aria disabled?
 - Where should we apply aria labels (e.g. aria-label="Form navigation")
 - Critical accessibility results (mostly around lack of contrast in RCPCH colours the AI picked)
