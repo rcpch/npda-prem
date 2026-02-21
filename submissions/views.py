@@ -94,19 +94,21 @@ def landing(request):
     ctx = {
         # Link is modified using JS on the frontend depending on language selected
         "next_url": reverse("front_matter", kwargs={"lang": "en"}),
+        "current_clinic_display_name": get_current_clinic_display_name(request.session.get("pz_code")),
     }
-
-    if request.session.get("tablet_mode") and "pz_code" in request.session:
-        # TODO MRB: need to show front matter then jump straight to role form
-        ctx["next_url"] = reverse("role_form", kwargs={"lang": "en"})
 
     return render(request, "submissions/landing.html", ctx)
 
 
 def front_matter(request, lang):
+    if request.session.get("tablet_mode") and "pz_code" in request.session:
+        next_url = reverse("role_form", kwargs={"lang": lang})
+    else:
+        next_url = reverse("clinic_or_region", kwargs={"lang": lang})
+
     ctx = {
         "lang": lang,
-        "next_url": reverse("clinic_or_region", kwargs={"lang": lang}),
+        "next_url": next_url,
     }
 
     return render(request, "submissions/front_matter.html", ctx)
