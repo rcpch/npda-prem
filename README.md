@@ -16,11 +16,6 @@ Visit http://localhost:8000/.
 
 - If you follow the start link and you already have a session, send you back to the last unanswered question?
   - Yes, to a "continue" page. Translations required.
-- Section blurbs - standalone page or above first question?
-  - For example - the impact on education one provides no content the title doesn't already?
-  - Go back currently skips over these - is that ok?
-- Should we have some kind of progress tracking (section X of X, question X of X)?
-  - Would probably require new translations?
 - Email in footer?
 - Page for when submission is closed
 - Are we correctly applying aria disabled?
@@ -45,6 +40,12 @@ Visit http://localhost:8000/.
 - CSRF error clicking "start again" from confirmation screen?
 - Replace uses of "child" in URLs etc with "cyp"
 - Make all questions optional except demographic questions
+
+### Improvements
+
+- Section tracking is more complexity than it's worth
+  - Just include the section intro and description as optional fields on a question
+  - Doesn't matter if the section is in the URL path 
 
 
 ### Infra
