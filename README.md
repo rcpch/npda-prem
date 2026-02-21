@@ -32,12 +32,11 @@ Visit http://localhost:8000/.
 
 ### Bugs
 
-- Missing front matter in tablet mode (and also missing unit name in the footer)
 - CSRF error clicking "start again" from confirmation screen?
 - Replace uses of "child" in URLs etc with "cyp"
 - Make all questions optional except demographic questions
 - Submission closed page only applies on homepage
-  - I think that;s probably fine actually? Allow people to keep filling in the survey when we close it
+  - I think that's probably fine actually? Allow people to keep filling in the survey when we close it
 
 ### Improvements
 
