@@ -7,7 +7,7 @@ from django.template.response import TemplateResponse
 from django.urls import path
 
 from .clinics import CLINICS
-from .models import Submission
+from .models import Submission, SubmissionPeriod
 
 # Build a lookup: pz_code → first familiar clinic name
 _PZ_NAME = {}
@@ -84,6 +84,13 @@ def export_as_csv(modeladmin, request, queryset):
         writer.writerow(row)
 
     return response
+
+
+@admin.register(SubmissionPeriod)
+class SubmissionPeriodAdmin(admin.ModelAdmin):
+    list_display = ("year", "is_open")
+    list_editable = ("is_open",)
+    ordering = ("-year",)
 
 
 @admin.register(Submission)

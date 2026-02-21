@@ -16,7 +16,7 @@ from .clinics import (
     get_all_clinic_display_names,
     get_pz_code_by_display_name
 )
-from .models import Submission, GENDER_CHOICES, DIABETES_TYPE_CHOICES
+from .models import Submission, SubmissionPeriod, GENDER_CHOICES, DIABETES_TYPE_CHOICES
 from .sections import build_sections
 from .turnstile import validate_turnstile
 
@@ -74,7 +74,18 @@ JSON_FIELDS = [
 # Pages
 # ---------------------------------------------------------------------------
 
+def get_open_submission_period():
+    """Return the latest SubmissionPeriod if it is open, otherwise None."""
+    period = SubmissionPeriod.objects.order_by("-year").first()
+    if period and period.is_open:
+        return period
+    return None
+
+
 def landing(request):
+    if get_open_submission_period() is None:
+        return render(request, "submissions/submissions_closed.html")
+
     ctx = {
         # Link is modified using JS on the frontend depending on language selected
         "next_url": reverse("front_matter", kwargs={"lang": "en"}),
@@ -283,6 +294,7 @@ def question(request, lang, role, section, question):
                 role=role,
                 language=lang,
                 pz_code=request.session.get("pz_code", ""),
+                submission_period=get_open_submission_period(),
             )
             request.session["submission_id"] = submission.pk
         

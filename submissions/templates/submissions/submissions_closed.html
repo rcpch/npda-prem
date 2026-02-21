@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+<div class="nhsuk-panel nhsuk-panel--confirmation">
+  <h1 class="nhsuk-panel__title">
+    {% trans "submissions_closed.title" %}
+  </h1>
+  <div class="nhsuk-panel__body">
+    {% trans "submissions_closed.body" %}
+  </div>
+</div>
+{% endblock %}

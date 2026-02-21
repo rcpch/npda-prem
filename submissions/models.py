@@ -178,6 +178,18 @@ EXCLUDED_ACTIVITIES_OPTIONS = [
 ]
 
 
+class SubmissionPeriod(models.Model):
+    year = models.IntegerField(unique=True)
+    is_open = models.BooleanField(default=False)
+
+    class Meta:
+        ordering = ["-year"]
+
+    def __str__(self):
+        status = "open" if self.is_open else "closed"
+        return f"{self.year} ({status})"
+
+
 class Submission(models.Model):
     # -- Metadata ----------------------------------------------------------
     ROLE_CHOICES = [
@@ -193,6 +205,15 @@ class Submission(models.Model):
 
     # -- PZ code (canonical clinic identifier from selection flow) ----------
     pz_code = models.CharField(max_length=10, blank=True, default="")
+
+    # -- Submission period -------------------------------------------------
+    submission_period = models.ForeignKey(
+        SubmissionPeriod,
+        null=True,
+        blank=True,
+        on_delete=models.SET_NULL,
+        related_name="submissions",
+    )
 
     # -- Q3: Are you… (maps to role field above) ---------------------------
 
