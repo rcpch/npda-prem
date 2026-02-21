@@ -211,6 +211,56 @@ def save_response(request ,submission):
     submission.save()
 
 
+def count_remaining_questions(sections, role, current_section_slug, current_question_id):
+    """
+    Count questions from the current question (inclusive) to the end of the survey,
+    following default ('_') routing where defined, otherwise sequential order.
+    Questions in sections after the current one are counted linearly.
+    """
+    count = 0
+    reached_current_section = False
+
+    for s in sections:
+        if s["slug"] == current_section_slug:
+            reached_current_section = True
+
+        if not reached_current_section:
+            continue
+
+        role_questions = [q for q in s["questions"] if role in q.get("roles", [])]
+
+        if s["slug"] == current_section_slug:
+            current_ix = next(
+                (ix for ix, q in enumerate(role_questions) if q["id"] == current_question_id),
+                None,
+            )
+            if current_ix is None:
+                continue
+
+            visited = set()
+            ix = current_ix
+            while 0 <= ix < len(role_questions):
+                q = role_questions[ix]
+                if q["id"] in visited:
+                    break
+                visited.add(q["id"])
+                count += 1
+
+                next_q_id = q.get("next_question", {}).get("_")
+                if next_q_id:
+                    next_ix = next(
+                        (j for j, rq in enumerate(role_questions) if rq["id"] == next_q_id),
+                        None,
+                    )
+                    ix = next_ix if next_ix is not None else ix + 1
+                else:
+                    ix += 1
+        else:
+            count += len(role_questions)
+
+    return count
+
+
 def get_prev_url(request, lang, role, section_data_slug, question_data_id):
     # Prune history
     history_before = request.session.get("history", [])
@@ -345,7 +395,12 @@ def question(request, lang, role, section, question):
     
     prev_url = get_prev_url(request, lang, role, section_data["slug"], question_data["id"])
 
-    # TODO: next prev (and how to measure progress across sections?)
+    history = request.session.get("history", [])
+    question_number = len(history) + 1
+    question_total = len(history) + count_remaining_questions(
+        sections, role, section_data["slug"], question_data["id"]
+    )
+
     ctx = {
         "question": question_data,
         "field_value": getattr(submission, question_data["id"]) if submission else None,
@@ -355,6 +410,8 @@ def question(request, lang, role, section, question):
         "current_clinic_display_name": get_current_clinic_display_name(request.session.get("pz_code")),
         "turnstile_site_key": settings.TURNSTILE_SITE_KEY,
         "not_a_bot": request.session.get("not_a_bot", False),
+        "question_number": question_number,
+        "question_total": question_total,
     }
 
     if question_ix == 0:

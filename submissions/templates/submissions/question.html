@@ -20,6 +20,7 @@
     <div class="nhsuk-form-group">
         <fieldset class="nhsuk-fieldset">
             <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m">
+                <span class="nhsuk-caption-m">{% blocktrans with n=question_number total=question_total %}Question {{ n }} of {{ total }}{% endblocktrans %}</span>
                 {{ question.title }}
             </legend>
             {% if question.hint %}

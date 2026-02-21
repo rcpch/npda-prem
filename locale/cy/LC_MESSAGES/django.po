@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-20 14:22+0000\n"
+"POT-Creation-Date: 2026-02-21 10:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -375,12 +375,12 @@ msgstr "Partïon/dathliadau"
 msgid "None of the above"
 msgstr "Dim un o'r uchod"
 
-#: submissions/models.py:184
+#: submissions/models.py:196
 #: submissions/templates/submissions/role_form.html:20
 msgid "A child or young person with diabetes"
 msgstr "Blentyn neu berson ifanc sydd â diabetes"
 
-#: submissions/models.py:185
+#: submissions/models.py:197
 #: submissions/templates/submissions/role_form.html:26
 msgid "The parent/carer of a child or young person with diabetes"
 msgstr "Rhiant/gofalwr i blentyn neu berson ifanc sydd â diabetes"
@@ -916,7 +916,6 @@ msgstr ""
 #: submissions/templates/submissions/front_matter.html:8
 #: submissions/templates/submissions/question.html:8
 #: submissions/templates/submissions/role_form.html:8
-#: submissions/templates/submissions/section.html:7
 msgid "Go back"
 msgstr "Mynd yn ôl"
 
@@ -935,7 +934,6 @@ msgstr ""
 #: submissions/templates/submissions/front_matter.html:69
 #: submissions/templates/submissions/landing.html:26
 #: submissions/templates/submissions/role_form.html:34
-#: submissions/templates/submissions/section.html:15
 msgid "Next"
 msgstr "Nesaf"
 
@@ -1099,13 +1097,26 @@ msgstr ""
 msgid "Choose your language"
 msgstr "Dewiswch eich iaith"
 
-#: submissions/templates/submissions/question.html:52
+#: submissions/templates/submissions/question.html:23
+#, python-format
+msgid "Question %(n)s of %(total)s"
+msgstr ""
+
+#: submissions/templates/submissions/question.html:58
 msgid "Continue"
 msgstr ""
 
 #: submissions/templates/submissions/role_form.html:12
 msgid "Are you…"
 msgstr "Ydych chi’n…"
+
+#: submissions/templates/submissions/submissions_closed.html:7
+msgid "submissions_closed.title"
+msgstr ""
+
+#: submissions/templates/submissions/submissions_closed.html:10
+msgid "submissions_closed.body"
+msgstr ""
 
 #: submissions/templates/submissions/tablet-mode.html:23
 msgid "Enable"
@@ -1118,11 +1129,3 @@ msgstr ""
 #: templates/base.html:49
 msgid "Start again"
 msgstr "Dechrau eto"
-
-#: submissions/templates/submissions/submissions_closed.html:6
-msgid "submissions_closed.title"
-msgstr ""
-
-#: submissions/templates/submissions/submissions_closed.html:9
-msgid "submissions_closed.body"
-msgstr ""
