@@ -66,16 +66,17 @@
     var form = btn.closest('form');
     var qid = '{{ question.id }}';
     var qtype = '{{ question.type }}';
+    var optional = {{ optional|yesno:"true,false" }};
 
     function hasAnswer() {
+      if (optional || qtype === 'textarea') {
+        return true;
+      }
       if (qtype === 'radio') {
         return form.querySelector('input[name="' + qid + '"]:checked') !== null;
       }
       if (qtype === 'checkbox') {
         return form.querySelector('input[name="' + qid + '"][type="checkbox"]:checked') !== null;
-      }
-      if (qtype === 'textarea') {
-        return true;
       }
       if (qtype === 'number') {
         var el = form.querySelector('[name="' + qid + '"]');
