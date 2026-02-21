@@ -49,11 +49,15 @@
               <input type="submit" class="nhsuk-button nhsuk-button--secondary nhsuk-button--small" value="{% trans "Start again" %}" />
             </form>
           </li>
+          <li class="nhsuk-footer__list-item">
+            <a href="mailto:npda@rcpch.ac.uk">npda@rcpch.ac.uk</a>
+            <a href="tel:02070926137">020 7092 6137</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            &copy; Royal College of Paediatrics and Child Health 2026
+            {% block footer-text-extra %}{% endblock %}
+          </li>
         </ul>
-        <p class="nhsuk-body-s">
-          &copy; Royal College of Paediatrics and Child Health 2026
-          {% block footer-text-extra %}{% endblock %}
-        </p>
       </div>
     </div>
   </footer>

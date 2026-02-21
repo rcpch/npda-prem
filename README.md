@@ -16,7 +16,6 @@ Visit http://localhost:8000/.
 
 - If you follow the start link and you already have a session, send you back to the last unanswered question?
   - Yes, to a "continue" page. Translations required.
-- Email in footer?
 - Page for when submission is closed
 - Are we correctly applying aria disabled?
 - Where should we apply aria labels (e.g. aria-label="Form navigation")
@@ -40,6 +39,8 @@ Visit http://localhost:8000/.
 - CSRF error clicking "start again" from confirmation screen?
 - Replace uses of "child" in URLs etc with "cyp"
 - Make all questions optional except demographic questions
+- Submission closed page only applies on homepage
+  - I think that;s probably fine actually? Allow people to keep filling in the survey when we close it
 
 ### Improvements
 
