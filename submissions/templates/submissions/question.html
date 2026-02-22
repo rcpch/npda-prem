@@ -55,7 +55,7 @@
     {% include "submissions/partials/turnstile-form-embed.html" with turnstile_site_key=turnstile_site_key lang=lang %}
 
     <nav class="nhsuk-u-margin-top-6">
-      <input type="submit" class="nhsuk-button" id="continue-btn" value="{% trans 'Continue' %}" disabled aria-disabled="true">
+      <input type="submit" class="nhsuk-button" id="continue-btn" value="{% trans 'Continue' %}" disabled>
     </nav>
 
 </form>
@@ -88,10 +88,8 @@
     function toggle() {
       if (hasAnswer()) {
         btn.disabled = false;
-        btn.removeAttribute('aria-disabled');
       } else {
         btn.disabled = true;
-        btn.setAttribute('aria-disabled', 'true');
       }
     }
 
