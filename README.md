@@ -12,6 +12,10 @@ Visit http://localhost:8000/.
 
 ## TODO
 
+### Before launch
+
+- Link to NPDA privacy notice in footer
+
 ### UI questions
 
 - Are we correctly applying aria disabled?
