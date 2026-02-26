@@ -14,7 +14,6 @@
 
     if(current_clinic_display_name) {
       submit.disabled = false;
-      submit.ariaDisabled = false;
     }
 
     accessibleAutocomplete({
@@ -26,7 +25,6 @@
       showAllValues: true,
       onConfirm: () => {
         submit.disabled = false;
-        submit.ariaDisabled = false;
       }
     });
   });
