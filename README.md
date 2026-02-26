@@ -19,7 +19,6 @@ Visit http://localhost:8000/.
 
 ### UI questions
 
-- Are we correctly applying aria disabled?
 - Where should we apply aria labels (e.g. aria-label="Form navigation")
 - Critical accessibility results (mostly around lack of contrast in RCPCH colours the AI picked)
 
@@ -52,8 +51,6 @@ Visit http://localhost:8000/.
 
 ### Infra
 
-- Domain name?
-  - prem.npda.rcpch.ac.uk?
 - Usage instructions!
 - Cloudflare Turnstile
   - Error handling (atm would be generic suspicious operation page)
