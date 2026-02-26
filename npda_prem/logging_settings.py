@@ -1,0 +1,105 @@
+"""These relate to logging settings."""
+
+# Python imports
+import os
+
+# LOGGING ENV VARS
+CONSOLE_LOG_LEVEL = os.getenv("CONSOLE_LOG_LEVEL", "INFO")  # For npda specific logs
+CONSOLE_DJANGO_LOG_LEVEL = os.getenv("CONSOLE_DJANGO_LOG_LEVEL", "INFO")
+
+# Define the default django logger settings
+django_loggers = {
+    logger_name: {
+        "handlers": ["django_console", "mail_admins"],
+        "level": CONSOLE_DJANGO_LOG_LEVEL,
+        "propagate": False,
+        "formatter": "simple_django",
+    }
+    for logger_name in (
+        "django.request",
+        "django.utils",  # The django.utils logger logs events from Django and other miscellaneous log events e.g. autoreload
+        "django.security",
+        "django.db.backends",  # The django.db.backends logger logs SQL queries. Set the level to DEBUG or higher to log SQL queries.
+        "django.template",
+        "django.server",  # The django.server logger logs events from the runserver command.
+    )
+}
+
+request_loggers = {}
+
+if os.getenv("ENABLE_REQUEST_LOGGING", "False") == "True":
+    request_loggers = {
+        "npda_request_log": {
+            "handlers": ["npda_console_request_log"],
+            "level": CONSOLE_LOG_LEVEL,
+        }
+    }
+
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "filters": {
+        "require_debug_false": {
+            "()": "django.utils.log.RequireDebugFalse",
+        }
+    },
+    "formatters": {
+        "django.server": {
+            "()": "django.utils.log.ServerFormatter",
+            "format": "[{server_time}] {message}",
+            "style": "{",
+        },
+        "simple": {
+            "format": "%(levelname)s [%(name)s:%(lineno)s] s%(message)s",
+        },
+        # Don't need line numbers for default django loggers
+        "simple_django": {
+            "format": "%(levelname)s [%(name)s] %(message)s",
+        },
+        # The logging middleware generates the format for compatibility with the old gunicorn request logs
+        "npda_request_log": {
+            "format": "%(message)s",
+        }
+    },
+    "handlers": {
+        "npda_console": {
+            "level": CONSOLE_LOG_LEVEL,
+            "class": "logging.StreamHandler",
+            "formatter": "simple",
+            "filters": [],
+        },
+        "npda_console_request_log": {
+            "level": CONSOLE_LOG_LEVEL,
+            "class": "logging.StreamHandler",
+            "formatter": "npda_request_log",
+            "filters": [],
+        },
+        "django_console": {
+            "level": CONSOLE_DJANGO_LOG_LEVEL,
+            "class": "logging.StreamHandler",
+            "formatter": "simple_django",
+            "filters": [],
+        },
+        "mail_admins": {
+            "level": "ERROR",
+            "filters": ["require_debug_false"],
+            "class": "django.utils.log.AdminEmailHandler",
+        },
+    },
+    "loggers": {
+        "django": {
+            "handlers": ["django_console", "mail_admins"],
+            "level": CONSOLE_DJANGO_LOG_LEVEL,
+        },
+        **django_loggers,  # this injects the default django logger settings defined above
+        "project": {
+            "handlers": ["npda_console", "mail_admins"],
+            "propagate": False,
+            "level": CONSOLE_LOG_LEVEL,
+        },
+        "two_factor": {
+            "handlers": ["npda_console", "mail_admins"],
+        },
+        **request_loggers
+    },
+}
