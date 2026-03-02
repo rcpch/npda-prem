@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-21 16:28+0000\n"
+"POT-Creation-Date: 2026-02-27 10:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -915,7 +915,7 @@ msgstr ""
 #: submissions/templates/submissions/question.html:8
 #: submissions/templates/submissions/role_form.html:8
 msgid "Go back"
-msgstr "واپس جائیں"
+msgstr "واپس جائيں"
 
 #: submissions/templates/submissions/clinic_in_region.html:18
 #: submissions/templates/submissions/clinic_or_region.html:18
@@ -938,7 +938,7 @@ msgstr "اگلا"
 #: submissions/templates/submissions/clinic_or_region.html:29
 #: submissions/templates/submissions/clinic_or_region.html:44
 msgid "or"
-msgstr ""
+msgstr "یا"
 
 #: submissions/templates/submissions/clinic_or_region.html:37
 msgid "Please select the region where your diabetes clinic is located."
@@ -949,14 +949,12 @@ msgid "Ask your diabetes team if you are unsure."
 msgstr "اگر آپ پریقین نہیں ہیں تو اپنی ذیابیطس ٹیم سے پوچھیں۔"
 
 #: submissions/templates/submissions/confirmation.html:7
-#, fuzzy
-#| msgid "Thank you for sharing your experience."
 msgid "Thank you very much for your help"
-msgstr "اپنا تجربہ شیئر کرنے کا شکریہ۔"
+msgstr "آپ کی مدد کے لیے بہت بہت شکریہ"
 
 #: submissions/templates/submissions/confirmation.html:10
 msgid "Your responses have been saved."
-msgstr ""
+msgstr "آپ کے جوابات محفوظ کر لیے گئے ہيں۔"
 
 #: submissions/templates/submissions/confirmation.html:15
 msgid ""
@@ -967,18 +965,22 @@ msgstr ""
 #: submissions/templates/submissions/confirmation.html:20
 msgid "confirmation.issues_content"
 msgstr ""
+"اگر اس سروے کو مکمل کرنے سے ایسے مسائل پیدا ہوئے ہیں جن پر آپ مزید بات کرنا "
+"چاہتے ہیں، تو برائے مہربانی اپنی ذیابیطس کی ٹیم سے رابطہ کریں یا ذیابیطس کے خیراتی "
+"ادارے سے رابطہ کریں، جو ذیابیطس کے بارے میں اور ذیابیطس سے وابستہ جذباتی، سماجی، "
+"نفسیاتی یا عملی مشکلات کے بارے میں معلومات اور مدد فراہم کر سکتے ہیں۔ "
 
 #: submissions/templates/submissions/confirmation.html:26
 msgid "Breakthrough T1D UK website"
-msgstr ""
+msgstr "بریک تھرو T1D UK ویب سائٹ"
 
 #: submissions/templates/submissions/confirmation.html:31
 msgid "Diabetes Research and Wellness Foundation (DWRF) website"
-msgstr ""
+msgstr "ذیابیطس ریسرچ اینڈ ویلنس فاؤنڈیشن (DWRF) کی ویب سائٹ"
 
 #: submissions/templates/submissions/confirmation.html:36
 msgid "Diabetes UK helpline and website"
-msgstr ""
+msgstr "ذیابیطس UK ہیلپ لائن اور ویب سائٹ"
 
 #: submissions/templates/submissions/front_matter.html:13
 msgid "What is the survey about?"
@@ -1096,16 +1098,16 @@ msgstr "اپنی زبان کا انتخاب کریں"
 #: submissions/templates/submissions/question.html:23
 #, python-format
 msgid "Question %(n)s of %(total)s"
-msgstr ""
+msgstr "%(total)s کے سوال %(n)s"
 
 #: submissions/templates/submissions/question.html:58
 #: submissions/templates/submissions/resume_or_new.html:35
 msgid "Continue"
-msgstr ""
+msgstr "جاری رکھیں"
 
 #: submissions/templates/submissions/resume_or_new.html:13
 msgid "You have an unfinished survey"
-msgstr ""
+msgstr "آپ کے پاس ایک نامکمل سروے ہے"
 
 #: submissions/templates/submissions/resume_or_new.html:16
 msgid ""
@@ -1114,11 +1116,11 @@ msgstr ""
 
 #: submissions/templates/submissions/resume_or_new.html:21
 msgid "Continue where I left off"
-msgstr ""
+msgstr "جہاں سے میں نے چھوڑا تھا وہاں سے جاری رکھیں"
 
 #: submissions/templates/submissions/resume_or_new.html:27
 msgid "Start a new submission"
-msgstr ""
+msgstr "ایک نئی حوالگی شروع کریں"
 
 #: submissions/templates/submissions/role_form.html:12
 msgid "Are you…"
@@ -1126,11 +1128,11 @@ msgstr "کیا آپ…"
 
 #: submissions/templates/submissions/submissions_closed.html:7
 msgid "submissions_closed.title"
-msgstr ""
+msgstr "سروے کی حوالگی فی الحال بند ہیں"
 
 #: submissions/templates/submissions/submissions_closed.html:10
 msgid "submissions_closed.body"
-msgstr ""
+msgstr "یہ سروے فی الحال جوابات قبول نہیں کر رہا ہے"
 
 #: submissions/templates/submissions/tablet-mode.html:23
 msgid "Enable"
