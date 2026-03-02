@@ -946,7 +946,7 @@ msgstr "ਬ੍ਰੇਕਥਰੂ T1D ਯੂਕੇ ਵੈੱਬਸਾਈਟ"
 
 #: submissions/templates/submissions/confirmation.html:31
 msgid "Diabetes Research and Wellness Foundation (DWRF) website"
-msgstr ਡਾਇਬੀਟੀਜ਼ ਰਿਸਰਚ ਐਂਡ ਵੈਲਨੈਸ ਫਾਊਂਡੇਸ਼ਨ (ਡੀਡਬਲਯੂਆਰਐਫ) ਵੈੱਬਸਾਈਟ"
+msgstr "ਡਾਇਬੀਟੀਜ਼ ਰਿਸਰਚ ਐਂਡ ਵੈਲਨੈਸ ਫਾਊਂਡੇਸ਼ਨ (ਡੀਡਬਲਯੂਆਰਐਫ) ਵੈੱਬਸਾਈਟ"
 
 #: submissions/templates/submissions/confirmation.html:36
 msgid "Diabetes UK helpline and website"
@@ -1061,7 +1061,7 @@ msgstr "ਆਪਣੀ ਭਾਸ਼ਾ ਚੁਣੋ"
 #: submissions/templates/submissions/question.html:23
 #, python-format
 msgid "Question %(n)s of %(total)s"
-msgstr "%(total) ਵਿੱਚੋਂ %(n) ਸਵਾਲ"
+msgstr "%(total)s ਵਿੱਚੋਂ %(n)s ਸਵਾਲ"
 
 #: submissions/templates/submissions/question.html:58
 #: submissions/templates/submissions/resume_or_new.html:35
