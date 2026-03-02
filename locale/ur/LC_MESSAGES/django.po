@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-02 12:36+0000\n"
+"POT-Creation-Date: 2026-03-02 12:48+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -904,6 +904,12 @@ msgstr ""
 "آپ کا اسکول یا ذیابیطس ٹیم آپ کے بچے کے تجربے کو بہتر بنانے کے لیے کون سا "
 "مختلف طریقہ اختیار کر سکتے ہیں؟"
 
+#: submissions/templates/submissions/_form_nav.html:15
+#, fuzzy, python-format
+#| msgid "Question %(n)s of %(total)s"
+msgid "Section %(current)s of %(total)s"
+msgstr "%(total)s کے سوال %(n)s"
+
 #: submissions/templates/submissions/clinic_in_region.html:8
 #: submissions/templates/submissions/clinic_or_region.html:8
 #: submissions/templates/submissions/front_matter.html:8
@@ -956,6 +962,10 @@ msgid ""
 "If you wish to enter the prize draw to win a £50 voucher, please click this "
 "link:"
 msgstr ""
+"اگلے صفحہ پر، آپ کو 50 پاؤنڈ کا واؤچر جیتنے کے لیے ہماری انعامی قرعہ اندازی "
+"میں داخل ہونے کا موقع ملے گا۔ اگر آپ انعامی قرعہ اندازی میں داخل ہونا چاہتے "
+"ہیں تو انعامی قرعہ اندازی پر کلک کریں۔ اگر آپ انعامی قرعہ اندازی میں داخل "
+"نہیں ہونا چاہتے ہیں تو بس "
 
 #: submissions/templates/submissions/confirmation.html:17
 msgid "Prize Draw"
@@ -1101,7 +1111,7 @@ msgid "Question %(n)s of %(total)s"
 msgstr "%(total)s کے سوال %(n)s"
 
 #: submissions/templates/submissions/question.html:58
-#: submissions/templates/submissions/resume_or_new.html:35
+#: submissions/templates/submissions/resume_or_new.html:34
 msgid "Continue"
 msgstr "جاری رکھیں"
 
@@ -1109,11 +1119,11 @@ msgstr "جاری رکھیں"
 msgid "You have an unfinished survey"
 msgstr "آپ کے پاس ایک نامکمل سروے ہے"
 
-#: submissions/templates/submissions/resume_or_new.html:21
+#: submissions/templates/submissions/resume_or_new.html:20
 msgid "Continue where I left off"
 msgstr "جہاں سے میں نے چھوڑا تھا وہاں سے جاری رکھیں"
 
-#: submissions/templates/submissions/resume_or_new.html:27
+#: submissions/templates/submissions/resume_or_new.html:26
 msgid "Start a new submission"
 msgstr "ایک نئی حوالگی شروع کریں"
 

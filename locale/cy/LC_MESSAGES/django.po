@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-02 12:36+0000\n"
+"POT-Creation-Date: 2026-03-02 12:48+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -906,6 +906,12 @@ msgstr ""
 "Beth allai eich ysgol neu eich tîm diabetes ei wneud yn wahanol i wella "
 "profiad eich plentyn?"
 
+#: submissions/templates/submissions/_form_nav.html:15
+#, fuzzy, python-format
+#| msgid "Question %(n)s of %(total)s"
+msgid "Section %(current)s of %(total)s"
+msgstr "Cwestiwn %(n)s o %(total)s"
+
 #: submissions/templates/submissions/clinic_in_region.html:8
 #: submissions/templates/submissions/clinic_or_region.html:8
 #: submissions/templates/submissions/front_matter.html:8
@@ -1107,7 +1113,7 @@ msgid "Question %(n)s of %(total)s"
 msgstr "Cwestiwn %(n)s o %(total)s"
 
 #: submissions/templates/submissions/question.html:58
-#: submissions/templates/submissions/resume_or_new.html:35
+#: submissions/templates/submissions/resume_or_new.html:34
 msgid "Continue"
 msgstr "Parhau"
 
@@ -1115,11 +1121,11 @@ msgstr "Parhau"
 msgid "You have an unfinished survey"
 msgstr "Mae gennych chi arolwg heb ei orffen"
 
-#: submissions/templates/submissions/resume_or_new.html:21
+#: submissions/templates/submissions/resume_or_new.html:20
 msgid "Continue where I left off"
 msgstr "Parhau â’r ymgais flaenorol"
 
-#: submissions/templates/submissions/resume_or_new.html:27
+#: submissions/templates/submissions/resume_or_new.html:26
 msgid "Start a new submission"
 msgstr "Dechrau cyflwyniad newydd"
 

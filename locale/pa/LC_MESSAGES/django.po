@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-02 12:36+0000\n"
+"POT-Creation-Date: 2026-03-02 12:48+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -873,6 +873,12 @@ msgstr ""
 "ਤੁਹਾਡਾ ਸਕੂਲ ਜਾਂ ਡਾਇਬੀਟੀਜ਼ ਟੀਮ ਤੁਹਾਡੇ ਬੱਚੇ ਦੇ ਅਨੁਭਵ ਨੂੰ ਬਿਹਤਰ ਬਣਾਉਣ ਲਈ ਵੱਖਰੇ ਢੰਗ ਨਾਲ ਕੀ ਕਰ "
 "ਸਕਦੀ ਹੈ?"
 
+#: submissions/templates/submissions/_form_nav.html:15
+#, fuzzy, python-format
+#| msgid "Question %(n)s of %(total)s"
+msgid "Section %(current)s of %(total)s"
+msgstr "%(total)s ਵਿੱਚੋਂ %(n)s ਸਵਾਲ"
+
 #: submissions/templates/submissions/clinic_in_region.html:8
 #: submissions/templates/submissions/clinic_or_region.html:8
 #: submissions/templates/submissions/front_matter.html:8
@@ -1063,7 +1069,7 @@ msgid "Question %(n)s of %(total)s"
 msgstr "%(total)s ਵਿੱਚੋਂ %(n)s ਸਵਾਲ"
 
 #: submissions/templates/submissions/question.html:58
-#: submissions/templates/submissions/resume_or_new.html:35
+#: submissions/templates/submissions/resume_or_new.html:34
 msgid "Continue"
 msgstr "ਜਾਰੀ ਰੱਖੋ"
 
@@ -1071,11 +1077,11 @@ msgstr "ਜਾਰੀ ਰੱਖੋ"
 msgid "You have an unfinished survey"
 msgstr "ਤੁਹਾਡਾ ਸਰਵੇਖਣ ਅਧੂਰਾ ਹੈ"
 
-#: submissions/templates/submissions/resume_or_new.html:21
+#: submissions/templates/submissions/resume_or_new.html:20
 msgid "Continue where I left off"
 msgstr "ਜਿੱਥੇ ਮੈਂ ਛੱਡਿਆ ਸੀ ਉੱਥੇ ਜਾਰੀ ਰੱਖੋ"
 
-#: submissions/templates/submissions/resume_or_new.html:27
+#: submissions/templates/submissions/resume_or_new.html:26
 msgid "Start a new submission"
 msgstr "ਇੱਕ ਨਵੀਂ ਸਬਮਿਸ਼ਨ ਸ਼ੁਰੂ ਕਰੋ"
 

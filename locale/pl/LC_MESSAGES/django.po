@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-02 12:36+0000\n"
+"POT-Creation-Date: 2026-03-02 12:48+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -923,6 +923,12 @@ msgstr ""
 "Co Państwa szkoła lub zespół ds. cukrzycy mogliby robić inaczej, aby "
 "zapewnić Państwa dziecku lepsze doświadczenie?"
 
+#: submissions/templates/submissions/_form_nav.html:15
+#, fuzzy, python-format
+#| msgid "Question %(n)s of %(total)s"
+msgid "Section %(current)s of %(total)s"
+msgstr "Pytanie %(n)s z %(total)s"
+
 #: submissions/templates/submissions/clinic_in_region.html:8
 #: submissions/templates/submissions/clinic_or_region.html:8
 #: submissions/templates/submissions/front_matter.html:8
@@ -975,6 +981,9 @@ msgid ""
 "If you wish to enter the prize draw to win a £50 voucher, please click this "
 "link:"
 msgstr ""
+"Na następnej stronie będziesz mieć możliwość wzięcia udziału w losowaniu "
+"nagród, w którym do wygrania jest kupon o wartości 50 funtów. Jeśli chcesz "
+"wziąć udział w losowaniu nagród, kliknij „Losowanie nagród”"
 
 #: submissions/templates/submissions/confirmation.html:17
 msgid "Prize Draw"
@@ -1123,7 +1132,7 @@ msgid "Question %(n)s of %(total)s"
 msgstr "Pytanie %(n)s z %(total)s"
 
 #: submissions/templates/submissions/question.html:58
-#: submissions/templates/submissions/resume_or_new.html:35
+#: submissions/templates/submissions/resume_or_new.html:34
 msgid "Continue"
 msgstr "Kontynuuj"
 
@@ -1131,11 +1140,11 @@ msgstr "Kontynuuj"
 msgid "You have an unfinished survey"
 msgstr "Masz niedokończoną ankietę"
 
-#: submissions/templates/submissions/resume_or_new.html:21
+#: submissions/templates/submissions/resume_or_new.html:20
 msgid "Continue where I left off"
 msgstr "Kontynuuj od miejsca, w którym przerwaliśmy"
 
-#: submissions/templates/submissions/resume_or_new.html:27
+#: submissions/templates/submissions/resume_or_new.html:26
 msgid "Start a new submission"
 msgstr "Rozpocznij nowe zgłoszenie"
 

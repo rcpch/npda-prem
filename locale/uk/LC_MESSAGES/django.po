@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-02 12:36+0000\n"
+"POT-Creation-Date: 2026-03-02 12:48+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -901,6 +901,12 @@ msgstr ""
 "Що б могла зробити ваша школа або команда з питань діабету для покращення "
 "шкільного життя вашої дитини?"
 
+#: submissions/templates/submissions/_form_nav.html:15
+#, fuzzy, python-format
+#| msgid "Question %(n)s of %(total)s"
+msgid "Section %(current)s of %(total)s"
+msgstr "Запитання %(n)s з %(total)s"
+
 #: submissions/templates/submissions/clinic_in_region.html:8
 #: submissions/templates/submissions/clinic_or_region.html:8
 #: submissions/templates/submissions/front_matter.html:8
@@ -953,6 +959,9 @@ msgid ""
 "If you wish to enter the prize draw to win a £50 voucher, please click this "
 "link:"
 msgstr ""
+"На наступній сторінці ви можете взяти участь у розіграші та виграти ваучер "
+"на 50 фунтів стерлінгів. Якщо бажаєте взяти участь у розіграші, натисніть "
+"«Розіграш»."
 
 #: submissions/templates/submissions/confirmation.html:17
 msgid "Prize Draw"
@@ -1101,7 +1110,7 @@ msgid "Question %(n)s of %(total)s"
 msgstr "Запитання %(n)s з %(total)s"
 
 #: submissions/templates/submissions/question.html:58
-#: submissions/templates/submissions/resume_or_new.html:35
+#: submissions/templates/submissions/resume_or_new.html:34
 msgid "Continue"
 msgstr "Продовжити"
 
@@ -1109,11 +1118,11 @@ msgstr "Продовжити"
 msgid "You have an unfinished survey"
 msgstr "Ваше опитування не завершено"
 
-#: submissions/templates/submissions/resume_or_new.html:21
+#: submissions/templates/submissions/resume_or_new.html:20
 msgid "Continue where I left off"
 msgstr "Продовжити з того місця, де я зупинився(-лася)"
 
-#: submissions/templates/submissions/resume_or_new.html:27
+#: submissions/templates/submissions/resume_or_new.html:26
 msgid "Start a new submission"
 msgstr "Подати ще раз"
 
