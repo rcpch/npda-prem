@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-21 16:28+0000\n"
+"POT-Creation-Date: 2026-02-27 10:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -918,11 +918,11 @@ msgstr "ਜੇਕਰ ਤੁਹਾਨੂੰ ਚੰਗੀ ਤਰ੍ਹਾਂ ਨ�
 
 #: submissions/templates/submissions/confirmation.html:7
 msgid "Thank you very much for your help"
-msgstr "ਤੁਹਾਡੀ ਮਦਦ ਲਈ ਬਹੁਤ ਬਹੁਤ ਧੰਨਵਾਦ"
+msgstr "ਮਦਦ ਲਈ ਤੁਹਾਡਾ ਬਹੁਤ ਬਹੁਤ ਧੰਨਵਾਦ"
 
 #: submissions/templates/submissions/confirmation.html:10
 msgid "Your responses have been saved."
-msgstr "ਤੁਹਾਡੇ ਜਵਾਬ ਸੁਰੱਖਿਅਤ ਕੀਤੇ ਗਏ ਹਨ।"
+msgstr "ਤੁਹਾਡੇ ਜਵਾਬ ਸੇਵ ਕਰ ਲਏ ਗਏ ਹਨ।"
 
 #: submissions/templates/submissions/confirmation.html:15
 msgid ""
@@ -942,15 +942,15 @@ msgstr ""
 
 #: submissions/templates/submissions/confirmation.html:26
 msgid "Breakthrough T1D UK website"
-msgstr "Breakthrough T1D UK website"
+msgstr "ਬ੍ਰੇਕਥਰੂ T1D ਯੂਕੇ ਵੈੱਬਸਾਈਟ"
 
 #: submissions/templates/submissions/confirmation.html:31
 msgid "Diabetes Research and Wellness Foundation (DWRF) website"
-msgstr "Diabetes Research and Wellness Foundation (DWRF) website"
+msgstr ਡਾਇਬੀਟੀਜ਼ ਰਿਸਰਚ ਐਂਡ ਵੈਲਨੈਸ ਫਾਊਂਡੇਸ਼ਨ (ਡੀਡਬਲਯੂਆਰਐਫ) ਵੈੱਬਸਾਈਟ"
 
 #: submissions/templates/submissions/confirmation.html:36
 msgid "Diabetes UK helpline and website"
-msgstr "Diabetes UK helpline and website"
+msgstr "ਡਾਇਬੀਟੀਜ਼ ਯੂਕੇ ਹੈਲਪਲਾਈਨ ਅਤੇ ਵੈੱਬਸਾਈਟ"
 
 #: submissions/templates/submissions/front_matter.html:13
 msgid "What is the survey about?"
@@ -1061,16 +1061,16 @@ msgstr "ਆਪਣੀ ਭਾਸ਼ਾ ਚੁਣੋ"
 #: submissions/templates/submissions/question.html:23
 #, python-format
 msgid "Question %(n)s of %(total)s"
-msgstr ""
+msgstr "%(total) ਵਿੱਚੋਂ %(n) ਸਵਾਲ"
 
 #: submissions/templates/submissions/question.html:58
 #: submissions/templates/submissions/resume_or_new.html:35
 msgid "Continue"
-msgstr ""
+msgstr "ਜਾਰੀ ਰੱਖੋ"
 
 #: submissions/templates/submissions/resume_or_new.html:13
 msgid "You have an unfinished survey"
-msgstr ""
+msgstr "ਤੁਹਾਡਾ ਸਰਵੇਖਣ ਅਧੂਰਾ ਹੈ"
 
 #: submissions/templates/submissions/resume_or_new.html:16
 msgid ""
@@ -1079,11 +1079,11 @@ msgstr ""
 
 #: submissions/templates/submissions/resume_or_new.html:21
 msgid "Continue where I left off"
-msgstr ""
+msgstr "ਜਿੱਥੇ ਮੈਂ ਛੱਡਿਆ ਸੀ ਉੱਥੇ ਜਾਰੀ ਰੱਖੋ"
 
 #: submissions/templates/submissions/resume_or_new.html:27
 msgid "Start a new submission"
-msgstr ""
+msgstr "ਇੱਕ ਨਵੀਂ ਸਬਮਿਸ਼ਨ ਸ਼ੁਰੂ ਕਰੋ"
 
 #: submissions/templates/submissions/role_form.html:12
 msgid "Are you…"
@@ -1091,11 +1091,11 @@ msgstr "ਕੀ ਤੁਸੀਂ ਇਹ ਹੋ…"
 
 #: submissions/templates/submissions/submissions_closed.html:7
 msgid "submissions_closed.title"
-msgstr ""
+msgstr "ਸਰਵੇਖਣ ਸਬਮਿਸ਼ਨ ਇਸ ਸਮੇਂ ਬੰਦ ਹਨ"
 
 #: submissions/templates/submissions/submissions_closed.html:10
 msgid "submissions_closed.body"
-msgstr ""
+msgstr "ਇਹ ਸਰਵੇਖਣ ਇਸ ਸਮੇਂ ਜਵਾਬ ਸਵੀਕਾਰ ਨਹੀਂ ਕਰ ਰਿਹਾ ਹੈ"
 
 #: submissions/templates/submissions/tablet-mode.html:23
 msgid "Enable"
