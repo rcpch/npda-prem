@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-27 10:53+0000\n"
+"POT-Creation-Date: 2026-03-02 12:48+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,27 +18,27 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n==2) ? 1 : (n != 8 && n != "
 "11) ? 2 : 3;\n"
 
-#: npda_prem/settings.py:145
+#: npda_prem/settings.py:153
 msgid "English"
 msgstr "English"
 
-#: npda_prem/settings.py:146
+#: npda_prem/settings.py:154
 msgid "Cymraeg"
 msgstr "Cymraeg"
 
-#: npda_prem/settings.py:147
+#: npda_prem/settings.py:155
 msgid "Urdu"
 msgstr "Urdu"
 
-#: npda_prem/settings.py:148
+#: npda_prem/settings.py:156
 msgid "Polish"
 msgstr "Polish"
 
-#: npda_prem/settings.py:149
+#: npda_prem/settings.py:157
 msgid "Ukrainian"
 msgstr "Ukrainian"
 
-#: npda_prem/settings.py:150
+#: npda_prem/settings.py:158
 msgid "Punjabi"
 msgstr "Punjabi"
 
@@ -907,9 +907,10 @@ msgstr ""
 "profiad eich plentyn?"
 
 #: submissions/templates/submissions/_form_nav.html:15
-#, python-format
+#, fuzzy, python-format
+#| msgid "Question %(n)s of %(total)s"
 msgid "Section %(current)s of %(total)s"
-msgstr ""
+msgstr "Cwestiwn %(n)s o %(total)s"
 
 #: submissions/templates/submissions/clinic_in_region.html:8
 #: submissions/templates/submissions/clinic_or_region.html:8
@@ -956,32 +957,38 @@ msgstr "Diolch yn fawr am eich help"
 
 #: submissions/templates/submissions/confirmation.html:10
 msgid "Your responses have been saved."
-msgstr ""
+msgstr "Mae eich ymatebion wedi cael eu cadw"
 
 #: submissions/templates/submissions/confirmation.html:15
 msgid ""
 "If you wish to enter the prize draw to win a £50 voucher, please click this "
 "link:"
 msgstr ""
-"Ar y dudalen nesaf, cewch y cyfle i gymryd rhan yn ein raffl i ennill taleb gwerth £50. "
-"Os hoffech gymryd rhan yn y raffl, cliciwch “Wedi Gorffen”. Os na hoffech gymryd rhan y raffl, cewch gau’r porwr."
+"Ar y dudalen nesaf, cewch y cyfle i gymryd rhan yn ein raffl i ennill taleb "
+"gwerth £50. Os hoffech gymryd rhan yn y raffl, cliciwch “Wedi Gorffen”. Os "
+"na hoffech gymryd rhan y raffl, cewch gau’r porwr."
 
-#: submissions/templates/submissions/confirmation.html:20
+#: submissions/templates/submissions/confirmation.html:17
+msgid "Prize Draw"
+msgstr "Raffl"
+
+#: submissions/templates/submissions/confirmation.html:22
 msgid "confirmation.issues_content"
 msgstr ""
 "Os yw llenwi’r arolwg hwn wedi codi materion yr hoffech eu trafod ymhellach, "
-"cysylltwch â’ch tîm diabetes neu cysylltwch ag elusen diabetes. Gallant ddarparu cymorth a gwybodaeth am ddiabetes, "
-"a’r anawsterau emosiynol, cymdeithasol, seicolegol, neu ymarferol sy’n gysylltiedig â diabetes."
+"cysylltwch â’ch tîm diabetes neu cysylltwch ag elusen diabetes. Gallant "
+"ddarparu cymorth a gwybodaeth am ddiabetes, a’r anawsterau emosiynol, "
+"cymdeithasol, seicolegol, neu ymarferol sy’n gysylltiedig â diabetes."
 
-#: submissions/templates/submissions/confirmation.html:26
+#: submissions/templates/submissions/confirmation.html:28
 msgid "Breakthrough T1D UK website"
 msgstr "Gwefan Breakthrough T1D UK"
 
-#: submissions/templates/submissions/confirmation.html:31
+#: submissions/templates/submissions/confirmation.html:33
 msgid "Diabetes Research and Wellness Foundation (DWRF) website"
 msgstr "Gwefan Diabetes Research and Wellness Foundation (DWRF)"
 
-#: submissions/templates/submissions/confirmation.html:36
+#: submissions/templates/submissions/confirmation.html:38
 msgid "Diabetes UK helpline and website"
 msgstr "Gwefan a llinell gymorth Diabetes UK"
 
@@ -1106,7 +1113,7 @@ msgid "Question %(n)s of %(total)s"
 msgstr "Cwestiwn %(n)s o %(total)s"
 
 #: submissions/templates/submissions/question.html:58
-#: submissions/templates/submissions/resume_or_new.html:35
+#: submissions/templates/submissions/resume_or_new.html:34
 msgid "Continue"
 msgstr "Parhau"
 
@@ -1114,16 +1121,11 @@ msgstr "Parhau"
 msgid "You have an unfinished survey"
 msgstr "Mae gennych chi arolwg heb ei orffen"
 
-#: submissions/templates/submissions/resume_or_new.html:16
-msgid ""
-"Would you like to continue where you left off, or start a new submission?"
-msgstr ""
-
-#: submissions/templates/submissions/resume_or_new.html:21
+#: submissions/templates/submissions/resume_or_new.html:20
 msgid "Continue where I left off"
 msgstr "Parhau â’r ymgais flaenorol"
 
-#: submissions/templates/submissions/resume_or_new.html:27
+#: submissions/templates/submissions/resume_or_new.html:26
 msgid "Start a new submission"
 msgstr "Dechrau cyflwyniad newydd"
 

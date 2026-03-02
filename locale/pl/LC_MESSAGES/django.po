@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-27 10:53+0000\n"
+"POT-Creation-Date: 2026-03-02 12:48+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,27 +19,27 @@ msgstr ""
 "(n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && "
 "n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 
-#: npda_prem/settings.py:145
+#: npda_prem/settings.py:153
 msgid "English"
 msgstr "English"
 
-#: npda_prem/settings.py:146
+#: npda_prem/settings.py:154
 msgid "Cymraeg"
 msgstr "Cymraeg"
 
-#: npda_prem/settings.py:147
+#: npda_prem/settings.py:155
 msgid "Urdu"
 msgstr "Urdu"
 
-#: npda_prem/settings.py:148
+#: npda_prem/settings.py:156
 msgid "Polish"
 msgstr "Polish"
 
-#: npda_prem/settings.py:149
+#: npda_prem/settings.py:157
 msgid "Ukrainian"
 msgstr "Ukrainian"
 
-#: npda_prem/settings.py:150
+#: npda_prem/settings.py:158
 msgid "Punjabi"
 msgstr "Punjabi"
 
@@ -924,9 +924,10 @@ msgstr ""
 "zapewnić Państwa dziecku lepsze doświadczenie?"
 
 #: submissions/templates/submissions/_form_nav.html:15
-#, python-format
+#, fuzzy, python-format
+#| msgid "Question %(n)s of %(total)s"
 msgid "Section %(current)s of %(total)s"
-msgstr ""
+msgstr "Pytanie %(n)s z %(total)s"
 
 #: submissions/templates/submissions/clinic_in_region.html:8
 #: submissions/templates/submissions/clinic_or_region.html:8
@@ -980,24 +981,32 @@ msgid ""
 "If you wish to enter the prize draw to win a £50 voucher, please click this "
 "link:"
 msgstr ""
+"Na następnej stronie będziesz mieć możliwość wzięcia udziału w losowaniu "
+"nagród, w którym do wygrania jest kupon o wartości 50 funtów. Jeśli chcesz "
+"wziąć udział w losowaniu nagród, kliknij „Losowanie nagród”"
 
-#: submissions/templates/submissions/confirmation.html:20
+#: submissions/templates/submissions/confirmation.html:17
+msgid "Prize Draw"
+msgstr "Losowanie nagród"
+
+#: submissions/templates/submissions/confirmation.html:22
 msgid "confirmation.issues_content"
 msgstr ""
-"eśli wypełnienie tej ankiety wywołało kwestie, które pragniesz omówić, skontaktuj się "
-"ze swoim zespołem diabetologicznym lub organizacją charytatywną zajmującą się cukrzycą, "
-"która może udzielić informacji i wsparcia na temat cukrzycy oraz trudności emocjonalnych, "
-"społecznych, psychologicznych lub praktycznych związanych z cukrzycą."
+"eśli wypełnienie tej ankiety wywołało kwestie, które pragniesz omówić, "
+"skontaktuj się ze swoim zespołem diabetologicznym lub organizacją "
+"charytatywną zajmującą się cukrzycą, która może udzielić informacji i "
+"wsparcia na temat cukrzycy oraz trudności emocjonalnych, społecznych, "
+"psychologicznych lub praktycznych związanych z cukrzycą."
 
-#: submissions/templates/submissions/confirmation.html:26
+#: submissions/templates/submissions/confirmation.html:28
 msgid "Breakthrough T1D UK website"
 msgstr "Strona internetowa Breakthrough T1D UK"
 
-#: submissions/templates/submissions/confirmation.html:31
+#: submissions/templates/submissions/confirmation.html:33
 msgid "Diabetes Research and Wellness Foundation (DWRF) website"
 msgstr "Strona internetowa Diabetes Research and Wellness Foundation (DWRF)"
 
-#: submissions/templates/submissions/confirmation.html:36
+#: submissions/templates/submissions/confirmation.html:38
 msgid "Diabetes UK helpline and website"
 msgstr "Infolinia i strona internetowa Diabetes UK"
 
@@ -1123,7 +1132,7 @@ msgid "Question %(n)s of %(total)s"
 msgstr "Pytanie %(n)s z %(total)s"
 
 #: submissions/templates/submissions/question.html:58
-#: submissions/templates/submissions/resume_or_new.html:35
+#: submissions/templates/submissions/resume_or_new.html:34
 msgid "Continue"
 msgstr "Kontynuuj"
 
@@ -1131,16 +1140,11 @@ msgstr "Kontynuuj"
 msgid "You have an unfinished survey"
 msgstr "Masz niedokończoną ankietę"
 
-#: submissions/templates/submissions/resume_or_new.html:16
-msgid ""
-"Would you like to continue where you left off, or start a new submission?"
-msgstr ""
-
-#: submissions/templates/submissions/resume_or_new.html:21
+#: submissions/templates/submissions/resume_or_new.html:20
 msgid "Continue where I left off"
 msgstr "Kontynuuj od miejsca, w którym przerwaliśmy"
 
-#: submissions/templates/submissions/resume_or_new.html:27
+#: submissions/templates/submissions/resume_or_new.html:26
 msgid "Start a new submission"
 msgstr "Rozpocznij nowe zgłoszenie"
 
