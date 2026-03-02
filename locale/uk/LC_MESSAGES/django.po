@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-27 10:53+0000\n"
+"POT-Creation-Date: 2026-03-02 12:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,27 +20,27 @@ msgstr ""
 "100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || "
 "(n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 
-#: npda_prem/settings.py:145
+#: npda_prem/settings.py:153
 msgid "English"
 msgstr "English"
 
-#: npda_prem/settings.py:146
+#: npda_prem/settings.py:154
 msgid "Cymraeg"
 msgstr "Cymraeg"
 
-#: npda_prem/settings.py:147
+#: npda_prem/settings.py:155
 msgid "Urdu"
 msgstr "Urdu"
 
-#: npda_prem/settings.py:148
+#: npda_prem/settings.py:156
 msgid "Polish"
 msgstr "Polish"
 
-#: npda_prem/settings.py:149
+#: npda_prem/settings.py:157
 msgid "Ukrainian"
 msgstr "Ukrainian"
 
-#: npda_prem/settings.py:150
+#: npda_prem/settings.py:158
 msgid "Punjabi"
 msgstr "Punjabi"
 
@@ -959,24 +959,28 @@ msgid ""
 "link:"
 msgstr ""
 
-#: submissions/templates/submissions/confirmation.html:20
+#: submissions/templates/submissions/confirmation.html:17
+msgid "Prize Draw"
+msgstr "Розіграш"
+
+#: submissions/templates/submissions/confirmation.html:22
 msgid "confirmation.issues_content"
 msgstr ""
-"Якщо під час проходження опитування у вас виникнуть запитання, які потребують "
-"подальшого обговорення, зв'яжіться зі своїм спеціалістом із діабету або благодійною "
-"організацією допомоги хворим на діабет, які зможуть надати інформацію та підтримку з "
-"питань діабету, а також емоційних, соціальних, психологічних або практичних труднощів, "
-"пов’язаних із діабетом. "
+"Якщо під час проходження опитування у вас виникнуть запитання, які "
+"потребують подальшого обговорення, зв'яжіться зі своїм спеціалістом із "
+"діабету або благодійною організацією допомоги хворим на діабет, які зможуть "
+"надати інформацію та підтримку з питань діабету, а також емоційних, "
+"соціальних, психологічних або практичних труднощів, пов’язаних із діабетом. "
 
-#: submissions/templates/submissions/confirmation.html:26
+#: submissions/templates/submissions/confirmation.html:28
 msgid "Breakthrough T1D UK website"
 msgstr "Вебсайт Breakthrough T1D UK"
 
-#: submissions/templates/submissions/confirmation.html:31
+#: submissions/templates/submissions/confirmation.html:33
 msgid "Diabetes Research and Wellness Foundation (DWRF) website"
 msgstr "Вебсайт Фонду досліджень діабету та здорового способу життя"
 
-#: submissions/templates/submissions/confirmation.html:36
+#: submissions/templates/submissions/confirmation.html:38
 msgid "Diabetes UK helpline and website"
 msgstr "Гаряча лінія та вебсайт із питань діабету у Великій Британі"
 

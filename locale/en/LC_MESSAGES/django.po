@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-27 10:53+0000\n"
+"POT-Creation-Date: 2026-03-02 12:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,27 +17,27 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: npda_prem/settings.py:145
+#: npda_prem/settings.py:153
 msgid "English"
 msgstr "English"
 
-#: npda_prem/settings.py:146
+#: npda_prem/settings.py:154
 msgid "Cymraeg"
 msgstr "Welsh"
 
-#: npda_prem/settings.py:147
+#: npda_prem/settings.py:155
 msgid "Urdu"
 msgstr "Urdu"
 
-#: npda_prem/settings.py:148
+#: npda_prem/settings.py:156
 msgid "Polish"
 msgstr "Polish"
 
-#: npda_prem/settings.py:149
+#: npda_prem/settings.py:157
 msgid "Ukrainian"
 msgstr "Ukrainian"
 
-#: npda_prem/settings.py:150
+#: npda_prem/settings.py:158
 msgid "Punjabi"
 msgstr "Punjabi"
 
@@ -961,7 +961,11 @@ msgstr ""
 "If you wish to enter the prize draw to win a £50 voucher, please click this "
 "link:"
 
-#: submissions/templates/submissions/confirmation.html:20
+#: submissions/templates/submissions/confirmation.html:17
+msgid "Prize Draw"
+msgstr ""
+
+#: submissions/templates/submissions/confirmation.html:22
 msgid "confirmation.issues_content"
 msgstr ""
 "If completing this survey has raised issues that you would like to discuss "
@@ -970,15 +974,15 @@ msgstr ""
 "emotional, social, psychological, or practical difficulties associated with "
 "diabetes."
 
-#: submissions/templates/submissions/confirmation.html:26
+#: submissions/templates/submissions/confirmation.html:28
 msgid "Breakthrough T1D UK website"
 msgstr "Breakthrough T1D UK website"
 
-#: submissions/templates/submissions/confirmation.html:31
+#: submissions/templates/submissions/confirmation.html:33
 msgid "Diabetes Research and Wellness Foundation (DWRF) website"
 msgstr "Diabetes Research and Wellness Foundation (DWRF) website"
 
-#: submissions/templates/submissions/confirmation.html:36
+#: submissions/templates/submissions/confirmation.html:38
 msgid "Diabetes UK helpline and website"
 msgstr "Diabetes UK helpline and website"
 
