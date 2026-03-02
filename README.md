@@ -14,7 +14,6 @@ Visit http://localhost:8000/.
 
 ### Before launch
 
-- Link to NPDA privacy notice in footer
 - add columns for response rate by role
 
 ### UI questions
