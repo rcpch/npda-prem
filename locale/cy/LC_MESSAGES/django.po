@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-21 16:28+0000\n"
+"POT-Creation-Date: 2026-02-27 10:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -917,7 +917,7 @@ msgstr ""
 #: submissions/templates/submissions/question.html:8
 #: submissions/templates/submissions/role_form.html:8
 msgid "Go back"
-msgstr "Mynd yn ôl"
+msgstr "Yn ôl"
 
 #: submissions/templates/submissions/clinic_in_region.html:18
 #: submissions/templates/submissions/clinic_or_region.html:18
@@ -940,7 +940,7 @@ msgstr "Nesaf"
 #: submissions/templates/submissions/clinic_or_region.html:29
 #: submissions/templates/submissions/clinic_or_region.html:44
 msgid "or"
-msgstr ""
+msgstr "neu"
 
 #: submissions/templates/submissions/clinic_or_region.html:37
 msgid "Please select the region where your diabetes clinic is located."
@@ -951,10 +951,8 @@ msgid "Ask your diabetes team if you are unsure."
 msgstr "Gofynnwch i'ch tîm diabetes os ydych chi'n ansicr."
 
 #: submissions/templates/submissions/confirmation.html:7
-#, fuzzy
-#| msgid "Thank you for sharing your experience."
 msgid "Thank you very much for your help"
-msgstr "Diolch am rannu eich profiad."
+msgstr "Diolch yn fawr am eich help"
 
 #: submissions/templates/submissions/confirmation.html:10
 msgid "Your responses have been saved."
@@ -965,22 +963,27 @@ msgid ""
 "If you wish to enter the prize draw to win a £50 voucher, please click this "
 "link:"
 msgstr ""
+"Ar y dudalen nesaf, cewch y cyfle i gymryd rhan yn ein raffl i ennill taleb gwerth £50. "
+"Os hoffech gymryd rhan yn y raffl, cliciwch “Wedi Gorffen”. Os na hoffech gymryd rhan y raffl, cewch gau’r porwr."
 
 #: submissions/templates/submissions/confirmation.html:20
 msgid "confirmation.issues_content"
 msgstr ""
+"Os yw llenwi’r arolwg hwn wedi codi materion yr hoffech eu trafod ymhellach, "
+"cysylltwch â’ch tîm diabetes neu cysylltwch ag elusen diabetes. Gallant ddarparu cymorth a gwybodaeth am ddiabetes, "
+"a’r anawsterau emosiynol, cymdeithasol, seicolegol, neu ymarferol sy’n gysylltiedig â diabetes."
 
 #: submissions/templates/submissions/confirmation.html:26
 msgid "Breakthrough T1D UK website"
-msgstr ""
+msgstr "Gwefan Breakthrough T1D UK"
 
 #: submissions/templates/submissions/confirmation.html:31
 msgid "Diabetes Research and Wellness Foundation (DWRF) website"
-msgstr ""
+msgstr "Gwefan Diabetes Research and Wellness Foundation (DWRF)"
 
 #: submissions/templates/submissions/confirmation.html:36
 msgid "Diabetes UK helpline and website"
-msgstr ""
+msgstr "Gwefan a llinell gymorth Diabetes UK"
 
 #: submissions/templates/submissions/front_matter.html:13
 msgid "What is the survey about?"
@@ -1100,16 +1103,16 @@ msgstr "Dewiswch eich iaith"
 #: submissions/templates/submissions/question.html:23
 #, python-format
 msgid "Question %(n)s of %(total)s"
-msgstr ""
+msgstr "Cwestiwn %(n)s o %(total)s"
 
 #: submissions/templates/submissions/question.html:58
 #: submissions/templates/submissions/resume_or_new.html:35
 msgid "Continue"
-msgstr ""
+msgstr "Parhau"
 
 #: submissions/templates/submissions/resume_or_new.html:13
 msgid "You have an unfinished survey"
-msgstr ""
+msgstr "Mae gennych chi arolwg heb ei orffen"
 
 #: submissions/templates/submissions/resume_or_new.html:16
 msgid ""
@@ -1118,11 +1121,11 @@ msgstr ""
 
 #: submissions/templates/submissions/resume_or_new.html:21
 msgid "Continue where I left off"
-msgstr ""
+msgstr "Parhau â’r ymgais flaenorol"
 
 #: submissions/templates/submissions/resume_or_new.html:27
 msgid "Start a new submission"
-msgstr ""
+msgstr "Dechrau cyflwyniad newydd"
 
 #: submissions/templates/submissions/role_form.html:12
 msgid "Are you…"
@@ -1130,11 +1133,11 @@ msgstr "Ydych chi’n…"
 
 #: submissions/templates/submissions/submissions_closed.html:7
 msgid "submissions_closed.title"
-msgstr ""
+msgstr "Mae’r arolwg ar gau ar gyfer cyflwyniadau ar hyn o bryd"
 
 #: submissions/templates/submissions/submissions_closed.html:10
 msgid "submissions_closed.body"
-msgstr ""
+msgstr "Nid yw’r arolwg hwn yn derbyn ymatebion ar hyn o bryd"
 
 #: submissions/templates/submissions/tablet-mode.html:23
 msgid "Enable"

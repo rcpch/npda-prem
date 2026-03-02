@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-21 16:28+0000\n"
+"POT-Creation-Date: 2026-02-27 10:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -912,7 +912,7 @@ msgstr ""
 #: submissions/templates/submissions/question.html:8
 #: submissions/templates/submissions/role_form.html:8
 msgid "Go back"
-msgstr "Повернутися"
+msgstr "Назад"
 
 #: submissions/templates/submissions/clinic_in_region.html:18
 #: submissions/templates/submissions/clinic_or_region.html:18
@@ -934,7 +934,7 @@ msgstr "ДАЛІ"
 #: submissions/templates/submissions/clinic_or_region.html:29
 #: submissions/templates/submissions/clinic_or_region.html:44
 msgid "or"
-msgstr ""
+msgstr "або"
 
 #: submissions/templates/submissions/clinic_or_region.html:37
 msgid "Please select the region where your diabetes clinic is located."
@@ -946,14 +946,12 @@ msgid "Ask your diabetes team if you are unsure."
 msgstr "Якщо точно не знаєш — запитай свою команду з питань діабету."
 
 #: submissions/templates/submissions/confirmation.html:7
-#, fuzzy
-#| msgid "Thank you for sharing your experience."
 msgid "Thank you very much for your help"
-msgstr "Дякуємо за те, що поділилися своїм досвідом."
+msgstr "Дякуємо за допомогу."
 
 #: submissions/templates/submissions/confirmation.html:10
 msgid "Your responses have been saved."
-msgstr ""
+msgstr "Ваші відповіді збережено"
 
 #: submissions/templates/submissions/confirmation.html:15
 msgid ""
@@ -964,18 +962,23 @@ msgstr ""
 #: submissions/templates/submissions/confirmation.html:20
 msgid "confirmation.issues_content"
 msgstr ""
+"Якщо під час проходження опитування у вас виникнуть запитання, які потребують "
+"подальшого обговорення, зв'яжіться зі своїм спеціалістом із діабету або благодійною "
+"організацією допомоги хворим на діабет, які зможуть надати інформацію та підтримку з "
+"питань діабету, а також емоційних, соціальних, психологічних або практичних труднощів, "
+"пов’язаних із діабетом. "
 
 #: submissions/templates/submissions/confirmation.html:26
 msgid "Breakthrough T1D UK website"
-msgstr ""
+msgstr "Вебсайт Breakthrough T1D UK"
 
 #: submissions/templates/submissions/confirmation.html:31
 msgid "Diabetes Research and Wellness Foundation (DWRF) website"
-msgstr ""
+msgstr "Вебсайт Фонду досліджень діабету та здорового способу життя"
 
 #: submissions/templates/submissions/confirmation.html:36
 msgid "Diabetes UK helpline and website"
-msgstr ""
+msgstr "Гаряча лінія та вебсайт із питань діабету у Великій Британі"
 
 #: submissions/templates/submissions/front_matter.html:13
 msgid "What is the survey about?"
@@ -1096,16 +1099,16 @@ msgstr "Оберіть мову"
 #: submissions/templates/submissions/question.html:23
 #, python-format
 msgid "Question %(n)s of %(total)s"
-msgstr ""
+msgstr "Запитання %(n)s з %(total)s"
 
 #: submissions/templates/submissions/question.html:58
 #: submissions/templates/submissions/resume_or_new.html:35
 msgid "Continue"
-msgstr ""
+msgstr "Продовжити"
 
 #: submissions/templates/submissions/resume_or_new.html:13
 msgid "You have an unfinished survey"
-msgstr ""
+msgstr "Ваше опитування не завершено"
 
 #: submissions/templates/submissions/resume_or_new.html:16
 msgid ""
@@ -1114,11 +1117,11 @@ msgstr ""
 
 #: submissions/templates/submissions/resume_or_new.html:21
 msgid "Continue where I left off"
-msgstr ""
+msgstr "Продовжити з того місця, де я зупинився(-лася)"
 
 #: submissions/templates/submissions/resume_or_new.html:27
 msgid "Start a new submission"
-msgstr ""
+msgstr "Подати ще раз"
 
 #: submissions/templates/submissions/role_form.html:12
 msgid "Are you…"
@@ -1126,11 +1129,11 @@ msgstr "Ви…"
 
 #: submissions/templates/submissions/submissions_closed.html:7
 msgid "submissions_closed.title"
-msgstr ""
+msgstr "Подання відповідей наразі завершено"
 
 #: submissions/templates/submissions/submissions_closed.html:10
 msgid "submissions_closed.body"
-msgstr ""
+msgstr "У цьому опитуванні відповіді наразі не приймаються"
 
 #: submissions/templates/submissions/tablet-mode.html:23
 msgid "Enable"
@@ -1142,4 +1145,4 @@ msgstr ""
 
 #: templates/base.html:51
 msgid "Start again"
-msgstr "Розпочати знову"
+msgstr "Почати ще раз"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-21 16:28+0000\n"
+"POT-Creation-Date: 2026-02-27 10:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -957,7 +957,7 @@ msgstr "Dalej"
 #: submissions/templates/submissions/clinic_or_region.html:29
 #: submissions/templates/submissions/clinic_or_region.html:44
 msgid "or"
-msgstr ""
+msgstr "lub"
 
 #: submissions/templates/submissions/clinic_or_region.html:37
 msgid "Please select the region where your diabetes clinic is located."
@@ -968,14 +968,12 @@ msgid "Ask your diabetes team if you are unsure."
 msgstr "Jeśli nie masz pewności, zapytaj o to swój zespół ds. cukrzycy."
 
 #: submissions/templates/submissions/confirmation.html:7
-#, fuzzy
-#| msgid "Thank you for sharing your experience."
 msgid "Thank you very much for your help"
-msgstr "Dziękujemy za podzielenie się swoim doświadczeniem."
+msgstr "Bardzo dziękujemy za Twoją pomoc"
 
 #: submissions/templates/submissions/confirmation.html:10
 msgid "Your responses have been saved."
-msgstr ""
+msgstr "Twoje odpowiedzi zostały zapisane."
 
 #: submissions/templates/submissions/confirmation.html:15
 msgid ""
@@ -986,18 +984,22 @@ msgstr ""
 #: submissions/templates/submissions/confirmation.html:20
 msgid "confirmation.issues_content"
 msgstr ""
+"eśli wypełnienie tej ankiety wywołało kwestie, które pragniesz omówić, skontaktuj się "
+"ze swoim zespołem diabetologicznym lub organizacją charytatywną zajmującą się cukrzycą, "
+"która może udzielić informacji i wsparcia na temat cukrzycy oraz trudności emocjonalnych, "
+"społecznych, psychologicznych lub praktycznych związanych z cukrzycą."
 
 #: submissions/templates/submissions/confirmation.html:26
 msgid "Breakthrough T1D UK website"
-msgstr ""
+msgstr "Strona internetowa Breakthrough T1D UK"
 
 #: submissions/templates/submissions/confirmation.html:31
 msgid "Diabetes Research and Wellness Foundation (DWRF) website"
-msgstr ""
+msgstr "Strona internetowa Diabetes Research and Wellness Foundation (DWRF)"
 
 #: submissions/templates/submissions/confirmation.html:36
 msgid "Diabetes UK helpline and website"
-msgstr ""
+msgstr "Infolinia i strona internetowa Diabetes UK"
 
 #: submissions/templates/submissions/front_matter.html:13
 msgid "What is the survey about?"
@@ -1118,16 +1120,16 @@ msgstr "Wybierz swój język"
 #: submissions/templates/submissions/question.html:23
 #, python-format
 msgid "Question %(n)s of %(total)s"
-msgstr ""
+msgstr "Pytanie %(n)s z %(total)s"
 
 #: submissions/templates/submissions/question.html:58
 #: submissions/templates/submissions/resume_or_new.html:35
 msgid "Continue"
-msgstr ""
+msgstr "Kontynuuj"
 
 #: submissions/templates/submissions/resume_or_new.html:13
 msgid "You have an unfinished survey"
-msgstr ""
+msgstr "Masz niedokończoną ankietę"
 
 #: submissions/templates/submissions/resume_or_new.html:16
 msgid ""
@@ -1136,11 +1138,11 @@ msgstr ""
 
 #: submissions/templates/submissions/resume_or_new.html:21
 msgid "Continue where I left off"
-msgstr ""
+msgstr "Kontynuuj od miejsca, w którym przerwaliśmy"
 
 #: submissions/templates/submissions/resume_or_new.html:27
 msgid "Start a new submission"
-msgstr ""
+msgstr "Rozpocznij nowe zgłoszenie"
 
 #: submissions/templates/submissions/role_form.html:12
 msgid "Are you…"
@@ -1148,11 +1150,11 @@ msgstr "Jestem..."
 
 #: submissions/templates/submissions/submissions_closed.html:7
 msgid "submissions_closed.title"
-msgstr ""
+msgstr "Przesyłanie ankiet jest obecnie zakończone"
 
 #: submissions/templates/submissions/submissions_closed.html:10
 msgid "submissions_closed.body"
-msgstr ""
+msgstr "W tej chwili nie przyjmujemy odpowiedzi na tę ankietę"
 
 #: submissions/templates/submissions/tablet-mode.html:23
 msgid "Enable"
