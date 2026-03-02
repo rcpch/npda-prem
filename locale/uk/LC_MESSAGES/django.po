@@ -901,11 +901,6 @@ msgstr ""
 "Що б могла зробити ваша школа або команда з питань діабету для покращення "
 "шкільного життя вашої дитини?"
 
-#: submissions/templates/submissions/_form_nav.html:15
-#, python-format
-msgid "Section %(current)s of %(total)s"
-msgstr ""
-
 #: submissions/templates/submissions/clinic_in_region.html:8
 #: submissions/templates/submissions/clinic_or_region.html:8
 #: submissions/templates/submissions/front_matter.html:8
@@ -1113,11 +1108,6 @@ msgstr "Продовжити"
 #: submissions/templates/submissions/resume_or_new.html:13
 msgid "You have an unfinished survey"
 msgstr "Ваше опитування не завершено"
-
-#: submissions/templates/submissions/resume_or_new.html:16
-msgid ""
-"Would you like to continue where you left off, or start a new submission?"
-msgstr ""
 
 #: submissions/templates/submissions/resume_or_new.html:21
 msgid "Continue where I left off"

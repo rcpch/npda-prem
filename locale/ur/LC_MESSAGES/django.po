@@ -904,11 +904,6 @@ msgstr ""
 "آپ کا اسکول یا ذیابیطس ٹیم آپ کے بچے کے تجربے کو بہتر بنانے کے لیے کون سا "
 "مختلف طریقہ اختیار کر سکتے ہیں؟"
 
-#: submissions/templates/submissions/_form_nav.html:15
-#, python-format
-msgid "Section %(current)s of %(total)s"
-msgstr ""
-
 #: submissions/templates/submissions/clinic_in_region.html:8
 #: submissions/templates/submissions/clinic_or_region.html:8
 #: submissions/templates/submissions/front_matter.html:8
@@ -1113,11 +1108,6 @@ msgstr "جاری رکھیں"
 #: submissions/templates/submissions/resume_or_new.html:13
 msgid "You have an unfinished survey"
 msgstr "آپ کے پاس ایک نامکمل سروے ہے"
-
-#: submissions/templates/submissions/resume_or_new.html:16
-msgid ""
-"Would you like to continue where you left off, or start a new submission?"
-msgstr ""
 
 #: submissions/templates/submissions/resume_or_new.html:21
 msgid "Continue where I left off"

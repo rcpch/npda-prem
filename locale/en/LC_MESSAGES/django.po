@@ -901,11 +901,6 @@ msgstr ""
 "What could your school or diabetes team do differently to improve your "
 "child's experience?"
 
-#: submissions/templates/submissions/_form_nav.html:15
-#, python-format
-msgid "Section %(current)s of %(total)s"
-msgstr ""
-
 #: submissions/templates/submissions/clinic_in_region.html:8
 #: submissions/templates/submissions/clinic_or_region.html:8
 #: submissions/templates/submissions/front_matter.html:8
@@ -963,7 +958,7 @@ msgstr ""
 
 #: submissions/templates/submissions/confirmation.html:17
 msgid "Prize Draw"
-msgstr ""
+msgstr "Prize Draw"
 
 #: submissions/templates/submissions/confirmation.html:22
 msgid "confirmation.issues_content"
@@ -1101,29 +1096,24 @@ msgstr "Choose your language"
 #: submissions/templates/submissions/question.html:23
 #, python-format
 msgid "Question %(n)s of %(total)s"
-msgstr ""
+msgstr "Question %(n)s of %(total)s"
 
 #: submissions/templates/submissions/question.html:58
 #: submissions/templates/submissions/resume_or_new.html:35
 msgid "Continue"
-msgstr ""
+msgstr "Continue"
 
 #: submissions/templates/submissions/resume_or_new.html:13
 msgid "You have an unfinished survey"
-msgstr ""
-
-#: submissions/templates/submissions/resume_or_new.html:16
-msgid ""
-"Would you like to continue where you left off, or start a new submission?"
-msgstr ""
+msgstr "You have an unfinished survey"
 
 #: submissions/templates/submissions/resume_or_new.html:21
 msgid "Continue where I left off"
-msgstr ""
+msgstr "Continue where I left off"
 
 #: submissions/templates/submissions/resume_or_new.html:27
 msgid "Start a new submission"
-msgstr ""
+msgstr "Start a new submission"
 
 #: submissions/templates/submissions/role_form.html:12
 msgid "Are you…"

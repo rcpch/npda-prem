@@ -873,11 +873,6 @@ msgstr ""
 "ਤੁਹਾਡਾ ਸਕੂਲ ਜਾਂ ਡਾਇਬੀਟੀਜ਼ ਟੀਮ ਤੁਹਾਡੇ ਬੱਚੇ ਦੇ ਅਨੁਭਵ ਨੂੰ ਬਿਹਤਰ ਬਣਾਉਣ ਲਈ ਵੱਖਰੇ ਢੰਗ ਨਾਲ ਕੀ ਕਰ "
 "ਸਕਦੀ ਹੈ?"
 
-#: submissions/templates/submissions/_form_nav.html:15
-#, python-format
-msgid "Section %(current)s of %(total)s"
-msgstr ""
-
 #: submissions/templates/submissions/clinic_in_region.html:8
 #: submissions/templates/submissions/clinic_or_region.html:8
 #: submissions/templates/submissions/front_matter.html:8
@@ -1075,11 +1070,6 @@ msgstr "ਜਾਰੀ ਰੱਖੋ"
 #: submissions/templates/submissions/resume_or_new.html:13
 msgid "You have an unfinished survey"
 msgstr "ਤੁਹਾਡਾ ਸਰਵੇਖਣ ਅਧੂਰਾ ਹੈ"
-
-#: submissions/templates/submissions/resume_or_new.html:16
-msgid ""
-"Would you like to continue where you left off, or start a new submission?"
-msgstr ""
 
 #: submissions/templates/submissions/resume_or_new.html:21
 msgid "Continue where I left off"
