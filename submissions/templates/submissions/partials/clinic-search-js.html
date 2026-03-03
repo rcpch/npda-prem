@@ -7,9 +7,6 @@
 
   document.addEventListener('DOMContentLoaded', function () {
     const autoComplete = document.getElementById('location-picker');
-
-    console.log(autoComplete.closest('form'));
-
     const submit = autoComplete.closest('form').querySelector('[type="submit"]');
 
     if(current_clinic_display_name) {
@@ -23,8 +20,8 @@
       source: clinic_display_names,
       defaultValue: current_clinic_display_name || '',
       showAllValues: true,
-      onConfirm: () => {
-        submit.disabled = false;
+      onConfirm: (value) => {
+        submit.disabled = !value;
       }
     });
   });
