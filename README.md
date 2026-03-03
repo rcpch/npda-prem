@@ -41,9 +41,6 @@ Visit http://localhost:8000/.
 ### Infra
 
 - Usage instructions!
-- Cloudflare Turnstile
-  - https://github.com/rcpch/npda-prem/issues/13
-  - Error handling (atm would be generic suspicious operation page)
 - GitHub PR check
 - Favicon
 - Automatic production monitoring?
