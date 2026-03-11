@@ -68,7 +68,7 @@
     {% endif %}
 
     <nav class="nhsuk-u-margin-top-6">
-      <input type="submit" class="nhsuk-button" id="continue-btn" value="{% trans 'Continue' %}" disabled>
+      <input type="submit" class="nhsuk-button" id="continue-btn" value="{% if question_number == question_total and lang == 'en' %}Submit{% else %}{% trans 'Continue' %}{% endif %}" disabled>
     </nav>
 
 </form>
