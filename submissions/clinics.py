@@ -161,7 +161,7 @@ CLINICS = [
     {"pz_code": "PZ182", "region": "London & South East", "name": "West Middlesex Hospital"},
     {"pz_code": "PZ183", "region": "North West", "name": "Chorley District Hospital"},
     {"pz_code": "PZ183", "region": "North West", "name": "Royal Preston Hospital"},
-    {"pz_code": "PZ186", "region": "Yorkshire & Humber", "name": "Huddersfield Royal Infirmary"},
+    {"pz_code": "PZ186", "region": "Yorkshire & Humber", "name": "Calderdale and Huddersfield Foundation NHS Trust"},
     {"pz_code": "PZ187", "region": "Wales", "name": "Wrexham Maelor Hospital- Paediatric Diabetes Unit"},
     {"pz_code": "PZ189", "region": "Wales", "name": "Royal Glamorgan Hospital"},
     {"pz_code": "PZ191", "region": "London & South East", "name": "Ealing Hospital"},
