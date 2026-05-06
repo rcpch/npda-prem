@@ -8,7 +8,7 @@ different clinic sites).
 
 CLINICS = [
     {"pz_code": "PZ001", "region": "Wales", "name": "Morriston Paediatric Diabetes clinic"},
-    {"pz_code": "PZ002", "region": "East of England", "name": "Jenny Lind Children's Diabetes Clinic"},
+    {"pz_code": "PZ002", "region": "East of England", "name": "Norfolk and Norwich University Hospital"},
     {"pz_code": "PZ004", "region": "East Midlands", "name": "Northampton General Hospital - Children and Young Persons' Diabetes Clinic"},
     {"pz_code": "PZ005", "region": "East Midlands", "name": "Derbyshire Children's Hospital"},
     {"pz_code": "PZ006", "region": "Yorkshire & Humber", "name": "Doncaster Royal Infirmary"},
