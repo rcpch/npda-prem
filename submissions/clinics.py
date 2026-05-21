@@ -214,7 +214,7 @@ CLINICS = [
     {"pz_code": "PZ252", "region": "Yorkshire & Humber", "name": "Pontefract General Hospital"},
     {"pz_code": "PZ253", "region": "London & South East", "name": "Maidstone Hospital Diabetes Clinic"},
     {"pz_code": "PZ253", "region": "London & South East", "name": "Tunbridge Wells Diabetes Clinic"},
-    {"pz_code": "PZ256", "region": "North West", "name": "NOBLE'S HOSPITAL"},
+    {"pz_code": "PZ256", "region": "Isle of Man", "name": "Noble's Hospital"},
 ]
 
 REGION_SLUG_MAP = {
@@ -230,6 +230,7 @@ REGION_SLUG_MAP = {
     "Wales": "wales",
     "West Midlands": "west-midlands",
     "Yorkshire & Humber": "yorkshire-humber",
+    "Isle of Man": "isle-of-man",
 }
 
 SLUG_REGION_MAP = {v: k for k, v in REGION_SLUG_MAP.items()}

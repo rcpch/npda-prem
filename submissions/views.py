@@ -138,13 +138,18 @@ def get_clinic_json(pz_code):
 def clinic_or_region(request, lang):
     """Step 1: select the region (or 'unsure')."""
     if request.method == "POST":
+        region_value = request.POST.get("region", "")
         clinic_value = request.POST.get("clinic", "")
 
-        pz_code = get_pz_code_by_display_name(clinic_value)
+        if region_value:
+            return redirect(reverse("clinic_in_region", kwargs={"lang": lang, "region": region_value }))
 
-        if pz_code:
-            request.session["pz_code"] = pz_code
-            return redirect(reverse("role_form", kwargs={"lang": lang}))
+        if clinic_value:
+            pz_code = get_pz_code_by_display_name(clinic_value)
+
+            if pz_code:
+                request.session["pz_code"] = pz_code
+                return redirect(reverse("role_form", kwargs={"lang": lang}))
 
     clinics = get_all_clinics_sorted()
     
