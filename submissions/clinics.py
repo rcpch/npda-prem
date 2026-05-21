@@ -214,6 +214,7 @@ CLINICS = [
     {"pz_code": "PZ252", "region": "Yorkshire & Humber", "name": "Pontefract General Hospital"},
     {"pz_code": "PZ253", "region": "London & South East", "name": "Maidstone Hospital Diabetes Clinic"},
     {"pz_code": "PZ253", "region": "London & South East", "name": "Tunbridge Wells Diabetes Clinic"},
+    {"pz_code": "PZ256", "region": "North West", "name": "NOBLE'S HOSPITAL"},
 ]
 
 REGION_SLUG_MAP = {
