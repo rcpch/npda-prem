@@ -204,6 +204,7 @@ CLINICS = [
     {"pz_code": "PZ245", "region": "Wales", "name": "Ysbyty Ystrad Fawr"},
     {"pz_code": "PZ246", "region": "North West", "name": "Rochdale Infirmary"},
     {"pz_code": "PZ246", "region": "North West", "name": "Royal Oldham Hospital"},
+    {"pz_code": "PZ246", "region": "North West", "name": "Fairfield General Hospital"},
     {"pz_code": "PZ247", "region": "North West", "name": "North Manchester General Hospital"},
     {"pz_code": "PZ248", "region": "Jersey", "name": "Jersey Diabetes Service"},
     {"pz_code": "PZ249", "region": "North East & North Cumbria", "name": "Friarage Hospital - Paediatric Diabetes Unit"},
